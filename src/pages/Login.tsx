@@ -2,9 +2,11 @@ import { useState, type FormEvent } from 'react';
 import { useAuth } from '../lib/auth';
 import { Button } from '../components/ui';
 import { LockIcon } from '../components/icons';
+import { asset } from '../lib/assets';
 
 export default function Login() {
-  const { login, register, offline } = useAuth();
+  const { login, register, continueLocally, offline } = useAuth();
+  const apiConfigured = Boolean(import.meta.env.VITE_API_URL) || window.location.hostname === 'localhost';
   const [mode, setMode] = useState<'login' | 'register'>('login');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -29,7 +31,7 @@ export default function Login() {
     <div className="min-h-dvh flex flex-col items-center justify-center px-4 py-10">
       <div className="w-full max-w-sm">
         <div className="flex flex-col items-center mb-8">
-          <img src="/icons/icon.svg" alt="" className="w-20 h-20 rounded-3xl shadow-lg" />
+          <img src={asset('icons/icon.svg')} alt="" className="w-20 h-20 rounded-3xl shadow-lg" />
           <h1 className="mt-4 text-3xl font-black tracking-tight">Alles Klar</h1>
           <p className="text-muted mt-1 text-center">German from A1 to B1, explained in easy English.</p>
         </div>
@@ -56,7 +58,11 @@ export default function Login() {
             <LockIcon size={14} className="mt-0.5 shrink-0" />
             <span>No email, no personal data. The account only stores a username, a password hash, and your learning progress.</span>
           </p>
+          {!apiConfigured && <p className="text-xs text-accent">No sync server is configured for this site, so accounts are not available yet.</p>}
         </form>
+        <button type="button" onClick={continueLocally} className="mt-4 w-full text-sm text-muted hover:text-text">
+          Continue without an account (progress stays on this device)
+        </button>
       </div>
     </div>
   );

@@ -6,3 +6,6 @@ data/*.db-*
 .DS_Store
 *.log
 .env
+.wrangler
+.env.local
+.dev.vars

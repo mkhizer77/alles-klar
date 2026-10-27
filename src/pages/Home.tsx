@@ -34,7 +34,7 @@ export default function Home() {
       <div className="flex items-end justify-between">
         <div>
           <h1 className="text-2xl font-bold tracking-tight">
-            {greet}, {user?.username}!
+            {greet}{user && !user.local ? `, ${user.username}` : ''}!
           </h1>
           <p className="text-muted">{reviewDay ? 'Today is a review day.' : `Rest day for reviews (next: ${settings.reviewDays.map((d) => dayNames[d]).join(', ') || 'none'}).`}</p>
         </div>

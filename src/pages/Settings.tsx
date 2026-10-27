@@ -101,13 +101,17 @@ export default function SettingsPage() {
 
       <Card>
         <h2 className="font-bold mb-1">Account</h2>
-        <p className="text-sm text-muted">
-          Signed in as <span className="font-semibold text-text">{user?.username}</span>. Stored on the server: this username, a password hash, and your progress (words, exercise results, test scores, these settings). Nothing else.
-        </p>
+        {user?.local ? (
+          <p className="text-sm text-muted">No account. Your progress is stored only in this browser. Create an account to keep it safe and use it on other devices; what you have done so far will be uploaded.</p>
+        ) : (
+          <p className="text-sm text-muted">
+            Signed in as <span className="font-semibold text-text">{user?.username}</span>. Stored on the server: this username, a password hash, and your progress (words, exercise results, test scores, these settings). Nothing else.
+          </p>
+        )}
         <div className="mt-3 flex gap-2 flex-wrap">
-          <Button variant="secondary" onClick={() => logout()}>Sign out</Button>
+          <Button variant="secondary" onClick={() => logout()}>{user?.local ? 'Sign in or create account' : 'Sign out'}</Button>
           {!confirmDelete ? (
-            <Button variant="ghost" className="!text-danger" onClick={() => setConfirmDelete(true)}>Delete account and all progress</Button>
+            <Button variant="ghost" className="!text-danger" onClick={() => setConfirmDelete(true)}>{user?.local ? 'Delete all progress on this device' : 'Delete account and all progress'}</Button>
           ) : (
             <Button variant="danger" onClick={() => deleteAccount()}>Yes, delete everything</Button>
           )}

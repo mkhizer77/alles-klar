@@ -3,6 +3,7 @@ import { NavLink } from 'react-router';
 import { HomeIcon, BookIcon, CardsIcon, SearchIcon, TestIcon, SettingsIcon } from './icons';
 import { useAuth } from '../lib/auth';
 import { useStoreVersion, store } from '../lib/store';
+import { asset } from '../lib/assets';
 
 const nav = [
   { to: '/', label: 'Home', icon: HomeIcon, end: true },
@@ -15,7 +16,7 @@ const nav = [
 function Brand() {
   return (
     <div className="flex items-center gap-2.5">
-      <img src="/icons/icon.svg" alt="" className="w-8 h-8 rounded-lg" />
+      <img src={asset('icons/icon.svg')} alt="" className="w-8 h-8 rounded-lg" />
       <span className="font-bold text-lg tracking-tight">Alles Klar</span>
     </div>
   );
@@ -24,9 +25,9 @@ function Brand() {
 function SyncDot() {
   useStoreVersion();
   const { offline } = useAuth();
-  const state = offline ? 'offline' : store.syncState;
-  const color = state === 'idle' ? 'bg-success' : state === 'syncing' ? 'bg-accent animate-pulse' : state === 'offline' ? 'bg-muted' : 'bg-danger';
-  const label = state === 'idle' ? 'Synced' : state === 'syncing' ? 'Syncing' : state === 'offline' ? 'Offline – saved on this device' : 'Sync error';
+  const state = store.syncState === 'local' ? 'local' : offline ? 'offline' : store.syncState;
+  const color = state === 'idle' ? 'bg-success' : state === 'syncing' ? 'bg-accent animate-pulse' : state === 'offline' || state === 'local' ? 'bg-muted' : 'bg-danger';
+  const label = state === 'idle' ? 'Synced' : state === 'syncing' ? 'Syncing' : state === 'offline' ? 'Offline – saved on this device' : state === 'local' ? 'On this device only' : 'Sync error';
   return (
     <span className="inline-flex items-center gap-1.5 text-xs text-muted" title={label}>
       <span className={`w-2 h-2 rounded-full ${color}`} /> <span className="hidden sm:inline">{label}</span>
@@ -58,7 +59,7 @@ export default function Layout({ children }: { children: ReactNode }) {
             <SettingsIcon size={20} /> Settings
           </NavLink>
           <div className="px-3 flex items-center justify-between text-xs text-muted">
-            <span className="truncate">{user?.username}</span>
+            <span className="truncate">{user?.local ? 'No account' : user?.username}</span>
             <SyncDot />
           </div>
         </div>

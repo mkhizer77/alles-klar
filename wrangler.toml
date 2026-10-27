@@ -1,0 +1,14 @@
+name = "alles-klar-api"
+main = "server/worker.ts"
+compatibility_date = "2025-10-01"
+
+[vars]
+# Comma-separated browser origins allowed to call the API.
+ALLOWED_ORIGINS = "https://mkhizer77.github.io,http://localhost:5173"
+PBKDF2_ITERATIONS = "20000"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "alles-klar"
+# Replace with the id printed by: pnpm wrangler d1 create alles-klar
+database_id = "REPLACE_WITH_D1_DATABASE_ID"

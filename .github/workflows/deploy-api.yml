@@ -1,0 +1,33 @@
+name: Deploy API to Cloudflare Workers
+
+# Runs only when the repository variable DEPLOY_API is "true" and the secrets
+# CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID exist (see docs/ARCHITECTURE.md).
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'server/**'
+      - 'wrangler.toml'
+      - '.github/workflows/deploy-api.yml'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    if: ${{ vars.DEPLOY_API == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm test
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy

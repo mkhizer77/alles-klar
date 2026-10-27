@@ -1,6 +1,9 @@
 // Offline-first progress store. Every value lives in memory + localStorage and
-// is synced to the server as {key, value, updatedAt}; last write wins.
+// is synced through a SyncBackend as {key, value, updatedAt}; last write wins.
+// Without a backend (device-only mode) it simply never syncs.
 import { useSyncExternalStore } from 'react';
+import type { SyncBackend } from './sync';
+import { ApiError } from './api';
 
 interface Entry {
   value: unknown;
@@ -15,9 +18,9 @@ class Store {
   private listeners = new Set<() => void>();
   private dirty = new Set<string>();
   private pushTimer: ReturnType<typeof setTimeout> | null = null;
+  private backend: SyncBackend | null = null;
   version = 0;
-  syncState: 'idle' | 'syncing' | 'offline' | 'error' = 'idle';
-  signedIn = false;
+  syncState: 'idle' | 'syncing' | 'offline' | 'error' | 'local' = 'local';
 
   constructor() {
     this.loadLocal();
@@ -91,8 +94,20 @@ class Store {
     this.emit();
   }
 
+  /** Attach (or detach with null) the place progress is synced to. */
+  setBackend(backend: SyncBackend | null) {
+    this.backend = backend;
+    this.syncState = backend ? 'idle' : 'local';
+    this.emit();
+    if (backend) void this.pull();
+  }
+
+  get hasBackend() {
+    return this.backend !== null;
+  }
+
   private schedulePush() {
-    if (!this.signedIn) return;
+    if (!this.backend) return;
     if (this.pushTimer) clearTimeout(this.pushTimer);
     this.pushTimer = setTimeout(() => this.push(), 1500);
   }
@@ -117,25 +132,27 @@ class Store {
   }
 
   async pull() {
-    if (!this.signedIn || !navigator.onLine) return;
+    if (!this.backend || !navigator.onLine) return;
     this.syncState = 'syncing';
     this.emit();
     try {
-      const res = await fetch('/api/kv', { credentials: 'same-origin' });
-      if (res.ok) {
-        const data = (await res.json()) as { entries: { key: string; value: string; updatedAt: number }[] };
-        this.merge(data.entries);
-        this.syncState = 'idle';
-      } else this.syncState = 'error';
-    } catch {
-      this.syncState = 'offline';
+      this.merge(await this.backend.pull());
+      this.syncState = 'idle';
+    } catch (e) {
+      this.syncState = e instanceof ApiError ? 'error' : 'offline';
     }
     this.emit();
     if (this.dirty.size) await this.push();
   }
 
+  /** Marks every entry dirty so it is uploaded on the next push (used when an account is created from device-only data). */
+  markAllDirty() {
+    for (const k of this.entries.keys()) this.dirty.add(k);
+    this.saveLocal();
+  }
+
   async push() {
-    if (!this.signedIn) return;
+    if (!this.backend) return;
     if (!navigator.onLine) {
       this.syncState = 'offline';
       this.emit();
@@ -146,19 +163,13 @@ class Store {
     this.syncState = 'syncing';
     this.emit();
     try {
-      const res = await fetch('/api/kv', { method: 'PUT', credentials: 'same-origin', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ entries: sending }) });
-      if (res.ok) {
-        for (const s of sending) if (this.entries.get(s.key)?.updatedAt === s.updatedAt) this.dirty.delete(s.key);
-        const data = (await res.json()) as { entries: { key: string; value: string; updatedAt: number }[] };
-        this.merge(data.entries);
-        this.saveLocal();
-        this.syncState = 'idle';
-      } else if (res.status === 401) {
-        this.signedIn = false;
-        this.syncState = 'error';
-      } else this.syncState = 'error';
-    } catch {
-      this.syncState = 'offline';
+      const entries = await this.backend.push(sending);
+      for (const s of sending) if (this.entries.get(s.key)?.updatedAt === s.updatedAt) this.dirty.delete(s.key);
+      this.merge(entries);
+      this.saveLocal();
+      this.syncState = 'idle';
+    } catch (e) {
+      this.syncState = e instanceof ApiError ? 'error' : 'offline';
     }
     this.emit();
   }

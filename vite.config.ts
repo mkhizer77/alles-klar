@@ -3,7 +3,10 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
+const base = process.env.VITE_BASE || '/';
+
 export default defineConfig({
+  base,
   plugins: [
     react(),
     tailwindcss(),
@@ -17,8 +20,8 @@ export default defineConfig({
         theme_color: '#2457a6',
         background_color: '#f7f5f0',
         display: 'standalone',
-        start_url: '/',
-        scope: '/',
+        start_url: base,
+        scope: base,
         lang: 'en',
         icons: [
           { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
@@ -28,10 +31,10 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
-        navigateFallbackDenylist: [/^\/api\//],
+        navigateFallbackDenylist: [/\/api\//],
         runtimeCaching: [
           {
-            urlPattern: /^\/api\//,
+            urlPattern: /\/api\//,
             handler: 'NetworkOnly',
           },
         ],

@@ -25,16 +25,23 @@ pnpm dev
 
 Open http://localhost:5173. The API runs on port 8787 and is proxied under `/api`.
 
-Production:
+Checks:
 
 ```bash
-pnpm build
-pnpm start
+pnpm validate     # content files
+pnpm typecheck    # app + server
+pnpm test         # API core against an in-memory database
 ```
 
-`pnpm start` serves the built app and the API from one Node process on port 8787 (set `API_PORT` to change it). Put it behind HTTPS (for example Caddy or a reverse proxy) so the PWA can be installed on a phone: open the URL in Safari or Chrome and choose "Add to Home Screen". Progress is saved on the device and synced when online.
+## Hosting (free)
 
-Data lives in `data/alles-klar.db` (set `DB_PATH` to move it). Delete the file to start fresh.
+- **App**: GitHub Pages, deployed by GitHub Actions on every push to `main`.
+- **API + database**: one Cloudflare Worker with a D1 database (free tiers). One-time setup is three commands; see [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md#deploying).
+- Without the API the site still works in "device only" mode; creating an account later uploads what you have done.
+
+Install on a phone: open the site in Safari or Chrome and choose "Add to Home Screen". It works offline; progress syncs when you are back online.
+
+Self-hosting on one Node process is also possible: `pnpm build && pnpm start` serves app and API on port 8787 (`API_PORT`, `DB_PATH`, `ALLOWED_ORIGINS` configurable). Data lives in `data/alles-klar.db`.
 
 ## Privacy
 
