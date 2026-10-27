@@ -1,0 +1,63 @@
+import type { WritingTask } from '../types';
+
+const task: WritingTask = {
+  id: 'b1-u10-writing',
+  level: 'B1',
+  unit: 10,
+  title: 'A formal letter of complaint to your language school',
+  textType: 'letter',
+  register: 'formal',
+  task: 'Your evening German course at the Volkshochschule has been cancelled several times without notice and the teacher has changed without explanation. Write a formal letter of complaint to the school management.',
+  points: ['why you are writing and which course it concerns', 'what exactly happened (cancellations, change of teacher)', 'why this is a problem for you and the other participants', 'what you expect from the school and by when'],
+  minWords: 120,
+  maxWords: 200,
+  usefulPhrases: [
+    { de: 'Sehr geehrte Damen und Herren,', en: 'Dear Sir or Madam,', role: 'greeting' },
+    { de: 'Leider muss ich mich über … beschweren.', en: 'Unfortunately I have to complain about …', role: 'phrase' },
+    { de: 'Bei der Anmeldung wurde uns mitgeteilt, dass …', en: 'When we registered, we were told that …', role: 'phrase' },
+    { de: 'Seit … wurde der Kurs jedoch … ohne Ankündigung abgesagt.', en: 'Since …, however, the course was cancelled … without notice.', role: 'phrase' },
+    { de: 'Für viele Teilnehmende bedeutet das eine große Unsicherheit.', en: 'For many participants this means great uncertainty.', role: 'phrase' },
+    { de: 'Die fehlende Zuverlässigkeit stellt … infrage.', en: 'The lack of reliability calls … into question.', role: 'phrase' },
+    { de: 'Ich bitte Sie daher um eine schriftliche Erklärung.', en: 'I therefore ask you for a written explanation.', role: 'phrase' },
+    { de: 'Außerdem erwarte ich, dass …', en: 'Furthermore I expect that …', role: 'phrase' },
+    { de: 'Sollte dies nicht möglich sein, …', en: 'Should this not be possible, …', role: 'connector' },
+    { de: 'Für eine Antwort bis zum … wäre ich Ihnen dankbar.', en: 'I would be grateful for a reply by …', role: 'phrase' },
+    { de: 'Mit freundlichen Grüßen', en: 'Yours faithfully', role: 'closing' },
+  ],
+  grammarFocus: ['b1-30-suffixes', 'b1-31-register-formal-informal', 'b1-29-prefixes', 'a2-31-reading-writing-email'],
+  mustUse: [
+    { label: 'nouns ending in -ung (Anmeldung, Ankündigung, Erklärung, Änderung …)', pattern: '\\b\\w+ung(en)?\\b', min: 3 },
+    { label: 'nouns ending in -heit or -keit (Klarheit, Unsicherheit, Zuverlässigkeit …)', pattern: '\\b\\w+(heit|keit)(en)?\\b', min: 2 },
+    { label: 'a formal request (Ich bitte Sie …, Ich erwarte …, Für … wäre ich Ihnen dankbar)', pattern: '\\b(ich bitte sie|ich erwarte|ich fordere sie|wäre ich ihnen dankbar|bitte ich um)\\b', min: 1 },
+    { label: 'the formal closing "Mit freundlichen Grüßen"', pattern: '\\bmit freundlichen grüßen\\b', min: 1 },
+  ],
+  checklist: [
+    'All four points are covered: reason for writing and the course, what happened, why it is a problem, what you expect and by when.',
+    'The letter starts with Sehr geehrte Damen und Herren and ends with Mit freundlichen Grüßen and your full name.',
+    'After the comma in the greeting, the first word is lower case (…, ich besuche seit …).',
+    'Abstract nouns with -ung, -heit and -keit are capitalised and feminine (die Anmeldung, die Klarheit, die Zuverlässigkeit).',
+    'The register is formal throughout: Sie/Ihr with a capital, no contractions or colloquial words, no exclamation marks.',
+    'Requests are polite but clear (Ich bitte Sie daher um …, Außerdem erwarte ich, dass …) and include a deadline.',
+    'Each paragraph has one function: reason, facts, consequences, demands, closing formula.',
+    'The letter has between 120 and 200 words.',
+  ],
+  model: [
+    'Sehr geehrte Damen und Herren,',
+    'ich besuche seit September den Deutschkurs B1 (Kursnummer 2417) an Ihrer Volkshochschule. Leider muss ich mich heute über die Organisation des Kurses beschweren.',
+    'Bei der Anmeldung wurde uns mitgeteilt, dass der Unterricht dienstags und donnerstags von 18 bis 20 Uhr stattfindet. Seit Anfang Oktober wurde der Kurs jedoch dreimal ohne Ankündigung abgesagt, und vor zwei Wochen hat sich die Kursleitung ohne Erklärung geändert. Die neue Lehrkraft ist sehr freundlich, aber durch den ständigen Wechsel fehlt dem Unterricht die Klarheit und die Kontinuität, die wir für die Prüfungsvorbereitung dringend brauchen.',
+    'Für viele Teilnehmende bedeutet das eine große Unsicherheit. Wir haben die Kursgebühr im Voraus bezahlt und unsere Arbeitszeiten entsprechend geplant. Die fehlende Zuverlässigkeit stellt die Qualität Ihres Angebots infrage.',
+    'Ich bitte Sie daher um eine schriftliche Erklärung und um eine verbindliche Zusage, dass die ausgefallenen Stunden nachgeholt werden. Außerdem erwarte ich, dass wir in Zukunft rechtzeitig über Änderungen informiert werden. Sollte dies nicht möglich sein, bitte ich um eine teilweise Rückerstattung der Gebühr.',
+    'Für eine Antwort bis zum 30. November wäre ich Ihnen dankbar.',
+    'Mit freundlichen Grüßen',
+    'Yusuf Demir',
+  ],
+  modelNotes: [
+    'Nouns built with suffixes carry the argument and keep the tone formal: **Anmeldung, Ankündigung, Erklärung, Änderungen, Rückerstattung** (-ung), **Klarheit, Unsicherheit** (-heit), **Zuverlässigkeit** (-keit).',
+    'The opening states the purpose in one sentence (**Leider muss ich mich … beschweren**) after naming the course and its number.',
+    'The facts paragraph uses precise dates and numbers (**Seit Anfang Oktober**, **dreimal**, **vor zwei Wochen**), which makes a complaint credible.',
+    'Demands are polite but firm: **Ich bitte Sie daher um …**, **Außerdem erwarte ich, dass …**, with an alternative introduced by **Sollte dies nicht möglich sein, …**.',
+    'Formal fixed phrases frame the letter: **Sehr geehrte Damen und Herren**, **Für eine Antwort … wäre ich Ihnen dankbar**, **Mit freundlichen Grüßen**.',
+  ],
+};
+
+export default task;

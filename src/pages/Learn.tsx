@@ -1,5 +1,5 @@
 import { Link, useNavigate, useParams } from 'react-router';
-import { curriculum, topics, readingForUnit } from '../content';
+import { curriculum, topics, readingForUnit, writingForUnit } from '../content';
 import { listeningAvailable } from '../lib/listening';
 import { store } from '../lib/store';
 import { keys, EMPTY_TOPIC, type TopicProgress } from '../lib/models';
@@ -111,6 +111,20 @@ export default function Learn() {
                         <Badge>Coming soon</Badge>
                       </div>
                     )}
+                    {(() => {
+                      const w = writingForUnit(lvl.level, u.unit);
+                      return w ? (
+                        <Link to={`/writing/${w.id}`} className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-info-soft/60 border border-line hover:border-primary/50">
+                          <span className="text-lg">✍️</span>
+                          <div className="flex-1 min-w-0">
+                            <div className="font-medium truncate">Writing: {w.title}</div>
+                            <div className="text-xs text-muted">{w.minWords}–{w.maxWords} words</div>
+                          </div>
+                          <SkillBadge p={store.get(keys.writing(w.id), EMPTY_TOPIC)} />
+                          <ChevronRight className="text-muted" size={18} />
+                        </Link>
+                      ) : null;
+                    })()}
                     {canListen && (
                       <Link to={`/listen/${lvl.level}/${u.unit}`} className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-info-soft/60 border border-line hover:border-primary/50">
                         <span className="text-lg">🎧</span>

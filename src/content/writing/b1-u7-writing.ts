@@ -1,0 +1,60 @@
+import type { WritingTask } from '../types';
+
+const task: WritingTask = {
+  id: 'b1-u7-writing',
+  level: 'B1',
+  unit: 7,
+  title: 'Smartphones at school: for and against',
+  textType: 'opinion',
+  register: 'neutral',
+  task: 'An online magazine asks its readers: "Sollten Smartphones in der Schule verboten werden?" Write an argumentative text that weighs up both sides and ends with your own position.',
+  points: ['an introduction that presents the question', 'two arguments for smartphones at school', 'two arguments against', 'your own opinion with a concrete proposal'],
+  minWords: 100,
+  maxWords: 180,
+  usefulPhrases: [
+    { de: 'In vielen Ländern wird darüber diskutiert, ob …', en: 'In many countries there is a debate about whether …', role: 'phrase' },
+    { de: 'Ich möchte hier beide Seiten betrachten.', en: 'I would like to look at both sides here.', role: 'phrase' },
+    { de: 'Einerseits … Andererseits …', en: 'On the one hand … On the other hand …', role: 'connector' },
+    { de: 'sowohl … als auch …', en: 'both … and …', role: 'connector' },
+    { de: 'Je mehr …, desto weniger …', en: 'The more …, the less …', role: 'connector' },
+    { de: 'Obwohl …, …', en: 'Although …, …', role: 'connector' },
+    { de: 'Dennoch halte ich … für falsch/richtig.', en: 'Nevertheless I consider … wrong/right.', role: 'phrase' },
+    { de: 'weder … noch …', en: 'neither … nor …', role: 'connector' },
+    { de: 'Meiner Meinung nach sollte …', en: 'In my opinion … should …', role: 'phrase' },
+    { de: 'Ein Kompromiss wäre, dass …', en: 'A compromise would be that …', role: 'phrase' },
+  ],
+  grammarFocus: ['b1-17-two-part-conjunctions', 'b1-18-cause-consequence-concession', 'a2-27-adverbial-connectors', 'a2-28-subjunctions-obwohl-damit'],
+  mustUse: [
+    { label: 'a je … desto sentence', pattern: '\\bje\\b[^.!?]*\\bdesto\\b', min: 1 },
+    { label: 'another two-part conjunction (sowohl … als auch, weder … noch, entweder … oder, nicht nur … sondern auch)', pattern: '\\b(sowohl\\b[^.!?]*\\bals auch|weder\\b[^.!?]*\\bnoch|entweder\\b[^.!?]*\\boder|nicht nur\\b[^.!?]*\\bsondern auch)\\b', min: 1 },
+    { label: 'einerseits … andererseits', pattern: '\\b(einerseits|andererseits)\\b', min: 2 },
+    { label: 'a concessive connector (obwohl, trotzdem, dennoch)', pattern: '\\b(obwohl|trotzdem|dennoch)\\b', min: 1 },
+  ],
+  checklist: [
+    'All four points are covered: the question, two arguments for, two arguments against, your opinion with a proposal.',
+    'The text has a title, an introduction, one paragraph per side and a conclusion.',
+    'Je … desto: the je-clause ends with its verb, and desto is followed directly by the comparative and then the verb (desto besser sind sie …).',
+    'Two-part conjunctions join matching elements (sowohl Informationen nachschlagen als auch Apps nutzen).',
+    'Einerseits and andererseits open the two argument paragraphs and are followed by the verb (Einerseits bieten …).',
+    'After obwohl the verb goes to the end; after trotzdem/dennoch it stays in second position.',
+    'The opinion is marked clearly (Meiner Meinung nach, Ich halte … für …) and the proposal is concrete.',
+    'The text has between 100 and 180 words.',
+  ],
+  model: [
+    'Smartphones in der Schule: verbieten oder erlauben?',
+    'In vielen Ländern wird darüber diskutiert, ob Smartphones in der Schule verboten werden sollten. Ich möchte hier beide Seiten betrachten.',
+    'Einerseits bieten Smartphones viele Vorteile. Die Schüler können sowohl Informationen nachschlagen als auch Lern-Apps nutzen. Außerdem lernen sie dadurch, verantwortungsvoll mit Technik umzugehen. Je früher Kinder den sinnvollen Umgang üben, desto besser sind sie später vorbereitet.',
+    'Andererseits gibt es ernste Nachteile. Obwohl viele Schulen klare Regeln haben, werden die Geräte oft im Unterricht benutzt. Je mehr Zeit die Schüler am Bildschirm verbringen, desto weniger konzentrieren sie sich. Außerdem fühlen sich Kinder ohne teures Handy manchmal ausgeschlossen. Dennoch halte ich ein komplettes Verbot für falsch.',
+    'Meiner Meinung nach sollten Smartphones weder ganz verboten noch unbegrenzt erlaubt werden. Ein Kompromiss wäre, dass die Geräte im Unterricht ausgeschaltet bleiben, in den Pausen aber benutzt werden dürfen. So lernen die Schüler, Technik zu nutzen, ohne von ihr abhängig zu werden.',
+  ],
+  modelNotes: [
+    'The structure is the classic Goethe B1 shape: question, pro paragraph, contra paragraph, own opinion with a compromise.',
+    '**Einerseits bieten …** / **Andererseits gibt es …**: both connectors take position 1, so the verb follows immediately.',
+    '**Je früher Kinder … üben, desto besser sind sie … vorbereitet**: verb at the end of the je-clause, comparative + verb right after *desto*.',
+    '**sowohl Informationen nachschlagen als auch Lern-Apps nutzen** and **weder ganz verboten noch unbegrenzt erlaubt** join two parallel elements.',
+    '**Obwohl viele Schulen klare Regeln haben, werden …** (verb last) contrasts with **Dennoch halte ich …** (verb second): both express concession in different ways.',
+    'The conclusion is concrete: not just *ich bin dagegen*, but a rule (**im Unterricht ausgeschaltet, in den Pausen erlaubt**).',
+  ],
+};
+
+export default task;

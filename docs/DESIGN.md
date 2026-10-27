@@ -12,6 +12,7 @@ Screens are in `docs/screenshots/`. Mobile uses a bottom tab bar (Home, Learn, V
 | Topic | `/topic/:id` | Summary, explanation (markdown with tables), examples with speech, how it connects (links), watch out (edge cases), practice card. Prev/next topic links. Sticky Practice button on mobile. |
 | Practice | `/practice/:id` | Intro (choose feedback timing) → exercise runner → results report with retry-the-wrong and next-topic. |
 | Reading | `/reading/:id` | Unit text with strategy tip, read-aloud, glossary with speech, then the comprehension questions as an exercise session. |
+| Writing | `/writing/:id` | Task with points and grammar links, tap-to-insert phrases, autosaved editor with live word count and automatic checks; then side-by-side with the model answer and notes, and a self-check list whose ticks become the score. |
 | Listening | `/listen/:level/:unit` | Ten dictations sampled from the unit's example sentences; play / slow replay; word-level diff after checking. |
 | Concepts | `/concepts?q=` | Search across topics and glossary with level filter; A–Z glossary when empty. |
 | Vocab | `/vocab` | Stats, start session, settings shortcut, word lists by level/theme with per-word status and speech. |
@@ -42,6 +43,6 @@ Everything the learner does is a small JSON value under a key (`topic:<id>`, `wo
 
 ## Next steps
 
-1. Writing tasks with model answers and a checklist.
-2. Speaking: conversation partner using on-device speech recognition and synthesis with an AI model behind it (last, as agreed).
-3. Native-speaker review of the generated content; the writers flagged their judgement calls in `docs/CONTENT-NOTES.md`.
+1. Speaking: conversation partner using on-device speech recognition and synthesis with an AI model behind it (last, as agreed).
+2. Native-speaker review of the generated content; the writers flagged their judgement calls in `docs/CONTENT-NOTES.md`.
+3. Optional AI feedback on writing tasks once an API key is available (the writing page is the natural place to add it).

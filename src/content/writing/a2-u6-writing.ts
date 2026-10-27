@@ -1,0 +1,65 @@
+import type { WritingTask } from '../types';
+
+const task: WritingTask = {
+  id: 'a2-u6-writing',
+  level: 'A2',
+  unit: 6,
+  title: 'A note for a house guest: where things are and the way to the Bürgeramt',
+  textType: 'note',
+  register: 'informal',
+  task: 'Your friend Jonas is staying in your flat for a week while you are away. Leave him a note explaining where things are, where to put things, and how to get to the Bürgeramt to hand in an envelope for you.',
+  points: [
+    'where the key, food or other things are (liegt, steht, hängt)',
+    'where he should put things (legen, stellen, hängen)',
+    'what you need him to take to the Bürgeramt and where it is',
+    'the way to the Bürgeramt and what to do there',
+  ],
+  minWords: 60,
+  maxWords: 120,
+  usefulPhrases: [
+    { de: 'Hallo …, schön, dass du …!', en: 'Hi …, nice that you …!', role: 'greeting' },
+    { de: 'Der Schlüssel liegt auf dem Tisch.', en: 'The key is (lying) on the table.', role: 'phrase' },
+    { de: '… steht im Schrank neben dem Fenster.', en: '… is (standing) in the cupboard next to the window.', role: 'phrase' },
+    { de: 'Häng … bitte auf den Balkon.', en: 'Please hang … on the balcony.', role: 'phrase' },
+    { de: 'Leg … einfach auf den Schreibtisch.', en: 'Just put … on the desk.', role: 'phrase' },
+    { de: 'Eine Bitte: Kannst du …?', en: 'One request: can you …?', role: 'phrase' },
+    { de: 'Geh zur Haltestelle … und fahr mit der Linie … bis zum …', en: 'Go to the … stop and take line … to the …', role: 'phrase' },
+    { de: 'dann geradeaus bis zur Ampel', en: 'then straight on to the traffic lights', role: 'phrase' },
+    { de: 'direkt gegenüber von …', en: 'directly opposite …', role: 'phrase' },
+    { de: 'im ersten Stock, Zimmer …', en: 'on the first floor, room …', role: 'phrase' },
+    { de: 'Vielen Dank und bis …!', en: 'Many thanks and see you on …!', role: 'closing' },
+  ],
+  grammarFocus: ['a2-16-two-way-prepositions-depth', 'a2-17-position-verbs', 'a2-18-directions-hin-her', 'a1-18-imperative'],
+  mustUse: [
+    { label: 'a verb of position or placing (liegt, steht, hängt, leg, stell, häng …)', pattern: '\\b(liegt|liegen|steht|stehen|hängt|hängen|sitzt|sitzen|leg|legst|legen|stell|stellst|stellen|häng|hängst|setz|setzt|setzen)\\b', min: 4 },
+    { label: 'a two-way preposition with its article (auf dem Tisch, auf den Balkon, im Schrank)', pattern: '\\b(im|am|ins|ans|(in|an|auf|unter|vor|hinter|neben|zwischen) (dem|der|den|das|die|einem|einer|einen|ein|eine|meinem|meiner|meinen|meine|mein|deinem|deiner|deinen))\\b', min: 4 },
+    { label: 'a direction word (zum, zur, links, rechts, geradeaus, gegenüber)', pattern: '\\b(zum|zur|links|rechts|geradeaus|gegenüber|entlang)\\b', min: 2 },
+    { label: 'a du-imperative (geh, fahr, nimm, leg, stell, häng)', pattern: '\\b(geh|fahr|nimm|leg|stell|häng|bring|gib|wirf|komm)\\b', min: 2 },
+  ],
+  checklist: [
+    'All four points are covered: where things are, where to put things, what to take to the Bürgeramt, the way there and what to do.',
+    'Position (wo?) uses the Dative with a position verb: liegt auf dem Tisch, steht im Schrank, hängt an der Wand.',
+    'Movement (wohin?) uses the Accusative with a placing verb: leg … auf den Schreibtisch, häng … auf den Balkon.',
+    'You use the right pair for the object: legen / liegen (flat things), stellen / stehen (upright things), hängen / hängen.',
+    'Instructions use the du-imperative without -st and without du: Geh, fahr, nimm, stell dich … an.',
+    'Directions use zu / zum / zur for the goal and bis zum / zur for the end point: zur Haltestelle, bis zum Rathaus.',
+    'The note has a short greeting and a friendly closing with your name.',
+    'The note has between 60 and 120 words.',
+  ],
+  model: [
+    'Hallo Jonas,',
+    'schön, dass du diese Woche in meiner Wohnung bleibst! Der Schlüssel für den Briefkasten liegt in der Küche auf dem Tisch. Kaffee steht im Schrank neben dem Fenster. Wenn du Wäsche wäschst, häng sie bitte auf den Balkon. Leg die Post einfach auf den Schreibtisch im Wohnzimmer.',
+    'Eine Bitte: Kannst du am Dienstag für mich den braunen Umschlag zum Bürgeramt bringen? Er liegt auf dem Regal im Flur. Geh zur Haltestelle Marktplatz, fahr mit der Linie 3 bis zum Rathaus und dann geradeaus bis zur Ampel. Das Bürgeramt liegt direkt gegenüber von der Post, Zimmer 12 im ersten Stock. Nimm deinen Ausweis mit und stell dich an Schalter B an.',
+    'Vielen Dank und bis Sonntag!',
+    'Mara',
+  ],
+  modelNotes: [
+    'Position with the Dative (wo?): **liegt in der Küche auf dem Tisch**, **steht im Schrank neben dem Fenster**, **liegt auf dem Regal im Flur**.',
+    'Placing with the Accusative (wohin?): **häng sie auf den Balkon**, **leg die Post auf den Schreibtisch**: the same prepositions, but now the case changes.',
+    'The verb pairs match the object: a key or an envelope **liegt**, a jar of coffee **steht**; you **legst** flat things and **hängst** washing.',
+    'du-imperatives without a pronoun: **häng, leg, geh, fahr, nimm, stell dich … an**; the separable prefix (**mit, an**) stays at the end.',
+    'Directions chain the goal prepositions: **zur Haltestelle**, **bis zum Rathaus**, **bis zur Ampel**, **gegenüber von der Post**, and the floor with **im ersten Stock**.',
+  ],
+};
+
+export default task;

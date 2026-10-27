@@ -37,6 +37,14 @@ export interface TopicProgress {
 
 export const EMPTY_TOPIC: TopicProgress = { attempts: 0, bestScore: 0, lastScore: 0, results: {} };
 
+/** Writing: the draft is kept so the learner can continue later; the score is the share of ticked checklist items. */
+export interface WritingProgress extends TopicProgress {
+  draft: string;
+  submitted?: string;
+  checklist: boolean[];
+}
+export const EMPTY_WRITING: WritingProgress = { ...EMPTY_TOPIC, draft: '', checklist: [] };
+
 export type Activity = Record<string, { exercises: number; words: number }>;
 export const EMPTY_ACTIVITY: Activity = {};
 
@@ -63,4 +71,5 @@ export const keys = {
   tests: 'tests',
   reading: (id: string) => `reading:${id}`,
   listening: (level: string, unit: number) => `listen:${level.toLowerCase()}-u${unit}`,
+  writing: (id: string) => `writing:${id}`,
 };

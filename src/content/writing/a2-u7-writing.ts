@@ -1,0 +1,66 @@
+import type { WritingTask } from '../types';
+
+const task: WritingTask = {
+  id: 'a2-u7-writing',
+  level: 'A2',
+  unit: 7,
+  title: 'Email to a colleague: a polite request for new equipment',
+  textType: 'email',
+  register: 'neutral',
+  task: 'From 1 March you will work on a new project and often from home. Write an email to Frau Weber from the IT department: say what you will be doing, ask politely for the equipment you need, and ask for a short meeting.',
+  points: [
+    'what you will be doing from March and why you need new equipment',
+    'which equipment you would like (two things)',
+    'a polite request for a short introduction to a program, and when you have time',
+    'what will happen with your old equipment',
+  ],
+  minWords: 60,
+  maxWords: 120,
+  usefulPhrases: [
+    { de: 'Liebe Frau …, / Lieber Herr …,', en: 'Dear Ms …, / Dear Mr …, (semi-formal)', role: 'greeting' },
+    { de: 'Ab dem … werde ich …', en: 'From the … I will …', role: 'phrase' },
+    { de: 'Deshalb hätte ich gern …', en: 'That is why I would like …', role: 'phrase' },
+    { de: 'Könnten Sie mir bitte sagen, ob …?', en: 'Could you please tell me whether …?', role: 'phrase' },
+    { de: 'Es wäre sehr hilfreich, wenn …', en: 'It would be very helpful if …', role: 'phrase' },
+    { de: 'Würden Sie mir … vorschlagen?', en: 'Would you suggest … to me?', role: 'phrase' },
+    { de: 'Ich habe am … oder am … Zeit.', en: 'I have time on … or on …', role: 'phrase' },
+    { de: 'außerdem', en: 'in addition', role: 'connector' },
+    { de: 'Vielen Dank im Voraus!', en: 'Many thanks in advance!', role: 'closing' },
+    { de: 'Viele Grüße', en: 'Best regards', role: 'closing' },
+  ],
+  grammarFocus: ['a2-19-futur-1', 'a2-20-konjunktiv-2-polite', 'a2-05-wenn-ob-indirect-questions'],
+  mustUse: [
+    { label: 'Futur I with werden + infinitive (ich werde … arbeiten)', pattern: '\\b(werde|wirst|wird|werden|werdet)\\b', min: 2 },
+    { label: 'a polite Konjunktiv II form (könnten, würden, hätte, wäre)', pattern: '\\b(könnte|könnten|könntest|würde|würden|würdest|hätte|hätten|hättest|wäre|wären|wärst)\\b', min: 3 },
+    { label: 'gern(e) in a wish (ich hätte gern …)', pattern: '\\bgern(e)?\\b', min: 1 },
+    { label: 'bitte in a request', pattern: '\\bbitte\\b', min: 1 },
+  ],
+  checklist: [
+    'All four points are covered: your new work from March, two pieces of equipment, a request for an introduction and your availability, your old equipment.',
+    'The email has a semi-formal greeting (Liebe Frau …,) and closing (Viele Grüße) with your name.',
+    'Futur I is formed with werden in position 2 and the infinitive at the end: Ab März werde ich … arbeiten.',
+    'Requests use Konjunktiv II, not the imperative: Könnten Sie …?, Würden Sie …?, Ich hätte gern …',
+    'In a wenn-clause with Konjunktiv II the conjugated form goes to the end: …, wenn Sie mir das Programm zeigen könnten.',
+    'You address the colleague with Sie, Ihnen and Ihre (capitalised) throughout.',
+    'The tone is friendly and polite: bitte, Vielen Dank im Voraus.',
+    'The email has between 60 and 120 words.',
+  ],
+  model: [
+    'Liebe Frau Weber,',
+    'ab dem 1. März werde ich im neuen Projekt „Digitale Bibliothek“ mitarbeiten und oft von zu Hause aus arbeiten. Deshalb hätte ich gern einen Laptop mit Kamera und ein gutes Headset, weil wir viele Videokonferenzen haben werden.',
+    'Könnten Sie mir bitte sagen, ob die Firma solche Geräte bestellen kann? Außerdem wäre es sehr hilfreich, wenn Sie mir das neue Programm kurz zeigen könnten. Ich habe am Montag oder am Dienstag Zeit. Würden Sie mir einen Termin vorschlagen?',
+    'Meinen alten Computer werde ich noch bis Ende Februar behalten und dann zurückgeben.',
+    'Vielen Dank im Voraus für Ihre Hilfe!',
+    'Viele Grüße',
+    'Aylin Kaya',
+  ],
+  modelNotes: [
+    'Futur I: **werde ich … mitarbeiten und … arbeiten**, **haben werden** (at the end of the *weil*-clause), **werde ich … behalten und … zurückgeben**: *werden* is conjugated, the infinitive goes last.',
+    'Polite Konjunktiv II instead of commands: **Könnten Sie mir bitte sagen …?**, **Würden Sie … vorschlagen?**, **Ich hätte gern …**, **Es wäre sehr hilfreich, wenn …**.',
+    '**wenn Sie mir das neue Programm kurz zeigen könnten**: in the subordinate clause the modal **könnten** goes to the very end, after the infinitive.',
+    '**Liebe Frau Weber** with **Sie** is the semi-formal mix used between colleagues who are not on *du* terms; **Viele Grüße** closes it.',
+    'The indirect question **sagen, ob die Firma … bestellen kann** keeps the request soft; **Deshalb** and **Außerdem** link the ideas.',
+  ],
+};
+
+export default task;

@@ -1,0 +1,62 @@
+import type { WritingTask } from '../types';
+
+const task: WritingTask = {
+  id: 'b1-u2-writing',
+  level: 'B1',
+  unit: 2,
+  title: 'A cover email for a job application',
+  textType: 'email',
+  register: 'formal',
+  task: 'You have seen a job advert for a project assistant at a company in Berlin. Write the cover email for your application to the contact person, Frau Dr. Weber.',
+  points: ['where you saw the advert and which position you are applying for', 'your education and current job, with one concrete responsibility', 'why the position suits you', 'when you could start and a request for an interview'],
+  minWords: 100,
+  maxWords: 180,
+  usefulPhrases: [
+    { de: 'Sehr geehrte Frau …, / Sehr geehrter Herr …,', en: 'Dear Ms …, / Dear Mr …,', role: 'greeting' },
+    { de: 'Mit großem Interesse habe ich Ihre Anzeige gelesen, in der Sie … suchen.', en: 'I read your advert, in which you are looking for …, with great interest.', role: 'phrase' },
+    { de: 'Hiermit bewerbe ich mich um die Stelle als …', en: 'I hereby apply for the position of …', role: 'phrase' },
+    { de: 'Ich arbeite seit … bei …, deren/dessen …', en: 'I have been working at … since …, whose …', role: 'phrase' },
+    { de: 'Dort betreue ich Projekte, für die ich … verantworte.', en: 'There I look after projects for which I am responsible for …', role: 'phrase' },
+    { de: 'Die Stelle, von der ich gelesen habe, passt sehr gut zu …', en: 'The position I read about suits … very well.', role: 'phrase' },
+    { de: 'Ich könnte ab dem … anfangen.', en: 'I could start on …', role: 'phrase' },
+    { de: 'außerdem', en: 'in addition', role: 'connector' },
+    { de: 'Über eine Einladung zu einem Gespräch würde ich mich sehr freuen.', en: 'I would be very pleased to be invited to an interview.', role: 'phrase' },
+    { de: 'Mit freundlichen Grüßen', en: 'Yours sincerely', role: 'closing' },
+  ],
+  grammarFocus: ['b1-04-relative-clauses-dat-gen', 'b1-05-relative-clauses-prepositions', 'a2-23-relative-clauses-nom-acc', 'a2-31-reading-writing-email'],
+  mustUse: [
+    { label: 'a relative clause with a preposition (…, in der / für die / mit dem / von der …)', pattern: ', (in|mit|für|von|bei|über|an|auf|zu|nach|aus|unter) (dem|der|den|denen|die|das)\\b', min: 2 },
+    { label: 'a genitive relative pronoun (deren / dessen)', pattern: '\\b(deren|dessen)\\b', min: 1 },
+    { label: 'the application formula "bewerbe ich mich"', pattern: '\\bbewerbe ich mich\\b', min: 1 },
+    { label: 'the formal closing "Mit freundlichen Grüßen"', pattern: '\\bmit freundlichen grüßen\\b', min: 1 },
+  ],
+  checklist: [
+    'All four points are covered: where you saw the advert and the position, your education and job with one responsibility, why the job suits you, start date and interview request.',
+    'The email starts with Sehr geehrte Frau … / Sehr geehrter Herr … and ends with Mit freundlichen Grüßen and your full name.',
+    'After a comma-greeting the first word is lower case (Sehr geehrte Frau Weber, mit großem Interesse …).',
+    'Every relative clause is separated by commas and has its verb at the end.',
+    'The relative pronoun matches the noun in gender and number and the preposition in case (mit dem Chef, für die Projekte, in der Anzeige).',
+    'deren / dessen agree with the noun that owns something (die Agentur, deren Kunden …).',
+    'The learner uses Sie / Ihr / Ihre with a capital letter throughout.',
+    'No informal words (Hallo, Liebe Grüße, Tschüss) appear in a formal application.',
+    'The text has between 100 and 180 words.',
+  ],
+  model: [
+    'Sehr geehrte Frau Dr. Weber,',
+    'mit großem Interesse habe ich Ihre Anzeige gelesen, in der Sie eine Projektassistentin für Ihr Berliner Büro suchen. Hiermit bewerbe ich mich um diese Stelle.',
+    'Ich habe Betriebswirtschaft studiert und arbeite seit drei Jahren bei einer Agentur, deren Kunden vor allem aus der Tourismusbranche kommen. Dort betreue ich Projekte, für die ich Termine, Budgets und die Kommunikation mit den Kunden verantworte. Mein Chef, mit dem ich eng zusammenarbeite, hat mir viel Verantwortung übertragen. Außerdem spreche ich Englisch, Urdu und Deutsch auf B1-Niveau.',
+    'Die Stelle, von der ich in Ihrer Anzeige gelesen habe, passt sehr gut zu meinen Erfahrungen. Die Teamarbeit, die Ihnen wichtig ist, ist auch für mich entscheidend. Ich könnte ab dem 1. März anfangen.',
+    'Über eine Einladung zu einem Gespräch würde ich mich sehr freuen.',
+    'Mit freundlichen Grüßen',
+    'Amina Raza',
+  ],
+  modelNotes: [
+    'The first sentence names the source and the position in one relative clause: **Ihre Anzeige, in der Sie eine Projektassistentin … suchen**.',
+    '**bei einer Agentur, deren Kunden …** is a genitive relative clause: *deren* refers back to the feminine noun *Agentur*.',
+    'Prepositional relative clauses take the case of the preposition: **Projekte, für die …** (accusative), **Mein Chef, mit dem …** (dative), **Die Stelle, von der …** (dative).',
+    'The register stays formal throughout: **Hiermit bewerbe ich mich**, **Über eine Einladung … würde ich mich sehr freuen**, **Mit freundlichen Grüßen**.',
+    'Each paragraph has one job (source and position, experience, fit and start date, request), which is what a reader expects from an application.',
+  ],
+};
+
+export default task;

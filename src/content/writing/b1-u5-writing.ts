@@ -1,0 +1,61 @@
+import type { WritingTask } from '../types';
+
+const task: WritingTask = {
+  id: 'b1-u5-writing',
+  level: 'B1',
+  unit: 5,
+  title: 'A summary of an interview',
+  textType: 'post',
+  register: 'neutral',
+  task: 'You listened to a radio interview with the learning researcher Prof. Hanna Keller about how to learn a language effectively. Summarise what she said for your course forum, reporting her statements in indirect speech.',
+  points: ['who was interviewed and about what', 'her main advice (at least two statements)', 'her answer to a question from the interviewer', 'your own reaction'],
+  minWords: 100,
+  maxWords: 180,
+  usefulPhrases: [
+    { de: 'Letzte Woche habe ich ein Interview mit … gehört.', en: 'Last week I listened to an interview with …', role: 'phrase' },
+    { de: 'Das Thema war: …', en: 'The topic was: …', role: 'phrase' },
+    { de: 'Frau … sagte, dass …', en: 'Ms … said that …', role: 'phrase' },
+    { de: 'Sie meinte, … sei/habe …', en: 'She said … was/had …', role: 'phrase' },
+    { de: 'Sie erklärte, dass … seien.', en: 'She explained that … were.', role: 'phrase' },
+    { de: 'Auf die Frage, …, antwortete sie, …', en: 'When asked …, she answered …', role: 'phrase' },
+    { de: 'Sie betonte, …', en: 'She stressed that …', role: 'phrase' },
+    { de: 'Am Ende riet sie allen, … zu …', en: 'In the end she advised everyone to …', role: 'phrase' },
+    { de: 'außerdem', en: 'moreover', role: 'connector' },
+    { de: 'Ich fand das Interview sehr …', en: 'I found the interview very …', role: 'phrase' },
+  ],
+  grammarFocus: ['b1-12-indirect-speech', 'a2-05-wenn-ob-indirect-questions', 'a2-04-subordinate-clauses-weil-dass'],
+  mustUse: [
+    { label: 'a reporting verb in the Präteritum (sagte, meinte, erklärte, betonte, antwortete, riet …)', pattern: '\\b(sagte|meinte|erklärte|betonte|antwortete|berichtete|erzählte|fragte|riet|behauptete|forderte)\\b', min: 3 },
+    { label: 'a Konjunktiv I form (sei, seien, habe, könne, müsse, solle, brauche …)', pattern: '\\b(sei|seien|habe|könne|müsse|solle|wolle|dürfe|brauche|gebe|werde|wisse)\\b', min: 3 },
+    { label: 'indirect speech introduced with dass', pattern: '\\bdass\\b', min: 2 },
+    { label: 'würde(n) or Konjunktiv II where Konjunktiv I is ambiguous (sie würden …, sie könnten …)', pattern: '\\b(würde|würden|könnten|hätten|wären|müssten)\\b', min: 1 },
+  ],
+  checklist: [
+    'All four points are covered: who and what, two pieces of advice, her answer to a question, your reaction.',
+    'The post has a short title or opening line saying what was summarised.',
+    'Reported statements are introduced with a reporting verb in the Präteritum (sagte, meinte, erklärte, betonte).',
+    'Third-person singular reports use Konjunktiv I: sie habe, das Gehirn brauche, man müsse.',
+    'Where Konjunktiv I looks like the indicative (plural: sie lernen), Konjunktiv II or würde is used instead (sie würden lernen).',
+    'With dass the verb goes to the end; without dass the verb stays in second position (Sie meinte, das Gehirn brauche …).',
+    'Pronouns and time words are adjusted to the reporting perspective (ich becomes sie, heute becomes an dem Tag).',
+    'The text has between 100 and 180 words.',
+  ],
+  model: [
+    'Zusammenfassung des Interviews mit Prof. Hanna Keller',
+    'Letzte Woche habe ich ein Interview mit der Lernforscherin Hanna Keller gehört. Das Thema war: Wie lernt man eine Sprache am besten?',
+    'Frau Keller sagte, dass viele Lernende zu viel Zeit mit Grammatiktabellen verbringen würden. Sie meinte, das Gehirn brauche vor allem Wiederholung und echte Gespräche. Außerdem erklärte sie, dass Fehler ein normaler Teil des Lernens seien und dass man sie nicht fürchten solle.',
+    'Auf die Frage, wie viel man täglich lernen müsse, antwortete sie, zwanzig Minuten pro Tag seien besser als drei Stunden am Wochenende. Sie betonte, sie habe das in mehreren Studien beobachtet. Apps könnten helfen, aber sie würden einen Kurs nicht ersetzen.',
+    'Am Ende riet sie allen Zuhörern, jeden Tag ein kurzes Gespräch auf Deutsch zu führen. Ich fand das Interview sehr motivierend und werde ihren Rat ausprobieren.',
+    'Omar',
+  ],
+  modelNotes: [
+    'Reporting verbs vary (**sagte, meinte, erklärte, antwortete, betonte, riet**) so the summary does not repeat *sie sagte* in every sentence.',
+    'Singular statements use Konjunktiv I: **das Gehirn brauche**, **man müsse**, **sie habe … beobachtet**, **Fehler … seien**.',
+    'Plural verbs would look like the indicative, so the model switches to Konjunktiv II or *würde*: **verbringen würden**, **Apps könnten helfen**, **sie würden … nicht ersetzen**.',
+    'Both patterns appear: with **dass** and the verb at the end, and without *dass* with the verb in second position (**Sie meinte, das Gehirn brauche …**).',
+    'The indirect question **Auf die Frage, wie viel man täglich lernen müsse, …** also uses Konjunktiv I.',
+    'The last paragraph separates the own reaction of the writer (indicative: **Ich fand … und werde …**) from the reported content.',
+  ],
+};
+
+export default task;

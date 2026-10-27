@@ -1,0 +1,61 @@
+import type { WritingTask } from '../types';
+
+const task: WritingTask = {
+  id: 'b1-u3-writing',
+  level: 'B1',
+  unit: 3,
+  title: 'A forum post about a local issue',
+  textType: 'post',
+  register: 'neutral',
+  task: 'The city council has decided to close the open-air swimming pool in your neighbourhood. Write a post for the neighbourhood forum informing residents and asking them to get involved.',
+  points: ['what has been decided and by whom', 'why the pool matters to the neighbourhood', 'what has already been organised (petition, meeting)', 'what you ask the readers to do'],
+  minWords: 100,
+  maxWords: 180,
+  usefulPhrases: [
+    { de: 'Liebe Nachbarinnen und Nachbarn,', en: 'Dear neighbours,', role: 'greeting' },
+    { de: 'Wie viele von euch schon gehört haben, …', en: 'As many of you have already heard, …', role: 'phrase' },
+    { de: 'Diese Entscheidung wurde vom Stadtrat getroffen.', en: 'This decision was taken by the city council.', role: 'phrase' },
+    { de: '… soll im nächsten Jahr geschlossen werden.', en: '… is to be closed next year.', role: 'phrase' },
+    { de: 'Jeden Sommer wird das Bad von … besucht.', en: 'Every summer the pool is visited by …', role: 'phrase' },
+    { de: 'Eine Unterschriftenliste ist gestartet worden.', en: 'A petition has been started.', role: 'phrase' },
+    { de: 'Am … wird ein Treffen organisiert.', en: 'A meeting is being organised on …', role: 'phrase' },
+    { de: 'Dort können alle Fragen gestellt werden.', en: 'All questions can be asked there.', role: 'phrase' },
+    { de: 'deshalb / außerdem', en: 'therefore / in addition', role: 'connector' },
+    { de: 'Bitte teilt diesen Beitrag!', en: 'Please share this post!', role: 'closing' },
+  ],
+  grammarFocus: ['b1-06-passive-present-past', 'b1-07-passive-modals-perfekt', 'b1-08-zustandspassiv-alternatives'],
+  mustUse: [
+    { label: 'a form of werden for the passive (wird, werden, wurde, wurden, worden)', pattern: '\\b(wird|werden|wurde|wurden|worden)\\b', min: 4 },
+    { label: 'a participle directly followed by werden/wurde/worden (geschlossen werden, informiert wurden)', pattern: '(?<![a-zäöü])([\\wäöüß]*ge[\\wäöüß]+|[\\wäöüß]+iert) (wird|werden|wurde|wurden|worden)\\b', min: 2 },
+    { label: 'a passive with a modal verb (soll … geschlossen werden, können … gestellt werden)', pattern: '\\b(muss|müssen|kann|können|soll|sollen|darf|dürfen)\\b[^.!?]*\\bwerden\\b', min: 1 },
+    { label: 'the impersonal "man" as an alternative to the passive', pattern: '\\bman\\b', min: 1 },
+  ],
+  checklist: [
+    'All four points are covered: the decision and who made it, why the pool matters, what has been organised, what readers should do.',
+    'The post opens with a greeting to the neighbours and ends with a clear request and your name.',
+    'The present passive uses wird/werden + participle at the end (Das Bad wird von vielen Familien besucht).',
+    'The past passive uses wurde/wurden + participle (Die Entscheidung wurde getroffen).',
+    'A passive with a modal verb ends in participle + werden (soll geschlossen werden).',
+    'The agent, if named, is introduced with von or vom (vom Stadtrat, von Tausenden Familien).',
+    'The Perfekt passive uses ist/sind … worden, not geworden.',
+    'The tone is neutral and informative, not angry, and the text has between 100 and 180 words.',
+  ],
+  model: [
+    'Liebe Nachbarinnen und Nachbarn,',
+    'wie viele von euch schon gehört haben, soll das Freibad am Stadtpark im nächsten Jahr geschlossen werden. Diese Entscheidung wurde letzte Woche vom Stadtrat getroffen, ohne dass die Anwohner vorher informiert wurden.',
+    'Das Bad wurde 1975 gebaut und seitdem nur selten renoviert. Die Stadt sagt, dass die Reparaturen zu teuer sind. Aber jeden Sommer wird das Bad von Tausenden Familien besucht, und Schwimmkurse für Kinder werden dort seit Jahren angeboten. Wenn es geschlossen ist, muss man bis in die Innenstadt fahren.',
+    'Deshalb ist eine Unterschriftenliste gestartet worden, die ich hier verlinke. Außerdem wird am Donnerstag um 19 Uhr ein Treffen im Bürgerhaus organisiert. Dort können alle Fragen gestellt werden. Kommt alle, dann hört man uns!',
+    'Bitte teilt diesen Beitrag!',
+    'Jonas',
+  ],
+  modelNotes: [
+    'The passive keeps the focus on what happens to the pool, not on who does it: **Das Bad wurde 1975 gebaut**, **wird … besucht**, **werden … angeboten**.',
+    'The agent appears only where it matters: **wurde … vom Stadtrat getroffen** names who is responsible.',
+    'Modal + passive puts the participle before *werden*: **soll … geschlossen werden**, **können … gestellt werden**.',
+    'The Perfekt passive uses **worden**: **ist eine Unterschriftenliste gestartet worden**.',
+    '**Wenn es geschlossen ist** is the Zustandspassiv (a state), while **soll geschlossen werden** is the Vorgangspassiv (an action).',
+    '**muss man … fahren** and **hört man uns** show *man* as a lighter alternative to the passive.',
+  ],
+};
+
+export default task;

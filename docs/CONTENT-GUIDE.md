@@ -50,3 +50,18 @@ One file per unit, default-exporting a `ReadingText`. See `src/content/reading/a
 - **glossary**: 4–10 harder words from the text, nouns with article, with English.
 - **questions**: 6–8 exercises with ids `<id>-q01`, `-q02` …: mostly `mc` (including Richtig/Falsch items with options `['Richtig', 'Falsch']`), one or two `fill` whose answer is a word from the text, optionally one `match` of text vocabulary and one `translate`. Every explanation quotes the relevant words from the text.
 - Same exercise rules as for topics (one `___` per fill, scrambled `order` words, etc.).
+
+## Writing tasks — `src/content/writing/<level>-u<unit>-writing.ts`
+
+One file per unit, default-exporting a `WritingTask`. See `src/content/writing/a1-u1-writing.ts`.
+
+- **id** `<level>-u<unit>-writing`, `level` and `unit` matching `curriculum.ts`.
+- **task**: the situation and what to write, in English, 1–3 sentences. **points**: 3–4 content points the learner must cover (Goethe exam style: "Schreiben Sie zu allen Punkten").
+- **textType** one of email, message, note, post, letter, story, description, opinion; **register** informal/formal/neutral. Vary across units; formal letters/emails appear from A2 on.
+- **minWords/maxWords**: A1 30–60 or 40–80, A2 60–120, B1 100–180 (B1 unit 10: formal letter 120–200).
+- **usefulPhrases**: 6–12 chunks with English and a `role`: `greeting`, `closing` (both required for email/letter/message), `connector`, `phrase`. These must fit the register.
+- **grammarFocus**: 2–4 topic ids from this unit (or earlier) that the task practises.
+- **mustUse**: 2–4 automatic checks: `{ label, pattern, min }` where `pattern` is a RegExp source (case-insensitive) for a structure the unit teaches, e.g. a Perfekt form `'\\b(habe|hat|bin|ist|sind|haben)\\b[^.!?]*\\bge\\w+(t|en)\\b'`, a subordinate clause `'\\b(weil|dass)\\b'`, a comparative `'\\b\\w+er als\\b'`. Keep patterns simple and robust; the model answer must satisfy every one (the validator checks this). Write plain `\\b` and `\\w`: the app rewrites them to treat ä, ö, ü and ß as letters, so `\\bließ\\b` works as expected.
+- **checklist**: 6–10 self-check items in English, concrete and verifiable by the learner (content points, greeting/closing, word order, specific endings, capitalisation, length). The first item is always "All N points are covered: …".
+- **model**: a model answer as paragraphs (greeting line, body paragraphs, closing line, name) within the word range, using the unit's grammar naturally, in correct standard German.
+- **modelNotes**: 3–6 English bullets (markdown inline, bold the German) explaining what makes the model work.

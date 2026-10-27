@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { Link, Navigate, useNavigate, useParams } from 'react-router';
-import { topicsForLevel, wordsForLevel, unitOfTopic, topics, levelOf, readingsForLevel } from '../content';
+import { topicsForLevel, wordsForLevel, unitOfTopic, topics, levelOf, readingsForLevel, writingsForLevel } from '../content';
 import { buildListeningSet } from '../lib/listening';
 import { Md } from '../lib/markdown';
 import type { Exercise, Level, McExercise } from '../content/types';
@@ -236,6 +236,19 @@ export default function TestRun() {
           </div>
         </Card>
       )}
+
+      {(() => {
+        const ws = writingsForLevel(level);
+        if (!ws.length) return null;
+        const w = ws[a.right % ws.length];
+        return (
+          <Card className="mb-4">
+            <h2 className="font-bold">Writing (not scored)</h2>
+            <p className="text-sm text-muted mt-1">A {level} exam also has a writing part. Do this task and compare with the model to complete the picture:</p>
+            <Link to={`/writing/${w.id}`} className="mt-2 inline-block font-semibold text-primary">✍️ {w.title} →</Link>
+          </Card>
+        );
+      })()}
 
       <h2 className="font-bold text-lg mt-6">All answers</h2>
       <ExerciseReport results={results} onDone={() => navigate('/tests')} doneLabel="Back to tests" />

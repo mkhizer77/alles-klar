@@ -1,0 +1,61 @@
+import type { WritingTask } from '../types';
+
+const task: WritingTask = {
+  id: 'b1-u1-writing',
+  level: 'B1',
+  unit: 1,
+  title: 'A turning point in your life',
+  textType: 'post',
+  register: 'informal',
+  task: 'Your course forum has a thread called "Mein Wendepunkt". Write a post telling the story of a decision or event that changed your life, in the order it happened.',
+  points: ['what your life was like before', 'what had already happened when the turning point came', 'what you decided and what happened next', 'how you see it today'],
+  minWords: 100,
+  maxWords: 180,
+  usefulPhrases: [
+    { de: 'Hallo zusammen,', en: 'Hi everyone,', role: 'greeting' },
+    { de: 'Heute möchte ich euch von … erzählen.', en: 'Today I want to tell you about …', role: 'phrase' },
+    { de: 'Vor … Jahren wohnte/arbeitete ich noch …', en: '… years ago I was still living/working …', role: 'phrase' },
+    { de: 'Nachdem ich … hatte, …', en: 'After I had …, …', role: 'connector' },
+    { de: 'Bevor ich …, hatte ich schon …', en: 'Before I …, I had already …', role: 'connector' },
+    { de: 'Während ich …, merkte ich, dass …', en: 'While I was …, I realised that …', role: 'connector' },
+    { de: 'Sobald ich … hatte, …', en: 'As soon as I had …, …', role: 'connector' },
+    { de: 'Das war der Moment, in dem …', en: 'That was the moment when …', role: 'phrase' },
+    { de: 'Ich habe diese Entscheidung nie bereut.', en: 'I have never regretted this decision.', role: 'phrase' },
+    { de: 'Was war euer Wendepunkt?', en: 'What was your turning point?', role: 'phrase' },
+    { de: 'Liebe Grüße', en: 'Best wishes', role: 'closing' },
+  ],
+  grammarFocus: ['b1-01-plusquamperfekt', 'b1-02-temporal-clauses', 'a2-02-prateritum-verbs', 'a2-06-als-vs-wenn'],
+  mustUse: [
+    { label: 'the Plusquamperfekt (hatte/war + participle, e.g. nachdem ich … bestanden hatte)', pattern: '(\\b(hatte|hatten|war|waren)\\b[^.!?,;]*\\bge[\\wäöüß]+|[\\wäöüß]+(en|t) (hatte|hatten|war|waren)\\b)', min: 2 },
+    { label: 'a temporal conjunction (nachdem, bevor, während, sobald, seitdem, solange, bis)', pattern: '\\b(nachdem|bevor|während|sobald|seitdem|solange|bis)\\b', min: 2 },
+    { label: 'narrative Präteritum forms (war, hatte, wollte, konnte, musste, wurde …)', pattern: '\\b(war|waren|hatte|hatten|wollte|konnte|musste|durfte|sollte|wurde)\\b', min: 2 },
+  ],
+  checklist: [
+    'All four points are covered: life before, what had already happened, the decision and what followed, how you see it now.',
+    'The post opens with a greeting and ends with a closing and your name.',
+    'The story is told in the Präteritum or Perfekt, and the step that happened earlier is in the Plusquamperfekt (hatte … gemacht / war … gegangen).',
+    'At least two temporal conjunctions (nachdem, bevor, während, sobald …) introduce subordinate clauses with the verb at the end.',
+    'After a subordinate clause that comes first, the main verb follows immediately: Nachdem ich … hatte, zog ich …',
+    'Nachdem is used with the Plusquamperfekt, not with the Präteritum of the same time.',
+    'Events are in a clear order, with time expressions such as vor drei Jahren, im Sommer, heute.',
+    'The text has between 100 and 180 words.',
+  ],
+  model: [
+    'Hallo zusammen,',
+    'heute möchte ich euch von einem Wendepunkt in meinem Leben erzählen. Vor drei Jahren wohnte ich noch in Lahore und arbeitete als Buchhalter. Ich hatte meinen Job eigentlich immer gemocht, aber irgendwann fühlte ich mich leer. Nachdem meine Schwester nach Berlin gezogen war, besuchte ich sie im Sommer. Während ich durch die Stadt lief, merkte ich, dass ich etwas ändern wollte.',
+    'Bevor ich zurückflog, hatte ich schon eine Entscheidung getroffen: Ich wollte Deutsch lernen und in Deutschland arbeiten. Nachdem ich die B1-Prüfung bestanden hatte, bewarb ich mich bei einer kleinen Firma in Berlin. Sobald ich die Zusage bekommen hatte, kündigte ich meinen alten Job.',
+    'Heute lebe ich seit zwei Jahren hier. Es war nicht immer leicht, aber ich habe diese Entscheidung nie bereut. Was war euer Wendepunkt?',
+    'Liebe Grüße',
+    'Bilal',
+  ],
+  modelNotes: [
+    'The story moves in three steps (before, the turning point, today), each in its own paragraph, so the reader can follow the timeline.',
+    '**Nachdem meine Schwester nach Berlin gezogen war, besuchte ich sie**: the earlier event is in the Plusquamperfekt (*war … gezogen*), the later one in the Präteritum.',
+    '**Bevor ich zurückflog, hatte ich schon eine Entscheidung getroffen**: the Plusquamperfekt also works in the main clause when something was already complete.',
+    'Subordinate clauses put the verb last (**Während ich durch die Stadt lief, merkte ich …**), and the main verb comes straight after the comma.',
+    '**Sobald** and **während** vary the time connectors; a text that only uses *nachdem* sounds mechanical.',
+    'The closing question (**Was war euer Wendepunkt?**) is typical of a forum post and invites replies.',
+  ],
+};
+
+export default task;

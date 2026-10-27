@@ -1,0 +1,66 @@
+import type { WritingTask } from '../types';
+
+const task: WritingTask = {
+  id: 'a2-u2-writing',
+  level: 'A2',
+  unit: 2,
+  title: 'Email to your landlady about a problem in the flat',
+  textType: 'email',
+  register: 'formal',
+  task: 'The heating in your flat has stopped working. Write an email to your landlady, Frau Berger, to describe the problem and ask her to send someone to repair it.',
+  points: [
+    'what the problem is and since when',
+    'what you have already tried',
+    'when a repair person can come and how to reach you',
+    'one extra wish (for example a phone call before the visit)',
+  ],
+  minWords: 60,
+  maxWords: 120,
+  usefulPhrases: [
+    { de: 'Sehr geehrte Frau …, / Sehr geehrter Herr …,', en: 'Dear Ms …, / Dear Mr …,', role: 'greeting' },
+    { de: 'ich schreibe Ihnen, weil …', en: 'I am writing to you because …', role: 'phrase' },
+    { de: 'Seit … funktioniert … nicht.', en: 'Since … the … has not been working.', role: 'phrase' },
+    { de: 'Ich glaube, dass …', en: 'I think that …', role: 'phrase' },
+    { de: 'Ich habe schon …, aber das hat nicht geholfen.', en: 'I have already …, but it did not help.', role: 'phrase' },
+    { de: 'Ich weiß nicht, ob …', en: 'I do not know whether …', role: 'phrase' },
+    { de: 'Können Sie mir bitte sagen, wann …?', en: 'Can you please tell me when …?', role: 'phrase' },
+    { de: 'Wenn …, dann …', en: 'If …, then …', role: 'connector' },
+    { de: 'außerdem', en: 'in addition', role: 'connector' },
+    { de: 'Vielen Dank im Voraus.', en: 'Many thanks in advance.', role: 'closing' },
+    { de: 'Mit freundlichen Grüßen', en: 'Kind regards', role: 'closing' },
+  ],
+  grammarFocus: ['a2-04-subordinate-clauses-weil-dass', 'a2-05-wenn-ob-indirect-questions', 'a1-36-writing-short-messages'],
+  mustUse: [
+    { label: 'a reason with weil', pattern: '\\bweil\\b', min: 1 },
+    { label: 'a dass-clause', pattern: '\\bdass\\b', min: 1 },
+    { label: 'a condition with wenn', pattern: '\\bwenn\\b', min: 1 },
+    { label: 'the formal greeting Sehr geehrte/r …', pattern: 'sehr geehrte', min: 1 },
+  ],
+  checklist: [
+    'All four points are covered: the problem and since when, what you tried, when someone can come and how to reach you, one extra wish.',
+    'The email starts with Sehr geehrte Frau …, and ends with Mit freundlichen Grüßen and your full name.',
+    'After weil, dass, wenn and ob the conjugated verb is at the end of the clause (…, weil die Heizung nicht funktioniert).',
+    'There is a comma before every subordinate clause.',
+    'When the wenn-clause comes first, the main clause starts with the verb (Wenn Sie …, bin ich …).',
+    'The first word after the greeting starts with a small letter (ich schreibe …).',
+    'Sie, Ihnen and Ihr are written with a capital letter throughout.',
+    'The email has between 60 and 120 words.',
+  ],
+  model: [
+    'Sehr geehrte Frau Berger,',
+    'ich schreibe Ihnen, weil die Heizung in meiner Wohnung seit Montag nicht funktioniert. Die Wohnung ist sehr kalt, und ich glaube, dass das Problem am Thermostat liegt. Ich habe die Heizung schon mehrmals aus- und wieder eingeschaltet, aber das hat nicht geholfen.',
+    'Ich weiß nicht, ob ich selbst einen Handwerker anrufen soll. Können Sie mir bitte sagen, wann jemand kommen kann? Wenn Sie einen Termin haben, bin ich ab 17 Uhr immer zu Hause. Außerdem bitte ich Sie, dass der Handwerker vorher kurz anruft.',
+    'Vielen Dank im Voraus für Ihre Hilfe.',
+    'Mit freundlichen Grüßen',
+    'Amira Haddad',
+  ],
+  modelNotes: [
+    '**ich schreibe Ihnen, weil …** gives the reason in a subordinate clause: the verb **funktioniert** moves to the very end.',
+    '**ich glaube, dass das Problem am Thermostat liegt**: *dass* reports an opinion, again with the verb at the end.',
+    '**Ich weiß nicht, ob …** and **sagen, wann jemand kommen kann** are indirect questions; the modal **kann** goes last, after the infinitive.',
+    '**Wenn Sie einen Termin haben, bin ich …**: when the *wenn*-clause comes first, the main clause starts directly with the verb.',
+    'The frame is formal throughout: **Sehr geehrte Frau Berger**, a small **ich** after the greeting, **Sie / Ihnen / Ihre** capitalised, **Mit freundlichen Grüßen** and the full name.',
+  ],
+};
+
+export default task;

@@ -1,0 +1,61 @@
+import type { WritingTask } from '../types';
+
+const task: WritingTask = {
+  id: 'b1-u8-writing',
+  level: 'B1',
+  unit: 8,
+  title: 'A complaint to an online shop',
+  textType: 'email',
+  register: 'formal',
+  task: 'You bought a laptop from an online shop and the battery stopped charging after one week. Customer service told you to pay for the repair yourself. Write a formal complaint email to the shop.',
+  points: ['what you bought, when, and what the problem is', 'what customer service said and why you do not accept it', 'what you want the shop to do', 'a deadline and what you will do if nothing happens'],
+  minWords: 100,
+  maxWords: 180,
+  usefulPhrases: [
+    { de: 'Sehr geehrte Damen und Herren,', en: 'Dear Sir or Madam,', role: 'greeting' },
+    { de: 'Am … habe ich in Ihrem Onlineshop … bestellt (Bestellnummer …).', en: 'On … I ordered … from your online shop (order number …).', role: 'phrase' },
+    { de: 'Schon nach … ließ sich … nicht mehr …', en: 'After only … the … could no longer be …', role: 'phrase' },
+    { de: 'Ich habe mit Ihrem Kundenservice Kontakt aufgenommen.', en: 'I contacted your customer service.', role: 'phrase' },
+    { de: 'Das kann ich nicht akzeptieren, denn …', en: 'I cannot accept that, because …', role: 'phrase' },
+    { de: 'Ich bitte Sie daher, … zu …', en: 'I therefore ask you to …', role: 'phrase' },
+    { de: 'Sie brauchen mir nur … zu schicken.', en: 'You only need to send me …', role: 'phrase' },
+    { de: 'Dann lasse ich das Paket abholen.', en: 'Then I will have the parcel collected.', role: 'phrase' },
+    { de: 'Bitte geben Sie mir bis zum … Bescheid.', en: 'Please let me know by …', role: 'phrase' },
+    { de: 'Andernfalls werde ich …', en: 'Otherwise I will …', role: 'connector' },
+    { de: 'Mit freundlichen Grüßen', en: 'Yours faithfully', role: 'closing' },
+  ],
+  grammarFocus: ['b1-21-lassen', 'b1-22-brauchen-zu-scheinen', 'b1-25-noun-verb-combinations', 'b1-23-werden'],
+  mustUse: [
+    { label: 'a form of lassen (reparieren lassen, ließ sich nicht laden, lasse … abholen)', pattern: '\\b(lasse|lässt|lassen|ließ|ließen|gelassen)(?![a-zäöü])', min: 2 },
+    { label: 'brauchen … zu (Sie brauchen mir nur … zu schicken)', pattern: '\\bbrauch(e|st|t|en)\\b[^.!?]*\\bzu\\b', min: 1 },
+    { label: 'a noun–verb combination (Kontakt aufnehmen, Bescheid geben, um Rat bitten, in Anspruch nehmen …)', pattern: '\\b(kontakt|bescheid|anspruch|verfügung|entscheidung|frage|rat|rechnung|antrag|rücksicht|abschied)\\b', min: 2 },
+    { label: 'the formal closing "Mit freundlichen Grüßen"', pattern: '\\bmit freundlichen grüßen\\b', min: 1 },
+  ],
+  checklist: [
+    'All four points are covered: purchase and problem, what customer service said and why you reject it, what you want, deadline and consequence.',
+    'The email starts with Sehr geehrte Damen und Herren and ends with Mit freundlichen Grüßen and your full name.',
+    'Facts come first: date, product, order number, then the problem.',
+    'lassen is used correctly: with an infinitive at the end (reparieren lassen, abholen lassen) or reflexively (ließ sich nicht laden).',
+    'brauchen … zu is used with nicht or nur (Sie brauchen nur … zu schicken).',
+    'Noun–verb combinations keep their fixed preposition or article (mit … Kontakt aufnehmen, Bescheid geben, um Rat bitten).',
+    'The tone is firm but polite; there are no insults and no informal expressions.',
+    'The text has between 100 and 180 words.',
+  ],
+  model: [
+    'Sehr geehrte Damen und Herren,',
+    'am 3. Oktober habe ich in Ihrem Onlineshop einen Laptop (Bestellnummer 48213) bestellt. Das Gerät wurde pünktlich geliefert, aber schon nach einer Woche ließ sich der Akku nicht mehr laden.',
+    'Ich habe daraufhin mit Ihrem Kundenservice Kontakt aufgenommen. Dort sagte man mir, ich solle das Gerät auf eigene Kosten reparieren lassen. Das kann ich nicht akzeptieren, denn der Laptop befindet sich noch in der Garantiezeit. Ich habe das Produkt sorgfältig behandelt und sehe nicht ein, warum ich die Kosten übernehmen sollte.',
+    'Ich bitte Sie daher, den Laptop kostenlos zu reparieren oder mir ein neues Gerät zu schicken. Sie brauchen mir nur ein Rücksendeetikett zu senden, dann lasse ich das Paket sofort abholen. Bitte geben Sie mir bis zum 15. November Bescheid, welche Lösung Sie mir anbieten. Andernfalls werde ich die Verbraucherzentrale um Rat bitten.',
+    'Mit freundlichen Grüßen',
+    'Farah Malik',
+  ],
+  modelNotes: [
+    'Three uses of *lassen* appear naturally: **ließ sich … nicht mehr laden** (could not be charged), **reparieren lassen** (have it repaired), **lasse ich das Paket … abholen** (have it collected).',
+    '**Sie brauchen mir nur ein Rücksendeetikett zu senden** softens a demand into a simple instruction.',
+    'Noun–verb combinations make the letter sound formal: **Kontakt aufgenommen**, **Bescheid geben**, **um Rat bitten**.',
+    'The structure follows the Goethe B1 complaint pattern: facts, problem, demand, deadline, consequence.',
+    'Reported speech **man sagte mir, ich solle …** reports what customer service said without quoting it.',
+  ],
+};
+
+export default task;

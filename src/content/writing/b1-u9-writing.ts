@@ -1,0 +1,61 @@
+import type { WritingTask } from '../types';
+
+const task: WritingTask = {
+  id: 'b1-u9-writing',
+  level: 'B1',
+  unit: 9,
+  title: 'A review of an open-air cinema evening',
+  textType: 'post',
+  register: 'neutral',
+  task: 'You went to an open-air cinema evening in the city park. Write a review for the local culture blog: the event itself, the film, and whether you recommend it.',
+  points: ['what the event was and why you went', 'how the evening was organised, including something that did not go to plan', 'what you thought of the film (plot, something good, something less good)', 'your overall verdict and a recommendation'],
+  minWords: 100,
+  maxWords: 180,
+  usefulPhrases: [
+    { de: 'Am … war ich bei …, auf das ich mich schon lange gefreut hatte.', en: 'On … I was at …, which I had been looking forward to for a long time.', role: 'phrase' },
+    { de: 'Trotz des schlechten Wetters …', en: 'Despite the bad weather …', role: 'connector' },
+    { de: 'Wegen des Regens …', en: 'Because of the rain …', role: 'connector' },
+    { de: 'Innerhalb weniger Minuten …', en: 'Within a few minutes …', role: 'connector' },
+    { de: 'Mithilfe einer riesigen Leinwand …', en: 'With the help of a huge screen …', role: 'connector' },
+    { de: 'Der Film handelt von …', en: 'The film is about …', role: 'phrase' },
+    { de: 'Ich war überrascht von … und begeistert von …', en: 'I was surprised by … and thrilled by …', role: 'phrase' },
+    { de: 'Nur … hat mich etwas enttäuscht.', en: 'Only … disappointed me a little.', role: 'phrase' },
+    { de: 'Insgesamt bin ich mit … sehr zufrieden.', en: 'Overall I am very happy with …', role: 'phrase' },
+    { de: 'Ich bedanke mich bei … für …', en: 'I thank … for …', role: 'phrase' },
+    { de: 'Wer sich für … interessiert, sollte unbedingt hingehen!', en: 'Anyone interested in … should definitely go!', role: 'phrase' },
+  ],
+  grammarFocus: ['b1-26-genitive-prepositions-depth', 'b1-27-verb-preposition-b1', 'b1-28-adjective-noun-prepositions', 'a2-15-genitive-prepositions'],
+  mustUse: [
+    { label: 'a genitive preposition (trotz, wegen, während, aufgrund, innerhalb, außerhalb, mithilfe, anstatt, dank)', pattern: '\\b(trotz|wegen|während|aufgrund|innerhalb|außerhalb|mithilfe|anstatt|statt|dank)\\b', min: 3 },
+    { label: 'a genitive preposition followed by a genitive article (trotz des, wegen der, innerhalb weniger)', pattern: '\\b(trotz|wegen|während|aufgrund|innerhalb|außerhalb|mithilfe|anstatt|statt) (des|der|eines|einer|einiger|weniger|vieler|meines|meiner|seines|seiner|ihres|ihrer|dieses|dieser)\\b', min: 2 },
+    { label: 'a verb + preposition combination (sich freuen auf, handeln von, sich bedanken bei, sich interessieren für …)', pattern: '\\b(gefreut|freue|freut|handelt|bedanke|bedankt|interessiert|interessiere|erinnert|erinnere|gesprochen|geärgert|gewartet|teilgenommen|konzentriert)\\b', min: 2 },
+    { label: 'an adjective + preposition combination (überrascht von, begeistert von, zufrieden mit, stolz auf)', pattern: '(?<![a-zäöü])(überrascht|begeistert|enttäuscht|zufrieden|stolz|interessiert|neugierig|verantwortlich|abhängig) (von|mit|auf|an|für)\\b', min: 2 },
+  ],
+  checklist: [
+    'All four points are covered: the event and why you went, the organisation and a hitch, the film with good and less good aspects, verdict and recommendation.',
+    'The review has a title and ends with your name.',
+    'Genitive prepositions are followed by the genitive: trotz des Wetters, wegen des Regens, innerhalb weniger Minuten (not trotz dem Wetter).',
+    'Verbs keep their fixed preposition and case: sich freuen auf + Akk., handeln von + Dat., sich bedanken bei + Dat. für + Akk.',
+    'Adjectives keep their fixed preposition: überrascht von, begeistert von, zufrieden mit, interessiert an.',
+    'A relative clause with a preposition is correct (das Kino, auf das ich mich gefreut hatte).',
+    'The review balances praise and criticism and gives a clear recommendation at the end.',
+    'The text has between 100 and 180 words.',
+  ],
+  model: [
+    'Open-Air-Kino im Stadtpark: ein gelungener Abend',
+    'Am Samstag war ich beim Open-Air-Kino im Stadtpark, auf das ich mich schon seit Wochen gefreut hatte. Gezeigt wurde der deutsche Film „Die letzte Stunde“, über den in den letzten Monaten viel gesprochen wurde.',
+    'Trotz des schlechten Wetters am Nachmittag war der Platz voll. Wegen des Regens begann die Vorstellung eine halbe Stunde später, aber das störte niemanden. Innerhalb weniger Minuten waren alle Decken verteilt, und mithilfe einer riesigen Leinwand und guter Lautsprecher fühlte man sich fast wie im echten Kino.',
+    'Der Film selbst hat mich beeindruckt. Er handelt von einer Lehrerin, die an ihrer Schule einen Diebstahl aufklären will. Ich war überrascht von der Spannung und begeistert von der Hauptdarstellerin. Nur das Ende hat mich etwas enttäuscht, weil viele Fragen offen bleiben.',
+    'Insgesamt bin ich mit dem Abend sehr zufrieden. Ich bedanke mich bei den Organisatoren für die tolle Atmosphäre und freue mich schon auf die nächste Vorstellung. Wer sich für anspruchsvolle Filme interessiert, sollte unbedingt hingehen!',
+    'Mira',
+  ],
+  modelNotes: [
+    'Four genitive prepositions with correct genitive forms: **Trotz des schlechten Wetters**, **Wegen des Regens**, **Innerhalb weniger Minuten**, **mithilfe einer riesigen Leinwand und guter Lautsprecher**.',
+    'Verb + preposition combinations with the right case: **auf das ich mich … gefreut hatte** (auf + Akk.), **handelt von einer Lehrerin** (von + Dat.), **bedanke mich bei den Organisatoren für die tolle Atmosphäre**.',
+    'Adjectives with their fixed prepositions: **überrascht von der Spannung**, **begeistert von der Hauptdarstellerin**, **mit dem Abend sehr zufrieden**.',
+    '**über den … viel gesprochen wurde** and **auf das ich mich gefreut hatte** are relative clauses whose preposition is set by the verb (sprechen über, sich freuen auf).',
+    'The verdict paragraph moves from the general (**Insgesamt …**) to a thank-you and a recommendation, which rounds off a review naturally.',
+  ],
+};
+
+export default task;

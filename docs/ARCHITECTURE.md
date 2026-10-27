@@ -31,12 +31,13 @@ Known constraint: the Workers free plan allows ~10 ms CPU per request. Password 
 ## Layers
 
 ```
-src/content/        data only: curriculum, topics, vocabulary, reading texts, glossary (typed, validated by scripts/validate-content.mjs)
+src/content/        data only: curriculum, topics, vocabulary, reading texts, writing tasks, glossary (typed, validated by scripts/validate-content.mjs)
 src/lib/            domain + application
   check.ts, srs.ts, date.ts     pure functions: answer comparison, spaced repetition, dates
   models.ts                     progress types and storage keys
   progress.ts                   queries over the store (streak, level stats, next topic)
   listening.ts                  builds dictation sets from existing example sentences
+  writing.ts                    deterministic checks on a learner's writing (length, greeting, required patterns)
   store.ts                      offline-first key/value store; syncs through the SyncBackend port
   sync.ts, api.ts               SyncBackend port and its HTTP adapter (Bearer token)
   auth.tsx                      session state for the UI (account, device-only, offline)

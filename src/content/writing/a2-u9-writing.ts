@@ -1,0 +1,66 @@
+import type { WritingTask } from '../types';
+
+const task: WritingTask = {
+  id: 'a2-u9-writing',
+  level: 'A2',
+  unit: 9,
+  title: 'An invitation to the neighbours: the summer party',
+  textType: 'letter',
+  register: 'neutral',
+  task: 'You and a neighbour are organising the summer party in the courtyard of your building this year. Write an invitation letter to all neighbours: what, when and where; what everyone should bring or can do; and ask for helpers.',
+  points: [
+    'what you are celebrating, when and where',
+    'what everyone brings and what one can do at the party',
+    'who you are still looking for (helpers, someone with an instrument …)',
+    'how and by when the neighbours should reply',
+  ],
+  minWords: 60,
+  maxWords: 120,
+  usefulPhrases: [
+    { de: 'Liebe Nachbarinnen und Nachbarn,', en: 'Dear neighbours,', role: 'greeting' },
+    { de: 'Dieses Jahr feiern wir wieder …', en: 'This year we are again celebrating …', role: 'phrase' },
+    { de: 'Jeder ist herzlich eingeladen!', en: 'Everyone is warmly invited!', role: 'phrase' },
+    { de: 'Wie jedes Jahr bringt jeder etwas mit.', en: 'As every year, everyone brings something along.', role: 'phrase' },
+    { de: 'Man kann …, aber man muss nicht.', en: 'You can …, but you do not have to.', role: 'phrase' },
+    { de: 'Manche Nachbarn möchten …', en: 'Some neighbours would like to …', role: 'phrase' },
+    { de: 'Wir suchen noch jemanden, der …', en: 'We are still looking for someone who …', role: 'phrase' },
+    { de: 'Hat jemand Zeit?', en: 'Does anyone have time?', role: 'phrase' },
+    { de: 'Bitte sagt uns bis zum … Bescheid.', en: 'Please let us know by the …', role: 'phrase' },
+    { de: 'Wir freuen uns auf euch alle!', en: 'We look forward to seeing you all!', role: 'closing' },
+    { de: 'Herzliche Grüße', en: 'Warm regards', role: 'closing' },
+  ],
+  grammarFocus: ['a2-24-dieser-jeder-welcher', 'a2-25-indefinite-pronouns', 'a2-26-pronoun-order-midfield'],
+  mustUse: [
+    { label: 'a form of dieser, jeder, mancher or alle (dieses Jahr, jeder, manche, allen)', pattern: '\\b(dies(er|e|es|en|em)|jed(er|e|es|en|em)|manch(er|e|es|en|em)|alle(n|r|s)?|welch(er|e|es|en|em))\\b', min: 3 },
+    { label: 'the general pronoun man', pattern: '\\bman\\b', min: 2 },
+    { label: 'an indefinite pronoun: jemand, niemand, etwas, nichts', pattern: '\\b(jemand|jemanden|jemandem|niemand|niemanden|niemandem|etwas|nichts)\\b', min: 2 },
+    { label: 'a date with an ordinal number (am 21. Juni, bis zum 15. Juni)', pattern: '\\b(am|bis zum|ab dem) \\d{1,2}\\.', min: 1 },
+  ],
+  checklist: [
+    'All four points are covered: what, when and where; what everyone brings and can do; who you are looking for; how and when to reply.',
+    'The letter opens with Liebe Nachbarinnen und Nachbarn, and closes with Herzliche Grüße and your names.',
+    'dieser and jeder take the same endings as der / die / das: dieses Jahr, jeder Nachbar, jedes Jahr.',
+    'jeder and man are singular and take a singular verb: jeder bringt, man kann.',
+    'jemand / niemand are used for unknown people, etwas / nichts for things: Wir suchen jemanden, der …; jeder bringt etwas mit.',
+    'Dates use the ordinal with a point: am 21. Juni, bis zum 15. Juni.',
+    'Because you write to several neighbours you know, you use ihr / euch (bitte sagt uns Bescheid, mit euch allen).',
+    'The letter has between 60 and 120 words.',
+  ],
+  model: [
+    'Liebe Nachbarinnen und Nachbarn,',
+    'dieses Jahr feiern wir wieder unser Sommerfest im Hof, und zwar am 21. Juni ab 16 Uhr. Jeder ist herzlich eingeladen, auch Kinder und Freunde!',
+    'Wie jedes Jahr bringt jeder etwas zu essen oder zu trinken mit. Wir stellen Tische, Bänke und einen Grill in den Hof. Man kann also grillen, aber man muss nicht. Wer ein Instrument spielt, soll es bitte mitbringen: Manche Nachbarn möchten gern zusammen Musik machen.',
+    'Wir suchen noch jemanden, der beim Aufbau hilft. Hat jemand ab 14 Uhr Zeit? Bitte sagt uns bis zum 15. Juni Bescheid, ob ihr kommt. Wir freuen uns auf einen schönen Abend mit euch allen!',
+    'Herzliche Grüße',
+    'Familie Roth und Familie Ekwueme, Haus 3',
+  ],
+  modelNotes: [
+    '**dieses Jahr**, **jedes Jahr**, **Jeder ist …**, **jeder bringt**, **Manche Nachbarn**: *dieser / jeder / mancher* take the der-endings (*-es* neuter, *-er* masculine, *-e* plural).',
+    '**Man kann also grillen, aber man muss nicht**: *man* is third person singular and is repeated, never replaced by *er*.',
+    '**jemanden, der beim Aufbau hilft** is Accusative after *suchen*; **Hat jemand Zeit?** is Nominative. **etwas zu essen oder zu trinken** combines *etwas* with a zu-infinitive.',
+    'Dates: **am 21. Juni**, **bis zum 15. Juni**: the ordinal is written with a point and read as *einundzwanzigsten / fünfzehnten*.',
+    'The ihr-forms **sagt uns Bescheid, ob ihr kommt** and **mit euch allen** fit a letter to a group of neighbours; **Wer …, soll es bitte mitbringen** shows the pronoun **es** right after the verb.',
+  ],
+};
+
+export default task;

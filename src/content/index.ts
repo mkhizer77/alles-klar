@@ -1,10 +1,17 @@
-import type { Level, Topic, VocabSet, Word, GlossaryTerm, ReadingText } from './types';
+import type { Level, Topic, VocabSet, Word, GlossaryTerm, ReadingText, WritingTask } from './types';
 import { curriculum } from './curriculum';
 import { glossary } from './glossary';
 
 const topicModules = import.meta.glob<{ default: Topic }>('./grammar/*/*.ts', { eager: true });
 const vocabModules = import.meta.glob<{ default: VocabSet }>('./vocab/*.ts', { eager: true });
 const readingModules = import.meta.glob<{ default: ReadingText }>('./reading/*.ts', { eager: true });
+const writingModules = import.meta.glob<{ default: WritingTask }>('./writing/*.ts', { eager: true });
+
+export const writings: Record<string, WritingTask> = {};
+for (const m of Object.values(writingModules)) writings[m.default.id] = m.default;
+
+export const writingForUnit = (level: Level, unit: number): WritingTask | undefined => writings[`${level.toLowerCase()}-u${unit}-writing`];
+export const writingsForLevel = (level: Level): WritingTask[] => Object.values(writings).filter((w) => w.level === level).sort((a, b) => a.unit - b.unit);
 
 export const readings: Record<string, ReadingText> = {};
 for (const m of Object.values(readingModules)) readings[m.default.id] = m.default;

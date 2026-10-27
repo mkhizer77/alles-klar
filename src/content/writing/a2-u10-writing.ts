@@ -1,0 +1,66 @@
+import type { WritingTask } from '../types';
+
+const task: WritingTask = {
+  id: 'a2-u10-writing',
+  level: 'A2',
+  unit: 10,
+  title: 'Complaint email to a coach company',
+  textType: 'email',
+  register: 'formal',
+  task: 'You travelled by long-distance coach from Munich to Berlin and several things went wrong. Write a complaint email to the company: describe what happened, say what you expect from them and explain why.',
+  points: [
+    'when and with which booking you travelled, and why you are writing',
+    'at least two problems during the trip (delay, Wi-Fi, luggage …) and how you reacted',
+    'what you want from the company (a refund) and what they should change, and why',
+    'what you will do if they do not react',
+  ],
+  minWords: 60,
+  maxWords: 120,
+  usefulPhrases: [
+    { de: 'Sehr geehrte Damen und Herren,', en: 'Dear Sir or Madam,', role: 'greeting' },
+    { de: 'Am … bin ich mit Ihrem … von … nach … gefahren.', en: 'On … I travelled with your … from … to …', role: 'phrase' },
+    { de: 'Die Fahrt war leider eine große Enttäuschung, deshalb …', en: 'The trip was unfortunately a big disappointment, that is why …', role: 'phrase' },
+    { de: 'obwohl …', en: 'although …', role: 'connector' },
+    { de: 'Ich wollte eigentlich …', en: 'Actually I wanted to …', role: 'phrase' },
+    { de: 'Trotzdem …', en: 'Nevertheless …', role: 'connector' },
+    { de: 'Ich bitte Sie deshalb um …', en: 'I therefore ask you for …', role: 'phrase' },
+    { de: 'Bitte prüfen Sie doch …, damit …', en: 'Please do check …, so that …', role: 'phrase' },
+    { de: 'Sie verstehen ja sicher, dass …', en: 'You surely understand that …', role: 'phrase' },
+    { de: 'sonst', en: 'otherwise', role: 'connector' },
+    { de: 'Mit freundlichen Grüßen', en: 'Kind regards', role: 'closing' },
+  ],
+  grammarFocus: ['a2-27-adverbial-connectors', 'a2-28-subjunctions-obwohl-damit', 'a2-29-modal-particles', 'a2-31-reading-writing-email'],
+  mustUse: [
+    { label: 'an adverbial connector (deshalb, trotzdem, sonst, also, dann)', pattern: '\\b(deshalb|deswegen|darum|trotzdem|sonst|also|dann)\\b', min: 2 },
+    { label: 'a subjunction such as obwohl or damit (also bevor, nachdem, bis, seitdem)', pattern: '\\b(obwohl|damit|bevor|nachdem|bis|seitdem)\\b', min: 2 },
+    { label: 'a modal particle (doch, ja, eigentlich, mal)', pattern: '\\b(doch|ja|eigentlich|mal)\\b', min: 2 },
+    { label: 'the formal greeting Sehr geehrte …', pattern: 'sehr geehrte', min: 1 },
+  ],
+  checklist: [
+    'All four points are covered: when and how you travelled and why you write; two problems and your reaction; a refund and what should change; what you will do otherwise.',
+    'The email starts with Sehr geehrte Damen und Herren, and ends with Mit freundlichen Grüßen and your full name.',
+    'After deshalb, trotzdem and dann in position 1 the verb comes immediately (Deshalb schreibe ich …, Trotzdem bin ich …).',
+    'After obwohl, damit and bis the verb goes to the end of the clause (…, obwohl er um 9 Uhr abfahren sollte).',
+    'A modal particle shapes the tone (eigentlich, doch, ja) and never stands in position 1.',
+    'Dates and times are precise: am 3. Oktober, um 9 Uhr, Buchungsnummer …',
+    'The tone stays polite but firm: Ich bitte Sie um …, no insults, Sie / Ihrem capitalised.',
+    'The email has between 60 and 120 words.',
+  ],
+  model: [
+    'Sehr geehrte Damen und Herren,',
+    'am 3. Oktober bin ich mit Ihrem Fernbus von München nach Berlin gefahren (Buchungsnummer 48213). Die Fahrt war leider eine große Enttäuschung, deshalb schreibe ich Ihnen.',
+    'Der Bus fuhr erst um 10 Uhr ab, obwohl er laut Fahrplan um 9 Uhr abfahren sollte. Das WLAN hat während der ganzen Fahrt nicht funktioniert. Ich wollte eigentlich unterwegs arbeiten. Trotzdem bin ich ruhig geblieben, bis wir in Berlin ankamen. Dort war mein Koffer dann nass und schmutzig.',
+    'Ich bitte Sie deshalb um eine Erstattung des Fahrpreises. Bitte prüfen Sie doch Ihre Gepäckräume, damit so etwas anderen Fahrgästen nicht mehr passiert. Sie verstehen ja sicher, dass ich sonst nicht mehr mit Ihnen fahre.',
+    'Mit freundlichen Grüßen',
+    'Tobias Brandt',
+  ],
+  modelNotes: [
+    'Position-1 connectors keep the verb second: **deshalb schreibe ich**, **Trotzdem bin ich ruhig geblieben**, **Dort war mein Koffer dann …**; in **dass ich sonst … fahre** *sonst* sits inside the clause.',
+    'Subjunctions send the verb to the end: **obwohl er … abfahren sollte**, **bis wir in Berlin ankamen**, **damit so etwas … nicht mehr passiert**.',
+    'Modal particles set the tone without being rude: **eigentlich** (what I had planned), **doch** (a friendly push in *prüfen Sie doch*), **ja** (something we both know: *Sie verstehen ja sicher*).',
+    'Compound nouns and -ung nouns typical of this register: **Fernbus, Buchungsnummer, Fahrplan, Gepäckräume, Fahrgästen, Erstattung, Enttäuschung**.',
+    'The complaint follows the standard shape: facts with date and booking number, the problems in order, a clear request (**Ich bitte Sie um …**) and a consequence (**sonst**), all inside the formal frame.',
+  ],
+};
+
+export default task;

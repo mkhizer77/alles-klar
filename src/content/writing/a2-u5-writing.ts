@@ -1,0 +1,68 @@
+import type { WritingTask } from '../types';
+
+const task: WritingTask = {
+  id: 'a2-u5-writing',
+  level: 'A2',
+  unit: 5,
+  title: 'Email to a language school: registering for a course',
+  textType: 'email',
+  register: 'formal',
+  task: 'You want to register for the evening course "Deutsch für den Beruf B1" at the Volkshochschule. Write an email to the course leader, Frau Dr. Lehmann: introduce yourself, explain why you need the course and ask two questions.',
+  points: [
+    'which course you found and that you want to register',
+    'your job and why you need better German',
+    'why you can only come at certain times or why the price is not a problem (wegen / trotz / während)',
+    'two questions about the course',
+  ],
+  minWords: 60,
+  maxWords: 120,
+  usefulPhrases: [
+    { de: 'Sehr geehrte Frau …, / Sehr geehrter Herr …,', en: 'Dear Ms …, / Dear Mr …,', role: 'greeting' },
+    { de: 'Sehr geehrte Damen und Herren,', en: 'Dear Sir or Madam,', role: 'greeting' },
+    { de: 'Ich habe auf der Website der … Ihren Kurs gesehen.', en: 'I saw your course on the website of the …', role: 'phrase' },
+    { de: 'Ich möchte mich für … anmelden.', en: 'I would like to register for …', role: 'phrase' },
+    { de: 'Ich arbeite seit … als … in der Verwaltung eines …', en: 'I have been working since … as … in the administration of a …', role: 'phrase' },
+    { de: 'Wegen meiner Arbeitszeiten …', en: 'Because of my working hours …', role: 'phrase' },
+    { de: 'Trotz des hohen Preises …', en: 'Despite the high price …', role: 'phrase' },
+    { de: 'Während der Arbeit …', en: 'During work …', role: 'phrase' },
+    { de: 'Ich habe noch zwei Fragen: …', en: 'I still have two questions: …', role: 'phrase' },
+    { de: 'am Ende des Kurses', en: 'at the end of the course', role: 'phrase' },
+    { de: 'Über eine Antwort freue ich mich sehr.', en: 'I look forward to your reply.', role: 'closing' },
+    { de: 'Mit freundlichen Grüßen', en: 'Kind regards', role: 'closing' },
+  ],
+  grammarFocus: ['a2-14-genitive', 'a2-15-genitive-prepositions', 'a2-04-subordinate-clauses-weil-dass'],
+  mustUse: [
+    { label: 'a Genitive article (des, eines, meines, ihres …)', pattern: '\\b(des|eines|meines|deines|seines|ihres|unseres|eures)\\b', min: 2 },
+    { label: 'a Genitive preposition: wegen, trotz, während or statt', pattern: '\\b(wegen|trotz|während|statt|anstatt)\\b', min: 2 },
+    { label: 'the formal greeting Sehr geehrte/r …', pattern: 'sehr geehrte', min: 1 },
+    { label: 'the formal closing Mit freundlichen Grüßen', pattern: 'mit freundlichen grüßen', min: 1 },
+  ],
+  checklist: [
+    'All four points are covered: the course and your wish to register, your job and why you need German, a reason with wegen / trotz / während, two questions.',
+    'The email starts with Sehr geehrte Frau …, and ends with Mit freundlichen Grüßen and your full name.',
+    'Masculine and neuter nouns in the Genitive end in -s or -es (des Kurses, eines Unternehmens, des Preises).',
+    'Feminine and plural nouns use der / meiner in the Genitive: die Website der Volkshochschule, wegen meiner Arbeitszeiten.',
+    'wegen, trotz and während are followed by the Genitive (trotz des hohen Preises, während der Arbeit).',
+    'An adjective in the Genitive ends in -en (des hohen Preises, eines kleinen Unternehmens).',
+    'The text is polite and formal: Sie / Ihr capitalised, no slang, no "Hallo".',
+    'The email has between 60 and 120 words.',
+  ],
+  model: [
+    'Sehr geehrte Frau Dr. Lehmann,',
+    'ich habe auf der Website der Volkshochschule Ihren Abendkurs „Deutsch für den Beruf B1“ gesehen und möchte mich dafür anmelden.',
+    'Ich arbeite seit zwei Jahren als Assistent in der Verwaltung eines kleinen Unternehmens in Bonn. Während der Arbeit spreche ich viel Deutsch mit Kunden, aber das Schreiben von E-Mails ist noch schwierig für mich. Wegen meiner Arbeitszeiten kann ich nur abends oder am Wochenende lernen. Trotz des hohen Preises möchte ich den Kurs unbedingt machen, weil er für meine berufliche Zukunft wichtig ist.',
+    'Ich habe noch zwei Fragen: Wie lange dauert der Kurs, und gibt es am Ende des Kurses eine Prüfung?',
+    'Über eine Antwort freue ich mich sehr.',
+    'Mit freundlichen Grüßen',
+    'Yusuf Demir',
+  ],
+  modelNotes: [
+    'Genitive after a noun: **die Website der Volkshochschule** (feminine, *der*), **die Verwaltung eines kleinen Unternehmens** (neuter, *eines … -s*), **am Ende des Kurses** (masculine, *des … -es*).',
+    'Genitive prepositions: **Während der Arbeit**, **Wegen meiner Arbeitszeiten** (plural, *meiner*), **Trotz des hohen Preises** (adjective -en, noun -es).',
+    '**das Schreiben von E-Mails** shows the everyday alternative to the Genitive with **von** + Dative.',
+    'The email keeps the formal frame: **Sehr geehrte Frau Dr. Lehmann**, small **ich** after the comma, **Ihren** capitalised, **Mit freundlichen Grüßen** and the full name.',
+    'The two questions are announced first (**Ich habe noch zwei Fragen:**) and then asked directly, which makes the request easy to answer.',
+  ],
+};
+
+export default task;

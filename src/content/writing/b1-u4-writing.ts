@@ -1,0 +1,61 @@
+import type { WritingTask } from '../types';
+
+const task: WritingTask = {
+  id: 'b1-u4-writing',
+  level: 'B1',
+  unit: 4,
+  title: 'Advice for a friend who wants to get fit',
+  textType: 'message',
+  register: 'informal',
+  task: 'Your friend Tim has written that he feels unfit but has no energy for sport after work. Reply with a message giving your opinion and what you would do in his place.',
+  points: ['show that you understand his situation', 'what you would do in his place (two concrete ideas)', 'a wish or something you yourself find difficult', 'a suggestion to do something together'],
+  minWords: 100,
+  maxWords: 180,
+  usefulPhrases: [
+    { de: 'Hallo …,', en: 'Hi …,', role: 'greeting' },
+    { de: 'Danke für deine Nachricht!', en: 'Thanks for your message!', role: 'phrase' },
+    { de: 'Ich verstehe gut, dass …', en: 'I understand well that …', role: 'phrase' },
+    { de: 'Wenn ich an deiner Stelle wäre, würde ich …', en: 'If I were in your place, I would …', role: 'phrase' },
+    { de: 'Wenn du … würdest, hättest du …', en: 'If you were to …, you would have …', role: 'phrase' },
+    { de: 'Ich wünschte, ich hätte …', en: 'I wish I had …', role: 'phrase' },
+    { de: 'Es wäre schön, wenn …', en: 'It would be nice if …', role: 'phrase' },
+    { de: 'Hättest du Lust, … zu …?', en: 'Would you feel like …?', role: 'phrase' },
+    { de: 'aber / außerdem', en: 'but / besides', role: 'connector' },
+    { de: 'Liebe Grüße', en: 'Best wishes', role: 'closing' },
+  ],
+  grammarFocus: ['b1-09-konjunktiv-2-irreal', 'b1-11-als-ob', 'a2-20-konjunktiv-2-polite', 'a2-04-subordinate-clauses-weil-dass'],
+  mustUse: [
+    { label: 'Konjunktiv II forms (wäre, hätte, könnte, würde …)', pattern: '\\b(wäre|wären|wärst|hätte|hätten|hättest|könnte|könnten|könntest|müsste|müsstest|sollte|solltest|würde|würden|würdest)\\b', min: 4 },
+    { label: 'an irreal wenn-clause with Konjunktiv II (Wenn ich … wäre / Wenn du … würdest)', pattern: '\\bwenn\\b[^.!?]*\\b(wäre|wärst|wären|hätte|hättest|hätten|würde|würdest|würden|könnte|könntest|könnten)\\b', min: 2 },
+    { label: 'a wish (Ich wünschte … / Wenn ich doch/nur …)', pattern: '\\b(ich wünschte|wenn ich (doch|nur|bloß))(?![a-zäöü])', min: 1 },
+    { label: 'the phrase "an deiner Stelle"', pattern: '\\ban (deiner|ihrer|seiner|meiner|eurer) stelle\\b', min: 1 },
+  ],
+  checklist: [
+    'All four points are covered: understanding, two concrete ideas, a wish or your own weakness, a suggestion to do something together.',
+    'The message has a greeting with the name and a closing with your name.',
+    'Irreal conditions use Konjunktiv II in both parts: Wenn ich … wäre, würde ich … (not Wenn ich … bin, werde ich …).',
+    'wäre, hätte and the modal verbs are used directly; other verbs use würde + infinitive.',
+    'In the wenn-clause the conjugated verb (wäre, würdest, hättest) stands at the end.',
+    'The wish uses Ich wünschte, … or Wenn ich doch/nur …!',
+    'The suggestion is a polite Konjunktiv II question (Hättest du Lust …? / Es wäre schön, wenn …).',
+    'The register is informal (du, dein, Liebe Grüße) and the text has between 100 and 180 words.',
+  ],
+  model: [
+    'Hallo Tim,',
+    'danke für deine Nachricht! Ich verstehe gut, dass du nach der Arbeit keine Energie mehr hast. Mir ging es letztes Jahr genauso.',
+    'Wenn ich an deiner Stelle wäre, würde ich nicht gleich mit einem Marathon anfangen. Ich würde lieber dreimal pro Woche eine halbe Stunde spazieren gehen oder mit dem Rad zur Arbeit fahren. Wenn du jeden Tag zehn Minuten früher aufstehen würdest, hättest du Zeit für ein kurzes Training. Und wenn du abends weniger Fast Food essen würdest, würdest du dich bestimmt fitter fühlen.',
+    'Ich wünschte, ich hätte selbst mehr Disziplin! Wenn ich nicht so gern Kuchen essen würde, wäre ich bestimmt fünf Kilo leichter. Aber ohne Spaß hält man nichts durch.',
+    'Hättest du Lust, am Samstag mit mir in den Park zu gehen? Es wäre schön, wenn wir uns gegenseitig motivieren könnten.',
+    'Liebe Grüße',
+    'Lena',
+  ],
+  modelNotes: [
+    '**Wenn ich an deiner Stelle wäre, würde ich …** is the standard frame for advice: Konjunktiv II in the condition and in the result.',
+    '*sein*, *haben* and the modals use their own forms (**wäre, hättest, könnten**), all other verbs use **würde + infinitive** (*aufstehen würdest, essen würde*).',
+    'The wish **Ich wünschte, ich hätte selbst mehr Disziplin!** makes the advice sound friendly rather than preachy.',
+    '**Wenn ich nicht so gern Kuchen essen würde, wäre ich … leichter** is an irreal condition about the present, so no past forms are needed.',
+    'The suggestion is softened with Konjunktiv II: **Hättest du Lust …?** and **Es wäre schön, wenn …**.',
+  ],
+};
+
+export default task;

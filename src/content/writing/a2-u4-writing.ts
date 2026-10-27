@@ -1,0 +1,66 @@
+import type { WritingTask } from '../types';
+
+const task: WritingTask = {
+  id: 'a2-u4-writing',
+  level: 'A2',
+  unit: 4,
+  title: 'Message to a friend: you are ill and have to cancel',
+  textType: 'message',
+  register: 'informal',
+  task: 'You are ill and cannot meet your friend Lena on Saturday as planned. Write her a message to explain what happened, what the doctor said, and what you would like her to do.',
+  points: [
+    'that you have to cancel and what is wrong with you',
+    'what the doctor said',
+    'how you feel about it and one favour you ask of Lena',
+    'when you will get in touch again',
+  ],
+  minWords: 60,
+  maxWords: 120,
+  usefulPhrases: [
+    { de: 'Hallo …,', en: 'Hi …,', role: 'greeting' },
+    { de: 'Leider muss ich … absagen.', en: 'Unfortunately I have to cancel …', role: 'phrase' },
+    { de: 'Ich habe mich erkältet.', en: 'I have caught a cold.', role: 'phrase' },
+    { de: 'Ich fühle mich seit … schlecht.', en: 'I have been feeling bad since …', role: 'phrase' },
+    { de: 'Der Arzt hat gesagt, dass ich mich ausruhen soll.', en: 'The doctor said that I should rest.', role: 'phrase' },
+    { de: 'Ich ärgere mich darüber, denn …', en: 'I am annoyed about it, because …', role: 'phrase' },
+    { de: 'Ich freue mich so auf …!', en: 'I am so looking forward to …!', role: 'phrase' },
+    { de: 'Kannst du bitte …?', en: 'Can you please …?', role: 'phrase' },
+    { de: 'Er wartet bestimmt auf …', en: 'He is surely waiting for …', role: 'phrase' },
+    { de: 'Mach dir keine Sorgen um mich.', en: 'Do not worry about me.', role: 'phrase' },
+    { de: 'Ich melde mich, wenn …', en: 'I will get in touch when …', role: 'phrase' },
+    { de: 'Liebe Grüße', en: 'Love / best wishes', role: 'closing' },
+  ],
+  grammarFocus: ['a2-11-reflexive-verbs', 'a2-12-verbs-with-prepositions', 'a2-13-da-wo-compounds'],
+  mustUse: [
+    { label: 'a reflexive pronoun with a reflexive verb (ich fühle mich, ich habe mich erkältet, mach dir …)', pattern: '\\b(mich|dich|dir|sich|uns|euch)\\b', min: 3 },
+    { label: 'a verb with its fixed preposition (freuen auf, warten auf, denken an, Sorgen um)', pattern: '\\b(freue|freust|freut|warte|wartest|wartet|denke|denkst|denkt|sorgen|kümmere|kümmerst|kümmert|interessiere|interessierst|interessiert)\\b[^.!?]*\\b(auf|an|um|für|von)\\b', min: 2 },
+    { label: 'a da-compound (darüber, darauf, daran)', pattern: '\\b(darauf|daran|darüber|dafür|davon|damit|dazu|darum)\\b', min: 1 },
+  ],
+  checklist: [
+    'All four points are covered: cancellation and symptoms, what the doctor said, your feelings and a favour, when you will be in touch.',
+    'The message has a greeting (Hallo Lena,) and an informal closing (Liebe Grüße) with your name.',
+    'Reflexive verbs have the right pronoun for the subject: ich fühle mich, du machst dir, er ärgert sich.',
+    'The reflexive pronoun comes directly after the conjugated verb (Ich habe mich erkältet), or after the subject in a subordinate clause (…, dass ich mich ausruhen soll).',
+    'Each verb keeps its fixed preposition and case: sich freuen auf + Accusative, warten auf + Accusative, denken an + Accusative, sich Sorgen machen um + Accusative.',
+    'A da-compound refers back to something already mentioned (Ich ärgere mich darüber).',
+    'du, dir and dich are written with a small letter, as in a message to a friend.',
+    'The message has between 60 and 120 words.',
+  ],
+  model: [
+    'Hallo Lena,',
+    'leider muss ich unser Treffen am Samstag absagen. Ich habe mich am Montag erkältet und fühle mich seit drei Tagen ziemlich schlecht. Ich habe Husten und Fieber. Gestern war ich beim Arzt. Er hat mir Medikamente gegeben und gesagt, dass ich mich eine Woche ausruhen soll.',
+    'Ich ärgere mich wirklich darüber, denn ich freue mich schon so lange auf das Konzert! Kannst du bitte mit Tom sprechen? Er wartet bestimmt auf eine Antwort von uns. Vielleicht kann er meine Karte nehmen. Ich denke oft an unseren letzten Ausflug, das war so schön.',
+    'Mach dir keine Sorgen um mich, es geht schon wieder ein bisschen besser. Ich melde mich, wenn ich wieder gesund bin.',
+    'Liebe Grüße',
+    'Nadia',
+  ],
+  modelNotes: [
+    'Reflexive verbs with **mich**: **habe mich erkältet, fühle mich, mich ausruhen, ärgere mich, freue mich, melde mich**; **Mach dir keine Sorgen** uses the Dative reflexive **dir** because *Sorgen* is the Accusative object.',
+    'Verbs with fixed prepositions: **sich freuen auf** + Acc. (*auf das Konzert*), **warten auf** + Acc. (*auf eine Antwort*), **denken an** + Acc. (*an unseren letzten Ausflug*), **sich Sorgen machen um** + Acc. (*um mich*).',
+    '**Ich ärgere mich darüber** uses a da-compound to point back at the whole situation (*über das Absagen*); the reason then follows with **denn**.',
+    'In the subordinate clause **dass ich mich eine Woche ausruhen soll**, the reflexive pronoun stays right after the subject while the verbs go to the end.',
+    'Informal register: **Hallo Lena**, **du / dir** in small letters, **Kannst du bitte …?**, and **Liebe Grüße** to close.',
+  ],
+};
+
+export default task;

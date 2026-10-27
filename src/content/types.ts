@@ -153,6 +153,50 @@ export interface ReadingText {
   questions: Exercise[];
 }
 
+export type WritingTextType = 'email' | 'message' | 'note' | 'post' | 'letter' | 'story' | 'description' | 'opinion';
+export type Register = 'informal' | 'formal' | 'neutral';
+
+export interface UsefulPhrase {
+  de: string;
+  en: string;
+  /** greeting/closing are used for automatic checks on emails, letters and messages */
+  role: 'greeting' | 'closing' | 'connector' | 'phrase';
+}
+
+/** A cheap automatic check: the text must match `pattern` (a RegExp source, case-insensitive) at least `min` times. */
+export interface RequiredPattern {
+  label: string;
+  pattern: string;
+  min: number;
+}
+
+/** A guided writing task for one unit, with a model answer and a self-check list. */
+export interface WritingTask {
+  id: string;
+  level: Level;
+  unit: number;
+  title: string;
+  textType: WritingTextType;
+  register: Register;
+  /** the situation and what to write, in English */
+  task: string;
+  /** 3–4 content points the text must cover, in English */
+  points: string[];
+  minWords: number;
+  maxWords: number;
+  usefulPhrases: UsefulPhrase[];
+  /** topic ids whose grammar the task practises */
+  grammarFocus: string[];
+  /** automatic checks run on the learner's text */
+  mustUse: RequiredPattern[];
+  /** self-check items the learner ticks after comparing with the model, in English */
+  checklist: string[];
+  /** model answer, paragraphs of German */
+  model: string[];
+  /** why the model works, English bullets (markdown inline) */
+  modelNotes: string[];
+}
+
 export interface GlossaryTerm {
   term: string;
   english: string;

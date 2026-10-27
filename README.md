@@ -8,6 +8,7 @@ A self-paced German course from A1 to B1 that runs as a web app and installs on 
 |------|--------------|
 | **Learn** | 100 topics (A1: 36, A2: 32, B1: 32) in units, each with an explanation, examples with speech, how it connects to other rules, edge cases, and 9–12 exercises. |
 | **Reading** | One text per unit (28 in all: profiles, ads, emails, reports, reviews…) with a strategy tip, a glossary, read-aloud, and 6–8 comprehension questions. |
+| **Writing** | A guided task per unit with content points, useful phrases to tap in, autosaved drafts, automatic checks (length, greeting/closing, required structures), a model answer with notes and a self-check list. |
 | **Listening** | "Type what you hear" dictation sets per unit, spoken by the device's German voice, with slow replay and a word-level diff. |
 | **Concepts** | Search any term (Dativ, conjugation, Partizip II …) across all topics plus a 45-term glossary. |
 | **Vocab** | ~1,600 words with articles, plurals, verb forms and example sentences. Daily new words + reviews scheduled by SM-2 or Leitner (your choice). Flashcard, multiple-choice and typing modes. |
@@ -57,6 +58,7 @@ All course content is plain TypeScript data under `src/content/`:
 - `grammar/<level>/<topic-id>.ts` – one file per topic
 - `vocab/<level>-u<unit>-<theme>.ts` – one file per vocabulary theme
 - `reading/<level>-u<unit>-reading.ts` – one reading text per unit
+- `writing/<level>-u<unit>-writing.ts` – one guided writing task per unit
 - `glossary.ts` – grammar terms for the Concepts search
 
 The learning plan is in [docs/CURRICULUM.md](docs/CURRICULUM.md). Authoring rules are in [docs/CONTENT-GUIDE.md](docs/CONTENT-GUIDE.md). Check content with:

@@ -14,13 +14,35 @@ for (const l of curriculum) for (const u of l.units) for (const t of u.topics) {
 
 const walk = (p) => statSync(p).isDirectory() ? readdirSync(p).flatMap((f) => walk(join(p, f))) : p.endsWith('.ts') ? [p] : [];
 const args = process.argv.slice(2);
-const files = (args.length ? args : [join(root, 'src/content/grammar'), join(root, 'src/content/vocab'), join(root, 'src/content/reading')]).flatMap((p) => walk(resolve(p)));
+const files = (args.length ? args : [join(root, 'src/content/grammar'), join(root, 'src/content/vocab'), join(root, 'src/content/reading'), join(root, 'src/content/writing')]).flatMap((p) => walk(resolve(p)));
+
+const LETTER = '[\\wäöüÄÖÜß]';
+// Mirrors germanizePattern in src/lib/writing.ts: \b and \w become umlaut-aware.
+const germanRegex = (pattern, flags = 'gi') => {
+  const boundary = `(?:(?<!${LETTER})(?=${LETTER})|(?<=${LETTER})(?!${LETTER}))`;
+  let out = '', inClass = false;
+  for (let i = 0; i < pattern.length; i++) {
+    const ch = pattern[i];
+    if (ch === '\\' && i + 1 < pattern.length) {
+      const next = pattern[i + 1];
+      if (next === 'w') out += inClass ? '\\wäöüÄÖÜß' : LETTER;
+      else if (next === 'b' && !inClass) out += boundary;
+      else out += ch + next;
+      i++;
+      continue;
+    }
+    if (ch === '[' && !inClass) inClass = true;
+    else if (ch === ']' && inClass) inClass = false;
+    out += ch;
+  }
+  return new RegExp(out, flags);
+};
 
 const errors = [];
 const err = (f, m) => errors.push(`${f.replace(root + '/', '')}: ${m}`);
 const seenExIds = new Set();
 const seenWordIds = new Set();
-let topics = 0, words = 0, readings = 0;
+let topics = 0, words = 0, readings = 0, writings = 0;
 
 function checkExercises(f, ownerId, exercises, min, idInfix) {
   if (exercises.length < min) err(f, `only ${exercises.length} exercises (need ${min}+)`);
@@ -116,11 +138,48 @@ for (const f of files) {
     if (d.paragraphs.length < 2) err(f, 'need at least 2 paragraphs');
     if (!Array.isArray(d.glossary) || d.glossary.length < 4) err(f, 'need at least 4 glossary entries');
     checkExercises(f, d.id, d.questions || [], 6, '-q');
+  } else if (Array.isArray(d.checklist)) {
+    writings++;
+    const m = /^(a1|a2|b1)-u(\d+)-writing$/.exec(d.id || '');
+    if (!m) { err(f, `writing id ${d.id} must look like a1-u3-writing`); continue; }
+    if (!f.endsWith(`/${d.id}.ts`)) err(f, `file name should be ${d.id}.ts`);
+    const lvl = curriculum.find((l) => l.level === d.level);
+    const unit = lvl?.units.find((u) => u.unit === d.unit);
+    if (!lvl || !unit) err(f, `no unit ${d.unit} in level ${d.level}`);
+    if (d.level !== m[1].toUpperCase() || d.unit !== Number(m[2])) err(f, 'id does not match level/unit');
+    if (!d.title || !d.task || !d.textType || !d.register) err(f, 'missing title/task/textType/register');
+    if (!['email', 'message', 'note', 'post', 'letter', 'story', 'description', 'opinion'].includes(d.textType)) err(f, `bad textType ${d.textType}`);
+    if (!['informal', 'formal', 'neutral'].includes(d.register)) err(f, `bad register ${d.register}`);
+    if (!Array.isArray(d.points) || d.points.length < 3 || d.points.length > 4) err(f, 'need 3–4 points');
+    if (!(d.minWords > 0 && d.maxWords > d.minWords)) err(f, 'bad minWords/maxWords');
+    if (!Array.isArray(d.usefulPhrases) || d.usefulPhrases.length < 5) err(f, 'need 5+ usefulPhrases');
+    for (const ph of d.usefulPhrases || []) if (!ph.de || !ph.en || !['greeting', 'closing', 'connector', 'phrase'].includes(ph.role)) err(f, `bad phrase ${JSON.stringify(ph)}`);
+    if (['email', 'letter', 'message'].includes(d.textType)) {
+      if (!(d.usefulPhrases || []).some((p) => p.role === 'greeting')) err(f, 'email/letter/message needs a greeting phrase');
+      if (!(d.usefulPhrases || []).some((p) => p.role === 'closing')) err(f, 'email/letter/message needs a closing phrase');
+    }
+    for (const g of d.grammarFocus || []) if (!allIds.has(g)) err(f, `grammarFocus unknown topic ${g}`);
+    if (!Array.isArray(d.grammarFocus) || !d.grammarFocus.length) err(f, 'need grammarFocus');
+    for (const r of d.mustUse || []) {
+      if (!r.label || !r.pattern || !(r.min >= 1)) err(f, `bad mustUse ${JSON.stringify(r)}`);
+      try { germanRegex(r.pattern, 'i'); } catch (e) { err(f, `mustUse pattern invalid: ${r.pattern}`); }
+    }
+    if (!Array.isArray(d.mustUse) || d.mustUse.length < 1) err(f, 'need at least 1 mustUse pattern');
+    if (!Array.isArray(d.checklist) || d.checklist.length < 5 || d.checklist.length > 10) err(f, 'checklist needs 5–10 items');
+    if (!Array.isArray(d.model) || d.model.length < 1) err(f, 'need model paragraphs');
+    const wc = (d.model || []).join(' ').split(/\s+/).length;
+    if (wc < d.minWords || wc > d.maxWords + 20) err(f, `model has ${wc} words; task asks for ${d.minWords}–${d.maxWords}`);
+    const modelText = (d.model || []).join('\n');
+    for (const r of d.mustUse || []) {
+      const n = (modelText.match(germanRegex(r.pattern)) || []).length;
+      if (n < r.min) err(f, `model answer does not satisfy mustUse "${r.label}" (${n} < ${r.min})`);
+    }
+    if (!Array.isArray(d.modelNotes) || d.modelNotes.length < 3) err(f, 'need 3+ modelNotes');
   } else {
-    err(f, 'default export is neither a Topic, a VocabSet nor a ReadingText');
+    err(f, 'default export is neither a Topic, a VocabSet, a ReadingText nor a WritingTask');
   }
 }
 
-console.log(`${topics} topics, ${words} words, ${readings} reading texts checked in ${files.length} files`);
+console.log(`${topics} topics, ${words} words, ${readings} reading texts, ${writings} writing tasks checked in ${files.length} files`);
 if (errors.length) { console.error(errors.join('\n')); console.error(`\n${errors.length} problem(s)`); process.exit(1); }
 console.log('OK');
