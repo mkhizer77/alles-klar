@@ -13,7 +13,7 @@
     "preview": "vite preview",
     "validate": "node scripts/validate-content.mjs",
     "typecheck": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.server.json --noEmit",
-    "deploy:api": "wrangler deploy",
+    "deploy": "pnpm build && wrangler deploy",
     "test": "node --test server/core/*.test.ts"
   },
   "dependencies": {

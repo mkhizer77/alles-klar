@@ -1,10 +1,19 @@
-name = "alles-klar-api"
+# One Worker serves the built app (static assets) and the API on the same origin.
+name = "alles-klar"
 main = "server/worker.ts"
 compatibility_date = "2025-10-01"
 
+[assets]
+directory = "dist"
+binding = "ASSETS"
+# Unknown paths fall back to index.html so client-side routes work.
+not_found_handling = "single-page-application"
+# Only API paths reach the Worker; everything else is served straight from the asset store.
+run_worker_first = ["/api/*"]
+
 [vars]
-# Comma-separated browser origins allowed to call the API.
-ALLOWED_ORIGINS = "https://mkhizer77.github.io,http://localhost:5173"
+# Extra browser origins allowed to call the API (same-origin needs none). Comma-separated.
+ALLOWED_ORIGINS = "http://localhost:5173"
 PBKDF2_ITERATIONS = "20000"
 
 [[d1_databases]]

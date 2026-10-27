@@ -12,14 +12,16 @@
 
 | Piece | Where | Cost | Why |
 |-------|-------|------|-----|
-| App (static PWA) | **GitHub Pages**, built by GitHub Actions on every push to `main` | free | Static files only; the repo already lives on GitHub. Served at `https://<user>.github.io/alles-klar/`. |
+| App (static PWA) | **Cloudflare Workers static assets** (`[assets]` in `wrangler.toml`), same Worker as the API | free, unlimited static requests | One origin for app and API: no CORS, one deploy command, works offline as a PWA. |
 | API | **Cloudflare Workers** (`server/worker.ts`) | free tier: 100k requests/day | Runs the same Hono app as the dev server. No cold-start sleep, no idle pausing. |
 | Database | **Cloudflare D1** | free tier: 5 GB, 5M reads/day, 100k writes/day | SQLite dialect, so the schema and SQL are identical to local development. |
+| Source + CI | **GitHub** private repo, Actions | free | Lint/validate/test/build on every push; optional auto-deploy. |
 | Local dev / self-host | Node 24 with `node:sqlite` (`server/node.ts`) | – | One process serves API and built app; no external services needed to develop. |
 
 Alternatives considered:
 
-- *Everything on GitHub Pages, no backend.* Would drop accounts and cross-device sync. Kept as a mode instead: "Continue without an account" stores progress only in the browser and can be upgraded to an account later (local data is uploaded).
+- *GitHub Pages for the app.* First choice, but GitHub Pages is not available for **private** repositories on the free GitHub plan (the API returns "Your current plan does not support GitHub Pages for this repository"). The build still supports a base path (`VITE_BASE`) and a cross-origin API (`VITE_API_URL`, Bearer tokens, CORS), so moving the app to Pages later only needs the repo to be public or a paid plan.
+- *Everything static, no backend.* Would drop accounts and cross-device sync. Kept as a mode instead: "Continue without an account" stores progress only in the browser and can be upgraded to an account later (local data is uploaded).
 - *Firebase / Supabase.* Also free, but the free Supabase project pauses after a week of inactivity, and both mean a vendor SDK in the bundle and a fake-email workaround for username-only accounts. Owning a 150-line API was simpler.
 - *Vercel / Netlify functions + Turso.* Works, but three providers instead of two.
 
@@ -74,16 +76,16 @@ One table of progress entries per user: `(user_id, key, value JSON, updated_at)`
 
 ## Deploying
 
-### App (GitHub Pages)
-
-Automatic on push to `main` (`.github/workflows/pages.yml`). Set the repository variable `API_URL` to the Worker URL so the built app talks to it. Until then the site works in device-only mode.
-
-### API (Cloudflare, once)
+One-time setup (free Cloudflare account):
 
 ```bash
 pnpm wrangler login
 pnpm wrangler d1 create alles-klar        # paste the database_id into wrangler.toml
-pnpm wrangler deploy                      # prints https://alles-klar-api.<account>.workers.dev
+pnpm build && pnpm wrangler deploy        # prints https://alles-klar.<account>.workers.dev
 ```
 
-Then in GitHub → Settings → Secrets and variables → Actions: variable `API_URL` = that URL; optionally secrets `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID` and variable `DEPLOY_API=true` so `.github/workflows/deploy-api.yml` redeploys the Worker on changes. Add the Pages origin to `ALLOWED_ORIGINS` in `wrangler.toml` if the GitHub user name differs.
+Open that URL on your phone and "Add to Home Screen". Every later deploy is `pnpm build && pnpm wrangler deploy`.
+
+Optional auto-deploy from GitHub: add the secrets `CLOUDFLARE_API_TOKEN` (Workers + D1 edit permissions) and `CLOUDFLARE_ACCOUNT_ID`, and the repository variable `DEPLOY=true`; `.github/workflows/deploy.yml` then builds and deploys on every push to `main`.
+
+Local check of the production setup without an account: `pnpm build && pnpm wrangler dev` runs the Worker with a local D1 on http://localhost:8787.

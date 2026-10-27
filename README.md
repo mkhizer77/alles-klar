@@ -35,9 +35,9 @@ pnpm test         # API core against an in-memory database
 
 ## Hosting (free)
 
-- **App**: GitHub Pages, deployed by GitHub Actions on every push to `main`.
-- **API + database**: one Cloudflare Worker with a D1 database (free tiers). One-time setup is three commands; see [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md#deploying).
-- Without the API the site still works in "device only" mode; creating an account later uploads what you have done.
+- **App + API + database**: one Cloudflare Worker serving the built app as static assets, the API, and a D1 database, all on free tiers. One-time setup is three commands; see [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md#deploying).
+- GitHub hosts the private repo and runs CI; GitHub Pages was ruled out because it needs a public repo on the free plan.
+- You can also use the app without an account ("device only" mode); creating an account later uploads what you have done.
 
 Install on a phone: open the site in Safari or Chrome and choose "Add to Home Screen". It works offline; progress syncs when you are back online.
 
