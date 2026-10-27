@@ -15,10 +15,16 @@ import VocabSession from './pages/VocabSession';
 import Tests from './pages/Tests';
 import TestRun from './pages/TestRun';
 import SettingsPage from './pages/Settings';
+import Reading from './pages/Reading';
+import Listening from './pages/Listening';
+import { setSpeechRate } from './lib/tts';
 
 function useTheme() {
   const settings = useStoreValue<Partial<Settings>>(keys.settings, DEFAULT_SETTINGS);
   const theme = settings.theme ?? 'system';
+  useEffect(() => {
+    setSpeechRate(settings.speechRate ?? DEFAULT_SETTINGS.speechRate);
+  }, [settings.speechRate]);
   useEffect(() => {
     const mq = window.matchMedia('(prefers-color-scheme: dark)');
     const apply = () => {
@@ -62,6 +68,8 @@ export default function App() {
         <Route path="/learn/:level" element={<Learn />} />
         <Route path="/topic/:id" element={<TopicPage />} />
         <Route path="/practice/:id" element={<Practice />} />
+        <Route path="/reading/:id" element={<Reading />} />
+        <Route path="/listen/:level/:unit" element={<Listening />} />
         <Route path="/concepts" element={<Concepts />} />
         <Route path="/vocab" element={<Vocab />} />
         <Route path="/vocab/session" element={<VocabSession />} />

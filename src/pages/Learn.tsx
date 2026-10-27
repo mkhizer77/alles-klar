@@ -1,9 +1,17 @@
 import { Link, useNavigate, useParams } from 'react-router';
-import { curriculum, topics } from '../content';
+import { curriculum, topics, readingForUnit } from '../content';
+import { listeningAvailable } from '../lib/listening';
+import { store } from '../lib/store';
+import { keys, EMPTY_TOPIC, type TopicProgress } from '../lib/models';
 import type { Level } from '../content/types';
 import { useStoreVersion } from '../lib/store';
 import { levelStats, topicProgress } from '../lib/progress';
 import { Badge, Card, Chip, PageHeader, ProgressBar } from '../components/ui';
+
+function SkillBadge({ p }: { p: TopicProgress }) {
+  if (p.attempts === 0) return <Badge>New</Badge>;
+  return <Badge tone={p.bestScore >= 80 ? 'success' : 'accent'}>{p.bestScore}%</Badge>;
+}
 import { ChevronRight, CheckIcon } from '../components/icons';
 
 export default function Learn() {
@@ -81,6 +89,42 @@ export default function Learn() {
                   </div>
                 );
               })}
+              {(() => {
+                const r = readingForUnit(lvl.level, u.unit);
+                const canListen = listeningAvailable(lvl.level, u.unit) > 0;
+                return (
+                  <div className="grid sm:grid-cols-2 gap-1.5 mt-1">
+                    {r ? (
+                      <Link to={`/reading/${r.id}`} className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-info-soft/60 border border-line hover:border-primary/50">
+                        <span className="text-lg">📖</span>
+                        <div className="flex-1 min-w-0">
+                          <div className="font-medium truncate">Reading: {r.title}</div>
+                          <div className="text-xs text-muted">{r.questions.length} questions</div>
+                        </div>
+                        <SkillBadge p={store.get(keys.reading(r.id), EMPTY_TOPIC)} />
+                        <ChevronRight className="text-muted" size={18} />
+                      </Link>
+                    ) : (
+                      <div className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-surface/60 border border-line opacity-70">
+                        <span className="text-lg">📖</span>
+                        <div className="flex-1 text-sm">Reading text</div>
+                        <Badge>Coming soon</Badge>
+                      </div>
+                    )}
+                    {canListen && (
+                      <Link to={`/listen/${lvl.level}/${u.unit}`} className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-info-soft/60 border border-line hover:border-primary/50">
+                        <span className="text-lg">🎧</span>
+                        <div className="flex-1 min-w-0">
+                          <div className="font-medium truncate">Listening: type what you hear</div>
+                          <div className="text-xs text-muted">10 sentences from this unit</div>
+                        </div>
+                        <SkillBadge p={store.get(keys.listening(lvl.level, u.unit), EMPTY_TOPIC)} />
+                        <ChevronRight className="text-muted" size={18} />
+                      </Link>
+                    )}
+                  </div>
+                );
+              })()}
             </div>
           </section>
         ))}

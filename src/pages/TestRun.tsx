@@ -1,6 +1,8 @@
 import { useMemo, useState } from 'react';
 import { Link, Navigate, useNavigate, useParams } from 'react-router';
-import { topicsForLevel, wordsForLevel, unitOfTopic, topics, levelOf } from '../content';
+import { topicsForLevel, wordsForLevel, unitOfTopic, topics, levelOf, readingsForLevel } from '../content';
+import { buildListeningSet } from '../lib/listening';
+import { Md } from '../lib/markdown';
 import type { Exercise, Level, McExercise } from '../content/types';
 import { ExerciseRunner, ExerciseReport, type ExResult } from '../components/ExerciseRunner';
 import { shuffle } from '../lib/check';
@@ -9,11 +11,12 @@ import { keys, EMPTY_TESTS, type TestAttempt } from '../lib/models';
 import { recordActivity } from '../lib/progress';
 import { todayStr } from '../lib/date';
 import { Button, Card, LevelPill, ProgressBar } from '../components/ui';
-import { TEST_SIZE, VOCAB_SIZE, verdict } from './Tests';
+import { TEST_SIZE, VOCAB_SIZE, READING_SIZE, LISTEN_SIZE, verdict } from './Tests';
 
 interface Built {
   exercises: Exercise[];
-  topicOf: Record<string, string>; // exercise id -> topic id ('vocab' for vocabulary)
+  topicOf: Record<string, string>; // exercise id -> topic id ('vocab' | 'reading' | 'listening' for skills)
+  readingText?: { title: string; paragraphs: string[] };
 }
 
 function buildTest(level: Level): Built {
@@ -51,7 +54,13 @@ function buildTest(level: Level): Built {
       explanation: `${w.article ? `${w.article} ${w.de}` : w.de} = ${w.en}. Example: ${w.example.de}`,
     };
   });
-  return { exercises: [...shuffle(picked), ...vocab], topicOf };
+  const readingTexts = readingsForLevel(level);
+  const readingText = readingTexts.length ? readingTexts[Math.floor(Math.random() * readingTexts.length)] : undefined;
+  const reading = readingText ? shuffle(readingText.questions.filter((q) => q.type === 'mc' || q.type === 'fill')).slice(0, READING_SIZE) : [];
+  for (const q of reading) topicOf[q.id] = 'reading';
+  const listening = buildListeningSet(level, undefined, LISTEN_SIZE);
+  for (const l of listening) topicOf[l.id] = 'listening';
+  return { exercises: [...shuffle(picked), ...vocab, ...reading, ...listening], topicOf, readingText: readingText && { title: readingText.title, paragraphs: readingText.paragraphs } };
 }
 
 export default function TestRun() {
@@ -70,10 +79,20 @@ export default function TestRun() {
     const byTopic: Record<string, [number, number]> = {};
     const byUnit: Record<string, [number, number]> = {};
     let vocab: [number, number] = [0, 0];
+    let reading: [number, number] = [0, 0];
+    let listening: [number, number] = [0, 0];
     for (const r of res) {
       const tid = built.topicOf[r.exercise.id];
       if (tid === 'vocab') {
         vocab = [vocab[0] + (r.correct ? 1 : 0), vocab[1] + 1];
+        continue;
+      }
+      if (tid === 'reading') {
+        reading = [reading[0] + (r.correct ? 1 : 0), reading[1] + 1];
+        continue;
+      }
+      if (tid === 'listening') {
+        listening = [listening[0] + (r.correct ? 1 : 0), listening[1] + 1];
         continue;
       }
       const t = byTopic[tid] || [0, 0];
@@ -93,6 +112,8 @@ export default function TestRun() {
       byUnit,
       byTopic,
       vocab,
+      reading,
+      listening,
     };
     store.update<TestAttempt[]>(keys.tests, EMPTY_TESTS, (list) => [...list, a].slice(-30));
     recordActivity('exercises', res.length);
@@ -107,7 +128,7 @@ export default function TestRun() {
         <LevelPill level={level} />
         <h1 className="mt-3 text-2xl font-bold">{level} level test</h1>
         <p className="text-muted mt-2">
-          {built.exercises.length} questions. No feedback until the end; then you get a report by unit and topic. Take your time, and do not look things up.
+          {built.exercises.length} questions: grammar, vocabulary{built.readingText ? ', a short reading text' : ''} and dictation. No feedback until the end; then you get a report by unit and skill. Take your time, and do not look things up.
         </p>
         <Button size="lg" full className="mt-8" onClick={() => setPhase('run')}>
           Begin
@@ -119,7 +140,18 @@ export default function TestRun() {
     );
   }
 
-  if (phase === 'run') return <ExerciseRunner exercises={built.exercises} feedback="end" onFinish={finish} onExit={() => navigate('/tests')} label={`${level} level test`} />;
+  if (phase === 'run')
+    return (
+      <div>
+        <ExerciseRunner exercises={built.exercises} feedback="end" onFinish={finish} onExit={() => navigate('/tests')} label={`${level} level test`} />
+        {built.readingText && (
+          <details className="mt-8 rounded-2xl border border-line bg-surface p-4">
+            <summary className="cursor-pointer font-semibold">Reading text for the reading questions: {built.readingText.title}</summary>
+            <Md source={built.readingText.paragraphs.join('\n\n')} className="mt-3" />
+          </details>
+        )}
+      </div>
+    );
 
   const a = attempt!;
   const v = verdict(a.percent);
@@ -159,6 +191,24 @@ export default function TestRun() {
               </div>
             );
           })}
+          {(
+            [
+              ['Reading', a.reading],
+              ['Listening', a.listening],
+            ] as const
+          ).map(([label, pair]) =>
+            pair && pair[1] ? (
+              <div key={label}>
+                <div className="flex justify-between text-sm">
+                  <span>{label}</span>
+                  <span className="tabular-nums text-muted">
+                    {pair[0]}/{pair[1]}
+                  </span>
+                </div>
+                <ProgressBar value={(pair[0] / pair[1]) * 100} className="mt-1" color="bg-primary" />
+              </div>
+            ) : null,
+          )}
           <div>
             <div className="flex justify-between text-sm">
               <span>Vocabulary</span>

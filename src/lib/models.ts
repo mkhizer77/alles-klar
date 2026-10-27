@@ -10,6 +10,8 @@ export interface Settings {
   feedback: 'instant' | 'end';
   theme: 'system' | 'light' | 'dark';
   autoSpeak: boolean;
+  /** speech synthesis rate: 0.7 slow, 0.9 normal, 1.05 fast */
+  speechRate: number;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -20,6 +22,7 @@ export const DEFAULT_SETTINGS: Settings = {
   feedback: 'instant',
   theme: 'system',
   autoSpeak: false,
+  speechRate: 0.9,
 };
 
 export interface TopicProgress {
@@ -47,6 +50,8 @@ export interface TestAttempt {
   byUnit: Record<string, [number, number]>;
   byTopic: Record<string, [number, number]>;
   vocab: [number, number];
+  reading?: [number, number];
+  listening?: [number, number];
 }
 export const EMPTY_TESTS: TestAttempt[] = [];
 
@@ -56,4 +61,6 @@ export const keys = {
   word: (id: string) => `word:${id}`,
   activity: 'activity',
   tests: 'tests',
+  reading: (id: string) => `reading:${id}`,
+  listening: (level: string, unit: number) => `listen:${level.toLowerCase()}-u${unit}`,
 };

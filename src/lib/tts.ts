@@ -17,7 +17,16 @@ export function canSpeak() {
   return typeof speechSynthesis !== 'undefined';
 }
 
-export function speak(text: string, rate = 0.9) {
+let defaultRate = 0.9;
+export function setSpeechRate(rate: number) {
+  defaultRate = rate;
+}
+
+export function stopSpeaking() {
+  if (canSpeak()) speechSynthesis.cancel();
+}
+
+export function speak(text: string, rate = defaultRate) {
   if (!canSpeak()) return;
   if (voice === undefined) {
     voice = pickVoice();

@@ -1,0 +1,98 @@
+import type { ReadingText } from '../types';
+
+const text: ReadingText = {
+  id: 'a1-u5-reading',
+  level: 'A1',
+  unit: 5,
+  title: 'Nachricht an Sara: So kommst du zu uns',
+  intro: 'A chat message from Lukas to his cousin Sara, who is visiting Hamburg for the weekend: how to get from the station to his flat, and what the family has planned.',
+  tip: 'Directions are a chain of small steps. Mark each verb of movement (nimmst, gehst, hole … ab) and the place that follows it, and you have the route without translating every word.',
+  paragraphs: [
+    'Hallo Sara! Super, du kommst am Freitag! Oma sagt danke für die Karte, sie gefällt ihr sehr.',
+    'So kommst du zu uns: Vom Hauptbahnhof nimmst du die U-Bahn, die U3, bis Rathaus. Dann gehst du zu Fuß zum Hafen, das dauert zehn Minuten. Unsere Wohnung ist bei der Post, Hausnummer 12. Ich wohne seit einem Jahr hier, mit meinem Bruder Jonas.',
+    'Am Samstag zeige ich dir die Stadt. Mein Onkel Ahmet fährt uns mit dem Auto zum Hafen, er hat am Samstag frei. Am Abend kochen wir zusammen. Meine Mutter macht Lasagne, die schmeckt dir bestimmt. Oma kommt aus Izmir und spricht nicht viel Deutsch, aber sie ist sehr nett.',
+    'Bring bitte eine Jacke mit, es ist kalt. Und bring Jonas ein Buch mit, er hat am Sonntag Geburtstag! Ich hole dich um 17 Uhr vom Bahnhof ab. Bis Freitag! Dein Lukas',
+  ],
+  glossary: [
+    { de: 'die Karte', en: 'card (here: postcard)' },
+    { de: 'gefallen', en: 'to please, to be liked (sie gefällt ihr = she likes it)' },
+    { de: 'der Hauptbahnhof', en: 'main station' },
+    { de: 'zu Fuß', en: 'on foot' },
+    { de: 'der Hafen', en: 'harbour, port' },
+    { de: 'frei haben', en: 'to have the day off' },
+    { de: 'schmecken', en: 'to taste good' },
+    { de: 'abholen', en: 'to pick up, to collect' },
+  ],
+  questions: [
+    {
+      type: 'mc',
+      id: 'a1-u5-reading-q01',
+      prompt: 'Which line does Sara take from the main station?',
+      options: ['The U1', 'The U3', 'The bus'],
+      answer: 1,
+      explanation: '"Vom Hauptbahnhof nimmst du die U-Bahn, die U3, bis Rathaus." vom = von dem: von takes the Dative, der Hauptbahnhof → vom Hauptbahnhof.',
+    },
+    {
+      type: 'mc',
+      id: 'a1-u5-reading-q02',
+      prompt: 'Richtig oder falsch? Lukas wohnt allein.',
+      options: ['Richtig', 'Falsch'],
+      answer: 1,
+      explanation: '"Ich wohne seit einem Jahr hier, mit meinem Bruder Jonas." mit takes the Dative: mein Bruder → mit meinem Bruder. allein = alone.',
+    },
+    {
+      type: 'fill',
+      id: 'a1-u5-reading-q03',
+      prompt: 'Oma sagt danke für die Karte, sie gefällt ___ sehr. (Dative pronoun for Oma)',
+      answer: ['ihr'],
+      explanation: '"sie gefällt ihr sehr" – gefallen takes the Dative: the card (sie) pleases her (ihr). sie → ihr in the Dative, like er → ihm.',
+    },
+    {
+      type: 'mc',
+      id: 'a1-u5-reading-q04',
+      prompt: 'How long has Lukas lived in the flat?',
+      options: ['For a year', 'For a month', 'Since Friday'],
+      answer: 0,
+      explanation: '"Ich wohne seit einem Jahr hier." seit takes the Dative: ein Jahr → seit einem Jahr. seit with the present tense means something started in the past and still goes on.',
+    },
+    {
+      type: 'mc',
+      id: 'a1-u5-reading-q05',
+      prompt: 'Who has a birthday on Sunday?',
+      options: ['Lukas', 'Jonas', 'Sara'],
+      answer: 1,
+      explanation: '"bring Jonas ein Buch mit, er hat am Sonntag Geburtstag!" Jonas is the person who receives (Dative), ein Buch is the thing (Accusative): bring him a book.',
+    },
+    {
+      type: 'mc',
+      id: 'a1-u5-reading-q06',
+      prompt: 'Where and when does Lukas pick Sara up?',
+      options: ['At the station at 17:00', 'At the harbour at 17:00', 'At the station at 7:00'],
+      answer: 0,
+      explanation: '"Ich hole dich um 17 Uhr vom Bahnhof ab." abholen is separable: hole … ab. vom Bahnhof = from the station (von + Dative). 17 Uhr = 5 pm.',
+    },
+    {
+      type: 'match',
+      id: 'a1-u5-reading-q07',
+      prompt: 'Match the family and city words from the message.',
+      pairs: [
+        ['die U-Bahn', 'underground, metro'],
+        ['der Hauptbahnhof', 'main station'],
+        ['der Onkel', 'uncle'],
+        ['die Oma', 'grandma'],
+        ['zu Fuß', 'on foot'],
+      ],
+      explanation: 'Hauptbahnhof = Haupt (main) + Bahnhof (station). Oma is the everyday word for Großmutter, Opa for Großvater.',
+    },
+    {
+      type: 'translate',
+      id: 'a1-u5-reading-q08',
+      prompt: 'Translate, to a friend (du): "I will help you."',
+      answer: ['Ich helfe dir.'],
+      hint: 'helfen takes the Dative; use the present tense',
+      explanation: 'helfen is a Dative verb, so you (du) becomes dir: Ich helfe dir. Compare the text: "zeige ich dir die Stadt", "die schmeckt dir".',
+    },
+  ],
+};
+
+export default text;

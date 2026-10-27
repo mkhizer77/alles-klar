@@ -135,7 +135,7 @@ export function ExerciseReport({ results, onRetryWrong, onDone, doneLabel = 'Don
               <span className={`mt-0.5 shrink-0 ${r.correct ? 'text-success' : 'text-danger'}`}>{r.correct ? <CheckIcon size={18} /> : <XIcon size={18} />}</span>
               <div className="min-w-0 flex-1 text-sm">
                 <div className="font-medium">
-                  {n + 1}. <MdInline source={r.exercise.prompt.replace('___', '____')} />
+                  {n + 1}. {r.exercise.type === 'listen' ? `Dictation: ${r.exercise.text}` : <MdInline source={r.exercise.prompt.replace('___', '____')} />}
                 </div>
                 {!r.correct && (
                   <div className="mt-1 text-muted">

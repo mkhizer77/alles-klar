@@ -1,0 +1,97 @@
+import type { ReadingText } from '../types';
+
+const text: ReadingText = {
+  id: 'a1-u7-reading',
+  level: 'A1',
+  unit: 7,
+  title: 'Chat: Wie war dein Wochenende?',
+  intro: 'A chat message from Mia to her friend Tom on Monday morning: she tells him what she did on Friday, Saturday and Sunday.',
+  tip: 'In the Perfekt the meaning sits at the end of the sentence. Read habe / bin in position 2, then jump to the last word (gesehen, gegangen …) to find out what happened. Use the day names as signposts.',
+  paragraphs: [
+    'Hi Tom! Wie war dein Wochenende? Meins war toll, aber ich bin jetzt sehr müde.',
+    'Am Freitagabend hatte ich keine Lust auf Kochen. Ich habe Pizza bestellt und einen Film gesehen. Am Samstag bin ich früh aufgestanden. Ich habe mit Paula ein Konzert im Park besucht. Die Band war super, wir haben getanzt und viel gelacht. Danach sind wir noch in eine Bar gegangen. Um zwei Uhr bin ich nach Hause gekommen.',
+    'Am Sonntag hatte ich Kopfschmerzen. Ich habe lange geschlafen und dann habe ich meine Oma angerufen. Am Nachmittag habe ich die Wohnung geputzt und für Montag gelernt. Am Abend habe ich noch ein Buch gelesen.',
+    'Und du? Hast du Fußball gespielt? Hat dein Team gewonnen? Schreib mir! Liebe Grüße, Mia',
+  ],
+  glossary: [
+    { de: 'meins', en: 'mine (short for mein Wochenende)' },
+    { de: 'Lust haben auf', en: 'to feel like (doing something)' },
+    { de: 'bestellen', en: 'to order (food)' },
+    { de: 'besuchen', en: 'to visit, to go to (a concert)' },
+    { de: 'danach', en: 'afterwards' },
+    { de: 'die Kopfschmerzen', en: 'headache' },
+    { de: 'putzen', en: 'to clean' },
+    { de: 'gewinnen', en: 'to win' },
+  ],
+  questions: [
+    {
+      type: 'mc',
+      id: 'a1-u7-reading-q01',
+      prompt: 'What did Mia do on Friday evening?',
+      options: ['She cooked dinner', 'She ordered pizza and watched a film', 'She went to a concert'],
+      answer: 1,
+      explanation: '"Ich habe Pizza bestellt und einen Film gesehen." bestellt and gesehen are Partizip II forms at the end; habe is in position 2. She had keine Lust auf Kochen, so no cooking.',
+    },
+    {
+      type: 'mc',
+      id: 'a1-u7-reading-q02',
+      prompt: 'Richtig oder falsch? Mia ist am Samstag früh aufgestanden.',
+      options: ['Richtig', 'Falsch'],
+      answer: 0,
+      explanation: '"Am Samstag bin ich früh aufgestanden." aufstehen takes sein in the Perfekt. Separable verbs put ge in the middle: auf-ge-standen.',
+    },
+    {
+      type: 'mc',
+      id: 'a1-u7-reading-q03',
+      prompt: 'When did Mia come home on Saturday night?',
+      options: ['At 12', 'At 2', 'At 10'],
+      answer: 1,
+      explanation: '"Um zwei Uhr bin ich nach Hause gekommen." kommen takes sein (movement). nach Hause = (to) home.',
+    },
+    {
+      type: 'fill',
+      id: 'a1-u7-reading-q04',
+      prompt: 'Die Band ___ super. (sein, past)',
+      answer: ['war'],
+      explanation: '"Die Band war super" – for sein, German uses war / waren instead of the Perfekt: ich war, du warst, er war, wir waren.',
+    },
+    {
+      type: 'mc',
+      id: 'a1-u7-reading-q05',
+      prompt: 'Why did Mia sleep for a long time on Sunday?',
+      options: ['She had a headache', 'She had to work', 'She was at Paula\'s place'],
+      answer: 0,
+      explanation: '"Am Sonntag hatte ich Kopfschmerzen. Ich habe lange geschlafen" – hatte is the past of haben (ich hatte, du hattest). Kopfschmerzen = Kopf (head) + Schmerzen (pains).',
+    },
+    {
+      type: 'fill',
+      id: 'a1-u7-reading-q06',
+      prompt: 'Dann habe ich meine Oma ___. (anrufen, Partizip II)',
+      answer: ['angerufen'],
+      explanation: '"dann habe ich meine Oma angerufen" – anrufen is separable and irregular: an + ge + rufen = angerufen. The participle is the last word.',
+    },
+    {
+      type: 'mc',
+      id: 'a1-u7-reading-q07',
+      prompt: 'Which of these did Mia NOT do on Sunday?',
+      options: ['Clean the flat', 'Study for Monday', 'Play football'],
+      answer: 2,
+      explanation: 'On Sunday she "die Wohnung geputzt und für Montag gelernt" and "ein Buch gelesen". Football is a question to Tom: "Hast du Fußball gespielt?"',
+    },
+    {
+      type: 'match',
+      id: 'a1-u7-reading-q08',
+      prompt: 'Match each Partizip II from the text with its infinitive.',
+      pairs: [
+        ['gesehen', 'sehen'],
+        ['gegangen', 'gehen'],
+        ['geschlafen', 'schlafen'],
+        ['gelacht', 'lachen'],
+        ['angerufen', 'anrufen'],
+      ],
+      explanation: 'gelacht is regular (ge + stem + t). gesehen, gegangen, geschlafen are irregular (ge + changed stem + en). angerufen is separable: the ge goes after the prefix.',
+    },
+  ],
+};
+
+export default text;

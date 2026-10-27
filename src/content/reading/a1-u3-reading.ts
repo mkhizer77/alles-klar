@@ -1,0 +1,98 @@
+import type { ReadingText } from '../types';
+
+const text: ReadingText = {
+  id: 'a1-u3-reading',
+  level: 'A1',
+  unit: 3,
+  title: 'Mein Montag: Blog von Nadia',
+  intro: 'A blog post from a nurse in Bremen who describes her Monday from the alarm clock to bedtime and asks readers about their own routine.',
+  tip: 'Separable verbs split in two: Ich stehe um 5.30 Uhr auf. When a sentence seems to make no sense, look at its last word. It is often the missing prefix (auf, an, ein, los, fern).',
+  paragraphs: [
+    'Hallo, ich bin Nadia und ich bin Krankenschwester in Bremen. Mein Montag fängt früh an. Ich stehe um 5.30 Uhr auf, dusche und trinke schnell Kaffee. Um 6.15 Uhr fahre ich los. Die Arbeit beginnt um 7 Uhr.',
+    'Ich arbeite acht Stunden. Ich muss viel laufen und viel sprechen, aber ich mache das gern. Um 12 Uhr esse ich. Mein Kollege Tim isst immer Pizza, ich esse lieber Salat. Um 15.30 Uhr habe ich Feierabend.',
+    'Am Nachmittag kaufe ich ein und rufe meine Mutter an. Dann schlafe ich eine Stunde. Das ist mein Geheimnis!',
+    'Am Abend habe ich Zeit für Hobbys. Ich lese gern, aber am liebsten spiele ich Gitarre. Ich kann drei Lieder, mein Freund Jonas kann zwanzig. Wir sehen nicht viel fern. Um 22 Uhr bin ich müde und gehe schlafen. Morgen stehe ich wieder um 5.30 Uhr auf. Und du? Wann stehst du auf? Schreib mir!',
+  ],
+  glossary: [
+    { de: 'die Krankenschwester', en: 'nurse (female)' },
+    { de: 'anfangen', en: 'to start, to begin' },
+    { de: 'losfahren', en: 'to set off, to leave' },
+    { de: 'der Kollege', en: 'colleague' },
+    { de: 'der Feierabend', en: 'end of the working day' },
+    { de: 'das Geheimnis', en: 'secret' },
+    { de: 'das Lied', en: 'song' },
+    { de: 'müde', en: 'tired' },
+  ],
+  questions: [
+    {
+      type: 'mc',
+      id: 'a1-u3-reading-q01',
+      prompt: 'When does Nadia get up on Mondays?',
+      options: ['At 5.30', 'At 6.15', 'At 7.00'],
+      answer: 0,
+      explanation: '"Ich stehe um 5.30 Uhr auf." aufstehen is separable: stehe is in position 2, auf goes to the end. 6.15 is when she leaves (fahre … los), 7 Uhr is when work begins.',
+    },
+    {
+      type: 'mc',
+      id: 'a1-u3-reading-q02',
+      prompt: 'Richtig oder falsch? Nadia isst um 12 Uhr Pizza.',
+      options: ['Richtig', 'Falsch'],
+      answer: 1,
+      explanation: '"Mein Kollege Tim isst immer Pizza, ich esse lieber Salat." Tim eats pizza; Nadia prefers (lieber) salad. Note the stem change: ich esse, er isst.',
+    },
+    {
+      type: 'fill',
+      id: 'a1-u3-reading-q03',
+      prompt: 'Mein Montag ___ früh an. (anfangen)',
+      answer: ['fängt'],
+      explanation: '"Mein Montag fängt früh an." anfangen is separable and stem-changing: a → ä in the du and er/sie/es forms (er fängt … an).',
+    },
+    {
+      type: 'mc',
+      id: 'a1-u3-reading-q04',
+      prompt: 'What does Nadia like doing best in the evening?',
+      options: ['Reading', 'Playing the guitar', 'Watching TV'],
+      answer: 1,
+      explanation: '"Ich lese gern, aber am liebsten spiele ich Gitarre." gern = like to, lieber = prefer, am liebsten = like best. She reads gern, but the guitar wins.',
+    },
+    {
+      type: 'mc',
+      id: 'a1-u3-reading-q05',
+      prompt: 'What does Feierabend mean in the text?',
+      options: ['A party in the evening', 'The end of the working day', 'A day off'],
+      answer: 1,
+      explanation: '"Um 15.30 Uhr habe ich Feierabend." Feierabend is the moment work ends; Germans say Schönen Feierabend! to colleagues who are leaving. It is not a party, even though feiern means to celebrate.',
+    },
+    {
+      type: 'mc',
+      id: 'a1-u3-reading-q06',
+      prompt: 'Richtig oder falsch? Jonas kann zwanzig Lieder.',
+      options: ['Richtig', 'Falsch'],
+      answer: 0,
+      explanation: '"Ich kann drei Lieder, mein Freund Jonas kann zwanzig." kann here means knows how to play. The modal verb can stand alone when the main verb (spielen) is obvious.',
+    },
+    {
+      type: 'match',
+      id: 'a1-u3-reading-q07',
+      prompt: 'Match the separable verbs from the text.',
+      pairs: [
+        ['aufstehen', 'to get up'],
+        ['einkaufen', 'to shop'],
+        ['anrufen', 'to phone'],
+        ['fernsehen', 'to watch TV'],
+        ['losfahren', 'to set off'],
+      ],
+      explanation: 'All five appear split in the text: stehe … auf, kaufe … ein, rufe … an, sehen … fern, fahre … los. The prefix carries the meaning, the verb carries the ending.',
+    },
+    {
+      type: 'translate',
+      id: 'a1-u3-reading-q08',
+      prompt: 'Translate, like Nadia would say it: "I get up at 6 o\'clock."',
+      answer: ['Ich stehe um 6 Uhr auf.', 'Ich stehe um sechs Uhr auf.', 'Um 6 Uhr stehe ich auf.', 'Um sechs Uhr stehe ich auf.'],
+      hint: 'aufstehen (separable), um … Uhr',
+      explanation: 'Pattern from the text: "Ich stehe um 5.30 Uhr auf." The prefix auf goes to the very end, even after the time.',
+    },
+  ],
+};
+
+export default text;

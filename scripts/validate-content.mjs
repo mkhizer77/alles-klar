@@ -14,13 +14,55 @@ for (const l of curriculum) for (const u of l.units) for (const t of u.topics) {
 
 const walk = (p) => statSync(p).isDirectory() ? readdirSync(p).flatMap((f) => walk(join(p, f))) : p.endsWith('.ts') ? [p] : [];
 const args = process.argv.slice(2);
-const files = (args.length ? args : [join(root, 'src/content/grammar'), join(root, 'src/content/vocab')]).flatMap((p) => walk(resolve(p)));
+const files = (args.length ? args : [join(root, 'src/content/grammar'), join(root, 'src/content/vocab'), join(root, 'src/content/reading')]).flatMap((p) => walk(resolve(p)));
 
 const errors = [];
 const err = (f, m) => errors.push(`${f.replace(root + '/', '')}: ${m}`);
 const seenExIds = new Set();
 const seenWordIds = new Set();
-let topics = 0, words = 0;
+let topics = 0, words = 0, readings = 0;
+
+function checkExercises(f, ownerId, exercises, min, idInfix) {
+  if (exercises.length < min) err(f, `only ${exercises.length} exercises (need ${min}+)`);
+  for (const ex of exercises) {
+    if (!ex.id?.startsWith(ownerId + idInfix)) err(f, `exercise id ${ex.id} should start with ${ownerId}${idInfix}`);
+    if (seenExIds.has(ex.id)) err(f, `duplicate exercise id ${ex.id}`); seenExIds.add(ex.id);
+    if (!ex.explanation) err(f, `${ex.id}: missing explanation`);
+    if (ex.type !== 'listen' && !ex.prompt) err(f, `${ex.id}: missing prompt`);
+    switch (ex.type) {
+      case 'mc':
+        if (!Array.isArray(ex.options) || ex.options.length < 2 || ex.options.length > 5) err(f, `${ex.id}: mc needs 2–5 options`);
+        if (new Set(ex.options).size !== ex.options?.length) err(f, `${ex.id}: duplicate options`);
+        if (!Number.isInteger(ex.answer) || ex.answer < 0 || ex.answer >= (ex.options?.length ?? 0)) err(f, `${ex.id}: answer index out of range`);
+        break;
+      case 'fill':
+        if ((ex.prompt.match(/___/g) || []).length !== 1) err(f, `${ex.id}: fill prompt needs exactly one ___`);
+        if (!Array.isArray(ex.answer) || !ex.answer.length || ex.answer.some((a) => typeof a !== 'string' || !a.trim())) err(f, `${ex.id}: answer must be non-empty string[]`);
+        break;
+      case 'order': {
+        if (!Array.isArray(ex.words) || ex.words.length < 3) err(f, `${ex.id}: order needs 3+ words`);
+        if (!Array.isArray(ex.answer) || !ex.answer.length) err(f, `${ex.id}: answer must be string[]`);
+        const key = (ws) => ws.map((w) => w.toLowerCase()).sort().join('\u0001');
+        for (const a of ex.answer || []) if (key(a.split(' ')) !== key(ex.words || [])) err(f, `${ex.id}: answer "${a}" does not use exactly the given words`);
+        if (ex.answer?.[0] && ex.words?.join(' ') === ex.answer[0]) err(f, `${ex.id}: words are not scrambled`);
+        break;
+      }
+      case 'match':
+        if (!Array.isArray(ex.pairs) || ex.pairs.length < 3 || ex.pairs.length > 6) err(f, `${ex.id}: match needs 3–6 pairs`);
+        if (new Set((ex.pairs || []).map((p) => p[0])).size !== ex.pairs?.length) err(f, `${ex.id}: duplicate left items`);
+        if (new Set((ex.pairs || []).map((p) => p[1])).size !== ex.pairs?.length) err(f, `${ex.id}: duplicate right items`);
+        break;
+      case 'translate':
+        if (!Array.isArray(ex.answer) || !ex.answer.length) err(f, `${ex.id}: answer must be string[]`);
+        break;
+      case 'listen':
+        if (!ex.text || !ex.translation) err(f, `${ex.id}: listen needs text and translation`);
+        break;
+      default:
+        err(f, `${ex.id}: unknown type ${ex.type}`);
+    }
+  }
+}
 
 for (const f of files) {
   let mod;
@@ -43,42 +85,7 @@ for (const f of files) {
     if (!Array.isArray(d.edgeCases) || d.edgeCases.length < 2) err(f, 'need at least 2 edge cases');
     if (!Array.isArray(d.connections) || d.connections.length < 1) err(f, 'need at least 1 connection');
     for (const cn of d.connections || []) { if (!allIds.has(cn.topicId)) err(f, `connection to unknown topic ${cn.topicId}`); if (cn.topicId === d.id) err(f, 'connection to itself'); }
-    if (d.exercises.length < 8) err(f, `only ${d.exercises.length} exercises (need 8+)`);
-    for (const ex of d.exercises) {
-      if (!ex.id?.startsWith(d.id + '-ex')) err(f, `exercise id ${ex.id} should start with ${d.id}-ex`);
-      if (seenExIds.has(ex.id)) err(f, `duplicate exercise id ${ex.id}`); seenExIds.add(ex.id);
-      if (!ex.explanation) err(f, `${ex.id}: missing explanation`);
-      if (!ex.prompt) err(f, `${ex.id}: missing prompt`);
-      switch (ex.type) {
-        case 'mc':
-          if (!Array.isArray(ex.options) || ex.options.length < 2 || ex.options.length > 5) err(f, `${ex.id}: mc needs 2–5 options`);
-          if (new Set(ex.options).size !== ex.options?.length) err(f, `${ex.id}: duplicate options`);
-          if (!Number.isInteger(ex.answer) || ex.answer < 0 || ex.answer >= (ex.options?.length ?? 0)) err(f, `${ex.id}: answer index out of range`);
-          break;
-        case 'fill':
-          if ((ex.prompt.match(/___/g) || []).length !== 1) err(f, `${ex.id}: fill prompt needs exactly one ___`);
-          if (!Array.isArray(ex.answer) || !ex.answer.length || ex.answer.some((a) => typeof a !== 'string' || !a.trim())) err(f, `${ex.id}: answer must be non-empty string[]`);
-          break;
-        case 'order': {
-          if (!Array.isArray(ex.words) || ex.words.length < 3) err(f, `${ex.id}: order needs 3+ words`);
-          if (!Array.isArray(ex.answer) || !ex.answer.length) err(f, `${ex.id}: answer must be string[]`);
-          const key = (ws) => ws.map((w) => w.toLowerCase()).sort().join('\u0001');
-          for (const a of ex.answer || []) if (key(a.split(' ')) !== key(ex.words || [])) err(f, `${ex.id}: answer "${a}" does not use exactly the given words`);
-          if (ex.answer?.[0] && ex.words?.join(' ') === ex.answer[0]) err(f, `${ex.id}: words are not scrambled`);
-          break;
-        }
-        case 'match':
-          if (!Array.isArray(ex.pairs) || ex.pairs.length < 3 || ex.pairs.length > 6) err(f, `${ex.id}: match needs 3–6 pairs`);
-          if (new Set((ex.pairs || []).map((p) => p[0])).size !== ex.pairs?.length) err(f, `${ex.id}: duplicate left items`);
-          if (new Set((ex.pairs || []).map((p) => p[1])).size !== ex.pairs?.length) err(f, `${ex.id}: duplicate right items`);
-          break;
-        case 'translate':
-          if (!Array.isArray(ex.answer) || !ex.answer.length) err(f, `${ex.id}: answer must be string[]`);
-          break;
-        default:
-          err(f, `${ex.id}: unknown type ${ex.type}`);
-      }
-    }
+    checkExercises(f, d.id, d.exercises, 8, '-ex');
   } else if (Array.isArray(d.words)) {
     if (!f.endsWith(`/${d.id}.ts`)) err(f, `file name should be ${d.id}.ts`);
     if (!d.theme || !d.level || !d.unit) err(f, 'set missing theme/level/unit');
@@ -93,11 +100,27 @@ for (const f of files) {
       if (w.pos === 'noun' && w.de && w.de[0] !== w.de[0].toUpperCase()) err(f, `${w.id}: noun should be capitalised`);
       if (w.pos === 'verb' && !(w.forms?.er && w.forms?.prat && w.forms?.perfekt)) err(f, `${w.id}: verb needs forms {er, prat, perfekt}`);
     }
+  } else if (Array.isArray(d.paragraphs)) {
+    readings++;
+    const m = /^(a1|a2|b1)-u(\d+)-reading$/.exec(d.id || '');
+    if (!m) { err(f, `reading id ${d.id} must look like a1-u3-reading`); continue; }
+    if (!f.endsWith(`/${d.id}.ts`)) err(f, `file name should be ${d.id}.ts`);
+    const lvl = curriculum.find((l) => l.level === d.level);
+    const unit = lvl?.units.find((u) => u.unit === d.unit);
+    if (!lvl || !unit) err(f, `no unit ${d.unit} in level ${d.level}`);
+    if (d.level !== m[1].toUpperCase() || d.unit !== Number(m[2])) err(f, 'id does not match level/unit');
+    if (!d.title || !d.intro || !d.tip) err(f, 'missing title/intro/tip');
+    const wc = d.paragraphs.join(' ').split(/\s+/).length;
+    const [lo, hi] = d.level === 'A1' ? [70, 170] : d.level === 'A2' ? [130, 260] : [200, 360];
+    if (wc < lo || wc > hi) err(f, `text has ${wc} words; ${d.level} texts should have ${lo}–${hi}`);
+    if (d.paragraphs.length < 2) err(f, 'need at least 2 paragraphs');
+    if (!Array.isArray(d.glossary) || d.glossary.length < 4) err(f, 'need at least 4 glossary entries');
+    checkExercises(f, d.id, d.questions || [], 6, '-q');
   } else {
-    err(f, 'default export is neither a Topic nor a VocabSet');
+    err(f, 'default export is neither a Topic, a VocabSet nor a ReadingText');
   }
 }
 
-console.log(`${topics} topics, ${words} words checked in ${files.length} files`);
+console.log(`${topics} topics, ${words} words, ${readings} reading texts checked in ${files.length} files`);
 if (errors.length) { console.error(errors.join('\n')); console.error(`\n${errors.length} problem(s)`); process.exit(1); }
 console.log('OK');

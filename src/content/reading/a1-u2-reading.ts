@@ -1,0 +1,98 @@
+import type { ReadingText } from '../types';
+
+const text: ReadingText = {
+  id: 'a1-u2-reading',
+  level: 'A1',
+  unit: 2,
+  title: 'Zu vermieten: 3-Zimmer-Wohnung in Leipzig',
+  intro: 'A flat advert from an online housing portal: a landlady lists the rooms, what is in them and what is missing.',
+  tip: 'Adverts are lists, not stories. Use the room names (Wohnzimmer, Küche, Bad …) as headings and read what comes after each one. Watch for kein and nicht: they tell you what the flat does not have.',
+  paragraphs: [
+    'Zu vermieten: 3-Zimmer-Wohnung in Leipzig, Südvorstadt. Die Wohnung ist hell und ruhig. Sie hat drei Zimmer, eine Küche und ein Bad. Es gibt auch einen Balkon. Miete: 780 Euro pro Monat.',
+    'Die Zimmer: Das Wohnzimmer ist groß, 24 Quadratmeter. Das Schlafzimmer ist klein, aber die Wände sind blau und das Fenster ist groß. Das Arbeitszimmer hat einen Schreibtisch, einen Stuhl und ein Regal. Die Küche ist weiß und neu: Es gibt einen Herd, einen Kühlschrank und eine Spülmaschine. Eine Waschmaschine gibt es nicht.',
+    'Das Bad hat eine Dusche, aber keine Badewanne. Die Wohnung ist nicht möbliert. Keine Haustiere! Das Haus hat keinen Aufzug: Die Wohnung ist oben, 3. Stock.',
+    'Die Lage ist super: Es gibt einen Supermarkt, eine Bäckerei und ein Café. Die Straßenbahn ist auch da. Frei ab 1. Dezember. Interesse? Telefon: 0341 22 87 65, Frau Hoffmann.',
+  ],
+  glossary: [
+    { de: 'zu vermieten', en: 'to let, for rent' },
+    { de: 'die Miete', en: 'rent' },
+    { de: 'der Quadratmeter', en: 'square metre' },
+    { de: 'die Spülmaschine', en: 'dishwasher' },
+    { de: 'möbliert', en: 'furnished' },
+    { de: 'das Haustier', en: 'pet' },
+    { de: 'der Aufzug', en: 'lift, elevator' },
+    { de: 'der Stock', en: 'floor, storey' },
+    { de: 'die Lage', en: 'location' },
+  ],
+  questions: [
+    {
+      type: 'mc',
+      id: 'a1-u2-reading-q01',
+      prompt: 'How many rooms does the flat have, not counting the kitchen and the bathroom?',
+      options: ['Two', 'Three', 'Four'],
+      answer: 1,
+      explanation: '"Sie hat drei Zimmer, eine Küche und ein Bad." drei = three. In German flat adverts, Zimmer counts the rooms without kitchen and bathroom, so 3-Zimmer-Wohnung means three rooms plus Küche and Bad.',
+    },
+    {
+      type: 'mc',
+      id: 'a1-u2-reading-q02',
+      prompt: 'Richtig oder falsch? Die Wohnung hat eine Waschmaschine.',
+      options: ['Richtig', 'Falsch'],
+      answer: 1,
+      explanation: '"Eine Waschmaschine gibt es nicht." The noun comes first and nicht at the end: this is the same as Es gibt keine Waschmaschine. There is a Spülmaschine (dishwasher), but no washing machine.',
+    },
+    {
+      type: 'fill',
+      id: 'a1-u2-reading-q03',
+      prompt: 'Das Schlafzimmer: Die Wände sind ___. (colour, as in the text)',
+      answer: ['blau'],
+      explanation: '"die Wände sind blau" – die Wand, plural die Wände (with umlaut). Colours after sein have no ending: blau, weiß, neu.',
+    },
+    {
+      type: 'mc',
+      id: 'a1-u2-reading-q04',
+      prompt: 'What is in the bathroom?',
+      options: ['A shower, but no bathtub', 'A bathtub, but no shower', 'A shower and a bathtub'],
+      answer: 0,
+      explanation: '"Das Bad hat eine Dusche, aber keine Badewanne." kein / keine negates a noun: eine Badewanne → keine Badewanne (no bathtub).',
+    },
+    {
+      type: 'mc',
+      id: 'a1-u2-reading-q05',
+      prompt: 'How much is the rent?',
+      options: ['780 Euro per month', '870 Euro per month', '780 Euro per week'],
+      answer: 0,
+      explanation: '"Miete: 780 Euro pro Monat." pro Monat = per month. 780 = siebenhundertachtzig.',
+    },
+    {
+      type: 'mc',
+      id: 'a1-u2-reading-q06',
+      prompt: 'Richtig oder falsch? Das Haus hat einen Aufzug.',
+      options: ['Richtig', 'Falsch'],
+      answer: 1,
+      explanation: '"Das Haus hat keinen Aufzug: Die Wohnung ist oben, 3. Stock." keinen = no (masculine, after haben). You walk up to the third floor.',
+    },
+    {
+      type: 'match',
+      id: 'a1-u2-reading-q07',
+      prompt: 'Match the rooms and things from the advert.',
+      pairs: [
+        ['das Wohnzimmer', 'living room'],
+        ['das Schlafzimmer', 'bedroom'],
+        ['die Küche', 'kitchen'],
+        ['der Kühlschrank', 'fridge'],
+        ['der Herd', 'cooker, stove'],
+      ],
+      explanation: 'Zimmer = room, so Wohnzimmer (wohnen = to live) and Schlafzimmer (schlafen = to sleep) are easy to guess from their parts. Küche, Kühlschrank and Herd are the three kitchen words you need.',
+    },
+    {
+      type: 'fill',
+      id: 'a1-u2-reading-q08',
+      prompt: 'Es gibt auch einen ___. (the outdoor space in the advert)',
+      answer: ['Balkon'],
+      explanation: '"Es gibt auch einen Balkon." der Balkon is masculine, so after es gibt it becomes einen Balkon. Es gibt = there is / there are.',
+    },
+  ],
+};
+
+export default text;

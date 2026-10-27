@@ -1,11 +1,13 @@
 import { Link } from 'react-router';
-import { curriculum, topicsForLevel, wordsForLevel } from '../content';
+import { curriculum, topicsForLevel, wordsForLevel, readingsForLevel } from '../content';
 import { store, useStoreVersion } from '../lib/store';
 import { keys, EMPTY_TESTS, type TestAttempt } from '../lib/models';
 import { Card, LinkButton, LevelPill, PageHeader } from '../components/ui';
 
 export const TEST_SIZE = { A1: 30, A2: 30, B1: 40 } as const;
 export const VOCAB_SIZE = 20;
+export const READING_SIZE = 5;
+export const LISTEN_SIZE = 5;
 
 export function verdict(pct: number) {
   if (pct >= 80) return { label: 'Solid', tone: 'text-success', text: 'You are ready for the next level.' };
@@ -34,7 +36,7 @@ export default function Tests() {
                 <h2 className="font-bold text-lg">{l.name}</h2>
               </div>
               <p className="text-sm text-muted mt-1">
-                {Math.min(TEST_SIZE[l.level], nTopics * 2)} grammar questions from {nTopics} topics · {Math.min(VOCAB_SIZE, nWords)} vocabulary questions · about {Math.round((Math.min(TEST_SIZE[l.level], nTopics * 2) + VOCAB_SIZE) * 0.6)} min
+                {Math.min(TEST_SIZE[l.level], nTopics * 2)} grammar · {Math.min(VOCAB_SIZE, nWords)} vocabulary · {readingsForLevel(l.level).length ? `${READING_SIZE} reading · ` : ''}{LISTEN_SIZE} listening · about {Math.round((Math.min(TEST_SIZE[l.level], nTopics * 2) + VOCAB_SIZE + READING_SIZE + LISTEN_SIZE) * 0.6)} min
               </p>
               {last ? (
                 <div className="mt-3 flex items-center gap-4 text-sm">

@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
-import type { Exercise, FillExercise, MatchExercise, McExercise, OrderExercise, TranslateExercise } from '../content/types';
-import { isCorrect, shuffle, seededRandom } from '../lib/check';
+import type { Exercise, FillExercise, ListenExercise, MatchExercise, McExercise, OrderExercise, TranslateExercise } from '../content/types';
+import { isCorrect, isCorrectLoose, shuffle, seededRandom } from '../lib/check';
+import { speak, stopSpeaking, canSpeak } from '../lib/tts';
+import { SpeakerIcon } from './icons';
 import { MdInline } from '../lib/markdown';
 
 export interface Evaluation {
@@ -27,6 +29,10 @@ export function evaluate(ex: Exercise, value: ExValue): Evaluation {
       const sentence = idx.map((i) => ex.words[i]).join(' ');
       return { correct: idx.length === ex.words.length && isCorrect(sentence, ex.answer), given: sentence || '—', expected: ex.answer[0] };
     }
+    case 'listen': {
+      const v = typeof value === 'string' ? value : '';
+      return { correct: isCorrectLoose(v, ex.text), given: v || '—', expected: ex.text };
+    }
     case 'match': {
       const v = (value && typeof value === 'object' && !Array.isArray(value) ? value : {}) as Record<number, number>;
       const all = ex.pairs.every((_, i) => v[i] === i);
@@ -42,6 +48,7 @@ export function isAnswered(ex: Exercise, value: ExValue): boolean {
       return typeof value === 'number';
     case 'fill':
     case 'translate':
+    case 'listen':
       return typeof value === 'string' && value.trim().length > 0;
     case 'order':
       return Array.isArray(value) && value.length === ex.words.length;
@@ -307,6 +314,84 @@ export function MatchInput({ ex, value, onChange, reveal }: InputProps<MatchExer
   );
 }
 
+/* ---------------- listen and type ---------------- */
+export function ListenInput({ ex, value, onChange, reveal, onSubmit }: InputProps<ListenExercise, string>) {
+  const ref = useRef<HTMLTextAreaElement>(null);
+  const insert = useInsert(ref, value, onChange);
+  const [plays, setPlays] = useState(0);
+  const play = (rate?: number) => {
+    speak(ex.text, rate);
+    setPlays((n) => n + 1);
+  };
+  useEffect(() => {
+    const t = setTimeout(() => play(), 300);
+    ref.current?.focus();
+    return () => {
+      clearTimeout(t);
+      stopSpeaking();
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ex.id]);
+  const ok = reveal && isCorrectLoose(value, ex.text);
+  return (
+    <div>
+      <Prompt>Listen and type what you hear.</Prompt>
+      {!canSpeak() && <p className="text-sm text-danger mb-2">This browser has no speech synthesis. Try Safari or Chrome.</p>}
+      <div className="flex gap-2 mb-4">
+        <button type="button" onClick={() => play()} className="flex-1 flex items-center justify-center gap-2 py-4 rounded-2xl bg-primary text-on-primary font-bold shadow-sm active:scale-[0.98]">
+          <SpeakerIcon size={22} /> {plays ? 'Play again' : 'Play'}
+        </button>
+        <button type="button" onClick={() => play(0.6)} className="px-4 py-4 rounded-2xl bg-surface-2 font-semibold" title="Play slowly">
+          🐢 Slow
+        </button>
+      </div>
+      <textarea
+        ref={ref}
+        value={value}
+        disabled={reveal}
+        rows={2}
+        autoCapitalize="sentences"
+        autoCorrect="off"
+        spellCheck={false}
+        placeholder="Type the sentence …"
+        onChange={(e) => onChange(e.target.value)}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            onSubmit?.();
+          }
+        }}
+        className={`w-full px-3 py-2.5 rounded-xl border-2 bg-surface outline-none text-lg ${reveal ? (ok ? 'border-success' : 'border-danger') : 'border-line focus:border-primary'}`}
+      />
+      {reveal && (
+        <div className="mt-2">
+          <p className={`font-semibold ${ok ? 'text-success' : 'text-success'}`}>{ex.text}</p>
+          <p className="text-sm text-muted">{ex.translation}</p>
+          {!ok && <WordDiff given={value} expected={ex.text} />}
+        </div>
+      )}
+      {!reveal && <UmlautBar onInsert={insert} />}
+    </div>
+  );
+}
+
+/** Shows which words of the typed sentence differ from the expected one. */
+function WordDiff({ given, expected }: { given: string; expected: string }) {
+  const norm = (w: string) => w.toLowerCase().replace(/[^a-zäöüß0-9]/g, '');
+  const exp = expected.split(/\s+/).map(norm);
+  const words = given.trim().split(/\s+/);
+  return (
+    <p className="mt-1 text-sm flex flex-wrap gap-1">
+      {words.map((w, i) => (
+        <span key={i} className={exp.includes(norm(w)) ? 'text-muted' : 'text-danger line-through'}>
+          {w}
+        </span>
+      ))}
+      {exp.length > words.length && <span className="text-muted">… ({exp.length - words.length} word{exp.length - words.length > 1 ? 's' : ''} missing)</span>}
+    </p>
+  );
+}
+
 export function ExerciseInput({ ex, value, onChange, reveal, onSubmit }: { ex: Exercise; value: ExValue; onChange: (v: ExValue) => void; reveal: boolean; onSubmit?: () => void }) {
   switch (ex.type) {
     case 'mc':
@@ -319,6 +404,8 @@ export function ExerciseInput({ ex, value, onChange, reveal, onSubmit }: { ex: E
       return <OrderInput ex={ex} value={(value as number[]) ?? []} onChange={onChange} reveal={reveal} />;
     case 'match':
       return <MatchInput ex={ex} value={(value as Record<number, number>) ?? {}} onChange={onChange} reveal={reveal} />;
+    case 'listen':
+      return <ListenInput ex={ex} value={(value as string) ?? ''} onChange={onChange} reveal={reveal} onSubmit={onSubmit} />;
   }
 }
 
@@ -328,4 +415,5 @@ export const typeLabel: Record<Exercise['type'], string> = {
   translate: 'Translate',
   order: 'Word order',
   match: 'Match',
+  listen: 'Listen',
 };

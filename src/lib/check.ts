@@ -10,6 +10,20 @@ export function normalizeAnswer(s: string): string {
     .toLowerCase();
 }
 
+/** For dictation: ignore all punctuation and case, compare words only. */
+export function normalizeLoose(s: string): string {
+  return s
+    .toLowerCase()
+    .replace(/[„“”"‚‘’'.,!?;:()\-–—]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+export function isCorrectLoose(given: string, expected: string): boolean {
+  const g = normalizeLoose(given);
+  return g.length > 0 && g === normalizeLoose(expected);
+}
+
 export function isCorrect(given: string, accepted: string[]): boolean {
   const g = normalizeAnswer(given);
   if (!g) return false;

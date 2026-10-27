@@ -38,3 +38,15 @@ One file per unit theme, default-exporting a `VocabSet`. See `src/content/vocab/
 ## Glossary — `src/content/glossary.ts`
 
 Short definitions of grammar terms (Nominativ, Konjugation, Partizip II …) in easy English, each linking to the topic ids that teach it.
+
+## Reading texts — `src/content/reading/<level>-u<unit>-reading.ts`
+
+One file per unit, default-exporting a `ReadingText`. See `src/content/reading/a1-u1-reading.ts`.
+
+- **id** `<level>-u<unit>-reading`, with `level` and `unit` matching `curriculum.ts`.
+- **Text type**: realistic and varied across units: profile, email, chat, advert, notice, menu, timetable, short story, dialogue, forum post, blog, news-style report, letter of complaint, job ad. Use the unit's vocabulary theme and its grammar (a unit on the Perfekt gets a text in the Perfekt).
+- **Length**: A1 70–170 words, A2 130–260, B1 200–360, in 2–5 `paragraphs`. Only grammar from this unit or earlier.
+- **intro**: one English sentence saying what the text is and the situation. **tip**: one concrete reading strategy for this text (scan for numbers, use the heading, guess compounds from their parts, look for connectors …).
+- **glossary**: 4–10 harder words from the text, nouns with article, with English.
+- **questions**: 6–8 exercises with ids `<id>-q01`, `-q02` …: mostly `mc` (including Richtig/Falsch items with options `['Richtig', 'Falsch']`), one or two `fill` whose answer is a word from the text, optionally one `match` of text vocabulary and one `translate`. Every explanation quotes the relevant words from the text.
+- Same exercise rules as for topics (one `___` per fill, scrambled `order` words, etc.).

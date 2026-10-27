@@ -11,6 +11,8 @@ Screens are in `docs/screenshots/`. Mobile uses a bottom tab bar (Home, Learn, V
 | Learn | `/learn/:level` | Level tabs, unit sections with vocabulary theme, topic rows with status (New / Read / score). Link to the level test. |
 | Topic | `/topic/:id` | Summary, explanation (markdown with tables), examples with speech, how it connects (links), watch out (edge cases), practice card. Prev/next topic links. Sticky Practice button on mobile. |
 | Practice | `/practice/:id` | Intro (choose feedback timing) → exercise runner → results report with retry-the-wrong and next-topic. |
+| Reading | `/reading/:id` | Unit text with strategy tip, read-aloud, glossary with speech, then the comprehension questions as an exercise session. |
+| Listening | `/listen/:level/:unit` | Ten dictations sampled from the unit's example sentences; play / slow replay; word-level diff after checking. |
 | Concepts | `/concepts?q=` | Search across topics and glossary with level filter; A–Z glossary when empty. |
 | Vocab | `/vocab` | Stats, start session, settings shortcut, word lists by level/theme with per-word status and speech. |
 | Vocab session | `/vocab/session?set=&level=` | Queue of due reviews interleaved with new words. Flashcard / choice / type modes. Wrong cards come back once in the same session. |
@@ -25,6 +27,7 @@ Screens are in `docs/screenshots/`. Mobile uses a bottom tab bar (Home, Learn, V
 - **Word order** – tap tokens to build the sentence, tap again to remove; accepted orders listed per exercise.
 - **Match** – tap left, then right; pairs get a colour; tap a pair to undo.
 - **Translate** – free text with umlaut keys and a vocabulary hint; several accepted variants.
+- **Listen** – the sentence is spoken (Web Speech API, German voice); the learner types it. Punctuation and case are ignored; a word diff shows what was missed.
 
 Feedback: *after each one* shows the result and the explanation before moving on; *at the end* collects everything into a report. Level tests are always at the end.
 
@@ -39,8 +42,6 @@ Everything the learner does is a small JSON value under a key (`topic:<id>`, `wo
 
 ## Next steps
 
-1. Reading texts with comprehension questions per unit (A1 U4 onward).
-2. Listening: "type what you hear" using speech synthesis of example sentences.
-3. Writing tasks with model answers and a checklist.
-4. Speaking: conversation partner using on-device speech recognition and synthesis with an AI model behind it (last, as agreed).
-5. Native-speaker review of the generated content; the writers flagged their judgement calls in `docs/CONTENT-NOTES.md`.
+1. Writing tasks with model answers and a checklist.
+2. Speaking: conversation partner using on-device speech recognition and synthesis with an AI model behind it (last, as agreed).
+3. Native-speaker review of the generated content; the writers flagged their judgement calls in `docs/CONTENT-NOTES.md`.

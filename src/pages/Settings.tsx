@@ -90,6 +90,21 @@ export default function SettingsPage() {
           <input type="checkbox" checked={s.autoSpeak} onChange={(e) => set({ autoSpeak: e.target.checked })} className="w-5 h-5 accent-primary" />
         </label>
         <p className="text-xs text-muted mb-3">Uses the free German voice built into your phone or computer.</p>
+        <p className="text-sm text-muted mb-2">Speech speed (also for listening exercises).</p>
+        <div className="flex gap-2 flex-wrap mb-4">
+          {(
+            [
+              [0.7, 'Slow'],
+              [0.9, 'Normal'],
+              [1.05, 'Fast'],
+            ] as const
+          ).map(([rate, label]) => (
+            <Chip key={rate} active={s.speechRate === rate} onClick={() => set({ speechRate: rate })}>
+              {label}
+            </Chip>
+          ))}
+        </div>
+        <p className="text-sm text-muted mb-2">Theme.</p>
         <div className="flex gap-2 flex-wrap">
           {(['system', 'light', 'dark'] as const).map((t) => (
             <Chip key={t} active={s.theme === t} onClick={() => set({ theme: t })}>

@@ -58,12 +58,24 @@ export interface TranslateExercise {
   explanation: string;
 }
 
+/** Dictation: the app reads `text` aloud, the learner types what they hear. */
+export interface ListenExercise {
+  type: 'listen';
+  id: string;
+  /** German sentence to be spoken and typed */
+  text: string;
+  /** English meaning, shown after checking */
+  translation: string;
+  explanation: string;
+}
+
 export type Exercise =
   | McExercise
   | FillExercise
   | OrderExercise
   | MatchExercise
-  | TranslateExercise;
+  | TranslateExercise
+  | ListenExercise;
 
 export interface Connection {
   topicId: string;
@@ -122,6 +134,23 @@ export interface VocabSet {
   unit: number;
   theme: string;
   words: Word[];
+}
+
+/** A short text for one unit with comprehension questions. */
+export interface ReadingText {
+  id: string;
+  level: Level;
+  unit: number;
+  title: string;
+  /** what kind of text and the situation, in English, one sentence */
+  intro: string;
+  /** one reading strategy tip in English for this text */
+  tip: string;
+  /** German paragraphs */
+  paragraphs: string[];
+  /** hard words from the text with English */
+  glossary: { de: string; en: string }[];
+  questions: Exercise[];
 }
 
 export interface GlossaryTerm {
