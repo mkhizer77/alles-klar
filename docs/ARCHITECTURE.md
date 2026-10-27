@@ -12,15 +12,16 @@
 
 | Piece | Where | Cost | Why |
 |-------|-------|------|-----|
-| App (static PWA) | **Cloudflare Workers static assets** (`[assets]` in `wrangler.toml`), same Worker as the API | free, unlimited static requests | One origin for app and API: no CORS, one deploy command, works offline as a PWA. |
-| API | **Cloudflare Workers** (`server/worker.ts`) | free tier: 100k requests/day | Runs the same Hono app as the dev server. No cold-start sleep, no idle pausing. |
+| App (static PWA) | **GitHub Pages**, built by GitHub Actions on every push to `main` | free | Static files only; the repo already lives on GitHub. Served at `https://mkhizer77.github.io/alles-klar/`. |
+| API | **Cloudflare Workers** (`server/worker.ts`) | free tier: 100k requests/day | Runs the same Hono app as the dev server. No cold-start sleep, no idle pausing. Cross-origin from Pages, so auth is a Bearer token and CORS allows the Pages origin. |
 | Database | **Cloudflare D1** | free tier: 5 GB, 5M reads/day, 100k writes/day | SQLite dialect, so the schema and SQL are identical to local development. |
-| Source + CI | **GitHub** private repo, Actions | free | Lint/validate/test/build on every push; optional auto-deploy. |
+| Source + CI | **GitHub** public repo, Actions | free | Validate/test/build on every push; Pages deploy; optional API deploy. |
 | Local dev / self-host | Node 24 with `node:sqlite` (`server/node.ts`) | – | One process serves API and built app; no external services needed to develop. |
 
 Alternatives considered:
 
-- *GitHub Pages for the app.* First choice, but GitHub Pages is not available for **private** repositories on the free GitHub plan (the API returns "Your current plan does not support GitHub Pages for this repository"). The build still supports a base path (`VITE_BASE`) and a cross-origin API (`VITE_API_URL`, Bearer tokens, CORS), so moving the app to Pages later only needs the repo to be public or a paid plan.
+- *Private repository.* GitHub Pages is not available for private repositories on the free GitHub plan, so the repository is public. There is nothing sensitive in it: accounts and progress live only in the D1 database.
+- *One Cloudflare Worker serving app and API.* Works as well (Workers static assets are free) and keeps everything same-origin; it was the plan while the repo was private. The Worker config is now API-only, but adding an `[assets]` block to `wrangler.toml` brings that option back.
 - *Everything static, no backend.* Would drop accounts and cross-device sync. Kept as a mode instead: "Continue without an account" stores progress only in the browser and can be upgraded to an account later (local data is uploaded).
 - *Firebase / Supabase.* Also free, but the free Supabase project pauses after a week of inactivity, and both mean a vendor SDK in the bundle and a fake-email workaround for username-only accounts. Owning a 150-line API was simpler.
 - *Vercel / Netlify functions + Turso.* Works, but three providers instead of two.
@@ -76,16 +77,18 @@ One table of progress entries per user: `(user_id, key, value JSON, updated_at)`
 
 ## Deploying
 
-One-time setup (free Cloudflare account):
+### App (GitHub Pages)
+
+Automatic on every push to `main` (`.github/workflows/pages.yml`), at https://mkhizer77.github.io/alles-klar/. Without an API the site runs in device-only mode; once the API exists, set the repository variable `API_URL` to its URL and re-run the workflow.
+
+### API (Cloudflare, once)
 
 ```bash
 pnpm wrangler login
 pnpm wrangler d1 create alles-klar        # paste the database_id into wrangler.toml
-pnpm build && pnpm wrangler deploy        # prints https://alles-klar.<account>.workers.dev
+pnpm wrangler deploy                      # prints https://alles-klar-api.<account>.workers.dev
 ```
 
-Open that URL on your phone and "Add to Home Screen". Every later deploy is `pnpm build && pnpm wrangler deploy`.
+Then in GitHub → Settings → Secrets and variables → Actions → Variables: `API_URL` = that URL. Optionally add the secrets `CLOUDFLARE_API_TOKEN` (Workers + D1 edit) and `CLOUDFLARE_ACCOUNT_ID` plus the variable `DEPLOY_API=true` so `.github/workflows/deploy-api.yml` redeploys the Worker when server code changes.
 
-Optional auto-deploy from GitHub: add the secrets `CLOUDFLARE_API_TOKEN` (Workers + D1 edit permissions) and `CLOUDFLARE_ACCOUNT_ID`, and the repository variable `DEPLOY=true`; `.github/workflows/deploy.yml` then builds and deploys on every push to `main`.
-
-Local check of the production setup without an account: `pnpm build && pnpm wrangler dev` runs the Worker with a local D1 on http://localhost:8787.
+Local check of the Worker without an account: `pnpm wrangler dev` runs it with a local D1 on http://localhost:8787.

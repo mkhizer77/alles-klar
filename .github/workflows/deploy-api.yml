@@ -1,17 +1,20 @@
-name: Deploy to Cloudflare
+name: Deploy API to Cloudflare Workers
 
-# Builds the app and deploys app + API as one Worker. Runs only when the
-# repository variable DEPLOY is "true" and the secrets CLOUDFLARE_API_TOKEN and
-# CLOUDFLARE_ACCOUNT_ID exist (see docs/ARCHITECTURE.md). Until then deploy
-# from your machine with: pnpm build && pnpm wrangler deploy
+# Runs only when the repository variable DEPLOY_API is "true" and the secrets
+# CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID exist (see docs/ARCHITECTURE.md).
+# Until then deploy from your machine with: pnpm wrangler deploy
 on:
   push:
     branches: [main]
+    paths:
+      - 'server/**'
+      - 'wrangler.toml'
+      - '.github/workflows/deploy-api.yml'
   workflow_dispatch:
 
 jobs:
   deploy:
-    if: ${{ vars.DEPLOY == 'true' }}
+    if: ${{ vars.DEPLOY_API == 'true' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -24,7 +27,6 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm test
-      - run: pnpm build
       - uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
