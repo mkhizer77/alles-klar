@@ -9,7 +9,7 @@ import { levelStats, topicProgress } from '../lib/progress';
 import { Badge, Card, Chip, PageHeader, ProgressBar } from '../components/ui';
 
 function SkillBadge({ p }: { p: TopicProgress }) {
-  if (p.attempts === 0) return <Badge>New</Badge>;
+  if (p.attempts === 0) return null;
   return <Badge tone={p.bestScore >= 80 ? 'success' : 'accent'}>{p.bestScore}%</Badge>;
 }
 import { ChevronRight, CheckIcon } from '../components/icons';
@@ -28,7 +28,7 @@ export default function Learn() {
       <div className="flex gap-2 mb-4">
         {curriculum.map((l) => (
           <Chip key={l.level} active={l.level === lvl.level} onClick={() => navigate(`/learn/${l.level}`)}>
-            {l.level} · {l.name}
+            {l.level}<span className="hidden sm:inline"> · {l.name}</span>
           </Chip>
         ))}
       </div>
@@ -49,9 +49,9 @@ export default function Learn() {
       <div className="grid gap-4">
         {lvl.units.map((u) => (
           <section key={u.unit}>
-            <h2 className="font-bold text-lg flex items-baseline gap-2">
-              <span className="text-muted text-sm font-semibold">Unit {u.unit}</span> {u.title}
-              <span className="text-muted font-normal text-sm">· {u.subtitle}</span>
+            <h2 className="font-bold text-lg leading-snug">
+              <span className="text-muted text-sm font-semibold mr-2">Unit {u.unit}</span>
+              {u.title} <span className="text-muted font-normal text-sm">· {u.subtitle}</span>
             </h2>
             <p className="text-xs text-muted mb-2">Vocabulary: {u.vocabTheme}</p>
             <div className="grid gap-1.5">
@@ -61,7 +61,7 @@ export default function Learn() {
                 const status = !has ? (
                   <Badge>Coming soon</Badge>
                 ) : p.attempts === 0 ? (
-                  p.readAt ? <Badge tone="info">Read</Badge> : <Badge>New</Badge>
+                  p.readAt ? <Badge tone="info">Read</Badge> : null
                 ) : p.bestScore >= 80 ? (
                   <Badge tone="success">
                     <span className="inline-flex items-center gap-1"><CheckIcon size={12} /> {p.bestScore}%</span>

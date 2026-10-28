@@ -62,6 +62,10 @@ function PartnerCard() {
         <span className="text-sm">Read the partner's replies aloud</span>
         <input type="checkbox" checked={ai.autoSpeak} onChange={(e) => update({ autoSpeak: e.target.checked })} className="w-5 h-5 accent-primary" />
       </label>
+      <label className="flex items-center justify-between py-2">
+        <span className="text-sm">Send a spoken line as soon as I stop talking</span>
+        <input type="checkbox" checked={ai.autoSend} onChange={(e) => update({ autoSend: e.target.checked })} className="w-5 h-5 accent-primary" />
+      </label>
       <div className="mt-2 flex items-center gap-3 flex-wrap">
         <Button variant="secondary" onClick={runTest} disabled={testing || !ai.apiKey.trim()}>{testing ? 'Testing …' : 'Test the key'}</Button>
         {ai.apiKey && (

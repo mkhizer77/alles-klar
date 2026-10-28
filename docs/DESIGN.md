@@ -13,7 +13,7 @@ Screens are in `docs/screenshots/`. Mobile uses a bottom tab bar (Home, Learn, V
 | Practice | `/practice/:id` | Intro (choose feedback timing) → exercise runner → results report with retry-the-wrong and next-topic. |
 | Reading | `/reading/:id` | Unit text with strategy tip, read-aloud, glossary with speech, then the comprehension questions as an exercise session. |
 | Writing | `/writing/:id` | Task with points and grammar links, tap-to-insert phrases, autosaved editor with live word count and automatic checks; then side-by-side with the model answer and notes, and a self-check list whose ticks become the score. |
-| Speaking | `/speaking/:id` | Role-play per unit: situation, partner, goals, phrases to hear; then a chat with microphone input (Web Speech API), the partner's replies spoken aloud, one correction per turn, English on demand, hints; after the minimum turns, feedback with goals done, strengths and corrections, whose goal share becomes the score. Needs the learner's own API key (Settings). |
+| Speaking | `/speaking/:id` | Role-play per unit: situation, partner, goals, then a full-height chat panel with microphone input (Web Speech API; a spoken line is sent when you stop talking), the partner's replies spoken aloud, one correction per turn, English on demand, hints; a banner offers to finish once the minimum turns are done, then feedback with goals done, strengths and corrections, whose goal share becomes the score. Needs the learner's own API key (Settings). |
 | Listening | `/listen/:level/:unit` | Ten dictations sampled from the unit's example sentences; play / slow replay; word-level diff after checking. |
 | Concepts | `/concepts?q=` | Search across topics and glossary with level filter; A–Z glossary when empty. |
 | Vocab | `/vocab` | Stats, start session, settings shortcut, word lists by level/theme with per-word status and speech. |
@@ -21,6 +21,8 @@ Screens are in `docs/screenshots/`. Mobile uses a bottom tab bar (Home, Learn, V
 | Tests | `/tests` | One card per level with last/best score and verdict. |
 | Test run | `/tests/:level` | Intro → runner with feedback at the end → report: score, verdict, by-unit bars, weakest topics, vocabulary score, every answer. |
 | Settings | `/settings` | New words/day, review days, quiz mode, scheduler (SM-2 or Leitner), feedback timing, auto-speak, theme, conversation partner (API key kept on the device, model, test), account (sign out, delete). |
+
+Findings and decisions from the screen-by-screen review are in [UX-REVIEW.md](UX-REVIEW.md).
 
 ## Exercise types
 

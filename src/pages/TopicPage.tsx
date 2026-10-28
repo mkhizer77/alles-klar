@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, Navigate, useParams } from 'react-router';
 import { topics, unitOfTopic, orderedTopicIds } from '../content';
 import { Md, MdInline } from '../lib/markdown';
@@ -14,11 +14,22 @@ export default function TopicPage() {
   useStoreVersion();
   const { id = '' } = useParams();
   const topic = topics[id];
+  const practiceRef = useRef<HTMLDivElement>(null);
+  const [practiceVisible, setPracticeVisible] = useState(false);
 
   useEffect(() => {
     if (!topic) return;
     const p = store.get<TopicProgress>(keys.topic(topic.id), EMPTY_TOPIC);
     if (!p.readAt) store.set(keys.topic(topic.id), { ...p, readAt: todayStr() });
+  }, [topic]);
+
+  // the floating Practice button steps aside while the Practice card itself is on screen
+  useEffect(() => {
+    const el = practiceRef.current;
+    if (!el || typeof IntersectionObserver === 'undefined') return;
+    const io = new IntersectionObserver(([entry]) => setPracticeVisible(entry.isIntersecting), { rootMargin: '0px 0px -56px 0px' });
+    io.observe(el);
+    return () => io.disconnect();
   }, [topic]);
 
   if (!topic) return <Navigate to="/learn" replace />;
@@ -101,6 +112,7 @@ export default function TopicPage() {
         </section>
       )}
 
+      <div ref={practiceRef}>
       <Card className="mt-8">
         <div className="flex items-center justify-between gap-3">
           <div>
@@ -110,6 +122,7 @@ export default function TopicPage() {
           <LinkButton to={`/practice/${topic.id}`} size="lg">Start</LinkButton>
         </div>
       </Card>
+      </div>
 
       <div className="mt-6 flex justify-between text-sm">
         {prevId ? <Link to={`/topic/${prevId}`} className="inline-flex items-center gap-1 text-muted hover:text-text"><ChevronLeft size={16} /> {topics[prevId].title}</Link> : <span />}
@@ -117,7 +130,7 @@ export default function TopicPage() {
       </div>
 
       {/* sticky practice button on mobile */}
-      <div className="md:hidden fixed bottom-16 inset-x-0 px-4 pb-2 pointer-events-none">
+      <div className={`md:hidden fixed bottom-16 inset-x-0 px-4 pb-2 pointer-events-none transition-opacity ${practiceVisible ? 'opacity-0' : 'opacity-100'}`}>
         <div className="max-w-3xl mx-auto flex justify-end">
           <LinkButton to={`/practice/${topic.id}`} className="pointer-events-auto shadow-lg">Practice →</LinkButton>
         </div>

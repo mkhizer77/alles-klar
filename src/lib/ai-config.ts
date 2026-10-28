@@ -13,10 +13,12 @@ export interface AiConfig {
   model: AiModelId;
   /** read the partner's replies aloud */
   autoSpeak: boolean;
+  /** send a spoken line as soon as recognition stops */
+  autoSend: boolean;
 }
 
 const LS_KEY = 'ak:ai';
-const DEFAULT: AiConfig = { apiKey: '', model: 'claude-opus-5-5', autoSpeak: true };
+const DEFAULT: AiConfig = { apiKey: '', model: 'claude-opus-5-5', autoSpeak: true, autoSend: true };
 
 export function getAiConfig(): AiConfig {
   try {

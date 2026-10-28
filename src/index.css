@@ -58,6 +58,10 @@ body {
   overscroll-behavior-y: none;
 }
 
+/* Grid and flex children default to min-width:auto, which lets a truncated row
+   push a whole column wider than the phone screen. Let them shrink. */
+.grid > *, .flex > * { min-width: 0; }
+
 /* Explanation typography */
 .prose-ak {
   line-height: 1.65;
@@ -91,7 +95,6 @@ body {
   padding: 0.45rem 0.6rem;
   text-align: left;
   vertical-align: top;
-  white-space: nowrap;
 }
 .prose-ak th { background: var(--color-surface-2); font-weight: 600; }
 .prose-ak blockquote { border-left: 3px solid var(--color-accent); padding-left: 0.8rem; color: var(--color-muted); margin: 0.8rem 0; }
