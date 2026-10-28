@@ -8,22 +8,23 @@ const topic: Topic = {
   title: 'Relative clauses in the Dative and Genitive',
   germanTerm: 'Relativsatz (Dativ / Genitiv)',
   tags: ['relative clauses', 'pronouns', 'Dative', 'Genitive', 'subordinate clauses'],
-  summary: 'The relative pronoun takes the Dative (dem, der, denen) when it is an indirect object or follows a Dative verb, and the Genitive (dessen, deren) when it means "whose".',
+  summary: 'The relative pronoun takes the Dative (dem, der, denen) when it is an indirect object or follows a Dative verb; the Genitive forms dessen / deren ("whose") are there to recognise.',
   explanation: `
 ### What it is
 
-A **relative clause** (*Relativsatz*) adds information about a noun: *the man **who** lives next door*, *the book **that** I read*. At A2 you learned the relative pronouns (*Relativpronomen*) in the Nominative and Accusative. Now we add the **Dative** (*the man **to whom** I gave the key*) and the **Genitive** (*the man **whose** car is broken*).
+A **relative clause** (*Relativsatz*) adds information about a noun: *the man **who** lives next door*, *the book **that** I read*. At A2 you learned the relative pronouns (*Relativpronomen*, the words *der / die / das* that start the clause) in the Nominative and Accusative. Now we add the **Dative**, which you need whenever the person in the clause is helped, thanked or given something:
 
-### The full table of relative pronouns
+- Der Mann, **dem** ich geholfen habe, ist mein Nachbar. – *The man I helped is my neighbour.*
 
-The relative pronouns look almost exactly like the definite articles. Only the Genitive forms and the Dative plural are different (in bold):
+### The table of relative pronouns
+
+The relative pronouns look almost exactly like the definite articles (*der, die, das*). Only the Dative plural is different (in bold):
 
 | | masculine | feminine | neuter | plural |
 |---|---|---|---|---|
 | Nominative | der | die | das | die |
 | Accusative | den | die | das | die |
 | Dative | dem | der | dem | **denen** |
-| Genitive | **dessen** | **deren** | **dessen** | **deren** |
 
 ### Two rules decide the form
 
@@ -35,7 +36,6 @@ Take *der Mann*: masculine singular. Now look inside the clause:
 - Der Mann, **der** dort steht … (he stands → subject → Nominative)
 - Der Mann, **den** ich kenne … (I know him → object → Accusative)
 - Der Mann, **dem** ich helfe … (I help him → helfen takes Dative → Dative)
-- Der Mann, **dessen** Auto kaputt ist … (his car → whose → Genitive)
 
 ### The Dative
 
@@ -46,47 +46,39 @@ You need the Dative pronoun when, inside the clause, the pronoun is:
 
 Watch the plural: *die Leute, **denen** das Restaurant gehört* – not *die*.
 
-### The Genitive = "whose"
-
-**dessen** (masculine and neuter) and **deren** (feminine and plural) mean **whose**. Two important points:
-
-- They do **not** change for case. *dessen* stays *dessen* whatever happens in the clause.
-- The noun after them has **no article**: *der Freund, dessen Auto …* (not *dessen das Auto*).
-
-| the noun before | pronoun | example |
-|---|---|---|
-| der Freund | dessen | der Freund, **dessen** Auto kaputt ist |
-| die Kollegin | deren | die Kollegin, **deren** Mann aus Spanien kommt |
-| das Kind | dessen | das Kind, **dessen** Eltern Ärzte sind |
-| die Nachbarn | deren | die Nachbarn, **deren** Hund immer bellt |
+A quick check: say the clause as a normal sentence with a pronoun. *Ich helfe **ihm*** → Dative → *der Mann, **dem** ich helfe*. *Ich kenne **ihn*** → Accusative → *der Mann, **den** ich kenne*.
 
 ### Word order
 
 As in every subordinate clause, the conjugated verb goes to the **end**, and the relative clause is separated by commas. It usually comes directly after the noun it describes: *Die Frau, **der** ich geholfen habe, ist meine Tante.*
 
+### You may also see …
+
+German also has a relative pronoun for **whose**, the Genitive: **dessen** (masculine and neuter) and **deren** (feminine and plural). *Der Freund, **dessen** Auto kaputt ist, fährt mit dem Bus.* – *The friend whose car is broken takes the bus.* The noun after *dessen / deren* has no article. You will meet this in reading texts at B1; you do not need to produce it yet. If you want to say the same thing, a second sentence is fine: *Sein Auto ist kaputt. Er fährt mit dem Bus.*
+
 ### Why it matters
 
-Relative clauses are the main way to describe people and things precisely, in job applications (*die Firma, deren Produkte ich kenne*), in presentations and in everyday talk. Getting the Dative and Genitive right is a clear sign of B1 level, and the next topic builds on this with prepositions (*der Mann, **mit dem** …*).
+Relative clauses are the main way to describe people and things precisely, in job applications (*die Firma, bei der ich gearbeitet habe*), in presentations and in everyday talk. Getting the Dative right is a clear sign of B1 level, and the next topic builds on this with prepositions (*der Mann, **mit dem** …*).
 `,
   examples: [
     { de: 'Der Mann, dem ich geholfen habe, ist mein Nachbar.', en: 'The man I helped is my neighbour. (helfen + Dative → dem)' },
     { de: 'Die Frau, der ich das Buch gegeben habe, ist Lehrerin.', en: 'The woman I gave the book to is a teacher. (indirect object → der)' },
     { de: 'Die Kinder, denen wir Geschenke gebracht haben, waren glücklich.', en: 'The children we brought presents to were happy. (plural Dative → denen)' },
-    { de: 'Der Freund, dessen Auto kaputt ist, fährt mit dem Bus.', en: 'The friend whose car is broken takes the bus. (masculine → dessen)' },
-    { de: 'Die Kollegin, deren Mann aus Spanien kommt, spricht drei Sprachen.', en: 'The colleague whose husband is from Spain speaks three languages. (feminine → deren)' },
+    { de: 'Das ist der Arzt, dem ich vertraue.', en: 'That is the doctor I trust. (vertrauen + Dative → dem)' },
     { de: 'Die Leute, denen das Restaurant gehört, sind sehr nett.', en: 'The people who own the restaurant are very nice. (gehören + Dative)' },
+    { de: 'Der Freund, dessen Auto kaputt ist, fährt mit dem Bus.', en: 'The friend whose car is broken takes the bus. (dessen = whose, for recognition)' },
   ],
   connections: [
     { topicId: 'a2-23-relative-clauses-nom-acc', note: 'The Nominative and Accusative relative pronouns and the basic word order come from there.' },
     { topicId: 'a1-26-dative-verbs', note: 'helfen, danken, gefallen, gehören … force the Dative pronoun dem / der / denen.' },
     { topicId: 'a1-24-dative', note: 'The indirect object is in the Dative, inside relative clauses too.' },
-    { topicId: 'a2-14-genitive', note: 'dessen / deren express possession, like the Genitive case.' },
+    { topicId: 'a2-14-genitive', note: 'dessen / deren ("whose") belong to the Genitive case; you only need to recognise them at B1.' },
     { topicId: 'b1-05-relative-clauses-prepositions', note: 'Next step: relative clauses with prepositions, wo, was and wer.' },
   ],
   edgeCases: [
     'The Dative plural is **denen**, not *den*: *die Leute, denen ich vertraue*.',
-    '**dessen / deren** never change for case and are followed by a noun **without** an article: *der Mann, dessen Frau …*',
     'The case of the pronoun comes from **inside** the relative clause, not from the main clause: *Ich kenne den Mann, **der** dort steht* (he stands → Nominative).',
+    'If you read **dessen** or **deren**, it means *whose*: *der Mann, dessen Frau …* = *the man whose wife …*.',
     'Do not use *wo* for people. *Die Frau, **der** ich helfe*, not *die Frau, wo ich helfe* (this is dialect, not standard German).',
   ],
   exercises: [
@@ -115,17 +107,17 @@ Relative clauses are the main way to describe people and things precisely, in jo
     {
       type: 'mc',
       id: 'b1-04-relative-clauses-dat-gen-ex04',
-      prompt: 'Complete: "Der Freund, ___ Auto kaputt ist, fährt mit dem Bus."',
-      options: ['dessen', 'deren', 'dem'],
+      prompt: 'Complete: "Das ist die Kollegin, ___ ich oft bei der Arbeit helfe."',
+      options: ['der', 'die', 'denen'],
       answer: 0,
-      explanation: 'Whose car → Genitive. der Freund is masculine → dessen.',
+      explanation: 'helfen takes the Dative. die Kollegin is feminine singular → Dative der. denen would be plural.',
     },
     {
       type: 'fill',
       id: 'b1-04-relative-clauses-dat-gen-ex05',
-      prompt: 'Die Kollegin, ___ Mann aus Spanien kommt, spricht drei Sprachen.',
-      answer: ['deren'],
-      explanation: 'die Kollegin is feminine, and the meaning is whose → deren.',
+      prompt: 'Das ist das Kind, ___ ich ein Eis gekauft habe.',
+      answer: ['dem'],
+      explanation: 'Inside the clause the child receives the ice cream: indirect object → Dative. Neuter Dative = dem.',
     },
     {
       type: 'match',
@@ -133,11 +125,11 @@ Relative clauses are the main way to describe people and things precisely, in jo
       prompt: 'Match each beginning with the right relative pronoun.',
       pairs: [
         ['der Lehrer, ___ ich danke', 'dem'],
-        ['die Firma, ___ Chef sehr streng ist', 'deren'],
-        ['das Kind, ___ Eltern Ärzte sind', 'dessen'],
+        ['die Freundin, ___ ich vertraue', 'der'],
         ['die Nachbarn, ___ wir helfen', 'denen'],
+        ['der Film, ___ ich gestern gesehen habe', 'den'],
       ],
-      explanation: 'danken and helfen take the Dative (dem, denen). "Whose" is dessen for masculine / neuter and deren for feminine / plural.',
+      explanation: 'danken, vertrauen and helfen take the Dative (dem, der, denen). sehen takes the Accusative, so the film is den.',
     },
     {
       type: 'order',
@@ -158,9 +150,9 @@ Relative clauses are the main way to describe people and things precisely, in jo
     {
       type: 'fill',
       id: 'b1-04-relative-clauses-dat-gen-ex09',
-      prompt: 'Das Mädchen, ___ Hund weggelaufen ist, weint.',
-      answer: ['dessen'],
-      explanation: 'das Mädchen is neuter (even though it means girl). Neuter whose = dessen.',
+      prompt: 'Das Mädchen, ___ das Buch gefällt, liest jeden Abend.',
+      answer: ['dem'],
+      explanation: 'gefallen takes the Dative: the book pleases the girl. das Mädchen is neuter (even though it means girl) → dem.',
     },
     {
       type: 'translate',
@@ -173,10 +165,10 @@ Relative clauses are the main way to describe people and things precisely, in jo
     {
       type: 'mc',
       id: 'b1-04-relative-clauses-dat-gen-ex11',
-      prompt: 'Complete: "Der Autor, ___ Bücher ich liebe, kommt nach Berlin."',
-      options: ['dessen', 'deren', 'den'],
+      prompt: 'You read: "Der Autor, dessen Bücher ich liebe, kommt nach Berlin." What does "dessen" mean here?',
+      options: ['whose', 'to whom', 'which'],
       answer: 0,
-      explanation: 'Whose books → Genitive. The pronoun matches der Autor (masculine), not die Bücher: dessen.',
+      explanation: 'dessen (and deren) mean whose: the author whose books I love. You only need to recognise this form at B1.',
     },
     {
       type: 'order',

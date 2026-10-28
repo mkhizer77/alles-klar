@@ -12,7 +12,7 @@ const topic: Topic = {
   explanation: `
 ### What it is
 
-In English an adjective never changes: *the old man, the old woman, with the old men*. In German an adjective that stands **in front of a noun** gets an **ending** (*Adjektivendung*) that depends on the gender, number and case of the noun. This is called adjective declension (*Adjektivdeklination*).
+In English an adjective never changes: *the old man, the old woman, with the old men*. In German an adjective that stands **in front of a noun** gets an **ending** (*Adjektivendung*) that depends on the gender, number and case of the noun. Grammar books call this adjective declension (*Adjektivdeklination*); it just means "the adjective changes its ending".
 
 - der alt**e** Mann – *the old man*
 - die alt**e** Frau – *the old woman*
@@ -20,21 +20,22 @@ In English an adjective never changes: *the old man, the old woman, with the old
 
 This topic covers the easiest group: adjectives after the **definite article** (*der, die, das*). There are only **two endings** to learn: **-e** and **-en**.
 
-### How it works: the full table
+### How it works: the table
 
 | | masculine | feminine | neuter | plural |
 |---|---|---|---|---|
 | Nominative | der alt**e** Mann | die alt**e** Frau | das alt**e** Haus | die alt**en** Leute |
 | Accusative | den alt**en** Mann | die alt**e** Frau | das alt**e** Haus | die alt**en** Leute |
 | Dative | dem alt**en** Mann | der alt**en** Frau | dem alt**en** Haus | den alt**en** Leuten |
-| Genitive | des alt**en** Mannes | der alt**en** Frau | des alt**en** Hauses | der alt**en** Leute |
 
 The pattern is simple once you see it:
 
 - **-e** in five places: all three Nominative singular forms, plus feminine and neuter Accusative (where the article does not change either: *die → die*, *das → das*).
-- **-en** everywhere else: masculine Accusative, every Dative, every Genitive, and the whole plural.
+- **-en** everywhere else: masculine Accusative, every Dative, and the whole plural.
 
-A useful way to remember it: the **article already shows the case**, so the adjective can be lazy. It only needs *-e* where the article is in its basic form, and *-en* as soon as the article changes (*den, dem, der* in the Dative, *des*) or the noun is plural.
+A useful way to remember it: the **article already shows the case**, so the adjective can be lazy. It only needs *-e* where the article is in its basic form, and *-en* as soon as the article changes (*den*, or *dem / der* in the Dative) or the noun is plural.
+
+You may also see the Genitive (*des alten Mannes*, *der alten Frau*): the adjective takes **-en** there too. You will learn that case in Unit 5; nothing new to remember for the adjective.
 
 ### The same endings after dieser, jeder, welcher
 

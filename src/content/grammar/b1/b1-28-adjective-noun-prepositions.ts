@@ -12,39 +12,42 @@ const topic: Topic = {
   explanation: `
 ### Not only verbs
 
+Adjectives and nouns can also come with a fixed preposition, and you need them for everyday feelings and opinions:
+
+- Ich bin **stolz auf** dich. – *I am proud of you.*
+- Ich habe **Angst vor** Spinnen. – *I am afraid of spiders.*
+
 You know that verbs can carry a fixed preposition (*warten auf*). **Adjectives** and **nouns** do the same: *stolz **auf*** (proud of), *Angst **vor*** (fear of). The preposition is fixed, the case is fixed, and you learn the whole unit. Adjectives with prepositions mostly appear after **sein**; nouns with prepositions often sit inside **noun–verb combinations** (*Angst haben vor*).
 
 ### Adjectives with prepositions
 
 | Preposition + case | Adjectives |
 |---|---|
-| **auf** + Akk | stolz auf, neugierig auf, gespannt auf, böse auf, eifersüchtig auf, wütend auf |
-| **über** + Akk | froh über, glücklich über, traurig über, erstaunt über, enttäuscht über, verärgert über |
-| **für** + Akk | verantwortlich für, bekannt für, dankbar für, typisch für, wichtig für, geeignet für |
+| **auf** + Akk | stolz auf, neugierig auf, gespannt auf, böse auf, wütend auf |
+| **über** + Akk | froh über, glücklich über, traurig über, enttäuscht über |
+| **für** + Akk | verantwortlich für, bekannt für, dankbar für, typisch für, wichtig für |
 | **in** + Akk | verliebt in |
-| **an** + Dat | interessiert an, reich an, arm an, schuld an |
-| **mit** + Dat | zufrieden mit, einverstanden mit, fertig mit, beschäftigt mit, verheiratet mit |
-| **von** + Dat | abhängig von, begeistert von, überzeugt von, müde von, enttäuscht von |
-| **zu** + Dat | freundlich zu, nett zu, fähig zu, bereit zu |
+| **an** + Dat | interessiert an |
+| **mit** + Dat | zufrieden mit, einverstanden mit, fertig mit, verheiratet mit |
+| **von** + Dat | abhängig von, begeistert von, überzeugt von, müde von |
+| **zu** + Dat | freundlich zu, nett zu |
 | **bei** + Dat | beliebt bei |
-| **nach** + Dat | verrückt nach, süchtig nach |
 
-Notice the big groups: **über** for feelings about something that happened (*froh, traurig, erstaunt*), **auf** for feelings directed at a person or a future thing (*stolz, neugierig, gespannt*), **mit** for satisfaction and agreement (*zufrieden, einverstanden*).
+Notice the big groups: **über** for feelings about something that happened (*froh, traurig, enttäuscht*), **auf** for feelings directed at a person or a future thing (*stolz, neugierig, gespannt*), **mit** for satisfaction and agreement (*zufrieden, einverstanden*).
 
 ### Nouns with prepositions
 
 | Preposition + case | Nouns |
 |---|---|
-| **auf** + Akk | die Lust auf, die Hoffnung auf, die Antwort auf, der Einfluss auf, der Stolz auf, die Freude auf |
+| **auf** + Akk | die Lust auf, die Hoffnung auf, die Antwort auf, die Freude auf |
 | **über** + Akk | die Freude über, der Ärger über, die Diskussion über, die Information über |
-| **für** + Akk | der Grund für, die Verantwortung für, das Verständnis für, der Dank für |
+| **für** + Akk | der Grund für, die Verantwortung für, der Dank für |
 | **um** + Akk | die Bitte um, die Sorge um, die Bewerbung um |
-| **in** + Akk | das Vertrauen in |
-| **an** + Dat | das Interesse an, der Zweifel an, die Kritik an, die Teilnahme an, der Mangel an |
-| **vor** + Dat | die Angst vor, der Schutz vor, die Warnung vor |
-| **nach** + Dat | die Frage nach, die Suche nach, die Sehnsucht nach |
-| **mit** + Dat | der Kontakt mit, die Zufriedenheit mit |
-| **zu** + Dat | die Liebe zu, die Beziehung zu, die Einladung zu |
+| **an** + Dat | das Interesse an, die Teilnahme an |
+| **vor** + Dat | die Angst vor |
+| **nach** + Dat | die Frage nach, die Suche nach |
+| **mit** + Dat | der Kontakt mit |
+| **zu** + Dat | die Einladung zu |
 
 ### Same family, same preposition – usually
 
@@ -54,13 +57,10 @@ Often the verb, the adjective and the noun share the preposition, which makes le
 |---|---|---|
 | sich freuen **auf** | gespannt **auf** | die Freude **auf** |
 | hoffen **auf** | – | die Hoffnung **auf** |
-| Angst haben **vor** | ängstlich **vor** | die Angst **vor** |
-| sich ärgern **über** | verärgert **über** | der Ärger **über** |
+| Angst haben **vor** | – | die Angst **vor** |
+| sich ärgern **über** | – | der Ärger **über** |
 
-But there are **traps** where the family changes preposition:
-
-- sich interessieren **für** → interessiert **an** / das Interesse **an**
-- sich bewerben **um** → die Bewerbung **um** (same) but bekannt **für**, nicht *bekannt um*
+But there is one **trap** where the family changes preposition: *sich interessieren **für*** → *interessiert **an*** / *das Interesse **an***.
 
 ### Why it matters
 
@@ -87,7 +87,7 @@ Adjectives and nouns with prepositions appear constantly in B1 speaking and writ
     '*sich interessieren **für***, but *interessiert **an*** and *Interesse **an***. The family changes preposition.',
     '*über* with adjectives of feeling is always **Accusative**: *traurig über **den** Verlust*.',
     '*enttäuscht* takes both *von* (a person: *enttäuscht von dir*) and *über* (a thing: *enttäuscht über das Ergebnis*).',
-    '*Vertrauen **in** + Akk* (trust in) and *Vertrauen **zu** + Dat* both exist; *in* is more common for institutions, *zu* for people.',
+    '*nett zu* and *freundlich zu* take the **Dative**: *Sei nett **zu** deinem Bruder* (be nice to your brother).',
     'With a clause instead of a noun, use the da-compound: *Ich bin stolz **darauf**, dass du die Prüfung bestanden hast.*',
   ],
   exercises: [
@@ -177,9 +177,9 @@ Adjectives and nouns with prepositions appear constantly in B1 speaking and writ
     {
       type: 'fill',
       id: 'b1-28-adjective-noun-prepositions-ex11',
-      prompt: 'Sie hat großes Vertrauen ___ ihren Arzt. (in)',
-      answer: ['in'],
-      explanation: 'Vertrauen in + Akkusativ. The Accusative ihren Arzt shows that the preposition is in.',
+      prompt: 'Der Grund ___ meine Absage ist eine Krankheit. (for)',
+      answer: ['für'],
+      explanation: 'der Grund für + Akkusativ = the reason for. The Accusative meine Absage confirms it.',
     },
     {
       type: 'mc',

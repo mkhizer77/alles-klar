@@ -37,3 +37,14 @@ Points the content writers flagged for a native-speaker check. None blocks use; 
 - b1-20: *falls / wenn* and *sofern / wenn* both accepted.
 - b1-26: *laut* with Genitive or Dative; *mit Hilfe* accepted next to *mithilfe*.
 - b1-29: *gemissbraucht* mentioned as heard, *missbraucht* recommended.
+
+## Level review, 2026-10-28
+
+The learner found some concepts "alien", so every A2 and B1 topic was re-read against the Goethe/telc syllabus for its level. Rule applied: a topic explains what its level is expected to produce; forms the level only needs to recognise are reduced to one "You may also see …" line; anything beyond the level is cut. Every German grammar term is glossed in English the first time it appears, and each explanation opens with what the structure is for and one example before any rule. Exercises that tested removed material were replaced; every topic keeps at least 9.
+
+Kept although at the upper edge of the level (and why):
+
+- A2: adjective endings without an article incl. the Dative row (*bei schönem Wetter*, recognition only); *während* and *statt* next to *wegen* (in the topic title, kept short); *ohne … zu / anstatt … zu* (same pattern as *um … zu*); pronoun order in the midfield reduced to three rules; the full Konjunktiv II paradigm with *müsste/dürfte* (compact); a recognition table of common strong-verb Präteritum forms, marked "recognise, do not produce".
+- B1 units 1–5: the Perfekt passive *ist … worden* (in the curriculum, common in B1 reading; *wurde …* given as the safe choice); Konjunktiv II past with *hätte … sollen/können* only (regrets and advice are a B1 speaking task); past Konjunktiv II after *als ob* (one example, reuses the form); *…, was mich freut* and *wo(r)-* forms after *etwas/nichts*; modal verbs in the Perfekt framed as "recognise, use the Präteritum yourself"; Konjunktiv I er-forms (*sei, habe, werde, könne, müsse, wisse*) for reading the news, recognition only.
+- The als/wenn topic was rebuilt as a three-way contrast (als / wenn / immer wenn, jedes Mal, wenn) with *wann* set apart, because that is how it is taught in class.
+- B1 units 6–10: Futur II and the guessing modals *muss / dürfte* (b1-24) are recognition only; the topic now teaches B1 ways to guess (*wahrscheinlich, wohl, vielleicht, könnte*, Perfekt + *wahrscheinlich*). *sich lassen* + infinitive and *sein / haben … zu* = must stay as one line each because the passive-alternatives topic links to them. Extended participle groups, verb-first conditions, Genitive without an article and *anlässlich / infolge / anhand / bezüglich* are single "You may also see" lines for reading. *sofern* and *es sei denn* stay because they are in the curriculum title. *leiden an* and *kindlich / kindisch* are borderline but in B1 word lists.

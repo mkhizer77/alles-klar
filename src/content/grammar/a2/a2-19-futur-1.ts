@@ -55,27 +55,26 @@ Use Futur I when you want to express more than a plan:
 
 | meaning | example |
 |---|---|
-| **prediction** | Es wird kalt werden. – *It is going to get cold.* |
-| **promise / intention** | Ich werde das nie wieder tun. – *I will never do that again.* |
-| **guess about now** (often with *wohl*) | Er wird wohl krank sein. – *He is probably ill.* |
-| **strong statement / order** | Du wirst jetzt dein Zimmer aufräumen! – *You will tidy your room now!* |
+| **prediction** | Es wird morgen regnen. – *It is going to rain tomorrow.* |
+| **promise** | Ich werde dich anrufen. – *I will call you.* |
+| **intention** | Ich werde mehr Sport machen. – *I am going to do more sport.* |
 
-The guess use is important: *Sie wird wohl schon zu Hause sein* is not about the future at all. It means *She is probably at home already.*
+You may also see *werden* + **wohl** for a guess about the present: *Er wird wohl krank sein* = *He is probably ill.* You only need to recognise this; it is a B1 topic.
 
-### werden has other jobs
+### werden also means "to become"
 
-Be careful: *werden* is also a normal verb meaning *to become* (*Ich werde müde* – I am getting tired) and later it builds the passive. If *werden* is followed by an **infinitive** at the end, it is the future. If it is followed by an adjective or noun, it means *become*.
+Be careful: *werden* is also a normal verb meaning *to become*: *Ich werde müde* (I am getting tired), *Sie wird Ärztin* (she is becoming a doctor). If *werden* is followed by an **infinitive** at the end, it is the future. If it is followed by an adjective or noun, it means *become*.
 
 ### Why it matters
 
-You need the Präsens form to sound natural when you make plans, and you need *werden* to make promises, forecasts and guesses. Knowing the difference also helps you read: a sentence with *wohl* and *werden* is a guess, not a timetable.
+You need the Präsens form to sound natural when you make plans, and you need *werden* to make promises and predictions. Knowing the difference also helps you read: *Es wird regnen* is a forecast, *Es wird dunkel* means it is getting dark.
 `,
   examples: [
     { de: 'Morgen fahre ich nach Hamburg.', en: 'Tomorrow I am going to Hamburg. (Präsens + time word)' },
     { de: 'Ich werde dich morgen anrufen.', en: 'I will call you tomorrow. (promise)' },
     { de: 'Es wird heute Nacht schneien.', en: 'It is going to snow tonight. (prediction)' },
     { de: 'Wir werden nächstes Jahr ein Haus kaufen.', en: 'We will buy a house next year. (intention)' },
-    { de: 'Er wird wohl im Büro sein.', en: 'He is probably in the office. (guess about now)' },
+    { de: 'Wirst du mir helfen?', en: 'Will you help me? (question: werden first, infinitive last)' },
     { de: 'Ich hoffe, dass du die Prüfung bestehen wirst.', en: 'I hope you will pass the exam. (werden at the end of the dass-clause)' },
     { de: 'Es wird langsam dunkel.', en: 'It is slowly getting dark. (werden = to become, no infinitive)' },
   ],
@@ -83,15 +82,14 @@ You need the Präsens form to sound natural when you make plans, and you need *w
     { topicId: 'a1-17-modal-verbs', note: 'werden + infinitive forms the same sentence bracket as a modal verb: conjugated verb second, infinitive at the end.' },
     { topicId: 'a1-30-word-order-midfield', note: 'The sentence bracket (Satzklammer) explains why the infinitive goes last.' },
     { topicId: 'a2-04-subordinate-clauses-weil-dass', note: 'In a dass- or weil-clause, werden moves to the very end, after the infinitive.' },
-    { topicId: 'b1-23-werden', note: 'werden has three jobs: future, passive and "to become". This topic covers only the future.' },
-    { topicId: 'b1-24-futur-2-probability', note: 'Futur II (wird gemacht haben) extends the "guess" use into the past.' },
+    { topicId: 'b1-23-werden', note: 'At B1 werden gets a third job besides future and "to become".' },
+    { topicId: 'b1-24-futur-2-probability', note: 'werden + wohl as a guess (Er wird wohl krank sein) is explained properly at B1.' },
   ],
   edgeCases: [
     'Do not translate every English *will* with *werden*. *I will see you tomorrow* is normally *Wir sehen uns morgen*.',
     'The second person is **du wirst**, not *du werdst*. The stem changes: werde – wirst – wird.',
     '*Ich werde Lehrer* means *I am becoming a teacher*. Only *werden* + **infinitive** at the end is the future tense.',
-    'With a modal verb the sentence gets two verbs at the end: *Ich werde morgen arbeiten müssen* (the modal comes last).',
-    '*werden* + *wohl* usually expresses a **guess about the present**, not the future: *Das wird wohl stimmen* = *That is probably true.*',
+    'You may see *werden* + *wohl*: *Das wird wohl stimmen* = *That is probably true.* It is a guess, not a statement about the future.',
   ],
   exercises: [
     {
@@ -155,10 +153,10 @@ You need the Präsens form to sound natural when you make plans, and you need *w
     {
       type: 'mc',
       id: 'a2-19-futur-1-ex08',
-      prompt: 'What does "Er wird wohl krank sein." mean?',
-      options: ['He will get sick later.', 'He is probably sick (now).', 'He wants to be sick.'],
-      answer: 1,
-      explanation: 'werden + wohl expresses a guess about the present. It is not a future statement here.',
+      prompt: 'Which sentence is a prediction with Futur I?',
+      options: ['Es wird morgen schneien.', 'Es schneit.', 'Es wird kalt.'],
+      answer: 0,
+      explanation: 'Es wird morgen schneien has werden + an infinitive at the end: that is the future. Es wird kalt has no infinitive, so werden means "to become" there.',
     },
     {
       type: 'translate',

@@ -53,16 +53,13 @@ The pronoun **was** is used after:
 
 If *was* needs a preposition, use the **wo(r)-** form: *etwas, **worüber** ich mich freue*; *nichts, **wofür** ich Zeit habe*.
 
-### wer for "whoever"
+### You may also see …
 
-**wer** starts a relative clause without a noun before it: *whoever, anyone who*. It changes for case like the question word (*wer, wen, wem*). The main clause often starts with *der* (optional):
-
-- **Wer** zu spät kommt, (der) muss draußen warten. – *Whoever comes late has to wait outside.*
-- **Wen** ich kenne, den grüße ich. – *Anyone I know, I greet.*
+**wer** at the start of a sentence can mean *whoever, anyone who*: *Wer zu spät kommt, muss draußen warten.* – *Whoever comes late has to wait outside.* You will read it in rules and sayings. Recognise it; you do not need to build sentences with it yet.
 
 ### Why it matters
 
-Verbs with prepositions are everywhere in German, so relative clauses with prepositions are too. *Wo*, *was* and *wer* let you avoid clumsy sentences and sound natural. The B1 exam loves *das Beste, was …* and *…, was mich freut* in letters and opinions.
+Verbs with prepositions are everywhere in German, so relative clauses with prepositions are too. *Wo* and *was* let you avoid clumsy sentences and sound natural. The B1 exam loves *das Beste, was …* and *…, was mich freut* in letters and opinions.
 `,
   examples: [
     { de: 'Das ist der Freund, mit dem ich oft Tennis spiele.', en: 'That is the friend I often play tennis with. (mit + Dative → dem)' },
@@ -71,7 +68,7 @@ Verbs with prepositions are everywhere in German, so relative clauses with prepo
     { de: 'Die Stadt, wo ich geboren bin, liegt am Meer.', en: 'The town where I was born is by the sea. (wo replaces in der)' },
     { de: 'Das ist alles, was ich weiß.', en: 'That is all I know. (alles → was)' },
     { de: 'Er hat die Prüfung bestanden, was mich sehr freut.', en: 'He passed the exam, which makes me very happy. (was refers to the whole sentence)' },
-    { de: 'Wer zu spät kommt, muss draußen warten.', en: 'Whoever comes late has to wait outside.' },
+    { de: 'Wer zu spät kommt, muss draußen warten.', en: 'Whoever comes late has to wait outside. (wer = whoever, for recognition)' },
   ],
   connections: [
     { topicId: 'b1-04-relative-clauses-dat-gen', note: 'The full relative pronoun table; here the preposition decides which row you need.' },
@@ -84,7 +81,7 @@ Verbs with prepositions are everywhere in German, so relative clauses with prepo
     '**wo** is for places and times only. For people use the pronoun: *die Frau, **mit der** ich arbeite*.',
     'After **alles, etwas, nichts** and **das Beste / das Schönste** use **was**, not *das*: *alles, was ich habe*.',
     'With *was* + preposition use **wo(r)-**: *etwas, **worauf** ich mich freue*, not *auf was*.',
-    '**wer** at the start of a sentence can be a question (*Wer kommt?*) or a relative clause (*Wer kommt, bekommt Kuchen.*). The comma and the second clause tell you which.',
+    '**wer** at the start of a sentence can be a question (*Wer kommt?*) or mean *whoever* (*Wer kommt, bekommt Kuchen.*). The comma and the second clause tell you which.',
   ],
   exercises: [
     {
@@ -136,9 +133,9 @@ Verbs with prepositions are everywhere in German, so relative clauses with prepo
     {
       type: 'fill',
       id: 'b1-05-relative-clauses-prepositions-ex07',
-      prompt: '___ zu spät kommt, muss draußen warten. (whoever)',
-      answer: ['Wer'],
-      explanation: 'wer starts a relative clause without a noun: whoever comes late.',
+      prompt: 'Die Kollegen, mit ___ ich arbeite, sind sehr nett.',
+      answer: ['denen'],
+      explanation: 'mit takes the Dative, and die Kollegen is plural: Dative plural = denen.',
     },
     {
       type: 'match',

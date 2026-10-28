@@ -43,18 +43,18 @@ The passive is built with **werden** + **Partizip II** at the end of the clause.
 | Der Lehrer korrigiert **die Tests**. | **Die Tests** werden (vom Lehrer) korrigiert. |
 | Man baute **die Brücke** 1990. | **Die Brücke** wurde 1990 gebaut. |
 
-Only the Accusative object can become the subject. A **Dative object stays Dative**: *Man hilft dem Mann* → ***Dem Mann** wird geholfen.* The sentence then has no real subject, and the verb is always in the *es*-form (*wird*).
+Only the Accusative object can become the subject.
 
 ### Saying who did it: von and durch
 
 - **von** + Dative for the **person** (or thing) that does the action: *Der Brief wird **von meiner Mutter** geschrieben.*
 - **durch** + Accusative for the **means or cause**: *Die Stadt wurde **durch ein Erdbeben** zerstört.*
 
-Most passive sentences have **no** agent at all. If you want to say who did it, an active sentence is usually better.
+Most passive sentences do not say who did it at all. If the doer is important, an active sentence is usually better.
 
-### Passive with no object at all
+### You may also see …
 
-German can even make a passive from verbs that have no object, to describe a general activity: *Hier **wird** nicht geraucht.* (*No smoking here.*) *Es **wurde** die ganze Nacht getanzt.* The *es* only fills position one and disappears if something else comes first.
+On signs and in notices you will read passive sentences with **no subject**: *Hier **wird** nicht geraucht.* (*No smoking here.*) *Hier **wird** Deutsch gesprochen.* The verb is then always *wird*. You will also read sentences like *Dem Mann **wird** geholfen* (*the man is being helped*): with a Dative verb such as *helfen*, the Dative stays and the verb stays *wird*. Recognise both; for your own sentences, *man* is easier: *Hier raucht man nicht. Man hilft dem Mann.*
 
 ### Why it matters
 
@@ -66,8 +66,7 @@ The passive is everywhere in written German: news (*Der Täter wurde festgenomme
     { de: 'Das Auto wurde gestern repariert.', en: 'The car was repaired yesterday. (Präteritum passive)' },
     { de: 'Die Tests werden vom Lehrer korrigiert.', en: 'The tests are corrected by the teacher. (von + Dative for the doer)' },
     { de: 'Die Stadt wurde durch ein Erdbeben zerstört.', en: 'The city was destroyed by an earthquake. (durch for the cause)' },
-    { de: 'Dem Mann wird geholfen.', en: 'The man is being helped. (Dative stays Dative)' },
-    { de: 'Hier wird nicht geraucht.', en: 'No smoking here. (passive with no subject)' },
+    { de: 'Hier wird nicht geraucht.', en: 'No smoking here. (passive with no subject, typical on signs)' },
   ],
   connections: [
     { topicId: 'a1-31-perfekt-haben', note: 'The Partizip II you learned for the Perfekt is the same form used in the passive.' },
@@ -78,9 +77,8 @@ The passive is everywhere in written German: news (*Der Täter wurde festgenomme
   ],
   edgeCases: [
     '**werden + Partizip II** = passive; **werden + Infinitiv** = future. *Das Haus wird gebaut* (is being built) vs *Er wird bauen* (he will build).',
-    'A **Dative** object does not become the subject: *Mir wird geholfen*, never *Ich werde geholfen*.',
+    'Only an **Accusative** object becomes the subject. With a Dative verb like *helfen* you will read *Mir wird geholfen*, never *Ich werde geholfen*. If in doubt, use *man*: *Man hilft mir.*',
     'The doer takes **von** + Dative (*vom Lehrer*), the means or cause takes **durch** + Accusative (*durch ein Erdbeben*).',
-    'Verbs without an Accusative object can still form a passive with *es* or an empty subject: *Es wird gearbeitet. / Hier wird gearbeitet.*',
     'Do not use the passive when you simply mean "is + adjective-like state": *Die Tür ist geschlossen* is the Zustandspassiv (next topics).',
   ],
   exercises: [
@@ -154,7 +152,7 @@ The passive is everywhere in written German: news (*Der Täter wurde festgenomme
       id: 'b1-06-passive-present-past-ex09',
       prompt: 'Hier ___ nicht geraucht. (werden)',
       answer: ['wird'],
-      explanation: 'A passive with no subject always uses the es-form: wird.',
+      explanation: 'A sign like this is a passive with no subject. The verb is then always the er / sie / es form: wird.',
     },
     {
       type: 'translate',
@@ -167,10 +165,10 @@ The passive is everywhere in written German: news (*Der Täter wurde festgenomme
     {
       type: 'mc',
       id: 'b1-06-passive-present-past-ex11',
-      prompt: 'Why is it "Dem Mann wird geholfen." and not "Der Mann wird geholfen."?',
-      options: ['helfen takes the Dative, and the Dative stays in the passive', 'The passive always starts with the Dative', 'Mann is neuter'],
+      prompt: 'Which sentence is in the passive?',
+      options: ['Das Haus wird gebaut.', 'Er wird ein Haus bauen.', 'Das Haus ist groß geworden.'],
       answer: 0,
-      explanation: 'Only an Accusative object can become the subject. A Dative object keeps its case, and the verb stays in the es-form.',
+      explanation: 'werden + Partizip II (gebaut) is the passive: the house is being built. werden + Infinitiv (bauen) is the future: he will build.',
     },
     {
       type: 'order',

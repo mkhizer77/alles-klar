@@ -60,7 +60,7 @@ Note that German says *die Hände*, not *meine Hände*: the Dative pronoun alrea
 
 ### Word order and the Perfekt
 
-The pronoun stands **right after the conjugated verb**: *Ich freue **mich** sehr.* In a question or after inversion it follows the subject: *Freust du **dich**? Heute beeile ich **mich**.* In a Nebensatz it comes right after the subject: *…, weil ich **mich** beeile.*
+The pronoun stands **right after the conjugated verb** (the verb with the ending): *Ich freue **mich** sehr.* In a question, or when the sentence starts with another word, it follows the subject: *Freust du **dich**? Heute beeile ich **mich**.* In a subordinate clause (*Nebensatz*) it comes right after the subject: *…, weil ich **mich** beeile.*
 
 The Perfekt is **always with haben**: *Ich habe mich gefreut. Er hat sich erkältet.*
 

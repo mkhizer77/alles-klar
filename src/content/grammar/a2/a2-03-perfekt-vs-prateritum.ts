@@ -133,7 +133,7 @@ Learners often think the Präteritum is "more correct". It is not; it is just mo
       prompt: 'Rewrite "Wir aßen Pizza." as you would say it in a text message.',
       options: ['Wir haben Pizza gegessen.', 'Wir hatten Pizza gegessen.', 'Wir essen Pizza.'],
       answer: 0,
-      explanation: 'Spoken / informal past = Perfekt: haben + gegessen. Wir hatten gegessen is a different tense (Plusquamperfekt), and wir essen is present.',
+      explanation: 'Spoken / informal past = Perfekt: haben + gegessen. Wir hatten gegessen means "we had eaten" (a different tense you meet at B1), and wir essen is present.',
     },
     {
       type: 'fill',

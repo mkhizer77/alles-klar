@@ -35,17 +35,7 @@ The first part can also be a verb stem (*schlafen* → das **Schlaf**zimmer), an
 
 ### Linking letters
 
-Sometimes a small sound is inserted between the parts. These are called **Fugenelemente** (joining elements). There is no perfect rule, but the common patterns are:
-
-| joining element | example |
-|---|---|
-| **-s-** (often after -ung, -heit, -keit, -ion, -tät) | die Zeitung**s**artikel, die Arbeit**s**zeit, der Geburt**s**tag |
-| **-n- / -en-** (many feminine nouns on -e) | die Straße**n**bahn, der Familie**n**name, das Studente**n**wohnheim |
-| **-e-** | der Hund**e**platz, das Tag**e**buch |
-| **-er-** (plural-like) | das Kind**er**zimmer, das Wört**er**buch |
-| nothing | die Haustür, der Stadtplan |
-
-When you learn a compound, learn the joining letter with it.
+Sometimes a small sound is inserted between the parts so the word is easier to say: der Geburt**s**tag, die Arbeit**s**zeit (**-s-**); die Straße**n**bahn, der Familie**n**name (**-n-**); das Kind**er**zimmer, das Wört**er**buch (**-er-**). There is no simple rule for which letter appears, so when you learn a compound, learn the joining letter with it. Many compounds have none: *die Haustür, der Stadtplan*.
 
 ### Nouns from verbs: -ung
 
@@ -95,7 +85,7 @@ With these patterns you can **guess the gender** of thousands of words without l
   ],
   edgeCases: [
     'The **last** word decides everything. *Der Apfelbaum* (der Baum) but *das Apfelmus* (das Mus). Learners often take the gender of the first word by mistake.',
-    'Joining letters are not predictable from rules alone. *Arbeit**s**zeit* has -s-, *Arbeit**s**amt* too, but *Arbeitgeber* has none. Learn them with the word.',
+    'Joining letters are not predictable. *Arbeit**s**zeit* has -s-, but *Arbeitgeber* (employer) has none. Learn them with the word.',
     '*-er* makes a **person or tool**, not an action: *der Drucker* is a printer (machine), *das Drucken* is the printing. The action noun is usually *-ung* or the capitalised infinitive.',
     'Some professions are not formed with -er: *der Arzt / die Ärztin*, *der Koch / die Köchin*. The **-in** ending still works for the female form.',
     'The umlaut in *-in* words follows the male form if it already has one, and some add it: *Bäcker → Bäckerin* (no change), *Arzt → Ärztin* (added).',

@@ -10,9 +10,14 @@ const topic: Topic = {
   tags: ['verbs', 'vocabulary', 'collocations', 'formal style'],
   summary: 'Noun–verb combinations are fixed pairs like eine Entscheidung treffen or eine Frage stellen, where the noun carries the meaning and the verb is just the partner that must be used with it.',
   explanation: `
-### What they are
+### What they are for
 
-A **noun–verb combination** (*Nomen-Verb-Verbindung*, also *Funktionsverbgefüge*) is a fixed pair: a noun that carries the meaning plus a verb that has lost most of its own meaning. English has them too: *to make a decision*, *to take a photo*, *to have a look*.
+Some everyday ideas are said with a noun plus a fixed verb, and the verb is not the one English would choose:
+
+- Wir müssen **eine Entscheidung treffen**. – *We have to make a decision.* (literally "meet" a decision)
+- Darf ich **eine Frage stellen**? – *May I ask a question?* (literally "put" a question)
+
+A **noun–verb combination** (*Nomen-Verb-Verbindung*) is such a fixed pair: a noun that carries the meaning plus a verb that has lost most of its own meaning. English has them too: *to make a decision*, *to take a photo*, *to have a look*.
 
 The important point: the verb is **not free**. You cannot "make" a decision in German; you *treffen* it. You cannot "make" a question; you *stellen* it. Learners who choose the verb by translating from English make mistakes here, so these pairs must be learned as units.
 
@@ -26,7 +31,6 @@ The important point: the verb is **not free**. You cannot "make" a decision in G
 | Platz **nehmen** | sich setzen | to take a seat |
 | Rücksicht **nehmen** (auf) | – | to show consideration |
 | Bescheid **sagen / geben** | informieren | to let someone know |
-| Kritik **üben** (an) | kritisieren | to criticise |
 | eine Rolle **spielen** | wichtig sein | to play a role, to matter |
 | sich Mühe **geben** | sich anstrengen | to make an effort |
 | Sport **treiben / machen** | – | to do sport |
@@ -35,24 +39,20 @@ The important point: the verb is **not free**. You cannot "make" a decision in G
 | Interesse **haben** (an) | sich interessieren | to be interested |
 | zur Verfügung **stehen / stellen** | – | to be / make available |
 | in Frage **kommen** | möglich sein | to be an option |
-| in Erfüllung **gehen** | sich erfüllen | to come true |
-| in Kraft **treten** | gültig werden | to come into force |
-| zu Ende **gehen / bringen** | enden / beenden | to come to an end / to finish |
-| zum Ausdruck **bringen** | ausdrücken | to express |
-| Einfluss **haben** (auf) | beeinflussen | to have influence |
+| zu Ende **gehen** | enden | to come to an end |
 
-Notice the small group of verbs that come up again and again: **treffen, stellen, nehmen, geben, führen, bringen, kommen, gehen, haben, machen**. Learning which noun goes with which is the whole task.
+Notice the small group of verbs that come up again and again: **treffen, stellen, nehmen, geben, führen, kommen, gehen, haben, machen**. Learning which noun goes with which is the whole task.
 
 ### How they behave
 
-- The noun is usually in the **Accusative** (*eine Entscheidung*, *Platz*) or sits inside a **prepositional phrase** (*in Kraft*, *zur Verfügung*, *zum Ausdruck*).
+- The noun is usually in the **Accusative** (*eine Entscheidung*, *Platz*) or sits inside a **prepositional phrase** (*zur Verfügung*, *in Frage*, *zu Ende*).
 - The verb conjugates normally and takes its usual Perfekt form: *Ich **habe** eine Entscheidung **getroffen**.*
-- Many combinations come with a fixed preposition for the extra object: *Rücksicht nehmen **auf** + Akk*, *Interesse haben **an** + Dat*, *Kritik üben **an** + Dat*.
+- Some combinations come with a fixed preposition for the extra object: *Rücksicht nehmen **auf** + Akk*, *Interesse haben **an** + Dat*.
 - In a main clause the noun goes towards the **end**, like a separable prefix: *Er **nimmt** auf die Kinder **Rücksicht***.
 
 ### Why it matters
 
-These combinations are the sound of **formal and written German**: letters, news, work emails and the B1 reading texts are full of them. Using them makes your own writing more precise (*Kritik üben* is sharper than *kritisieren*) and more natural. And since the verb is unpredictable, every pair you memorise is one mistake you will not make.
+These combinations are the sound of **natural and written German**: letters, news, work emails and the B1 reading texts are full of them. Using them makes your own writing more precise and more natural. And since the verb is unpredictable, every pair you memorise is one mistake you will not make.
 `,
   examples: [
     { de: 'Wir müssen bald eine Entscheidung treffen.', en: 'We have to make a decision soon.' },
@@ -60,7 +60,7 @@ These combinations are the sound of **formal and written German**: letters, news
     { de: 'Bitte nehmen Sie Platz.', en: 'Please take a seat.' },
     { de: 'Sag mir bitte Bescheid, wenn du kommst.', en: 'Please let me know when you are coming.' },
     { de: 'Geld spielt bei dieser Entscheidung keine Rolle.', en: 'Money plays no role in this decision.' },
-    { de: 'Das neue Gesetz tritt im Januar in Kraft.', en: 'The new law comes into force in January.' },
+    { de: 'Die Ferien gehen leider bald zu Ende.', en: 'Unfortunately the holidays are coming to an end soon.' },
     { de: 'Ich stelle Ihnen mein Auto gern zur Verfügung.', en: 'I am happy to make my car available to you.' },
     { de: 'Sie hat sich große Mühe gegeben.', en: 'She made a great effort. (Perfekt: gegeben)' },
   ],
@@ -69,13 +69,13 @@ These combinations are the sound of **formal and written German**: letters, news
     { topicId: 'b1-27-verb-preposition-b1', note: 'Many combinations carry a fixed preposition: Rücksicht nehmen auf, Interesse haben an.' },
     { topicId: 'a1-30-word-order-midfield', note: 'The noun part sits at the end of the midfield, like a separable prefix.' },
     { topicId: 'b1-31-register-formal-informal', note: 'Noun–verb combinations are typical of formal letters and official texts.' },
-    { topicId: 'a2-30-word-formation-compounds', note: 'Many of the nouns here are -ung nouns built from verbs: Entscheidung, Verfügung, Erfüllung.' },
+    { topicId: 'a2-30-word-formation-compounds', note: 'Many of the nouns here are -ung nouns built from verbs: Entscheidung, Verfügung.' },
   ],
   edgeCases: [
     'Do not translate the verb from English: *eine Entscheidung **treffen*** (not *machen*), *eine Frage **stellen*** (not *machen* or *fragen*).',
     '*Platz nehmen* (to sit down) is different from *Platz haben* (to have room). Both exist, but with different meanings.',
     '*Bescheid sagen* is informal, *Bescheid geben* is neutral; both mean "to let someone know".',
-    'Some combinations have a transitive and an intransitive version: *zur Verfügung **stellen*** (make available) vs *zur Verfügung **stehen*** (be available); *zu Ende **bringen*** vs *zu Ende **gehen***.',
+    'Watch the pair *zur Verfügung **stellen*** (someone makes something available) vs *zur Verfügung **stehen*** (something is available): *Ich stelle dir mein Auto zur Verfügung* / *Das Auto steht dir zur Verfügung*.',
     'The fixed preposition belongs to the combination, not to the verb: *Rücksicht nehmen **auf***, but *Abschied nehmen **von***.',
   ],
   exercises: [
@@ -104,9 +104,9 @@ These combinations are the sound of **formal and written German**: letters, news
         ['Bescheid', 'sagen'],
         ['zur Verfügung', 'stehen'],
         ['Sport', 'treiben'],
-        ['Kritik', 'üben'],
+        ['sich Mühe', 'geben'],
       ],
-      explanation: 'Each noun has one or two fixed partner verbs. Abschied nehmen, eine Rolle spielen, Bescheid sagen, zur Verfügung stehen, Sport treiben, Kritik üben.',
+      explanation: 'Each noun has one or two fixed partner verbs. Abschied nehmen, eine Rolle spielen, Bescheid sagen, zur Verfügung stehen, Sport treiben, sich Mühe geben.',
     },
     {
       type: 'mc',
@@ -126,10 +126,10 @@ These combinations are the sound of **formal and written German**: letters, news
     {
       type: 'order',
       id: 'b1-25-noun-verb-combinations-ex06',
-      prompt: 'Build the sentence: "The law comes into force next year."',
-      words: ['tritt', 'Gesetz', 'Das', 'in', 'Jahr', 'nächstes', 'Kraft.'],
-      answer: ['Das Gesetz tritt nächstes Jahr in Kraft.'],
-      explanation: 'in Kraft treten: the verb tritt stands in position 2 and the noun part in Kraft goes to the end, after the time phrase.',
+      prompt: 'Build the sentence: "The holidays unfortunately come to an end next week."',
+      words: ['gehen', 'Ferien', 'Die', 'leider', 'Woche', 'nächste', 'zu', 'Ende.'],
+      answer: ['Die Ferien gehen leider nächste Woche zu Ende.'],
+      explanation: 'zu Ende gehen: the verb gehen stands in position 2 and the noun part zu Ende goes to the end, after the time phrase.',
     },
     {
       type: 'mc',
@@ -157,18 +157,18 @@ These combinations are the sound of **formal and written German**: letters, news
     {
       type: 'mc',
       id: 'b1-25-noun-verb-combinations-ex10',
-      prompt: 'Which simple verb means the same as "zum Ausdruck bringen"?',
-      options: ['ausdrücken', 'drucken', 'bringen'],
+      prompt: 'Which phrase means the same as "in Frage kommen"?',
+      options: ['möglich sein', 'eine Frage stellen', 'kommen'],
       answer: 0,
-      explanation: 'zum Ausdruck bringen = ausdrücken (to express). bringen on its own carries no meaning here.',
+      explanation: 'in Frage kommen = möglich sein (to be an option). Das kommt nicht in Frage = that is out of the question.',
     },
     {
       type: 'order',
       id: 'b1-25-noun-verb-combinations-ex11',
-      prompt: 'Build the sentence: "My wish has finally come true."',
-      words: ['ist', 'Wunsch', 'Mein', 'Erfüllung', 'endlich', 'gegangen.', 'in'],
-      answer: ['Mein Wunsch ist endlich in Erfüllung gegangen.'],
-      explanation: 'in Erfüllung gehen takes sein in the Perfekt (gehen). The noun part in Erfüllung goes before the participle gegangen.',
+      prompt: 'Build the sentence: "The film has unfortunately already come to an end."',
+      words: ['ist', 'Film', 'Der', 'Ende', 'leider', 'gegangen.', 'zu', 'schon'],
+      answer: ['Der Film ist leider schon zu Ende gegangen.'],
+      explanation: 'zu Ende gehen takes sein in the Perfekt (gehen). The noun part zu Ende goes right before the participle gegangen.',
     },
     {
       type: 'mc',

@@ -12,7 +12,7 @@ const topic: Topic = {
   explanation: `
 ### What it is
 
-Besides *der / die / das* and *ein / eine*, German has a group of small words that go in front of a noun and **behave like der / die / das**. Grammar books call them **der-words** (*Demonstrativartikel* and *Indefinitartikel*). The most useful are:
+Besides *der / die / das* and *ein / eine*, German has a group of small words that go in front of a noun and **behave like der / die / das**: *dieser Pullover* (this sweater), *jeden Tag* (every day), *welches Buch?* (which book?). Grammar books call them **der-words** because they take the endings of *der*. The most useful are:
 
 | der-word | meaning | note |
 |---|---|---|
@@ -20,8 +20,9 @@ Besides *der / die / das* and *ein / eine*, German has a group of small words th
 | **jeder** | every, each | singular only |
 | **alle** | all | plural only (the plural of *jeder*) |
 | **welcher** | which? | question word |
-| **mancher** | some, many a | mostly plural: *manche* |
-| **jener** | that | rare, formal; usually *der … dort* instead |
+| **mancher** | some | mostly plural: *manche Leute* |
+
+(You may also see **jener** = that, in formal or old texts. In speech people say *der … dort* instead.)
 
 Once you know the endings of *der / die / das* in the Nominative, Accusative and Dative, you know the endings of all these words.
 
@@ -161,7 +162,7 @@ These words are everywhere: *jeden Tag* (every day), *diese Woche* (this week), 
       id: 'a2-24-dieser-jeder-welcher-ex09',
       prompt: 'Ich kenne ___ Nachbarn in meiner Straße. (every; der Nachbar)',
       answer: ['jeden'],
-      explanation: 'kennen takes the Accusative. Nachbar is masculine, so jeden (and Nachbar gets -n as an n-declension noun).',
+      explanation: 'kennen takes the Accusative. Nachbar is masculine, so jeden. (The noun itself becomes Nachbarn here; a few masculine nouns add -n like this.)',
     },
     {
       type: 'translate',

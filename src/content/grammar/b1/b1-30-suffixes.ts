@@ -12,6 +12,11 @@ const topic: Topic = {
   explanation: `
 ### What a suffix does
 
+A few endings let you build new words from ones you know, and tell you the gender for free:
+
+- *frei* (free) → **die Freiheit** (freedom)
+- *essen* (to eat) → **essbar** (edible, can be eaten)
+
 A **suffix** (*Suffix*) is attached to the **end** of a word. Unlike a prefix, it usually changes the **word type**: an adjective becomes a noun (*frei* → *Freiheit*), a verb becomes a noun (*wohnen* → *Wohnung*), a noun becomes an adjective (*Freund* → *freundlich*). The best news: noun suffixes also fix the **gender**, so you never have to guess the article.
 
 ### Noun suffixes: all feminine
@@ -36,10 +41,10 @@ Other feminine suffixes you will meet: **-ei** (die Bäcker**ei**), **-tion** (d
 | **-isch** | belonging to, in the manner of; nationalities | typ**isch**, europä**isch**, kind**isch**, prakt**isch** |
 | **-bar** | can be done ("-able") | ess**bar**, mach**bar**, les**bar**, trink**bar** |
 | **-los** | without ("-less") | arbeits**los**, kosten**los**, hoffnungs**los**, hilf**los** |
-| **-voll** | full of | wert**voll**, sinn**voll**, geheimnis**voll** |
-| **-reich** | rich in | erfolg**reich**, zahl**reich** |
 
-**-bar** is especially useful: it is a short alternative to the passive with *können*. *Das Wasser ist trinkbar* = *Das Wasser kann getrunken werden* (the water can be drunk).
+You may also see **-voll** (full of: *wertvoll*, *sinnvoll*) and **-reich** (rich in: *erfolgreich*). They work the same way.
+
+**-bar** is especially useful: it means "can be done". *Das Wasser ist trinkbar* = *Das Wasser kann man trinken* (the water can be drunk).
 
 Some pairs look similar but differ in tone: **kindlich** (child-like, innocent, positive) vs **kindisch** (childish, immature, negative).
 
@@ -71,7 +76,7 @@ With suffixes you can **grow** your vocabulary from words you already know: from
   ],
   edgeCases: [
     '*-heit* vs *-keit*: after **-lich, -ig, -bar, -sam** always *-keit* (*Freundlichkeit*), otherwise *-heit* (*Freiheit*). Never *Freundlichheit*.',
-    '*-lich* and *-ig* can give **different meanings** from the same base: *kindlich* (child-like) vs *kindisch* (childish); *geistlich* (religious) vs *geistig* (mental).',
+    '*-lich* and *-isch* can give **different meanings** from the same base: *kindlich* (child-like, positive) vs *kindisch* (childish, negative).',
     'Not every verb can take *-ung*. Many use a different noun: *arbeiten* → *die Arbeit* (not *Arbeitung*), *fahren* → *die Fahrt*.',
     'Watch for the inserted **-s-**: *arbeitslos*, *hoffnungslos*, *hilfsbereit*. It is not a plural.',
     'The plural of all *-heit / -keit / -ung / -schaft* nouns is **-en**: *die Übungen*, *die Freundschaften*.',
@@ -165,7 +170,7 @@ With suffixes you can **grow** your vocabulary from words you already know: from
       id: 'b1-30-suffixes-ex11',
       prompt: 'Diese Idee ist leider nicht ___. (machen + -bar)',
       answer: ['machbar'],
-      explanation: 'machbar = feasible, can be done. -bar replaces kann gemacht werden.',
+      explanation: 'machbar = feasible, can be done. -bar says the same as kann man machen.',
     },
     {
       type: 'order',

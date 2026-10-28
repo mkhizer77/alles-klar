@@ -31,29 +31,23 @@ The helper verb is **always haben**, even with movement verbs: *Ich **habe** nac
 
 **Rule 2: Modal without another verb → normal Partizip II.**
 
-When the modal stands alone (the other verb is understood), it has a regular participle with *ge-*:
+When the modal stands alone (the other verb is understood from the context), it has a normal participle with *ge-*. The three you will actually meet:
 
 | modal | Partizip II | example |
 |---|---|---|
-| können | gekonnt | Ich habe das nicht **gekonnt**. |
-| müssen | gemusst | Er hat das **gemusst**. |
-| wollen | gewollt | Sie hat das nicht **gewollt**. |
-| dürfen | gedurft | Wir haben das nicht **gedurft**. |
-| sollen | gesollt | Das hat er nicht **gesollt**. |
-| mögen | gemocht | Ich habe ihn nie **gemocht**. |
+| können | gekonnt | Ich habe das nicht **gekonnt**. – *I was not able to.* |
+| wollen | gewollt | Sie hat das nicht **gewollt**. – *She did not want that.* |
+| mögen | gemocht | Ich habe ihn nie **gemocht**. – *I never liked him.* |
 
-*Gemocht* is common (with a noun object). The others are rare, but you will see them.
+*Gemocht* is the common one (with a noun object: *ich habe den Film gemocht*). *Gemusst, gedurft* and *gesollt* exist too, but they are rare.
 
-### Word order in a subordinate clause
+### You may also see …
 
-Normally the conjugated verb goes to the very end of a *dass* or *weil* clause. With a double infinitive this is the one exception: **haben** goes **before** the two infinitives.
-
-- Er sagt, dass er gestern **hat arbeiten müssen**. (not *arbeiten müssen hat*)
-- Ich weiß, dass sie nicht **hat kommen können**.
+In a *dass* or *weil* clause the helper verb normally goes to the very end. With a double infinitive you will see **haben** in front of the two infinitives instead: *Er sagt, dass er gestern **hat arbeiten müssen**.* Just recognise this pattern when you read it. In your own sentences use the Präteritum: *Er sagt, dass er gestern **arbeiten musste**.*
 
 ### Why it matters
 
-In practice Germans **prefer the Präteritum** for modals (*ich musste, ich konnte*) even in speech, because it is shorter. So you will mostly **hear and read** the double infinitive rather than produce it. But you need to recognise it, and the same structure returns in the past Konjunktiv II (*ich hätte arbeiten müssen* – I should have worked) and in the passive with modals, both B1 topics. Learn the shape now and those will feel familiar.
+In practice Germans **prefer the Präteritum** for modals (*ich musste, ich konnte*) even in speech, because it is shorter. So you will mostly **hear and read** the double infinitive rather than produce it. But you need to recognise it, and the same shape returns in the past Konjunktiv II (*ich hätte arbeiten müssen* – I should have worked) and in the passive with modals, both B1 topics. Learn the shape now and those will feel familiar.
 `,
   examples: [
     { de: 'Ich habe gestern lange arbeiten müssen.', en: 'I had to work late yesterday. (double infinitive at the end)' },
@@ -61,7 +55,7 @@ In practice Germans **prefer the Präteritum** for modals (*ich musste, ich konn
     { de: 'Wir haben den Film nicht sehen dürfen.', en: 'We were not allowed to watch the film.' },
     { de: 'Das Kind hat nicht schlafen wollen.', en: 'The child did not want to sleep.' },
     { de: 'Ich habe das leider nicht gekonnt.', en: 'Unfortunately I was not able to (do it). (modal alone → gekonnt)' },
-    { de: 'Sie sagt, dass sie früher hat aufstehen müssen.', en: 'She says that she had to get up earlier. (haben before the double infinitive)' },
+    { de: 'Sie hat früher aufstehen müssen.', en: 'She had to get up earlier. (haben, even though aufstehen alone takes sein)' },
     { de: 'Ich musste gestern arbeiten.', en: 'I had to work yesterday. (Präteritum, the more common choice)' },
   ],
   connections: [
@@ -74,9 +68,8 @@ In practice Germans **prefer the Präteritum** for modals (*ich musste, ich konn
   edgeCases: [
     'Always **haben**, never sein: *Ich **habe** gehen müssen*, even though gehen alone takes sein.',
     'Order at the end: **main verb first, modal last**: *arbeiten müssen*, not *müssen arbeiten*.',
-    'In a **dass** / **weil** clause, haben moves in front of the double infinitive: *…, dass er hat arbeiten müssen.*',
     'Modal **alone** → Partizip II with ge-: *Ich habe das gewollt.* Modal **with a verb** → double infinitive: *Ich habe es machen wollen.*',
-    'The same double infinitive appears with **lassen**, **sehen** and **hören**: *Ich habe ihn kommen sehen.*',
+    'In a **dass** / **weil** clause you may read *…, dass er **hat** arbeiten müssen*. Recognise it, but write *…, dass er arbeiten **musste*** yourself.',
   ],
   exercises: [
     {
@@ -120,10 +113,10 @@ In practice Germans **prefer the Präteritum** for modals (*ich musste, ich konn
     {
       type: 'mc',
       id: 'b1-03-modals-perfekt-ex06',
-      prompt: 'Complete the subordinate clause: "Er sagt, dass er gestern ___."',
-      options: ['hat arbeiten müssen', 'arbeiten müssen hat', 'arbeiten hat müssen'],
+      prompt: 'Which sentence is correct?',
+      options: ['Sie hat früher aufstehen müssen.', 'Sie ist früher aufstehen müssen.', 'Sie hat früher aufgestanden müssen.'],
       answer: 0,
-      explanation: 'Exception to the verb-last rule: with a double infinitive, hat goes in front of the two infinitives.',
+      explanation: 'The helper is always haben, even with aufstehen, and both verbs stay in the infinitive: aufstehen müssen.',
     },
     {
       type: 'match',
@@ -163,10 +156,10 @@ In practice Germans **prefer the Präteritum** for modals (*ich musste, ich konn
     {
       type: 'order',
       id: 'b1-03-modals-perfekt-ex11',
-      prompt: 'Build the sentence: "I know that she wanted to come."',
-      words: ['sie', 'kommen', 'dass', 'Ich', 'weiß,', 'wollen.', 'hat'],
-      answer: ['Ich weiß, dass sie hat kommen wollen.'],
-      explanation: 'In the dass clause the helper hat moves in front of the double infinitive kommen wollen.',
+      prompt: 'Build the sentence: "She wanted to come."',
+      words: ['kommen', 'Sie', 'wollen.', 'hat'],
+      answer: ['Sie hat kommen wollen.'],
+      explanation: 'hat in position two, then the double infinitive: main verb kommen first, modal wollen last.',
     },
     {
       type: 'fill',

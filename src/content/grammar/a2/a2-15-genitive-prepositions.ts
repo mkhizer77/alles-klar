@@ -12,7 +12,7 @@ const topic: Topic = {
   explanation: `
 ### What it is
 
-You already know prepositions that take the Accusative (*für, ohne*) and the Dative (*mit, nach*). A fourth group takes the **Genitive** (*Genitiv*). The four most useful ones at A2:
+You already know prepositions that take the Accusative (*für, ohne*) and the Dative (*mit, nach*). A small group takes the **Genitive** (the "of" case from the last topic). The most important one is **wegen** (because of): *Wegen des Regens bleiben wir zu Hause.* – *Because of the rain we are staying at home.* Three more are useful to know:
 
 | preposition | meaning | example |
 |---|---|---|
@@ -29,9 +29,10 @@ After these prepositions the article and noun take the Genitive forms from the p
 
 | | masculine | feminine | neuter | plural |
 |---|---|---|---|---|
-| definite | wegen **des** Sturm**s** | wegen **der** Krankheit | wegen **des** Wetter**s** | wegen **der** Kinder |
-| indefinite | statt **eines** Brief**es** | statt **einer** E-Mail | statt **eines** Geschenk**s** | – |
-| possessive | trotz **meines** Fehler**s** | trotz **seiner** Hilfe | trotz **unseres** Problem**s** | trotz **ihrer** Fehler |
+| the | wegen **des** Sturm**s** | wegen **der** Krankheit | wegen **des** Wetter**s** | wegen **der** Kinder |
+| a | statt **eines** Brief**es** | statt **einer** E-Mail | statt **eines** Geschenk**s** | – |
+
+*mein, sein, ihr …* take the same endings as *ein*: *wegen **seiner** Krankheit*, *trotz **meines** Fehlers*.
 
 Remember: masculine and neuter nouns add **-s / -es**; feminine and plural nouns do not change.
 
@@ -49,20 +50,17 @@ A preposition phrase can start the sentence. Then the verb comes right after it 
 - **Wegen des Regens** bleiben wir zu Hause.
 - Wir bleiben **wegen des Regens** zu Hause.
 
-### Spoken German: the Dative creeps in
+### Spoken German: you will hear the Dative
 
-In everyday speech many Germans use the **Dative** after these prepositions: *wegen dem Regen, trotz dem Wetter*. You will hear it a lot, and with *wegen* it is widely accepted in casual talk. But in **writing, exams and formal speech** the Genitive is the correct form, so that is what you should learn and use. When a plural noun has no article at all, the Dative is actually standard: *wegen Umbauarbeiten geschlossen* (closed because of building work).
+In everyday speech many Germans say *wegen dem Regen, trotz dem Wetter* (Dative). You will hear it a lot. But in **writing and exams** the Genitive is the correct form, so learn and use *wegen des Regens*. On signs the noun often has no article at all: *wegen Umbau geschlossen* (closed because of renovation). Then there is no Genitive ending to add.
 
-With pronouns, *wegen* has special forms: **meinetwegen** (because of me / as far as I'm concerned), **deinetwegen**, **seinetwegen**. In speech you will also hear *wegen mir*.
+### trotz is not trotzdem
 
-### trotz vs trotzdem, während as a conjunction
-
-- **trotz** is a preposition and needs a noun: *trotz des Regens*. **trotzdem** is an adverb meaning *nevertheless* and starts a new clause: *Es regnet. Trotzdem gehen wir raus.*
-- **während** can also be a conjunction (*while*): *Während ich koche, deckst du den Tisch.* Then the verb goes to the end of the clause.
+**trotz** is a preposition and needs a noun: *trotz des Regens*. **trotzdem** means *nevertheless* and starts a new sentence or clause: *Es regnet. Trotzdem gehen wir raus.* (You may also see *während* with a whole clause, *Während ich koche, …* = *While I cook, …*; that is a B1 topic.)
 
 ### Why it matters
 
-These four prepositions are the Genitive's main job in everyday German. They make your sentences shorter and more precise, and they appear constantly in signs, emails and news: *wegen Krankheit geschlossen*, *trotz aller Probleme*, *während der Arbeitszeit*.
+*wegen* is the preposition you need to give a reason in two words: *wegen des Wetters*, *wegen Krankheit*. The other three make your sentences shorter and more precise, and they appear constantly in signs, emails and news: *trotz des Regens*, *während der Arbeitszeit*, *statt einer E-Mail*.
 `,
   examples: [
     { de: 'Wegen des Regens bleiben wir zu Hause.', en: 'Because of the rain we are staying at home. (masculine: des Regens)' },
@@ -78,14 +76,13 @@ These four prepositions are the Genitive's main job in everyday German. They mak
     { topicId: 'a1-22-accusative-prepositions', note: 'Compare: für, ohne, durch always take the Accusative.' },
     { topicId: 'a1-25-dative-prepositions', note: 'Compare: mit, nach, von, zu always take the Dative.' },
     { topicId: 'a2-27-adverbial-connectors', note: 'trotzdem and deshalb say the same as trotz and wegen, but with a whole clause.' },
-    { topicId: 'b1-26-genitive-prepositions-depth', note: 'More Genitive prepositions at B1: innerhalb, außerhalb, aufgrund, mithilfe.' },
+    { topicId: 'b1-26-genitive-prepositions-depth', note: 'More Genitive prepositions at B1 (innerhalb, außerhalb, aufgrund) and während as a conjunction (while).' },
   ],
   edgeCases: [
     'In writing use the **Genitive**: *wegen des Regens*. *wegen dem Regen* (Dative) is common in speech but not standard.',
     '**trotz** + noun (*trotz des Regens*) vs **trotzdem** + clause (*Es regnet, trotzdem gehen wir*). Do not write *trotzdem des Regens*.',
     'Masculine and neuter nouns need their **-s / -es**: *während des Tag**es***, *wegen des Sturm**s***. Forgetting the noun ending is the most common slip.',
-    'A plural noun with **no article** takes no Genitive marking and is usually Dative: *wegen Bauarbeiten gesperrt*, *trotz Problemen*.',
-    '**während** as a conjunction (*while*) sends the verb to the end: *Während ich koche, liest er.*',
+    'A noun with **no article** has no Genitive ending: *wegen Umbau geschlossen*, *wegen Krankheit*. This is very common on signs and in short notes.',
   ],
   exercises: [
     {

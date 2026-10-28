@@ -10,21 +10,23 @@ const topic: Topic = {
   tags: ['participles', 'adjectives', 'declension', 'Partizip I', 'Partizip II'],
   summary: 'Partizip I (laufend = running) and Partizip II (gekocht = cooked) can stand in front of a noun like adjectives and take the normal adjective endings.',
   explanation: `
-### What it is
+### What it is for
+
+This is how you describe a thing by what it is doing or by what has been done to it, in one word instead of a whole clause:
+
+- der **laufende** Hund – *the running dog* (the dog that is running)
+- die **gekochte** Suppe – *the cooked soup* (the soup that has been cooked)
 
 A **participle** (*Partizip*) is a verb form that can behave like an adjective. German has two:
 
-- **Partizip I** (*Partizip Präsens*): *laufend* (running), *lachend* (laughing). It describes something that is **happening now**, actively.
-- **Partizip II** (*Partizip Perfekt*): *gekocht* (cooked), *geschrieben* (written). It describes something **finished**, usually with a passive meaning.
+- **Partizip I** (*Partizip Präsens*, "present participle"): *laufend* (running), *lachend* (laughing). It describes something that is **happening now**.
+- **Partizip II** (*Partizip Perfekt*, "past participle"): *gekocht* (cooked), *geschrieben* (written). It describes something **finished**, usually something that was done to the noun.
 
-Put either one in front of a noun and it works exactly like an adjective, with the usual **adjective endings**:
-
-- der **laufende** Hund – *the running dog*
-- die **gekochte** Suppe – *the cooked soup*
+Put either one in front of a noun and it works exactly like an adjective, with the usual **adjective endings**.
 
 ### Partizip I: how to form it
 
-**Infinitive + d**: laufen → laufen**d**, lachen → lachen**d**, schlafen → schlafen**d**. There are no exceptions. (*sein* → *seiend* exists but is almost never used.)
+**Infinitive + d**: laufen → laufen**d**, lachen → lachen**d**, schlafen → schlafen**d**. There are no exceptions.
 
 | infinitive | Partizip I | with a noun |
 |---|---|---|
@@ -67,13 +69,11 @@ Nothing new: the participle takes the ending the adjective would take in that po
 | Dat. m | dem laufend**en** Hund | einem laufend**en** Hund | laufend**em** Hund |
 | Nom. pl | die lachend**en** Kinder | – lachend**e** Kinder | lachend**e** Kinder |
 
-### Longer participle groups
-
-Written German likes to put extra information before the participle: *das **vor zwei Jahren gebaute** Haus* (the house built two years ago), *die **auf dem Tisch liegenden** Bücher* (the books lying on the table). This is the same as a relative clause (*das Haus, das vor zwei Jahren gebaut wurde*). At B1 you mainly need to **read** these; writing them is B2.
-
-### Participles as adverbs
+### Participles without a noun
 
 Without a noun, a participle can describe **how** something is done; then it has no ending: *Sie kam **lachend** ins Zimmer.* – *She came into the room laughing.*
+
+You may also see longer groups in newspapers, such as *das **vor zwei Jahren gebaute** Haus* (the house built two years ago). They mean the same as a relative clause (*das Haus, das vor zwei Jahren gebaut wurde*). At B1 you only need to recognise them, not write them.
 
 ### Why it matters
 
@@ -85,8 +85,7 @@ Participles as adjectives are everywhere in newspapers and official texts (*die 
     { de: 'Das schlafende Kind sitzt im Auto.', en: 'The sleeping child is sitting in the car.' },
     { de: 'Ich habe ein gebrauchtes Auto gekauft.', en: 'I bought a used car. (ein + neuter → -es)' },
     { de: 'Die zerbrochenen Fenster müssen repariert werden.', en: 'The broken windows have to be repaired. (plural after die → -en)' },
-    { de: 'Das vor zwei Jahren gebaute Haus ist schon wieder zu verkaufen.', en: 'The house built two years ago is already for sale again. (extended participle group)' },
-    { de: 'Sie kam lachend ins Zimmer.', en: 'She came into the room laughing. (participle as adverb, no ending)' },
+    { de: 'Sie kam lachend ins Zimmer.', en: 'She came into the room laughing. (participle without a noun, no ending)' },
   ],
   connections: [
     { topicId: 'a1-31-perfekt-haben', note: 'The Partizip II forms (gekocht, geschrieben) are the ones you learned for the Perfekt.' },
@@ -99,7 +98,7 @@ Participles as adjectives are everywhere in newspapers and official texts (*die 
     'Partizip I is always **infinitive + d**: *laufend*, never *laufing*. Then add the adjective ending: *laufend + e*.',
     '*kochend* (boiling, happening) and *gekocht* (boiled, done) are different words. Choose by meaning: is it happening or finished?',
     'Partizip II of **inseparable** verbs has no ge-: *die **bezahlte** Rechnung*, *das **zerbrochene** Glas*.',
-    'Used as an **adverb** (how?) the participle takes **no ending**: *Er ging **singend** nach Hause*.',
+    'Used without a noun, to say **how** something is done, the participle takes **no ending**: *Er ging **singend** nach Hause*.',
     'Some participles have become normal adjectives with their own meaning: *spannend* (exciting), *bekannt* (well-known), *anstrengend* (tiring), *verheiratet* (married).',
   ],
   exercises: [
@@ -187,17 +186,10 @@ Participles as adjectives are everywhere in newspapers and official texts (*die 
     {
       type: 'mc',
       id: 'b1-15-participles-as-adjectives-ex11',
-      prompt: 'In which sentence is the participle used as an adverb (describing how), not as an adjective?',
+      prompt: 'In which sentence does the participle describe how something is done (no noun, no ending)?',
       options: ['Sie kam lachend ins Zimmer.', 'Die lachende Frau ist meine Tante.', 'Das lachende Kind spielt.'],
       answer: 0,
       explanation: 'lachend without a noun and without an ending tells you how she came. In the other sentences it describes a noun and takes an ending.',
-    },
-    {
-      type: 'fill',
-      id: 'b1-15-participles-as-adjectives-ex12',
-      prompt: 'Das vor zwei Jahren ___ Haus ist schon wieder zu verkaufen. (bauen)',
-      answer: ['gebaute'],
-      explanation: 'An extended participle group: vor zwei Jahren gebaute = das vor zwei Jahren gebaut wurde. Partizip II + -e after das.',
     },
   ],
 };

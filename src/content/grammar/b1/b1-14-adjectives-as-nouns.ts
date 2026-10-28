@@ -10,9 +10,14 @@ const topic: Topic = {
   tags: ['adjectives', 'nouns', 'declension', 'cases'],
   summary: 'An adjective can become a noun (der Deutsche, die Angestellte, etwas Neues); it is written with a capital letter but keeps its adjective endings.',
   explanation: `
-### What it is
+### What it is for
 
-German can turn almost any adjective into a noun: *deutsch* → **der Deutsche** (the German man), *alt* → **die Alte** (the old woman), *neu* → **etwas Neues** (something new). These are **nominalised adjectives** (*substantivierte Adjektive*).
+You need this to name people by a quality – a German, an adult, an employee, a relative – and to say "something new" or "nothing special":
+
+- Er ist **Deutscher**. – *He is German.*
+- Ich habe **etwas Neues** gekauft. – *I bought something new.*
+
+German can turn almost any adjective into a noun: *deutsch* → **der Deutsche** (the German man), *alt* → **die Alte** (the old woman), *neu* → **etwas Neues** (something new). These are **adjectives used as nouns** (*substantivierte Adjektive*).
 
 Two rules cover everything:
 
@@ -42,9 +47,7 @@ Common nouns of this type, all built the same way:
 | jugendlich | der / die Jugendliche (young person) |
 | angestellt | der / die Angestellte (employee) |
 | krank | der / die Kranke (sick person) |
-| fremd | der / die Fremde (stranger) |
 | arbeitslos | der / die Arbeitslose (unemployed person) |
-| reisend | der / die Reisende (traveller) |
 
 Watch the two forms that trip people up: *Er ist **Deutscher*** (no article → -er) but *Sie ist **Deutsche*** (feminine → -e).
 
@@ -160,9 +163,9 @@ You cannot avoid these words: *Deutsche, Erwachsene, Jugendliche, Angestellte, B
     {
       type: 'fill',
       id: 'b1-14-adjectives-as-nouns-ex09',
-      prompt: 'Wir helfen einem ___. (fremd-, a stranger, man)',
-      answer: ['Fremden'],
-      explanation: 'helfen + Dative, einem + masculine → -en: einem Fremden (like einem fremden Mann).',
+      prompt: 'Wir helfen einem ___. (verwandt-, a relative, man)',
+      answer: ['Verwandten'],
+      explanation: 'helfen + Dative, einem + masculine → -en: einem Verwandten (like einem verwandten Mann).',
     },
     {
       type: 'translate',

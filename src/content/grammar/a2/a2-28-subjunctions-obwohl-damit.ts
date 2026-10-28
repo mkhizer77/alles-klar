@@ -12,7 +12,7 @@ const topic: Topic = {
   explanation: `
 ### What it is
 
-A **subjunction** (*Subjunktion*, also called a subordinating conjunction) starts a **subordinate clause** (*Nebensatz*). You know the pattern from *weil* and *dass*: a comma, the subjunction, and the **conjugated verb at the very end**. This topic adds six more that you need for telling stories and explaining reasons.
+A **subjunction** (*Subjunktion*: a joining word that sends the verb to the end) starts a **subordinate clause** (*Nebensatz*). You know the pattern from *weil* and *dass*: a comma, the subjunction, and the **verb at the very end**: *Ich gehe joggen, obwohl es regnet.* – *I go jogging although it is raining.* This topic adds six more joining words that you need for telling stories and explaining reasons.
 
 | subjunction | meaning | type |
 |---|---|---|
@@ -59,12 +59,13 @@ Its partner among the connectors is *trotzdem*: *Er ist müde, trotzdem arbeitet
 | **bevor** | before the subordinate clause | Ich dusche, **bevor** ich frühstücke. |
 | **nachdem** | after the subordinate clause | **Nachdem** ich gefrühstückt habe, gehe ich los. |
 
-**nachdem** has a special tense rule: the *nachdem*-clause is **one step further back** in time than the main clause. Main clause in the present → *nachdem* + Perfekt. Main clause in the past → *nachdem* + Plusquamperfekt (*hatte gemacht, war gegangen*):
+**nachdem** has a small tense rule: the *nachdem*-clause happened **first**, so it is one step further back in time. With a main clause in the present, use the **Perfekt** in the *nachdem*-clause:
 
-- **Nachdem** ich gegessen **habe**, **gehe** ich spazieren.
-- **Nachdem** ich gegessen **hatte**, **ging** ich spazieren.
+- **Nachdem** ich gegessen **habe**, **gehe** ich spazieren. – *After I have eaten, I go for a walk.*
 
-**bevor** does not need this shift: *Bevor ich gehe, rufe ich dich an.*
+You may also see *nachdem* with *hatte / war* + Partizip II in a story about the past (*Nachdem ich gegessen hatte, ging ich spazieren*). That tense is a B1 topic; for now just recognise it.
+
+**bevor** does not need any tense shift: *Bevor ich gehe, rufe ich dich an.*
 
 *seit* and *seitdem* mean the same as subjunctions. *seit* is also a preposition (*seit zwei Jahren*), so if a full clause with a verb follows, you are looking at the subjunction.
 
@@ -79,13 +80,13 @@ With these six words you can describe sequences (*bevor, nachdem, bis*), duratio
     { de: 'Seitdem ich hier arbeite, bin ich glücklicher.', en: 'Since I have been working here, I am happier.' },
     { de: 'Bevor ich schlafen gehe, lese ich ein bisschen.', en: 'Before I go to sleep, I read a little.' },
     { de: 'Nachdem wir gegessen haben, machen wir einen Spaziergang.', en: 'After we have eaten, we go for a walk. (nachdem + Perfekt, main clause present)' },
-    { de: 'Nachdem er die Prüfung bestanden hatte, feierte er.', en: 'After he had passed the exam, he celebrated. (nachdem + Plusquamperfekt, main clause past)' },
+    { de: 'Ich bleibe hier, bis du zurückkommst.', en: 'I will stay here until you come back. (bis; separable verb joins up at the end)' },
   ],
   connections: [
     { topicId: 'a2-04-subordinate-clauses-weil-dass', note: 'The verb-at-the-end rule is exactly the same as with weil and dass.' },
     { topicId: 'a2-27-adverbial-connectors', note: 'obwohl is the subordinate partner of trotzdem; the meaning is the same, the word order is different.' },
     { topicId: 'a2-22-um-zu-ohne-zu', note: 'damit is used instead of um … zu when the subjects are different.' },
-    { topicId: 'b1-01-plusquamperfekt', note: 'The nachdem-clause with a past main clause needs the Plusquamperfekt (hatte gemacht).' },
+    { topicId: 'b1-01-plusquamperfekt', note: 'At B1 you learn the tense for nachdem in past stories: Nachdem ich gegessen hatte, …' },
     { topicId: 'b1-02-temporal-clauses', note: 'At B1 the time subjunctions are extended with während, sobald and solange.' },
   ],
   edgeCases: [
@@ -190,10 +191,10 @@ With these six words you can describe sequences (*bevor, nachdem, bis*), duratio
     {
       type: 'mc',
       id: 'a2-28-subjunctions-obwohl-damit-ex12',
-      prompt: 'Complete the past-tense sentence: "Nachdem er die Prüfung bestanden ___, feierte er mit Freunden."',
-      options: ['hat', 'hatte', 'ist'],
-      answer: 1,
-      explanation: 'The main clause is in the Präteritum (feierte), so the nachdem-clause goes one step further back: Plusquamperfekt, bestanden hatte.',
+      prompt: 'Complete: "Ich warte hier, ___ du mit der Arbeit fertig bist."',
+      options: ['bis', 'bevor', 'damit'],
+      answer: 0,
+      explanation: 'The waiting goes on until you are finished: bis = until. bevor (before) would not make sense, and damit gives a purpose.',
     },
   ],
 };

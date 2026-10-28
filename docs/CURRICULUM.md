@@ -134,7 +134,7 @@ Vocabulary: feelings & opinions, school & learning, communication.
 |---|-------|-------------|
 | 4 | Subordinate clauses: verb goes to the end (weil, dass) | Nebensatz |
 | 5 | wenn, ob and indirect questions | Nebensatz: wenn / ob / W-Wort |
-| 6 | als vs wenn (one-time past vs repeated) | als / wenn |
+| 6 | als, wenn and immer wenn: three ways to say "when" | als / wenn |
 
 ### Unit 3 · Adjectives (Wie ist es?)
 | # | Topic | German term |

@@ -14,8 +14,8 @@ const topic: Topic = {
 
 You can now say *Das Auto wird repariert* and *Das Auto wurde repariert*. Two more forms are needed for real texts:
 
-- with a **modal verb**: *The car **must be** repaired.*
-- in the **Perfekt**: *The car **has been** repaired.*
+- with a **modal verb**: Das Auto **muss** repariert **werden**. – *The car **must be** repaired.*
+- in the **Perfekt**: Das Auto **ist** repariert **worden**. – *The car **has been** repaired.*
 
 Both use pieces you already know. The only new word is **worden**.
 
@@ -58,15 +58,11 @@ Two things to notice:
 1. The helper is **sein**, not *haben*.
 2. The participle of *werden* is **worden** (not *geworden*) when it is the passive helper. *Geworden* means "became": *Er ist Arzt **geworden**.*
 
-Both *wurde gebaut* and *ist gebaut worden* mean the same. The Präteritum is more common in writing, the Perfekt in speech.
+Both *wurde gebaut* and *ist gebaut worden* mean the same. The Präteritum is more common in writing, the Perfekt in speech. If you are unsure, *wurde gebaut* is always a safe choice.
 
-### Modal + passive in the Perfekt
+### You may also see …
 
-This is rare, but it exists and follows the double-infinitive rule from Unit 1: **haben + Partizip II + werden + Modal**.
-
-- Das Problem **hat** gelöst **werden müssen**. – *The problem had to be solved.*
-
-In practice Germans use the Präteritum instead: *Das Problem **musste** gelöst **werden**.* Learn to recognise the long form; produce the short one.
+Very rarely a text combines a modal and the passive in the Perfekt: *Das Problem **hat** gelöst **werden müssen**.* (*The problem had to be solved.*) You do not need this form. Say it with the Präteritum instead: *Das Problem **musste** gelöst **werden**.*
 
 ### Why it matters
 
@@ -79,12 +75,12 @@ In practice Germans use the Präteritum instead: *Das Problem **musste** gelöst
     { de: 'Ich glaube, dass die Rechnung bezahlt werden muss.', en: 'I think that the bill has to be paid. (modal last in the subordinate clause)' },
     { de: 'Das Haus ist 1990 gebaut worden.', en: 'The house was built in 1990. (Perfekt passive: ist … worden)' },
     { de: 'Die Kinder sind vom Arzt untersucht worden.', en: 'The children have been examined by the doctor.' },
-    { de: 'Das Problem hat gelöst werden müssen.', en: 'The problem had to be solved. (modal + passive in the Perfekt, rare)' },
+    { de: 'Das Problem musste gelöst werden.', en: 'The problem had to be solved. (modal in the Präteritum: the easy way to say it)' },
   ],
   connections: [
     { topicId: 'b1-06-passive-present-past', note: 'The basic passive with werden; this topic adds modals and the Perfekt.' },
     { topicId: 'a1-17-modal-verbs', note: 'The modal verb is conjugated as usual; only the end of the sentence changes.' },
-    { topicId: 'b1-03-modals-perfekt', note: 'The double infinitive (hat … werden müssen) follows the same rule as hat … arbeiten müssen.' },
+    { topicId: 'b1-03-modals-perfekt', note: 'As with modals in the Perfekt, the Präteritum (musste … werden) is the form to use yourself.' },
     { topicId: 'a1-32-perfekt-sein', note: 'The Perfekt passive takes sein, like the verbs of movement.' },
     { topicId: 'b1-08-zustandspassiv-alternatives', note: 'ist repariert (state) vs ist repariert worden (completed process) is explained there.' },
   ],
@@ -179,10 +175,10 @@ In practice Germans use the Präteritum instead: *Das Problem **musste** gelöst
     {
       type: 'mc',
       id: 'b1-07-passive-modals-perfekt-ex11',
-      prompt: 'Which sentence is the correct Perfekt of "Das Problem musste gelöst werden."?',
-      options: ['Das Problem hat gelöst werden müssen.', 'Das Problem ist gelöst werden müssen.', 'Das Problem hat gelöst worden müssen.'],
+      prompt: 'Put into the past: "Das Problem muss gelöst werden."',
+      options: ['Das Problem musste gelöst werden.', 'Das Problem muss gelöst worden.', 'Das Problem wurde gelöst müssen.'],
       answer: 0,
-      explanation: 'With a modal the Perfekt uses haben and the double infinitive: hat … gelöst werden müssen. Rare, but this is the form.',
+      explanation: 'With a modal, the easy past form is the Präteritum of the modal: musste. The end of the sentence stays gelöst werden.',
     },
     {
       type: 'order',

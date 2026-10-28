@@ -25,19 +25,14 @@ The second half of this topic uses the same Konjunktiv II for **polite suggestio
 - Sie sieht aus, **als ob** sie krank **wäre**.
 - Er redet, **als ob** er alles schon **gesehen hätte**.
 
-**Which Konjunktiv II?** Choose by time, exactly as in the last two topics:
+**Which Konjunktiv II?** Choose by time, exactly as in the last two topics. For the present you only need the forms you already know (*wäre, hätte, wüsste, könnte* and *würde + Infinitiv*):
 
 | the "as if" situation is … | form | example |
 |---|---|---|
-| now | present KII (wäre, hätte, wüsste, würde + Inf.) | als ob er krank **wäre** |
-| in the past | past KII (hätte / wäre + Partizip II) | als ob er es schon **gesehen hätte** |
+| now | present Konjunktiv II (wäre, hätte, würde + Infinitiv …) | als ob er krank **wäre** |
+| in the past | past Konjunktiv II (hätte / wäre + Partizip II) | als ob er es schon **gesehen hätte** |
 
-**Short form: als without ob.** You can drop *ob*. Then the verb comes **directly after als** (position two, not at the end):
-
-- Er tut, **als wäre** er müde. = Er tut, als ob er müde wäre.
-- Sie sieht aus, **als hätte** sie nicht geschlafen.
-
-Both versions are correct and common. Just remember: *als ob* → verb at the end; *als* alone → verb right after *als*.
+**You may also see** *als* without *ob*: *Er tut, **als wäre** er müde.* It means the same, but the verb then comes directly after *als*. Recognise it when you read it; use *als ob* with the verb at the end in your own sentences, because that follows the normal rule for subordinate clauses.
 
 ### Typical openers
 
@@ -46,8 +41,6 @@ Both versions are correct and common. Just remember: *als ob* → verb at the en
 | Er tut (so), als ob … | He acts as if … |
 | Es sieht (so) aus, als ob … | It looks as if … |
 | Es scheint, als ob … | It seems as if … |
-| Mir ist, als ob … | I feel as if … |
-| Sie benimmt sich, als ob … | She behaves as if … |
 
 ### Polite suggestions and advice
 
@@ -72,9 +65,9 @@ After *Wie wäre es, wenn …* and *Es wäre besser, wenn …* the *wenn* clause
 `,
   examples: [
     { de: 'Er tut so, als ob er alles wüsste.', en: 'He acts as if he knew everything. (als ob + verb at the end)' },
-    { de: 'Sie sieht aus, als wäre sie krank.', en: 'She looks as if she were ill. (als without ob → verb right after als)' },
+    { de: 'Sie sieht aus, als ob sie krank wäre.', en: 'She looks as if she were ill. (es sieht aus, als ob …)' },
     { de: 'Er redet, als ob er alles schon gesehen hätte.', en: 'He talks as if he had already seen everything. (past Konjunktiv II)' },
-    { de: 'Mir ist, als hätte ich diesen Mann schon einmal gesehen.', en: 'I feel as if I had seen this man before.' },
+    { de: 'Es scheint, als ob es gleich regnen würde.', en: 'It seems as if it is going to rain soon. (würde + Infinitiv)' },
     { de: 'Du solltest mehr schlafen.', en: 'You should sleep more. (soft advice)' },
     { de: 'Wie wäre es, wenn wir morgen ins Kino gehen?', en: 'How about going to the cinema tomorrow? (suggestion)' },
     { de: 'Könnten Sie mir bitte helfen?', en: 'Could you please help me? (polite request)' },
@@ -87,9 +80,9 @@ After *Wie wäre es, wenn …* and *Es wäre besser, wenn …* the *wenn* clause
     { topicId: 'b1-32-opinions-speaking', note: 'The suggestion phrases are the core of the B1 speaking task "planning something together".' },
   ],
   edgeCases: [
-    '**als ob** → verb at the **end**; **als** alone → verb **immediately after als**: *als ob er krank wäre* / *als wäre er krank*.',
-    'After *als ob* use **Konjunktiv II**, not the indicative: *als ob er krank **wäre***, not *als ob er krank ist* (heard in speech, but not standard).',
-    '*als* has two meanings: *Als ich klein war* (when, Präteritum) and *…, als wäre er müde* (as if, Konjunktiv II).',
+    '**als ob** is a subordinating conjunction: the verb goes to the **end**: *als ob er krank **wäre***. If you read *als wäre er krank* (no *ob*), it means the same.',
+    'After *als ob* use **Konjunktiv II**, not the normal present form: *als ob er krank **wäre***, not *als ob er krank ist* (heard in speech, but not standard).',
+    '*als* has two meanings: *Als ich klein war* (when, Präteritum) and *…, als ob er müde wäre* (as if, Konjunktiv II).',
     '*Wie wäre es mit* + **Dative**: *Wie wäre es mit **einem** Kaffee?*',
     '*Du solltest* is advice (should); *Du müsstest* is stronger (you would really have to). Choose *solltest* for friendly suggestions.',
   ],
@@ -105,17 +98,17 @@ After *Wie wäre es, wenn …* and *Es wäre besser, wenn …* the *wenn* clause
     {
       type: 'fill',
       id: 'b1-11-als-ob-ex02',
-      prompt: 'Sie sieht aus, als ___ sie krank. (sein)',
+      prompt: 'Sie sieht aus, als ob sie krank ___. (sein)',
       answer: ['wäre'],
-      explanation: 'als without ob: the Konjunktiv II verb comes directly after als. sein → wäre.',
+      explanation: 'An unreal comparison needs Konjunktiv II, and als ob sends the verb to the end. sein → wäre.',
     },
     {
       type: 'mc',
       id: 'b1-11-als-ob-ex03',
-      prompt: 'Which word order is correct after als (without ob)?',
-      options: ['Er tut, als wäre er müde.', 'Er tut, als er müde wäre.', 'Er tut, als er wäre müde.'],
+      prompt: 'Which word order is correct after als ob?',
+      options: ['Er tut, als ob er müde wäre.', 'Er tut, als ob wäre er müde.', 'Er tut, als ob er wäre müde.'],
       answer: 0,
-      explanation: 'With als alone the verb takes position two, right after als. The verb-at-the-end order is only for als ob.',
+      explanation: 'als ob is a subordinating conjunction, so the verb (wäre) goes to the very end of the clause.',
     },
     {
       type: 'order',
@@ -187,9 +180,9 @@ After *Wie wäre es, wenn …* and *Es wäre besser, wenn …* the *wenn* clause
     {
       type: 'fill',
       id: 'b1-11-als-ob-ex12',
-      prompt: 'Mir ist, als ___ ich diesen Mann schon einmal gesehen. (haben)',
+      prompt: 'Er tut so, als ob er den Film schon gesehen ___. (haben)',
       answer: ['hätte'],
-      explanation: 'als without ob → verb right after als; the seeing is in the past → hätte … gesehen.',
+      explanation: 'The "as if" situation is in the past, so past Konjunktiv II: gesehen hätte, with hätte at the end of the als ob clause.',
     },
   ],
 };

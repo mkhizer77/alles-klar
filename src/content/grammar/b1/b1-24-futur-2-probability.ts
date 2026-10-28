@@ -8,83 +8,75 @@ const topic: Topic = {
   title: 'Futur II and expressing probability',
   germanTerm: 'Futur II, Vermutung',
   tags: ['verbs', 'tenses', 'future', 'probability', 'werden'],
-  summary: 'Futur II (werden + Partizip II + haben / sein) says that something will be finished by a future time or, more often, that something probably happened; together with wohl, wahrscheinlich and dürfte it is how German expresses guesses.',
+  summary: 'German expresses guesses with adverbs (wahrscheinlich, wohl, vielleicht, bestimmt) and with werden + wohl (Er wird wohl krank sein); Futur II (Er wird den Zug verpasst haben) is a form to recognise in texts, not one you need to produce at B1.',
   explanation: `
-### What Futur II is
+### What it is for
 
-**Futur II** is built from *werden* + **Partizip II** + **haben** or **sein**. It is the "will have done" tense. The choice between *haben* and *sein* follows the same rule as the Perfekt.
+Often you are not sure about something and want to say "probably" or "I suppose". German has a few simple tools for that, and B1 speaking tasks (describing a picture, guessing what is going on) use them all the time:
 
-| | werden | … | Partizip II + haben / sein |
-|---|---|---|---|
-| Ich | **werde** | die Arbeit | **beendet haben**. |
-| Sie | **wird** | schon | **gegangen sein**. |
+- Er ist **wahrscheinlich** krank. – *He is probably ill.*
+- Er **wird wohl** krank **sein**. – *He is probably ill. / I suppose he is ill.*
 
-### Use 1: finished before a future time
+### The adverbs: how sure are you?
 
-With a time phrase like *bis morgen, bis nächste Woche, in einem Jahr*, Futur II says that an action will be **complete** by then:
+| How sure | Adverbs | Example |
+|---|---|---|
+| almost certain | bestimmt, sicher | Sie kommt **bestimmt**. |
+| probably | wahrscheinlich, wohl, vermutlich | Er ist **wahrscheinlich** im Büro. |
+| maybe | vielleicht, möglicherweise | **Vielleicht** regnet es morgen. |
+| probably not | wohl nicht, kaum | Das stimmt **kaum**. |
 
-- Bis Freitag **werde** ich den Bericht **geschrieben haben**. (By Friday I will have written the report.)
-- In zehn Jahren **wird** sich die Stadt stark **verändert haben**.
+Word order: *wahrscheinlich*, *vielleicht* and *bestimmt* can start the sentence (then the verb comes **next**: *Wahrscheinlich **ist** sie zu Hause*) or sit in the middle after the verb (*Sie ist wahrscheinlich zu Hause*). *wohl* stays in the middle: *Er ist wohl krank*, never *Wohl ist er krank*.
 
-This use is quite rare in everyday German. People usually say *Bis Freitag habe ich den Bericht geschrieben* with the Perfekt.
+### werden + wohl: a guess about now
 
-### Use 2: a guess about the past
+*werden* + infinitive is normally the future (*Futur I*). With *wohl*, *wahrscheinlich* or *sicher* it becomes a **guess about the present**:
 
-This is the use you will meet most. Futur II with *wohl* or *wahrscheinlich* means **"probably happened"**:
+- Er **wird wohl** im Stau **stehen**. – *He is probably stuck in traffic.* (right now)
+- Das **wird** schon **stimmen**. – *That is probably right.*
+- Die Frau auf dem Bild **wird wohl** die Chefin **sein**. – *The woman in the picture is probably the boss.*
 
-- Er **wird** den Zug **verpasst haben**. (He has probably missed the train.)
-- Sie **wird wohl** schon **gegangen sein**. (She has probably already left.)
+How do you know it is a guess and not the future? The little word *wohl* and the situation tell you. Without *wohl*, *Er wird kommen* simply means "he will come".
 
-In the same way, **Futur I** can express a guess about the **present**:
+### könnte: "could be"
 
-- Er **wird wohl** im Stau **stehen**. (He is probably stuck in traffic.)
-- Das **wird** schon **stimmen**. (That is probably right.)
+*könnte* (the *Konjunktiv II* of *können*, the "would / could" form) marks a possibility:
 
-So *werden* does not always point to the future. With *wohl* it often means "I suppose".
+- Das **könnte** stimmen. – *That could be true.*
+- Sie **könnte** im Büro sein. – *She could be in the office.*
 
-### The probability toolbox
+### A guess about the past
 
-German has several ways to show **how sure** you are. From certain to doubtful:
+To say that something **probably happened**, use the Perfekt with an adverb: *Er hat **wahrscheinlich** den Bus verpasst* (he has probably missed the bus). That is all you need at B1.
 
-| Degree | Adverbs | Modal verbs | Example |
-|---|---|---|---|
-| almost certain | sicher, bestimmt, ganz sicher | **muss** | Er **muss** krank sein. |
-| very likely | wahrscheinlich, wohl, vermutlich | **dürfte** | Sie **dürfte** etwa 40 sein. |
-| possible | vielleicht, möglicherweise, eventuell | **könnte** | Das **könnte** stimmen. |
-| unlikely | kaum, wohl nicht | **kann nicht** | Das **kann nicht** sein. |
-
-The modal verbs of probability work like the English *must be / could be*: *Er muss krank sein* = he must be ill (I conclude this). For a guess about the past, combine them with the infinitive Perfekt: *Er muss den Zug verpasst haben*.
-
-### Word order
-
-*wohl*, *wahrscheinlich* and *sicher* are adverbs. *wohl* always sits in the midfield after the verb (*Er wird wohl …*). *wahrscheinlich* and *sicher* can also take position 1: *Wahrscheinlich ist sie schon gegangen*.
+You may also see **Futur II** in texts: *werden* + Partizip II + *haben / sein*. *Er **wird** den Zug **verpasst haben*** means "he has probably missed the train", and *Bis Freitag **werde** ich den Bericht **geschrieben haben*** means "by Friday I will have written the report". Recognise the shape (*wird … haben / sein* at the end); you do not need to use it. The same goes for *Er **muss** krank sein* (he must be ill) and *Sie **dürfte** 40 sein* (she is probably 40): both are B2 ways to guess.
 
 ### Why it matters
 
-In B1 speaking tasks you describe pictures and discuss situations you cannot be sure about: *Die Frau wird wohl die Chefin sein. Sie dürfte etwa 50 Jahre alt sein.* Knowing these forms lets you speculate naturally instead of only stating facts. Reading news also needs Futur II: *Der Täter wird die Stadt bereits verlassen haben*.
+In B1 speaking tasks you describe pictures and discuss situations you cannot be sure about: *Die Frau wird wohl die Chefin sein. Sie ist wahrscheinlich etwa 50 Jahre alt.* Knowing these forms lets you speculate naturally instead of only stating facts, and recognising Futur II stops a news sentence like *Der Zug wird bereits abgefahren sein* from confusing you.
 `,
   examples: [
-    { de: 'Bis nächste Woche werde ich das Buch gelesen haben.', en: 'By next week I will have read the book. (completed before a future time)' },
-    { de: 'Er wird den Bus verpasst haben.', en: 'He has probably missed the bus. (guess about the past)' },
-    { de: 'Sie wird wohl schon zu Hause sein.', en: 'She is probably at home already. (Futur I + wohl: guess about now)' },
-    { de: 'Die Gäste werden schon angekommen sein.', en: 'The guests will have arrived already. (sein because ankommen takes sein)' },
-    { de: 'Das muss ein Irrtum sein.', en: 'That must be a mistake. (muss = almost certain)' },
-    { de: 'Er dürfte etwa 40 Jahre alt sein.', en: 'He is probably about 40 years old. (dürfte = very likely)' },
+    { de: 'Sie ist wahrscheinlich schon zu Hause.', en: 'She is probably at home already. (adverb in the middle)' },
+    { de: 'Wahrscheinlich hat er den Bus verpasst.', en: 'He has probably missed the bus. (guess about the past: Perfekt + adverb)' },
+    { de: 'Er wird wohl im Stau stehen.', en: 'He is probably stuck in traffic. (werden + wohl: guess about now)' },
+    { de: 'Die Frau auf dem Bild wird wohl die Lehrerin sein.', en: 'The woman in the picture is probably the teacher.' },
+    { de: 'Vielleicht kommt sie später.', en: 'Maybe she will come later. (vielleicht in position 1, verb next)' },
     { de: 'Das könnte stimmen, aber ich bin nicht sicher.', en: 'That could be true, but I am not sure. (könnte = possible)' },
+    { de: 'Er wird den Bus verpasst haben.', en: 'He has probably missed the bus. (Futur II: recognise only)' },
   ],
   connections: [
-    { topicId: 'a2-19-futur-1', note: 'Futur I with werden + infinitive is the base; Futur II adds the Partizip II + haben / sein.' },
-    { topicId: 'b1-23-werden', note: 'werden as the future helper is job 2 of werden.' },
-    { topicId: 'a1-32-perfekt-sein', note: 'The choice of haben or sein in Futur II follows the Perfekt rule.' },
-    { topicId: 'a1-17-modal-verbs', note: 'müssen, dürfen and können get a second meaning here: degrees of probability.' },
+    { topicId: 'a2-19-futur-1', note: 'werden + infinitive is the future; with wohl it becomes a guess about the present.' },
+    { topicId: 'b1-23-werden', note: 'werden as a helper verb is job 2 of werden.' },
+    { topicId: 'a2-20-konjunktiv-2-polite', note: 'könnte is the Konjunktiv II of können, used here for "could be".' },
+    { topicId: 'a1-31-perfekt-haben', note: 'A guess about the past is simply the Perfekt plus wahrscheinlich or wohl.' },
     { topicId: 'b1-22-brauchen-zu-scheinen', note: 'scheinen zu is another way of saying that something seems likely.' },
   ],
   edgeCases: [
-    'Futur II for a guess about the **past** (*Er wird gegangen sein*) vs Futur I for a guess about the **present** (*Er wird krank sein*). Do not mix the two.',
-    '*haben* or *sein* at the end follows the verb, not the subject: *gefahren **sein***, *gegessen **haben***.',
-    'In speech, a completed future action is usually expressed with the Perfekt: *Bis morgen habe ich das erledigt*. Futur II sounds formal.',
-    '*dürfte* here has nothing to do with permission. *Sie dürfte 40 sein* = she is probably 40.',
-    '*wohl* in the midfield means "probably". At the start of a sentence (*Wohl kaum!*) it is emphatic and means something different.',
+    '*wohl* in the middle of the sentence means "probably". Do not put it at the start: *Er ist wohl krank*, not *Wohl ist er krank*.',
+    '*Er wird wohl krank sein* is a guess about **now**, not about the future. Without *wohl*, *Er wird krank sein* would sound like a prediction.',
+    'For a guess about the **past**, use the Perfekt: *Er hat wahrscheinlich den Bus verpasst*. Futur II (*Er wird den Bus verpasst haben*) means the same; recognise it, but you do not need to produce it.',
+    '*könnte* here means "could be" (possibility), not "was able to". *Das könnte stimmen* = that may well be true.',
+    '*bestimmt* is strong (almost certain), *vielleicht* is weak (maybe). Choose the adverb that matches how sure you really are.',
   ],
   exercises: [
     {
@@ -98,32 +90,33 @@ In B1 speaking tasks you describe pictures and discuss situations you cannot be 
     {
       type: 'fill',
       id: 'b1-24-futur-2-probability-ex02',
-      prompt: 'Bis nächste Woche werde ich das Buch gelesen ___.',
-      answer: ['haben'],
-      explanation: 'lesen forms its Perfekt with haben, so Futur II ends in gelesen haben.',
+      prompt: 'Sie ist ___ schon zu Hause. (probably)',
+      answer: ['wahrscheinlich', 'wohl', 'vermutlich', 'sicher', 'bestimmt'],
+      explanation: 'wahrscheinlich, wohl and vermutlich all mean "probably" and sit in the middle of the sentence after the verb.',
     },
     {
-      type: 'fill',
+      type: 'mc',
       id: 'b1-24-futur-2-probability-ex03',
-      prompt: 'Sie wird schon nach Hause gegangen ___.',
-      answer: ['sein'],
-      explanation: 'gehen is a verb of movement and takes sein in the Perfekt, so Futur II ends in gegangen sein.',
+      prompt: 'Which word shows that the speaker is almost certain?',
+      options: ['bestimmt', 'vielleicht', 'kaum'],
+      answer: 0,
+      explanation: 'bestimmt = certainly. vielleicht = maybe, kaum = hardly (probably not).',
     },
     {
       type: 'mc',
       id: 'b1-24-futur-2-probability-ex04',
-      prompt: 'Complete: "Bis 2030 ___ die Stadt eine neue U-Bahn gebaut haben."',
-      options: ['wird', 'hat', 'wurde'],
+      prompt: 'Complete the guess about now: "Er ___ wohl krank sein."',
+      options: ['wird', 'ist', 'hat'],
       answer: 0,
-      explanation: 'Futur II needs werden as the helper in position 2: wird … gebaut haben.',
+      explanation: 'werden + wohl + infinitive: Er wird wohl krank sein = he is probably ill. ist would need no sein at the end.',
     },
     {
       type: 'order',
       id: 'b1-24-futur-2-probability-ex05',
-      prompt: 'Build the sentence: "He has probably missed the bus."',
-      words: ['den', 'wird', 'Er', 'haben.', 'Bus', 'verpasst'],
-      answer: ['Er wird den Bus verpasst haben.'],
-      explanation: 'wird in position 2, the object in the middle, and verpasst haben at the end. This is Futur II as a guess about the past.',
+      prompt: 'Build the sentence: "He is probably in the office." (use werden + wohl)',
+      words: ['wohl', 'Er', 'im', 'wird', 'sein.', 'Büro'],
+      answer: ['Er wird wohl im Büro sein.'],
+      explanation: 'wird in position 2, wohl right after it, the place in the middle and the infinitive sein at the end.',
     },
     {
       type: 'match',
@@ -141,58 +134,56 @@ In B1 speaking tasks you describe pictures and discuss situations you cannot be 
     {
       type: 'mc',
       id: 'b1-24-futur-2-probability-ex07',
-      prompt: 'Complete: "Die Gäste werden schon ___."',
-      options: ['angekommen sein', 'ankommen sein', 'angekommen haben'],
+      prompt: 'Which sentence is a guess about the present?',
+      options: ['Sie wird wohl müde sein.', 'Sie wird morgen kommen.', 'Sie ist müde.'],
       answer: 0,
-      explanation: 'Futur II needs the Partizip II (angekommen), and ankommen takes sein.',
+      explanation: 'wohl turns werden + infinitive into a guess about now. Sie wird morgen kommen is a plain future; Sie ist müde is a fact.',
     },
     {
       type: 'fill',
       id: 'b1-24-futur-2-probability-ex08',
-      prompt: 'Das ___ stimmen, ich bin ganz sicher. (müssen)',
-      answer: ['muss'],
-      explanation: 'muss expresses the strongest degree of probability: I conclude that it is true.',
+      prompt: 'Das ___ stimmen, aber ich bin nicht sicher. (könnte / could)',
+      answer: ['könnte'],
+      explanation: 'könnte (Konjunktiv II of können) marks a possibility: that could be true.',
     },
     {
       type: 'translate',
       id: 'b1-24-futur-2-probability-ex09',
-      prompt: 'Translate: "She has probably already left." (use Futur II with wohl)',
+      prompt: 'Translate: "She is probably at home."',
       answer: [
-        'Sie wird wohl schon gegangen sein.',
-        'Sie wird wohl schon weggegangen sein.',
-        'Sie wird wohl schon weg sein.',
-        'Sie wird schon gegangen sein.',
+        'Sie ist wahrscheinlich zu Hause.',
+        'Wahrscheinlich ist sie zu Hause.',
+        'Sie ist wohl zu Hause.',
+        'Sie wird wohl zu Hause sein.',
+        'Sie ist vermutlich zu Hause.',
+        'Vermutlich ist sie zu Hause.',
       ],
-      hint: 'gehen (Perfekt with sein); wohl = probably; schon = already',
-      explanation: 'Futur II for a guess about the past: wird + wohl + schon + gegangen sein.',
+      hint: 'wahrscheinlich / wohl; zu Hause = at home',
+      explanation: 'Either an adverb (wahrscheinlich, wohl) with the normal present tense, or werden + wohl + sein.',
     },
     {
       type: 'mc',
       id: 'b1-24-futur-2-probability-ex10',
-      prompt: 'Which sentence expresses an action that will be completed in the future?',
-      options: [
-        'Morgen werde ich die Prüfung geschrieben haben.',
-        'Morgen werde ich die Prüfung schreiben.',
-        'Morgen schreibe ich die Prüfung.',
-      ],
+      prompt: 'Which sentence is correct?',
+      options: ['Er ist wohl krank.', 'Wohl ist er krank.', 'Er wohl ist krank.'],
       answer: 0,
-      explanation: 'Only Futur II (geschrieben haben) says the action will already be finished. The other two say it will take place tomorrow.',
-    },
-    {
-      type: 'order',
-      id: 'b1-24-futur-2-probability-ex11',
-      prompt: 'Build the sentence: "By Friday we will have finished the project."',
-      words: ['werden', 'Freitag', 'Bis', 'das', 'wir', 'haben.', 'Projekt', 'abgeschlossen'],
-      answer: ['Bis Freitag werden wir das Projekt abgeschlossen haben.'],
-      explanation: 'The time phrase Bis Freitag takes position 1, so werden comes next, then the subject. abgeschlossen haben closes the sentence.',
+      explanation: 'wohl stays in the middle of the sentence, after the verb. It cannot take position 1, and nothing may stand between subject and verb.',
     },
     {
       type: 'mc',
-      id: 'b1-24-futur-2-probability-ex12',
-      prompt: 'How sure is the speaker in "Er dürfte etwa 40 Jahre alt sein."?',
-      options: ['fairly sure (very likely)', 'completely certain', 'thinks it is impossible'],
+      id: 'b1-24-futur-2-probability-ex11',
+      prompt: 'You read: "Er wird den Bus verpasst haben." What does it mean?',
+      options: ['He has probably missed the bus.', 'He will miss the bus.', 'He never misses the bus.'],
       answer: 0,
-      explanation: 'dürfte expresses a confident guess, less strong than muss but stronger than könnte.',
+      explanation: 'This is Futur II (wird + Partizip II + haben), used as a guess about the past. You only need to recognise it; to say it yourself use Er hat wahrscheinlich den Bus verpasst.',
+    },
+    {
+      type: 'order',
+      id: 'b1-24-futur-2-probability-ex12',
+      prompt: 'Build the sentence: "He has probably missed the bus." (start with Wahrscheinlich)',
+      words: ['hat', 'Wahrscheinlich', 'Bus', 'den', 'er', 'verpasst.'],
+      answer: ['Wahrscheinlich hat er den Bus verpasst.'],
+      explanation: 'Wahrscheinlich takes position 1, so the verb hat comes next, then the subject er. The Perfekt is all you need for a guess about the past.',
     },
   ],
 };

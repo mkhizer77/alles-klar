@@ -33,7 +33,7 @@ To link ideas you already know two kinds of words: **coordinating conjunctions**
 
 ### Word order: position 1, then the verb
 
-The connector fills **position 1**. The conjugated verb stays in **position 2**, and the subject moves **after** the verb (this is called inversion).
+The connector fills **position 1**. The verb stays in **position 2**, and the subject moves **after** the verb, just as after *gestern* or *morgen* at the start of a sentence.
 
 | position 1 | verb (2) | subject | rest |
 |---|---|---|---|
@@ -189,7 +189,7 @@ These connectors are what turn a list of short sentences into a text. Exam writi
       prompt: 'Which sentence is wrong?',
       options: ['Ich bin müde, aber ich arbeite weiter.', 'Ich bin müde, trotzdem ich arbeite weiter.', 'Ich bin müde, trotzdem arbeite ich weiter.'],
       answer: 1,
-      explanation: 'aber is position 0 (no inversion), but trotzdem is position 1 and needs the verb right after it. Option 2 mixes the two rules.',
+      explanation: 'aber is position 0 (word order stays normal), but trotzdem is position 1 and needs the verb right after it. Option 2 mixes the two rules.',
     },
   ],
 };

@@ -16,14 +16,15 @@ After the definite article the adjective only needs **-e** or **-en**, because *
 
 This group of words is called the **ein-words** (*ein-Wörter*): **ein**, **kein**, and all the possessive articles **mein, dein, sein, ihr, unser, euer, Ihr**.
 
-### How it works: the full table
+### How it works: the table
 
 | | masculine | feminine | neuter | plural (kein / mein) |
 |---|---|---|---|---|
 | Nominative | ein alt**er** Mann | eine alt**e** Frau | ein alt**es** Haus | keine alt**en** Leute |
 | Accusative | einen alt**en** Mann | eine alt**e** Frau | ein alt**es** Haus | keine alt**en** Leute |
 | Dative | einem alt**en** Mann | einer alt**en** Frau | einem alt**en** Haus | keinen alt**en** Leuten |
-| Genitive | eines alt**en** Mannes | einer alt**en** Frau | eines alt**en** Hauses | keiner alt**en** Leute |
+
+(You may also see the Genitive, *eines alten Mannes*: the adjective takes **-en** there too, so nothing new to learn.)
 
 Compare this with the *der*-table and you will see that only **three cells** are different:
 

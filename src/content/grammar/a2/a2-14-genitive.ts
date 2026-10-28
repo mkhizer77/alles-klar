@@ -8,7 +8,7 @@ const topic: Topic = {
   title: 'The Genitive case and possession with von',
   germanTerm: 'Genitiv',
   tags: ['cases', 'Genitive', 'possession', 'articles', 'nouns'],
-  summary: 'The Genitive is the "of / belonging to" case (das Auto des Vaters, der Name der Frau); masculine and neuter nouns add -s or -es, and in speech it is often replaced by von + Dative.',
+  summary: 'The Genitive is the "of / belonging to" case (das Auto des Vaters, der Name der Frau, Annas Buch); masculine and neuter nouns add -s, and in speech people usually say von + Dative instead.',
   explanation: `
 ### What it is
 
@@ -20,35 +20,24 @@ The **Genitive** (*Genitiv*) is the fourth and last German case. It answers the 
 
 English does the same with *'s* or *of*. In German the Genitive phrase always comes **after** the noun it belongs to: *das Auto* first, then *des Vaters*.
 
-### How it works: the articles
+### How it works: des and der
 
 | | masculine | feminine | neuter | plural |
 |---|---|---|---|---|
-| definite | **des** Mann**es** | **der** Frau | **des** Kind**es** | **der** Kinder |
-| indefinite | **eines** Mann**es** | **einer** Frau | **eines** Kind**es** | – Kinder |
-| negative / possessive | **keines** / **meines** Mann**es** | **keiner** / **meiner** Frau | **keines** / **meines** Kind**es** | **keiner** / **meiner** Kinder |
+| the | **des** Vater**s** | **der** Frau | **des** Haus**es** | **der** Kinder |
 
 Two patterns to remember:
 
-- Masculine and neuter: **des / eines / meines**, and the noun itself gets an ending.
-- Feminine and plural: **der / einer / meiner**, and the noun does **not** change.
+- Masculine and neuter: **des**, and the noun itself gets an **-s** (*des Vaters, des Autos*). Short nouns and nouns ending in *-s* get **-es** so you can say them: *des Mannes, des Kindes, des Hauses*.
+- Feminine and plural: **der**, and the noun does **not** change: *der Frau, der Kinder*.
 
-Note that feminine Genitive *der* looks exactly like the Dative *der Frau*; context (the question *wessen?*) tells you which it is.
+*mein, dein, sein …* and *ein* follow the same pattern: **meines** Vaters, **meiner** Mutter, **eines** Kindes. The ending is the same as on *des / der*.
 
-### The noun ending: -s or -es
-
-Only **masculine and neuter** nouns take a Genitive ending:
-
-| add **-es** | add **-s** |
-|---|---|
-| one-syllable nouns: des Mann**es**, des Kind**es**, des Buch**es** | longer nouns: des Vater**s**, des Lehrer**s**, des Computer**s** |
-| nouns ending in -s, -ß, -z, -x, -sch: des Haus**es**, des Platz**es**, des Tisch**es** | nouns ending in a vowel: des Auto**s**, des Kino**s** |
-
-Both forms are sometimes possible (*des Sturms / des Sturmes*); in doubt, *-es* after one syllable, *-s* otherwise. Feminine nouns and plurals never change: *der Frau, der Kinder*.
+Note that feminine Genitive *der* looks exactly like the Dative *der Frau*; the question *wessen?* tells you which it is.
 
 ### Names
 
-Names simply add **-s**, with **no apostrophe**: **Peters** Auto, **Annas** Buch, **Frau Müllers** Büro. The name goes **before** the noun, like English. Only a name that already ends in *-s, -z* or *-x* gets an apostrophe instead: *Klaus' Auto, Max' Schwester*.
+Names simply add **-s**, with **no apostrophe**: **Peters** Auto, **Annas** Buch, **Frau Müllers** Büro. The name goes **before** the noun, like in English. (Only a name that already ends in *-s* gets an apostrophe instead: *Klaus' Auto*.)
 
 ### Spoken German: von + Dative
 
@@ -60,11 +49,11 @@ In conversation most people avoid the Genitive and say **von + Dative** instead:
 | die Tasche der Lehrerin | die Tasche **von der Lehrerin** |
 | der Hund der Nachbarn | der Hund **von den Nachbarn** |
 
-Both are correct. Use the Genitive in writing and in fixed phrases; use *von* when you speak. You still need to **recognise** the Genitive, because every text, sign and news report uses it.
+Both are correct. Use *von* when you speak; use the Genitive in writing and in fixed phrases. You still need to **recognise** the Genitive, because every text, sign and news report uses it.
 
 ### Why it matters
 
-The Genitive appears in every written text, in many fixed expressions (*Anfang des Jahres, Ende der Woche, Tag der Arbeit*) and after the prepositions *wegen, trotz, während, statt* (next topic). Once you know *des -(e)s* for masculine / neuter and *der* for feminine / plural, you can read it anywhere, and *von + Dative* gives you an easy spoken alternative.
+The Genitive appears in every written text, in fixed expressions (*Anfang des Jahres, Ende der Woche*) and after *wegen* (because of), which is the next topic. Once you know *des + -s* for masculine / neuter and *der* for feminine / plural, you can read it anywhere, and *von + Dative* gives you an easy spoken alternative.
 `,
   examples: [
     { de: 'Das ist das Auto meines Vaters.', en: "That is my father's car. (masculine: meines Vaters)" },
@@ -80,7 +69,7 @@ The Genitive appears in every written text, in many fixed expressions (*Anfang d
     { topicId: 'a1-21-possessive-articles', note: 'mein, dein, sein … are the everyday way to show possession; the Genitive is the formal one.' },
     { topicId: 'a1-09-gender-articles', note: 'You need the gender to choose des (masculine / neuter) or der (feminine / plural).' },
     { topicId: 'a2-15-genitive-prepositions', note: 'wegen, trotz, während and statt require the Genitive.' },
-    { topicId: 'b1-13-n-declension', note: 'Some masculine nouns (der Junge, der Kollege) take -n in the Genitive instead of -s.' },
+    { topicId: 'b1-13-n-declension', note: 'You may see des Jungen, des Kollegen: a few masculine nouns take -n instead of -s. That is B1 material.' },
   ],
   edgeCases: [
     'Only **masculine and neuter** nouns take -s / -es. Feminine and plural nouns never change: *der Frau, der Kinder*.',

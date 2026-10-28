@@ -12,7 +12,7 @@ const topic: Topic = {
   explanation: `
 ### What it is
 
-**Ordinal numbers** (*Ordinalzahlen*) are the numbers for order: first, second, third. In German they are **adjectives**, so they take adjective endings. You need them for dates, floors, birthdays, rankings and fractions.
+**Ordinal numbers** (*Ordinalzahlen*) are the numbers for order: first, second, third. You need them above all for **dates**: *Heute ist der dritte Mai.* – *Today is the third of May.* In German they are **adjectives**, so they take adjective endings. They also appear in floors, birthdays and a few fractions.
 
 ### Building ordinals
 
@@ -68,23 +68,23 @@ Important: German says the year **alone** or with *im Jahr*, never with *in*:
 
 - Ich bin **1990** geboren. / Ich bin **im Jahr 1990** geboren. (not *in 1990*)
 
-### Fractions and decimals
+### Halves, quarters and decimals
+
+A few fractions come up in everyday life, mostly in shopping, recipes and times:
 
 | fraction | German |
 |---|---|
-| 1/2 | **ein halb** (as an adjective: *eine halbe Stunde*) / die Hälfte |
-| 1/3 | **ein Drittel** |
-| 1/4 | **ein Viertel** |
+| 1/2 | **halb** (as an adjective: *eine halbe Stunde, ein halbes Kilo*) / die Hälfte |
+| 1/4 | **ein Viertel** (*Viertel nach drei, ein Viertel Liter*) |
 | 3/4 | **drei Viertel** |
-| 1/5, 1/10 | ein Fünftel, ein Zehntel |
-| 1,5 | **eins Komma fünf** / eineinhalb / anderthalb |
+| 1,5 | **eins Komma fünf** / eineinhalb |
 | 50 % | fünfzig Prozent |
 
-Fractions are made from the ordinal + **-el** and are neuter nouns: *das Drittel, das Viertel*. Decimals use a **comma**, not a point: 3,5 = *drei Komma fünf*.
+Fractions like *Viertel* are made from the ordinal + **-el** and are neuter nouns (*das Viertel*; you may also see *ein Drittel* = a third). Decimals use a **comma**, not a point: 3,5 = *drei Komma fünf*.
 
 ### Why it matters
 
-Every appointment, form and conversation about birthdays needs a date, and every date needs an ordinal with the right ending. Years come up in any biography (*Ich bin 1995 geboren*). Fractions appear in recipes, times (*Viertel nach drei*) and prices (*ein halbes Kilo*).
+Every appointment, form and conversation about birthdays needs a date, and every date needs an ordinal with the right ending. Years come up in any biography (*Ich bin 1995 geboren*). Halves and quarters appear in recipes, times (*Viertel nach drei*) and prices (*ein halbes Kilo*).
 `,
   examples: [
     { de: 'Heute ist der erste Mai.', en: 'Today is the first of May. (der + -e)' },

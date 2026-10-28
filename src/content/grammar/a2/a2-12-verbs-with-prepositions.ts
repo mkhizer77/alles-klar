@@ -51,7 +51,7 @@ The rule is easier than it looks:
 
 - **für, um, durch, gegen** → always Accusative (as everywhere).
 - **mit, nach, von, zu, bei** → always Dative (as everywhere).
-- **auf, über, an, in, vor** are two-way prepositions. In verb combinations **auf, über, in** take the **Accusative** almost always; **vor** takes the **Dative**; **an** is usually Accusative (*denken an, sich erinnern an*) but Dative with a few verbs (*teilnehmen an, arbeiten an, leiden an*).
+- **auf, über, an, in, vor** are two-way prepositions (they can take either case). In verb combinations **auf, über, in** take the **Accusative**; **vor** takes the **Dative**; **an** is usually Accusative (*denken an, sich erinnern an*) but Dative with *teilnehmen an*.
 
 ### auf or über after sich freuen?
 
@@ -90,7 +90,7 @@ These combinations are everywhere in daily German: *Ich warte auf den Bus. Ich i
     'The preposition is **not** the English one: *warten **auf*** (not für), *denken **an*** (not von), *sich interessieren **für*** (not in), *Angst haben **vor*** (not von).',
     '**sich freuen auf** (looking forward, future) vs **sich freuen über** (happy about, present). Both take the Accusative.',
     'With two-way prepositions in these combinations, **auf / über / in** take the Accusative, **vor** the Dative: *auf den Bus warten* but *vor dem Hund Angst haben*.',
-    '**an** is Accusative with denken, sich erinnern, glauben, but Dative with teilnehmen and arbeiten: *Ich nehme an **dem** Kurs teil.*',
+    '**an** is Accusative with denken, sich erinnern, glauben, but Dative with teilnehmen: *Ich nehme an **dem** Kurs teil.*',
     '**sprechen mit** (with a person) vs **sprechen über** (about a topic): *Ich spreche mit dir über das Problem.*',
   ],
   exercises: [

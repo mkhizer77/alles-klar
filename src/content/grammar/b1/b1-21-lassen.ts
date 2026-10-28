@@ -8,42 +8,46 @@ const topic: Topic = {
   title: 'lassen in all its meanings',
   germanTerm: 'lassen',
   tags: ['verbs', 'lassen', 'modal-like verbs', 'Perfekt'],
-  summary: 'lassen is one verb with five jobs: to leave something, to let someone do something, to have something done, to say something can be done (sich lassen), and to make suggestions (Lass uns …).',
+  summary: 'lassen is one verb with four everyday jobs: to leave something, to let someone do something, to have something done by someone else (das Auto reparieren lassen), and to make suggestions (Lass uns …).',
   explanation: `
-### One verb, five jobs
+### What it is for
 
-**lassen** is one of the most useful verbs in German, because it covers several English verbs: *leave*, *let*, *have (something done)*, *can be (done)*. The forms are the same every time; only the sentence pattern changes.
+With **lassen** you say that someone else does a job for you, or that you allow something, or you make a suggestion:
+
+- Ich **lasse** mein Auto **reparieren**. – *I am having my car repaired.* (someone else does it)
+- **Lass uns** ins Kino **gehen**! – *Let us go to the cinema!*
+
+*lassen* covers several English verbs: *leave*, *let*, *have (something done)*. The forms are the same every time; only the sentence pattern changes.
 
 ### Forms
 
-| | Present | Präteritum | Partizip II |
-|---|---|---|---|
-| ich | lasse | ließ | gelassen |
-| du | **lässt** | ließest | |
-| er / sie / es | **lässt** | ließ | |
-| wir | lassen | ließen | |
-| ihr | lasst | ließt | |
-| sie / Sie | lassen | ließen | |
+| | Present |
+|---|---|
+| ich | lasse |
+| du | **lässt** |
+| er / sie / es | **lässt** |
+| wir | lassen |
+| ihr | lasst |
+| sie / Sie | lassen |
 
-Note the vowel change in *du* and *er / sie / es* (*a → ä*) and the long *ie* in the Präteritum.
+Note the vowel change in *du* and *er / sie / es* (*a → ä*). The past forms are *ließ* (Präteritum, the simple past: *Er ließ mich gehen*) and *gelassen* (Partizip II).
 
-### The five meanings
+### The four meanings
 
 | Meaning | Pattern | Example |
 |---|---|---|
 | 1. **leave** something somewhere | lassen + object (full verb) | Ich **lasse** den Schlüssel zu Hause. |
 | 2. **let / allow** someone to do something | lassen + person + infinitive | Meine Eltern **lassen** mich ausgehen. |
 | 3. **have** something done by someone else | lassen + object + infinitive | Ich **lasse** mein Auto reparieren. |
-| 4. **can be done** | sich lassen + infinitive | Das **lässt sich** machen. |
-| 5. **suggestion** | Lass uns / Lasst uns + infinitive | **Lass uns** ins Kino gehen! |
+| 4. **suggestion** | Lass uns / Lasst uns + infinitive | **Lass uns** ins Kino gehen! |
 
 **Meaning 3** is the one English learners find strange. *Ich lasse mein Auto reparieren* does not mean "I let my car repair" – it means **I get it repaired**; someone else does the work. With a reflexive pronoun you say what is done to you: *Ich lasse **mir** die Haare schneiden* (I get my hair cut).
 
-**Meaning 4** is a handy replacement for the passive with *können*: *Das Problem lässt sich lösen* = *Das Problem kann gelöst werden* (the problem can be solved).
+You may also see *sich lassen* + infinitive, which means "can be done": *Das lässt sich machen* (that can be done), *Das lässt sich nicht ändern* (that cannot be changed). Recognise it; to say it yourself, use *können*: *Das kann man machen.*
 
 ### lassen in the Perfekt
 
-Here is the trap. When *lassen* is used **with another infinitive** (meanings 2–4), the Perfekt uses a **double infinitive**, like the modal verbs:
+Here is the trap. When *lassen* is used **with another infinitive** (meanings 2 and 3), the Perfekt uses a **double infinitive**, like the modal verbs:
 
 - Ich **habe** mein Auto **reparieren lassen**. (not *repariert gelassen*)
 - Sie **hat** die Kinder **spielen lassen**.
@@ -54,22 +58,21 @@ When *lassen* is a **full verb** with no infinitive (meaning 1), it uses the nor
 
 ### Why it matters
 
-*lassen* lets you say who really does a job (*reparieren lassen*), ask for permission in an indirect way (*Lässt du mich fahren?*), make suggestions (*Lass uns …*) and avoid heavy passive sentences (*lässt sich machen*). All of these are everyday B1 situations, from the hairdresser to a planning conversation with friends.
+*lassen* lets you say who really does a job (*reparieren lassen*), ask for permission in an indirect way (*Lässt du mich fahren?*) and make suggestions (*Lass uns …*). All of these are everyday B1 situations, from the hairdresser to a planning conversation with friends.
 `,
   examples: [
     { de: 'Lass die Tür bitte offen.', en: 'Please leave the door open. (meaning 1: leave)' },
     { de: 'Meine Chefin lässt mich früher gehen.', en: 'My boss lets me leave earlier. (meaning 2: allow)' },
     { de: 'Wir lassen die Wohnung renovieren.', en: 'We are having the flat renovated. (meaning 3: someone else does it)' },
     { de: 'Ich lasse mir die Haare schneiden.', en: 'I am getting my hair cut. (mir = for me)' },
-    { de: 'Das lässt sich leicht erklären.', en: 'That can be explained easily. (meaning 4: sich lassen = can be done)' },
-    { de: 'Lasst uns anfangen!', en: 'Let us start! (meaning 5: suggestion, ihr-form)' },
+    { de: 'Lasst uns anfangen!', en: 'Let us start! (meaning 4: suggestion, ihr-form)' },
     { de: 'Er hat sein Handy im Taxi gelassen.', en: 'He left his phone in the taxi. (full verb: gelassen)' },
     { de: 'Sie hat das Fahrrad reparieren lassen.', en: 'She had the bike repaired. (with infinitive: double infinitive)' },
   ],
   connections: [
     { topicId: 'a1-17-modal-verbs', note: 'lassen + infinitive behaves like a modal verb: the infinitive goes to the end without zu.' },
     { topicId: 'b1-03-modals-perfekt', note: 'The double infinitive in the Perfekt (reparieren lassen) follows the same rule as modal verbs.' },
-    { topicId: 'b1-08-zustandspassiv-alternatives', note: 'sich lassen + infinitive is one of the main alternatives to the passive.' },
+    { topicId: 'b1-08-zustandspassiv-alternatives', note: 'sich lassen + infinitive (das lässt sich machen) appears there as a way of saying "can be done".' },
     { topicId: 'a1-15-irregular-present', note: 'lassen is a stem-changing verb: du lässt, er lässt.' },
     { topicId: 'a2-11-reflexive-verbs', note: 'Ich lasse mir die Haare schneiden uses the reflexive Dative pronoun mir.' },
   ],
@@ -77,7 +80,7 @@ When *lassen* is a **full verb** with no infinitive (meaning 1), it uses the nor
     '*Ich lasse mein Auto reparieren* means someone **else** repairs it. If you repair it yourself, say *Ich repariere mein Auto*.',
     'Perfekt with an infinitive = double infinitive: *Ich habe es machen **lassen***. Perfekt as a full verb = *gelassen*: *Ich habe es zu Hause **gelassen***.',
     '*du lässt* and *er lässt* are identical (both with ä). *ihr lasst* has no umlaut.',
-    '*sich lassen* + infinitive always has a **passive** meaning: *Das lässt sich ändern* = it can be changed, not "it changes itself".',
+    'If you meet *Das lässt sich ändern*, it means "it can be changed", not "it changes itself". You do not need to use this form yourself.',
     'The imperative to one person is *Lass* (no ending); to a group *Lasst*; formal *Lassen Sie*.',
   ],
   exercises: [
@@ -99,9 +102,9 @@ When *lassen* is a **full verb** with no infinitive (meaning 1), it uses the nor
     {
       type: 'fill',
       id: 'b1-21-lassen-ex03',
-      prompt: 'Das Problem ___ sich lösen. (lassen)',
+      prompt: 'Meine Chefin ___ mich heute früher gehen. (lassen)',
       answer: ['lässt'],
-      explanation: 'sich lassen + infinitive = can be done. Das Problem is er/sie/es, so the form is lässt.',
+      explanation: 'lassen + person + infinitive = allow. Meine Chefin is er/sie/es, so the form is lässt.',
     },
     {
       type: 'mc',
@@ -119,10 +122,9 @@ When *lassen* is a **full verb** with no infinitive (meaning 1), it uses the nor
         ['Ich lasse den Hund im Garten.', 'leave'],
         ['Sie lässt die Kinder fernsehen.', 'allow'],
         ['Er lässt das Auto waschen.', 'have something done'],
-        ['Das lässt sich reparieren.', 'can be done'],
         ['Lass uns gehen!', 'suggestion'],
       ],
-      explanation: 'Look at the pattern: object only = leave; person + infinitive = allow; thing + infinitive = have done; sich + infinitive = can be done; Lass uns = suggestion.',
+      explanation: 'Look at the pattern: object only = leave; person + infinitive = allow; thing + infinitive = have done; Lass uns = suggestion.',
     },
     {
       type: 'order',
@@ -158,10 +160,10 @@ When *lassen* is a **full verb** with no infinitive (meaning 1), it uses the nor
     {
       type: 'mc',
       id: 'b1-21-lassen-ex10',
-      prompt: 'What does "Das lässt sich nicht ändern." mean?',
-      options: ['That cannot be changed.', 'That does not change itself.', 'Nobody wants to change that.'],
+      prompt: 'What does "Wir lassen die Wohnung renovieren." mean?',
+      options: ['We are having the flat renovated.', 'We are renovating the flat ourselves.', 'We are leaving the flat.'],
       answer: 0,
-      explanation: 'sich lassen + infinitive has a passive meaning with können: it cannot be changed.',
+      explanation: 'lassen + object + infinitive = have something done: someone else renovates the flat.',
     },
     {
       type: 'order',

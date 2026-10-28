@@ -29,22 +29,21 @@ The action verbs answer **wohin?** (where to?) and take the **Accusative**. The 
 | **hängen** (to hang something up) | **hängen** (to be hanging) | pictures, coats, lamps on the ceiling |
 | **stecken** (to put inside) | **stecken** (to be inside) | keys in a lock, hands in pockets, a letter in an envelope |
 
-### Regular vs irregular
+### The Perfekt forms
 
-The **action verbs are regular** (weak). The **state verbs are irregular** (strong). This is easy to remember: the action is simple, the result is the "old" form.
+The **action verbs are regular**: their Partizip II ends in *-t*. The **state verbs are irregular**: their Partizip II ends in *-en* and the vowel changes. Both groups use **haben**.
 
-| verb | er/sie/es | Präteritum | Perfekt |
-|---|---|---|---|
-| stellen | stellt | stellte | hat gestellt |
-| stehen | steht | stand | hat gestanden |
-| legen | legt | legte | hat gelegt |
-| liegen | liegt | lag | hat gelegen |
-| setzen | setzt | setzte | hat gesetzt |
-| sitzen | sitzt | saß | hat gesessen |
-| hängen (action) | hängt | hängte | hat gehängt |
-| hängen (state) | hängt | hing | hat gehangen |
+| verb | er / sie / es | Perfekt |
+|---|---|---|
+| stellen | stellt | hat gestellt |
+| stehen | steht | hat gestanden |
+| legen | legt | hat gelegt |
+| liegen | liegt | hat gelegen |
+| setzen | setzt | hat gesetzt |
+| sitzen | sitzt | hat gesessen |
+| hängen | hängt | hat gehängt (action) / hat gehangen (state) |
 
-The verb *hängen* looks the same in the present tense. Only the past forms show the difference: *Ich hängte das Bild auf* (action) vs *Das Bild hing an der Wand* (state).
+You may also see the one-word past (Präteritum) in stories: *stand, lag, saß, hing* for the state verbs, *stellte, legte, setzte, hängte* for the action verbs. You only need to recognise these for now.
 
 ### How a sentence works
 
@@ -76,13 +75,13 @@ German speakers never say *Das Buch ist auf dem Tisch* when they can say *Das Bu
     { topicId: 'a1-29-two-way-prepositions', note: 'The wohin? / wo? rule for prepositions is exactly the action / state rule for these verbs.' },
     { topicId: 'a2-16-two-way-prepositions-depth', note: 'The two-way prepositions (an, auf, in, über, unter …) are the ones you use after position verbs.' },
     { topicId: 'a2-11-reflexive-verbs', note: 'sich setzen, sich legen and sich stellen are reflexive: Ich setze mich.' },
-    { topicId: 'a2-02-prateritum-verbs', note: 'The state verbs stehen, liegen, sitzen are irregular in the past: stand, lag, saß.' },
+    { topicId: 'a2-02-prateritum-verbs', note: 'In written stories you will see the state verbs in the Präteritum: stand, lag, saß.' },
   ],
   edgeCases: [
     '**stellen** is only for things that stand upright (a bottle, a lamp). A book lying flat on the table is *gelegt*; a book standing on a shelf is *gestellt*.',
     'People use **setzen / sitzen**, not *stellen*: *Das Kind sitzt auf dem Stuhl*, never *steht auf dem Stuhl* (unless it really stands on it).',
     'In the Perfekt, **stehen, liegen, sitzen** use *haben* in standard German: *Ich habe gesessen*. (In southern Germany and Austria you will hear *ich bin gesessen*, but the textbook form is *haben*.)',
-    'The two forms of **hängen** are only different in the past: *hängte / hat gehängt* (action) vs *hing / hat gehangen* (state).',
+    'The two forms of **hängen** look the same in the present (*hängt*). Only the Perfekt shows the difference: *hat gehängt* (action) vs *hat gehangen* (state).',
     'Do not add **sich** by mistake to the state verb: *Ich setze mich* (I sit down) but *Ich sitze* (I am sitting), never *Ich sitze mich*.',
   ],
   exercises: [
@@ -156,9 +155,9 @@ German speakers never say *Das Buch ist auf dem Tisch* when they can say *Das Bu
     {
       type: 'fill',
       id: 'a2-17-position-verbs-ex09',
-      prompt: 'Gestern ___ das Buch noch hier. (liegen, Präteritum)',
-      answer: ['lag'],
-      explanation: 'liegen is irregular: liegen – lag – hat gelegen. The Präteritum form is lag.',
+      prompt: 'Das Buch hat gestern noch hier ___. (liegen, Partizip II)',
+      answer: ['gelegen'],
+      explanation: 'liegen is a state verb and irregular: liegen – hat gelegen. The place (hier) answers wo?, so it is the state verb, not legen.',
     },
     {
       type: 'mc',
@@ -180,9 +179,9 @@ German speakers never say *Das Buch ist auf dem Tisch* when they can say *Das Bu
       type: 'mc',
       id: 'a2-17-position-verbs-ex12',
       prompt: 'Which sentence is correct?',
-      options: ['Das Bild hing an der Wand.', 'Das Bild hängte an der Wand.', 'Das Bild hat an der Wand gehängt.'],
+      options: ['Das Bild hat an der Wand gehangen.', 'Das Bild hat an die Wand gehangen.', 'Das Bild hat an der Wand gehängt.'],
       answer: 0,
-      explanation: 'The picture is in a state (wo? an der Wand), so you need the irregular state verb: hing / hat gehangen. hängte and gehängt belong to the action verb.',
+      explanation: 'The picture is in a state (wo? an der Wand, Dative), so you need the state verb: hat gehangen. gehängt belongs to the action verb (hängen an die Wand).',
     },
   ],
 };

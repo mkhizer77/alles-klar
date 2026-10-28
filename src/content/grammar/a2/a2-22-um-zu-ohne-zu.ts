@@ -20,7 +20,7 @@ Once you know *zu* + infinitive, you can put a small word in front of it to give
 | **ohne … zu** + infinitive | something does not happen | without …ing |
 | **anstatt … zu** / **statt … zu** + infinitive | an alternative | instead of …ing |
 
-All three build a **clause** (*Finalsatz* for the purpose clause) that is separated from the main clause by a **comma**, and in all three the **zu + infinitive goes to the end**.
+All three build a clause that is separated from the main clause by a **comma**, and in all three the **zu + infinitive goes to the end**. (The *um … zu* clause is called a *Finalsatz*, a purpose clause.)
 
 - Ich lerne Deutsch, **um** in Berlin **zu arbeiten**. – *I learn German in order to work in Berlin.*
 - Er ging weg, **ohne** ein Wort **zu sagen**. – *He left without saying a word.*
@@ -49,7 +49,7 @@ A good test: ask **Wozu?** (what for?). If the answer makes sense with *um … z
 
 ### ohne … zu and anstatt … zu
 
-These two are easier: they also need the same subject, and they are the compact version of *ohne dass* and *anstatt dass*.
+These two are easier: they also need the same subject, and there is no special rule to remember.
 
 - Sie geht aus dem Haus, **ohne** die Tür **abzuschließen**. – *She leaves the house without locking the door.*
 - Wir fahren mit dem Rad, **anstatt** das Auto **zu nehmen**. – *We cycle instead of taking the car.*

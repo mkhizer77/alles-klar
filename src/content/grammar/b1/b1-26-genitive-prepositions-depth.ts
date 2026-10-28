@@ -8,11 +8,16 @@ const topic: Topic = {
   title: 'Genitive prepositions in depth: innerhalb, außerhalb, aufgrund, mithilfe',
   germanTerm: 'Präpositionen mit Genitiv',
   tags: ['prepositions', 'genitive', 'cases', 'formal style'],
-  summary: 'A second, more formal group of prepositions takes the Genitive: innerhalb (within), außerhalb (outside), aufgrund (because of), mithilfe (with the help of) and several others used in written and official German.',
+  summary: 'Four everyday prepositions take the Genitive (wegen, trotz, während, statt); B1 adds a few more formal ones that you meet in letters and news: innerhalb (within), außerhalb (outside), aufgrund (because of), mithilfe (with the help of).',
   explanation: `
-### Building on A2
+### What it is for
 
-In A2 you learned the four everyday Genitive prepositions **wegen, trotz, während, (an)statt**. B1 adds a larger group that is typical of **written, formal German**: news, letters from authorities, contracts and instructions. They all follow the same rule: the noun after them is in the **Genitive** (*Genitiv*).
+These prepositions let you give a reason, a time limit or a place in a short phrase instead of a whole clause. You meet them in official letters, deadlines and news:
+
+- **Wegen des** Regens bleiben wir zu Hause. – *Because of the rain we stay at home.*
+- Bitte antworten Sie **innerhalb einer** Woche. – *Please reply within one week.*
+
+In A2 you learned the four everyday Genitive prepositions **wegen, trotz, während, (an)statt**. B1 adds a few more that are typical of **written, formal German**. They all follow the same rule: the noun after them is in the **Genitive** (*Genitiv*, the "of" case).
 
 ### Genitive forms – quick reminder
 
@@ -24,64 +29,60 @@ In A2 you learned the four everyday Genitive prepositions **wegen, trotz, währe
 
 Masculine and neuter nouns add **-s** or **-es** (*-es* after one syllable or after *s, ß, z, tz*). Feminine and plural nouns do not change; only the article shows the case.
 
-### The B1 prepositions
+### The prepositions
 
 | Preposition | Meaning | Example |
 |---|---|---|
+| **wegen** | because of | **wegen** des Regens |
+| **trotz** | despite | **trotz** des Regens |
+| **während** | during | **während** der Vorlesung |
+| **(an)statt** | instead of | **statt** eines Geschenks |
 | **innerhalb** | within, inside (time or place) | **innerhalb** einer Woche, **innerhalb** der Stadt |
 | **außerhalb** | outside (of) | **außerhalb** der Öffnungszeiten |
-| **aufgrund** | because of, on the basis of | **aufgrund** des schlechten Wetters |
+| **aufgrund** | because of (formal) | **aufgrund** des schlechten Wetters |
 | **mithilfe** | with the help of | **mithilfe** eines Wörterbuchs |
-| **anlässlich** | on the occasion of | **anlässlich** seines Geburtstags |
-| **infolge** | as a result of | **infolge** des Unfalls |
-| **anhand** | by means of, using | **anhand** eines Beispiels |
-| **oberhalb / unterhalb** | above / below | **oberhalb** des Dorfes |
-| **diesseits / jenseits** | on this / the other side of | **jenseits** der Grenze |
-| **laut** | according to | **laut** des Berichts (also laut + Dativ) |
-| **bezüglich / hinsichtlich** | regarding, with respect to | **bezüglich** Ihrer Anfrage |
-| **mangels** | for lack of | **mangels** Beweisen |
-| **zugunsten** | in favour of | **zugunsten** der Kinder |
+| **laut** | according to | **laut** Zeitung, **laut** dem Bericht (laut usually takes the Dative) |
 
-*aufgrund* is the formal twin of *wegen*; *infolge* stresses the result. *innerhalb* is useful for deadlines: *innerhalb von zwei Wochen* (within two weeks).
+*aufgrund* is the formal twin of *wegen*. *innerhalb* is useful for deadlines: *innerhalb von zwei Wochen* (within two weeks).
+
+You may also see more formal Genitive prepositions in letters from offices and in the news: *anlässlich* (on the occasion of), *infolge* (as a result of), *anhand* (using), *bezüglich* (regarding). You only need to understand them, not use them.
 
 ### When there is no article: use von
 
-If the noun has no article and no adjective, the Genitive is often invisible, especially in the plural. German then switches to **von + Dative**:
+If the noun has no article, the Genitive cannot be seen, especially in the plural. German then switches to **von + Dative**:
 
 - innerhalb **von** drei Tagen (not *innerhalb drei Tage*)
 - mithilfe **von** Freunden
 - aufgrund **von** Krankheit
 
-With an adjective the Genitive is visible again and *von* is not needed: *innerhalb weniger Tage*, *aufgrund schlechter Erfahrungen*.
-
 ### Spoken German: the Dative creeps in
 
-In everyday speech, many people use the **Dative** after *wegen*, *trotz* and *laut* (*wegen dem Regen*). This is common and accepted in conversation, but in writing and in the exam, use the Genitive. The newer formal prepositions (*aufgrund, innerhalb, mithilfe*) are almost always used with the Genitive.
+In everyday speech, many people use the **Dative** after *wegen* and *trotz* (*wegen dem Regen*). This is common and accepted in conversation, but in writing and in the exam, use the Genitive. The formal prepositions (*aufgrund, innerhalb, mithilfe*) are almost always used with the Genitive.
 
 ### Why it matters
 
-These prepositions let you **compress** a whole clause into a short phrase: *aufgrund des Streiks* instead of *weil es einen Streik gibt*. That is exactly the style of B1 reading texts and of the formal letters you write in the exam. They are also where the Genitive shows up most, so they are the best way to keep your Genitive forms alive.
+These prepositions let you **compress** a whole clause into a short phrase: *wegen des Streiks* instead of *weil es einen Streik gibt*. That is exactly the style of B1 reading texts and of the formal letters you write in the exam. They are also where the Genitive shows up most, so they are the best way to keep your Genitive forms alive.
 `,
   examples: [
     { de: 'Innerhalb der nächsten Woche bekommen Sie eine Antwort.', en: 'Within the next week you will receive an answer. (feminine: der)' },
     { de: 'Das Restaurant liegt außerhalb der Stadt.', en: 'The restaurant is outside the city.' },
     { de: 'Aufgrund des schlechten Wetters wurde das Spiel abgesagt.', en: 'Because of the bad weather the game was cancelled. (neuter: des Wetters)' },
     { de: 'Mithilfe eines Wörterbuchs habe ich den Text verstanden.', en: 'With the help of a dictionary I understood the text.' },
-    { de: 'Anlässlich seines 50. Geburtstags gab er eine Party.', en: 'On the occasion of his 50th birthday he gave a party.' },
-    { de: 'Infolge des Unfalls war die Autobahn gesperrt.', en: 'As a result of the accident the motorway was closed.' },
+    { de: 'Trotz des Regens haben wir das Spiel gewonnen.', en: 'Despite the rain we won the game. (masculine: des Regens)' },
+    { de: 'Laut Zeitung kommt der Minister morgen.', en: 'According to the newspaper the minister is coming tomorrow.' },
     { de: 'Bitte antworten Sie innerhalb von zwei Wochen.', en: 'Please reply within two weeks. (no article: von + Dative)' },
   ],
   connections: [
     { topicId: 'a2-15-genitive-prepositions', note: 'wegen, trotz, während and statt were the first Genitive prepositions; this list extends them.' },
     { topicId: 'a2-14-genitive', note: 'The Genitive article and noun endings are the base for everything here.' },
-    { topicId: 'b1-16-adjective-declension-review', note: 'Adjectives after these prepositions take Genitive endings: aufgrund schlechter Erfahrungen.' },
-    { topicId: 'b1-18-cause-consequence-concession', note: 'aufgrund and infolge are the noun-phrase versions of weil and sodass.' },
+    { topicId: 'b1-16-adjective-declension-review', note: 'Adjectives after these prepositions take the Genitive ending -en: aufgrund des schlechten Wetters.' },
+    { topicId: 'b1-18-cause-consequence-concession', note: 'wegen and aufgrund are the noun-phrase versions of weil; trotz is the noun-phrase version of obwohl.' },
     { topicId: 'b1-31-register-formal-informal', note: 'These prepositions are a hallmark of the formal register.' },
   ],
   edgeCases: [
     'Masculine and neuter nouns need the **-s / -es** ending: *aufgrund des Wetter**s***, *innerhalb des Monat**s***. Forgetting it is the most common error.',
     'No article → **von**: *innerhalb von drei Tagen*. With an article → Genitive: *innerhalb der drei Tage*.',
-    '*laut* takes the Genitive or the Dative; both are correct: *laut des Berichts* / *laut dem Bericht*. With a bare noun use no ending: *laut Bericht*.',
+    '*laut* usually takes the Dative (*laut dem Bericht*); the Genitive (*laut des Berichts*) is also correct. With a bare noun use no ending: *laut Zeitung*.',
     'Spoken *wegen dem Regen* (Dative) is common, but write *wegen des Regens*.',
     '*mithilfe* is written as one word as a preposition. *mit Hilfe* (two words) is an older spelling that is still accepted.',
   ],
@@ -117,10 +118,10 @@ These prepositions let you **compress** a whole clause into a short phrase: *auf
         ['außerhalb', 'outside of'],
         ['aufgrund', 'because of'],
         ['mithilfe', 'with the help of'],
-        ['anlässlich', 'on the occasion of'],
-        ['infolge', 'as a result of'],
+        ['trotz', 'despite'],
+        ['während', 'during'],
       ],
-      explanation: 'All six take the Genitive. innerhalb / außerhalb are about place or time, aufgrund / infolge about cause and result, mithilfe about means, anlässlich about occasions.',
+      explanation: 'All six take the Genitive. innerhalb / außerhalb are about place or time, aufgrund about the cause, mithilfe about the means, trotz and während are the A2 ones you already know.',
     },
     {
       type: 'mc',
@@ -141,9 +142,9 @@ These prepositions let you **compress** a whole clause into a short phrase: *auf
     {
       type: 'fill',
       id: 'b1-26-genitive-prepositions-depth-ex07',
-      prompt: 'Anlässlich ___ 50. Geburtstags gab er eine Party. (his)',
+      prompt: 'Trotz ___ Alters läuft er jeden Tag zehn Kilometer. (his)',
       answer: ['seines'],
-      explanation: 'Geburtstag is masculine. The possessive in the masculine Genitive is seines, and the noun takes -s.',
+      explanation: 'Alter is neuter. The possessive in the neuter Genitive is seines, and the noun takes -s: trotz seines Alters.',
     },
     {
       type: 'mc',
@@ -160,7 +161,6 @@ These prepositions let you **compress** a whole clause into a short phrase: *auf
       answer: [
         'Wegen des Streiks fahren die Züge nicht.',
         'Aufgrund des Streiks fahren die Züge nicht.',
-        'Infolge des Streiks fahren die Züge nicht.',
       ],
       hint: 'der Streik (strike); fahren = to run (of trains); wegen / aufgrund + Genitiv',
       explanation: 'Streik is masculine, so the Genitive is des Streiks. The prepositional phrase in position 1 is followed by the verb fahren.',
@@ -178,7 +178,7 @@ These prepositions let you **compress** a whole clause into a short phrase: *auf
       prompt: 'Complete: "Laut ___ Zeitung kommt der Minister morgen."',
       options: ['der', 'die', 'den'],
       answer: 0,
-      explanation: 'laut takes the Genitive or Dative. Zeitung is feminine, and in both cases the article is der.',
+      explanation: 'laut usually takes the Dative, sometimes the Genitive. Zeitung is feminine, and in both cases the article is der.',
     },
     {
       type: 'order',

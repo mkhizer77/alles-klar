@@ -12,7 +12,7 @@ const topic: Topic = {
   explanation: `
 ### What it is
 
-A **subordinate clause** (*Nebensatz*) is a part of a sentence that cannot stand alone. It hangs on a main clause and is introduced by a small joining word, a **subordinating conjunction** (*Subjunktion*). The two most important ones are:
+A **subordinate clause** (*Nebensatz*) is a part of a sentence that cannot stand alone. It hangs on a main clause and is introduced by a small joining word, a **subordinating conjunction** (*Subjunktion*; a joining word that sends the verb to the end). The two most important ones are:
 
 - **weil** = because
 - **dass** = that
@@ -54,7 +54,7 @@ You can also start with the Nebensatz. Then the whole clause counts as position 
 
 ### weil vs denn
 
-Both mean *because*, but **denn** is a coordinating conjunction (position 0): the word order after it does **not** change.
+Both mean *because*, but **denn** works like *und* and *aber*: it simply joins two normal sentences (it sits in "position 0"), so the word order after it does **not** change.
 
 - Ich bleibe zu Hause, **denn** ich **bin** krank. (verb stays second)
 - Ich bleibe zu Hause, **weil** ich krank **bin**. (verb at end)
@@ -135,7 +135,7 @@ Both mean *because*, but **denn** is a coordinating conjunction (position 0): th
         ['dass', 'that (verb to the end)'],
         ['aber', 'but (verb stays in position 2)'],
       ],
-      explanation: 'weil and dass are subordinating: verb to the end. denn and aber are coordinating (position 0): nothing moves.',
+      explanation: 'weil and dass send the verb to the end. denn and aber just join two normal sentences (position 0): nothing moves.',
     },
     {
       type: 'order',

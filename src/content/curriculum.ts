@@ -105,7 +105,7 @@ export const curriculum: CurriculumLevel[] = [
         topics: [
           { id: 'a2-04-subordinate-clauses-weil-dass', title: 'Subordinate clauses: the verb goes to the end (weil, dass)', germanTerm: 'Nebensatz' },
           { id: 'a2-05-wenn-ob-indirect-questions', title: 'wenn, ob and indirect questions', germanTerm: 'Nebensatz: wenn / ob / W-Wort' },
-          { id: 'a2-06-als-vs-wenn', title: 'als vs wenn: one-time past vs repeated', germanTerm: 'als / wenn' },
+          { id: 'a2-06-als-vs-wenn', title: 'als, wenn and immer wenn: three ways to say "when"', germanTerm: 'als / wenn' },
         ],
       },
       {

@@ -8,7 +8,7 @@ const topic: Topic = {
   title: 'Zustandspassiv and alternatives (man, lassen, -bar)',
   germanTerm: 'Zustandspassiv, Passiversatz',
   tags: ['passive', 'sein', 'man', 'lassen', 'word formation'],
-  summary: 'The Zustandspassiv (sein + Partizip II) describes the state after an action (Die Tür ist geschlossen); man, sich lassen, sein + zu and -bar are ways to say the same thing without a passive.',
+  summary: 'The Zustandspassiv (sein + Partizip II) describes the state after an action (Die Tür ist geschlossen); man, sich lassen and -bar are ways to say the same thing without a passive.',
   explanation: `
 ### What it is
 
@@ -32,7 +32,7 @@ Typical state-passive sentences: *Die Rechnung ist bezahlt. Der Tisch ist gedeck
 
 ### Alternatives to the passive (Passiversatz)
 
-German often avoids the passive. Four common replacements:
+German often avoids the passive. *Passiversatz* simply means "something you say instead of the passive". Three common replacements:
 
 **1. man + active verb.** The most common one in speech.
 
@@ -44,12 +44,7 @@ German often avoids the passive. Four common replacements:
 - Das Problem **kann gelöst werden**. = Das Problem **lässt sich** lösen.
 - Die Tür **kann nicht geöffnet werden**. = Die Tür **lässt sich** nicht öffnen.
 
-**3. sein + zu + Infinitiv** = *muss / kann … werden* (something must or can be done).
-
-- Die Aufgaben **müssen erledigt werden**. = Die Aufgaben **sind** bis Freitag **zu erledigen**.
-- Der Text **kann** leicht **gelesen werden**. = Der Text **ist** leicht **zu lesen**.
-
-**4. Adjectives with -bar** = *kann … werden*.
+**3. Adjectives with -bar** = *kann … werden*.
 
 | passive | -bar adjective |
 |---|---|
@@ -57,6 +52,10 @@ German often avoids the passive. Four common replacements:
 | Das kann gelöst werden. | Das ist **lösbar**. |
 | Das kann gelesen werden. | Das ist **lesbar**. |
 | Das kann getrunken werden. | Das ist **trinkbar**. |
+
+### You may also see …
+
+In formal notices you will read **sein + zu + Infinitiv**: *Die Aufgaben **sind** bis Freitag **zu erledigen**.* It means *must be done* (sometimes *can be done*). Recognise it; in your own writing say *Die Aufgaben müssen bis Freitag erledigt werden* or *Man muss die Aufgaben bis Freitag erledigen*.
 
 ### Why it matters
 
@@ -68,7 +67,7 @@ Knowing the difference between *wird geschlossen* and *ist geschlossen* stops a 
     { de: 'Das Geschäft ist seit Montag geöffnet.', en: 'The shop has been open since Monday. (state with seit)' },
     { de: 'Hier spricht man Deutsch.', en: 'German is spoken here. (man instead of the passive)' },
     { de: 'Das Problem lässt sich leicht lösen.', en: 'The problem can easily be solved. (sich lassen = kann … werden)' },
-    { de: 'Die Aufgaben sind bis Freitag zu erledigen.', en: 'The tasks have to be done by Friday. (sein + zu = müssen … werden)' },
+    { de: 'Hier darf man nicht parken.', en: 'Parking is not allowed here. (man + modal instead of darf nicht geparkt werden)' },
     { de: 'Diese Aufgabe ist lösbar.', en: 'This task can be solved. (-bar = kann … werden)' },
   ],
   connections: [
@@ -83,7 +82,7 @@ Knowing the difference between *wird geschlossen* and *ist geschlossen* stops a 
     'Words like **gerade** and **jeden Tag** point to a process (*wird*), while **schon**, **bereits** and **seit** point to a state (*ist*).',
     'Not every verb has a sensible Zustandspassiv. *Das Buch ist gelesen* is strange; use *Das Buch ist gelesen worden* or *Ich habe das Buch gelesen*.',
     '**sich lassen** always needs *sich*, even with a plural subject: *Die Fenster lassen **sich** nicht öffnen.*',
-    '**sein + zu + Infinitiv** can mean *must* or *can*; the context decides: *Die Aufgabe ist zu erledigen* (must), *Das ist nicht zu glauben* (cannot).',
+    'If you read **sein + zu + Infinitiv** (*Die Aufgabe ist zu erledigen*), it usually means *must be done*. Say it with *müssen … werden* or *man muss* yourself.',
   ],
   exercises: [
     {
@@ -117,9 +116,9 @@ Knowing the difference between *wird geschlossen* and *ist geschlossen* stops a 
         ['Das kann repariert werden.', 'Das lässt sich reparieren.'],
         ['Das kann gemacht werden.', 'Das ist machbar.'],
         ['Hier wird Deutsch gesprochen.', 'Hier spricht man Deutsch.'],
-        ['Das muss erledigt werden.', 'Das ist zu erledigen.'],
+        ['Hier darf nicht geparkt werden.', 'Hier darf man nicht parken.'],
       ],
-      explanation: 'sich lassen and -bar replace kann … werden; man replaces a simple passive; sein + zu replaces muss … werden.',
+      explanation: 'sich lassen and -bar replace kann … werden; man replaces a simple passive, with or without a modal verb.',
     },
     {
       type: 'fill',
@@ -139,10 +138,10 @@ Knowing the difference between *wird geschlossen* and *ist geschlossen* stops a 
     {
       type: 'order',
       id: 'b1-08-zustandspassiv-alternatives-ex07',
-      prompt: 'Build the sentence: "The tasks have to be done by Friday."',
-      words: ['zu', 'Freitag', 'erledigen.', 'Aufgaben', 'bis', 'sind', 'Die'],
-      answer: ['Die Aufgaben sind bis Freitag zu erledigen.'],
-      explanation: 'sein + zu + Infinitiv: sind in position two, zu erledigen at the end.',
+      prompt: 'Build the sentence: "The windows cannot be opened." (use sich lassen)',
+      words: ['öffnen.', 'Fenster', 'sich', 'Die', 'nicht', 'lassen'],
+      answer: ['Die Fenster lassen sich nicht öffnen.'],
+      explanation: 'sich lassen + Infinitiv = kann nicht … werden. lassen agrees with the plural subject (lassen), sich stays, öffnen goes to the end.',
     },
     {
       type: 'fill',

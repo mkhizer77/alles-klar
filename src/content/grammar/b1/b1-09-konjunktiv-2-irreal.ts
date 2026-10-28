@@ -33,9 +33,6 @@ For almost all verbs you use **würde + Infinitiv**: *ich würde gehen, du würd
 | sollen | sollte | **sollte** (no umlaut) |
 | wollen | wollte | **wollte** (no umlaut) |
 | wissen | wusste | **wüsste** |
-| kommen | kam | **käme** |
-| geben | gab | **gäbe** (es gäbe = there would be) |
-| gehen | ging | **ginge** |
 
 The endings are the same for all of them:
 
@@ -48,7 +45,9 @@ The endings are the same for all of them:
 | ihr | hättet | wärt / wäret | würdet | könntet |
 | sie / Sie | hätten | wären | würden | könnten |
 
-Rule of thumb: **hätte, wäre, the modals and wüsste** are always used as short forms. For other verbs (*gehen, kaufen, arbeiten …*) take **würde + Infinitiv**; short forms like *käme* or *gäbe* are fine but optional.
+Rule of thumb: **hätte, wäre, the modals and wüsste** are always used as short forms. For every other verb (*gehen, kaufen, arbeiten …*) take **würde + Infinitiv**. That is all you need at B1.
+
+**You may also see** short forms of a few other verbs, especially *es **gäbe*** (there would be, from *es gibt*) and *er **käme*** (he would come). Recognise them; *es würde geben* and *er würde kommen* mean the same and are always correct.
 
 ### Irreal conditions
 
@@ -82,7 +81,7 @@ Konjunktiv II is central to the B1 exam: giving advice, discussing a hypothetica
     { de: 'Wenn ich reich wäre, würde ich eine Weltreise machen.', en: 'If I were rich, I would travel the world. (both halves in Konjunktiv II)' },
     { de: 'Wenn er mehr Zeit hätte, würde er Sport machen.', en: 'If he had more time, he would do sport.' },
     { de: 'Ich würde gern in Italien wohnen.', en: 'I would like to live in Italy. (würde + Infinitiv)' },
-    { de: 'Es gäbe weniger Unfälle, wenn alle langsamer fahren würden.', en: 'There would be fewer accidents if everyone drove more slowly. (es gäbe = there would be)' },
+    { de: 'Es gäbe weniger Unfälle, wenn alle langsamer fahren würden.', en: 'There would be fewer accidents if everyone drove more slowly. (es gäbe = there would be; würden + Infinitiv in the wenn clause)' },
     { de: 'Wenn ich doch nur mehr Geld hätte!', en: 'If only I had more money! (wish with doch nur)' },
     { de: 'Ich wünschte, ich wäre jetzt am Strand.', en: 'I wish I were on the beach now.' },
     { de: 'An deiner Stelle würde ich zum Arzt gehen.', en: 'If I were you, I would go to the doctor. (advice)' },
@@ -90,7 +89,7 @@ Konjunktiv II is central to the B1 exam: giving advice, discussing a hypothetica
   connections: [
     { topicId: 'a2-20-konjunktiv-2-polite', note: 'The polite forms (könnten Sie, ich hätte gern) are the same Konjunktiv II; here it expresses unreal situations.' },
     { topicId: 'a2-05-wenn-ob-indirect-questions', note: 'wenn clauses send the verb to the end; the same word order applies to irreal conditions.' },
-    { topicId: 'a2-02-prateritum-verbs', note: 'The short Konjunktiv II forms are built from the Präteritum: hatte → hätte, kam → käme.' },
+    { topicId: 'a2-02-prateritum-verbs', note: 'The short Konjunktiv II forms are built from the Präteritum: hatte → hätte, konnte → könnte.' },
     { topicId: 'b1-10-konjunktiv-2-past', note: 'The same idea in the past: hätte gemacht, wäre gegangen.' },
     { topicId: 'b1-11-als-ob', note: 'als ob comparisons and polite suggestions also use Konjunktiv II.' },
   ],
@@ -157,9 +156,9 @@ Konjunktiv II is central to the B1 exam: giving advice, discussing a hypothetica
     {
       type: 'fill',
       id: 'b1-09-konjunktiv-2-irreal-ex07',
-      prompt: 'Es ___ weniger Unfälle, wenn alle langsamer fahren würden. (geben)',
-      answer: ['gäbe'],
-      explanation: 'es gibt → es gäbe (there would be). The short form comes from the Präteritum gab + umlaut + e.',
+      prompt: 'Es gäbe weniger Unfälle, wenn alle langsamer fahren ___. (werden, Konjunktiv II)',
+      answer: ['würden'],
+      explanation: 'fahren is a normal verb, so würde + Infinitiv. The subject alle is plural → würden, and it goes to the end of the wenn clause. (es gäbe = there would be.)',
     },
     {
       type: 'translate',
@@ -187,10 +186,10 @@ Konjunktiv II is central to the B1 exam: giving advice, discussing a hypothetica
     {
       type: 'mc',
       id: 'b1-09-konjunktiv-2-irreal-ex11',
-      prompt: 'Which is the correct short Konjunktiv II of "ich komme"?',
-      options: ['ich käme', 'ich kommte', 'ich kömme'],
+      prompt: 'Which sentence is a REAL condition (it can really happen), not an unreal one?',
+      options: ['Wenn ich Zeit habe, helfe ich dir.', 'Wenn ich Zeit hätte, würde ich dir helfen.', 'Wenn ich doch nur Zeit hätte!'],
       answer: 0,
-      explanation: 'Präteritum kam + umlaut + e = käme. (ich würde kommen is also correct.)',
+      explanation: 'Normal present forms (habe, helfe) = real and possible. hätte / würde = Konjunktiv II = unreal: I do not have time.',
     },
     {
       type: 'order',

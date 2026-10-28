@@ -17,7 +17,7 @@ In English you can say *I'm waiting for it* or *What are you waiting for?* In Ge
 - **da** + preposition = *preposition + it / that / them*: da**rauf** (for it), da**mit** (with it)
 - **wo** + preposition = *preposition + what*: wo**rauf** (for what), wo**mit** (with what)
 
-Grammar books call these **Präpositionaladverbien** or *da-* and *wo-compounds*.
+Grammar books call these **Präpositionaladverbien**; we simply say *da-* and *wo-compounds* (a compound is two words glued into one).
 
 ### How it works
 
@@ -53,15 +53,7 @@ This is the key rule. Compounds are **only for things and ideas**. For **people*
 | statement | Ich spreche **damit**. (with it) | Ich spreche **mit ihr**. |
 | question | **Womit** fährst du? | **Mit wem** fährst du? |
 
-### da-compounds pointing forward
-
-A da-compound can also point to a whole clause that follows. This is very common with verbs that take a preposition:
-
-- Ich freue mich **darauf**, dass du kommst. – *I'm looking forward to you coming.*
-- Er denkt **daran**, ein Auto zu kaufen. – *He is thinking of buying a car.*
-- Ich bin **dafür**, dass wir jetzt gehen. – *I'm in favour of us leaving now.*
-
-Here *darauf / daran / dafür* is like a placeholder: "I'm looking forward to **this**: that you come."
+You may also see a da-compound pointing to a whole clause: *Ich freue mich **darauf**, dass du kommst* (*I'm looking forward to you coming*). Here *darauf* means "to this": that you come. You only need to recognise this pattern for now; it is practised at B1.
 
 ### Why it matters
 
@@ -73,14 +65,14 @@ Without compounds you cannot ask the simplest follow-up questions in a conversat
     { de: 'Worauf wartest du?', en: 'What are you waiting for? (thing → wo + r + auf)' },
     { de: 'Auf wen wartest du?', en: 'Who are you waiting for? (person → auf wen)' },
     { de: 'Womit fährst du zur Arbeit? – Mit dem Fahrrad.', en: 'What do you go to work with? – By bike. (mit → womit, no r)' },
-    { de: 'Ich freue mich darauf, dass du kommst.', en: 'I am looking forward to you coming. (darauf points to the dass-clause)' },
+    { de: 'Wofür interessierst du dich? – Für Fußball.', en: 'What are you interested in? – Football. (für → wofür, no r)' },
     { de: 'Das Thema ist schwierig. Wir sprechen morgen darüber.', en: 'The topic is difficult. We will talk about it tomorrow.' },
   ],
   connections: [
     { topicId: 'a2-12-verbs-with-prepositions', note: 'The verb + preposition pairs that da- and wo-compounds are built on.' },
     { topicId: 'a1-23-accusative-pronouns', note: 'For people you still use preposition + pronoun (auf ihn, für sie).' },
     { topicId: 'a1-07-questions', note: 'wo-compounds are question words and take position 1, with the verb second.' },
-    { topicId: 'a2-04-subordinate-clauses-weil-dass', note: 'darauf, dass … / daran, dass … introduces a subordinate clause.' },
+    { topicId: 'a2-04-subordinate-clauses-weil-dass', note: 'You may see darauf, dass … / daran, dass …: a da-compound followed by a subordinate clause.' },
     { topicId: 'b1-05-relative-clauses-prepositions', note: 'wo-compounds also appear in relative clauses at B1.' },
   ],
   edgeCases: [
@@ -151,10 +143,10 @@ Without compounds you cannot ask the simplest follow-up questions in a conversat
     {
       type: 'order',
       id: 'a2-13-da-wo-compounds-ex08',
-      prompt: 'Build the sentence: "I am looking forward to you coming."',
-      words: ['darauf,', 'freue', 'Ich', 'du', 'dass', 'kommst.', 'mich'],
-      answer: ['Ich freue mich darauf, dass du kommst.'],
-      explanation: 'darauf points forward to the dass-clause. The verb kommst goes to the end of the Nebensatz.',
+      prompt: 'Build the question: "What are you thinking of?" (du; a thing)',
+      words: ['du?', 'denkst', 'Woran'],
+      answer: ['Woran denkst du?'],
+      explanation: 'denken an + a thing → wo + r + an = woran. The compound is one word in position 1, then the verb, then du.',
     },
     {
       type: 'mc',

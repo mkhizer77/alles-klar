@@ -12,7 +12,12 @@ const topic: Topic = {
   explanation: `
 ### The idea, in one line
 
-Some verbs are "glued" to a preposition: *warten **auf***, *sich interessieren **für***, *träumen **von***. The preposition has **no meaning of its own** here – you cannot work it out, you have to learn it with the verb, together with the **case** it takes. This topic gives you the B1 set, grouped by preposition so the blocks stick.
+Some verbs are "glued" to a preposition, and you need the right one to say the simplest things:
+
+- Ich warte **auf** den Bus. – *I am waiting for the bus.* (not *für*)
+- Sie interessiert sich **für** Musik. – *She is interested in music.* (not *in*)
+
+The preposition has **no meaning of its own** here – you cannot work it out, you have to learn it with the verb, together with the **case** it takes. This topic gives you the B1 set, grouped by preposition so the blocks stick.
 
 ### Prepositions with a fixed case
 
@@ -22,10 +27,10 @@ These prepositions always take the same case, whatever the verb:
 |---|---|
 | **für** + Akk | sich interessieren für, sich bedanken für, sich entschuldigen für, sorgen für, sich entscheiden für |
 | **um** + Akk | sich kümmern um, bitten um, sich bewerben um, es geht um, sich sorgen um |
-| **gegen** + Akk | protestieren gegen, sich wehren gegen, kämpfen gegen |
+| **gegen** + Akk | protestieren gegen, kämpfen gegen |
 | **mit** + Dat | sich beschäftigen mit, anfangen mit, aufhören mit, rechnen mit, vergleichen mit, sich unterhalten mit, telefonieren mit |
 | **von** + Dat | träumen von, abhängen von, erzählen von, sich erholen von, halten von, sich verabschieden von |
-| **nach** + Dat | fragen nach, suchen nach, sich erkundigen nach, sich sehnen nach, riechen nach |
+| **nach** + Dat | fragen nach, suchen nach, sich erkundigen nach |
 | **vor** + Dat | Angst haben vor, warnen vor, sich fürchten vor, schützen vor |
 | **zu** + Dat | gehören zu, passen zu, einladen zu, gratulieren zu, führen zu |
 | **aus** + Dat | bestehen aus, stammen aus |
@@ -33,11 +38,11 @@ These prepositions always take the same case, whatever the verb:
 
 ### Two-way prepositions: the verb decides the case
 
-With *an, auf, über, in* the case is **not** automatic. Most verbs take the **Accusative**; a few take the Dative. Learn these as exceptions.
+*an, auf, über, in* are two-way prepositions (they can take the Accusative or the Dative), so after a verb the case is **not** automatic. Most verbs take the **Accusative**; a few take the Dative. Learn these as exceptions.
 
 | Preposition | + Akkusativ | + Dativ |
 |---|---|---|
-| **an** | denken an, sich erinnern an, sich gewöhnen an, glauben an, sich wenden an | teilnehmen an, leiden an, arbeiten an, zweifeln an |
+| **an** | denken an, sich erinnern an, sich gewöhnen an, glauben an | teilnehmen an, leiden an, arbeiten an |
 | **auf** | warten auf, sich freuen auf, achten auf, sich verlassen auf, verzichten auf, sich konzentrieren auf, reagieren auf, hoffen auf, sich vorbereiten auf | (none at B1) |
 | **über** | sprechen über, sich freuen über, sich ärgern über, nachdenken über, sich beschweren über, diskutieren über, sich informieren über, lachen über | (none) |
 | **in** | sich verlieben in | (none) |

@@ -19,18 +19,17 @@ Sometimes a noun has **no article** in front of it (*Nullartikel*): uncountable 
 - kalt**es** Wasser (like d**as**) – *cold water*
 - klein**e** Kinder (like d**ie**) – *small children*
 
-### How it works: the full table
+### How it works: the table
 
 | | masculine | feminine | neuter | plural |
 |---|---|---|---|---|
 | Nominative | gut**er** Wein | gut**e** Milch | gut**es** Brot | gut**e** Freunde |
 | Accusative | gut**en** Wein | gut**e** Milch | gut**es** Brot | gut**e** Freunde |
 | Dative | gut**em** Wein | gut**er** Milch | gut**em** Brot | gut**en** Freunden |
-| Genitive | gut**en** Weines | gut**er** Milch | gut**en** Brotes | gut**er** Freunde |
 
-Compare the endings with the definite articles (*der, die, das, die / den, die, das, die / dem, der, dem, den*) and you will see they match, with one exception: in the **Genitive masculine and neuter** the adjective takes **-en** instead of *-es*, because the noun already carries the *-(e)s* (*gut**en** Wein**es***).
+Compare the endings with the definite articles (*der, die, das, die / den, die, das, die / dem, der, dem, den*) and you will see they match.
 
-New endings you have not seen before in this role: **-em** (Dative masculine / neuter) and **-er** for the Dative feminine. Both are simply the article ending moved onto the adjective.
+At A2 you mostly need the **Nominative and Accusative** rows: greetings, food and drink, plurals. The Dative row is for recognising phrases like *mit guten Freunden* or *bei schönem Wetter*; the endings **-em** and **-er** are simply the article ending (*dem, der*) moved onto the adjective. (You may also see a Genitive like *trotz starken Regens*; that is B1 material.)
 
 ### When you need this table
 
@@ -65,11 +64,10 @@ You use this table every day without noticing: *Guten Tag*, *Liebe Grüße*, *Gu
     { topicId: 'a2-08-adjective-endings-indefinite', note: 'The -er and -es endings after ein are the same idea: the adjective shows what the article cannot.' },
     { topicId: 'a1-12-indefinite-articles', note: 'When German uses no article at all.' },
     { topicId: 'a1-10-plural', note: 'Plural nouns without an article are the most common place for these endings.' },
-    { topicId: 'b1-16-adjective-declension-review', note: 'A full review of all three tables, including the Genitive.' },
+    { topicId: 'b1-16-adjective-declension-review', note: 'A full review of all three tables, including the Genitive, which is left out here.' },
   ],
   edgeCases: [
-    'The Dative masculine / neuter ending is **-em**: *mit großem Interesse* (with great interest), *bei schönem Wetter* (in nice weather).',
-    'Genitive masculine / neuter is **-en**, not -es: *trotz starken Regens* (despite heavy rain). The noun already has the -s.',
+    'The Dative masculine / neuter ending is **-em**: *bei schönem Wetter* (in nice weather), *mit großem Interesse* (with great interest). You mostly need to recognise these.',
     'After **viele, einige, wenige, andere, mehrere** and after **numbers** use the plural endings of this table: *viele nette Leute, zwei kleine Kinder*. (After *alle* use -en: *alle netten Leute*.)',
     'Greetings are Accusative: **Guten** Tag (masculine) but **Gute** Nacht (feminine) and **Frohes** Fest (neuter).',
     'In letters: *Liebe Anna* (feminine), *Lieber Paul* (masculine), *Liebe Eltern* (plural).',

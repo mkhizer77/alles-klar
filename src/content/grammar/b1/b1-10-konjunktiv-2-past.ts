@@ -36,7 +36,7 @@ So the formula is **hätte / wäre + Partizip II**. The helper follows the Perfe
 | ihr | **hättet** gelernt | **wärt** gefahren |
 | sie / Sie | **hätten** gelernt | **wären** gefahren |
 
-There is no *würde* form in the past. *Ich würde gegangen sein* is possible but very rare; always use *wäre gegangen*.
+There is no *würde* form in the past. Always use *hätte* or *wäre* + Partizip II.
 
 ### Three uses
 
@@ -58,16 +58,14 @@ There is no *würde* form in the past. *Ich würde gegangen sein* is possible bu
 
 ### With modal verbs
 
-Modal verbs in the past Konjunktiv II use the **double infinitive** you know from Unit 1: **hätte + Infinitiv + Modal**.
+Two phrases with modal verbs are worth learning as fixed patterns. They end in the **double infinitive** you know from Unit 1 (two verbs in the infinitive, the modal last): **hätte + Infinitiv + Modal**.
 
 | form | meaning |
 |---|---|
 | Ich **hätte** das **machen sollen**. | I should have done that. |
 | Du **hättest** mich **fragen können**. | You could have asked me. |
-| Er **hätte** nicht **kommen müssen**. | He would not have had to come. |
-| Wir **hätten** das nicht **tun dürfen**. | We should not have been allowed to do that. |
 
-*Hätte … sollen* (should have) and *hätte … können* (could have) are by far the most useful. In a subordinate clause *hätte* goes before the double infinitive: *…, dass ich das **hätte machen sollen**.*
+*Hätte … sollen* (should have) and *hätte … können* (could have) are all you need. You may also see the same pattern with other modals (*Er hätte nicht kommen müssen* – he would not have had to come); it works the same way.
 
 ### Why it matters
 
@@ -86,7 +84,7 @@ Talking about a past mistake or a missed opportunity is a classic B1 speaking ta
     { topicId: 'b1-09-konjunktiv-2-irreal', note: 'The present Konjunktiv II (hätte, wäre, würde); here the same idea goes into the past.' },
     { topicId: 'b1-01-plusquamperfekt', note: 'hatte / war + Partizip II is the structure; add an umlaut and you have the past Konjunktiv II.' },
     { topicId: 'a1-32-perfekt-sein', note: 'Verbs with sein in the Perfekt take wäre here.' },
-    { topicId: 'b1-03-modals-perfekt', note: 'hätte … machen sollen follows the double-infinitive rule for modals.' },
+    { topicId: 'b1-03-modals-perfekt', note: 'hätte … machen sollen ends in the same double infinitive as hat … machen müssen.' },
   ],
   edgeCases: [
     'There is no *würde* in the past: *ich **wäre** gegangen*, not *ich würde gegangen*.',

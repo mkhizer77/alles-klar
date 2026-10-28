@@ -12,7 +12,12 @@ const topic: Topic = {
   explanation: `
 ### What a prefix does
 
-A **prefix** (*Präfix*) is a syllable attached to the **front** of a word: *un-glücklich*, *ver-stehen*, *zer-brechen*. The base word keeps its core meaning, and the prefix adds a twist: "not", "wrong", "away", "into pieces". If you know the twist, you can often guess a new word without a dictionary.
+Knowing a few prefixes lets you guess new words from words you already know:
+
+- *glücklich* (happy) → **un**glücklich (unhappy)
+- *brechen* (to break) → **zer**brechen (to break into pieces)
+
+A **prefix** (*Präfix*) is a syllable attached to the **front** of a word. The base word keeps its core meaning, and the prefix adds a twist: "not", "wrong", "away", "into pieces". If you know the twist, you can often guess a new word without a dictionary.
 
 Most of the prefixes here go on **verbs** and are **inseparable** (*untrennbar*): they never split off, they are unstressed, and the Partizip II has **no ge-**. Only *un-* is different: it goes on adjectives and nouns.
 
@@ -22,17 +27,17 @@ Most of the prefixes here go on **verbs** and are **inseparable** (*untrennbar*)
 |---|---|---|
 | **un-** | not, the opposite (adjectives, nouns) | un**glücklich**, un**möglich**, die Un**ordnung**, das Un**glück** |
 | **ver-** | 1. wrong (often reflexive) 2. change / away / finish 3. makes a verb from an adjective | 1. sich ver**laufen**, sich ver**schreiben** 2. ver**reisen**, ver**kaufen**, ver**schwinden** 3. ver**bessern**, ver**größern** |
-| **be-** | turns a verb or noun into a verb with a **direct object** | be**antworten** (eine Frage), be**suchen**, be**zahlen**, be**steigen** |
-| **er-** | reach a result, achieve; begin | er**reichen**, er**finden**, er**kennen**, er**klären**, er**blühen** |
-| **ent-** | away, remove, undo; begin | ent**fernen**, ent**decken**, ent**kommen**, ent**schuldigen**, ent**stehen** |
+| **be-** | turns a verb or noun into a verb with a **direct object** | be**antworten** (eine Frage), be**suchen**, be**zahlen** |
+| **er-** | reach a result, achieve | er**reichen**, er**finden**, er**kennen**, er**klären** |
+| **ent-** | away, remove, undo | ent**fernen**, ent**decken**, ent**kommen**, ent**schuldigen** |
 | **zer-** | into pieces, destroy | zer**brechen**, zer**stören**, zer**reißen**, zer**schneiden** |
-| **miss-** | wrong, bad, failed | miss**verstehen**, miss**lingen**, der Miss**erfolg**, das Miss**verständnis** |
+| **miss-** | wrong, bad, failed | miss**verstehen**, der Miss**erfolg**, das Miss**verständnis** |
 
 ### How to use the table
 
 - **un-** is the easiest: *möglich* → *unmöglich*, *freundlich* → *unfreundlich*, *Glück* → *Unglück*. It does not work on every adjective (not *unalt*), but it works on hundreds.
-- **ver-** with **sich** usually means "do it wrong": *sich verlaufen* (get lost), *sich verfahren* (drive the wrong way), *sich versprechen* (misspeak). Without *sich* it often means change or completion: *verblühen* (finish blooming), *verkaufen*.
-- **be-** is the "object-maker": *antworten auf eine Frage* → *eine Frage beantworten*; *steigen auf den Berg* → *den Berg besteigen*. The preposition disappears and the noun becomes a direct object.
+- **ver-** with **sich** usually means "do it wrong": *sich verlaufen* (get lost), *sich verfahren* (drive the wrong way), *sich versprechen* (misspeak). Without *sich* it often means change or away: *verbessern* (make better), *verkaufen* (sell), *verreisen* (go away on a trip).
+- **be-** is the "object-maker": *antworten auf eine Frage* → *eine Frage beantworten*. The preposition disappears and the noun becomes a direct object.
 - **ent-** often means the opposite of the base: *decken* (cover) → *entdecken* (discover, uncover); *laden* (load) → *entladen* (unload).
 - **zer-** always means that something ends up in pieces.
 
@@ -46,7 +51,7 @@ Most of the prefixes here go on **verbs** and are **inseparable** (*untrennbar*)
 
 ### Why it matters
 
-German builds thousands of words from a small set of prefixes. With the table above you can decode *entstehen*, *zerreißen* or *misslingen* on first sight, and you can **build** words yourself: *unhöflich*, *verbessern*. That pays off in the B1 reading part, where unknown words are the main obstacle.
+German builds thousands of words from a small set of prefixes. With the table above you can decode *entfernen*, *zerreißen* or *missverstehen* on first sight, and you can **build** words yourself: *unhöflich*, *verbessern*. That pays off in the B1 reading part, where unknown words are the main obstacle.
 `,
   examples: [
     { de: 'Das ist leider unmöglich.', en: 'Unfortunately that is impossible. (un- = not)' },
@@ -69,7 +74,7 @@ German builds thousands of words from a small set of prefixes. With the table ab
     '*ver-* has several meanings; *sich* is the signal for "wrong": *sich verfahren* (go the wrong way) vs *verfahren* (proceed).',
     '*un-* only negates; it never attaches to verbs. *unmachen* does not exist; use *nicht machen*.',
     '*entschuldigen* and *entdecken* follow the "away" idea only loosely. Learn frequent ent-verbs as vocabulary.',
-    '*miss-* is normally inseparable (*ich missverstehe*), but a few forms have a Partizip with ge- in the middle (*gemissbraucht* is sometimes heard). Use the standard *missbraucht*.',
+    '*be-* verbs take a direct object without a preposition: *eine Frage beantworten*, not *auf eine Frage beantworten*.',
   ],
   exercises: [
     {

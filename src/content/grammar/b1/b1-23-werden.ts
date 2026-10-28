@@ -54,7 +54,7 @@ The Perfekt uses **sein** and the participle **geworden**.
 
 ### Job 3: the passive
 
-*werden* + **Partizip II** at the end = *Vorgangspassiv*. The subject is not the doer but the thing something is done to:
+*werden* + **Partizip II** at the end = the passive (*Vorgangspassiv*, the "something is being done" passive). The subject is not the doer but the thing something is done to:
 
 - Der Brief **wird geschrieben**. (The letter is being written.)
 - Die Brücke **wurde** 1950 **gebaut**. (The bridge was built in 1950.)

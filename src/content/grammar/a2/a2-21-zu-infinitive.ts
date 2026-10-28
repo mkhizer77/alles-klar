@@ -64,8 +64,9 @@ Some verbs take a **plain infinitive** with no *zu*:
 
 - **Modal verbs**: Ich muss **gehen**. Sie will **schlafen**.
 - **werden** (future): Ich werde **anrufen**.
-- **sehen, hören, lassen**: Ich sehe ihn **kommen**. Ich lasse das Auto **reparieren**.
-- **gehen, bleiben, lernen** with another verb: Wir gehen **schwimmen**. Er bleibt **stehen**. Sie lernt **schwimmen**.
+- **gehen** and **lernen** with another verb: Wir gehen **schwimmen**. Sie lernt **schwimmen**.
+
+You may also see *sehen, hören* and *lassen* with a plain infinitive (*Ich höre ihn singen*, *Ich lasse das Auto reparieren*). That is a B1 pattern; for now just notice there is no *zu*.
 
 ### Why it matters
 
@@ -93,7 +94,7 @@ The *zu*-infinitive lets you build longer, more natural sentences without a full
     'With separable verbs *zu* goes **inside** the verb as one word: *anzurufen*, not *zu anrufen* or *an zu rufen*.',
     'A *zu*-infinitive can only replace *dass* when the **subject is the same** in both parts. *Ich hoffe, dass du kommst* cannot become a *zu*-infinitive because the subjects differ (ich / du).',
     'The **comma** is optional when the zu-part is very short (*Ich versuche zu schlafen*), but it is always allowed. Use it: it makes the sentence easier to read.',
-    'Verbs of movement and perception take no *zu*: *gehen, fahren, bleiben, sehen, hören, lassen*. *Ich höre ihn singen*, not *zu singen*.',
+    '*gehen* and *fahren* with another verb take no *zu*: *Wir gehen essen*, *Ich fahre einkaufen*, not *zu essen*.',
   ],
   exercises: [
     {
@@ -164,10 +165,10 @@ The *zu*-infinitive lets you build longer, more natural sentences without a full
     {
       type: 'mc',
       id: 'a2-21-zu-infinitive-ex09',
-      prompt: 'Complete: "Ich sehe ihn jeden Morgen ___."',
-      options: ['zu kommen', 'kommen', 'kommt'],
+      prompt: 'Complete: "Ich werde dich morgen ___."',
+      options: ['zu anrufen', 'anrufen', 'anzurufen'],
       answer: 1,
-      explanation: 'sehen, hören and lassen take a plain infinitive: Ich sehe ihn kommen.',
+      explanation: 'werden (future) takes a plain infinitive, like a modal verb: Ich werde dich anrufen. anzurufen would be correct after a trigger like vergessen or Lust.',
     },
     {
       type: 'translate',

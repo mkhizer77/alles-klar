@@ -26,7 +26,7 @@ Sometimes you talk about a person or thing without saying who or what it is: *So
 
 ### man: the most important one
 
-**man** is used all the time for general statements. It means *people in general* and often matches English *you*, *one*, *they* or a passive sentence.
+**man** is used all the time for general statements. It means *people in general* and often matches English *you*, *one* or *they*.
 
 - In Deutschland **trinkt man** viel Kaffee. – *People drink a lot of coffee in Germany.*
 - Hier **darf man** nicht rauchen. – *You may not smoke here.*
@@ -36,7 +36,7 @@ Rules for *man*:
 
 1. It is always **third person singular**: *man ist, man hat, man kann* (like *er / sie / es*).
 2. It is written with a **small m**. *Man* with a capital M is only at the start of a sentence; *der Mann* (the man) is a different word.
-3. It only exists in the Nominative. In the Accusative use **einen**, in the Dative **einem**: *Das macht einen müde.* (*That makes you tired.*)
+3. It is only used as the **subject** of the sentence. (You may also see *einen* / *einem* standing in for *man* as an object, *Das macht einen müde*; that is B1 material.)
 
 ### jemand and niemand
 
@@ -46,7 +46,7 @@ Both are singular and are used for people.
 - Ist **jemand** zu Hause? – *Is anyone at home?*
 - **Niemand** weiß die Antwort. – *Nobody knows the answer.*
 
-In the Accusative and Dative they can take an ending (*jemanden, jemandem; niemanden, niemandem*), but in everyday German the plain form is also common and correct: *Ich habe niemand(en) gesehen.*
+As an object they can take an ending (*Ich habe jemand**en** gesehen*, *Ich helfe niemand**em***), but in everyday German the plain form is also common and correct: *Ich habe niemand gesehen.*
 
 **niemand** already contains the negation. Do not add *nicht*: *Niemand kommt*, not *Niemand kommt nicht*.
 
@@ -60,13 +60,13 @@ These stand for things and **never change their form**.
 
 Like *niemand*, **nichts** is already negative, so there is no *nicht*: *Ich habe nichts gekauft*, not *nichts nicht*.
 
-*etwas* and *nichts* can be followed by an adjective that is written with a capital letter and the ending **-es**: *etwas Neues* (something new), *nichts Besonderes* (nothing special), *etwas Schönes*.
+Some fixed phrases put an adjective after *etwas* and *nichts*, written with a capital letter and the ending **-es**: *etwas Neues* (something new), *nichts Besonderes* (nothing special), *etwas Schönes*. Learn these as whole phrases.
 
 In speech *etwas* is often shortened to **was**: *Möchtest du was trinken?*
 
 ### Why it matters
 
-*man* lets you talk about rules, customs and instructions without the passive (*Hier kann man gut essen*). *jemand / niemand / etwas / nichts* are the words you need for everyday questions and answers (*Hat jemand Zeit? – Nein, niemand.*). And remembering that *niemand* and *nichts* are already negative saves you from the double negative, one of the most common mistakes at this level.
+*man* lets you talk about rules, customs and instructions without naming anyone (*Hier kann man gut essen*). *jemand / niemand / etwas / nichts* are the words you need for everyday questions and answers (*Hat jemand Zeit? – Nein, niemand.*). And remembering that *niemand* and *nichts* are already negative saves you from the double negative, one of the most common mistakes at this level.
 `,
   examples: [
     { de: 'In Deutschland isst man viel Brot.', en: 'People eat a lot of bread in Germany. (man = people in general)' },
@@ -82,15 +82,15 @@ In speech *etwas* is often shortened to **was**: *Möchtest du was trinken?*
     { topicId: 'a1-03-personal-pronouns', note: 'man takes the same verb form as er / sie / es.' },
     { topicId: 'a1-13-negation', note: 'niemand and nichts are negative words, like kein; you never add nicht to them.' },
     { topicId: 'a1-17-modal-verbs', note: 'man + modal verb is the standard way to state rules: Hier darf man nicht rauchen.' },
-    { topicId: 'b1-08-zustandspassiv-alternatives', note: 'man is the most common alternative to the passive: Man baut ein Haus = Ein Haus wird gebaut.' },
-    { topicId: 'b1-14-adjectives-as-nouns', note: 'etwas Neues, nichts Besonderes: an adjective after etwas / nichts becomes a noun.' },
+    { topicId: 'b1-08-zustandspassiv-alternatives', note: 'At B1 you see how man replaces the passive: Man baut ein Haus = Ein Haus wird gebaut.' },
+    { topicId: 'b1-14-adjectives-as-nouns', note: 'Why phrases like etwas Neues and nichts Besonderes have a capital letter and -es.' },
   ],
   edgeCases: [
     '**man** (pronoun, small m) and **der Mann** (the man) are different words. *Man sagt …* = people say; *Der Mann sagt …* = the man says.',
     'Verbs after **man** are singular: *man geht*, never *man gehen*.',
     '**niemand** and **nichts** are already negative. *Ich sehe niemand nicht* is wrong; say *Ich sehe niemanden*.',
-    '*man* has no Accusative or Dative form of its own: use **einen / einem**. *Wenn man müde ist, hilft einem Kaffee.*',
-    'After *etwas* and *nichts* an adjective is **capitalised and gets -es**: *etwas Gutes, nichts Schlechtes*. Only *anderes* keeps a small letter: *etwas anderes*.',
+    '*man* is only a subject. You may see **einen / einem** standing in for it as an object (*Wenn man müde ist, hilft einem Kaffee*); that is B1.',
+    'In fixed phrases after *etwas* and *nichts* the adjective is **capitalised and gets -es**: *etwas Gutes, nichts Schlechtes*. Only *etwas anderes* (something else) keeps a small letter.',
   ],
   exercises: [
     {
@@ -171,9 +171,9 @@ In speech *etwas* is often shortened to **was**: *Möchtest du was trinken?*
     {
       type: 'fill',
       id: 'a2-25-indefinite-pronouns-ex10',
-      prompt: 'Wenn man viel arbeitet, hilft ___ eine Pause. (man in the Dative)',
-      answer: ['einem'],
-      explanation: 'man has no Dative of its own. helfen takes the Dative, so use einem: a break helps one.',
+      prompt: 'Ist ___ zu Hause? – Nein, niemand. (anyone)',
+      answer: ['jemand'],
+      explanation: 'In a question, "anyone" is jemand. The answer niemand (nobody) is already negative, so no nicht is needed.',
     },
     {
       type: 'translate',

@@ -12,12 +12,12 @@ const topic: Topic = {
   explanation: `
 ### What it is
 
-The **midfield** (*Mittelfeld*) is the part of the sentence between the conjugated verb (position 2) and the verb at the end. When a verb like *geben, schenken, zeigen, erklären, schicken* has **two objects** (a person in the Dative and a thing in the Accusative), their order follows clear rules.
+Verbs like *geben, schenken, zeigen, erklären, schicken* often have **two objects**: a person (Dative) and a thing (Accusative). This topic is about the order of those two objects:
 
-- Ich gebe **dem Kind** **das Buch**.
-- Ich gebe **es** **ihm**.
+- Ich gebe **dem Kind** **das Buch**. – *I give the child the book.*
+- Ich gebe **es** **ihm**. – *I give it to him.*
 
-Notice that the order flips. This surprises many learners, so here are the rules.
+Notice that the order flips when both objects are pronouns. This surprises many learners, so here are the rules. (The part of the sentence between the verb in position 2 and the verb at the end is called the **midfield**, *Mittelfeld*; that is where the objects live.)
 
 ### Rule 1: two nouns → Dative before Accusative
 
@@ -53,21 +53,14 @@ If one object is a pronoun and the other is a noun, the **pronoun always comes f
 
 A memory trick: pronouns are short and known information, so they move **as far left as possible**. Among nouns, the person usually comes first.
 
-### Pronouns and the subject
-
-Pronouns like to stand **right after the conjugated verb**. If the subject is a noun and comes after the verb (because something else is in position 1), the pronouns usually go **before** the noun subject:
-
-- Gestern hat **mir** der Chef die Nachricht geschickt.
-- Zum Glück hat **es** meine Schwester gefunden.
-
-If the subject is itself a pronoun, it comes first: *Gestern hat **er mir** die Nachricht geschickt.*
-
 ### Reflexive pronouns
 
-A reflexive pronoun (*mich, dich, sich …*) behaves like any other pronoun: it goes early in the midfield, right after the verb or the pronoun subject.
+A reflexive pronoun (*mich, dich, sich …*) behaves like any other pronoun: it goes early in the midfield, right after the verb or the subject pronoun.
 
-- Heute hat **sich** mein Bruder verspätet.
 - Ich habe **mich** sehr gefreut.
+- Gestern hat er **sich** verspätet.
+
+You may also see a pronoun **before a noun subject**: *Gestern hat **mir** der Chef eine E-Mail geschickt.* Both orders are correct (*Gestern hat der Chef mir …* is fine too); the pronoun-first version is what native speakers often prefer. You only need to recognise it.
 
 ### Why it matters
 
@@ -78,8 +71,8 @@ German can put objects in several places because the cases show who does what. B
     { de: 'Ich gebe es ihm.', en: 'I give it to him. (two pronouns: Accusative, then Dative)' },
     { de: 'Ich gebe ihm das Buch.', en: 'I give him the book. (pronoun before noun)' },
     { de: 'Ich gebe es meinem Bruder.', en: 'I give it to my brother. (pronoun before noun)' },
-    { de: 'Kannst du mir das erklären?', en: 'Can you explain that to me? (mir first; das is a demonstrative, treated like a noun here)' },
-    { de: 'Gestern hat mir der Chef eine E-Mail geschickt.', en: 'Yesterday the boss sent me an email. (pronoun before the noun subject)' },
+    { de: 'Kannst du mir das erklären?', en: 'Can you explain that to me? (mir first; das = "that" is a pointing word and behaves like a noun here)' },
+    { de: 'Ich habe es ihr gestern gezeigt.', en: 'I showed it to her yesterday. (pronouns stay right after the verb in the Perfekt)' },
     { de: 'Sie hat sich die Haare gewaschen.', en: 'She washed her hair. (reflexive pronoun early in the midfield)' },
   ],
   connections: [
@@ -157,10 +150,10 @@ German can put objects in several places because the cases show who does what. B
     {
       type: 'order',
       id: 'a2-26-pronoun-order-midfield-ex08',
-      prompt: 'Build the sentence: "Yesterday the boss sent me an email."',
-      words: ['E-Mail', 'geschickt.', 'Gestern', 'der', 'mir', 'hat', 'Chef', 'eine'],
-      answer: ['Gestern hat mir der Chef eine E-Mail geschickt.', 'Gestern hat der Chef mir eine E-Mail geschickt.'],
-      explanation: 'After Gestern the verb hat comes second. The pronoun mir usually moves in front of the noun subject der Chef, though placing it after the subject is also accepted.',
+      prompt: 'Build the sentence: "Yesterday he sent me an email."',
+      words: ['E-Mail', 'geschickt.', 'Gestern', 'er', 'mir', 'hat', 'eine'],
+      answer: ['Gestern hat er mir eine E-Mail geschickt.'],
+      explanation: 'After Gestern the verb hat comes second, then the subject pronoun er, then the Dative pronoun mir, then the noun object eine E-Mail.',
     },
     {
       type: 'mc',
@@ -173,9 +166,9 @@ German can put objects in several places because the cases show who does what. B
     {
       type: 'fill',
       id: 'a2-26-pronoun-order-midfield-ex10',
-      prompt: 'Heute hat ___ mein Bruder verspätet. (reflexive pronoun for er)',
+      prompt: 'Heute hat er ___ verspätet. (reflexive pronoun for er)',
       answer: ['sich'],
-      explanation: 'sich verspäten is reflexive. The reflexive pronoun sich goes early in the midfield, before the noun subject mein Bruder.',
+      explanation: 'sich verspäten is reflexive. The reflexive pronoun sich goes early in the midfield, right after the subject pronoun er.',
     },
     {
       type: 'translate',

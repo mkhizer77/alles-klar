@@ -7,8 +7,8 @@ const topic: Topic = {
   order: 29,
   title: 'Modal particles: doch, mal, ja, eigentlich',
   germanTerm: 'Modalpartikeln',
-  tags: ['particles', 'spoken German', 'tone', 'word order', 'pragmatics'],
-  summary: 'Modal particles are small, unstressed words (doch, mal, ja, eigentlich, denn, schon, halt) that do not change the facts of a sentence but show the speaker\'s attitude: surprise, friendliness, impatience or softening.',
+  tags: ['particles', 'spoken German', 'tone', 'word order', 'doch', 'mal', 'denn'],
+  summary: 'Modal particles are small, unstressed words (doch, mal, ja, eigentlich, denn) that do not change the facts of a sentence but show the speaker\'s attitude: surprise, friendliness or softening.',
   explanation: `
 ### What it is
 
@@ -32,8 +32,8 @@ They are hard to translate because English does the same job with intonation or 
 | **ja** | Das ist **ja** interessant! / Du bist **ja** schon da! | surprise, or "as we both know" |
 | **eigentlich** | Wie heißt du **eigentlich**? | makes a question softer, "by the way" |
 | **denn** | Was machst du **denn** hier? | shows interest in a question, can sound surprised |
-| **schon** | Das wird **schon** klappen. | reassurance: "do not worry" |
-| **halt / eben** | Das ist **halt** so. | resignation: "that is just how it is" |
+
+You may also hear **schon** for reassurance (*Das wird schon klappen* – *it will be fine*) and **halt** or **eben** for "that is just how it is" (*Das ist halt so*). Recognise them; you do not need to use them yet.
 
 ### doch and mal in requests
 
@@ -69,8 +69,8 @@ You do not need to produce modal particles to be understood, but you need to **r
     { de: 'Du weißt doch, dass ich morgen arbeite.', en: 'You know I am working tomorrow. (doch = reminder of shared knowledge)' },
     { de: 'Was machst du eigentlich beruflich?', en: 'What do you do for a living, by the way? (eigentlich = softens, new topic)' },
     { de: 'Wo ist denn mein Schlüssel?', en: 'Now where is my key? (denn = interest / mild surprise in a question)' },
-    { de: 'Mach dir keine Sorgen, das wird schon klappen.', en: 'Do not worry, it will work out. (schon = reassurance)' },
-    { de: 'Das ist halt so.', en: 'That is just the way it is. (halt = resignation)' },
+    { de: 'Warte mal, ich komme gleich.', en: 'Hang on a second, I am coming. (mal = casual, small)' },
+    { de: 'Mach dir keine Sorgen, das wird schon klappen.', en: 'Do not worry, it will work out. (schon = reassurance; recognise it)' },
   ],
   connections: [
     { topicId: 'a1-18-imperative', note: 'doch and mal soften imperatives: Komm! → Komm doch mal!' },
@@ -126,8 +126,7 @@ You do not need to produce modal particles to be understood, but you need to **r
         ['mal', 'casual, small request'],
         ['ja', 'surprise or shared knowledge'],
         ['eigentlich', 'softer question, by the way'],
-        ['schon', 'reassurance'],
-        ['halt', 'resignation'],
+        ['denn', 'interest in a question'],
       ],
       explanation: 'Each particle has a typical job. The facts of the sentence stay the same; only the tone changes.',
     },
@@ -150,9 +149,9 @@ You do not need to produce modal particles to be understood, but you need to **r
     {
       type: 'fill',
       id: 'a2-29-modal-particles-ex08',
-      prompt: 'Mach dir keine Sorgen, das wird ___ klappen. (reassurance)',
-      answer: ['schon'],
-      explanation: 'schon as a particle means "do not worry, it will be fine".',
+      prompt: 'Wo ist ___ mein Schlüssel? (shows interest or mild surprise in a question)',
+      answer: ['denn'],
+      explanation: 'denn inside a question shows interest or mild surprise: Now where is my key? It is not the conjunction "because" here.',
     },
     {
       type: 'mc',
@@ -181,10 +180,10 @@ You do not need to produce modal particles to be understood, but you need to **r
     {
       type: 'mc',
       id: 'a2-29-modal-particles-ex12',
-      prompt: 'Which sentence shows resignation ("that is just how it is")?',
-      options: ['Das ist ja so.', 'Das ist halt so.', 'Das ist denn so.'],
-      answer: 1,
-      explanation: 'halt (or eben) expresses that something cannot be changed. ja would express surprise and denn does not fit a statement.',
+      prompt: 'A friend says: "Du bist ja schon da!" What does the friend feel?',
+      options: ['surprise (you are here earlier than expected)', 'agreement (yes)', 'resignation'],
+      answer: 0,
+      explanation: 'ja in the middle of a statement marks surprise: Oh, you are here already! It is not the answer "yes".',
     },
   ],
 };

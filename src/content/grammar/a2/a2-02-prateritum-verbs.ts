@@ -8,13 +8,13 @@ const topic: Topic = {
   title: 'Präteritum of regular and common irregular verbs',
   germanTerm: 'Präteritum',
   tags: ['past tense', 'Präteritum', 'verbs', 'irregular verbs'],
-  summary: 'The Präteritum is the one-word past tense (machte, ging, kam) used in written stories, news and reports; regular verbs add -te, irregular verbs change their vowel.',
+  summary: 'The Präteritum is the one-word past tense (machte, ging, kam) you mostly read in stories and news; regular verbs add -te, and the most common irregular verbs (ging, kam, gab) are worth recognising.',
   explanation: `
 ### What it is
 
-The **Präteritum** (*Präteritum*) is the simple past: one word, no helper verb. *Ich machte* = *I made / did*, *er ging* = *he went*. You have already met it with *war, hatte* and the modal verbs. This topic covers all the other verbs.
+The **Präteritum** (the simple past) is a past tense with one word and no helper verb: *Ich machte* = *I made / did*, *er ging* = *he went*. You already know it from *war, hatte* and the modal verbs (*konnte, musste …*). This topic shows how the other verbs form it.
 
-You will mostly **read** this tense: novels, newspapers, fairy tales and reports are written in it. In conversation most verbs use the Perfekt instead (*ich habe gemacht*). But you need to recognise the Präteritum, and in writing you will want to use it.
+At A2 the main job is to **recognise** this tense when you read: novels, newspapers, fairy tales and reports are written in it. When you speak, you keep using the Perfekt (*ich habe gemacht*). So learn the pattern for regular verbs, and learn to recognise the most common irregular forms.
 
 ### Regular verbs: add -te
 
@@ -31,20 +31,11 @@ Take the stem (infinitive without *-en*) and add the endings. They are the same 
 
 If the stem ends in **-t** or **-d** (*arbeiten, warten, reden, baden*), add an **-e-** before the ending so you can pronounce it: *arbeitete, wartete, redete*.
 
-### Irregular (strong) verbs: change the vowel
+### Irregular verbs: the vowel changes
 
-Irregular verbs do **not** add *-te*. They change the vowel of the stem, and the *ich* and *er / sie / es* forms have **no ending at all**.
+Irregular verbs do **not** add *-te*. Instead the vowel in the stem changes: *gehen → ging*, *kommen → kam*. The *ich* and *er / sie / es* forms have **no ending at all** (*ich ging, er ging*); *wir* and *sie* add *-en* (*wir gingen*).
 
-| | gehen | kommen | fahren |
-|---|---|---|---|
-| ich | ging | kam | fuhr |
-| du | ging**st** | kam**st** | fuhr**st** |
-| er / sie / es | ging | kam | fuhr |
-| wir | ging**en** | kam**en** | fuhr**en** |
-| ihr | ging**t** | kam**t** | fuhr**t** |
-| sie / Sie | ging**en** | kam**en** | fuhr**en** |
-
-There is no rule for the vowel change; you learn it with the verb, usually as a trio: *gehen – ging – gegangen*. The most common ones:
+There is no rule for the vowel change; you learn it with the verb, usually as a trio: *gehen – ging – gegangen*. At A2 you do not need to produce all of these. You need to **recognise** the common ones when you read a story:
 
 | infinitive | Präteritum | | infinitive | Präteritum |
 |---|---|---|---|---|
@@ -58,13 +49,13 @@ There is no rule for the vowel change; you learn it with the verb, usually as a 
 | bleiben | blieb | | lesen | las |
 | laufen | lief | | schlafen | schlief |
 
-### Mixed verbs: both
+### A few verbs do both
 
-A small group changes the vowel **and** adds *-te*: *bringen – brachte*, *denken – dachte*, *wissen – wusste*, *kennen – kannte*, *nennen – nannte*. Note *wusste* and *kannte*: *kannte* means *knew (a person)*, not *could*.
+A small group changes the vowel **and** adds *-te*: *bringen – brachte*, *denken – dachte*, *wissen – wusste*, *kennen – kannte*. Watch out: *kannte* means *knew (a person or place)*, not *could* (*konnte*).
 
 ### Why it matters
 
-Once you know the pattern you can read any German text about the past. The forms of *sein, haben, werden, wissen, geben* (*war, hatte, wurde, wusste, gab*) are also used in speech, so they are worth learning first. For the rest, start with the table above and add verbs as you meet them.
+Once you know the pattern you can follow any German text about the past. A few forms are also used in speech: *war, hatte, wurde, wusste, es gab* (there was). Learn these first. For the rest, start with the table above and add verbs as you meet them in reading texts.
 `,
   examples: [
     { de: 'Gestern arbeitete ich bis acht Uhr.', en: 'Yesterday I worked until eight. (stem ends in -t: -ete)' },
@@ -87,7 +78,7 @@ Once you know the pattern you can read any German text about the past. The forms
     'Stems ending in **-t / -d** need an extra **-e-**: *arbeitete, wartete, redete*. Without it the word cannot be pronounced.',
     '**kannte** (from kennen, to know a person or place) is easy to confuse with **konnte** (from können, could).',
     'Some verbs look regular but are not: *bringen → brachte* (not *bringte*), *denken → dachte*, *wissen → wusste*.',
-    'The Präteritum of *werden* is **wurde** (*Er wurde Lehrer* = he became a teacher). It is also used in the past passive later on.',
+    'The Präteritum of *werden* is **wurde**: *Er wurde Lehrer* = he became a teacher.',
   ],
   exercises: [
     {
@@ -129,10 +120,10 @@ Once you know the pattern you can read any German text about the past. The forms
     {
       type: 'mc',
       id: 'a2-02-prateritum-verbs-ex05',
-      prompt: 'Complete: "Du ___ gestern sehr lange."',
-      options: ['schliefst', 'schlafst', 'schlieftest'],
+      prompt: 'You read in a story: "Sie schlief sehr lange." Which verb is this?',
+      options: ['schlafen (to sleep)', 'schließen (to close)', 'schleifen (to drag)'],
       answer: 0,
-      explanation: 'schlafen → schlief (vowel change) + -st for du. Irregular verbs do not add -te, so schlieftest is wrong.',
+      explanation: 'schlief is the Präteritum of schlafen: the vowel changes (a → ie) and the er / sie-form has no ending.',
     },
     {
       type: 'fill',

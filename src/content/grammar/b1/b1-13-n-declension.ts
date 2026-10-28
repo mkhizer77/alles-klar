@@ -10,12 +10,14 @@ const topic: Topic = {
   tags: ['nouns', 'cases', 'declension', 'masculine'],
   summary: 'A group of masculine nouns (der Junge, der Kollege, der Student, der Herr) adds -n or -en in every case except the Nominative singular: den Jungen, dem Kollegen, des Studenten.',
   explanation: `
-### What it is
+### What it is for
 
-Most German nouns do not change in the Accusative or Dative singular: *der Tisch, den Tisch, dem Tisch*. One group of **masculine** nouns is different. They add **-n** or **-en** in **every form except the Nominative singular**. This is the **n-declension** (*n-Deklination*, also called *schwache Deklination*, weak declension).
+A few very common words for people (*Herr, Kollege, Kunde, Student, Nachbar*) change their form as soon as they are not the subject of the sentence. You need this every time you write a letter or talk about a colleague:
 
 - Ich kenne **den Jungen** nicht. – *I do not know the boy.* (not *den Junge*)
-- Das ist das Auto **des Kollegen**. – *That is the colleague's car.*
+- Ich schreibe **Herrn** Müller. – *I am writing to Mr Müller.*
+
+Most German nouns do not change in the Accusative or Dative singular: *der Tisch, den Tisch, dem Tisch*. One small group of **masculine** nouns is different. They add **-n** or **-en** in **every form except the Nominative singular**. This is the **n-declension** (*n-Deklination*, also called the "weak declension").
 
 ### How it works
 
@@ -36,21 +38,21 @@ The plural of these nouns is also -n / -en, so apart from the Nominative singula
 
 ### Which nouns belong to the group?
 
-All of them are **masculine**, and almost all of them are **people or animals**.
+All of them are **masculine**, and almost all of them are **people**. At B1 you need the frequent ones:
 
 | group | examples |
 |---|---|
-| masculine nouns ending in **-e** | der Junge, der Kollege, der Kunde, der Neffe, der Zeuge, der Löwe, der Hase, der Franzose, der Russe, der Chinese |
-| some short nouns for people / animals | der Herr (-n), der Mensch, der Nachbar, der Bauer, der Held, der Prinz, der Bär |
-| foreign words with **-ent, -ant, -ist, -at, -oge, -it** | der Student, der Präsident, der Praktikant, der Elefant, der Polizist, der Journalist, der Tourist, der Soldat, der Biologe, der Psychologe |
+| masculine nouns for people ending in **-e** | der Junge, der Kollege, der Kunde, der Franzose |
+| a few short nouns for people | der Herr (-n), der Mensch, der Nachbar (-n) |
+| people words from other languages ending in **-ent, -ant, -ist** | der Student, der Präsident, der Praktikant, der Polizist, der Tourist, der Journalist |
 
-A quick check: *masculine + ends in -e + a person or animal* → almost certainly n-declension. Masculine nouns like *der Lehrer*, *der Vater* or *der Tisch* are **not** in the group.
+A quick check: *masculine + ends in -e + a person* → almost certainly n-declension. Masculine nouns like *der Lehrer*, *der Vater* or *der Tisch* are **not** in the group.
 
-### Two special nouns
+### One more to know: der Name
 
-**der Name**, **der Gedanke**, **der Buchstabe** and a few others take -n everywhere **and** an extra -s in the Genitive: *des Name**ns***, *des Gedanke**ns***.
+**der Name** takes -n everywhere **and** an extra -s in the Genitive: *den Namen, dem Namen, des Name**ns***. You will meet it in *Wie ist der Name des Kunden?* and in forms.
 
-**das Herz** (neuter, the only one) is irregular: *das Herz* (Nominative **and** Accusative), *dem Herzen*, *des Herzens*, plural *die Herzen*.
+You may also see a few more unusual nouns of this kind (*der Gedanke* – thought, *das Herz* – heart, with *des Herzens*). You do not need to use them at B1.
 
 ### Why it matters
 
@@ -63,7 +65,6 @@ These are very common words: *Herr, Mensch, Kollege, Kunde, Student, Nachbar*. E
     { de: 'Kennst du Herrn Müller?', en: 'Do you know Mr Müller? (Herr → Herrn)' },
     { de: 'Der Arzt hilft dem Patienten.', en: 'The doctor helps the patient. (helfen + Dative → -en)' },
     { de: 'Ich habe den Namen des Präsidenten vergessen.', en: 'I have forgotten the name of the president.' },
-    { de: 'Sie hat ein gutes Herz.', en: 'She has a good heart. (Herz: no ending in the Accusative)' },
   ],
   connections: [
     { topicId: 'a1-09-gender-articles', note: 'Only masculine nouns belong to the n-declension, so you must know the gender.' },
@@ -73,11 +74,10 @@ These are very common words: *Herr, Mensch, Kollege, Kunde, Student, Nachbar*. E
     { topicId: 'b1-14-adjectives-as-nouns', note: 'der Deutsche / den Deutschen looks similar but follows adjective endings, not the n-declension.' },
   ],
   edgeCases: [
-    'The Genitive has **no -s**: *des Kollegen*, *des Studenten*. Only *der Name*, *der Gedanke*, *der Buchstabe* and *das Herz* add -s: *des Namens, des Herzens*.',
+    'The Genitive has **no -s**: *des Kollegen*, *des Studenten*. The one common exception is *der Name*: *des Namens*.',
     '**Herr** takes **-n** in the singular (*Herrn Müller*) but **-en** in the plural (*meine Herren*).',
-    'Not every masculine noun ending in -e is in the group: *der Käse* (cheese) is *den Käse*. The rule works for people and animals.',
+    'Not every masculine noun ending in -e is in the group: *der Käse* (cheese) is *den Käse*. The rule works for people.',
     'Nouns like *der Lehrer*, *der Arzt*, *der Vater* are masculine but **not** n-declension: *den Lehrer, dem Arzt*.',
-    '*das Herz* keeps its form in the Accusative: *Sie hat ein gutes **Herz*** (not *Herzen*), but *mit dem **Herzen***.',
   ],
   exercises: [
     {
@@ -168,13 +168,6 @@ These are very common words: *Herr, Mensch, Kollege, Kunde, Student, Nachbar*. E
       options: ['die Studenten', 'die Students', 'die Studente'],
       answer: 0,
       explanation: 'n-declension nouns form their plural with -n / -en: die Studenten.',
-    },
-    {
-      type: 'fill',
-      id: 'b1-13-n-declension-ex12',
-      prompt: 'Sie hat ein gutes ___. (Herz)',
-      answer: ['Herz'],
-      explanation: 'das Herz is the exception: no ending in the Accusative (ein gutes Herz), but dem Herzen in the Dative and des Herzens in the Genitive.',
     },
   ],
 };

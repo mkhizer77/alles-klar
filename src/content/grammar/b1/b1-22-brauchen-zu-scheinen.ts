@@ -8,22 +8,26 @@ const topic: Topic = {
   title: 'brauchen … zu, scheinen … zu, haben / sein … zu',
   germanTerm: 'Modalitätsverben',
   tags: ['verbs', 'zu infinitive', 'modal meaning', 'necessity'],
-  summary: 'A few ordinary verbs combine with zu + infinitive to work like modal verbs: nicht brauchen zu (do not have to), scheinen zu (seem to), haben zu (must) and sein zu (can / must be done).',
+  summary: 'A few ordinary verbs combine with zu + infinitive to work like modal verbs: nicht brauchen zu (do not have to), scheinen zu (seem to) and sein zu with leicht / schwer (easy / hard to do).',
   explanation: `
-### Modal meaning without a modal verb
+### What it is for
 
-You know the modal verbs *müssen*, *können*, *dürfen*. German also has a small group of **ordinary verbs** that take on a modal meaning when they are followed by **zu + infinitive**. Grammar books call them *Modalitätsverben*. The four you need at B1 are *brauchen*, *scheinen*, *haben* and *sein*.
+These forms let you say "you do not have to", "he seems to" and "it is easy / hard to do" without a modal verb:
+
+- Du **brauchst nicht zu kommen**. – *You do not have to come.*
+- Er **scheint** krank **zu sein**. – *He seems to be ill.*
+
+You know the modal verbs *müssen*, *können*, *dürfen*. German also has a small group of **ordinary verbs** that take on a similar meaning when they are followed by **zu + infinitive**. Grammar books call them *Modalitätsverben* ("modal-like verbs"). The ones you need at B1 are *brauchen*, *scheinen* and *sein*.
 
 The pattern is always the same: the verb is conjugated in position 2, and **zu + infinitive** goes to the end of the clause.
 
-### The four verbs
+### The three verbs
 
 | Verb | Meaning | Equals | Example |
 |---|---|---|---|
 | **nicht / nur brauchen … zu** | do not have to / only need to | nicht müssen | Du **brauchst** nicht **zu kommen**. |
 | **scheinen … zu** | seem to | wahrscheinlich | Er **scheint** krank **zu sein**. |
-| **haben … zu** | have to, must (active) | müssen | Ich **habe** noch viel **zu tun**. |
-| **sein … zu** | can be / must be done (passive) | kann / muss … werden | Die Aufgabe **ist** leicht **zu lösen**. |
+| **sein + leicht / schwer … zu** | is easy / hard to do | kann (leicht) … werden | Die Aufgabe **ist** leicht **zu lösen**. |
 
 ### brauchen: only with a negative or restriction
 
@@ -44,47 +48,42 @@ It is the polite, soft way to say that something is **not necessary**. Note that
 
 *scheinen* without *zu* just means "to shine" (*Die Sonne scheint*).
 
-### haben … zu and sein … zu
+### sein … zu: easy or hard to do
 
-These two look alike but point in opposite directions:
+With *leicht*, *schwer* or *kaum*, *sein … zu* says that something **can** be done easily or with difficulty. The subject is the thing something is done to:
 
-| | Who does it? | Meaning |
-|---|---|---|
-| **haben … zu** | the subject **does** the action | obligation (active) |
-| **sein … zu** | the action is done **to** the subject | possibility or obligation (passive) |
+- Diese Frage **ist** leicht **zu beantworten**. (This question is easy to answer.)
+- Dieses Wort **ist** schwer **zu übersetzen**. (This word is hard to translate.)
+- Das **ist** schwer **zu sagen**. (That is hard to say.)
 
-- Sie **haben** die Regeln **zu befolgen**. = Sie müssen die Regeln befolgen.
-- Die Rechnung **ist** bis Freitag **zu bezahlen**. = Die Rechnung muss bis Freitag bezahlt werden.
-- Dieses Wort **ist** schwer **zu übersetzen**. = Dieses Wort kann nur schwer übersetzt werden.
-
-Whether *sein … zu* means "can" or "must" depends on context: with *leicht / schwer / kaum* it means **can**; in instructions and rules it usually means **must**.
+You may also see *sein … zu* and *haben … zu* meaning **must** in rules and forms: *Das Formular ist bis Montag auszufüllen* (the form must be filled in by Monday), *Sie haben die Regeln zu befolgen* (you must follow the rules). Recognise them in texts; to say it yourself, use *müssen*. The everyday phrase *Ich habe viel zu tun* (I have a lot to do) belongs to this family.
 
 ### Why it matters
 
-These forms are everywhere in instructions, signs and formal writing (*Der Antrag ist bis zum 1. Mai einzureichen*), and *nicht brauchen zu* is the natural spoken way to reassure someone. Recognising them also helps you read B1 texts, where *sein … zu* often replaces a long passive sentence.
+*nicht brauchen zu* is the natural spoken way to reassure someone, *scheinen zu* is how you describe an impression, and *leicht / schwer zu* appears in every discussion (*Das ist schwer zu sagen*). Recognising the "must" forms also helps you read notices and formal letters at B1.
 `,
   examples: [
     { de: 'Du brauchst nicht zu kommen.', en: 'You do not have to come. (= du musst nicht kommen)' },
     { de: 'Sie brauchen nur zu unterschreiben.', en: 'You only need to sign.' },
     { de: 'Er scheint müde zu sein.', en: 'He seems to be tired.' },
     { de: 'Der Plan scheint zu funktionieren.', en: 'The plan seems to work.' },
-    { de: 'Ich habe heute noch viel zu tun.', en: 'I still have a lot to do today. (haben zu = must do)' },
-    { de: 'Das Formular ist bis Montag auszufüllen.', en: 'The form is to be filled in by Monday. (sein zu = must be done)' },
-    { de: 'Diese Frage ist leicht zu beantworten.', en: 'This question is easy to answer. (sein zu = can be done)' },
+    { de: 'Diese Frage ist leicht zu beantworten.', en: 'This question is easy to answer. (sein + leicht zu = can be done easily)' },
+    { de: 'Das ist schwer zu sagen.', en: 'That is hard to say.' },
+    { de: 'Ich habe heute noch viel zu tun.', en: 'I still have a lot to do today. (fixed everyday phrase)' },
   ],
   connections: [
     { topicId: 'a2-21-zu-infinitive', note: 'All four verbs use the zu + infinitive construction, including zu inside separable verbs.' },
-    { topicId: 'a1-17-modal-verbs', note: 'nicht brauchen zu replaces nicht müssen; haben zu replaces müssen.' },
-    { topicId: 'b1-08-zustandspassiv-alternatives', note: 'sein … zu is one of the main passive alternatives alongside man, lassen and -bar.' },
-    { topicId: 'b1-24-futur-2-probability', note: 'scheinen zu is another way of expressing an assumption, like wohl or dürfte.' },
-    { topicId: 'b1-07-passive-modals-perfekt', note: 'sein … zu + infinitive often replaces muss / kann + Partizip II + werden.' },
+    { topicId: 'a1-17-modal-verbs', note: 'nicht brauchen zu replaces nicht müssen.' },
+    { topicId: 'b1-08-zustandspassiv-alternatives', note: 'sein … zu (leicht zu lösen) is one of the ways of saying "can be done" alongside man and -bar.' },
+    { topicId: 'b1-24-futur-2-probability', note: 'scheinen zu is another way of expressing a guess, like wohl or wahrscheinlich.' },
+    { topicId: 'b1-07-passive-modals-perfekt', note: 'Die Aufgabe ist leicht zu lösen says the same as Die Aufgabe kann leicht gelöst werden.' },
   ],
   edgeCases: [
     '*Du brauchst nicht zu kommen* = you do not **have to** come. "You must not come" is *Du darfst nicht kommen*.',
     'In everyday speech people often drop *zu* after *brauchen* (*Du brauchst nicht kommen*). In writing and in the exam, keep the *zu*.',
     '*brauchen* without *zu* and with a noun just means "to need": *Ich brauche Hilfe*.',
-    'With separable verbs *zu* goes inside the verb: *Du brauchst nur **anzurufen***, *Das Formular ist **auszufüllen***.',
-    '*haben … zu* can be a plain full verb plus infinitive clause with the same look: *Ich habe keine Zeit zu kochen* (I have no time to cook). Context tells you whether it means "must".',
+    'With separable verbs *zu* goes inside the verb: *Du brauchst nur **anzurufen***.',
+    '*Das ist leicht zu machen* is about the thing (it can be done easily). *Ich habe viel zu tun* is about the person (I have a lot to do). Both are fixed patterns worth learning as phrases.',
   ],
   exercises: [
     {
@@ -115,15 +114,15 @@ These forms are everywhere in instructions, signs and formal writing (*Der Antra
       prompt: 'What does "Die Aufgabe ist leicht zu lösen." mean?',
       options: ['The task can be solved easily.', 'The task was solved easily.', 'The task solves itself easily.'],
       answer: 0,
-      explanation: 'sein … zu has a passive meaning. With leicht it means "can be": the task can be solved easily.',
+      explanation: 'sein + leicht … zu says that something can be done easily: the task can be solved easily.',
     },
     {
       type: 'mc',
       id: 'b1-22-brauchen-zu-scheinen-ex05',
-      prompt: 'Complete: "Sie haben das Formular bis Montag ___."',
-      options: ['auszufüllen', 'ausfüllen', 'zu ausfüllen'],
+      prompt: 'Complete: "Das ist schwer ___." (hard to say)',
+      options: ['zu sagen', 'sagen', 'zu sagt'],
       answer: 0,
-      explanation: 'haben … zu needs zu + infinitive. ausfüllen is separable, so zu goes inside: auszufüllen. The sentence means they must fill in the form by Monday.',
+      explanation: 'sein + schwer takes zu + infinitive at the end: Das ist schwer zu sagen.',
     },
     {
       type: 'order',
@@ -141,17 +140,16 @@ These forms are everywhere in instructions, signs and formal writing (*Der Antra
         ['nicht brauchen … zu', 'do not have to'],
         ['nur brauchen … zu', 'only need to'],
         ['scheinen … zu', 'seem to'],
-        ['haben … zu', 'must do (active)'],
-        ['sein … zu', 'can / must be done (passive)'],
+        ['leicht / schwer … zu', 'easy / hard to do'],
       ],
-      explanation: 'brauchen softens necessity, scheinen gives an impression, haben zu is active obligation, sein zu is passive possibility or obligation.',
+      explanation: 'brauchen softens necessity, scheinen gives an impression, sein + leicht / schwer zu says how easily something can be done.',
     },
     {
       type: 'fill',
       id: 'b1-22-brauchen-zu-scheinen-ex08',
-      prompt: 'Das Fenster muss repariert werden. = Das Fenster ___ zu reparieren.',
+      prompt: 'Diese Frage kann man leicht beantworten. = Diese Frage ___ leicht zu beantworten.',
       answer: ['ist'],
-      explanation: 'muss + Partizip II + werden can be replaced by sein … zu + infinitive: Das Fenster ist zu reparieren.',
+      explanation: 'kann man leicht + infinitive can be said with sein + leicht + zu + infinitive: Diese Frage ist leicht zu beantworten.',
     },
     {
       type: 'translate',
@@ -183,7 +181,7 @@ These forms are everywhere in instructions, signs and formal writing (*Der Antra
       prompt: 'What does "Ich habe heute noch viel zu tun." mean?',
       options: ['I still have a lot to do today.', 'I did a lot today.', 'I have already done a lot today.'],
       answer: 0,
-      explanation: 'haben … zu expresses obligation: there is still a lot I have to do. It is not a past tense.',
+      explanation: 'Ich habe viel zu tun is a fixed phrase: there is still a lot I have to do. It is not a past tense.',
     },
   ],
 };
