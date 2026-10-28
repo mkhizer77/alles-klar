@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { Link, Navigate, useNavigate, useParams } from 'react-router';
-import { topicsForLevel, wordsForLevel, unitOfTopic, topics, levelOf, readingsForLevel, writingsForLevel } from '../content';
+import { topicsForLevel, wordsForLevel, unitOfTopic, topics, levelOf, readingsForLevel, writingsForLevel, speakingsForLevel } from '../content';
 import { buildListeningSet } from '../lib/listening';
 import { Md } from '../lib/markdown';
 import type { Exercise, Level, McExercise } from '../content/types';
@@ -243,9 +243,18 @@ export default function TestRun() {
         const w = ws[a.right % ws.length];
         return (
           <Card className="mb-4">
-            <h2 className="font-bold">Writing (not scored)</h2>
-            <p className="text-sm text-muted mt-1">A {level} exam also has a writing part. Do this task and compare with the model to complete the picture:</p>
+            <h2 className="font-bold">Writing and speaking (not scored)</h2>
+            <p className="text-sm text-muted mt-1">A {level} exam also has a writing part and a speaking part. Do this task and compare with the model to complete the picture:</p>
             <Link to={`/writing/${w.id}`} className="mt-2 inline-block font-semibold text-primary">✍️ {w.title} →</Link>
+            {(() => {
+              const sps = speakingsForLevel(level);
+              const sp = sps[a.right % Math.max(1, sps.length)];
+              return sp ? (
+                <p className="mt-2 text-sm text-muted">
+                  And the speaking part: <Link to={`/speaking/${sp.id}`} className="font-semibold text-primary">🗣️ {sp.title} →</Link>
+                </p>
+              ) : null;
+            })()}
           </Card>
         );
       })()}

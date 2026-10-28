@@ -1,4 +1,4 @@
-import type { Level, Topic, VocabSet, Word, GlossaryTerm, ReadingText, WritingTask } from './types';
+import type { Level, Topic, VocabSet, Word, GlossaryTerm, ReadingText, WritingTask, SpeakingScenario } from './types';
 import { curriculum } from './curriculum';
 import { glossary } from './glossary';
 
@@ -6,6 +6,13 @@ const topicModules = import.meta.glob<{ default: Topic }>('./grammar/*/*.ts', { 
 const vocabModules = import.meta.glob<{ default: VocabSet }>('./vocab/*.ts', { eager: true });
 const readingModules = import.meta.glob<{ default: ReadingText }>('./reading/*.ts', { eager: true });
 const writingModules = import.meta.glob<{ default: WritingTask }>('./writing/*.ts', { eager: true });
+const speakingModules = import.meta.glob<{ default: SpeakingScenario }>('./speaking/*.ts', { eager: true });
+
+export const speakings: Record<string, SpeakingScenario> = {};
+for (const m of Object.values(speakingModules)) speakings[m.default.id] = m.default;
+
+export const speakingForUnit = (level: Level, unit: number): SpeakingScenario | undefined => speakings[`${level.toLowerCase()}-u${unit}-speaking`];
+export const speakingsForLevel = (level: Level): SpeakingScenario[] => Object.values(speakings).filter((s) => s.level === level).sort((a, b) => a.unit - b.unit);
 
 export const writings: Record<string, WritingTask> = {};
 for (const m of Object.values(writingModules)) writings[m.default.id] = m.default;

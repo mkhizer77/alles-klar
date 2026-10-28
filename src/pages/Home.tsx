@@ -4,7 +4,7 @@ import { useStoreVersion } from '../lib/store';
 import { getSettings, levelStats, nextTopicId, streak, vocabStats } from '../lib/progress';
 import { store } from '../lib/store';
 import { keys, EMPTY_ACTIVITY, EMPTY_TESTS, type Activity, type TestAttempt } from '../lib/models';
-import { topics, unitOfTopic, levels, readingForUnit, writingForUnit } from '../content';
+import { topics, unitOfTopic, levels, readingForUnit, writingForUnit, speakingForUnit } from '../content';
 import { Card, LinkButton, ProgressBar, LevelPill } from '../components/ui';
 import { FlameIcon, ChevronRight } from '../components/icons';
 import { todayStr } from '../lib/date';
@@ -84,7 +84,7 @@ export default function Home() {
       </Card>
 
       {nextUnit && (
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           {(() => {
             const r = readingForUnit(nextUnit.level.level, nextUnit.unit.unit);
             return (
@@ -111,6 +111,19 @@ export default function Home() {
                 <div className="text-xs uppercase tracking-wide text-muted">Writing</div>
                 {w ? (
                   <Link to={`/writing/${w.id}`} className="block mt-1 font-semibold hover:text-primary leading-snug">✍️ {w.title}</Link>
+                ) : (
+                  <p className="mt-1 text-sm text-muted">Coming soon.</p>
+                )}
+              </Card>
+            );
+          })()}
+          {(() => {
+            const sp = speakingForUnit(nextUnit.level.level, nextUnit.unit.unit);
+            return (
+              <Card className="p-3">
+                <div className="text-xs uppercase tracking-wide text-muted">Speaking</div>
+                {sp ? (
+                  <Link to={`/speaking/${sp.id}`} className="block mt-1 font-semibold hover:text-primary leading-snug">🗣️ {sp.title}</Link>
                 ) : (
                   <p className="mt-1 text-sm text-muted">Coming soon.</p>
                 )}

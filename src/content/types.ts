@@ -224,3 +224,32 @@ export interface CurriculumLevel {
   description: string;
   units: CurriculumUnit[];
 }
+
+/** A role-play conversation for one unit, run by an AI partner with speech in and out. */
+export interface SpeakingScenario {
+  id: string;
+  level: Level;
+  unit: number;
+  title: string;
+  /** the situation and who the learner talks to, in English */
+  situation: string;
+  partner: {
+    name: string;
+    /** e.g. "receptionist at a language school" */
+    role: string;
+    /** how the partner behaves, in English, for the AI: friendly, a bit hurried, asks follow-up questions … */
+    persona: string;
+  };
+  register: 'du' | 'Sie';
+  /** 3–4 things the learner must do in the conversation, in English */
+  goals: string[];
+  /** the partner's first line, in German */
+  opener: string;
+  usefulPhrases: Example[];
+  /** topic ids whose grammar the conversation practises */
+  grammarFocus: string[];
+  /** German words and chunks from the unit the learner should try to use */
+  vocabFocus: string[];
+  /** learner turns before the conversation can be wrapped up */
+  minTurns: number;
+}

@@ -14,7 +14,7 @@ for (const l of curriculum) for (const u of l.units) for (const t of u.topics) {
 
 const walk = (p) => statSync(p).isDirectory() ? readdirSync(p).flatMap((f) => walk(join(p, f))) : p.endsWith('.ts') ? [p] : [];
 const args = process.argv.slice(2);
-const files = (args.length ? args : [join(root, 'src/content/grammar'), join(root, 'src/content/vocab'), join(root, 'src/content/reading'), join(root, 'src/content/writing')]).flatMap((p) => walk(resolve(p)));
+const files = (args.length ? args : [join(root, 'src/content/grammar'), join(root, 'src/content/vocab'), join(root, 'src/content/reading'), join(root, 'src/content/writing'), join(root, 'src/content/speaking')]).flatMap((p) => walk(resolve(p)));
 
 const LETTER = '[\\wäöüÄÖÜß]';
 // Mirrors germanizePattern in src/lib/writing.ts: \b and \w become umlaut-aware.
@@ -42,7 +42,7 @@ const errors = [];
 const err = (f, m) => errors.push(`${f.replace(root + '/', '')}: ${m}`);
 const seenExIds = new Set();
 const seenWordIds = new Set();
-let topics = 0, words = 0, readings = 0, writings = 0;
+let topics = 0, words = 0, readings = 0, writings = 0, speakings = 0;
 
 function checkExercises(f, ownerId, exercises, min, idInfix) {
   if (exercises.length < min) err(f, `only ${exercises.length} exercises (need ${min}+)`);
@@ -175,11 +175,32 @@ for (const f of files) {
       if (n < r.min) err(f, `model answer does not satisfy mustUse "${r.label}" (${n} < ${r.min})`);
     }
     if (!Array.isArray(d.modelNotes) || d.modelNotes.length < 3) err(f, 'need 3+ modelNotes');
+  } else if (Array.isArray(d.goals)) {
+    speakings++;
+    const m = /^(a1|a2|b1)-u(\d+)-speaking$/.exec(d.id || '');
+    if (!m) { err(f, `speaking id ${d.id} must look like a1-u3-speaking`); continue; }
+    if (!f.endsWith(`/${d.id}.ts`)) err(f, `file name should be ${d.id}.ts`);
+    const lvl = curriculum.find((l) => l.level === d.level);
+    const unit = lvl?.units.find((u) => u.unit === d.unit);
+    if (!lvl || !unit) err(f, `no unit ${d.unit} in level ${d.level}`);
+    if (d.level !== m[1].toUpperCase() || d.unit !== Number(m[2])) err(f, 'id does not match level/unit');
+    if (!d.title || !d.situation || !d.opener) err(f, 'missing title/situation/opener');
+    if (!d.partner?.name || !d.partner?.role || !d.partner?.persona) err(f, 'partner needs name, role and persona');
+    if (!['du', 'Sie'].includes(d.register)) err(f, `register must be du or Sie, got ${d.register}`);
+    if (d.goals.length < 3 || d.goals.length > 4) err(f, 'need 3–4 goals');
+    const openerWords = d.opener.split(/\s+/).length;
+    if (openerWords > 30) err(f, `opener has ${openerWords} words; keep it under 30`);
+    if (!Array.isArray(d.usefulPhrases) || d.usefulPhrases.length < 5) err(f, 'need 5+ usefulPhrases');
+    for (const ph of d.usefulPhrases || []) if (!ph.de || !ph.en) err(f, `bad phrase ${JSON.stringify(ph)}`);
+    if (!Array.isArray(d.grammarFocus) || !d.grammarFocus.length) err(f, 'need grammarFocus');
+    for (const g of d.grammarFocus || []) if (!allIds.has(g)) err(f, `grammarFocus unknown topic ${g}`);
+    if (!Array.isArray(d.vocabFocus) || d.vocabFocus.length < 4) err(f, 'need 4+ vocabFocus items');
+    if (!(Number.isInteger(d.minTurns) && d.minTurns >= 4 && d.minTurns <= 10)) err(f, 'minTurns must be 4–10');
   } else {
-    err(f, 'default export is neither a Topic, a VocabSet, a ReadingText nor a WritingTask');
+    err(f, 'default export is neither a Topic, a VocabSet, a ReadingText, a WritingTask nor a SpeakingScenario');
   }
 }
 
-console.log(`${topics} topics, ${words} words, ${readings} reading texts, ${writings} writing tasks checked in ${files.length} files`);
+console.log(`${topics} topics, ${words} words, ${readings} reading texts, ${writings} writing tasks, ${speakings} speaking scenarios checked in ${files.length} files`);
 if (errors.length) { console.error(errors.join('\n')); console.error(`\n${errors.length} problem(s)`); process.exit(1); }
 console.log('OK');

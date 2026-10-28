@@ -18,6 +18,7 @@ import SettingsPage from './pages/Settings';
 import Reading from './pages/Reading';
 import Listening from './pages/Listening';
 import Writing from './pages/Writing';
+import Speaking from './pages/Speaking';
 import { setSpeechRate } from './lib/tts';
 
 function useTheme() {
@@ -72,6 +73,7 @@ export default function App() {
         <Route path="/reading/:id" element={<Reading />} />
         <Route path="/listen/:level/:unit" element={<Listening />} />
         <Route path="/writing/:id" element={<Writing />} />
+        <Route path="/speaking/:id" element={<Speaking />} />
         <Route path="/concepts" element={<Concepts />} />
         <Route path="/vocab" element={<Vocab />} />
         <Route path="/vocab/session" element={<VocabSession />} />

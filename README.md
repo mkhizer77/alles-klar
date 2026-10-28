@@ -10,12 +10,13 @@ A self-paced German course from A1 to B1 that runs as a web app and installs on 
 | **Reading** | One text per unit (28 in all: profiles, ads, emails, reports, reviews…) with a strategy tip, a glossary, read-aloud, and 6–8 comprehension questions. |
 | **Writing** | A guided task per unit with content points, useful phrases to tap in, autosaved drafts, automatic checks (length, greeting/closing, required structures), a model answer with notes and a self-check list. |
 | **Listening** | "Type what you hear" dictation sets per unit, spoken by the device's German voice, with slow replay and a word-level diff. |
+| **Speaking** | A role-play per unit (28 scenarios: reception desk, flat viewing, doctor, job interview, debates …) with an AI conversation partner: speak into the microphone, hear the reply, get one correction per turn and feedback at the end. Uses the browser's speech recognition and voice and your own Claude API key. |
 | **Concepts** | Search any term (Dativ, conjugation, Partizip II …) across all topics plus a 45-term glossary. |
 | **Vocab** | ~1,600 words with articles, plurals, verb forms and example sentences. Daily new words + reviews scheduled by SM-2 or Leitner (your choice). Flashcard, multiple-choice and typing modes. |
 | **Tests** | A level test per level: 30–40 grammar questions sampled across every unit, 20 vocabulary items, 5 reading questions and 5 dictations, with a report by unit and skill and the weakest topics to revisit. |
 | **Settings** | New words per day, review days, quiz mode, scheduler, feedback timing, theme, auto-speak. |
 
-Speech uses the free German voices built into iOS, Android, macOS and Windows (Web Speech API). Speaking practice with a conversation partner is planned as the last step.
+Speech uses the free German voices and speech recognition built into iOS, Android, macOS and Windows (Web Speech API). The conversation partner is the only paid piece: it calls the Claude API directly from the browser with a key you paste into Settings; the key stays on the device and a conversation costs a few cents.
 
 ## Run it
 
@@ -59,6 +60,7 @@ All course content is plain TypeScript data under `src/content/`:
 - `vocab/<level>-u<unit>-<theme>.ts` – one file per vocabulary theme
 - `reading/<level>-u<unit>-reading.ts` – one reading text per unit
 - `writing/<level>-u<unit>-writing.ts` – one guided writing task per unit
+- `speaking/<level>-u<unit>-speaking.ts` – one role-play scenario per unit for the conversation partner
 - `glossary.ts` – grammar terms for the Concepts search
 
 The learning plan is in [docs/CURRICULUM.md](docs/CURRICULUM.md). Authoring rules are in [docs/CONTENT-GUIDE.md](docs/CONTENT-GUIDE.md). Check content with:
@@ -71,4 +73,4 @@ Adding a level (B2 …) is: add it to `curriculum.ts`, drop in topic and vocab f
 
 ## Stack
 
-Vite + React 19 + TypeScript + Tailwind v4, `vite-plugin-pwa` for offline/installable. Backend: Hono on Node with the built-in `node:sqlite`. No ORM, no auth provider, no third-party services.
+Vite + React 19 + TypeScript + Tailwind v4, `vite-plugin-pwa` for offline/installable. Backend: Hono on Node with the built-in `node:sqlite`. No ORM, no auth provider; the only third-party service is the Claude API for speaking practice, called from the browser with the learner's own key.

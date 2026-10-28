@@ -13,13 +13,14 @@ Screens are in `docs/screenshots/`. Mobile uses a bottom tab bar (Home, Learn, V
 | Practice | `/practice/:id` | Intro (choose feedback timing) → exercise runner → results report with retry-the-wrong and next-topic. |
 | Reading | `/reading/:id` | Unit text with strategy tip, read-aloud, glossary with speech, then the comprehension questions as an exercise session. |
 | Writing | `/writing/:id` | Task with points and grammar links, tap-to-insert phrases, autosaved editor with live word count and automatic checks; then side-by-side with the model answer and notes, and a self-check list whose ticks become the score. |
+| Speaking | `/speaking/:id` | Role-play per unit: situation, partner, goals, phrases to hear; then a chat with microphone input (Web Speech API), the partner's replies spoken aloud, one correction per turn, English on demand, hints; after the minimum turns, feedback with goals done, strengths and corrections, whose goal share becomes the score. Needs the learner's own API key (Settings). |
 | Listening | `/listen/:level/:unit` | Ten dictations sampled from the unit's example sentences; play / slow replay; word-level diff after checking. |
 | Concepts | `/concepts?q=` | Search across topics and glossary with level filter; A–Z glossary when empty. |
 | Vocab | `/vocab` | Stats, start session, settings shortcut, word lists by level/theme with per-word status and speech. |
 | Vocab session | `/vocab/session?set=&level=` | Queue of due reviews interleaved with new words. Flashcard / choice / type modes. Wrong cards come back once in the same session. |
 | Tests | `/tests` | One card per level with last/best score and verdict. |
 | Test run | `/tests/:level` | Intro → runner with feedback at the end → report: score, verdict, by-unit bars, weakest topics, vocabulary score, every answer. |
-| Settings | `/settings` | New words/day, review days, quiz mode, scheduler (SM-2 or Leitner), feedback timing, auto-speak, theme, account (sign out, delete). |
+| Settings | `/settings` | New words/day, review days, quiz mode, scheduler (SM-2 or Leitner), feedback timing, auto-speak, theme, conversation partner (API key kept on the device, model, test), account (sign out, delete). |
 
 ## Exercise types
 
@@ -43,6 +44,6 @@ Everything the learner does is a small JSON value under a key (`topic:<id>`, `wo
 
 ## Next steps
 
-1. Speaking: conversation partner using on-device speech recognition and synthesis with an AI model behind it (last, as agreed).
-2. Native-speaker review of the generated content; the writers flagged their judgement calls in `docs/CONTENT-NOTES.md`.
-3. Optional AI feedback on writing tasks once an API key is available (the writing page is the natural place to add it).
+1. Native-speaker review of the generated content; the writers flagged their judgement calls in `docs/CONTENT-NOTES.md`.
+2. AI feedback on writing tasks, reusing the key and the partner adapter from the speaking page.
+3. A server-side proxy adapter for the conversation partner, so a key can live on the Worker instead of the device.

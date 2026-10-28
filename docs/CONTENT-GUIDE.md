@@ -65,3 +65,17 @@ One file per unit, default-exporting a `WritingTask`. See `src/content/writing/a
 - **checklist**: 6–10 self-check items in English, concrete and verifiable by the learner (content points, greeting/closing, word order, specific endings, capitalisation, length). The first item is always "All N points are covered: …".
 - **model**: a model answer as paragraphs (greeting line, body paragraphs, closing line, name) within the word range, using the unit's grammar naturally, in correct standard German.
 - **modelNotes**: 3–6 English bullets (markdown inline, bold the German) explaining what makes the model work.
+
+## Speaking scenarios — `src/content/speaking/<level>-u<unit>-speaking.ts`
+
+One file per unit, default-exporting a `SpeakingScenario`. See `src/content/speaking/a1-u1-speaking.ts`. The scenario is played by an AI partner (`src/lib/partner-prompt.ts` builds its instructions from these fields), so write for two readers: the learner (title, situation, goals, phrases) and the model (partner persona).
+
+- **id** `<level>-u<unit>-speaking`, `level` and `unit` matching `curriculum.ts`.
+- **title**: the situation in 3–7 English words. **situation**: 2–3 English sentences: where you are, who you talk to, why. Vary across units: service encounters (reception, shop, doctor, station, Bürgeramt), social talk (neighbour, colleague, friend), phone calls, interviews, discussions and debates at B1.
+- **partner**: `name` (a German name with Frau/Herr for `Sie` scenarios, first name only for `du`), `role`, and `persona`: 2–4 English sentences on how the partner behaves and what they push for, so the conversation keeps moving (asks follow-ups, has a small complication, offers two options to choose from …). A1 partners speak slowly in short sentences; B1 partners can disagree and ask for reasons.
+- **register**: `du` or `Sie`, consistent with the situation. Both should appear in every level.
+- **goals**: 3–4 concrete things the learner must do, in English, each checkable from the transcript ("ask what time it starts", "say why you prefer the flat on the ground floor", "give two reasons against the plan"). They should pull in this unit's grammar.
+- **opener**: the partner's first German line, under 30 words, in the register, ending with a question or an invitation to speak. Only grammar from this unit or earlier.
+- **usefulPhrases**: 6–10 `{ de, en }` chunks the learner can say, in the register, including one repair phrase (Wie bitte? / Können Sie das wiederholen? / Was bedeutet …?).
+- **grammarFocus**: 2–5 topic ids from this unit (or earlier). **vocabFocus**: 6–10 German words or chunks from the unit's vocabulary theme (nouns with article).
+- **minTurns**: learner turns before the conversation can be wrapped up: 5 at A1, 6 at A2, 7–8 at B1.

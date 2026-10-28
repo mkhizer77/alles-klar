@@ -31,13 +31,17 @@ Known constraint: the Workers free plan allows ~10 ms CPU per request. Password 
 ## Layers
 
 ```
-src/content/        data only: curriculum, topics, vocabulary, reading texts, writing tasks, glossary (typed, validated by scripts/validate-content.mjs)
+src/content/        data only: curriculum, topics, vocabulary, reading texts, writing tasks, speaking scenarios, glossary (typed, validated by scripts/validate-content.mjs)
 src/lib/            domain + application
   check.ts, srs.ts, date.ts     pure functions: answer comparison, spaced repetition, dates
   models.ts                     progress types and storage keys
   progress.ts                   queries over the store (streak, level stats, next topic)
   listening.ts                  builds dictation sets from existing example sentences
   writing.ts                    deterministic checks on a learner's writing (length, greeting, required patterns)
+  partner-prompt.ts             pure: builds the conversation partner's instructions from a scenario, parses its JSON replies
+  partner.ts                    ConversationPartner port + the Claude adapter (browser → API with the learner's own key)
+  ai-config.ts                  the API key and model, kept in a device-local entry outside the synced store
+  stt.ts                        speech recognition facade over the Web Speech API
   store.ts                      offline-first key/value store; syncs through the SyncBackend port
   sync.ts, api.ts               SyncBackend port and its HTTP adapter (Bearer token)
   auth.tsx                      session state for the UI (account, device-only, offline)
@@ -57,6 +61,8 @@ server/worker.ts    entry: Cloudflare Workers
 ```
 
 Dependency direction is inward: pages → lib → content; app.ts → services → repositories → Database port. Adapters and entry points sit on the outside and are the only places that know about Node or Cloudflare.
+
+The conversation partner follows the same shape in the browser: the Speaking page talks to a `ConversationPartner` port; `partner.ts` holds the Claude adapter, which the page loads lazily so the SDK stays out of the main bundle. The learner's API key is a device-local setting, never written to the synced progress store, so it never reaches the Alles Klar server; the only recipient is the model provider. Swapping the provider, or moving the key behind the Worker, means a second adapter and nothing else.
 
 ### How the SOLID principles show up
 

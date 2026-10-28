@@ -1,5 +1,6 @@
 import type { Level } from '../content/types';
 import type { Scheduler } from './srs';
+import type { Turn, PartnerFeedback } from './partner-prompt';
 
 export interface Settings {
   newWordsPerDay: number;
@@ -45,6 +46,13 @@ export interface WritingProgress extends TopicProgress {
 }
 export const EMPTY_WRITING: WritingProgress = { ...EMPTY_TOPIC, draft: '', checklist: [] };
 
+/** Speaking: the running transcript survives a reload; the score is the share of goals the partner judged done. */
+export interface SpeakingProgress extends TopicProgress {
+  transcript: Turn[];
+  feedback?: PartnerFeedback;
+}
+export const EMPTY_SPEAKING: SpeakingProgress = { ...EMPTY_TOPIC, transcript: [] };
+
 export type Activity = Record<string, { exercises: number; words: number }>;
 export const EMPTY_ACTIVITY: Activity = {};
 
@@ -72,4 +80,5 @@ export const keys = {
   reading: (id: string) => `reading:${id}`,
   listening: (level: string, unit: number) => `listen:${level.toLowerCase()}-u${unit}`,
   writing: (id: string) => `writing:${id}`,
+  speaking: (id: string) => `speaking:${id}`,
 };
