@@ -31,6 +31,8 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
+        // the course content is large; it is split per level below, this is the safety margin
+        maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
         navigateFallbackDenylist: [/\/api\//],
         runtimeCaching: [
           {
@@ -45,5 +47,18 @@ export default defineConfig({
     port: 5173,
     proxy: { '/api': 'http://localhost:8787' },
   },
-  build: { outDir: 'dist' },
+  build: {
+    outDir: 'dist',
+    chunkSizeWarningLimit: 1500,
+    rollupOptions: {
+      output: {
+        // one chunk per level of course content, so a content change only re-downloads that level
+        manualChunks(id) {
+          const m = /\/src\/content\/(?:\w+\/)?(a1|a2|b1)[/-]/.exec(id);
+          if (m) return `content-${m[1]}`;
+          if (id.includes('@anthropic-ai/sdk')) return 'partner-sdk';
+        },
+      },
+    },
+  },
 });
