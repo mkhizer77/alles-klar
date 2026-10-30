@@ -1,0 +1,1025 @@
+[
+  {
+    "source": "ZB1-Uebungsmaterialien-Band-1_WEB.txt",
+    "provider": "goethe-oesd",
+    "set": "ÖSD Modellsatz Erwachsene",
+    "parts": [
+      {
+        "module": "lesen",
+        "part": "Teil 1",
+        "task_type": "richtig-falsch",
+        "items": 6,
+        "text_type": "blog",
+        "theme": "lost wallet returned by honest finder",
+        "domain": "everyday life",
+        "register": "informal",
+        "notes": "Blog entry 'SusannesAlltagsBlog.at' (~330 words). Susanne gets a call from her bank: a young man found her wallet in a supermarket car park and traced her via her bank card. Items check details and emotions (when she noticed, where she thought she lost it, whether anything was missing, whether she could thank him). 10 min."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 2",
+        "task_type": "mc3",
+        "items": 6,
+        "text_type": "Zeitungsartikel",
+        "theme": "bio-energy village; e-bike history tour",
+        "domain": "environment & energy",
+        "register": "neutral",
+        "notes": "Two short press texts (~180-230 words each), 3 items each; item 1 of each asks the main idea ('In diesem Text geht es um...'), items 2-3 details. Text A 'Ein Dorf für grüne Energie' (deutsche Zeitung): Feldheim covers its power with a biogas plant; needs enthusiastic residents (items 7-9). Text B 'Tour durch Murtens Geschichte' (Schweizer Broschüre): guided cycle/e-bike tour 'Zeitreise per Velo' as a new tourism offer (items 10-12; second domain travel & transport). 20 min."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 3",
+        "task_type": "zuordnung-anzeigen",
+        "items": 7,
+        "text_type": "Anzeigen",
+        "theme": "offers for continuing to learn German",
+        "domain": "education & learning",
+        "register": "neutral",
+        "notes": "7 situations (13-19) + example, 10 ads a-j; one situation has no matching ad (write 0). Course colleagues want to keep learning German: summer tourism job, audiobooks, news magazine, online learning, easy literature, writing course, evening course. Ads: online portal, simplified Swiss authors, office software, Linz intensive/flexible courses, publisher seeks editor, magazine 'Deutsch erLesen', language school seeks trainers, Job & Sprache hotel jobs, Deutsch in der Schweiz (writing courses by distance), Wien courses. 10 min."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 4",
+        "task_type": "ja-nein",
+        "items": 7,
+        "text_type": "Leserbriefe/Kommentare",
+        "theme": "banning violent video games",
+        "domain": "technology & media",
+        "register": "informal",
+        "notes": "7 reader comments (~60-80 words each) in a magazine on banning 'Killerspiele'; decide for each writer: for a ban (Ja) or not (Nein). Writers aged 18-52 from DE/AT/CH; arguments include ban makes games more attractive, censorship, age limit 18, team spirit, addiction, inspiration for violence. 15 min."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 5",
+        "task_type": "mc3",
+        "items": 4,
+        "text_type": "Hausordnung/Regeln",
+        "theme": "house rules of a vocational training centre",
+        "domain": "education & learning",
+        "register": "formal",
+        "notes": "Hausordnung of the Dresdner Berufsbildungszentrum BZW (~300 words): lesson times, order, disturbances, alcohol/drugs, smoking, theft/lockers (50 EUR for lost key), lost property, parking/bicycles. Items 27-30 on bikes, classrooms (posters), lockers, alcohol permission; heavy use of modal verbs and passive/impersonal rule language. 10 min."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 1",
+        "task_type": "richtig-falsch + mc3",
+        "items": 10,
+        "text_type": "Anrufbeantworter / Durchsage / Wetterbericht",
+        "theme": "phone messages and radio announcements",
+        "domain": "everyday life",
+        "register": "neutral",
+        "notes": "5 short texts heard twice, 2 items each (one R/F, one mc3). 1: answering-machine message from doctor's practice (flu vaccination appointment moved, chip card/10 EUR fee). 2: insurance company HR re job application, missing certificates (work & career). 3: radio traffic report, jam on A8 due to accident (travel & transport). 4: station announcement, Intercity to Genf cancelled (travel & transport). 5: radio weather forecast for Germany."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 2",
+        "task_type": "mc3",
+        "items": 5,
+        "text_type": "Führung/Vortrag",
+        "theme": "guided tour of Munich city museum",
+        "domain": "culture & leisure",
+        "register": "neutral",
+        "notes": "Monologue by a museum guide at the Münchner Stadtmuseum, heard once; items 11-15: how busy the museum is, which exhibitions are shown, meeting point in the afternoon, exhibition topic (history of Munich), recommendation for lunch (Biergarten). 60 s to read items."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 3",
+        "task_type": "richtig-falsch",
+        "items": 7,
+        "text_type": "Gespräch",
+        "theme": "conversation about a party",
+        "domain": "family & relationships",
+        "register": "informal",
+        "notes": "At a bus stop, Nadia (a musician) and Florian talk about a birthday party at Anna's house: the hosts' house, the food, Nadia playing with the hired musician, jazz, how long it lasted. Heard once; items 16-22."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 4",
+        "task_type": "wer-sagt-was",
+        "items": 8,
+        "text_type": "Radiodiskussion",
+        "theme": "should small children attend daycare",
+        "domain": "family & relationships",
+        "register": "neutral",
+        "notes": "Radio programme 'Diskussion am Abend': moderator + parents Dana Schneider and Florian Bader on 'Sollen kleine Kinder in die Kinderkrippe gehen?'. Heard twice; items 23-30 assign statements to moderator/Schneider/Bader (social learning, career, combining work and children, staff ratio, underfunded daycare, families with little money)."
+      },
+      {
+        "module": "schreiben",
+        "part": "Aufgabe 1",
+        "task_type": "freies-schreiben",
+        "items": 0,
+        "text_type": "E-Mail",
+        "theme": "birthday party a friend missed",
+        "domain": "family & relationships",
+        "register": "informal",
+        "notes": "~80 words, 20 min, three content points (describe, justify, suggest). Assessed on Erfüllung, Kohärenz, Wortschatz, Strukturen; explicit instruction on text structure (Anrede, Einleitung, Reihenfolge, Schluss)."
+      },
+      {
+        "module": "schreiben",
+        "part": "Aufgabe 2",
+        "task_type": "freies-schreiben",
+        "items": 0,
+        "text_type": "Diskussionsbeitrag",
+        "theme": "personal contact versus internet",
+        "domain": "technology & media",
+        "register": "neutral",
+        "notes": "~80 words, 25 min. Reacts to an online guestbook post (Tanja) after a TV discussion 'Persönliche Kontakte und Internet': internet contacts cannot replace meeting in person. Write own opinion."
+      },
+      {
+        "module": "schreiben",
+        "part": "Aufgabe 3",
+        "task_type": "freies-schreiben",
+        "items": 0,
+        "text_type": "E-Mail",
+        "theme": "cancelling a meeting with course leader",
+        "domain": "education & learning",
+        "register": "formal",
+        "notes": "~40 words, 15 min. To course leader Frau Müller: apologise politely and explain why you cannot attend the meeting about personal learning goals. Anrede and Gruß required."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 1",
+        "task_type": "planen",
+        "items": 0,
+        "text_type": "Gespräch",
+        "theme": "hospital visit and help for classmate",
+        "domain": "health & food",
+        "register": "informal",
+        "notes": "Pair task, ~3 min. Plan visiting a course participant in hospital with a group gift and organise help after discharge. Assessed on Erfüllung (Sprachfunktionen: Vorschlag, Zustimmung...), Interaktion, Wortschatz, Strukturen."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 2",
+        "task_type": "praesentation",
+        "items": 0,
+        "text_type": "Vortrag",
+        "theme": "children and television (Thema 2)",
+        "domain": "technology & media",
+        "register": "neutral",
+        "notes": "~3 min monologue along 5 slides (intro/structure, own experience, situation in home country, pros/cons + opinion, closing/thanks). Choice of 2 topics; Thema 2 is 'Sehen Kinder zu viel fern?' (named in the commentary). Thema 1 title is an image and not in the text extraction. Neutral register expected."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 3",
+        "task_type": "feedback",
+        "items": 0,
+        "text_type": "Gespräch",
+        "theme": "feedback and questions on partner's talk",
+        "domain": "everyday life",
+        "register": "neutral",
+        "notes": "~2 min. Give feedback on partner's presentation (what you liked, what was new) and ask a question; answer questions from partner and examiner."
+      }
+    ],
+    "writing_tasks": [
+      {
+        "task": "Aufgabe 1",
+        "text_type": "E-Mail",
+        "register": "informal",
+        "words": 80,
+        "theme": "report on your birthday party to a friend who was ill",
+        "points": [
+          "Beschreiben Sie: Wie war die Feier?",
+          "Begründen Sie: Welches Geschenk finden Sie besonders toll und warum?",
+          "Machen Sie einen Vorschlag für ein Treffen."
+        ]
+      },
+      {
+        "task": "Aufgabe 2",
+        "text_type": "Diskussionsbeitrag",
+        "register": "neutral",
+        "words": 80,
+        "theme": "personal contacts and the internet",
+        "points": [
+          "Thema der Diskussionssendung: „Persönliche Kontakte und Internet“",
+          "Gästebuch-Meinung (Tanja): persönliche Treffen werden seltener; Kontakte im Internet können persönliche Treffen nicht ersetzen",
+          "Schreiben Sie nun Ihre Meinung (circa 80 Wörter)."
+        ]
+      },
+      {
+        "task": "Aufgabe 3",
+        "text_type": "E-Mail",
+        "register": "formal",
+        "words": 40,
+        "theme": "apologise to course leader for missing a meeting about learning goals",
+        "points": [
+          "Schreiben Sie an Frau Müller (Kursleiterin).",
+          "Entschuldigen Sie sich höflich.",
+          "Berichten Sie, warum Sie nicht kommen können.",
+          "Vergessen Sie nicht die Anrede und den Gruß am Schluss."
+        ]
+      }
+    ],
+    "speaking_tasks": [
+      {
+        "task": "Teil 1",
+        "type": "gemeinsam etwas planen",
+        "theme": "plan hospital visit and help for a classmate after an accident",
+        "prompts": [
+          "Besuch im Krankenhaus und Hilfe planen",
+          "Wann besuchen? (Tag, Uhrzeit?)",
+          "Wie hinkommen?",
+          "Was mitnehmen?",
+          "Wie kann man helfen? (vom Krankenhaus abholen, einkaufen ...)",
+          "..."
+        ]
+      },
+      {
+        "task": "Teil 2",
+        "type": "ein Thema präsentieren",
+        "theme": "Thema 1: not extractable (image); Thema 2: Sehen Kinder zu viel fern?",
+        "prompts": [
+          "Folie 1: Stellen Sie Ihr Thema vor. Erklären Sie den Inhalt und die Struktur Ihrer Präsentation.",
+          "Folie 2: Berichten Sie von Ihrer Situation oder einem Erlebnis im Zusammenhang mit dem Thema.",
+          "Folie 3: Berichten Sie von der Situation in Ihrem Heimatland und geben Sie Beispiele.",
+          "Folie 4: Nennen Sie die Vor- und Nachteile und sagen Sie dazu Ihre Meinung. Geben Sie auch Beispiele.",
+          "Folie 5: Beenden Sie Ihre Präsentation und bedanken Sie sich bei den Zuhörerinnen und Zuhörern."
+        ]
+      },
+      {
+        "task": "Teil 3",
+        "type": "über ein Thema sprechen",
+        "theme": "feedback and question on partner's presentation",
+        "prompts": [
+          "Nach Ihrer Präsentation: Reagieren Sie auf die Rückmeldung und auf Fragen der Gesprächspartnerin/des Gesprächspartners und der/des Prüfenden.",
+          "a) Geben Sie eine Rückmeldung zur Präsentation Ihrer Partnerin/Ihres Partners (z. B. wie Ihnen die Präsentation gefallen hat, was für Sie neu oder besonders interessant war usw.).",
+          "b) Stellen Sie auch eine Frage zur Präsentation Ihrer Partnerin/Ihres Partners."
+        ]
+      }
+    ],
+    "grammar_in_tested_items": [
+      "Receptive items do not target grammar explicitly; Lesen Teil 5 items paraphrase rules with modal verbs (dürfen/müssen/können/sollen) and impersonal passive ('ist ... zu achten', 'ist untersagt')",
+      "Lesen Teil 1 items rely on Perfekt/Präteritum/Plusquamperfekt narration and reported speech (dass-clauses)",
+      "Schreiben criterion 'Strukturen': Morphologie, Syntax, Orthografie, Interpunktion (Spektrum und Beherrschung); 'Kohärenz': Textaufbau, Satzverknüpfung",
+      "Sprechen criterion 'Kohärenz' (Aufgabe 2): unterschiedliche Nebensatzstrukturen und Satzanfänge; 'Strukturen': verschiedene Tempusformen und Adjektive richtig verwenden",
+      "Sprechen Aufgabe 1 Sprachfunktionen: Vorschlag machen, Zustimmung/Ablehnung, Meinung äußern (Konjunktiv II 'könnten wir', 'wie wäre es')"
+    ]
+  },
+  {
+    "source": "ZB1-Uebungsmaterialien-Band-1_WEB.txt",
+    "provider": "goethe-oesd",
+    "set": "ÖSD Modellsatz Jugendliche",
+    "parts": [
+      {
+        "module": "lesen",
+        "part": "Teil 1",
+        "task_type": "richtig-falsch",
+        "items": 6,
+        "text_type": "blog",
+        "theme": "family day at Leipzig zoo",
+        "domain": "culture & leisure",
+        "register": "informal",
+        "notes": "Blog 'AnnasAlltagsBlog.de' (~330 words), du-form with Jugendliche instructions. Anna describes a zoo visit with her sister and parents (tropical hall, boat trip skipped, monkeys, penguin feeding, bear cubs, six hours walking). Items 1-6 on who went, boat, monkeys, feeding, bears, wanting to stay longer. 10 min."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 2",
+        "task_type": "mc3",
+        "items": 6,
+        "text_type": "Zeitungsartikel",
+        "theme": "reading promotion project; disability sport day",
+        "domain": "education & learning",
+        "register": "neutral",
+        "notes": "Text A '«Lesefieber» – eine spannende Leseaktion für die Schule' (Schweizer Zeitung, ~230 words): book rucksacks travel between school classes; items 7-9 (main idea, teacher's role, books are new releases). Text B 'Projekttag Behindertensport' (deutsche Zeitung, ~220 words): pupils try wheelchair basketball and blind football with a national-team coach; items 10-12. First item of each = main idea. 20 min."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 3",
+        "task_type": "zuordnung-anzeigen",
+        "items": 7,
+        "text_type": "Anzeigen",
+        "theme": "summer sport and leisure offers for teens",
+        "domain": "culture & leisure",
+        "register": "neutral",
+        "notes": "7 situations (ages 11-14: horses, hiking+climbing, sport+English, start Italian, water, indoor climbing, dance) + example; 10 ads a-j (sport arena info day, camp leaders wanted, forest adventure for boys 6-12, hip-hop dance course August, adventure camp 15-18, dance studio from October, riding camp, Mondsee water-sports camp, sport + language programme, language week Salzburg). One situation has no ad (0). 10 min."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 4",
+        "task_type": "ja-nein",
+        "items": 7,
+        "text_type": "Leserbriefe/Kommentare",
+        "theme": "banning mobile phones at school",
+        "domain": "education & learning",
+        "register": "informal",
+        "notes": "Internet forum comments (7 + example, ~50-90 words each) on 'Verbot von Handys an Schulen'; writers are pupils (14-17) and parents (37-52); decide Ja (for a ban) / Nein. Arguments: distraction, showing off, parent waiting an hour, learning responsible use, dictionary use in class. 15 min."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 5",
+        "task_type": "mc3",
+        "items": 4,
+        "text_type": "Hausordnung/Regeln",
+        "theme": "rules of a youth tent camp",
+        "domain": "culture & leisure",
+        "register": "formal",
+        "notes": "'Campordnung' of a Zelt-Camp in Salzburg (~220 words, addressed with du but imperative rules): leaving the site, cleanliness, phones off during activities, no pets, quiet hours 23-7, alcohol only over 16, table manners, waste, saving energy, liability, smoking ban, open fire. Items 27-30: what teens may do, warnings (smoking), what is forbidden (noise at night), meals (behaviour rules). 10 min."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 1",
+        "task_type": "richtig-falsch + mc3",
+        "items": 10,
+        "text_type": "Anrufbeantworter / Durchsage / Wetterbericht",
+        "theme": "voicemails and announcements for teens",
+        "domain": "everyday life",
+        "register": "informal",
+        "notes": "Example: school PA announcement about a sports festival. 1: voicemail from Jasmin about tonight's party (will be late, brings drinks, no cake). 2: radio weather forecast (unsettled, 13-16 degrees, hot next week). 3: voicemail from classmate Marc about tomorrow's class trip to Munich (meet 7:45, bring 20 EUR). 4: PA announcement in a swimming pool (closing early on holiday, leave the pool, restaurant open till 20:00). 5: radio promo for listener game 'Song oder Gong' (technology & media)."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 2",
+        "task_type": "mc3",
+        "items": 5,
+        "text_type": "Führung/Vortrag",
+        "theme": "briefing at start of a hiking week",
+        "domain": "culture & leisure",
+        "register": "informal",
+        "notes": "Group leader (Andy) informs teenagers at the start of a week-long hiking tour (Swiss setting, Altstätten/Eichberg): first-day programme and communal dinner, what to do without hiking boots, who prepares food, staying with the group, taking rubbish along. Heard once; items 11-15."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 3",
+        "task_type": "richtig-falsch",
+        "items": 7,
+        "text_type": "Gespräch",
+        "theme": "school theatre competition",
+        "domain": "education & learning",
+        "register": "informal",
+        "notes": "In a tram, pupils Klara and Julian talk about a bilingual theatre competition Klara's class took part in (place 25, helping a classmate with the text, a class from Hannover with beautiful costumes, class trip to Spain). Heard once; items 16-22."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 4",
+        "task_type": "wer-sagt-was",
+        "items": 8,
+        "text_type": "Radiodiskussion",
+        "theme": "school uniforms",
+        "domain": "education & learning",
+        "register": "neutral",
+        "notes": "Radio programme 'Pro und Kontra': Moderatorin + school spokesman Andreas Firning + maths/biology teacher Helena Dreuer on Schuluniformen at the Boltzmann-Gymnasium (brand obsession, parents responsible for clothing, own style, community feeling, cost, attention in class). Heard twice; items 23-30."
+      },
+      {
+        "module": "schreiben",
+        "part": "Aufgabe 1",
+        "task_type": "freies-schreiben",
+        "items": 0,
+        "text_type": "E-Mail",
+        "theme": "school sports day a friend missed",
+        "domain": "education & learning",
+        "register": "informal",
+        "notes": "~80 words, 20 min, three points (describe, justify, suggest meeting); explicit text-structure instruction."
+      },
+      {
+        "module": "schreiben",
+        "part": "Aufgabe 2",
+        "task_type": "freies-schreiben",
+        "items": 0,
+        "text_type": "Diskussionsbeitrag",
+        "theme": "ready-made homework from the internet",
+        "domain": "education & learning",
+        "register": "neutral",
+        "notes": "~80 words, 25 min. Reacts to a forum post (Kevin) in an online youth magazine 'Fertige Hausaufgaben aus dem Internet?': downloading a finished essay on Goethe's Faust is convenient. Write own opinion."
+      },
+      {
+        "module": "schreiben",
+        "part": "Aufgabe 3",
+        "task_type": "freies-schreiben",
+        "items": 0,
+        "text_type": "E-Mail",
+        "theme": "cancelling a group cinema outing",
+        "domain": "education & learning",
+        "register": "formal",
+        "notes": "~40 words, 15 min. To language-course teacher Frau Wolmer who planned a cinema visit: apologise politely and explain why you cannot come. Anrede and Gruß required."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 1",
+        "task_type": "planen",
+        "items": 0,
+        "text_type": "Gespräch",
+        "theme": "end-of-year class party and farewell gift",
+        "domain": "education & learning",
+        "register": "informal",
+        "notes": "Pair task, ~3 min: plan a class party at the end of the school year and a farewell present for a classmate who is leaving."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 2",
+        "task_type": "praesentation",
+        "items": 0,
+        "text_type": "Vortrag",
+        "theme": "topic titles not extractable",
+        "domain": "everyday life",
+        "register": "neutral",
+        "notes": "~3 min presentation along 5 slides, choice of Thema 1 or Thema 2. Both topic titles are images in the PDF and are not present in the text extraction; only the slide instructions are readable."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 3",
+        "task_type": "feedback",
+        "items": 0,
+        "text_type": "Gespräch",
+        "theme": "feedback and questions on partner's talk",
+        "domain": "everyday life",
+        "register": "informal",
+        "notes": "~2 min; give feedback on the partner's presentation and ask a question; answer questions from partner and examiner."
+      }
+    ],
+    "writing_tasks": [
+      {
+        "task": "Aufgabe 1",
+        "text_type": "E-Mail",
+        "register": "informal",
+        "words": 80,
+        "theme": "tell a sick school friend about last week's sports day",
+        "points": [
+          "Beschreibe: Wie war der Sporttag?",
+          "Begründe: Was hat dir besonders gut gefallen?",
+          "Mache einen Vorschlag für ein Treffen."
+        ]
+      },
+      {
+        "task": "Aufgabe 2",
+        "text_type": "Diskussionsbeitrag",
+        "register": "neutral",
+        "words": 80,
+        "theme": "ready-made homework from the internet",
+        "points": [
+          "Artikel in einer Online-Jugendzeitschrift zum Thema „Fertige Hausaufgaben aus dem Internet?“",
+          "Forum-Meinung (Kevin): fertige Arbeiten zum Download sind eine tolle Möglichkeit, langweilige Schulaufgaben bequem zu erledigen",
+          "Schreibe nun deine Meinung zum Thema (circa 80 Wörter)."
+        ]
+      },
+      {
+        "task": "Aufgabe 3",
+        "text_type": "E-Mail",
+        "register": "formal",
+        "words": 40,
+        "theme": "apologise to course teacher for missing the cinema visit",
+        "points": [
+          "Schreibe an Frau Wolmer (Sprachkursleiterin).",
+          "Entschuldige dich höflich.",
+          "Berichte, warum du nicht mitkommen kannst.",
+          "Vergiss nicht die Anrede und den Gruß am Schluss."
+        ]
+      }
+    ],
+    "speaking_tasks": [
+      {
+        "task": "Teil 1",
+        "type": "gemeinsam etwas planen",
+        "theme": "plan a class party and organise a farewell gift",
+        "prompts": [
+          "Klassenparty planen und Geschenk organisieren",
+          "Wann? Wo?",
+          "Wen noch einladen? (Eltern ...)",
+          "Essen, Getränke? (mitbringen, kaufen ...)",
+          "Geschenk?",
+          "..."
+        ]
+      },
+      {
+        "task": "Teil 2",
+        "type": "ein Thema präsentieren",
+        "theme": "Thema 1 and Thema 2: titles not extractable (images)",
+        "prompts": [
+          "Folie 1: Stell dein Thema vor. Erkläre den Inhalt und die Struktur deiner Präsentation.",
+          "Folie 2: Berichte von deiner Situation oder einem Erlebnis im Zusammenhang mit dem Thema.",
+          "Folie 3: Berichte von der Situation in deinem Heimatland und gib Beispiele.",
+          "Folie 4: Nenne die Vor- und Nachteile und sag dazu deine Meinung. Gib auch Beispiele.",
+          "Folie 5: Beende deine Präsentation und bedanke dich bei den Zuhörerinnen und Zuhörern."
+        ]
+      },
+      {
+        "task": "Teil 3",
+        "type": "über ein Thema sprechen",
+        "theme": "feedback and question on partner's presentation",
+        "prompts": [
+          "Nach deiner Präsentation: Reagiere auf die Rückmeldung und auf Fragen der Gesprächspartnerin/des Gesprächspartners und der/des Prüfenden.",
+          "a) Gib eine Rückmeldung zur Präsentation deiner Partnerin/deines Partners (z. B. wie dir die Präsentation gefallen hat, was für dich neu oder besonders interessant war usw.).",
+          "b) Stell auch eine Frage zur Präsentation deiner Partnerin/deines Partners."
+        ]
+      }
+    ],
+    "grammar_in_tested_items": [
+      "Receptive items do not target grammar explicitly; Lesen Teil 5 items turn imperative rules into modal-verb statements (dürfen/müssen/sollen)",
+      "Lesen Teil 1 items use Präteritum/Perfekt narration, temporal clauses ('Als Anna mit dem Boot fuhr') and Konjunktiv II ('wäre gerne länger geblieben')",
+      "Schreiben criterion 'Strukturen': Morphologie, Syntax, Orthografie, Interpunktion; 'Kohärenz': Textaufbau (Anrede, Einleitung, Reihenfolge, Schluss)",
+      "Sprechen Aufgabe 2 'Kohärenz': varied Nebensatzstrukturen and Satzanfänge; 'Strukturen': Tempusformen, Adjektive",
+      "Sprechen Aufgabe 1 Sprachfunktionen: Vorschlag, Zustimmung, Ablehnung, Begründung"
+    ]
+  },
+  {
+    "source": "ZB1-Uebungsmaterialien-Band-1_WEB.txt",
+    "provider": "goethe-oesd",
+    "set": "ÖSD Übungssatz Erwachsene",
+    "parts": [
+      {
+        "module": "lesen",
+        "part": "Teil 1",
+        "task_type": "richtig-falsch",
+        "items": 6,
+        "text_type": "E-Mail",
+        "theme": "sitting is the new smoking",
+        "domain": "health & food",
+        "register": "informal",
+        "notes": "Personal e-mail/letter 'Lange nichts gehört ...' from Caroline (Wien) to student friend Markus (~330 words): a radio programme on the health risk of sitting, she quit smoking two months ago, cycling with nephews, modern office building with inviting staircase and slow lift. Items 1-6 on Markus's studies, who quit smoking, sitting vs smoking, Caroline's lifestyle, people needing support, staircase. Austrian variant 'Stiege' glossed. 10 min."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 2",
+        "task_type": "mc3",
+        "items": 6,
+        "text_type": "Zeitungsartikel",
+        "theme": "housing for help; happiness and age",
+        "domain": "housing",
+        "register": "neutral",
+        "notes": "Text A 'Wohnen in Hamburg' (deutsche Zeitung, ~200 words): city housing office places students with elderly landlords, one hour of help per m2 per month ('Wohnen gegen Hilfe'); items 7-9. Text B 'Je älter, desto glücklicher' (Schweizer Zeitschrift, ~270 words): study on life satisfaction, mid-life dip, children and stress, social life as key factor; items 10-12 (second domain family & relationships / society). First item of each = main idea. 20 min."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 3",
+        "task_type": "zuordnung-anzeigen",
+        "items": 7,
+        "text_type": "Anzeigen",
+        "theme": "summer jobs for young people",
+        "domain": "work & career",
+        "register": "neutral",
+        "notes": "7 situations (likes repairing vehicles, literature student with morning course, sporty early riser, sport student wants childcare, afternoons/physical work, book lover full-time, trainee cook) + example; 10 ads a-j (bike shop warehouse 14-18h, motorbike accessories sales/workshop, youth city guide, grill restaurant cook full-year, office help 10-13h, bookshop holiday cover full-time, nursery maternity cover 12 months, hotel kitchen help, bicycle courier from 5 am, city library 4h/day). One situation gets 0. 10 min."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 4",
+        "task_type": "ja-nein",
+        "items": 7,
+        "text_type": "Leserbriefe/Kommentare",
+        "theme": "speed limit on German motorways",
+        "domain": "travel & transport",
+        "register": "informal",
+        "notes": "Internet forum comments (7 + example, ~60-80 words) on 'Höchstgeschwindigkeit 120 km/h?'; writers 22-52 from DE/AT/CH; decide whether each is for a limit (Ja/Nein). Arguments: freedom, time saving, danger to others, more traffic jams, cruise control, ideology, enforcement. 15 min."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 5",
+        "task_type": "mc3",
+        "items": 4,
+        "text_type": "Hausordnung/Regeln",
+        "theme": "gym house rules",
+        "domain": "health & food",
+        "register": "formal",
+        "notes": "Fitness-Studio Hausordnung (~250 words): membership card at reception (5 EUR replacement), opening hours, smoking ban, phones off, food only in lounge, towel rule (7 EUR rental), sauna, shoes, liability. Items 27-30 on towel, card/opening hours, shoes/personal items, what is allowed (food from home). 10 min."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 1",
+        "task_type": "richtig-falsch + mc3",
+        "items": 10,
+        "text_type": "Anrufbeantworter / Durchsage",
+        "theme": "voicemails, radio promo, station announcement",
+        "domain": "everyday life",
+        "register": "neutral",
+        "notes": "Example: Frank's voicemail about a trip to Sicily. 1: electronics shop voicemail – TV repair would cost over 150 EUR, call back (consumption & money). 2: Nina's voicemail about tomorrow's bike tour, rain only in the evening, bring a drink, meet at sports ground. 3: radio promo 'Zahltag' – station pays your bill if your invoice number is read out (consumption & money). 4: property management voicemail – heating installation appointment cancelled, overpaid rent refunded (housing). 5: Munich main station announcement about the Citypass (public transport + discounts) (travel & transport)."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 2",
+        "task_type": "mc3",
+        "items": 5,
+        "text_type": "Führung/Vortrag",
+        "theme": "briefing for a one-week sports programme",
+        "domain": "health & food",
+        "register": "informal",
+        "notes": "Organiser's introductory talk to participants of a one-week sports programme: who makes breakfast, optional early-morning sport, sign-up a day ahead for the bike tour/ball sports/tennis, evening options (indoor pool, sports shop), closing party with food. Heard once; items 11-15."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 3",
+        "task_type": "richtig-falsch",
+        "items": 7,
+        "text_type": "Gespräch",
+        "theme": "weekend hiking trip",
+        "domain": "culture & leisure",
+        "register": "informal",
+        "notes": "In a tram, Elena and Fabian talk about the weekend: Fabian working, Elena's strenuous hike with her sister, overnight in a Pension, new boots, weather in the mountains, getting lost, cousin preparing the next tour. Heard once; items 16-22."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 4",
+        "task_type": "wer-sagt-was",
+        "items": 8,
+        "text_type": "Radiodiskussion",
+        "theme": "children learning foreign languages",
+        "domain": "education & learning",
+        "register": "neutral",
+        "notes": "Radio programme 'Rund um Deutschland': Moderator + linguist Wolfgang Meyer (Uni Mannheim) + parent representative Angelika Steffens on Fremdsprachen in Kindergarten/school: importance for jobs, role of mother tongue, adults learning, extra work for pupils, bilingual children mixing languages, communication without language, learning via music. Heard twice; items 23-30."
+      },
+      {
+        "module": "schreiben",
+        "part": "Aufgabe 1",
+        "task_type": "freies-schreiben",
+        "items": 0,
+        "text_type": "E-Mail",
+        "theme": "learning German online",
+        "domain": "education & learning",
+        "register": "informal",
+        "notes": "~80 words, 20 min; describe how you learned online, justify advantages of computer learning, suggest a meeting; text-structure instruction (Anrede, Einleitung, Reihenfolge, Schluss)."
+      },
+      {
+        "module": "schreiben",
+        "part": "Aufgabe 2",
+        "task_type": "freies-schreiben",
+        "items": 0,
+        "text_type": "Diskussionsbeitrag",
+        "theme": "fixed working hours",
+        "domain": "work & career",
+        "register": "neutral",
+        "notes": "~80 words, 25 min. Reacts to a guestbook post (Jessica) after a TV discussion 'Feste Arbeitszeiten': 9-17:30 is practical but with two small children she would like more flexibility. Write own opinion."
+      },
+      {
+        "module": "schreiben",
+        "part": "Aufgabe 3",
+        "task_type": "freies-schreiben",
+        "items": 0,
+        "text_type": "E-Mail",
+        "theme": "cancelling first session of a presentation course",
+        "domain": "work & career",
+        "register": "formal",
+        "notes": "~40 words, 15 min. To course leader Herr Weber ('Erfolgreich präsentieren'): apologise politely and explain why you cannot attend the first session. Anrede and Gruß required."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 1",
+        "task_type": "planen",
+        "items": 0,
+        "text_type": "Gespräch",
+        "theme": "planning a trip to Cologne",
+        "domain": "travel & transport",
+        "register": "informal",
+        "notes": "Pair task, ~3 min: you won a one-week language course for two in Köln; plan the trip (when, how to get there, where to stay, what to take)."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 2",
+        "task_type": "praesentation",
+        "items": 0,
+        "text_type": "Vortrag",
+        "theme": "wedding: big party or private; living without a car",
+        "domain": "family & relationships",
+        "register": "neutral",
+        "notes": "~3 min along 5 slides. Thema 1 'Hochzeit – großes Fest oder private Feier? Der schönste Tag im Leben'. Thema 2 'Ohne Auto leben – „Ich brauch kein eigenes Auto!“' (second domain travel & transport / environment). Slides: Meine persönlichen Erfahrungen; Die Situation in meinem Heimatland; Vor- und Nachteile & Meine Meinung; Abschluss & Dank."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 3",
+        "task_type": "feedback",
+        "items": 0,
+        "text_type": "Gespräch",
+        "theme": "feedback and questions on partner's talk",
+        "domain": "everyday life",
+        "register": "neutral",
+        "notes": "~2 min; feedback on partner's presentation plus one question; answer questions from partner and examiner."
+      }
+    ],
+    "writing_tasks": [
+      {
+        "task": "Aufgabe 1",
+        "text_type": "E-Mail",
+        "register": "informal",
+        "words": 80,
+        "theme": "tell a friend about learning German online",
+        "points": [
+          "Beschreiben Sie: Wie haben Sie gelernt?",
+          "Begründen Sie: Welche Vorteile hat das Lernen mit dem Computer?",
+          "Machen Sie einen Vorschlag für ein Treffen."
+        ]
+      },
+      {
+        "task": "Aufgabe 2",
+        "text_type": "Diskussionsbeitrag",
+        "register": "neutral",
+        "words": 80,
+        "theme": "fixed working hours",
+        "points": [
+          "Diskussionssendung zum Thema „Feste Arbeitszeiten“",
+          "Gästebuch-Meinung (Jessica): feste Arbeitszeiten 9.00–17.30 sind praktisch (geregelter Tagesablauf, pünktlich Feierabend, erreichbar), aber mit zwei kleinen Kindern wäre sie gern flexibler",
+          "Schreiben Sie nun Ihre Meinung zum Thema (circa 80 Wörter)."
+        ]
+      },
+      {
+        "task": "Aufgabe 3",
+        "text_type": "E-Mail",
+        "register": "formal",
+        "words": 40,
+        "theme": "apologise to course leader for missing the first session of 'Erfolgreich präsentieren'",
+        "points": [
+          "Schreiben Sie an Ihren Kursleiter, Herrn Weber.",
+          "Entschuldigen Sie sich höflich.",
+          "Berichten Sie, warum Sie nicht kommen können.",
+          "Vergessen Sie nicht die Anrede und den Gruß am Schluss."
+        ]
+      }
+    ],
+    "speaking_tasks": [
+      {
+        "task": "Teil 1",
+        "type": "gemeinsam etwas planen",
+        "theme": "plan a trip to Köln for a won language course",
+        "prompts": [
+          "Reise nach Köln planen",
+          "Wann?",
+          "Wie hinkommen? (Flug, Bahn ...)",
+          "Wo wohnen? (Hotel, bei Familien ...)",
+          "Was mitnehmen?",
+          "..."
+        ]
+      },
+      {
+        "task": "Teil 2",
+        "type": "ein Thema präsentieren",
+        "theme": "Thema 1: Hochzeit – großes Fest oder private Feier?; Thema 2: Ohne Auto leben",
+        "prompts": [
+          "Thema 1 Folie 1: HOCHZEIT – GROSSES FEST ODER PRIVATE FEIER? Der schönste Tag im Leben",
+          "Thema 2 Folie 1: Ohne Auto leben – „Ich brauch kein eigenes Auto!“",
+          "Folie 2: Meine persönlichen Erfahrungen – Berichten Sie von Ihrer Situation oder einem Erlebnis im Zusammenhang mit dem Thema.",
+          "Folie 3: Die Situation in meinem Heimatland – Berichten Sie von der Situation in Ihrem Heimatland und geben Sie Beispiele.",
+          "Folie 4: Vor- und Nachteile & Meine Meinung – Nennen Sie die Vor- und Nachteile und sagen Sie dazu Ihre Meinung. Geben Sie auch Beispiele.",
+          "Folie 5: Abschluss & Dank – Beenden Sie Ihre Präsentation und bedanken Sie sich bei den Zuhörerinnen und Zuhörern."
+        ]
+      },
+      {
+        "task": "Teil 3",
+        "type": "über ein Thema sprechen",
+        "theme": "feedback and question on partner's presentation",
+        "prompts": [
+          "Nach Ihrer Präsentation: Reagieren Sie auf die Rückmeldung und auf Fragen der Gesprächspartnerin/des Gesprächspartners und der/des Prüfenden.",
+          "a) Geben Sie eine Rückmeldung zur Präsentation Ihrer Partnerin/Ihres Partners (z. B. wie Ihnen die Präsentation gefallen hat, was für Sie neu oder besonders interessant war usw.).",
+          "b) Stellen Sie auch eine Frage zur Präsentation Ihrer Partnerin/Ihres Partners."
+        ]
+      }
+    ],
+    "grammar_in_tested_items": [
+      "Receptive items do not target grammar explicitly; Lesen Teil 5 items recast rules with modal verbs (darf man / sollen / kann) and passive-like formulations",
+      "Lesen Teil 1 text and items use Konjunktiv II irrealis ('wenn ich nicht ... machen würde', 'hätte mir auffallen müssen', 'wäre ich schneller oben gewesen') and Perfekt/Plusquamperfekt",
+      "Lesen Teil 2 Text B built on comparative 'je ... desto' and 'mit zunehmendem Alter'",
+      "Schreiben criterion 'Strukturen': Morphologie, Syntax, Orthografie, Interpunktion; 'Kohärenz': Textaufbau and Satzverknüpfung",
+      "Sprechen Aufgabe 2 'Kohärenz': unterschiedliche Nebensatzstrukturen, unterschiedliche Satzanfänge; 'Strukturen': Tempusformen, Adjektive",
+      "Sprechen Aufgabe 1 Sprachfunktionen: Vorschlag, Zustimmung, Ablehnung (Konjunktiv II for suggestions)"
+    ]
+  },
+  {
+    "source": "ZB1-Uebungsmaterialien-Band-1_WEB.txt",
+    "provider": "goethe-oesd",
+    "set": "ÖSD Übungssatz Jugendliche",
+    "parts": [
+      {
+        "module": "lesen",
+        "part": "Teil 1",
+        "task_type": "richtig-falsch",
+        "items": 6,
+        "text_type": "E-Mail",
+        "theme": "choosing a summer sports camp",
+        "domain": "culture & leisure",
+        "register": "informal",
+        "notes": "E-mail 'Sportcamp' from Mara to Robert (~325 words, Swiss spelling 'gross', 'Spass'): registration for summer sports camps, last year's hiking week in a mountain hut on the Furkapass, water sports in Ticino suggested for Robert, dance camp in Luzern, registration deadline next week. Items 1-6 on what Mara signed up for, shared rooms, leading a hike, water sports suggestion, dance course, registering tomorrow. 10 min."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 2",
+        "task_type": "mc3",
+        "items": 6,
+        "text_type": "Zeitungsartikel",
+        "theme": "school health project week; internet risks",
+        "domain": "health & food",
+        "register": "neutral",
+        "notes": "Text A 'Projektwoche in der Schule' (deutsches Online-Magazin, ~250 words): health week at Willy-Brandt-Schule – healthy cooking with a chef, cookbooks sold at school fair, two hours of sport daily, first-aid training and 'Schul-Krankenpfleger'; items 7-9. Text B 'Das Netz' (österreichisches Jugendmagazin, ~220 words): internet risks – social networks harvesting contacts, computer viruses, backups and secure passwords; items 10-12 (domain technology & media). First item of each = main idea. 20 min."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 3",
+        "task_type": "zuordnung-anzeigen",
+        "items": 7,
+        "text_type": "Anzeigen",
+        "theme": "German-learning help for teenagers",
+        "domain": "education & learning",
+        "register": "neutral",
+        "notes": "7 situations (spelling rules, newcomer needs fast German, presentation on recent literature, exam tips, creative writing in holidays, reading difficulties, nervous about giving a talk) + example (pen pal); 10 ads a-j (history of spelling PDF, pen-pal letter from Linz, online exam preparation, presentation training, job-application help, literature holiday week, free intensive German course for beginners after school, Germanistik student tutoring modern literature, creative writing summer weeks, spelling mnemonics tutor). One situation gets 0. 10 min."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 4",
+        "task_type": "ja-nein",
+        "items": 7,
+        "text_type": "Leserbriefe/Kommentare",
+        "theme": "teens travelling without parents",
+        "domain": "travel & transport",
+        "register": "informal",
+        "notes": "Youth forum comments (7 + example, ~50-80 words) on 'Endlich ohne Eltern Ferien machen'; writers are teens (15-17), parents (38, 43) and a camp counsellor (23); decide for each whether they favour teens travelling without parents (Ja/Nein). Arguments: bad camp memories, independence, diverging interests, dangers. Second domain family & relationships. 15 min."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 5",
+        "task_type": "mc3",
+        "items": 4,
+        "text_type": "Hausordnung/Regeln",
+        "theme": "school computer room rules",
+        "domain": "education & learning",
+        "register": "formal",
+        "notes": "'Nutzungsordnung für den Computerraum' (~240 words): registration after an introductory session (number, then personal password), opening hours and supervision, school-only use, print permission, photos online only with parental consent, no contracts, no food/drink, no external devices, no large data. Items 27-30 on when pupils may use the room, internet use (photos only with permission), protecting computers (no private laptops), registering (password). 10 min."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 1",
+        "task_type": "richtig-falsch + mc3",
+        "items": 10,
+        "text_type": "Anrufbeantworter / Durchsage",
+        "theme": "voicemails and radio notices for teens",
+        "domain": "everyday life",
+        "register": "informal",
+        "notes": "Example: school PA announcement about sports programme. 1: Luca's voicemail – cinema tomorrow at six, will be a few minutes late, buy tickets, where to meet, call back. 2: radio info on a charity festival of the Jugendfeuerwehr Leutkirch (flea market, free drinks and ice cream, live band) (society). 3: radio notice – vote online for the new singer of girl band 'Princess' on www.popstars.ch (technology & media). 4: station announcement about the Munich Citypass (travel & transport). 5: voicemail from a tutoring institute – maths lesson moved to 17:00 with two other pupils, 10 Franken refund (education). Items given out of order on the page (Text 1/4 printed last)."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 2",
+        "task_type": "mc3",
+        "items": 5,
+        "text_type": "Führung/Vortrag",
+        "theme": "class trip to Millstätter See",
+        "domain": "travel & transport",
+        "register": "informal",
+        "notes": "Tour guide (Reiseleiterin) on the bus informs a school class about the day at Millstätter See/Döbriach: swimming first, Haus des Erzählens visit times, 16:00 climbing, late afternoon free time at the lido, evening youth disco in Gmünd. Heard once; items 11-15."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 3",
+        "task_type": "richtig-falsch",
+        "items": 7,
+        "text_type": "Gespräch",
+        "theme": "after a maths test",
+        "domain": "education & learning",
+        "register": "informal",
+        "notes": "In the corridor after a maths test, classmates Daniel and Emma talk: whether Daniel knew what to do in task 2, attention in class, partial credit despite errors, his father's reaction, visitors the day before, tutoring, Emma helping with homework today. Heard once; items 16-22."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 4",
+        "task_type": "wer-sagt-was",
+        "items": 8,
+        "text_type": "Radiodiskussion",
+        "theme": "driving licence at 16",
+        "domain": "society & politics",
+        "register": "neutral",
+        "notes": "Radio programme 'Die aktuelle Diskussion': Moderatorin + 16-year-old pupil Alexander Winkler (village on the Schwäbische Alb) + police officer Florian Kauder on 'Führerschein schon ab 16?': few leisure options in the countryside, finding adult co-drivers, responsibility under 18, other countries, better driver training, parents driving at night, rural public transport, lack of funds. Heard twice; items 23-30."
+      },
+      {
+        "module": "schreiben",
+        "part": "Aufgabe 1",
+        "task_type": "freies-schreiben",
+        "items": 0,
+        "text_type": "E-Mail",
+        "theme": "summer internship in a bookshop",
+        "domain": "work & career",
+        "register": "informal",
+        "notes": "~80 words, 20 min; describe the internship, justify what you liked, suggest a meeting; text-structure instruction."
+      },
+      {
+        "module": "schreiben",
+        "part": "Aufgabe 2",
+        "task_type": "freies-schreiben",
+        "items": 0,
+        "text_type": "Diskussionsbeitrag",
+        "theme": "private photos on social networks",
+        "domain": "technology & media",
+        "register": "neutral",
+        "notes": "~80 words, 25 min. Reacts to a forum post (Susan) after a magazine article 'Private Fotos in sozialen Netzwerken': annoyed by constant photographing and people uploading photos for everyone to see. Write own opinion."
+      },
+      {
+        "module": "schreiben",
+        "part": "Aufgabe 3",
+        "task_type": "freies-schreiben",
+        "items": 0,
+        "text_type": "E-Mail",
+        "theme": "applying for a weekly shopping job",
+        "domain": "work & career",
+        "register": "formal",
+        "notes": "~40 words, 15 min. To Frau Selden, a colleague of your mother who needs someone to shop for her once a week: explain why you want the job and suggest a meeting. Anrede and Gruß required. Differs from the other sets' 'apologise' task."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 1",
+        "task_type": "planen",
+        "items": 0,
+        "text_type": "Gespräch",
+        "theme": "article for the school website",
+        "domain": "education & learning",
+        "register": "informal",
+        "notes": "Pair task, ~3 min: plan an article about the last school year for the school website (topics, who writes what, photos, support from teacher/computer expert)."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 2",
+        "task_type": "praesentation",
+        "items": 0,
+        "text_type": "Vortrag",
+        "theme": "holiday camps (Thema 2)",
+        "domain": "culture & leisure",
+        "register": "neutral",
+        "notes": "~3 min along 5 slides. Thema 2 'Feriencamps – „Hier ist immer etwas los!“' with slides Meine persönlichen Erfahrungen / Die Situation in meinem Heimatland / Vor- und Nachteile & Meine Meinung / Abschluss & Dank. Thema 1 title is an image and not in the text extraction."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 3",
+        "task_type": "feedback",
+        "items": 0,
+        "text_type": "Gespräch",
+        "theme": "feedback and questions on partner's talk",
+        "domain": "everyday life",
+        "register": "informal",
+        "notes": "~2 min; feedback on the partner's presentation plus one question; answer questions from partner and examiner."
+      }
+    ],
+    "writing_tasks": [
+      {
+        "task": "Aufgabe 1",
+        "text_type": "E-Mail",
+        "register": "informal",
+        "words": 80,
+        "theme": "tell a friend about your summer internship in a bookshop",
+        "points": [
+          "Beschreibe: Wie war das Praktikum in der Buchhandlung?",
+          "Begründe: Was hat dir besonders gut gefallen?",
+          "Mache einen Vorschlag für ein Treffen."
+        ]
+      },
+      {
+        "task": "Aufgabe 2",
+        "text_type": "Diskussionsbeitrag",
+        "register": "neutral",
+        "words": 80,
+        "theme": "private photos in social networks",
+        "points": [
+          "Zeitschriftenartikel zum Thema „Private Fotos in sozialen Netzwerken“",
+          "Forum-Meinung (Susan): ständiges Fotografieren nervt; am meisten stört, dass die Fotos ins Internet gestellt werden, wo sie jeder sehen kann – das ist privat",
+          "Schreibe nun deine Meinung zum Thema (circa 80 Wörter)."
+        ]
+      },
+      {
+        "task": "Aufgabe 3",
+        "text_type": "E-Mail",
+        "register": "formal",
+        "words": 40,
+        "theme": "write to Frau Selden about a weekly shopping job",
+        "points": [
+          "Schreib an Frau Selden (Arbeitskollegin deiner Mutter, sucht jemanden, der einmal in der Woche für sie einkaufen geht).",
+          "Erkläre, warum du diesen Job machen möchtest.",
+          "Schlag ein Treffen vor.",
+          "Vergiss nicht die Anrede und den Gruß am Schluss."
+        ]
+      }
+    ],
+    "speaking_tasks": [
+      {
+        "task": "Teil 1",
+        "type": "gemeinsam etwas planen",
+        "theme": "plan an article about the school year for the school website",
+        "prompts": [
+          "Einen Artikel für die Schul-Webseite schreiben",
+          "Welche Themen? (Feste, Lehrer ...)",
+          "Wer schreibt was?",
+          "Fotos?",
+          "Unterstützung? (Lehrer, Computerexperte ...)",
+          "..."
+        ]
+      },
+      {
+        "task": "Teil 2",
+        "type": "ein Thema präsentieren",
+        "theme": "Thema 1: not extractable (image); Thema 2: Feriencamps – Hier ist immer etwas los!",
+        "prompts": [
+          "Thema 2 Folie 1: FERIENCAMPS – „Hier ist immer etwas los!“ – Stell dein Thema vor. Erkläre den Inhalt und die Struktur deiner Präsentation.",
+          "Folie 2: Meine persönlichen Erfahrungen – Berichte von deiner Situation oder einem Erlebnis im Zusammenhang mit dem Thema.",
+          "Folie 3: Die Situation in meinem Heimatland – Berichte von der Situation in deinem Heimatland und gib Beispiele.",
+          "Folie 4: Vor- und Nachteile & Meine Meinung – Nenne die Vor- und Nachteile und sag dazu deine Meinung. Gib auch Beispiele.",
+          "Folie 5: Abschluss & Dank – Beende deine Präsentation und bedanke dich bei den Zuhörerinnen und Zuhörern."
+        ]
+      },
+      {
+        "task": "Teil 3",
+        "type": "über ein Thema sprechen",
+        "theme": "feedback and question on partner's presentation",
+        "prompts": [
+          "Nach deiner Präsentation: Reagiere auf die Rückmeldung und auf Fragen der Gesprächspartnerin/des Gesprächspartners und der/des Prüfenden.",
+          "a) Gib eine Rückmeldung zur Präsentation deiner Partnerin/deines Partners (z. B. wie dir die Präsentation gefallen hat, was für dich neu oder besonders interessant war usw.).",
+          "b) Stell auch eine Frage zur Präsentation deiner Partnerin/deines Partners."
+        ]
+      }
+    ],
+    "grammar_in_tested_items": [
+      "Receptive items do not target grammar explicitly; Lesen Teil 5 items recast rules with modal verbs (dürfen/darf man/muss man) and 'nur mit Erlaubnis' conditions",
+      "Lesen Teil 1 items rely on Perfekt narration, 'obwohl' concessive clause and Konjunktiv II ('wäre was für dich', 'würde gefallen')",
+      "Lesen Teil 4 texts use Konjunktiv II for hypothetical opinions ('würde ich sie nicht allein wegfahren lassen', 'hätten nichts dagegen') and 'je ... desto'",
+      "Schreiben criterion 'Strukturen': Morphologie, Syntax, Orthografie, Interpunktion; Aufgabe 3 additionally tests formal register (Sie-form) in a semi-formal request",
+      "Sprechen Aufgabe 2 'Kohärenz': unterschiedliche Nebensatzstrukturen und Satzanfänge; 'Strukturen': Tempusformen, Adjektive",
+      "Sprechen Aufgabe 1 Sprachfunktionen: Vorschlag, Zustimmung, Ablehnung"
+    ]
+  }
+]

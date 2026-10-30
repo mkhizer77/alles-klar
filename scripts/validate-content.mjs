@@ -14,7 +14,7 @@ for (const l of curriculum) for (const u of l.units) for (const t of u.topics) {
 
 const walk = (p) => statSync(p).isDirectory() ? readdirSync(p).flatMap((f) => walk(join(p, f))) : p.endsWith('.ts') ? [p] : [];
 const args = process.argv.slice(2);
-const files = (args.length ? args : [join(root, 'src/content/grammar'), join(root, 'src/content/vocab'), join(root, 'src/content/reading'), join(root, 'src/content/writing'), join(root, 'src/content/speaking')]).flatMap((p) => walk(resolve(p)));
+const files = (args.length ? args : [join(root, 'src/content/grammar'), join(root, 'src/content/vocab'), join(root, 'src/content/reading'), join(root, 'src/content/writing'), join(root, 'src/content/speaking'), join(root, 'src/content/exams')]).flatMap((p) => walk(resolve(p)));
 
 const LETTER = '[\\wäöüÄÖÜß]';
 // Mirrors germanizePattern in src/lib/writing.ts: \b and \w become umlaut-aware.
@@ -42,7 +42,7 @@ const errors = [];
 const err = (f, m) => errors.push(`${f.replace(root + '/', '')}: ${m}`);
 const seenExIds = new Set();
 const seenWordIds = new Set();
-let topics = 0, words = 0, readings = 0, writings = 0, speakings = 0;
+let topics = 0, words = 0, readings = 0, writings = 0, speakings = 0, exams = 0;
 
 function checkExercises(f, ownerId, exercises, min, idInfix) {
   if (exercises.length < min) err(f, `only ${exercises.length} exercises (need ${min}+)`);
@@ -53,7 +53,7 @@ function checkExercises(f, ownerId, exercises, min, idInfix) {
     if (ex.type !== 'listen' && !ex.prompt) err(f, `${ex.id}: missing prompt`);
     switch (ex.type) {
       case 'mc':
-        if (!Array.isArray(ex.options) || ex.options.length < 2 || ex.options.length > 5) err(f, `${ex.id}: mc needs 2–5 options`);
+        if (!Array.isArray(ex.options) || ex.options.length < 2 || ex.options.length > (ex.options.every((o) => o.length <= 2) ? 14 : 5)) err(f, `${ex.id}: mc needs 2–5 options (up to 14 when the options are letters)`);
         if (new Set(ex.options).size !== ex.options?.length) err(f, `${ex.id}: duplicate options`);
         if (!Number.isInteger(ex.answer) || ex.answer < 0 || ex.answer >= (ex.options?.length ?? 0)) err(f, `${ex.id}: answer index out of range`);
         break;
@@ -84,6 +84,126 @@ function checkExercises(f, ownerId, exercises, min, idInfix) {
         err(f, `${ex.id}: unknown type ${ex.type}`);
     }
   }
+}
+
+// Official formats the mock exams must follow exactly (docs/EXAM-GUIDE.md).
+// items: scored items per part; tasks: productive tasks per part; plays: how often a listening text is played.
+const EXAM_FORMATS = {
+  'goethe-oesd': {
+    modules: [
+      { skill: 'lesen', items: [6, 6, 7, 7, 4], maxPoints: 100 },
+      { skill: 'hoeren', items: [10, 5, 7, 8], audio: [5, 1, 1, 1], plays: [2, 1, 1, 2], maxPoints: 100 },
+      { skill: 'schreiben', tasks: [1, 1, 1], maxPoints: 100 },
+      { skill: 'sprechen', tasks: [1, 2, 1], maxPoints: 100 },
+    ],
+  },
+  telc: {
+    modules: [
+      { skill: 'lesen', items: [5, 5, 10], pointsPerItem: 5, maxPoints: 75 },
+      { skill: 'sprachbausteine', items: [10, 10], pointsPerItem: 1.5, maxPoints: 30 },
+      { skill: 'hoeren', items: [5, 10, 5], audio: [5, 1, 5], plays: [1, 2, 2], pointsPerItem: 5, maxPoints: 75 },
+      { skill: 'schreiben', tasks: [1], maxPoints: 45 },
+      { skill: 'sprechen', tasks: [1, 1, 1], maxPoints: 75 },
+    ],
+  },
+  dtz: {
+    modules: [
+      { skill: 'hoeren', items: [4, 5, 8, 3], audio: [4, 5, 4, 3], plays: [2, 1, 1, 2], maxPoints: 20 },
+      { skill: 'lesen', items: [5, 5, 6, 3, 6], maxPoints: 25 },
+      { skill: 'schreiben', tasks: [2], maxPoints: 20 },
+      { skill: 'sprechen', tasks: [1, 1, 1], maxPoints: 100 },
+    ],
+  },
+};
+
+function checkExam(f, d) {
+  exams++;
+  const m = /^(a1|a2|b1)-(goethe|telc|dtz)-(\d+)$/.exec(d.id || '');
+  if (!m) { err(f, `exam id ${d.id} must look like b1-goethe-1`); return; }
+  if (!f.endsWith(`/${d.id}.ts`)) err(f, `file name should be ${d.id}.ts`);
+  if (d.level !== m[1].toUpperCase()) err(f, `level ${d.level} does not match id`);
+  const fmt = EXAM_FORMATS[d.provider];
+  if (!fmt) { err(f, `unknown provider ${d.provider}`); return; }
+  if ((d.provider === 'goethe-oesd' ? 'goethe' : d.provider) !== m[2]) err(f, `provider ${d.provider} does not match id`);
+  for (const k of ['title', 'subtitle', 'intro', 'modelledOn', 'passRule']) if (!d[k]) err(f, `missing ${k}`);
+  const scenarioIds = new Set();
+  for (const sc of d.scenarios || []) {
+    if (!sc.id?.startsWith(`exam-${d.id}-`)) err(f, `scenario id ${sc.id} should start with exam-${d.id}-`);
+    if (scenarioIds.has(sc.id)) err(f, `duplicate scenario id ${sc.id}`); scenarioIds.add(sc.id);
+    if (sc.level !== d.level || sc.unit !== 0) err(f, `scenario ${sc.id}: level must be ${d.level} and unit 0`);
+    if (!sc.title || !sc.situation || !sc.opener || !sc.partner?.name || !sc.partner?.role || !sc.partner?.persona) err(f, `scenario ${sc.id}: missing title/situation/opener/partner`);
+    if (!['du', 'Sie'].includes(sc.register)) err(f, `scenario ${sc.id}: register must be du or Sie`);
+    if (!Array.isArray(sc.goals) || sc.goals.length < 3 || sc.goals.length > 4) err(f, `scenario ${sc.id}: need 3–4 goals`);
+    if (!Array.isArray(sc.usefulPhrases) || sc.usefulPhrases.length < 5) err(f, `scenario ${sc.id}: need 5+ usefulPhrases`);
+    for (const g of sc.grammarFocus || []) if (!allIds.has(g)) err(f, `scenario ${sc.id}: unknown topic ${g}`);
+    if (!Array.isArray(sc.vocabFocus) || sc.vocabFocus.length < 4) err(f, `scenario ${sc.id}: need 4+ vocabFocus`);
+    if (!(Number.isInteger(sc.minTurns) && sc.minTurns >= 4 && sc.minTurns <= 10)) err(f, `scenario ${sc.id}: minTurns must be 4–10`);
+  }
+  if (!Array.isArray(d.modules)) { err(f, 'modules must be an array'); return; }
+  const skills = d.modules.map((x) => x.skill).join(',');
+  const want = fmt.modules.map((x) => x.skill).join(',');
+  if (skills !== want) { err(f, `modules must be ${want} in that order (got ${skills})`); return; }
+  const partIds = new Set();
+  const usedScenarios = new Set();
+  d.modules.forEach((mod, mi) => {
+    const spec = fmt.modules[mi];
+    if (!mod.title || !(mod.minutes > 0)) err(f, `${mod.skill}: needs title and minutes`);
+    if (mod.maxPoints !== spec.maxPoints) err(f, `${mod.skill}: maxPoints should be ${spec.maxPoints}`);
+    if (!(mod.passPercent > 0 && mod.passPercent <= 100)) err(f, `${mod.skill}: bad passPercent`);
+    const nParts = (spec.items || spec.tasks).length;
+    if (!Array.isArray(mod.parts) || mod.parts.length !== nParts) { err(f, `${mod.skill}: needs ${nParts} parts`); return; }
+    mod.parts.forEach((p, pi) => {
+      const tag = `${mod.skill} ${p.title || pi + 1}`;
+      if (!p.id || partIds.has(p.id)) err(f, `${tag}: missing or duplicate part id ${p.id}`); partIds.add(p.id);
+      if (p.skill !== mod.skill) err(f, `${tag}: part skill ${p.skill} should be ${mod.skill}`);
+      if (!p.title || !p.goal || !p.instructions) err(f, `${tag}: needs title, goal and instructions`);
+      if (!Array.isArray(p.topicIds) || !p.topicIds.length) err(f, `${tag}: needs topicIds`);
+      for (const t of p.topicIds || []) if (!allIds.has(t)) err(f, `${tag}: unknown topic ${t}`);
+      const items = Array.isArray(p.items) ? p.items : [];
+      if (spec.items) {
+        if (items.length !== spec.items[pi]) err(f, `${tag}: needs ${spec.items[pi]} items, has ${items.length}`);
+        if ((p.pointsPerItem ?? 1) !== (spec.pointsPerItem ?? 1)) err(f, `${tag}: pointsPerItem should be ${spec.pointsPerItem ?? 1}`);
+        for (const ex of items) if (!['mc', 'fill'].includes(ex.type)) err(f, `${tag}: item ${ex.id} must be mc or fill`);
+        checkExercises(f, `${d.id}-${p.id}`, items, 0, '-');
+        const labels = new Set((p.texts || []).map((t) => t.label).filter(Boolean));
+        if (labels.size) for (const ex of items) if (ex.type === 'mc' && ex.options.every((o) => o.length <= 2)) for (const o of ex.options) if (!labels.has(o) && !['0', 'x', 'X'].includes(o)) err(f, `${tag}: item ${ex.id} option ${o} is not a text label`);
+        if (mod.skill !== 'hoeren') {
+          const wc = (p.texts || []).flatMap((t) => t.body).join(' ').split(/\s+/).length;
+          if (!(p.texts || []).length) err(f, `${tag}: reading part needs texts`);
+          else if (wc < 60) err(f, `${tag}: texts have only ${wc} words`);
+        }
+        if (spec.audio) {
+          const audio = Array.isArray(p.audio) ? p.audio : [];
+          if (audio.length !== spec.audio[pi]) err(f, `${tag}: needs ${spec.audio[pi]} listening texts, has ${audio.length}`);
+          for (const a of audio) {
+            if (!a.id || !a.label || !a.text) err(f, `${tag}: audio needs id, label, text`);
+            if (a.plays !== spec.plays[pi]) err(f, `${tag}: audio ${a.id} plays should be ${spec.plays[pi]}`);
+            const wc = a.text.split(/\s+/).length;
+            if (wc < 40) err(f, `${tag}: audio ${a.id} is only ${wc} words`);
+          }
+        }
+        if (p.tasks?.length) err(f, `${tag}: receptive part should not have tasks`);
+      } else {
+        const tasks = Array.isArray(p.tasks) ? p.tasks : [];
+        if (tasks.length !== spec.tasks[pi]) err(f, `${tag}: needs ${spec.tasks[pi]} task(s), has ${tasks.length}`);
+        if (items.length) err(f, `${tag}: productive part should not have items`);
+        for (const t of tasks) {
+          if (!t.id || !t.title || !t.instructions) err(f, `${tag}: task needs id, title, instructions`);
+          if (!Array.isArray(t.points) || t.points.length < 2) err(f, `${tag}: task ${t.id} needs 2+ points`);
+          if (!Array.isArray(t.model) || !t.model.length) err(f, `${tag}: task ${t.id} needs a model`);
+          if (!Array.isArray(t.modelNotes) || t.modelNotes.length < 2) err(f, `${tag}: task ${t.id} needs 2+ modelNotes`);
+          if (!Array.isArray(t.criteria) || t.criteria.length < 4 || t.criteria.length > 10) err(f, `${tag}: task ${t.id} needs 4–10 criteria`);
+          if (mod.skill === 'schreiben' && t.words) {
+            const wc = t.model.join(' ').split(/\s+/).length;
+            if (wc < t.words * 0.8 || wc > t.words * 1.6) err(f, `${tag}: task ${t.id} model has ${wc} words for a circa-${t.words}-word task`);
+          }
+          if (t.scenarioId) { if (!scenarioIds.has(t.scenarioId)) err(f, `${tag}: task ${t.id} references unknown scenario ${t.scenarioId}`); usedScenarios.add(t.scenarioId); }
+          if (mod.skill === 'sprechen' && !t.scenarioId) err(f, `${tag}: speaking task ${t.id} needs a scenarioId`);
+        }
+      }
+    });
+  });
+  for (const id of scenarioIds) if (!usedScenarios.has(id)) err(f, `scenario ${id} is not referenced by any task`);
 }
 
 for (const f of files) {
@@ -175,6 +295,8 @@ for (const f of files) {
       if (n < r.min) err(f, `model answer does not satisfy mustUse "${r.label}" (${n} < ${r.min})`);
     }
     if (!Array.isArray(d.modelNotes) || d.modelNotes.length < 3) err(f, 'need 3+ modelNotes');
+  } else if (Array.isArray(d.modules)) {
+    checkExam(f, d);
   } else if (Array.isArray(d.goals)) {
     speakings++;
     const m = /^(a1|a2|b1)-u(\d+)-speaking$/.exec(d.id || '');
@@ -197,10 +319,10 @@ for (const f of files) {
     if (!Array.isArray(d.vocabFocus) || d.vocabFocus.length < 4) err(f, 'need 4+ vocabFocus items');
     if (!(Number.isInteger(d.minTurns) && d.minTurns >= 4 && d.minTurns <= 10)) err(f, 'minTurns must be 4–10');
   } else {
-    err(f, 'default export is neither a Topic, a VocabSet, a ReadingText, a WritingTask nor a SpeakingScenario');
+    err(f, 'default export is neither a Topic, a VocabSet, a ReadingText, a WritingTask, a SpeakingScenario nor a MockExam');
   }
 }
 
-console.log(`${topics} topics, ${words} words, ${readings} reading texts, ${writings} writing tasks, ${speakings} speaking scenarios checked in ${files.length} files`);
+console.log(`${topics} topics, ${words} words, ${readings} reading texts, ${writings} writing tasks, ${speakings} speaking scenarios, ${exams} mock exams checked in ${files.length} files`);
 if (errors.length) { console.error(errors.join('\n')); console.error(`\n${errors.length} problem(s)`); process.exit(1); }
 console.log('OK');

@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link, Navigate, useParams } from 'react-router';
-import { speakings, levelOf, topics } from '../content';
+import { speakings, levelOf, topics, examOfScenario } from '../content';
 import { store, useStoreValue } from '../lib/store';
 import { keys, EMPTY_SPEAKING, type SpeakingProgress } from '../lib/models';
 import { todayStr } from '../lib/date';
@@ -80,6 +80,9 @@ export default function Speaking() {
   const heardSomething = useRef(false);
 
   const unit = scenario ? levelOf(scenario.level).units.find((u) => u.unit === scenario.unit) : undefined;
+  const exam = scenario ? examOfScenario(scenario.id) : undefined;
+  const backTo = exam ? `/exam/${exam.id}` : scenario ? `/learn/${scenario.level}` : '/learn';
+  const backLabel = exam ? `${exam.title} · Sprechen` : scenario ? `${scenario.level} · Unit ${scenario.unit}: ${unit?.title}` : '';
   const ctx = useMemo(
     () => (scenario ? { scenario, unitTitle: unit?.title ?? '', grammarTerms: scenario.grammarFocus.map((g) => topics[g]?.germanTerm).filter((t): t is string => !!t) } : null),
     [scenario, unit],
@@ -403,8 +406,8 @@ export default function Speaking() {
 
   return (
     <article className="pb-16">
-      <Link to={`/learn/${scenario.level}`} className="inline-flex items-center gap-1 text-sm text-muted hover:text-text mb-3">
-        <ChevronLeft size={16} /> {scenario.level} · Unit {scenario.unit}: {unit?.title}
+      <Link to={backTo} className="inline-flex items-center gap-1 text-sm text-muted hover:text-text mb-3">
+        <ChevronLeft size={16} /> {backLabel}
       </Link>
       <div className="flex items-center gap-2 mb-2 flex-wrap">
         <LevelPill level={scenario.level} />
@@ -540,7 +543,7 @@ export default function Speaking() {
           <div className="mt-4 flex gap-2 flex-wrap">
             {saved ? <Badge tone="success">Saved</Badge> : <Button onClick={saveResult}>Save result</Button>}
             <Button variant="secondary" onClick={restart}>Talk again</Button>
-            <Link to={`/learn/${scenario.level}`} className="inline-flex items-center px-4 py-2.5 text-sm font-semibold text-primary">Back to unit</Link>
+            <Link to={backTo} className="inline-flex items-center px-4 py-2.5 text-sm font-semibold text-primary">{exam ? 'Back to exam' : 'Back to unit'}</Link>
           </div>
         </>
       )}

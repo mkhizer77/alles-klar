@@ -1,7 +1,9 @@
 import { Link } from 'react-router';
-import { curriculum, topicsForLevel, wordsForLevel, readingsForLevel } from '../content';
+import { curriculum, topicsForLevel, wordsForLevel, readingsForLevel, examsForLevel } from '../content';
 import { store, useStoreVersion } from '../lib/store';
-import { keys, EMPTY_TESTS, type TestAttempt } from '../lib/models';
+import { keys, EMPTY_TESTS, EMPTY_EXAM_ATTEMPTS, type TestAttempt, type ExamAttempt } from '../lib/models';
+import { providerLabel, skillLabel } from './ExamRun';
+import type { ExamSkill } from '../content/types';
 import { Card, LinkButton, LevelPill, PageHeader } from '../components/ui';
 
 export const TEST_SIZE = { A1: 30, A2: 30, B1: 40 } as const;
@@ -67,6 +69,51 @@ export default function Tests() {
           );
         })}
       </div>
+      {curriculum.map((l) => {
+        const list = examsForLevel(l.level);
+        if (!list.length) return null;
+        return (
+          <section key={l.level} className="mt-8">
+            <h2 className="text-xl font-bold tracking-tight">{l.level} exam practice</h2>
+            <p className="text-muted text-sm mt-0.5 mb-3">Full mock papers in the format of the official exams: same parts, item counts, timings and point scheme. Take one module at a time.</p>
+            <div className="grid gap-4">
+              {list.map((e) => (
+                <ExamCard key={e.id} id={e.id} />
+              ))}
+            </div>
+          </section>
+        );
+      })}
     </div>
+  );
+}
+
+function ExamCard({ id }: { id: string }) {
+  const exam = examsForLevel('B1').concat(examsForLevel('A2'), examsForLevel('A1')).find((e) => e.id === id)!;
+  const attempts = store.get<ExamAttempt[]>(keys.exam(id), EMPTY_EXAM_ATTEMPTS);
+  const best = (skill: ExamSkill) => attempts.filter((a) => a.skill === skill).reduce<ExamAttempt | null>((b, a) => (!b || a.percent > b.percent ? a : b), null);
+  return (
+    <Card>
+      <div className="flex items-center gap-2 flex-wrap">
+        <LevelPill level={exam.level} />
+        <span className="inline-block px-2 py-0.5 rounded-md text-xs font-bold bg-accent/15 text-accent">{providerLabel[exam.provider]}</span>
+        <h3 className="font-bold text-lg">{exam.title}</h3>
+      </div>
+      <p className="text-sm text-muted mt-1">{exam.subtitle}</p>
+      <div className="mt-3 flex flex-wrap gap-2">
+        {exam.modules.map((m) => {
+          const b = best(m.skill);
+          return (
+            <Link key={m.skill} to={`/exam/${exam.id}/${m.skill}`} className={`px-3 py-1.5 rounded-lg border text-sm font-medium ${b ? (b.passed ? 'border-success/50 bg-success-soft text-success' : 'border-danger/40 bg-danger-soft text-danger') : 'border-line bg-surface'}`}>
+              {skillLabel[m.skill]} <span className="text-muted font-normal">· {m.minutes} min</span>
+              {b && <span className="tabular-nums"> · {b.percent}%</span>}
+            </Link>
+          );
+        })}
+      </div>
+      <div className="mt-4">
+        <LinkButton to={`/exam/${exam.id}`}>Open exam</LinkButton>
+      </div>
+    </Card>
   );
 }

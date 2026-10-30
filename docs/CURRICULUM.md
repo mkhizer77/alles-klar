@@ -20,9 +20,9 @@ A self-paced course that takes you from "I know some words" to a solid B1, with 
 
 | Level | Topics | Vocabulary | Time at ~25 min/day |
 |-------|--------|------------|---------------------|
-| A1    | 36     | ~550 words | 8–10 weeks |
-| A2    | 32     | ~550 words | 10–12 weeks |
-| B1    | 32     | ~600 words | 12–14 weeks |
+| A1    | 36     | ~700 words | 8–10 weeks |
+| A2    | 32     | ~720 words | 10–12 weeks |
+| B1    | 32     | ~690 words | 12–14 weeks |
 
 A daily session: 10 min vocabulary (new + review), 15 min one topic or a practice set. Weekly: one re-read of a weak topic from the "Watch out" list.
 

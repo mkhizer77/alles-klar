@@ -79,3 +79,7 @@ One file per unit, default-exporting a `SpeakingScenario`. See `src/content/spea
 - **usefulPhrases**: 6–10 `{ de, en }` chunks the learner can say, in the register, including one repair phrase (Wie bitte? / Können Sie das wiederholen? / Was bedeutet …?).
 - **grammarFocus**: 2–5 topic ids from this unit (or earlier). **vocabFocus**: 6–10 German words or chunks from the unit's vocabulary theme (nouns with article).
 - **minTurns**: learner turns before the conversation can be wrapped up: 5 at A1, 6 at A2, 7–8 at B1.
+
+## Mock exams — `src/content/exams/<level>-<provider>-<n>.ts`
+
+Full papers in the format of the official exams. The format tables, id scheme and authoring rules are in [EXAM-GUIDE.md](EXAM-GUIDE.md); the validator checks part and item counts, audio play counts, task models and scenarios.

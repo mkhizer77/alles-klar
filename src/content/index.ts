@@ -1,4 +1,4 @@
-import type { Level, Topic, VocabSet, Word, GlossaryTerm, ReadingText, WritingTask, SpeakingScenario } from './types';
+import type { Level, Topic, VocabSet, Word, GlossaryTerm, ReadingText, WritingTask, SpeakingScenario, MockExam } from './types';
 import { curriculum } from './curriculum';
 import { glossary } from './glossary';
 
@@ -7,9 +7,25 @@ const vocabModules = import.meta.glob<{ default: VocabSet }>('./vocab/*.ts', { e
 const readingModules = import.meta.glob<{ default: ReadingText }>('./reading/*.ts', { eager: true });
 const writingModules = import.meta.glob<{ default: WritingTask }>('./writing/*.ts', { eager: true });
 const speakingModules = import.meta.glob<{ default: SpeakingScenario }>('./speaking/*.ts', { eager: true });
+const examModules = import.meta.glob<{ default: MockExam }>('./exams/*.ts', { eager: true });
 
 export const speakings: Record<string, SpeakingScenario> = {};
 for (const m of Object.values(speakingModules)) speakings[m.default.id] = m.default;
+
+// Mock exams in the format of the official B1 papers. Their speaking tasks
+// register role-plays so the AI partner can rehearse them.
+export const exams: Record<string, MockExam> = {};
+for (const m of Object.values(examModules)) {
+  exams[m.default.id] = m.default;
+  for (const s of m.default.scenarios ?? []) speakings[s.id] = s;
+}
+const providerOrder = { 'goethe-oesd': 0, telc: 1, dtz: 2 };
+export const examsForLevel = (level: Level): MockExam[] =>
+  Object.values(exams)
+    .filter((e) => e.level === level)
+    .sort((a, b) => providerOrder[a.provider] - providerOrder[b.provider] || a.id.localeCompare(b.id));
+/** The exam a role-play belongs to, if it is an exam task rather than a unit scenario. */
+export const examOfScenario = (scenarioId: string): MockExam | undefined => Object.values(exams).find((e) => e.scenarios?.some((s) => s.id === scenarioId));
 
 export const speakingForUnit = (level: Level, unit: number): SpeakingScenario | undefined => speakings[`${level.toLowerCase()}-u${unit}-speaking`];
 export const speakingsForLevel = (level: Level): SpeakingScenario[] => Object.values(speakings).filter((s) => s.level === level).sort((a, b) => a.unit - b.unit);

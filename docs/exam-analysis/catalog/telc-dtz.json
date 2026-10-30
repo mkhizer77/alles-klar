@@ -1,0 +1,1039 @@
+[
+  {
+    "source": "telc_B1_Uebungstest1.txt",
+    "provider": "telc",
+    "set": "telc Deutsch B1 / Zertifikat Deutsch, Übungstest 1 (überarbeitete Auflage 2019, 13. Aufl. 2020)",
+    "parts": [
+      {
+        "module": "lesen",
+        "part": "Teil 1",
+        "task_type": "ueberschriften-zuordnen",
+        "items": 5,
+        "text_type": "Kurzmeldungen",
+        "theme": "Short news: leisure, travel, health",
+        "domain": "culture & leisure",
+        "register": "neutral",
+        "notes": "5 press shorts (typical computer fan profile; Bahn&Bike cycling brochure; patient guide on sleep disorders; family rail discount Austria-Germany; culture interest by tourist age group) matched to 10 headlines a-j. ~60-90 words each. Key: 1 i, 2 d, 3 b, 4 f, 5 h."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 2",
+        "task_type": "mc3",
+        "items": 5,
+        "text_type": "Zeitungsartikel",
+        "theme": "Job training for disabled youth",
+        "domain": "work & career",
+        "register": "neutral",
+        "notes": "Article 'Büro-Werkstatt: Chance für behinderte Menschen' (Vienna workshop training physically disabled school leavers for office work, job placement, employer quota/Ausgleichstaxe). ~400 words. 5 MC items 6-10 on details (course content, aims, legal quota, placement rate, founder's motive). Key: 6 c, 7 c, 8 b, 9 a, 10 a."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 3",
+        "task_type": "zuordnung-anzeigen",
+        "items": 10,
+        "text_type": "Anzeigen",
+        "theme": "Munich small ads: dining, travel, courses",
+        "domain": "everyday life",
+        "register": "neutral",
+        "notes": "10 situations 11-20 to 12 ads a-l plus x (two situations have no ad: 14 last-minute flights, 19 youth club). Ads: Asian restaurant with takeaway, Italian restaurant with garden, insurance broker, travel agency USA, pub with beer garden, student flights, international Stammtisch on foreign youth, maths tutoring (3 ads), city travel agency campmobiles, speech-therapy courses, language school. Key: 11 b, 12 a, 13 d, 14 x, 15 e, 16 i, 17 k, 18 l, 19 x, 20 g."
+      },
+      {
+        "module": "sprachbausteine",
+        "part": "Teil 1",
+        "task_type": "cloze-mc",
+        "items": 10,
+        "text_type": "Brief/E-Mail",
+        "theme": "Letter about internship in France",
+        "domain": "work & career",
+        "register": "informal",
+        "notes": "Informal letter from Fritz to Karin about a three-month internship at a TV-set manufacturer in Strasbourg. ~130 words, 10 gaps with 3 options each."
+      },
+      {
+        "module": "sprachbausteine",
+        "part": "Teil 2",
+        "task_type": "cloze-wordbank",
+        "items": 10,
+        "text_type": "Brief/E-Mail",
+        "theme": "Enquiry to a holiday pension",
+        "domain": "travel & transport",
+        "register": "formal",
+        "notes": "Hotel-pension advert plus formal enquiry letter from Anton Müller (family holiday in Austria, children's programme, prices, dog, brochures). ~170 words, 10 gaps, bank of 15 words a-o."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 1",
+        "task_type": "richtig-falsch",
+        "items": 5,
+        "text_type": "Stellungnahmen",
+        "theme": "Sharing housework between partners",
+        "domain": "family & relationships",
+        "register": "informal",
+        "notes": "Radio feature 'Gleichberechtigung im Haushalt': 5 married people (3 women, 2 men) say how they split cooking, washing up, laundry, shopping, garden. Heard once. One R/F statement per speaker. Key: 41 +, 42 -, 43 -, 44 +, 45 -."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 2",
+        "task_type": "richtig-falsch",
+        "items": 10,
+        "text_type": "Interview",
+        "theme": "100-year-old sports club",
+        "domain": "culture & leisure",
+        "register": "neutral",
+        "notes": "Radio studio interview: journalist with Frau Seiffert, secretary of Turn- und Sportverein Neustadt (archives, women members since 16 years after founding, 2000 members, funding, no swimming section, trainers from own ranks). Heard twice. 10 R/F. Key: 46 +, 47 +, 48 -, 49 -, 50 -, 51 +, 52 +, 53 -, 54 -, 55 +."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 3",
+        "task_type": "richtig-falsch",
+        "items": 5,
+        "text_type": "Ansage",
+        "theme": "Everyday announcements and info",
+        "domain": "everyday life",
+        "register": "neutral",
+        "notes": "5 short texts heard twice: directions from station to an office; Zurich cinema programme; Bavarian weather report; ICE on-board announcement (restaurant, minibar); department-store summer sale advert. One R/F each. Key: 56 +, 57 -, 58 +, 59 -, 60 +."
+      },
+      {
+        "module": "schreiben",
+        "part": "Schriftlicher Ausdruck",
+        "task_type": "email-antwort-4-leitpunkte",
+        "items": 0,
+        "text_type": "Brief/E-Mail",
+        "theme": "Advising a friend visiting your country",
+        "domain": "travel & transport",
+        "register": "informal",
+        "notes": "Reply to friend Marianne's e-mail (she wants to visit your home country, asks about best time, heat, things to know). 30 min; no word count stated; must include Betreff, Anrede, Einleitung, Schluss and all 4 points."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 1",
+        "task_type": "kennenlernen",
+        "items": 0,
+        "text_type": "Gespräch",
+        "theme": "Getting to know each other",
+        "domain": "everyday life",
+        "register": "informal",
+        "notes": "Partner conversation guided by prompts: name, origin, housing, family, where German learnt, occupation, languages; examiner extras: weekend, hobbies."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 2",
+        "task_type": "ueber-ein-thema-sprechen",
+        "items": 0,
+        "text_type": "Meinungskarte",
+        "theme": "Group travel vs travelling alone",
+        "domain": "travel & transport",
+        "register": "informal",
+        "notes": "Topic 'Gruppenreisen'. A: Sabine Klostermann, 33, likes group travel (company, guide). B: Jens Mühle, 39, prefers travelling alone (fixed programme). Report, then exchange opinions and experiences."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 3",
+        "task_type": "gemeinsam-planen",
+        "items": 0,
+        "text_type": "Notizzettel",
+        "theme": "Planning a farewell party",
+        "domain": "culture & leisure",
+        "register": "informal",
+        "notes": "Plan a farewell party for German acquaintances met on holiday: when, where, food, drinks, who pays for what. Make proposals, react, agree."
+      }
+    ],
+    "sprachbausteine_items": [
+      { "item": 21, "gap_context": "wollte ich eigentlich nach Paris, ___ das hat dann leider nicht geklappt", "options_or_bank": ["aber", "denn", "sondern"], "answer": "aber", "grammar_point": "coordinating conjunction aber/denn/sondern" },
+      { "item": 22, "gap_context": "eine Stelle als Praktikant bei ___ Firma in Straßburg gefunden", "options_or_bank": ["eine", "einen", "einer"], "answer": "einer", "grammar_point": "dative feminine after bei + indefinite article" },
+      { "item": 23, "gap_context": "Dort ___ ich drei Monate geblieben", "options_or_bank": ["bin", "habe", "wurde"], "answer": "bin", "grammar_point": "Perfekt auxiliary sein with bleiben" },
+      { "item": 24, "gap_context": "Die Arbeit war sehr ___ – ich musste schon um 8.00 Uhr im Büro sein", "options_or_bank": ["anstrengend", "anstrengende", "anstrengendes"], "answer": "anstrengend", "grammar_point": "predicative adjective (no ending) after sein" },
+      { "item": 25, "gap_context": "hat mir aber ___ sehr gut gefallen", "options_or_bank": ["trotzdem", "wegen", "weshalb"], "answer": "trotzdem", "grammar_point": "concessive adverb trotzdem vs preposition/conjunction" },
+      { "item": 26, "gap_context": "Ich habe ___ dieser Zeit in verschiedenen Abteilungen gearbeitet", "options_or_bank": ["bis", "in", "nach"], "answer": "in", "grammar_point": "temporal preposition in + dative (in dieser Zeit)" },
+      { "item": 27, "gap_context": "nicht nur etwas über die Herstellung von Fernsehgeräten ___, sondern auch über den Verkauf", "options_or_bank": ["gelernt", "lernen", "lernte"], "answer": "gelernt", "grammar_point": "Perfekt participle with habe (nicht nur ... sondern auch)" },
+      { "item": 28, "gap_context": "die Kollegen, mit ___ ich am meisten zu tun hatte", "options_or_bank": ["dem", "denen", "die"], "answer": "denen", "grammar_point": "relative pronoun dative plural after preposition mit" },
+      { "item": 29, "gap_context": "zwei Wochen Urlaub bei ___ Freunden gemacht", "options_or_bank": ["meine", "meinen", "meiner"], "answer": "meinen", "grammar_point": "possessive article dative plural after bei" },
+      { "item": 30, "gap_context": "Darüber erzähle ich ___ bald mehr", "options_or_bank": ["dir", "Ihnen", "uns"], "answer": "dir", "grammar_point": "dative personal pronoun, informal du-register consistency" },
+      { "item": 31, "gap_context": "ich habe Ihre Anzeige gelesen und interessiere mich sehr ___ Ihr Angebot", "options_or_bank": ["BESONDERS", "DA", "DAFÜR", "DAMALS", "DAMIT", "DANKBAR", "DESHALB", "FÜR", "GERNE", "KÖNNTEN", "MIT", "MÜSSTEN", "SCHLIESSLICH", "WANN", "WENN"], "answer": "FÜR", "grammar_point": "verb + preposition (sich interessieren für)" },
+      { "item": 32, "gap_context": "und hätte deshalb ___ noch nähere Informationen", "options_or_bank": ["same bank a-o"], "answer": "GERNE", "grammar_point": "Konjunktiv II hätte gern(e) (polite request)" },
+      { "item": 33, "gap_context": "Meine Frau und mich interessiert ganz ___ das Freizeitprogramm für Kinder", "options_or_bank": ["same bank a-o"], "answer": "BESONDERS", "grammar_point": "focus adverb ganz besonders" },
+      { "item": 34, "gap_context": "das Freizeitprogramm für Kinder, ___ wir zwei Kinder (3 und 8 Jahre) haben", "options_or_bank": ["same bank a-o"], "answer": "DA", "grammar_point": "causal subordinating conjunction da (verb-final)" },
+      { "item": 35, "gap_context": "Gibt es Schwimm- und Tenniskurse für Kinder und ___ ja, was kosten sie?", "options_or_bank": ["same bank a-o"], "answer": "WENN", "grammar_point": "conditional wenn (elliptical 'wenn ja')" },
+      { "item": 36, "gap_context": "Wie viel ___ wir pro Woche für unsere Kinder bezahlen?", "options_or_bank": ["same bank a-o"], "answer": "MÜSSTEN", "grammar_point": "Konjunktiv II of modal müssen (polite question)" },
+      { "item": 37, "gap_context": "Und ___ noch eine letzte Frage: Wir haben einen kleinen Hund", "options_or_bank": ["same bank a-o"], "answer": "SCHLIESSLICH", "grammar_point": "text-structuring adverb schließlich" },
+      { "item": 38, "gap_context": "von dem sich meine Kinder nicht trennen können und den wir ___ auch mitnehmen müssten", "options_or_bank": ["same bank a-o"], "answer": "DESHALB", "grammar_point": "consecutive adverb deshalb" },
+      { "item": 39, "gap_context": "Bitte schreiben Sie uns so bald wie möglich, ___ wir uns bald entscheiden können", "options_or_bank": ["same bank a-o"], "answer": "DAMIT", "grammar_point": "final subordinating conjunction damit" },
+      { "item": 40, "gap_context": "Außerdem wären wir Ihnen sehr ___, wenn Sie uns einige Prospekte zusenden würden", "options_or_bank": ["same bank a-o"], "answer": "DANKBAR", "grammar_point": "adjective + dative (jemandem dankbar sein), Konjunktiv II wären/würden" }
+    ],
+    "writing_tasks": [
+      {
+        "task": "Schriftlicher Ausdruck: Antwort auf die E-Mail einer Freundin (Marianne)",
+        "text_type": "E-Mail",
+        "register": "informal",
+        "words": null,
+        "theme": "Friend wants to visit your home country",
+        "points": [
+          "welche Ausflüge Sie mit Marianne machen wollen",
+          "was die beste Jahreszeit für die Reise ist",
+          "welche Kleidung sie mitnehmen soll",
+          "wie sie sich am besten auf die Reise vorbereiten kann"
+        ]
+      }
+    ],
+    "speaking_tasks": [
+      { "task": "Teil 1", "type": "Einander kennenlernen", "theme": "Personal introduction", "prompts": ["Name", "Woher sie oder er kommt", "Wie sie oder er wohnt (Wohnung, Haus, Garten ...)", "Familie", "Wo sie oder er Deutsch gelernt hat", "Was sie oder er macht (Schule, Studium, Beruf ...)", "Sprachen (welche? wie lange? warum?)", "Zusatz: Wochenende, Hobbys"] },
+      { "task": "Teil 2", "type": "Über ein Thema sprechen", "theme": "Gruppenreisen (group travel)", "prompts": ["A: Sabine Klostermann, 33, Bürokauffrau – verreist gern in der Gruppe, neue Leute, Reiseführer", "B: Jens Mühle, 39, Physiker – reist immer allein, festes Programm in Gruppen stört"] },
+      { "task": "Teil 3", "type": "Gemeinsam etwas planen", "theme": "Abschiedsparty after holiday", "prompts": ["Wann?", "Wo?", "Essen", "Getränke", "Wer bezahlt wofür?", "..."] }
+    ],
+    "grammar_in_tested_items": [
+      "coordinating conjunctions aber/denn/sondern",
+      "dative after bei (einer Firma, meinen Freunden)",
+      "Perfekt with sein (bin geblieben) and haben (habe gelernt)",
+      "predicative adjective without ending",
+      "trotzdem vs wegen/weshalb",
+      "temporal preposition in + dative",
+      "relative pronoun dative plural (mit denen)",
+      "dative personal pronouns dir/Ihnen",
+      "verb + preposition sich interessieren für",
+      "Konjunktiv II hätte gern, müssten, wären/würden",
+      "subordinating conjunctions da, wenn, damit",
+      "adverbs besonders, schließlich, deshalb",
+      "adjective + dative dankbar"
+    ]
+  },
+  {
+    "source": "telc_B1_Mock_HU.txt",
+    "provider": "telc",
+    "set": "telc Hungary Deutsch B1, Übungstest 1 (2. Auflage 2021; order no. 5044-B00-010401). Different test content from telc Deutsch B1 Übungstest 1 and a slightly different format: Hörverstehen Teil 3 is 5 matching items (opinions a-f, heard once), Schriftlicher Ausdruck has 2 tasks in 60 min, Mündlicher Ausdruck allows 2 or 3 candidates.",
+    "parts": [
+      {
+        "module": "lesen",
+        "part": "Teil 1",
+        "task_type": "ueberschriften-zuordnen",
+        "items": 5,
+        "text_type": "Kurzmeldungen",
+        "theme": "Curious local news items",
+        "domain": "society & politics",
+        "register": "neutral",
+        "notes": "5 press shorts (world's most expensive hamburger in London; court: phone use at red light with engine off not fined; boys put sandwiches on S-Bahn tracks; driver watching DVDs at 200 km/h loses licence; jam-making course in Frankfurt) to 10 headlines. ~60-90 words each. Key: 1 h, 2 f, 3 c, 4 j, 5 g."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 2",
+        "task_type": "mc3",
+        "items": 5,
+        "text_type": "Zeitungsartikel",
+        "theme": "School leavers' plans after Abitur",
+        "domain": "education & learning",
+        "register": "neutral",
+        "notes": "Article 'Weltreise? Lieber ein Praktikum in Kuala Lumpur!' – survey of Abitur graduates from two schools (results, parties, plans: internships, Jura, FSJ, studying abroad). ~450 words. Key: 6 a, 7 c, 8 c, 9 b, 10 b."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 3",
+        "task_type": "zuordnung-anzeigen",
+        "items": 10,
+        "text_type": "Anzeigen",
+        "theme": "Frankfurt-area classifieds and listings",
+        "domain": "everyday life",
+        "register": "neutral",
+        "notes": "10 situations to 12 ads: carpet cleaning (2), animal shelter, emergency pharmacies/vets, flea market list, aquarium shop, zoo seeks pony helpers for summer, kitchen renovation, cinema programme, event listings (zoo night tour), Scandinavian furniture, dog for adoption. Two x: 14 washing machine (flea-market ad already used), 16 children's cinema party. Key: 11 d, 12 l, 13 i, 14 x, 15 f, 16 x, 17 e, 18 c, 19 b, 20 j."
+      },
+      {
+        "module": "sprachbausteine",
+        "part": "Teil 1",
+        "task_type": "cloze-mc",
+        "items": 10,
+        "text_type": "Brief/E-Mail",
+        "theme": "Theatre group going on tour",
+        "domain": "culture & leisure",
+        "register": "informal",
+        "notes": "E-mail from Sarah to former flatmate Nikolas: her Spanish theatre group tours Germany and Spain, nervous about performing in Spanish, memories of multicultural WG. ~150 words, 10 gaps x 3 options."
+      },
+      {
+        "module": "sprachbausteine",
+        "part": "Teil 2",
+        "task_type": "cloze-wordbank",
+        "items": 10,
+        "text_type": "Brief/E-Mail",
+        "theme": "Inviting friends to a song contest",
+        "domain": "culture & leisure",
+        "register": "informal",
+        "notes": "Notice 'Songwettbewerb auf der Burg Tanneck' plus e-mail from Astrid to Benny and Verena suggesting they take part. ~140 words, 10 gaps, bank of 15 words."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 1",
+        "task_type": "richtig-falsch",
+        "items": 5,
+        "text_type": "Ansage",
+        "theme": "Announcements and phone messages",
+        "domain": "travel & transport",
+        "register": "neutral",
+        "notes": "5 short texts, each with a situational lead-in, heard twice: train announcement before Basel (stay on train for Bern); radio football results; doctor's practice voicemail cancelling appointment with callback number; airport announcement (delay is for Vienna flight, not Athens); friend's voicemail changing meeting time and giving directions. Key: 41 -, 42 +, 43 -, 44 -, 45 +."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 2",
+        "task_type": "richtig-falsch",
+        "items": 10,
+        "text_type": "Interview",
+        "theme": "Founding a book-lovers' club",
+        "domain": "culture & leisure",
+        "register": "neutral",
+        "notes": "Radio 'Treffpunkt Radio' interview with bookseller Ulla Schweiger, co-founder of Verein 'Bücherwurm' (monthly book circle, author readings, children's group, 7 EUR fee, originally women-only, now 60/40, work-life balance). Heard twice. Key: 46 +, 47 -, 48 +, 49 -, 50 +, 51 -, 52 +, 53 -, 54 -, 55 -."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 3",
+        "task_type": "zuordnung-meinungen",
+        "items": 5,
+        "text_type": "Radiodiskussion",
+        "theme": "Life and technology in 20 years",
+        "domain": "technology & media",
+        "register": "neutral",
+        "notes": "Listener discussion 'Wie sieht die Zukunft in zwanzig Jahren aus?': example Monika (self-driving cars) plus Kristin (virtual university), Alex (office tech, robots), Julius (data glasses, chips), Sofie (media breaks), Ben (less social contact but paperless office). Heard once. Match 5 speakers to statements a-f. Key: 56 b, 57 a, 58 c, 59 f, 60 e."
+      },
+      {
+        "module": "schreiben",
+        "part": "Aufgabe 1",
+        "task_type": "brief-antwort-4-leitpunkte",
+        "items": 0,
+        "text_type": "Brief/E-Mail",
+        "theme": "Friend's visit with new boyfriend",
+        "domain": "family & relationships",
+        "register": "informal",
+        "notes": "Reply to letter from friend Mara (asks why you haven't written, wants to meet during car trip with new boyfriend, asks for hotel tip). Min. 100 words, date and salutation required, 4 points. Format table calls it 'halbformeller Brief' but prompt is a personal letter."
+      },
+      {
+        "module": "schreiben",
+        "part": "Aufgabe 2",
+        "task_type": "kurze-email-vorschlag",
+        "items": 0,
+        "text_type": "Brief/E-Mail",
+        "theme": "Proposing a concert visit",
+        "domain": "culture & leisure",
+        "register": "informal",
+        "notes": "Short e-mail to a friend proposing what to do at a concert and why. Min. 60 words. Both tasks together 60 min."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 1",
+        "task_type": "kennenlernen",
+        "items": 0,
+        "text_type": "Gespräch",
+        "theme": "Getting to know each other",
+        "domain": "everyday life",
+        "register": "informal",
+        "notes": "Same prompt list as telc Deutsch B1 (name, origin, housing, family, German learning, occupation, languages; extras weekend/hobbies). ca. 3 min."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 2",
+        "task_type": "ueber-ein-thema-sprechen",
+        "items": 0,
+        "text_type": "Meinungskarte",
+        "theme": "Moving out and living alone",
+        "domain": "housing",
+        "register": "informal",
+        "notes": "Topic 'Ausziehen und alleine wohnen', three cards: Lukas Bauer (18, Azubi, moved out at 18 for freedom), Jenny Waldrich (21, student, stays with parents for comfort), David Sell (20, student, had to move for university, now more independent). ca. 6 min."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 3",
+        "task_type": "gemeinsam-planen",
+        "items": 0,
+        "text_type": "Notizzettel",
+        "theme": "Planning a Zugspitze excursion",
+        "domain": "travel & transport",
+        "register": "informal",
+        "notes": "Organise a German-course trip to the Zugspitze: transport (bus/train), overnight stay, travel agency, special clothing, who does what, costs. ca. 6 min."
+      }
+    ],
+    "sprachbausteine_items": [
+      { "item": 21, "gap_context": "geht auf große Tour ___ Deutschland und Spanien mit dem Stück 'Niebla'", "options_or_bank": ["aus", "durch", "von"], "answer": "durch", "grammar_point": "local preposition durch + accusative (Tour durch)" },
+      { "item": 22, "gap_context": "und das mit so ___ bunt gemischten Gruppe aus zehn Ländern", "options_or_bank": ["eine", "einen", "einer"], "answer": "einer", "grammar_point": "dative feminine indefinite article after mit; adjective ending -en after einer" },
+      { "item": 23, "gap_context": "Du kannst ___ denken, dass ich als Nichtmuttersprachlerin sehr aufgeregt bin", "options_or_bank": ["dich", "dir", "sich"], "answer": "dir", "grammar_point": "dative reflexive pronoun (sich etwas denken), 2nd person" },
+      { "item": 24, "gap_context": "dass ich als Nichtmuttersprachlerin sehr ___ bin, dort vor spanischem Publikum zu spielen", "options_or_bank": ["aufgeregt", "aufregend", "aufzuregen"], "answer": "aufgeregt", "grammar_point": "Partizip II as adjective (aufgeregt) vs Partizip I (aufregend) vs zu-infinitive" },
+      { "item": 25, "gap_context": "sehr aufgeregt bin ..., ___ ich ja fließend und fast ohne Akzent Spanisch spreche", "options_or_bank": ["obwohl", "weil", "zwar"], "answer": "obwohl", "grammar_point": "concessive subordinating conjunction obwohl" },
+      { "item": 26, "gap_context": "___ Herbst steht vielleicht auch meine alte Wahlheimatstadt Barcelona auf dem Programm", "options_or_bank": ["Im", "In", "Während"], "answer": "Im", "grammar_point": "temporal preposition im + season (contracted article)" },
+      { "item": 27, "gap_context": "wie gerne ___ ich euch alle wiedersehen!", "options_or_bank": ["hätte", "würde", "wurde"], "answer": "würde", "grammar_point": "Konjunktiv II with würde + infinitive (wish)" },
+      { "item": 28, "gap_context": "Ohne eure Hilfe hätte ich die Sprache niemals so gut lernen ___.", "options_or_bank": ["können", "müssen", "sollen"], "answer": "können", "grammar_point": "Konjunktiv II past with modal verb (hätte ... lernen können, double infinitive)" },
+      { "item": 29, "gap_context": "das gemeinsame Kochen, die tollen Feste ... Ein bisschen ___ habe ich jetzt in der Theatergruppe wiedergefunden", "options_or_bank": ["damit", "davon", "dazu"], "answer": "davon", "grammar_point": "pronominal adverb davon (ein bisschen von etwas)" },
+      { "item": 30, "gap_context": "Ein bisschen davon habe ich jetzt in der Theatergruppe ___.", "options_or_bank": ["wiederfinden", "wiedergefunden", "wiederzufinden"], "answer": "wiedergefunden", "grammar_point": "Perfekt participle of separable verb (wiedergefunden)" },
+      { "item": 31, "gap_context": "diese kurze Notiz habe ich gestern im Internet gefunden und ___ gleich an euch beide denken", "options_or_bank": ["ALS", "BALD", "BEIDE", "DARUM", "DIE", "DURFTE", "ERST", "HÄTTE", "KENNT", "MUSSTE", "SCHON", "WÄRE", "WENN", "WISST", "ÜBERHAUPT"], "answer": "MUSSTE", "grammar_point": "Präteritum of modal müssen (musste ... denken)" },
+      { "item": 32, "gap_context": "und musste gleich an euch ___ denken", "options_or_bank": ["same bank a-o"], "answer": "BEIDE", "grammar_point": "beide after personal pronoun (an euch beide)" },
+      { "item": 33, "gap_context": "Es waren doch wunderbare Abende, ___ wir im letzten Urlaub in Griechenland verbracht haben", "options_or_bank": ["same bank a-o"], "answer": "DIE", "grammar_point": "relative pronoun accusative plural die" },
+      { "item": 34, "gap_context": "Wie ___ es, hättet ihr nicht mal Lust, bei so einem Songwettbewerb mitzumachen?", "options_or_bank": ["same bank a-o"], "answer": "WÄRE", "grammar_point": "Konjunktiv II wäre (Wie wäre es ...?) suggestion" },
+      { "item": 35, "gap_context": "Ich kenne die Burg Tanneck ___ seit meiner Kindheit", "options_or_bank": ["same bank a-o"], "answer": "SCHON", "grammar_point": "temporal particle schon + seit" },
+      { "item": 36, "gap_context": "Dieser Songwettbewerb hat ___ nichts mit Kommerz und Vermarktung zu tun", "options_or_bank": ["same bank a-o"], "answer": "ÜBERHAUPT", "grammar_point": "intensifier überhaupt nichts" },
+      { "item": 37, "gap_context": "wie man es sonst aus dem Fernsehen ___.", "options_or_bank": ["same bank a-o"], "answer": "KENNT", "grammar_point": "present tense 3rd person with impersonal man (verb kennen)" },
+      { "item": 38, "gap_context": "Es geht nur ___, Spaß zu haben und zu singen!", "options_or_bank": ["same bank a-o"], "answer": "DARUM", "grammar_point": "pronominal adverb darum + zu-infinitive (es geht darum, ... zu)" },
+      { "item": 39, "gap_context": "Schon allein die Burg ist eine Reise wert, auch ___ ihr nur den anderen Sängern zuhören wollt", "options_or_bank": ["same bank a-o"], "answer": "WENN", "grammar_point": "concessive 'auch wenn' subordinate clause" },
+      { "item": 40, "gap_context": "Lasst ___ was von euch hören!!!", "options_or_bank": ["same bank a-o"], "answer": "BALD", "grammar_point": "temporal adverb bald; imperative lasst ... hören" }
+    ],
+    "writing_tasks": [
+      {
+        "task": "Aufgabe 1: Antwort auf den Brief einer Freundin (Mara)",
+        "text_type": "Brief",
+        "register": "informal",
+        "words": 100,
+        "theme": "Friend visiting with new boyfriend; meeting place and hotel",
+        "points": [
+          "Hotel / Übernachtungsmöglichkeit",
+          "Vorschlag zum Treffen",
+          "Reaktion auf Maras neuen Freund",
+          "Warum Sie lange nicht geschrieben haben"
+        ]
+      },
+      {
+        "task": "Aufgabe 2: kurze E-Mail an Freund/in",
+        "text_type": "E-Mail",
+        "register": "informal",
+        "words": 60,
+        "theme": "Proposing what to do at a concert and why",
+        "points": [
+          "Sie wollen mit einem Freund/einer Freundin ein Konzert besuchen",
+          "schlagen Sie vor, was Sie gerne machen wollen und warum"
+        ]
+      }
+    ],
+    "speaking_tasks": [
+      { "task": "Teil 1", "type": "Kontaktaufnahme", "theme": "Personal introduction", "prompts": ["Name", "woher sie oder er kommt", "wie sie oder er wohnt", "Familie", "wo sie oder er Deutsch gelernt hat", "was sie oder er macht (Schule, Studium, Beruf)", "Sprachen (welche? wie lange? warum?)", "Zusatz: Wochenende, Hobbys"] },
+      { "task": "Teil 2", "type": "Gespräch über ein Thema", "theme": "Ausziehen und alleine wohnen", "prompts": ["A: Lukas Bauer, 18, Auszubildender – zum 18. Geburtstag ausgezogen, will auf eigenen Beinen stehen", "B: Jenny Waldrich, 21, Studentin – bleibt bei den Eltern, mehr Platz, bequemer", "C: David Sell, 20, Student – musste zum Studium umziehen, ist selbständiger geworden"] },
+      { "task": "Teil 3", "type": "Gemeinsam eine Aufgabe lösen", "theme": "Ausflug auf die Zugspitze mit dem Deutschkurs", "prompts": ["Wie reisen? Bus? Bahn?", "Übernachten?", "Im Reisebüro fragen?", "Spezielle Kleidung einpacken?", "Wer übernimmt welche Aufgabe?", "Kosten?"] }
+    ],
+    "grammar_in_tested_items": [
+      "preposition durch + accusative",
+      "dative indefinite article after mit + adjective ending",
+      "dative reflexive pronoun (sich etwas denken)",
+      "Partizip II vs Partizip I as adjective (aufgeregt/aufregend)",
+      "obwohl vs weil vs zwar",
+      "temporal im + season",
+      "Konjunktiv II würde + infinitive",
+      "Konjunktiv II past with modal: hätte ... lernen können",
+      "pronominal adverbs davon, darum (+ zu-infinitive)",
+      "Perfekt participle of separable verb",
+      "Präteritum of modal verbs (musste)",
+      "relative pronoun accusative plural die",
+      "Konjunktiv II wäre (Wie wäre es)",
+      "schon seit; überhaupt nichts; auch wenn",
+      "present tense with man"
+    ]
+  },
+  {
+    "source": "telc_B1_Schule_Uebungstest1.txt",
+    "provider": "telc",
+    "set": "telc Deutsch B1 Schule / Zertifikat Deutsch für Jugendliche, Übungstest 1 (edition 2021; order no. 5001-B00-010103)",
+    "parts": [
+      {
+        "module": "lesen",
+        "part": "Teil 1",
+        "task_type": "ueberschriften-zuordnen",
+        "items": 5,
+        "text_type": "Kurzmeldungen",
+        "theme": "Young people's lives worldwide",
+        "domain": "education & learning",
+        "register": "neutral",
+        "notes": "5 magazine shorts about children/teens: flying teachers on the Falkland Islands; girl dancer in Cape Town township; Siberian nomad children in boarding school; young news presenter in Kabul; teens at an open TV channel in Gera. ~80-100 words each, 10 headlines. Key: 1 e, 2 a, 3 g, 4 i, 5 c."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 2",
+        "task_type": "mc3",
+        "items": 5,
+        "text_type": "Zeitungsartikel",
+        "theme": "School radio-play project",
+        "domain": "education & learning",
+        "register": "neutral",
+        "notes": "Article 'Hörspiel mit Musik': 11th-grade class at Rolland-Gymnasium Dresden produces a radio play in music lessons (groups for speakers, composers, sound effects, cover; studio technician helps; students' verdict). ~550 words. Items not in text order. Key: 6 b, 7 b, 8 b, 9 a, 10 a."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 3",
+        "task_type": "zuordnung-anzeigen",
+        "items": 10,
+        "text_type": "Anzeigen",
+        "theme": "Youth offers: language trips, camps, courses",
+        "domain": "culture & leisure",
+        "register": "neutral",
+        "notes": "10 du-form situations to 12 ads: language trips for pupils, Eurocentres summer courses, TIS German courses with host family, park cinema, Euro driving licence notice, SCI international camps (age 21 for Africa), Ferien-Camp-Fun with evening programme, film casting, Lernen plus Seefeld (German + tennis/hiking), holiday driving school from 17, Gruber Bauer farm holidays ages 9-12, online Spanish course. Two x (14 Spanish film, 17 camping shop). Key: 11 g, 12 j, 13 d, 14 x, 15 a, 16 i, 17 x, 18 e, 19 k, 20 b."
+      },
+      {
+        "module": "sprachbausteine",
+        "part": "Teil 1",
+        "task_type": "cloze-mc",
+        "items": 10,
+        "text_type": "Brief/E-Mail",
+        "theme": "New e-mail address and computer virus",
+        "domain": "technology & media",
+        "register": "informal",
+        "notes": "E-mail from Boris to Pat: new free e-mail address, downloaded game with virus, brother repaired PC, tip for online games. ~120 words, 10 gaps x 3 options."
+      },
+      {
+        "module": "sprachbausteine",
+        "part": "Teil 2",
+        "task_type": "cloze-wordbank",
+        "items": 10,
+        "text_type": "Brief/E-Mail",
+        "theme": "Au-pair application letter",
+        "domain": "work & career",
+        "register": "formal",
+        "notes": "Ad 'Au-Pair-Mädchen gesucht' plus formal application letter from 16-year-old Katja Berset (Swiss schoolgirl) asking about duties, English course, pocket money. ~200 words, 10 gaps, bank of 15."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 1",
+        "task_type": "richtig-falsch",
+        "items": 5,
+        "text_type": "Stellungnahmen",
+        "theme": "Teenagers describe their rooms",
+        "domain": "everyday life",
+        "register": "informal",
+        "notes": "Youth radio show 'ZOOM': 5 teens describe their rooms (basketball posters, collector's 'museum', tidy type with tennis trophies, shared room with Metallica-fan brother, Leonardo DiCaprio fan). Heard once. Key: 41 -, 42 +, 43 +, 44 -, 45 -."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 2",
+        "task_type": "richtig-falsch",
+        "items": 10,
+        "text_type": "Interview",
+        "theme": "Rock band breaks up; record label",
+        "domain": "culture & leisure",
+        "register": "informal",
+        "notes": "Radio show 'Sounds': presenter Gabriela interviews Swiss rock musician Marco about his band's split, fan reactions, fake 'Marco heiratet' news, two years in Australia, co-owned record label and his role judging demo tapes. Swiss spelling in transcript. Heard twice. Key: 46 +, 47 +, 48 -, 49 +, 50 -, 51 -, 52 -, 53 +, 54 +, 55 +."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 3",
+        "task_type": "richtig-falsch",
+        "items": 5,
+        "text_type": "Ansage",
+        "theme": "Youth-oriented announcements",
+        "domain": "everyday life",
+        "register": "informal",
+        "notes": "5 short texts heard twice, with du-form lead-ins: voicemail from Oliver inviting Celine over while parents are out; U-Bahn diversion announcement (bus from Hauptmarkt); radio info on leisure centre reopening (disco from 6 pm); youth radio on entering discos under 18; department-store youth department announcement (jeans 25.90). Key: 56 +, 57 +, 58 -, 59 -, 60 -."
+      },
+      {
+        "module": "schreiben",
+        "part": "Schriftlicher Ausdruck",
+        "task_type": "email-antwort-4-leitpunkte",
+        "items": 0,
+        "text_type": "Brief/E-Mail",
+        "theme": "Reply to pen-friend about school and German",
+        "domain": "education & learning",
+        "register": "informal",
+        "notes": "Reply to Maria, a Portuguese acquaintance living in Austria for a year (school, favourite subject chemistry, asks what's new and how your German is). 30 min, no word count, 4 points; order of points, introduction, ending, salutation required."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 1",
+        "task_type": "kennenlernen",
+        "items": 0,
+        "text_type": "Gespräch",
+        "theme": "Getting to know each other",
+        "domain": "everyday life",
+        "register": "informal",
+        "notes": "du-form; same prompt list as adult version (name, origin, housing, family, German learning, school/study/job, languages; extras weekend/hobbies)."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 2",
+        "task_type": "ueber-ein-thema-sprechen",
+        "items": 0,
+        "text_type": "Meinungskarte",
+        "theme": "Future plans: family and career",
+        "domain": "family & relationships",
+        "register": "informal",
+        "notes": "Topic 'Zukunftspläne'. A: Jana (16): marry a flexible partner, live abroad, Matura then medicine. B: Max (17): three children, stay at home for a while, environmental protection job with good pay."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 3",
+        "task_type": "gemeinsam-planen",
+        "items": 0,
+        "text_type": "Notizzettel",
+        "theme": "Planning a class trip",
+        "domain": "travel & transport",
+        "register": "informal",
+        "notes": "Plan a Klassenfahrt with class and teacher: where (city/country), when/how long, accommodation, costs, evening programme."
+      }
+    ],
+    "sprachbausteine_items": [
+      { "item": 21, "gap_context": "Die habe ich mir bei www.xmg.net gratis ___.", "options_or_bank": ["eingerichtet", "einrichten", "einrichtet"], "answer": "eingerichtet", "grammar_point": "Perfekt participle of separable verb (habe ... eingerichtet)" },
+      { "item": 22, "gap_context": "Vielen Dank für ___ Tipp!", "options_or_bank": ["dein", "deinem", "deinen"], "answer": "deinen", "grammar_point": "possessive article accusative masculine after für" },
+      { "item": 23, "gap_context": "mein Bruder ist total sauer auf ___.", "options_or_bank": ["mein", "mich", "mir"], "answer": "mich", "grammar_point": "adjective + preposition sauer auf + accusative pronoun" },
+      { "item": 24, "gap_context": "Am Wochenende fand ich ___ Internet ein Computerspiel", "options_or_bank": ["am", "im", "um"], "answer": "im", "grammar_point": "fixed local expression im Internet (in + dem)" },
+      { "item": 25, "gap_context": "Das ist ärgerlich, vor allem ___ meine MP3-Dateien weg sind.", "options_or_bank": ["damit", "denn", "weil"], "answer": "weil", "grammar_point": "causal subordinating conjunction weil (verb-final) vs denn" },
+      { "item": 26, "gap_context": "Mein Bruder ___ die ganze Nacht lang gebraucht, um den Computer wieder fit zu kriegen.", "options_or_bank": ["hat", "ist", "wird"], "answer": "hat", "grammar_point": "Perfekt auxiliary haben (hat gebraucht)" },
+      { "item": 27, "gap_context": "Jetzt soll ich nichts mehr herunterladen, ___ ihn vorher zu fragen.", "options_or_bank": ["außer", "ohne", "statt"], "answer": "ohne", "grammar_point": "infinitive construction ohne ... zu" },
+      { "item": 28, "gap_context": "bei www.spiele.org gibt es ___ Spiele, die man nicht herunterladen muss.", "options_or_bank": ["viel", "viele", "vielen"], "answer": "viele", "grammar_point": "quantifier viele + plural noun (accusative, no article)" },
+      { "item": 29, "gap_context": "___ dir die Seite doch auch mal an und schreib mir", "options_or_bank": ["Schau", "Schauen", "Schaust"], "answer": "Schau", "grammar_point": "du-imperative of separable reflexive verb (sich etwas anschauen)" },
+      { "item": 30, "gap_context": "und schreib mir, ___ du davon hältst.", "options_or_bank": ["was", "welches", "wie"], "answer": "was", "grammar_point": "indirect question with was (was hältst du davon)" },
+      { "item": 31, "gap_context": "Die Arbeit interessiert mich und ___ würde ich gerne mehr darüber wissen.", "options_or_bank": ["DAMIT", "DENEN", "DENN", "DESHALB", "DIE", "GANZ", "IM", "MUSS", "OB", "ODER", "UM", "VIEL", "WÄHREND", "WAS", "WÜRDE"], "answer": "DESHALB", "grammar_point": "consecutive adverb deshalb with inversion" },
+      { "item": 32, "gap_context": "Da das Schuljahr ___ Juni endet, könnte ich am 1. Juli in Frankfurt sein.", "options_or_bank": ["same bank a-o"], "answer": "IM", "grammar_point": "temporal preposition im + month" },
+      { "item": 33, "gap_context": "Zu Hause habe ich ___ zu tun. Ich muss meiner Mutter in der Küche helfen", "options_or_bank": ["same bank a-o"], "answer": "VIEL", "grammar_point": "quantifier viel (uncountable) in 'viel zu tun haben'" },
+      { "item": 34, "gap_context": "zwei jüngere Geschwister von 10 und 12 Jahren, ___ ich bei den Hausaufgaben helfen muss.", "options_or_bank": ["same bank a-o"], "answer": "DENEN", "grammar_point": "relative pronoun dative plural (helfen + dative)" },
+      { "item": 35, "gap_context": "Ich ___ gern ein Jahr in Frankfurt bleiben, bis ich mit der Lehre beginne.", "options_or_bank": ["same bank a-o"], "answer": "WÜRDE", "grammar_point": "Konjunktiv II würde + gern + infinitive (wish)" },
+      { "item": 36, "gap_context": "___ der Zeit in Frankfurt würde ich gern mein Englisch verbessern", "options_or_bank": ["same bank a-o"], "answer": "WÄHREND", "grammar_point": "temporal preposition während + genitive" },
+      { "item": 37, "gap_context": "Bitte schreiben Sie mir, ___ ich für einen solchen Kurs frei bekommen kann.", "options_or_bank": ["same bank a-o"], "answer": "OB", "grammar_point": "indirect yes/no question with ob" },
+      { "item": 38, "gap_context": "wie mein Tagesplan aussieht und ___ ich machen muss.", "options_or_bank": ["same bank a-o"], "answer": "WAS", "grammar_point": "indirect question with was" },
+      { "item": 39, "gap_context": "Ich schicke Ihnen mit diesem Brief ein Foto von mir, ___ Sie wissen, wie ich aussehe.", "options_or_bank": ["same bank a-o"], "answer": "DAMIT", "grammar_point": "final subordinating conjunction damit" },
+      { "item": 40, "gap_context": "Natürlich kann ich auch nach Frankfurt kommen, ___ mich vorzustellen.", "options_or_bank": ["same bank a-o"], "answer": "UM", "grammar_point": "final infinitive construction um ... zu" }
+    ],
+    "writing_tasks": [
+      {
+        "task": "Schriftlicher Ausdruck: Antwort auf die E-Mail einer Bekannten (Maria)",
+        "text_type": "E-Mail",
+        "register": "informal",
+        "words": null,
+        "theme": "Pen-friend in Austria: school, German, news",
+        "points": [
+          "dein Lieblingsfach/deine Lieblingsfächer – warum?",
+          "deine Fortschritte beim Deutschlernen",
+          "Maria in deine Stadt einladen",
+          "was du im letzten Jahr gemacht hast"
+        ]
+      }
+    ],
+    "speaking_tasks": [
+      { "task": "Teil 1", "type": "Kontaktaufnahme", "theme": "Personal introduction", "prompts": ["Name", "woher sie oder er kommt", "wie sie oder er wohnt", "Familie", "wo sie oder er Deutsch gelernt hat", "was sie oder er macht (Schule, Studium, Beruf)", "Sprachen (welche? wie lange? warum?)", "Zusatz: Wochenende, Hobbys"] },
+      { "task": "Teil 2", "type": "Gespräch über ein Thema", "theme": "Zukunftspläne", "prompts": ["A: Jana, 16, Schülerin – heiraten, flexibler Partner, in verschiedenen Ländern leben, Matura, Medizin studieren", "B: Max, 17, Schüler – drei Kinder, Haushalt und Familie, Umweltschutz, Job mit gutem Verdienst"] },
+      { "task": "Teil 3", "type": "Gemeinsam eine Aufgabe lösen", "theme": "Klassenfahrt planen", "prompts": ["Wohin? (Stadt/Land ...)", "Wann/Wie lange?", "Übernachten", "Kosten", "Abendprogramm", "..."] }
+    ],
+    "grammar_in_tested_items": [
+      "Perfekt participles of separable verbs; auxiliary haben",
+      "possessive article accusative (deinen) after für",
+      "adjective + preposition sauer auf + accusative",
+      "im Internet, im Juni (contracted prepositions)",
+      "weil vs denn vs damit",
+      "ohne ... zu and um ... zu infinitive constructions",
+      "quantifiers viel / viele",
+      "du-imperative of separable verb",
+      "indirect questions with was and ob",
+      "consecutive adverb deshalb",
+      "relative pronoun dative plural denen",
+      "Konjunktiv II würde gern",
+      "während + genitive",
+      "damit final clause"
+    ]
+  },
+  {
+    "source": "telc_A2B1_AufJedenFall.txt",
+    "provider": "telc",
+    "set": "telc Deutsch A2·B1 Übungstest (coursebook version, 'Auf jeden Fall'); partial extract: task pages and blank answer sheet only, no Lösungen and no Hörtexte",
+    "parts": [
+      {
+        "module": "lesen",
+        "part": "Teil 1",
+        "task_type": "zuordnung-anzeigen",
+        "items": 5,
+        "text_type": "Anzeigen",
+        "theme": "Holiday offers online",
+        "domain": "travel & transport",
+        "register": "neutral",
+        "notes": "5 situations (1-5) to 8 web ads a-h plus x (one situation has no ad): language trip for teens, Rome city hotel, Baltic holiday house, fitness weekend Black Forest, Italy bus tour, Danube cruise, hiking-gear shop, North Sea hotel. ~40 words per ad. Example given (parents' cruise = f). No key in extract."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 2",
+        "task_type": "richtig-falsch + mc3",
+        "items": 4,
+        "text_type": "Brief/E-Mail",
+        "theme": "Company outing and sports offer",
+        "domain": "work & career",
+        "register": "formal",
+        "notes": "Internal e-mail from Organisationsteam about Betriebsausflug to the Black Forest (date, bus, programme, registration) and new after-work sports courses. ~150 words. Item 6 R/F (global), items 7-9 MC3. No key."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 3",
+        "task_type": "zuordnung-betreffzeilen",
+        "items": 4,
+        "text_type": "Brief/E-Mail",
+        "theme": "Workplace e-mails: appointments, complaints",
+        "domain": "work & career",
+        "register": "formal",
+        "notes": "4 short e-mails (10-13: repair appointment moved; complaint about new copier; invitation to software training; friend asks help assembling desk) matched to 8 subject lines a-h (Beschwerde, Bestellung, Bitte um Hilfe, Datum für Anmeldung, Krankmeldung, Neuer Termin, Probleme mit PC-Programm, Verspätete Lieferung). ~50-70 words each. No key."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 4",
+        "task_type": "mc3",
+        "items": 5,
+        "text_type": "Zeitungsartikel",
+        "theme": "Young family moves to the countryside",
+        "domain": "housing",
+        "register": "neutral",
+        "notes": "Article 'Leben auf dem Land': Marina's family leaves the city (public transport, grandparents nearby, housing prices, home office). ~280 words. Items 14-18 MC3. No key."
+      },
+      {
+        "module": "sprachbausteine",
+        "part": "Sprachbausteine",
+        "task_type": "cloze-mc",
+        "items": 10,
+        "text_type": "Brief/E-Mail",
+        "theme": "Invitation to a job interview",
+        "domain": "work & career",
+        "register": "formal",
+        "notes": "Formal letter from HR (Secuva GmbH) inviting Frau Kraskova to an interview: date, reception, duration, documents to bring. ~130 words, 10 gaps (19-28) x 3 options. No key in extract; answers below are inferred from the text."
+      },
+      {
+        "module": "schreiben",
+        "part": "Lesen und Schreiben",
+        "task_type": "richtig-falsch + mc2 + email-antwort",
+        "items": 2,
+        "text_type": "Brief/E-Mail",
+        "theme": "Helping a friend move house",
+        "domain": "everyday life",
+        "register": "informal",
+        "notes": "E-mail from Nina to friends asking for help carrying furniture, boxes/newspapers, used washing machine and dishwasher. Item 29 R/F, item 30 MC2, item 31: write a reply e-mail answering her questions (salutation and closing required, no word count). Scored items 2 plus productive task."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 1",
+        "task_type": "zuordnung-informationen",
+        "items": 5,
+        "text_type": "Gespräch",
+        "theme": "Where to do things in town",
+        "domain": "everyday life",
+        "register": "informal",
+        "notes": "Conversation heard twice; match activities 32-36 (cheap shopping, jogging, dentist, eating out, playground; example theatre) to 9 places a-i (river, market square, lake, Rosenpark, old town, Rheinstraße, library, by the station, by the town hall). No transcript or key."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 2",
+        "task_type": "richtig-falsch",
+        "items": 5,
+        "text_type": "Gespräch",
+        "theme": "Planning trainees' first day",
+        "domain": "work & career",
+        "register": "neutral",
+        "notes": "Workplace conversation (Paul, Yasmin) about the first day for new Azubis: introductions, exam, safety, programme. Heard once. Items 37-41 R/F. No transcript or key."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 3",
+        "task_type": "richtig-falsch",
+        "items": 5,
+        "text_type": "Ansage",
+        "theme": "Public announcements",
+        "domain": "everyday life",
+        "register": "neutral",
+        "notes": "5 short texts heard twice (festival stage concert, handbag sale, weather, language-school office hours, regional train route). Items 42-46 R/F. No transcript or key."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 4",
+        "task_type": "zuordnung-meinungen",
+        "items": 5,
+        "text_type": "Stellungnahmen",
+        "theme": "Garden or balcony?",
+        "domain": "housing",
+        "register": "informal",
+        "notes": "5 opinions (Igor, Sarah, Hiba, Alexander, Laura; example Jussef) heard once, matched to statements a-f about gardens vs balconies, children playing, vegetables, work. Items 47-51. No transcript or key."
+      },
+      {
+        "module": "hoeren",
+        "part": "Hören und Schreiben",
+        "task_type": "notiz-ergaenzen",
+        "items": 5,
+        "text_type": "Sprachnachricht",
+        "theme": "Voice messages: pick-ups, appointments",
+        "domain": "everyday life",
+        "register": "informal",
+        "notes": "5 voice messages heard twice; complete a telephone note (52-56: where to collect children, hotel callback number, from when Kindergarten place, museum meeting day, yoga start time; example bookshop). Short written answers. No transcript or key."
+      },
+      {
+        "module": "schreiben",
+        "part": "Schreiben",
+        "task_type": "kurznachricht-antwort",
+        "items": 0,
+        "text_type": "Kurznachricht",
+        "theme": "Chat about yesterday's German class",
+        "domain": "education & learning",
+        "register": "informal",
+        "notes": "Item 57: reply to a chat message ('Warst du gestern im Deutschkurs? Ich war leider krank. Okay, was habt ihr denn gemacht?') with more than one word; question word varies (wann, was, warum nicht, welches, wie lange, wo, wohin). 10 min."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 1",
+        "task_type": "sich-vorstellen + anschlussfragen",
+        "items": 0,
+        "text_type": "Gespräch",
+        "theme": "Self-introduction and follow-up questions",
+        "domain": "everyday life",
+        "register": "informal",
+        "notes": "1A introduce yourself (name, country, languages, residence, family, job, hobby; ca. 1.5 min). 1B answer follow-up questions (ca. 1 min). Grammar hints given: A2 questions in Perfekt, wann/seit wann, warum, wo, sequence, Konjunktiv II; B1 questions in Präteritum, Konjunktiv II, Passiv, modal verbs present and Präteritum, age when something was done (als/wann), warum."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 2",
+        "task_type": "gemeinsam-planen",
+        "items": 0,
+        "text_type": "Notizzettel",
+        "theme": "Furnishing the office kitchen",
+        "domain": "work & career",
+        "register": "neutral",
+        "notes": "You and partner work in a company; plan the new office kitchen: furniture/appliances, decoration, colours, where to buy. ca. 5 min; make and justify proposals, agree."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 3",
+        "task_type": "meinung-begruenden",
+        "items": 0,
+        "text_type": "Frage",
+        "theme": "Vegetarian or meat?",
+        "domain": "health & food",
+        "register": "neutral",
+        "notes": "'Vegetarisch oder mit Fleisch?' – give and justify your preference with examples. Possible A2 questions (vegetarian dishes you know, meat in home country) and B1 questions (is vegetarian healthier, which is cheaper)."
+      }
+    ],
+    "sprachbausteine_items": [
+      { "item": 19, "gap_context": "wir freuen uns, Ihnen mitteilen zu können, ___ Ihre Bewerbung unser Interesse geweckt hat", "options_or_bank": ["damit", "dass", "weil"], "answer": "dass (inferred, no key)", "grammar_point": "dass-clause after mitteilen" },
+      { "item": 20, "gap_context": "Wir laden Sie hiermit ___ einem Vorstellungsgespräch ein.", "options_or_bank": ["an", "bei", "zu"], "answer": "zu (inferred, no key)", "grammar_point": "verb + preposition einladen zu + dative" },
+      { "item": 21, "gap_context": "Das Gespräch findet ___ Dienstag, 12. September, um 10:00 Uhr statt.", "options_or_bank": ["ab", "am", "um"], "answer": "am (inferred, no key)", "grammar_point": "temporal preposition am + weekday/date" },
+      { "item": 22, "gap_context": "Bitte melden Sie ___ an der Rezeption bei Herrn Klausen an", "options_or_bank": ["dich", "sich", "uns"], "answer": "sich (inferred, no key)", "grammar_point": "reflexive pronoun with Sie-form (sich anmelden)" },
+      { "item": 23, "gap_context": "melden Sie sich an der Rezeption an, ___ Sie ankommen.", "options_or_bank": ["als", "ob", "wenn"], "answer": "wenn (inferred, no key)", "grammar_point": "temporal conjunction wenn (present/future) vs als (past)" },
+      { "item": 24, "gap_context": "Das Gespräch wird etwa eine Stunde ___.", "options_or_bank": ["bleiben", "dauern", "führen"], "answer": "dauern (inferred, no key)", "grammar_point": "lexical verb choice (dauern) in Futur I" },
+      { "item": 25, "gap_context": "Bitte bringen Sie zu dem Termin auch ___ Zeugnisse im Original mit.", "options_or_bank": ["deine", "Ihre", "ihre"], "answer": "Ihre (inferred, no key)", "grammar_point": "formal possessive Ihre (capitalised) vs ihre/deine" },
+      { "item": 26, "gap_context": "Bitte bringen Sie ... Zeugnisse im Original ___.", "options_or_bank": ["an", "bei", "mit"], "answer": "mit (inferred, no key)", "grammar_point": "separable verb prefix (mitbringen) in sentence bracket" },
+      { "item": 27, "gap_context": "damit wir einen anderen Termin vereinbaren ___.", "options_or_bank": ["können", "müssen", "wollen"], "answer": "können (inferred, no key)", "grammar_point": "modal verb in damit-clause (können)" },
+      { "item": 28, "gap_context": "Wir freuen uns ___, Sie persönlich kennenzulernen.", "options_or_bank": ["dafür", "damit", "darauf"], "answer": "darauf (inferred, no key)", "grammar_point": "pronominal adverb with verb + preposition (sich freuen auf -> darauf, zu-infinitive)" }
+    ],
+    "writing_tasks": [
+      {
+        "task": "Lesen und Schreiben, item 31: Antwort-E-Mail an Nina",
+        "text_type": "E-Mail",
+        "register": "informal",
+        "words": null,
+        "theme": "Helping a friend with her move",
+        "points": [
+          "Beantworten Sie die Fragen aus der E-Mail (beim Möbeltragen helfen? Kisten/Zeitungen? gebrauchte Waschmaschine/Spülmaschine?)",
+          "Anrede und Gruß nicht vergessen"
+        ]
+      },
+      {
+        "task": "Schreiben, item 57: Antwort auf eine Kurznachricht",
+        "text_type": "Kurznachricht/Chat",
+        "register": "informal",
+        "words": null,
+        "theme": "What was done in yesterday's German class",
+        "points": [
+          "Antworten Sie auf 'Okay, was habt ihr denn gemacht?'",
+          "Schreiben Sie mehr als ein Wort"
+        ]
+      }
+    ],
+    "speaking_tasks": [
+      { "task": "Teil 1", "type": "Sich vorstellen (1A) und Anschlussfragen beantworten (1B)", "theme": "Personal introduction", "prompts": ["Name", "Land", "Sprachen", "Wohnort", "Familie", "Beruf", "Hobby", "1B: Fragen im Perfekt/Präteritum, Konjunktiv II, Passiv, Modalverben, wann/seit wann/als, warum"] },
+      { "task": "Teil 2", "type": "Gemeinsam etwas planen", "theme": "Neue Büroküche einrichten", "prompts": ["Möbel und Geräte?", "Dekoration?", "Farben?", "Wo kaufen?"] },
+      { "task": "Teil 3", "type": "Meinung begründen", "theme": "Vegetarisch oder mit Fleisch?", "prompts": ["Was mögen/möchten Sie lieber? Warum?", "A2: Welche vegetarischen Gerichte kennen Sie? Essen die Menschen in Ihrem Herkunftsland viel Fleisch?", "B1: Ist eine vegetarische Ernährung gesünder? Was ist günstiger, mit oder ohne Fleisch?"] }
+    ],
+    "grammar_in_tested_items": [
+      "dass-clause",
+      "verb + preposition: einladen zu, sich freuen auf (darauf + zu-infinitive)",
+      "temporal am + date",
+      "reflexive pronoun sich (Sie-form)",
+      "wenn vs als vs ob",
+      "Futur I with werden + dauern",
+      "formal possessive Ihre",
+      "separable verb mitbringen",
+      "modal verb können in damit-clause",
+      "speaking hints: Perfekt, Präteritum, Konjunktiv II, Passiv, modal verbs, als/wann questions"
+    ]
+  },
+  {
+    "source": "DTZ_Modelltest_Klett.txt",
+    "provider": "dtz",
+    "set": "Deutsch-Test für Zuwanderer A2-B1, Modelltest (Klett-Langenscheidt 2013, Rodi/Dengler, with telc)",
+    "parts": [
+      {
+        "module": "hoeren",
+        "part": "Teil 1",
+        "task_type": "mc3",
+        "items": 4,
+        "text_type": "Ansage",
+        "theme": "Phone messages from businesses",
+        "domain": "bureaucracy & authorities",
+        "register": "formal",
+        "notes": "4 answering-machine messages (example insurance; garage about paying repair invoice and reporting to insurance; class teacher asks parents to come to consultation; gas company asks to read meter; travel agency about cancelled flight). ~60 words each, heard once. Items 1-4: 'Was soll X tun?' MC3. Key: 1 b, 2 a, 3 a, 4 c."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 2",
+        "task_type": "mc3",
+        "items": 5,
+        "text_type": "Radiomeldung",
+        "theme": "Radio: contest, horoscope, weather, traffic",
+        "domain": "technology & media",
+        "register": "neutral",
+        "notes": "5 radio announcements (concert ticket giveaway, horoscope, weather with first snow, carnival parade parking advice, traffic report with jam on A3). Items 5-9 MC3. Key: 5 c, 6 c, 7 b, 8 c, 9 a."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 3",
+        "task_type": "richtig-falsch + mc3",
+        "items": 8,
+        "text_type": "Gespräch",
+        "theme": "Favours at work and among neighbours",
+        "domain": "everyday life",
+        "register": "neutral",
+        "notes": "4 dialogues, each with one R/F (relationship of speakers) and one MC3 (what should X do): boss asks Herr Hamann to work at the weekend; neighbour Frau Knauer asks Herr Förster to empty letterbox; Melanie and Leo (Russian course party, bring DVD); Margit and Susanne (trip to Sardinia by night train). Items 10-17. Key: 10 richtig, 11 a, 12 falsch, 13 a, 14 richtig, 15 b, 16 falsch, 17 c."
+      },
+      {
+        "module": "hoeren",
+        "part": "Teil 4",
+        "task_type": "zuordnung-meinungen",
+        "items": 3,
+        "text_type": "Stellungnahmen",
+        "theme": "What matters for staying healthy",
+        "domain": "health & food",
+        "register": "informal",
+        "notes": "Radio survey 'Was finden Sie wichtig für die Gesundheit?': example (exercise) plus 3 speakers (no smoking/little alcohol; health comes with happiness; regular check-ups) matched to statements a-f. Items 18-20. Key: 18 c, 19 e, 20 a."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 1",
+        "task_type": "mc3-wegweiser",
+        "items": 5,
+        "text_type": "Wegweiser",
+        "theme": "Finding the right office at the town hall",
+        "domain": "bureaucracy & authorities",
+        "register": "formal",
+        "notes": "Rathaus information board (rooms 11-23 with staff and responsibilities: Fundbüro, KFZ-Zulassung, Geburten/Urkunden, An-/Abmeldung, Aufenthaltserlaubnis, Kinderbetreuung, Hundesteuer). Items 21-25: which room (a, b, or 'anderes Zimmer'). Directory text partly garbled in extract. Key: 21 a, 22 c, 23 b, 24 a, 25 b."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 2",
+        "task_type": "zuordnung-anzeigen",
+        "items": 5,
+        "text_type": "Anzeigen",
+        "theme": "Adult education and course offers",
+        "domain": "education & learning",
+        "register": "neutral",
+        "notes": "5 situations 26-30 to 8 ads a-h plus x (28 daughter wants to give tutoring: no ad): PC-Welt platform, book magazine, tutoring institute, university lecture series on German history (free), language institute seeks teachers, Weiterbildung courses incl. e-mail, VHS Bildungsprämie, Lernstudio ABC (native-speaker teachers, evening courses). Key: 26 c, 27 h, 28 x, 29 d, 30 a."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 3",
+        "task_type": "richtig-falsch + mc3",
+        "items": 6,
+        "text_type": "Brief/E-Mail / Zeitungsmeldung",
+        "theme": "Official letters: tickets, school, insurance",
+        "domain": "bureaucracy & authorities",
+        "register": "formal",
+        "notes": "3 texts, each with one R/F and one MC3: Nordhausen news item on free loan tickets for low-income families; letter from primary school about reading programme (password, consent form); dental insurance letter (60% cost coverage, hand plan to dentist). ~100-130 words each. Items 31-36. Key: 31 falsch, 32 c, 33 falsch, 34 b, 35 richtig, 36 a."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 4",
+        "task_type": "richtig-falsch",
+        "items": 3,
+        "text_type": "Anleitung",
+        "theme": "Using the new answering machine",
+        "domain": "technology & media",
+        "register": "formal",
+        "notes": "Instruction leaflet for a phone-line answering machine (automatic activation, switching off, remote retrieval with PIN, deleting, free SMS notification). ~250 words. Items 37-39 R/F. Key: 37 richtig, 38 falsch, 39 falsch."
+      },
+      {
+        "module": "lesen",
+        "part": "Teil 5",
+        "task_type": "cloze-mc",
+        "items": 6,
+        "text_type": "Brief/E-Mail",
+        "theme": "Cancelling a BahnCard subscription",
+        "domain": "consumption & money",
+        "register": "formal",
+        "notes": "Formal cancellation letter to DB BahnCard-Service (example gap 0 = der). ~60 words, 6 gaps 40-45 x 3 options. Key: 40 b, 41 b, 42 a, 43 a, 44 c, 45 b."
+      },
+      {
+        "module": "schreiben",
+        "part": "Schreiben",
+        "task_type": "brief-wahl-A-oder-B-4-leitpunkte",
+        "items": 0,
+        "text_type": "Brief/E-Mail",
+        "theme": "Housewarming reply or heating complaint",
+        "domain": "housing",
+        "register": "informal (A) / formal (B)",
+        "notes": "Choose A (reply to former neighbours' invitation to housewarming party; informal) or B (letter to landlord about broken heating, unreachable by phone; formal). 4 points each, salutation and closing required, no word count ('Schreiben Sie möglichst viel'). Model answers given (~90-110 words)."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 1",
+        "task_type": "ueber-sich-sprechen",
+        "items": 0,
+        "text_type": "Gespräch",
+        "theme": "Personal introduction",
+        "domain": "everyday life",
+        "register": "neutral",
+        "notes": "Examiner: 'Würden Sie sich bitte vorstellen?' Prompts: Name, Geburtsort, Wohnort, Arbeit/Beruf, Familie, Sprachen."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 2",
+        "task_type": "bildbeschreibung + ueber-erfahrungen-sprechen",
+        "items": 0,
+        "text_type": "Foto",
+        "theme": "Computers in everyday life",
+        "domain": "technology & media",
+        "register": "neutral",
+        "notes": "2A describe a magazine photo (what do you see, what situation; photos not in extract). 2B talk about 'Computer': own experience, pros/cons, examiner questions (Haben Sie einen Computer? Wozu? Vorteile/Nachteile? Machen Computerspiele abhängig?)."
+      },
+      {
+        "module": "sprechen",
+        "part": "Teil 3",
+        "task_type": "gemeinsam-planen",
+        "items": 0,
+        "text_type": "Notizzettel",
+        "theme": "Colleague's 30th birthday party",
+        "domain": "work & career",
+        "register": "neutral",
+        "notes": "You and partner work in a small firm; plan an after-work party for a colleague's 30th: where, present, food, drinks, whom to invite."
+      }
+    ],
+    "sprachbausteine_items": [
+      { "item": 40, "gap_context": "___ geehrte Damen und Herren,", "options_or_bank": ["Meine", "Sehr", "Viel"], "answer": "Sehr", "grammar_point": "formal salutation formula 'Sehr geehrte Damen und Herren'" },
+      { "item": 41, "gap_context": "ich besitze ___ Juli 2009 eine BahnCard 25.", "options_or_bank": ["bis", "seit", "von"], "answer": "seit", "grammar_point": "temporal preposition seit + present tense" },
+      { "item": 42, "gap_context": "Deshalb ___ ich mein Abonnement der Bahncard fristgerecht zum 01.07.2010 kündigen.", "options_or_bank": ["möchte", "wünsche", "würde"], "answer": "möchte", "grammar_point": "modal verb möchte + infinitive (polite intention) vs würde/wünsche" },
+      { "item": 43, "gap_context": "Bitte schicken Sie mir ___ neue BahnCard, sondern bestätigen Sie mir diese Kündigung", "options_or_bank": ["keine", "nicht", "nichts"], "answer": "keine", "grammar_point": "negation with kein- before a noun (keine ... sondern)" },
+      { "item": 44, "gap_context": "Bitte schicken Sie mir keine neue BahnCard, ___ bestätigen Sie mir diese Kündigung schriftlich.", "options_or_bank": ["aber", "denn", "sondern"], "answer": "sondern", "grammar_point": "conjunction sondern after negation (nicht/kein ... sondern)" },
+      { "item": 45, "gap_context": "Bei Fragen erreichen Sie ___ telefonisch unter 0 69 – 7 44 89 33.", "options_or_bank": ["mein", "mich", "mir"], "answer": "mich", "grammar_point": "accusative personal pronoun as object of erreichen" }
+    ],
+    "writing_tasks": [
+      {
+        "task": "Aufgabe A: Antwort auf die Einladung früherer Nachbarn (Fest in der neuen Wohnung)",
+        "text_type": "Brief/E-Mail",
+        "register": "informal",
+        "words": null,
+        "theme": "Accepting a housewarming invitation",
+        "points": [
+          "Grund des Schreibens",
+          "Geschenk",
+          "wer kommt noch",
+          "Bitte um Wegbeschreibung"
+        ]
+      },
+      {
+        "task": "Aufgabe B: Brief an den Vermieter wegen kaputter Heizung",
+        "text_type": "Brief",
+        "register": "formal",
+        "words": null,
+        "theme": "Asking landlord to repair the heating",
+        "points": [
+          "Grund des Schreibens",
+          "Problem (wie lange schon)",
+          "Termin für Reparatur",
+          "wie Sie erreichbar sind"
+        ]
+      }
+    ],
+    "speaking_tasks": [
+      { "task": "Teil 1", "type": "Über sich sprechen", "theme": "Personal introduction", "prompts": ["Name", "Geburtsort", "Wohnort", "Arbeit / Beruf", "Familie", "Sprachen"] },
+      { "task": "Teil 2", "type": "Über Erfahrungen sprechen (2A Foto beschreiben, 2B Gespräch)", "theme": "Computer", "prompts": ["Was sehen Sie auf dem Foto? Was für eine Situation zeigt dieses Bild?", "Haben Sie einen Computer? Warum/Warum nicht?", "Wozu benutzen Sie den Computer?", "Welche Vorteile und Nachteile haben Computer?", "Man sagt, dass manche Computerspiele abhängig machen. Was meinen Sie dazu?"] },
+      { "task": "Teil 3", "type": "Gemeinsam etwas planen", "theme": "Fest zum 30. Geburtstag einer Kollegin", "prompts": ["Wo feiern?", "Geschenk?", "Essen?", "Getränke?", "Wen einladen?", "...?"] }
+    ],
+    "grammar_in_tested_items": [
+      "formal letter salutation (Sehr geehrte ...)",
+      "seit + present tense",
+      "modal verb möchte for intention",
+      "negation kein- vs nicht vs nichts",
+      "sondern after negation",
+      "accusative personal pronoun mich"
+    ]
+  }
+]

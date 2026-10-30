@@ -14,6 +14,7 @@ import Vocab from './pages/Vocab';
 import VocabSession from './pages/VocabSession';
 import Tests from './pages/Tests';
 import TestRun from './pages/TestRun';
+import ExamRun, { ExamOverview } from './pages/ExamRun';
 import SettingsPage from './pages/Settings';
 import Reading from './pages/Reading';
 import Listening from './pages/Listening';
@@ -79,6 +80,8 @@ export default function App() {
         <Route path="/vocab/session" element={<VocabSession />} />
         <Route path="/tests" element={<Tests />} />
         <Route path="/tests/:level" element={<TestRun />} />
+        <Route path="/exam/:id" element={<ExamOverview />} />
+        <Route path="/exam/:id/:skill" element={<ExamRun />} />
         <Route path="/settings" element={<SettingsPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

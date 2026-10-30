@@ -71,6 +71,23 @@ export interface TestAttempt {
 }
 export const EMPTY_TESTS: TestAttempt[] = [];
 
+/** One module of a mock exam, taken once. Productive modules store the self-assessed share of criteria met. */
+export interface ExamAttempt {
+  id: string;
+  examId: string;
+  skill: string;
+  date: string;
+  points: number;
+  maxPoints: number;
+  percent: number;
+  passed: boolean;
+  /** right/total per part id */
+  byPart: Record<string, [number, number]>;
+  /** learner's texts for writing / notes for speaking, by task id */
+  texts?: Record<string, string>;
+}
+export const EMPTY_EXAM_ATTEMPTS: ExamAttempt[] = [];
+
 export const keys = {
   settings: 'settings',
   topic: (id: string) => `topic:${id}`,
@@ -81,4 +98,5 @@ export const keys = {
   listening: (level: string, unit: number) => `listen:${level.toLowerCase()}-u${unit}`,
   writing: (id: string) => `writing:${id}`,
   speaking: (id: string) => `speaking:${id}`,
+  exam: (id: string) => `exam:${id}`,
 };

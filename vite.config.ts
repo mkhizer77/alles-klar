@@ -54,6 +54,7 @@ export default defineConfig({
       output: {
         // one chunk per level of course content, so a content change only re-downloads that level
         manualChunks(id) {
+          if (id.includes('/src/content/exams/')) return 'content-exams';
           const m = /\/src\/content\/(?:\w+\/)?(a1|a2|b1)[/-]/.exec(id);
           if (m) return `content-${m[1]}`;
           if (id.includes('@anthropic-ai/sdk')) return 'partner-sdk';

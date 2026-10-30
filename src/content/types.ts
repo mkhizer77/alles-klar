@@ -253,3 +253,102 @@ export interface SpeakingScenario {
   /** learner turns before the conversation can be wrapped up */
   minTurns: number;
 }
+
+/* ------------------------------------------------------------------ */
+/* Mock exams: full papers in the format of the official B1 exams.    */
+/* ------------------------------------------------------------------ */
+
+export type ExamProvider = 'goethe-oesd' | 'telc' | 'dtz';
+export type ExamSkill = 'lesen' | 'hoeren' | 'sprachbausteine' | 'schreiben' | 'sprechen';
+
+/** A reading text, an advert, a notice … shown next to the items. `label` is the letter for adverts (A–J). */
+export interface ExamText {
+  label?: string;
+  title?: string;
+  /** markdown paragraphs */
+  body: string[];
+}
+
+/** A listening text spoken by the device's German voice. Dialogues: one line per turn, "Name: text". */
+export interface ExamAudio {
+  id: string;
+  /** shown to the learner, e.g. "Text 1 · Nachricht auf dem Anrufbeantworter" */
+  label: string;
+  /** the script; lines starting with "Name:" are spoken as turns */
+  text: string;
+  /** how often the real exam plays it */
+  plays: 1 | 2;
+}
+
+/** A writing or speaking task with a model and the official criteria turned into a self-check list. */
+export interface ExamTask {
+  id: string;
+  title: string;
+  /** the instructions in German, as on the paper */
+  instructions: string;
+  /** the material the task refers to (the email you received, the forum post, the slides …), markdown */
+  situation?: string[];
+  /** Leitpunkte / Folien in German */
+  points: string[];
+  /** target length "circa" */
+  words?: number;
+  minutes?: number;
+  /** model answer paragraphs (writing) or a worked outline with example sentences (speaking) */
+  model: string[];
+  /** English notes on why the model works */
+  modelNotes: string[];
+  /** self-check items in English, derived from the official assessment criteria */
+  criteria: string[];
+  /** speaking: a SpeakingScenario id to rehearse this task with the AI partner */
+  scenarioId?: string;
+}
+
+export interface ExamPart {
+  id: string;
+  skill: ExamSkill;
+  /** "Teil 1", "Aufgabe 2" … */
+  title: string;
+  /** what the part tests, in English (e.g. "Reading correspondence: a blog post, 6 true/false items") */
+  goal: string;
+  /** instructions in German, as on the paper */
+  instructions: string;
+  /** working time suggested on the paper */
+  minutes?: number;
+  texts?: ExamText[];
+  audio?: ExamAudio[];
+  /** scored items: mc (Richtig/Falsch, a/b/c, Ja/Nein, letters for matching) or fill (word-bank cloze) */
+  items: Exercise[];
+  tasks?: ExamTask[];
+  /** course topic ids the part draws on; used in the report to point the learner to what to revise */
+  topicIds: string[];
+  /** points per correct item in the official scoring (default 1) */
+  pointsPerItem?: number;
+}
+
+export interface ExamModule {
+  skill: ExamSkill;
+  title: string;
+  minutes: number;
+  /** maximum points in the official scoring of this module */
+  maxPoints: number;
+  /** percent needed to pass this module (or the written part it belongs to) */
+  passPercent: number;
+  parts: ExamPart[];
+}
+
+export interface MockExam {
+  id: string;
+  level: Level;
+  provider: ExamProvider;
+  title: string;
+  subtitle: string;
+  /** English description of the exam and what to expect */
+  intro: string;
+  /** the official paper this mock follows */
+  modelledOn: string;
+  /** how the official exam is passed, in English */
+  passRule: string;
+  modules: ExamModule[];
+  /** role-plays for the speaking tasks, run by the AI partner; ids are referenced from ExamTask.scenarioId */
+  scenarios?: SpeakingScenario[];
+}
