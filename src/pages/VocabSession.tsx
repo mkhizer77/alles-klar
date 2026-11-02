@@ -1,6 +1,7 @@
 import { useMemo, useRef, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router';
 import { vocabSets, wordsForLevel, words as allWords } from '../content';
+import { myWords, MY_WORDS_SET } from '../lib/my-words';
 import type { Word, Level } from '../content/types';
 import { store } from '../lib/store';
 import { keys } from '../lib/models';
@@ -30,9 +31,10 @@ function buildQueue(setId: string | null, level: Level | null): Item[] {
   const settings = getSettings();
   const today = todayStr();
   let pool: Word[];
-  if (setId) pool = vocabSets.find((s) => s.id === setId)?.words ?? [];
-  else if (level) pool = wordsForLevel(level);
-  else pool = (['A1', 'A2', 'B1'] as Level[]).flatMap(wordsForLevel);
+  if (setId === MY_WORDS_SET) pool = myWords();
+  else if (setId) pool = vocabSets.find((s) => s.id === setId)?.words ?? [];
+  else if (level) pool = [...wordsForLevel(level), ...myWords().filter((w) => w.level === level)];
+  else pool = [...(['A1', 'A2', 'B1'] as Level[]).flatMap(wordsForLevel), ...myWords()];
 
   if (setId) {
     // practise a specific list: all of its words, due or not
@@ -178,6 +180,7 @@ function WordBack({ w }: { w: Word }) {
           er/sie {w.forms.er} · {w.forms.prat} · {w.forms.perfekt}
         </div>
       )}
+      {w.example.de && (
       <div className="mt-3 p-3 rounded-xl bg-surface-2 text-left">
         <div className="flex items-start gap-2">
           {canSpeak() && (
@@ -189,6 +192,7 @@ function WordBack({ w }: { w: Word }) {
           </div>
         </div>
       </div>
+      )}
     </div>
   );
 }

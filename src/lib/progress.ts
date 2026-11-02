@@ -5,6 +5,7 @@ import { todayStr, addDays } from './date';
 import { topics, orderedTopicIds, wordsForLevel } from '../content';
 import type { Level } from '../content/types';
 import { isDue, type Card } from './srs';
+import { myWords } from './my-words';
 
 export function getSettings(): Settings {
   return { ...DEFAULT_SETTINGS, ...store.get<Partial<Settings>>(keys.settings, {}) };
@@ -63,8 +64,9 @@ export function vocabStats(level?: Level) {
   let due = 0;
   let newToday = 0;
   let total = 0;
+  const own = myWords();
   for (const l of levels) {
-    for (const w of wordsForLevel(l)) {
+    for (const w of [...wordsForLevel(l), ...own.filter((x) => x.level === l)]) {
       total++;
       const card = store.get<Card | null>(keys.word(w.id), null);
       if (!card) continue;

@@ -58,3 +58,9 @@ export const AlertIcon = ({ size = 18, ...p }: P) => (
 export const LockIcon = ({ size = 18, ...p }: P) => (
   <svg {...base(size, p)}><rect x="4" y="11" width="16" height="10" rx="2" /><path d="M8 11V7a4 4 0 0 1 8 0v4" /></svg>
 );
+export const PlusIcon = ({ size = 20, ...p }: P) => (
+  <svg {...base(size, p)}><path d="M12 5v14M5 12h14" /></svg>
+);
+export const TrashIcon = ({ size = 18, ...p }: P) => (
+  <svg {...base(size, p)}><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14" /></svg>
+);
