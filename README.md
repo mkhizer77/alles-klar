@@ -2,6 +2,10 @@
 
 A self-paced German course from A1 to B1 that runs as a web app and installs on your phone. Grammar concepts explained in easy English, searchable at any time; a daily vocabulary routine with spaced repetition; interactive exercises with instant or end-of-set feedback; and a test for each level so you know where you stand.
 
+Live at https://mkhizer77.github.io/alles-klar/ — or scan the flyer:
+
+<p align="center"><a href="https://mkhizer77.github.io/alles-klar/"><img src="docs/alles-klar-flyer.png" alt="Alles Klar flyer with a QR code that opens the app" width="420"></a></p>
+
 ## What is inside
 
 | Area | What you get |
