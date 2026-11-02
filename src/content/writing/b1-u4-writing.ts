@@ -23,7 +23,7 @@ const task: WritingTask = {
     { de: 'aber / außerdem', en: 'but / besides', role: 'connector' },
     { de: 'Liebe Grüße', en: 'Best wishes', role: 'closing' },
   ],
-  grammarFocus: ['b1-09-konjunktiv-2-irreal', 'b1-11-als-ob', 'a2-20-konjunktiv-2-polite', 'a2-04-subordinate-clauses-weil-dass'],
+  grammarFocus: ['b1-09-konjunktiv-2-irreal', 'b1-11-als-ob', 'b1-09b-irreal-wishes-advice', 'a2-20-konjunktiv-2-polite', 'a2-20b-wishes-suggestions', 'a2-04-subordinate-clauses-weil-dass'],
   mustUse: [
     { label: 'Konjunktiv II forms (wäre, hätte, könnte, würde …)', pattern: '\\b(wäre|wären|wärst|hätte|hätten|hättest|könnte|könnten|könntest|müsste|müsstest|sollte|solltest|würde|würden|würdest)\\b', min: 4 },
     { label: 'an irreal wenn-clause with Konjunktiv II (Wenn ich … wäre / Wenn du … würdest)', pattern: '\\bwenn\\b[^.!?]*\\b(wäre|wärst|wären|hätte|hättest|hätten|würde|würdest|würden|könnte|könntest|könnten)\\b', min: 2 },

@@ -4,75 +4,87 @@ const topic: Topic = {
   id: 'a1-25-dative-prepositions',
   level: 'A1',
   unit: 5,
-  order: 25,
+  order: 29,
   title: 'Dative prepositions: aus, bei, mit, nach, seit, von, zu',
   germanTerm: 'Präpositionen mit Dativ',
   tags: ['prepositions', 'dative', 'cases'],
   summary: 'Seven very common prepositions – aus, bei, mit, nach, seit, von, zu – are always followed by the Dative.',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'Seven prepositions that always take the Dative',
+      text: `
+Just as *durch, für, gegen, ohne, um* always take the Accusative, these seven **always** take the **Dative** (*Dativ*):
 
-Just as *durch, für, gegen, ohne, um* always take the Accusative, there is a group of prepositions that **always** take the **Dative** (*Dativ*). The seven most important ones at A1 are:
+- **aus** – from (origin), out of
+- **bei** – at (a person's place, a company)
+- **mit** – with, by (transport)
+- **nach** – to (cities, countries), after
+- **seit** – since, for (time still going on)
+- **von** – from, of
+- **zu** – to (people, places)
 
-| preposition | meaning | example |
-|---|---|---|
-| **aus** | from (origin), out of | Ich komme **aus der** Schweiz. |
-| **bei** | at (a person's place, a company), near | Sie wohnt **bei ihren** Eltern. |
-| **mit** | with, by (transport) | Er fährt **mit dem** Bus. |
-| **nach** | to (cities, countries), after | Wir fliegen **nach** Spanien. / **nach dem** Essen |
-| **seit** | since, for (a time still going on) | Ich lerne **seit einem** Jahr Deutsch. |
-| **von** | from, of, by | Das Geschenk ist **von meiner** Oma. |
-| **zu** | to (people, places), for (occasions) | Ich gehe **zum** Arzt. |
-
-Many learners remember them in a row that can be sung to a simple tune: *aus, bei, mit, nach, seit, von, zu*. Fix the list in your memory; it never changes.
-
-### How it works
-
-The noun after these prepositions takes the Dative article:
+Learn them as one row: *aus, bei, mit, nach, seit, von, zu*. The list never changes.
+`,
+      examples: [
+        { de: 'Ich komme aus der Türkei.', en: 'I come from Turkey. (aus + Dative: der)' },
+        { de: 'Er fährt mit dem Bus.', en: 'He goes by bus. (mit + Dative: dem)' },
+        { de: 'Das ist ein Brief von meiner Tante.', en: 'This is a letter from my aunt. (von + Dative: meiner)' },
+      ],
+    },
+    {
+      title: 'The noun after them takes the Dative',
+      text: `
+After these seven words you use the Dative forms you already know: **dem, der, dem, den + -n**, and **einem, einer, einem** or **meinem, meiner, meinem, meinen**.
 
 | | masculine | feminine | neuter | plural |
 |---|---|---|---|---|
-| mit + the | mit **dem** Mann | mit **der** Frau | mit **dem** Kind | mit **den** Kinder**n** |
-| mit + a | mit **einem** Mann | mit **einer** Frau | mit **einem** Kind | mit – Kinder**n** |
-| mit + my | mit **meinem** Mann | mit **meiner** Frau | mit **meinem** Kind | mit **meinen** Kinder**n** |
-
-### Contractions
-
-Some of these prepositions merge with **dem** or **der** so often that the short form is the normal one:
-
-- bei + dem → **beim** (beim Arzt – at the doctor's)
-- von + dem → **vom** (vom Bahnhof – from the station)
-- zu + dem → **zum** (zum Supermarkt – to the supermarket)
-- zu + der → **zur** (zur Schule – to school)
-
-### Meanings to watch
-
-**nach vs zu** (both mean "to"):
-- **nach** for cities, countries and directions with no article: *nach Berlin, nach Italien, nach Hause* (home), *nach links*.
-- **zu** for people, shops and buildings: *zu Anna, zum Arzt, zur Post, zu Hause* (at home).
-
-Note the fixed pair: **nach Hause** = going home, **zu Hause** = being at home.
-
-**aus vs von** (both mean "from"):
-- **aus** for where you come from, or out of a container: *aus Polen, aus der Flasche*.
-- **von** for a person or a starting point: *von meiner Mutter, von hier bis dort*.
-
-**seit** = since / for, used with the **present tense** when something started in the past and is still true: *Ich wohne seit drei Jahren hier.* (I have lived here for three years.) Do not use *für* here.
-
-**bei** = at someone's place or workplace: *bei Lena* (at Lena's), *bei Siemens* (at Siemens), *beim Zahnarzt*.
-
-### Why it matters
-
-These seven words appear in almost every German conversation: how you travel (*mit dem Zug*), where you are from (*aus Indien*), who something is from (*von Tom*), where you are going (*zur Arbeit*). If you learn the list and the Dative forms together, you remove one of the biggest sources of article errors at A1 in one go. The contrasting Accusative list from unit 4 and the two-way prepositions in unit 6 then fall into place.
+| mit + the | mit **dem** Mann | mit **der** Frau | mit **dem** Kind | mit **den** Kindern |
+| mit + my | mit **meinem** Mann | mit **meiner** Frau | mit **meinem** Kind | mit **meinen** Kindern |
 `,
-  examples: [
-    { de: 'Ich komme aus der Türkei.', en: 'I come from Turkey. (aus + feminine Dative: der)' },
-    { de: 'Wir fahren mit dem Zug nach München.', en: 'We travel by train to Munich. (mit dem; nach + city)' },
-    { de: 'Sie wohnt noch bei ihren Eltern.', en: 'She still lives with her parents. (bei + plural Dative: ihren)' },
-    { de: 'Ich gehe zum Arzt.', en: 'I am going to the doctor. (zu + dem = zum)' },
-    { de: 'Er arbeitet seit einem Monat hier.', en: 'He has been working here for a month. (seit + present tense)' },
-    { de: 'Das ist ein Brief von meiner Tante.', en: 'This is a letter from my aunt. (von + feminine: meiner)' },
-    { de: 'Nach dem Kurs gehe ich nach Hause.', en: 'After the course I go home. (nach dem Kurs; nach Hause)' },
+      examples: [
+        { de: 'Wir fahren mit dem Zug nach München.', en: 'We travel by train to Munich. (mit dem)' },
+        { de: 'Sie wohnt noch bei ihren Eltern.', en: 'She still lives with her parents. (bei ihren + plural)' },
+        { de: 'Er lernt seit einem Jahr Deutsch.', en: 'He has been learning German for a year. (seit einem)' },
+        { de: 'Das Geschenk ist von einer Freundin.', en: 'The present is from a friend. (von einer)' },
+      ],
+    },
+    {
+      title: 'The short forms beim, vom, zum, zur',
+      text: `
+Some of these prepositions merge with **dem** or **der** so often that the short form is the normal one: bei + dem → **beim**, von + dem → **vom**, zu + dem → **zum**, zu + der → **zur**. These are standard German, not slang; *zu dem Arzt* sounds stiff.
+`,
+      examples: [
+        { de: 'Ich gehe zum Arzt.', en: 'I am going to the doctor. (zu dem = zum)' },
+        { de: 'Sie geht zur Schule.', en: 'She goes to school. (zu der = zur)' },
+        { de: 'Er ist beim Zahnarzt.', en: 'He is at the dentist. (bei dem = beim)' },
+        { de: 'Wir kommen vom Bahnhof.', en: 'We are coming from the station. (von dem = vom)' },
+      ],
+    },
+    {
+      title: 'nach or zu for "to"?',
+      text: `
+Both mean "to". Use **nach** for cities, countries and directions with no article: *nach Berlin, nach Italien, nach links*. Use **zu** for people, shops and buildings: *zu Anna, zum Arzt, zur Post*.
+
+A fixed pair: **nach Hause** = going home, **zu Hause** = being at home.
+`,
+      examples: [
+        { de: 'Wir fliegen nach Spanien.', en: 'We fly to Spain. (country: nach)' },
+        { de: 'Ich gehe heute zu Anna.', en: "I am going to Anna's today. (person: zu)" },
+        { de: 'Nach dem Kurs gehe ich nach Hause.', en: 'After the course I go home. (nach Hause = going home)' },
+        { de: 'Ich bin heute zu Hause.', en: 'I am at home today. (zu Hause = being at home)' },
+      ],
+    },
+    {
+      title: 'seit goes with the present tense',
+      text: `
+**seit** means "since" or "for" when something started in the past and is **still true**. German uses the **present tense** with it: *Ich wohne seit drei Jahren hier* = I have lived here for three years. Do not use *für* here.
+`,
+      examples: [
+        { de: 'Ich wohne seit drei Jahren hier.', en: 'I have lived here for three years. (present tense + seit)' },
+        { de: 'Er arbeitet seit einem Monat hier.', en: 'He has been working here for a month.' },
+        { de: 'Seit wann lernst du Deutsch?', en: 'Since when have you been learning German?' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-24-dative', note: 'These prepositions use the Dative articles dem, der, dem, den learned in the previous topic.' },
@@ -85,7 +97,7 @@ These seven words appear in almost every German conversation: how you travel (*m
     '**nach Hause** (going home) vs **zu Hause** (at home): *Ich gehe nach Hause. Ich bin zu Hause.*',
     'Countries with an article use **in** for "to", not nach: *in die Schweiz, in die Türkei, in die USA*. Only article-less countries take nach (*nach Deutschland*).',
     '**mit** for transport always takes the article: *mit dem Auto, mit der Bahn*, never *mit Auto*. But *zu Fuß* (on foot) has no article.',
-    'The contractions **beim, vom, zum, zur** are standard, not slang. *zu dem Arzt* sounds stiff; say *zum Arzt*.',
+    '**aus** vs **von**, both "from": *aus* for where you come from or out of a container (*aus Polen, aus der Flasche*); *von* for a person or a starting point (*von meiner Mutter*).',
   ],
   exercises: [
     {

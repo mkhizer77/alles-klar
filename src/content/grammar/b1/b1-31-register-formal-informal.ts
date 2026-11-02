@@ -4,74 +4,113 @@ const topic: Topic = {
   id: 'b1-31-register-formal-informal',
   level: 'B1',
   unit: 10,
-  order: 31,
+  order: 42,
   title: 'Formal vs informal register: emails, complaints, applications',
   germanTerm: 'Register, Schreiben B1',
   tags: ['writing', 'register', 'formal', 'emails', 'letters'],
-  summary: 'Register is the level of formality you choose: informal German (du, Hallo, Liebe Grüße) for friends, formal German (Sie, Sehr geehrte, Mit freundlichen Grüßen) for offices, complaints and job applications.',
-  explanation: `
-### What register is
+  summary: 'Register is how formal your language is: du, Hallo and Liebe Grüße for friends; Sie, Sehr geehrte and Mit freundlichen Grüßen for offices, complaints and applications. Never mix the two in one text.',
+  steps: [
+    {
+      title: 'What register is',
+      text: `
+**Register** (*Register*) means how formal your language is. In German the choice is very visible: **du** or **Sie**, *Hallo* or *Sehr geehrte*, *Tschüss* or *Mit freundlichen Grüßen*.
 
-**Register** (*Register*) means how formal your language is. In German the choice is very visible: *du* or *Sie*, *Hallo* or *Sehr geehrte*, *Tschüss* or *Mit freundlichen Grüßen*. Mixing the two – a formal salutation with a chatty ending – is a typical B1 error and costs points in the writing part of the exam, where you must write **one informal and one formal text**.
+In the exam you write **one informal and one formal text**. Mixing the two, a formal salutation with a chatty ending, is a typical B1 error and costs points.
+`,
+      examples: [
+        { de: 'Hallo Anna, danke für deine Nachricht!', en: 'Hi Anna, thanks for your message! (informal: du)' },
+        { de: 'Sehr geehrte Frau Müller, vielen Dank für Ihre E-Mail.', en: 'Dear Ms Müller, thank you for your email. (formal: Sie)' },
+      ],
+    },
+    {
+      title: 'Salutation and sign-off',
+      text: `
+| | Informal (du) | Formal (Sie) |
+|---|---|---|
+| Known name | Hallo Anna, / Liebe Anna, / Lieber Tom, | Sehr geehrte Frau Müller, / Sehr geehrter Herr Schmidt, |
+| Unknown | Hallo zusammen, | Sehr geehrte Damen und Herren, |
+| Closing line | Melde dich bald! / Bis bald! | Ich freue mich auf Ihre Antwort. |
+| Sign-off | Liebe Grüße / Viele Grüße | Mit freundlichen Grüßen |
 
-### Informal vs formal: the key phrases
-
+After the salutation comes a **comma**, and the next line starts with a **small letter**.
+`,
+      examples: [
+        { de: 'Lieber Tom, wie geht es dir?', en: 'Dear Tom, how are you? (informal, small letter after the comma)' },
+        { de: 'Sehr geehrter Herr Schmidt, vielen Dank für Ihre E-Mail.', en: 'Dear Mr Schmidt, thank you for your email. (geehrter for a man)' },
+        { de: 'Melde dich bald! Liebe Grüße, Tom', en: 'Get in touch soon! Best wishes, Tom (informal sign-off)' },
+        { de: 'Ich freue mich auf Ihre Antwort. Mit freundlichen Grüßen', en: 'I look forward to your reply. Kind regards (formal sign-off)' },
+      ],
+    },
+    {
+      title: 'Reasons and requests in the middle',
+      text: `
 | Function | Informal (du) | Formal (Sie) |
 |---|---|---|
-| Salutation (known name) | Hallo Anna, / Liebe Anna, / Lieber Tom, | Sehr geehrte Frau Müller, / Sehr geehrter Herr Schmidt, |
-| Salutation (unknown) | Hallo zusammen, | Sehr geehrte Damen und Herren, |
-| Opening | Wie geht es dir? / Danke für deine Nachricht. | Vielen Dank für Ihre E-Mail. / Ich schreibe Ihnen, weil … |
-| Reason for writing | Ich wollte dich fragen, ob … | Ich möchte mich nach … erkundigen. / Hiermit … |
+| Opening | Danke für deine Nachricht. | Vielen Dank für Ihre E-Mail. |
+| Reason | Ich wollte dich fragen, ob … | Ich schreibe Ihnen, weil … / Ich möchte mich nach … erkundigen. |
 | Request | Kannst du mir helfen? | Könnten Sie mir bitte helfen? / Ich bitte Sie, … |
 | Suggestion | Wollen wir uns treffen? | Ich würde vorschlagen, dass … |
-| Closing line | Melde dich bald! / Bis bald! | Ich freue mich auf Ihre Antwort. / Für Rückfragen stehe ich Ihnen gerne zur Verfügung. |
-| Sign-off | Liebe Grüße / Viele Grüße / Bis dann | Mit freundlichen Grüßen |
-
-After the salutation there is a **comma**, and the next line starts with a **small letter**: *Sehr geehrte Frau Müller, vielen Dank für …*
-
-### What makes a text formal
-
-1. **Sie, Ihnen, Ihr** – always capitalised.
-2. **Konjunktiv II** for politeness: *Könnten Sie …?*, *Ich würde mich freuen, wenn …*, *Wäre es möglich, …?*
-3. **Noun style**: *die Lieferung*, *die Bestellung*, *eine Rückmeldung* instead of *dass Sie liefern*.
-4. **No slang, no abbreviations, no emojis**: not *echt super*, *krass*, *LG*.
+`,
+      examples: [
+        { de: 'Kannst du mir helfen?', en: 'Can you help me? (informal request)' },
+        { de: 'Könnten Sie mir bitte helfen?', en: 'Could you please help me? (formal request, Konjunktiv II)' },
+        { de: 'Ich wollte dich fragen, ob du Zeit hast.', en: 'I wanted to ask you whether you have time. (informal reason)' },
+        { de: 'Ich möchte mich nach dem Kurs erkundigen.', en: 'I would like to enquire about the course. (formal reason)' },
+      ],
+    },
+    {
+      title: 'What makes a text formal',
+      text: `
+1. **Sie, Ihnen, Ihr**, always capitalised.
+2. **Konjunktiv II** for politeness: *Könnten Sie …?*, *Wäre es möglich, …?*, *Ich würde mich freuen, wenn …*
+3. **Noun style**: *die Lieferung*, *eine Rückmeldung* instead of *dass Sie liefern*.
+4. **No slang, abbreviations or emojis**: not *echt super*, *krass*, *LG*.
 5. **Full sentences** with connectors: *daher, außerdem, allerdings*.
+`,
+      examples: [
+        { de: 'Wäre es möglich, den Termin zu verschieben?', en: 'Would it be possible to move the appointment? (Konjunktiv II)' },
+        { de: 'Ich würde mich über eine Rückmeldung freuen.', en: 'I would be glad to receive a reply. (noun style: Rückmeldung)' },
+        { de: 'Für Rückfragen stehe ich Ihnen gerne zur Verfügung.', en: 'I am happy to answer any questions. (formal closing line)' },
+      ],
+    },
+    {
+      title: 'A complaint',
+      text: `
+A complaint (*eine Beschwerde*) follows five fixed moves:
 
-### Two formal text types for B1
-
-**A complaint** (*eine Beschwerde*):
-
-| Step | Phrase |
+| Move | Phrase |
 |---|---|
 | Reason | Ich schreibe Ihnen, weil ich mit … nicht zufrieden bin. |
 | Problem | Leider musste ich feststellen, dass … |
 | Demand | Ich bitte Sie, … / Ich erwarte, dass … |
 | Deadline | … bis zum 15. Mai. |
 | Closing | Ich hoffe auf eine schnelle Lösung. |
+`,
+      examples: [
+        { de: 'Ich schreibe Ihnen, weil ich mit der Lieferung nicht zufrieden bin.', en: 'I am writing to you because I am not satisfied with the delivery. (reason)' },
+        { de: 'Leider musste ich feststellen, dass die Ware beschädigt war.', en: 'Unfortunately I had to find that the goods were damaged. (problem)' },
+        { de: 'Ich bitte Sie, mir das Geld bis zum 15. Mai zurückzuzahlen.', en: 'I ask you to refund the money by 15 May. (demand + deadline)' },
+      ],
+    },
+    {
+      title: 'A job application',
+      text: `
+A job application (*eine Bewerbung*) has its own five moves:
 
-**A job application** (*eine Bewerbung*):
-
-| Step | Phrase |
+| Move | Phrase |
 |---|---|
 | Reference | Ich habe Ihre Anzeige auf … gelesen. |
 | Application | Hiermit bewerbe ich mich um die Stelle als … |
 | Qualifications | Ich habe … Jahre Erfahrung als … / Ich spreche … |
 | Motivation | Die Stelle interessiert mich, weil … |
 | Closing | Über eine Einladung zu einem Vorstellungsgespräch würde ich mich sehr freuen. |
-
-### Why it matters
-
-In real life, the formal register opens doors: landlords, employers and authorities expect it. In the exam, Schreiben Teil 1 is an informal email to a friend and Teil 2 or 3 a formal message (a complaint or a request). Knowing a fixed set of phrases for each register lets you write the frame automatically and spend your energy on the content.
 `,
-  examples: [
-    { de: 'Hallo Anna, danke für deine Nachricht!', en: 'Hi Anna, thanks for your message! (informal: du, no capital after the comma)' },
-    { de: 'Sehr geehrte Damen und Herren, ich schreibe Ihnen, weil …', en: 'Dear Sir or Madam, I am writing to you because … (formal: unknown recipient)' },
-    { de: 'Könnten Sie mir bitte die Unterlagen zuschicken?', en: 'Could you please send me the documents? (Konjunktiv II for politeness)' },
-    { de: 'Leider musste ich feststellen, dass die Ware beschädigt war.', en: 'Unfortunately I had to find that the goods were damaged. (complaint)' },
-    { de: 'Hiermit bewerbe ich mich um die Stelle als Verkäuferin.', en: 'I hereby apply for the position of sales assistant. (application)' },
-    { de: 'Über eine Einladung zu einem Vorstellungsgespräch würde ich mich sehr freuen.', en: 'I would be very pleased to be invited to an interview.' },
-    { de: 'Für Rückfragen stehe ich Ihnen gerne zur Verfügung.', en: 'I am happy to answer any questions. (formal closing line)' },
-    { de: 'Melde dich bald! Liebe Grüße, Tom', en: 'Get in touch soon! Best wishes, Tom (informal sign-off)' },
+      examples: [
+        { de: 'Ich habe Ihre Anzeige im Internet gelesen.', en: 'I read your advertisement on the internet. (reference)' },
+        { de: 'Hiermit bewerbe ich mich um die Stelle als Verkäuferin.', en: 'I hereby apply for the position of sales assistant. (application)' },
+        { de: 'Über eine Einladung zu einem Vorstellungsgespräch würde ich mich sehr freuen.', en: 'I would be very pleased to be invited to an interview. (closing)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-02-greetings', note: 'The du / Sie choice is the root of the two registers.' },
@@ -79,13 +118,14 @@ In real life, the formal register opens doors: landlords, employers and authorit
     { topicId: 'a2-31-reading-writing-email', note: 'The semi-formal email from A2 is extended into full complaints and applications.' },
     { topicId: 'a2-20-konjunktiv-2-polite', note: 'Könnten Sie, Ich würde mich freuen and Wäre es möglich are the polite Konjunktiv II forms every formal text needs.' },
     { topicId: 'b1-25-noun-verb-combinations', note: 'Formal texts use noun style: zur Verfügung stehen, eine Entscheidung treffen.' },
+    { topicId: 'b1-32-opinions-speaking', note: 'In the speaking exam the same choice applies: du with your partner, Sie with the examiners.' },
   ],
   edgeCases: [
-    'Never mix registers: *Sehr geehrte Frau Müller, … Liebe Grüße* is wrong. Formal salutation → *Mit freundlichen Grüßen*.',
-    '*Sehr geehrte* for a woman, *Sehr geehrter* for a man: the adjective ending changes. *Sehr geehrte Damen und Herren* is plural.',
+    'Never mix registers: *Sehr geehrte Frau Müller, … Liebe Grüße* is wrong. Formal salutation → **Mit freundlichen Grüßen**.',
+    '**Sehr geehrte** for a woman, **Sehr geehrter** for a man: the adjective ending changes. *Sehr geehrte Damen und Herren* is plural.',
     'After the salutation comma, continue with a **small** letter unless the word is a noun or *Sie*: *Sehr geehrter Herr Schmidt, vielen Dank …*',
-    '*Ihr / Ihre / Ihnen* (formal "your / you") are **always capitalised**. *dein / dir* are written small in the new spelling (capitalising them is also accepted in letters).',
-    '*Hochachtungsvoll* is an old-fashioned sign-off that sounds cold today. Use *Mit freundlichen Grüßen*.',
+    '**Ihr / Ihre / Ihnen** (formal "your / you") are always capitalised. *dein / dir* are written small in the new spelling (capitalising them in letters is also accepted).',
+    '**Hochachtungsvoll** is an old-fashioned sign-off that sounds cold today. Use *Mit freundlichen Grüßen*.',
   ],
   exercises: [
     {

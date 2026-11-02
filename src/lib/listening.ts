@@ -1,7 +1,7 @@
 // Builds dictation sets from sentences the learner has already met: topic
 // examples and vocabulary example sentences of a unit (or a whole level).
 import type { Level, ListenExercise, Example } from '../content/types';
-import { levelOf, topics, vocabSets } from '../content';
+import { levelOf, topics, topicExamples, vocabSets } from '../content';
 import { shuffle, seededRandom } from './check';
 
 const MAX_WORDS = 12;
@@ -14,7 +14,7 @@ function candidates(level: Level, unit?: number): { ex: Example; source: string 
     for (const t of u.topics) {
       const topic = topics[t.id];
       if (!topic) continue;
-      for (const ex of topic.examples) out.push({ ex, source: t.id });
+      for (const ex of topicExamples(topic)) out.push({ ex, source: t.id });
     }
     for (const set of vocabSets.filter((s) => s.level === level && s.unit === u.unit)) {
       for (const w of set.words) out.push({ ex: w.example, source: set.id });

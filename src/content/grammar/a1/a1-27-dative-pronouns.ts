@@ -4,79 +4,77 @@ const topic: Topic = {
   id: 'a1-27-dative-pronouns',
   level: 'A1',
   unit: 5,
-  order: 27,
+  order: 31,
   title: 'Personal pronouns in the Dative (mir, dir …)',
   germanTerm: 'Dativpronomen',
   tags: ['pronouns', 'dative', 'objects'],
   summary: 'mir, dir, ihm, ihr, uns, euch, ihnen, Ihnen are the pronouns you use for the receiver: "to me", "to you", "to him".',
-  explanation: `
-### What it is
-
-You already know the Accusative pronouns (*mich, dich, ihn …*) for the direct object. The **Dative pronouns** (*Dativpronomen*) are the forms for the **receiver**: the person something is given, shown, said or done **to**. English usually says *to me* or just *me*: *Give me the book* = *Gib **mir** das Buch.*
-
-### The full pronoun table
-
-| Nominative | Accusative | **Dative** | English (Dative) |
-|---|---|---|---|
-| ich | mich | **mir** | (to) me |
-| du | dich | **dir** | (to) you |
-| er | ihn | **ihm** | (to) him / it |
-| sie | sie | **ihr** | (to) her / it |
-| es | es | **ihm** | (to) it |
-| wir | uns | **uns** | (to) us |
-| ihr | euch | **euch** | (to) you (plural) |
-| sie | sie | **ihnen** | (to) them |
-| Sie | Sie | **Ihnen** | (to) you (formal) |
-
-Patterns that help:
-- **mir / dir** end in **-r**, like *der* (feminine Dative article).
-- **ihm** ends in **-m**, like *dem* (masculine and neuter Dative article).
-- **ihnen** ends in **-en**, like *den* (plural Dative article).
-- **uns** and **euch** are the same in Accusative and Dative: one form less to learn.
-
-### When you use them
-
-**1. Receiver with giving verbs** (Dative person + Accusative thing):
-
-- Ich gebe **dir** das Buch. – *I give you the book.*
-- Sie zeigt **uns** die Stadt. – *She shows us the city.*
-- Kannst du **mir** helfen? – *Can you help me?* (helfen takes the Dative)
-
-**2. After Dative verbs** (*helfen, danken, gefallen, gehören, schmecken …*):
-
-- Das gefällt **ihm**. – *He likes that.*
-- Ich danke **Ihnen**. – *Thank you (formal).*
-
-**3. After Dative prepositions** (*aus, bei, mit, nach, seit, von, zu*):
-
-- Kommst du **mit mir**? – *Are you coming with me?*
-- Das Geschenk ist **von ihr**. – *The present is from her.*
-- Ich wohne **bei ihnen**. – *I live at their place.*
-
-### Two objects: which comes first?
-
-When a sentence has both a Dative and an Accusative object, the order depends on whether they are nouns or pronouns:
-
-| objects | order | example |
-|---|---|---|
-| two nouns | Dative first | Ich gebe **dem Kind** **das Buch**. |
-| pronoun + noun | pronoun first | Ich gebe **ihm** **das Buch**. / Ich gebe **es** **dem Kind**. |
-| two pronouns | **Accusative first** | Ich gebe **es** **ihm**. |
-
-The last line surprises many learners: with two pronouns the Accusative (*es, ihn, sie*) goes **before** the Dative (*mir, dir, ihm*). *Ich gebe es dir.* *Zeig sie mir!*
-
-### Why it matters
-
-Dative pronouns are in some of the most frequent sentences in German: *Wie geht es dir?*, *Kannst du mir helfen?*, *Das gefällt mir*, *Es tut mir leid*, *Gib mir bitte …*. Once you keep **mich / mir** and **dich / dir** apart, you can ask for help, express opinions and talk about giving and receiving without thinking. This table also completes the pronoun system: you now have all three cases for every person.
+  steps: [
+    {
+      title: 'The pronouns for the receiver',
+      text: `
+You know the Accusative pronouns (*mich, dich, ihn …*) for the direct object. The **Dative pronouns** (*Dativpronomen*) are the forms for the **receiver**: the person something is given, shown or done **to**. English says *to me* or just *me*: *Give me the book* = *Gib **mir** das Buch.*
 `,
-  examples: [
-    { de: 'Kannst du mir helfen?', en: 'Can you help me? (helfen + Dative: mir)' },
-    { de: 'Ich gebe dir meine Nummer.', en: 'I will give you my number. (dir = receiver, meine Nummer = thing)' },
-    { de: 'Das Auto gehört ihm.', en: 'The car belongs to him. (ihm)' },
-    { de: 'Die Jacke gefällt ihr.', en: 'She likes the jacket. (ihr = to her)' },
-    { de: 'Wie geht es euch?', en: 'How are you (all)? (euch is the same in Accusative and Dative)' },
-    { de: 'Ich danke Ihnen, Frau Schmidt.', en: 'Thank you, Ms Schmidt. (formal Ihnen, capital I)' },
-    { de: 'Ich zeige es dir morgen.', en: 'I will show it to you tomorrow. (two pronouns: Accusative es before Dative dir)' },
+      examples: [
+        { de: 'Gib mir das Buch.', en: 'Give me the book. (mir = to me)' },
+        { de: 'Ich gebe dir meine Nummer.', en: 'I will give you my number. (dir = receiver)' },
+        { de: 'Kannst du mir helfen?', en: 'Can you help me? (helfen + Dative: mir)' },
+      ],
+    },
+    {
+      title: 'The forms: mir, dir, ihm, ihr, ihnen',
+      text: `
+| subject | Accusative | **Dative** |
+|---|---|---|
+| ich | mich | **mir** |
+| du | dich | **dir** |
+| er, es | ihn, es | **ihm** |
+| sie (she) | sie | **ihr** |
+| sie (they), Sie | sie, Sie | **ihnen**, **Ihnen** |
+
+**uns** and **euch** are the same in both cases. Patterns that help: **mir / dir** end in -r like *der*, **ihm** ends in -m like *dem*, **ihnen** ends in -en like *den*.
+`,
+      examples: [
+        { de: 'Das Auto gehört ihm.', en: 'The car belongs to him. (er → ihm)' },
+        { de: 'Die Jacke gefällt ihr.', en: 'She likes the jacket. (sie → ihr)' },
+        { de: 'Ich danke Ihnen, Frau Schmidt.', en: 'Thank you, Ms Schmidt. (formal Ihnen, capital I)' },
+        { de: 'Wie geht es euch?', en: 'How are you all? (euch: same as Accusative)' },
+      ],
+    },
+    {
+      title: 'Three places you need them',
+      text: `
+You use the Dative pronoun in the same three places as the Dative article: as the **receiver** with giving verbs (*geben, zeigen, schicken*), after **Dative verbs** (*helfen, danken, gefallen, gehören*), and after **Dative prepositions** (*mit, von, zu, bei …*).
+`,
+      examples: [
+        { de: 'Sie zeigt uns die Stadt.', en: 'She shows us the city. (receiver)' },
+        { de: 'Das gefällt ihm.', en: 'He likes that. (Dative verb)' },
+        { de: 'Kommst du mit mir?', en: 'Are you coming with me? (Dative preposition)' },
+        { de: 'Das Geschenk ist von ihr.', en: 'The present is from her. (Dative preposition)' },
+      ],
+    },
+    {
+      title: 'Pronoun before noun',
+      text: `
+When a sentence has a Dative object and an Accusative object, a **pronoun comes before a noun**, whatever its case: *Ich gebe **ihm** das Buch.* *Ich gebe **es** dem Kind.* With two nouns, the Dative comes first: *Ich gebe dem Kind das Buch.*
+`,
+      examples: [
+        { de: 'Ich gebe ihm das Buch.', en: 'I give him the book. (pronoun ihm first)' },
+        { de: 'Ich gebe es dem Kind.', en: 'I give it to the child. (pronoun es first)' },
+        { de: 'Ich gebe dem Kind das Buch.', en: 'I give the child the book. (two nouns: Dative first)' },
+      ],
+    },
+    {
+      title: 'Two pronouns: Accusative first',
+      text: `
+With **two pronouns** the order flips: the Accusative (*es, ihn, sie*) goes **before** the Dative (*mir, dir, ihm*): *Ich gebe **es dir***, not *Ich gebe dir es*. This surprises many learners, so say a few examples out loud.
+`,
+      examples: [
+        { de: 'Ich gebe es dir.', en: 'I give it to you. (es before dir)' },
+        { de: 'Zeig sie mir!', en: 'Show it to me! (sie = die Jacke, before mir)' },
+        { de: 'Ich zeige es dir morgen.', en: 'I will show it to you tomorrow. (es before dir, then the time word)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-23-accusative-pronouns', note: 'mich, dich, ihn are the direct-object forms; mir, dir, ihm are the receiver forms.' },

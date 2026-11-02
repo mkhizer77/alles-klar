@@ -4,73 +4,79 @@ const topic: Topic = {
   id: 'a2-29-modal-particles',
   level: 'A2',
   unit: 10,
-  order: 29,
+  order: 33,
   title: 'Modal particles: doch, mal, ja, eigentlich',
   germanTerm: 'Modalpartikeln',
   tags: ['particles', 'spoken German', 'tone', 'word order', 'doch', 'mal', 'denn'],
-  summary: 'Modal particles are small, unstressed words (doch, mal, ja, eigentlich, denn) that do not change the facts of a sentence but show the speaker\'s attitude: surprise, friendliness or softening.',
-  explanation: `
-### What it is
+  summary: "Modal particles are small, unstressed words (doch, mal, ja, eigentlich, denn) that do not change the facts of a sentence but show the speaker's attitude: surprise, friendliness or softening.",
+  steps: [
+    {
+      title: 'Tiny words that add tone',
+      text: `
+Listen to Germans talk and you hear small words everywhere: *doch, mal, ja, eigentlich, denn*. These are **modal particles** (*Modalpartikeln*). They add **tone**, not facts. Leave them out and the sentence is still correct, just colder or flatter.
 
-Listen to Germans talk and you will hear tiny words everywhere: *Komm **doch** rein! Warte **mal**! Das ist **ja** toll! Was machst du **eigentlich** hier?* These are **modal particles** (*Modalpartikeln*). They add **tone**, not information. Leave them out and the sentence is still correct, just colder or flatter.
-
-They are hard to translate because English does the same job with intonation or with phrases like *just, you know, by the way, after all*.
-
-### Rules that apply to all of them
-
-1. They are **never stressed**.
-2. They stand in the **midfield**, usually right after the verb and the pronouns: *Komm **doch** mal her.* *Das ist **ja** schön.*
-3. They cannot stand in position 1 and cannot be the answer to a question.
-4. Many of them are **also normal words** with a different meaning (*doch* = yes-but, *mal* = once, *ja* = yes, *eigentlich* = actually, *denn* = because). As particles they lose that meaning.
-
-### The most useful particles
-
-| particle | typical sentence | feeling it adds |
-|---|---|---|
-| **doch** | Komm **doch** mit! | friendly encouragement; in statements: "you know that" (*Das weißt du doch.*) |
-| **mal** | Warte **mal**. / Kannst du **mal** helfen? | makes a request casual and small ("just quickly") |
-| **ja** | Das ist **ja** interessant! / Du bist **ja** schon da! | surprise, or "as we both know" |
-| **eigentlich** | Wie heißt du **eigentlich**? | makes a question softer, "by the way" |
-| **denn** | Was machst du **denn** hier? | shows interest in a question, can sound surprised |
-
-You may also hear **schon** for reassurance (*Das wird schon klappen* – *it will be fine*) and **halt** or **eben** for "that is just how it is" (*Das ist halt so*). Recognise them; you do not need to use them yet.
-
-### doch and mal in requests
-
-Together they make a request as friendly as possible:
-
-- Setz dich. – *Sit down.* (neutral, almost an order)
-- Setz dich **doch**. – *Do sit down.* (friendly invitation)
-- Setz dich **mal**. – *Just sit down a second.* (casual)
-- Setz dich **doch mal**. – *Go on, sit down for a moment.* (warmest)
-
-### ja in statements
-
-*ja* in the middle of a sentence has nothing to do with *yes*. It marks something **obvious or surprising**:
-
-- Es ist **ja** schon dunkel! – *Oh, it is dark already!* (surprise)
-- Du weißt **ja**, dass ich keine Zeit habe. – *You know, of course, that I have no time.* (shared knowledge)
-
-### eigentlich and denn in questions
-
-- Wo wohnst du **eigentlich**? – *Where do you live, by the way?* (a new, casual topic)
-- Wo wohnst du **denn**? – *So where do you live?* (interested, friendly)
-
-Note: *denn* as a particle sits inside a question. As a conjunction (*because*) it stands between two clauses.
-
-### Why it matters
-
-You do not need to produce modal particles to be understood, but you need to **recognise** them so you do not translate *Das ist ja gut* as *That is yes good*. And using *doch* and *mal* in requests makes you sound noticeably friendlier, which matters in shops, offices and with colleagues.
+English does the same job with intonation or with words like *just*, *you know*, *by the way*.
 `,
-  examples: [
-    { de: 'Komm doch rein!', en: 'Do come in! (doch = friendly encouragement)' },
-    { de: 'Kannst du mir mal helfen?', en: 'Can you just help me a second? (mal = casual, small request)' },
-    { de: 'Das ist ja eine Überraschung!', en: 'Well, that is a surprise! (ja = surprise; not "yes")' },
-    { de: 'Du weißt doch, dass ich morgen arbeite.', en: 'You know I am working tomorrow. (doch = reminder of shared knowledge)' },
-    { de: 'Was machst du eigentlich beruflich?', en: 'What do you do for a living, by the way? (eigentlich = softens, new topic)' },
-    { de: 'Wo ist denn mein Schlüssel?', en: 'Now where is my key? (denn = interest / mild surprise in a question)' },
-    { de: 'Warte mal, ich komme gleich.', en: 'Hang on a second, I am coming. (mal = casual, small)' },
-    { de: 'Mach dir keine Sorgen, das wird schon klappen.', en: 'Do not worry, it will work out. (schon = reassurance; recognise it)' },
+      examples: [
+        { de: 'Komm doch rein!', en: 'Do come in! (doch = friendly)' },
+        { de: 'Warte mal!', en: 'Hang on a second! (mal = casual)' },
+        { de: 'Das ist ja toll!', en: 'Oh, that is great! (ja = surprise, not "yes")' },
+      ],
+    },
+    {
+      title: 'Rules for all of them',
+      text: `
+Four rules fit every particle. They are **never stressed**. They stand in the **midfield** (the part after the verb), right after the verb and the pronouns. They can never be in position 1 or be the answer to a question.
+
+And many are **also normal words** with another meaning: *ja* = yes, *mal* = once, *denn* = because. As particles they lose that meaning.
+`,
+      examples: [
+        { de: 'Gib es mir doch mal.', en: 'Go on, give it to me. (after the pronouns es mir)' },
+        { de: 'Das ist ja schön.', en: 'Oh, that is nice. (ja after the verb, not "yes")' },
+        { de: 'Kannst du mir mal helfen?', en: 'Can you just give me a hand? (mal after mir)' },
+      ],
+    },
+    {
+      title: 'doch and mal in requests',
+      text: `
+In a request, **doch** adds friendly encouragement and **mal** makes the request small and casual, like *just quickly*. Together they make a request as warm as it gets.
+
+Compare four versions of the same command, from neutral to warmest.
+`,
+      examples: [
+        { de: 'Setz dich.', en: 'Sit down. (neutral, almost an order)' },
+        { de: 'Setz dich doch.', en: 'Do sit down. (friendly invitation)' },
+        { de: 'Setz dich mal.', en: 'Just sit down a second. (casual)' },
+        { de: 'Setz dich doch mal.', en: 'Go on, sit down for a moment. (warmest)' },
+      ],
+    },
+    {
+      title: 'ja and doch in statements',
+      text: `
+In the middle of a statement, **ja** has nothing to do with *yes*. It marks something **surprising** (*Oh, it is dark already!*) or something **we both know**.
+
+**doch** in a statement reminds the listener of something they already know: *you know that*.
+`,
+      examples: [
+        { de: 'Es ist ja schon dunkel!', en: 'Oh, it is dark already! (surprise)' },
+        { de: 'Du bist ja schon da!', en: 'You are here already! (surprise: earlier than expected)' },
+        { de: 'Du weißt doch, dass ich morgen arbeite.', en: 'You know I am working tomorrow. (doch = reminder of shared knowledge)' },
+      ],
+    },
+    {
+      title: 'eigentlich and denn in questions',
+      text: `
+**eigentlich** makes a question softer and casual, like *by the way*; it often opens a new topic. **denn** shows that you are interested, and can sound mildly surprised.
+
+As a particle, *denn* sits inside a question. As a conjunction (*because*) it stands between two clauses, so the position tells you which one it is.
+`,
+      examples: [
+        { de: 'Wo wohnst du eigentlich?', en: 'Where do you live, by the way? (new, casual topic)' },
+        { de: 'Was machst du denn hier?', en: 'So what are you doing here? (interested, surprised)' },
+        { de: 'Wo ist denn mein Schlüssel?', en: 'Now where is my key? (mild surprise)' },
+        { de: 'Ich bleibe hier, denn ich bin müde.', en: 'I am staying here because I am tired. (conjunction, not a particle)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-18-imperative', note: 'doch and mal soften imperatives: Komm! → Komm doch mal!' },
@@ -85,6 +91,7 @@ You do not need to produce modal particles to be understood, but you need to **r
     '**mal** as a particle is unstressed. Stressed *einmal / mal* means *once* (*Ich war mal in Rom* = I was in Rome once).',
     '**denn** as a particle appears only in **questions**; as a conjunction it links two main clauses (*…, denn …*).',
     'Particles come **after** pronouns: *Gib es mir doch mal*, not *Gib doch mal es mir*.',
+    'You may also hear **schon** for reassurance (*Das wird schon klappen* = it will be fine) and **halt / eben** for *that is just how it is*. Recognise them; you do not need to use them yet.',
   ],
   exercises: [
     {

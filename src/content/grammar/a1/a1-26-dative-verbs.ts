@@ -4,73 +4,75 @@ const topic: Topic = {
   id: 'a1-26-dative-verbs',
   level: 'A1',
   unit: 5,
-  order: 26,
+  order: 30,
   title: 'Verbs that take the Dative (helfen, gefallen, danken …)',
   germanTerm: 'Dativverben',
   tags: ['verbs', 'dative', 'objects'],
   summary: 'A small group of verbs – helfen, danken, gefallen, gehören, schmecken and others – take their only object in the Dative instead of the Accusative.',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'Some verbs want the Dative',
+      text: `
+Most verbs with one object use the Accusative: *Ich sehe **den** Mann.* But a handful of common verbs use the **Dative** for their one and only object. They are called **Dative verbs** (*Dativverben*).
 
-Most verbs with one object use the Accusative: *Ich sehe **den** Mann.* But a handful of common verbs use the **Dative** for their one and only object. They are called **Dative verbs** (*Dativverben*):
-
-- Ich helfe **dem** Mann. – *I help the man.*
-- Sie dankt **der** Lehrerin. – *She thanks the teacher.*
-- Das Auto gehört **meinem** Bruder. – *The car belongs to my brother.*
-
-There is no logical reason you could work out. You simply learn these verbs **together with the Dative**, the way you learn a noun with its article.
-
-### The list for A1
-
-| verb | meaning | example |
-|---|---|---|
-| **helfen** | to help | Kannst du **mir** helfen? |
-| **danken** | to thank | Ich danke **Ihnen**. |
-| **gefallen** | to please, to be liked | Das Bild gefällt **mir**. |
-| **gehören** | to belong to | Die Tasche gehört **der** Frau. |
-| **schmecken** | to taste (good) to | Die Suppe schmeckt **dem** Kind. |
-| **antworten** | to answer (someone) | Er antwortet **dem** Lehrer. |
-| **gratulieren** | to congratulate | Wir gratulieren **dir**! |
-| **passen** | to fit, to suit | Die Jacke passt **mir**. |
-| **fehlen** | to be missing (to someone) | Du fehlst **mir**. |
-| **glauben** | to believe (a person) | Ich glaube **dir**. |
-| **zuhören** | to listen to | Hör **mir** zu! |
-| **folgen** | to follow | Folgen Sie **dem** Weg. |
-
-Notice that many of them are about a **person being affected**: helped, thanked, pleased, congratulated. That is a useful way to remember the group, even if it does not explain every verb.
-
-### The "flipped" verbs: gefallen, schmecken, gehören, passen, fehlen
-
-Four or five of these verbs work the opposite way round from English. In *I like the film*, English makes *I* the subject. German says *The film pleases me*:
-
-- Der Film **gefällt mir**. – *I like the film.* (literally: the film pleases me)
-- Die Pizza **schmeckt mir**. – *I like the pizza.* (the pizza tastes good to me)
-- Das Haus **gehört uns**. – *The house belongs to us.*
-- Du **fehlst mir**. – *I miss you.* (you are missing to me)
-
-The **thing** is the subject (Nominative) and controls the verb ending; the **person** is in the Dative. If the thing is plural, the verb is plural too: *Die Schuhe gefallen mir.*
-
-### A few fixed phrases
-
-Some of the most useful everyday sentences are built on the Dative:
-
-- **Wie geht es dir / Ihnen?** – How are you? (literally: how goes it to you)
-- **Es tut mir leid.** – I'm sorry.
-- **Das ist mir egal.** – I don't mind.
-- **Mir ist kalt / warm.** – I'm cold / warm.
-
-### Why it matters
-
-These verbs are among the first you need in real life: asking for help, saying thank you, saying what you like. If you use the Accusative with them (*Ich helfe dich*), people will understand you, but it sounds clearly wrong. Learn the short list and the flipped pattern of *gefallen* now; together with the Dative pronouns (*mir, dir, ihm …*) in the next topic you will be able to use all of them naturally.
+There is no rule you can work out. You learn these verbs **together with the Dative**, the way you learn a noun with its article.
 `,
-  examples: [
-    { de: 'Ich helfe meiner Mutter.', en: 'I help my mother. (helfen + Dative: meiner)' },
-    { de: 'Wir danken dem Lehrer.', en: 'We thank the teacher. (danken + Dative: dem)' },
-    { de: 'Der Pullover gefällt mir.', en: 'I like the jumper. (the jumper pleases me)' },
-    { de: 'Das Handy gehört dem Kind.', en: 'The phone belongs to the child.' },
-    { de: 'Der Kuchen schmeckt den Gästen.', en: 'The guests like the cake. (Dative plural: den Gästen)' },
-    { de: 'Die Schuhe passen mir nicht.', en: 'The shoes do not fit me. (plural subject, plural verb)' },
-    { de: 'Wie geht es Ihnen?', en: 'How are you? (formal; fixed phrase with the Dative)' },
+      examples: [
+        { de: 'Ich helfe dem Mann.', en: 'I help the man. (helfen + Dative: dem)' },
+        { de: 'Sie dankt der Lehrerin.', en: 'She thanks the teacher. (danken + Dative: der)' },
+        { de: 'Das Auto gehört meinem Bruder.', en: 'The car belongs to my brother. (gehören + Dative: meinem)' },
+      ],
+    },
+    {
+      title: 'The list for A1',
+      text: `
+**helfen** (help), **danken** (thank), **gefallen** (please, be liked), **gehören** (belong to), **schmecken** (taste good to), **antworten** (answer someone), **gratulieren** (congratulate), **passen** (fit, suit), **fehlen** (be missing to), **glauben** (believe a person), **zuhören** (listen to), **folgen** (follow).
+
+Many of them are about a **person being affected**: helped, thanked, pleased, congratulated. That helps you remember the group.
+`,
+      examples: [
+        { de: 'Er antwortet dem Lehrer.', en: 'He answers the teacher.' },
+        { de: 'Wir gratulieren der Kollegin.', en: 'We congratulate our colleague.' },
+        { de: 'Folgen Sie dem Weg.', en: 'Follow the path.' },
+        { de: 'Ich glaube dir.', en: 'I believe you.' },
+      ],
+    },
+    {
+      title: 'The flipped verbs: gefallen, schmecken, gehören',
+      text: `
+Some of these verbs work the other way round from English. In *I like the film*, English makes *I* the subject. German says *the film pleases me*: **Der Film gefällt mir.**
+
+With **gefallen, schmecken, gehören, passen, fehlen** the **thing** is the subject (Nominative) and the **person** is in the Dative.
+`,
+      examples: [
+        { de: 'Der Pullover gefällt mir.', en: 'I like the jumper. (the jumper pleases me)' },
+        { de: 'Die Pizza schmeckt den Kindern.', en: 'The children like the pizza. (the pizza tastes good to them)' },
+        { de: 'Das Haus gehört uns.', en: 'The house belongs to us.' },
+        { de: 'Du fehlst mir.', en: 'I miss you. (you are missing to me)' },
+      ],
+    },
+    {
+      title: 'The thing controls the verb ending',
+      text: `
+Because the thing is the subject, it decides the verb form. If the thing is plural, the verb is plural too: *Die Schuhe **gefallen** mir*, not *gefällt*. One shoe: *Der Schuh **gefällt** mir.*
+`,
+      examples: [
+        { de: 'Die Schuhe gefallen mir.', en: 'I like the shoes. (plural subject, plural verb)' },
+        { de: 'Die Schuhe passen mir nicht.', en: 'The shoes do not fit me.' },
+        { de: 'Der Kuchen schmeckt den Gästen.', en: 'The guests like the cake. (singular subject: schmeckt)' },
+      ],
+    },
+    {
+      title: 'Everyday phrases built on the Dative',
+      text: `
+Some of the most useful sentences in German are built on this pattern: **Wie geht es dir / Ihnen?** (How are you? – literally: how goes it to you), **Es tut mir leid.** (I am sorry.), **Das ist mir egal.** (I do not mind.), **Mir ist kalt.** (I am cold.)
+`,
+      examples: [
+        { de: 'Wie geht es Ihnen?', en: 'How are you? (formal)' },
+        { de: 'Es tut mir leid.', en: 'I am sorry.' },
+        { de: 'Mir ist kalt.', en: 'I am cold.' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-24-dative', note: 'The Dative articles dem, der, dem, den are used after these verbs.' },

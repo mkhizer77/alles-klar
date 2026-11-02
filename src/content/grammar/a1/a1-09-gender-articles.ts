@@ -4,69 +4,109 @@ const topic: Topic = {
   id: 'a1-09-gender-articles',
   level: 'A1',
   unit: 2,
-  order: 9,
+  order: 10,
   title: 'Noun gender: der, die, das',
   germanTerm: 'Genus, bestimmter Artikel',
   tags: ['nouns', 'gender', 'articles', 'der die das'],
   summary: 'Every German noun has one of three genders, shown by its definite article der, die or das; the gender is mostly arbitrary, but endings and word groups give useful clues.',
-  explanation: `
-### Every noun has a gender
-
-In German every noun belongs to one of three groups, called **genders** (*Genus*): **masculine**, **feminine** or **neuter**. The gender is shown by the word for *the*, the **definite article** (*bestimmter Artikel*):
+  steps: [
+    {
+      title: 'Every noun has a gender',
+      text: `
+In German every noun belongs to one of three groups. These groups are called **genders** (*Genus*). You see the gender in the word for *the*, the **definite article** (*bestimmter Artikel*).
 
 | gender | article | example |
 |---|---|---|
-| masculine (*maskulin*) | **der** | der Tisch (the table), der Mann (the man) |
-| feminine (*feminin*) | **die** | die Lampe (the lamp), die Frau (the woman) |
-| neuter (*neutral*) | **das** | das Bett (the bed), das Kind (the child) |
+| masculine | **der** | der Tisch (the table) |
+| feminine | **die** | die Lampe (the lamp) |
+| neuter | **das** | das Bett (the bed) |
+`,
+      examples: [
+        { de: 'Der Tisch ist groß.', en: 'The table is big. (masculine)' },
+        { de: 'Die Lampe ist neu.', en: 'The lamp is new. (feminine)' },
+        { de: 'Das Bett ist bequem.', en: 'The bed is comfortable. (neuter)' },
+      ],
+    },
+    {
+      title: 'Learn the article with the noun',
+      text: `
+For people the gender usually matches: *der Vater* (father), *die Mutter* (mother). For things there is no logic to find. A table is masculine, a lamp is feminine, a bed is neuter. That is simply a property of the word.
 
-In the **plural** every noun takes **die**, whatever its gender: *die Tische, die Lampen, die Kinder*.
+So learn the article **together with the noun**, as one unit. Never learn *Tisch*; learn **der Tisch**. Say the article out loud every time you repeat a word.
+`,
+      examples: [
+        { de: 'Der Vater ist müde.', en: 'The father is tired. (a man: der)' },
+        { de: 'Die Mutter arbeitet.', en: 'The mother is working. (a woman: die)' },
+        { de: 'Der Stuhl ist alt.', en: 'The chair is old. (a chair is masculine: no reason, just learn it)' },
+      ],
+    },
+    {
+      title: 'The plural is always die',
+      text: `
+In the **plural** the three genders disappear. Every noun takes **die**, whatever its gender: *die Tische, die Lampen, die Betten*.
 
-### Gender is grammar, not biology
+So *die* has two jobs: feminine singular and every plural.
+`,
+      examples: [
+        { de: 'Die Tische sind groß.', en: 'The tables are big. (der Tisch → die Tische)' },
+        { de: 'Die Kinder spielen.', en: 'The children are playing. (das Kind → die Kinder)' },
+        { de: 'Die Lampen sind an.', en: 'The lamps are on. (die Lampe → die Lampen)' },
+      ],
+    },
+    {
+      title: 'Clues from the ending',
+      text: `
+There is no complete rule, but some endings are very reliable.
 
-For people the gender usually matches: *der Vater* (father), *die Mutter* (mother). For things it is simply a property of the word: a table is masculine, a lamp feminine, a bed neuter. There is no logic to find; you learn the article **together with the noun** as one unit. Never learn *Tisch*; learn **der Tisch**.
-
-A helpful trick: colour-code your vocabulary (for example blue for der, red for die, green for das) or always say the article out loud when you repeat a word.
-
-### Clues from the ending
-
-Although there is no complete rule, some endings are very reliable. These cover a large share of the nouns you will meet:
-
-| ending | gender | examples |
+| ending | gender | example |
 |---|---|---|
-| **-ung, -heit, -keit, -schaft, -ion, -tät, -ie, -ik** | **die** (almost 100 %) | die Zeitung, die Freiheit, die Nation, die Universität, die Musik |
-| **-e** (two-syllable nouns) | **die** (about 90 %) | die Lampe, die Küche, die Blume |
-| **-er** (people, jobs, tools) | **der** | der Lehrer, der Computer, der Fahrer |
-| **-ig, -ling, -ismus** | **der** | der Honig, der Frühling, der Tourismus |
-| **-chen, -lein** | **das** (always) | das Mädchen, das Brötchen, das Fräulein |
-| **-ment, -um, -ma** | **das** | das Dokument, das Zentrum, das Thema |
-| **Ge-** at the start | **das** (mostly) | das Gebäude, das Gemüse, das Gespräch |
-
-### Clues from meaning
+| -ung, -heit, -keit, -ion, -tät | **die** (almost always) | die Zeitung |
+| -e (two syllables) | **die** (about 90 %) | die Lampe |
+| -er (people, tools) | **der** | der Lehrer |
+| -chen, -lein | **das** (always) | das Mädchen |
+| -ment, -um | **das** | das Dokument |
+| Ge- at the start | **das** (mostly) | das Gebäude |
+`,
+      examples: [
+        { de: 'Die Zeitung liegt hier.', en: 'The newspaper is lying here. (-ung → die)' },
+        { de: 'Das Mädchen heißt Lena.', en: 'The girl is called Lena. (-chen → das, even for a girl)' },
+        { de: 'Der Lehrer ist nett.', en: 'The teacher is nice. (-er for a person → der)' },
+        { de: 'Die Universität ist alt.', en: 'The university is old. (-tät → die)' },
+      ],
+    },
+    {
+      title: 'Clues from meaning',
+      text: `
+Some groups of words share one gender.
 
 | group | gender | examples |
 |---|---|---|
-| days, months, seasons, weather | **der** | der Montag, der Mai, der Winter, der Regen |
-| alcoholic drinks (except Bier) | **der** | der Wein, der Schnaps |
-| motorbikes, ships, aeroplane names | **die** | die BMW, die Titanic |
-| colours, languages, verbs used as nouns | **das** | das Blau, das Deutsch, das Essen |
+| days, months, seasons, weather | **der** | der Montag, der Mai, der Regen |
+| alcoholic drinks (except Bier) | **der** | der Wein |
+| colours, languages, verbs used as nouns | **das** | das Blau, das Essen |
 | metals, letters of the alphabet | **das** | das Gold, das A |
 
-### Why it matters
-
-The article is not decoration. It changes in the other cases (*der → den → dem*), and the pronoun that replaces a noun depends on it (*der Tisch → er*). Adjective endings also follow it. If you learn the gender wrong, every later form built on it is wrong too. So the small effort of always saying *der Tisch* instead of *Tisch* saves a great deal of trouble later.
-
-When you are not sure, **die** is the statistically best guess: almost half of German nouns are feminine, especially the long abstract ones.
+Female job titles add **-in** and are always **die**: *der Arzt → die Ärztin*.
 `,
-  examples: [
-    { de: 'Der Tisch ist groß.', en: 'The table is big. (masculine)' },
-    { de: 'Die Lampe ist neu.', en: 'The lamp is new. (feminine, ends in -e)' },
-    { de: 'Das Bett ist bequem.', en: 'The bed is comfortable. (neuter)' },
-    { de: 'Die Zeitung liegt hier.', en: 'The newspaper is lying here. (-ung → die)' },
-    { de: 'Das Mädchen heißt Lena.', en: 'The girl is called Lena. (-chen → das, even for a girl)' },
-    { de: 'Der Montag ist ein Arbeitstag.', en: 'Monday is a working day. (days are der)' },
-    { de: 'Die Kinder spielen.', en: 'The children are playing. (plural is always die)' },
-    { de: 'Der Lehrer und die Lehrerin sind nett.', en: 'The (male) teacher and the (female) teacher are nice. (-in makes the female form, always die)' },
+      examples: [
+        { de: 'Der Montag ist ein Arbeitstag.', en: 'Monday is a working day. (days are der)' },
+        { de: 'Der Winter ist kalt.', en: 'The winter is cold. (seasons are der)' },
+        { de: 'Die Ärztin heißt Weber.', en: 'The (female) doctor is called Weber. (-in → die)' },
+      ],
+    },
+    {
+      title: 'When you must guess',
+      text: `
+Later forms are built on the gender. The pronoun for a thing follows it: **der** Tisch → **er**, **die** Lampe → **sie**, **das** Bett → **es**. A wrong gender makes every later form wrong too, so always say the article with the noun.
+
+When you really do not know, guess **die**: almost half of all German nouns are feminine, especially the long abstract ones.
+`,
+      examples: [
+        { de: 'Der Tisch ist neu. Er ist groß.', en: 'The table is new. It is big. (der → er)' },
+        { de: 'Die Lampe ist neu. Sie ist schön.', en: 'The lamp is new. It is pretty. (die → sie)' },
+        { de: 'Die Freundschaft ist wichtig.', en: 'Friendship is important. (long abstract noun: die)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-10-plural', note: 'In the plural all nouns take die; the plural endings are a separate topic.' },

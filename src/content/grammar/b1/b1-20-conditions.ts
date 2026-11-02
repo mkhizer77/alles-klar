@@ -4,59 +4,72 @@ const topic: Topic = {
   id: 'b1-20-conditions',
   level: 'B1',
   unit: 7,
-  order: 20,
+  order: 29,
   title: 'Conditions: falls, wenn, sofern, es sei denn',
   germanTerm: 'konditional',
   tags: ['connectors', 'subordinate clauses', 'conditions', 'word order'],
   summary: 'Conditional connectors say under what condition something happens: wenn and falls mean "if", sofern means "provided that", and es sei denn means "unless".',
-  explanation: `
-### What it is for
+  steps: [
+    {
+      title: 'What a condition is',
+      text: `
+A **conditional clause** (*Konditionalsatz*, an "if" clause) says that one thing only happens if another thing is true. At A2 you learned **wenn** for this. B1 adds a few more precise words.
 
-A condition says that one thing only happens if another thing is true: *if it rains, we stay at home*.
-
-- **Wenn** es regnet, bleiben wir zu Hause. – *If it rains, we stay at home.*
-- **Falls** du Fragen hast, ruf mich an. – *In case you have questions, call me.*
-
-A **conditional clause** (*Konditionalsatz*, an "if" clause) names such a condition. At A2 you learned *wenn* for this. B1 adds a few more precise words so that your German sounds natural and less repetitive.
-
-### The connectors
-
-| Connector | Meaning | Word order | Example |
-|---|---|---|---|
-| **wenn** | if / when (neutral) | verb at the end | **Wenn** es regnet, bleiben wir zu Hause. |
-| **falls** | in case, if (less likely) | verb at the end | **Falls** du Fragen hast, ruf mich an. |
-| **sofern** | provided that, as long as | verb at the end | Du kannst mitkommen, **sofern** du pünktlich bist. |
-| **es sei denn, (dass)** | unless | fixed phrase, see below | Ich komme, **es sei denn**, ich bin krank. |
-| **sonst** | otherwise | adverb, verb right after | Beeil dich, **sonst** verpassen wir den Zug. |
-| **bei** + Dative | in the event of | preposition + noun | **Bei Regen** findet das Konzert in der Halle statt. |
-
-### How to choose
-
-- **wenn** is the all-rounder. It also means "when / whenever", so it can be unclear.
-- **falls** is only "if", never "when". Use it when the condition is **possible but not expected**: *falls* you have questions (maybe you will not).
-- **sofern** sets a **requirement**: the result happens only on this condition. It sounds a little formal.
-- **es sei denn** means "unless": the result happens **except** in this one case. It is followed by either a **main clause** with normal word order (*es sei denn, ich bin krank*) or by *dass* + subordinate clause (*es sei denn, dass ich krank bin*).
-- **sonst** is an adverb. It stands in position 1 and the verb follows: *sonst **verpassen** wir …*
-
-### Word order reminders
-
-*wenn, falls* and *sofern* push the verb to the **end** of their clause. When the condition comes first, the main clause starts with its verb, often with *dann* in between:
-
-*Wenn du Zeit hast, (dann) **komm** vorbei.*
-
-You may also see conditions without *wenn*, starting with the verb: *Hast du Fragen, dann ruf mich an.* It means the same as *Wenn du Fragen hast, …*. You only need to recognise this form.
-
-### Why it matters
-
-Instructions, rules, offers and advice all need conditions: *falls* something goes wrong, *sofern* the deadline is met, *es sei denn* the weather is bad. Being able to vary your connectors is a clear sign of B1-level control. It is also the base for the irreal conditions with *Konjunktiv II* in Unit 4.
+*wenn, falls* and *sofern* are subjunctions (words that start a subordinate clause): the verb goes to the **end**. When the condition comes first, the main clause starts with its verb, often with *dann* in between.
 `,
-  examples: [
-    { de: 'Wenn ich Zeit habe, besuche ich dich.', en: 'If I have time, I will visit you.' },
-    { de: 'Falls der Bus nicht kommt, nehme ich ein Taxi.', en: 'In case the bus does not come, I will take a taxi. (possible but not expected)' },
-    { de: 'Sie bekommen den Job, sofern Sie die Prüfung bestehen.', en: 'You get the job provided that you pass the exam.' },
-    { de: 'Wir gehen wandern, es sei denn, es regnet.', en: 'We are going hiking unless it rains. (main clause after es sei denn)' },
-    { de: 'Du musst jetzt gehen, sonst kommst du zu spät.', en: 'You have to go now, otherwise you will be late.' },
-    { de: 'Bei schlechtem Wetter fällt das Spiel aus.', en: 'In bad weather the game is cancelled. (bei + noun replaces a clause)' },
+      examples: [
+        { de: 'Wenn ich Zeit habe, besuche ich dich.', en: 'If I have time, I will visit you. (habe at the end, then besuche ich)' },
+        { de: 'Wenn du Zeit hast, dann komm vorbei.', en: 'If you have time, then come round.' },
+      ],
+    },
+    {
+      title: 'falls: only "if", not "when"',
+      text: `
+**wenn** is the all-rounder, but it also means "when / whenever", so it can be unclear. **falls** (in case) is only "if", never "when". Use it when the condition is **possible but not expected**: *falls* you have questions (maybe you will not).
+`,
+      examples: [
+        { de: 'Falls du Fragen hast, ruf mich an.', en: 'In case you have questions, call me.' },
+        { de: 'Falls der Bus nicht kommt, nehme ich ein Taxi.', en: 'In case the bus does not come, I will take a taxi. (possible but not expected)' },
+        { de: 'Wenn es regnet, bleiben wir zu Hause.', en: 'If it rains, we stay at home. (wenn: neutral)' },
+      ],
+    },
+    {
+      title: 'sofern: provided that',
+      text: `
+**sofern** (provided that, as long as) sets a **requirement**: the result happens only on this condition. It sounds a little formal and is common in rules and offers. Same word order: verb at the end.
+`,
+      examples: [
+        { de: 'Du kannst mitkommen, sofern du pünktlich bist.', en: 'You can come along, provided that you are on time.' },
+        { de: 'Sie bekommen den Job, sofern Sie die Prüfung bestehen.', en: 'You get the job provided that you pass the exam.' },
+        { de: 'Sofern das Wetter gut ist, grillen wir.', en: 'Provided the weather is good, we will have a barbecue.' },
+      ],
+    },
+    {
+      title: 'es sei denn: unless',
+      text: `
+**es sei denn** means "unless": the result happens **except** in this one case. It is a fixed phrase between commas. After it comes either a **main clause** with normal order (*es sei denn, ich bin krank*) or **dass** + subordinate clause (*es sei denn, dass ich krank bin*).
+
+It already means "unless", so do not add *nicht*.
+`,
+      examples: [
+        { de: 'Wir gehen wandern, es sei denn, es regnet.', en: 'We are going hiking unless it rains. (main clause after es sei denn)' },
+        { de: 'Ich komme morgen, es sei denn, ich bin krank.', en: 'I will come tomorrow unless I am ill.' },
+        { de: 'Ich komme, es sei denn, dass ich krank bin.', en: 'I will come unless I am ill. (dass: verb at the end)' },
+      ],
+    },
+    {
+      title: 'Without a clause: sonst and bei',
+      text: `
+Two short forms need no "if" clause. **sonst** (otherwise) is an adverb: it stands in position 1 and the verb comes **right after** it.
+
+**bei** + Dative noun (in the event of) replaces a whole clause: *bei Regen* = *wenn es regnet*.
+`,
+      examples: [
+        { de: 'Du musst jetzt gehen, sonst kommst du zu spät.', en: 'You have to go now, otherwise you will be late. (sonst + verb)' },
+        { de: 'Beeil dich, sonst verpassen wir den Zug.', en: 'Hurry up, otherwise we will miss the train.' },
+        { de: 'Bei schlechtem Wetter fällt das Spiel aus.', en: 'In bad weather the game is cancelled. (bei + noun replaces a clause)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a2-05-wenn-ob-indirect-questions', note: 'wenn as a conditional subjunction was introduced there; falls and sofern follow the same word order.' },
@@ -66,11 +79,12 @@ Instructions, rules, offers and advice all need conditions: *falls* something go
     { topicId: 'a2-28-subjunctions-obwohl-damit', note: 'falls and sofern are subjunctions like obwohl and damit: the verb goes to the end.' },
   ],
   edgeCases: [
-    '*wenn* can mean "if" or "whenever". If you mean only "if", *falls* makes it clear.',
-    'After *es sei denn* the clause has **normal main-clause order** (*es sei denn, ich bin krank*), unless you add *dass* (*es sei denn, dass ich krank bin*).',
-    'Do not add *nicht* after *es sei denn*: it already means "unless". *Ich komme, es sei denn, es regnet* = I come unless it rains.',
-    '*sonst* is not a subjunction: the verb comes right after it, not at the end. *Beeil dich, sonst **verpassen** wir den Zug.*',
-    '*bei* + noun needs a noun, not a clause: *bei Regen*, *bei Problemen*, but never *bei es regnet*.',
+    '**wenn** can mean "if" or "whenever". If you mean only "if", *falls* makes it clear.',
+    'After **es sei denn** the clause has normal main-clause order (*es sei denn, ich bin krank*), unless you add *dass* (*es sei denn, dass ich krank bin*).',
+    'Do not add *nicht* after **es sei denn**: it already means "unless". *Ich komme, es sei denn, es regnet* = I come unless it rains.',
+    '**sonst** is not a subjunction: the verb comes right after it, not at the end. *Beeil dich, sonst **verpassen** wir den Zug.*',
+    '**bei** + noun needs a noun, not a clause: *bei Regen*, *bei Problemen*, but never *bei es regnet*.',
+    'You may also see a condition without *wenn*, starting with the verb: **Hast du Fragen**, dann ruf mich an. It means *Wenn du Fragen hast*. Recognise it; you do not need to use it.',
   ],
   exercises: [
     {
@@ -113,7 +127,7 @@ Instructions, rules, offers and advice all need conditions: *falls* something go
     },
     {
       type: 'match',
-      id: 'b1-20-conditions-ex07',
+      id: 'b1-20-conditions-ex06',
       prompt: 'Match each word with its meaning.',
       pairs: [
         ['wenn', 'if / when'],
@@ -127,14 +141,14 @@ Instructions, rules, offers and advice all need conditions: *falls* something go
     },
     {
       type: 'fill',
-      id: 'b1-20-conditions-ex08',
+      id: 'b1-20-conditions-ex07',
       prompt: 'Beeil dich, ___ verpassen wir den Zug. (otherwise)',
       answer: ['sonst'],
       explanation: 'sonst is an adverb in position 1, so the verb verpassen follows immediately.',
     },
     {
       type: 'translate',
-      id: 'b1-20-conditions-ex09',
+      id: 'b1-20-conditions-ex08',
       prompt: 'Translate: "In case you have questions, write me an email." (use du)',
       answer: [
         'Falls du Fragen hast, schreib mir eine E-Mail.',
@@ -147,7 +161,7 @@ Instructions, rules, offers and advice all need conditions: *falls* something go
     },
     {
       type: 'mc',
-      id: 'b1-20-conditions-ex10',
+      id: 'b1-20-conditions-ex09',
       prompt: 'Complete: "___ Regen findet das Konzert in der Halle statt."',
       options: ['Bei', 'Wenn', 'Falls'],
       answer: 0,
@@ -155,7 +169,7 @@ Instructions, rules, offers and advice all need conditions: *falls* something go
     },
     {
       type: 'order',
-      id: 'b1-20-conditions-ex11',
+      id: 'b1-20-conditions-ex10',
       prompt: 'Build the sentence: "I will help you, unless you do not want that."',
       words: ['helfe', 'Ich', 'es', 'dir,', 'denn,', 'sei', 'willst', 'du', 'nicht.', 'das'],
       answer: ['Ich helfe dir, es sei denn, du willst das nicht.'],
@@ -163,7 +177,7 @@ Instructions, rules, offers and advice all need conditions: *falls* something go
     },
     {
       type: 'mc',
-      id: 'b1-20-conditions-ex12',
+      id: 'b1-20-conditions-ex11',
       prompt: 'Which sentence is correct?',
       options: [
         'Sofern das Wetter gut ist, grillen wir.',

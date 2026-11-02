@@ -4,80 +4,79 @@ const topic: Topic = {
   id: 'a2-12-verbs-with-prepositions',
   level: 'A2',
   unit: 4,
-  order: 12,
+  order: 13,
   title: 'Verbs with fixed prepositions (warten auf, denken an)',
   germanTerm: 'Verben mit Präpositionen',
   tags: ['verbs', 'prepositions', 'Accusative', 'Dative', 'collocations'],
   summary: 'Many German verbs come with a fixed preposition and case (warten auf + Accusative, träumen von + Dative) that you must learn together with the verb, because the preposition cannot be guessed from English.',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'Learn verb, preposition and case together',
+      text: `
+Some verbs always come with a particular **preposition** (*Präposition*: a word like *auf, mit, für*), and that preposition decides the **case** of the noun after it. English has this too (*wait for, think of*), but the German preposition is often a different one: *warten **auf*** (not *für*), *denken **an*** (not *von*).
 
-Some verbs are always followed by a particular **preposition** (*Präposition*), and the preposition decides the **case** of the noun after it. English has this too (*wait for, think of, depend on*), but the German preposition is often a different one:
-
-- warten **auf** (not *für*) – *to wait for*
-- denken **an** (not *von*) – *to think of*
-- sich interessieren **für** – *to be interested in*
-
-The preposition has lost its normal meaning here. *Warten auf* has nothing to do with being "on" something. So you cannot translate it; you must **learn the verb, the preposition and the case as one unit**: *warten auf + A*.
-
-### The most important verbs
-
-| verb + preposition | case | English |
-|---|---|---|
-| warten **auf** | A | to wait for |
-| sich freuen **auf** | A | to look forward to |
-| sich freuen **über** | A | to be happy about |
-| denken **an** | A | to think of |
-| sich erinnern **an** | A | to remember |
-| sich interessieren **für** | A | to be interested in |
-| sich bedanken **für** | A | to thank for |
-| sprechen / reden **über** | A | to talk about |
-| sich ärgern **über** | A | to be annoyed about |
-| sich kümmern **um** | A | to take care of |
-| bitten **um** | A | to ask for |
-| sich verlieben **in** | A | to fall in love with |
-| glauben **an** | A | to believe in |
-| träumen **von** | D | to dream of |
-| erzählen **von** | D | to tell about |
-| fragen **nach** | D | to ask about |
-| sprechen **mit** | D | to speak with |
-| anfangen / aufhören **mit** | D | to start / stop (doing) |
-| Angst haben **vor** | D | to be afraid of |
-| teilnehmen **an** | D | to take part in |
-
-### Which case?
-
-The rule is easier than it looks:
-
-- **für, um, durch, gegen** → always Accusative (as everywhere).
-- **mit, nach, von, zu, bei** → always Dative (as everywhere).
-- **auf, über, an, in, vor** are two-way prepositions (they can take either case). In verb combinations **auf, über, in** take the **Accusative**; **vor** takes the **Dative**; **an** is usually Accusative (*denken an, sich erinnern an*) but Dative with *teilnehmen an*.
-
-### auf or über after sich freuen?
-
-Two prepositions with one verb can mean two different things:
-
-- Ich freue mich **auf** das Wochenende. – looking forward to it (it is still coming).
-- Ich freue mich **über** das Geschenk. – happy about it (I already have it).
-
-Similarly *sprechen **mit** jemandem* (with someone) vs *sprechen **über** etwas* (about something).
-
-### Asking questions
-
-For a **person**, use preposition + *wen* / *wem*: *Auf **wen** wartest du?* (Who are you waiting for?), *Mit **wem** sprichst du?* For a **thing**, German combines *wo* + preposition: *Worauf wartest du?* That is the subject of the next topic.
-
-### Why it matters
-
-These combinations are everywhere in daily German: *Ich warte auf den Bus. Ich interessiere mich für Musik. Hast du Angst vor Hunden?* Using *für* after *warten* or *von* after *denken* marks you as a learner at once. The good news: the list above covers most of what you need at A2, and each one you learn is a fixed phrase that never changes.
+The preposition has lost its normal meaning here, so you cannot translate it. Learn the three parts as **one unit**: *warten auf + Accusative*.
 `,
-  examples: [
-    { de: 'Ich warte auf den Bus.', en: 'I am waiting for the bus. (warten auf + Accusative)' },
-    { de: 'Sie interessiert sich für Musik.', en: 'She is interested in music. (sich interessieren für + Accusative)' },
-    { de: 'Er denkt oft an seine Kindheit.', en: 'He often thinks of his childhood. (denken an + Accusative)' },
-    { de: 'Ich träume von einem Haus am Meer.', en: 'I dream of a house by the sea. (träumen von + Dative)' },
-    { de: 'Wir freuen uns auf die Ferien.', en: 'We are looking forward to the holidays. (auf = still to come)' },
-    { de: 'Ich freue mich über das Geschenk.', en: 'I am happy about the present. (über = already here)' },
-    { de: 'Hast du Angst vor Spinnen?', en: 'Are you afraid of spiders? (Angst haben vor + Dative)' },
+      examples: [
+        { de: 'Ich warte auf den Bus.', en: 'I am waiting for the bus. (warten auf, not für)' },
+        { de: 'Er denkt oft an seine Kindheit.', en: 'He often thinks of his childhood. (denken an, not von)' },
+        { de: 'Sie interessiert sich für Musik.', en: 'She is interested in music. (sich interessieren für, not in)' },
+      ],
+    },
+    {
+      title: 'Verbs with the Accusative',
+      text: `
+**für** and **um** always take the Accusative. **auf, über, an** and **in** can take two cases, but in these fixed pairs they take the **Accusative**:
+
+**warten auf** (to wait for), **denken an** (to think of), **sich erinnern an** (to remember), **glauben an** (to believe in), **sich interessieren für** (to be interested in), **sich bedanken für** (to thank for), **sprechen über** (to talk about), **sich ärgern über** (to be annoyed about), **sich kümmern um** (to take care of), **bitten um** (to ask for), **sich verlieben in** (to fall in love with).
+`,
+      examples: [
+        { de: 'Ich warte auf meinen Freund.', en: 'I am waiting for my friend. (auf + Accusative: meinen)' },
+        { de: 'Wir sprechen über das Problem.', en: 'We are talking about the problem. (über + Accusative)' },
+        { de: 'Sie kümmert sich um den Hund.', en: 'She takes care of the dog. (um + Accusative)' },
+        { de: 'Er hat sich in sie verliebt.', en: 'He has fallen in love with her. (sich verlieben in + Accusative)' },
+      ],
+    },
+    {
+      title: 'Verbs with the Dative',
+      text: `
+**mit, nach, von** and **bei** always take the Dative. **vor** takes the Dative in these pairs, and so does **an** with *teilnehmen*:
+
+**träumen von** (to dream of), **erzählen von** (to tell about), **fragen nach** (to ask about), **sprechen mit** (to speak with), **anfangen / aufhören mit** (to start / stop doing), **Angst haben vor** (to be afraid of), **teilnehmen an** (to take part in).
+`,
+      examples: [
+        { de: 'Ich träume von einem Haus am Meer.', en: 'I dream of a house by the sea. (von + Dative)' },
+        { de: 'Hast du Angst vor Spinnen?', en: 'Are you afraid of spiders? (vor + Dative)' },
+        { de: 'Er nimmt an dem Deutschkurs teil.', en: 'He takes part in the German course. (teilnehmen an + Dative)' },
+        { de: 'Sie fragt nach dem Weg.', en: 'She asks the way. (nach + Dative)' },
+      ],
+    },
+    {
+      title: 'auf or über after sich freuen?',
+      text: `
+One verb can take two prepositions with two meanings. **sich freuen auf** = to look forward to (it is still coming). **sich freuen über** = to be happy about (you already have it). Both take the Accusative.
+
+In the same way, **sprechen mit** is with a person, **sprechen über** is about a topic.
+`,
+      examples: [
+        { de: 'Wir freuen uns auf die Ferien.', en: 'We are looking forward to the holidays. (auf: still to come)' },
+        { de: 'Ich freue mich über das Geschenk.', en: 'I am happy about the present. (über: already here)' },
+        { de: 'Ich spreche mit dir über das Problem.', en: 'I am talking to you about the problem. (mit a person, über a topic)' },
+      ],
+    },
+    {
+      title: 'Asking about a person',
+      text: `
+To ask about a **person**, put the preposition in front of **wen** (Accusative) or **wem** (Dative): *Auf **wen** wartest du?* (Who are you waiting for?), *Mit **wem** sprichst du?* (Who are you talking to?).
+
+For a **thing** German glues *wo* to the preposition: *Worauf wartest du?* That is the next topic.
+`,
+      examples: [
+        { de: 'Auf wen wartest du?', en: 'Who are you waiting for? (auf + wen: Accusative)' },
+        { de: 'Mit wem sprichst du?', en: 'Who are you talking to? (mit + wem: Dative)' },
+        { de: 'An wen denkst du?', en: 'Who are you thinking of? (an + wen)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-22-accusative-prepositions', note: 'für, um, durch, gegen always take the Accusative, also after verbs.' },

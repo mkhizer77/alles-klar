@@ -4,76 +4,95 @@ const topic: Topic = {
   id: 'a1-32-perfekt-sein',
   level: 'A1',
   unit: 7,
-  order: 32,
+  order: 36,
   title: 'The Perfekt with sein',
   germanTerm: 'Perfekt mit sein',
   tags: ['past tense', 'perfekt', 'participle', 'sein', 'movement'],
   summary: 'Verbs of movement from A to B (gehen, fahren, kommen) and of change (aufstehen, einschlafen) build the Perfekt with sein instead of haben: ich bin gegangen.',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'Some verbs use sein as the helper',
+      text: `
+Most verbs build the Perfekt with **haben**. A smaller but very common group uses **sein** as the helper verb instead. The structure is the same: helper verb in position 2, Partizip II at the end.
 
-Most verbs build the Perfekt with **haben**. A smaller but very common group uses **sein** as the helper verb instead:
-
-- Ich **bin** nach Hause **gegangen**. – *I went home.*
-- Wir **sind** nach Italien **gefahren**. – *We drove to Italy.*
-- Er **ist** um sieben **aufgestanden**. – *He got up at seven.*
-
-The structure is identical to the *haben* Perfekt: helper verb in position 2, Partizip II at the end. The only new thing is choosing **sein** and conjugating it: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind.
-
-### Which verbs take sein?
-
-There are three groups. The first two cover almost everything:
-
-**1. Movement from one place to another** (the subject changes location)
-
-| infinitive | Partizip II | example |
-|---|---|---|
-| gehen | **gegangen** | Ich bin ins Kino gegangen. |
-| kommen | **gekommen** | Wann bist du gekommen? |
-| fahren | **gefahren** | Wir sind mit dem Zug gefahren. |
-| fliegen | **geflogen** | Sie ist nach London geflogen. |
-| laufen | **gelaufen** | Er ist schnell gelaufen. |
-| reisen | **gereist** | Sie sind viel gereist. |
-| umziehen | **umgezogen** | Wir sind nach Köln umgezogen. |
-
-**2. Change of state** (the subject becomes something different: awake, asleep, older …)
-
-| infinitive | Partizip II | example |
-|---|---|---|
-| aufstehen | **aufgestanden** | Ich bin früh aufgestanden. |
-| einschlafen | **eingeschlafen** | Das Kind ist eingeschlafen. |
-| aufwachen | **aufgewacht** | Ich bin um sechs aufgewacht. |
-| werden | **geworden** | Er ist Vater geworden. |
-| sterben | **gestorben** | Mein Opa ist 2010 gestorben. |
-| wachsen | **gewachsen** | Du bist gewachsen! |
-
-**3. Three verbs to simply learn**: **sein** (ist gewesen), **bleiben** (ist geblieben), **passieren** (ist passiert).
-
-- Was **ist passiert**? – *What happened?*
-- Wir **sind** zu Hause **geblieben**. – *We stayed at home.*
-
-*Bleiben* is the strange one: staying is the opposite of moving, but it still takes *sein*. Accept it as a fixed fact.
-
-### A test you can use
-
-Ask: **does the subject move from A to B, or change from one state to another?** If yes → *sein*. If the verb has a direct object (*Ich habe das Auto gefahren* – I drove the car), or describes an activity without a change of place or state (*Ich habe geschlafen, gearbeitet, gespielt*), → *haben*.
-
-Compare:
-- Ich **bin** gelaufen. (I ran – movement) vs. Ich **habe** Sport gemacht. (activity)
-- Ich **bin** eingeschlafen. (I fell asleep – change) vs. Ich **habe** gut geschlafen. (state, no change)
-
-### Why it matters
-
-The *sein* verbs are the verbs you need to tell any simple story: where you went, when you came, how you travelled, when you got up. In an A1 exam task like *Was haben Sie am Wochenende gemacht?*, half the answers use *sein*: *Ich bin ins Kino gegangen, ich bin spät aufgestanden, ich bin zu Hause geblieben.* Using *haben* with these verbs (*ich habe gegangen*) is one of the most noticeable learner errors, so it is worth fixing the list in memory now.
+The only new thing is choosing **sein** and conjugating it: *ich bin, du bist, er ist, wir sind, ihr seid, sie sind*.
 `,
-  examples: [
-    { de: 'Ich bin gestern ins Kino gegangen.', en: 'I went to the cinema yesterday. (movement: sein)' },
-    { de: 'Wann bist du nach Hause gekommen?', en: 'When did you come home? (kommen: sein)' },
-    { de: 'Wir sind mit dem Auto nach Wien gefahren.', en: 'We drove to Vienna by car. (fahren: sein)' },
-    { de: 'Sie ist heute früh aufgestanden.', en: 'She got up early today. (change of state: sein)' },
-    { de: 'Das Baby ist endlich eingeschlafen.', en: 'The baby finally fell asleep. (einschlafen: sein)' },
-    { de: 'Am Sonntag sind wir zu Hause geblieben.', en: 'On Sunday we stayed at home. (bleiben: sein, even without movement)' },
-    { de: 'Was ist passiert?', en: 'What happened? (passieren: sein)' },
+      examples: [
+        { de: 'Ich bin nach Hause gegangen.', en: 'I went home. (bin … gegangen)' },
+        { de: 'Wir sind nach Italien gefahren.', en: 'We drove to Italy. (sind … gefahren)' },
+        { de: 'Wann bist du gekommen?', en: 'When did you come? (bist … gekommen)' },
+      ],
+    },
+    {
+      title: 'Movement from A to B',
+      text: `
+The first group: the subject **moves from one place to another**.
+
+| infinitive | Partizip II |
+|---|---|
+| gehen | **gegangen** |
+| kommen | **gekommen** |
+| fahren | **gefahren** |
+| fliegen | **geflogen** |
+| laufen | **gelaufen** |
+| umziehen | **umgezogen** |
+
+Note the vowel changes in *gegangen*, *geflogen* and *umgezogen*. Learn each pair with its infinitive.
+`,
+      examples: [
+        { de: 'Ich bin gestern ins Kino gegangen.', en: 'I went to the cinema yesterday. (gehen: sein)' },
+        { de: 'Sie ist nach London geflogen.', en: 'She flew to London. (fliegen: sein)' },
+        { de: 'Wir sind nach Köln umgezogen.', en: 'We moved to Cologne. (umziehen: sein)' },
+      ],
+    },
+    {
+      title: 'Change of state',
+      text: `
+The second group: the subject **becomes something different**: awake, asleep, older.
+
+| infinitive | Partizip II |
+|---|---|
+| aufstehen | **aufgestanden** |
+| einschlafen | **eingeschlafen** |
+| aufwachen | **aufgewacht** |
+| werden | **geworden** |
+| sterben | **gestorben** |
+
+Many of these are separable, so **ge-** sits between the prefix and the stem.
+`,
+      examples: [
+        { de: 'Sie ist heute früh aufgestanden.', en: 'She got up early today. (aufstehen: sein)' },
+        { de: 'Das Baby ist endlich eingeschlafen.', en: 'The baby finally fell asleep. (einschlafen: sein)' },
+        { de: 'Er ist Vater geworden.', en: 'He became a father. (werden: sein)' },
+      ],
+    },
+    {
+      title: 'Three verbs to simply learn',
+      text: `
+Three more verbs take **sein** although nothing moves or changes: **sein** (*ist gewesen*), **bleiben** (*ist geblieben*) and **passieren** (*ist passiert*).
+
+*bleiben* is the strange one: staying is the opposite of moving, but it still takes *sein*. Accept it as a fixed fact.
+`,
+      examples: [
+        { de: 'Am Sonntag sind wir zu Hause geblieben.', en: 'On Sunday we stayed at home. (bleiben: sein, even without movement)' },
+        { de: 'Was ist passiert?', en: 'What happened? (passieren: sein)' },
+        { de: 'Bist du lange geblieben?', en: 'Did you stay long?' },
+      ],
+    },
+    {
+      title: 'A test: haben or sein?',
+      text: `
+Ask: does the subject **move from A to B** or **change from one state to another**? If yes, **sein**.
+
+If the verb has a direct object (*Ich habe das Auto gefahren*) or describes an activity with no change of place or state (*geschlafen, gearbeitet, gespielt*), it takes **haben**.
+`,
+      examples: [
+        { de: 'Ich bin gelaufen.', en: 'I ran. (movement: sein)' },
+        { de: 'Ich habe Sport gemacht.', en: 'I did sport. (activity: haben)' },
+        { de: 'Ich bin eingeschlafen.', en: 'I fell asleep. (change: sein)' },
+        { de: 'Ich habe gut geschlafen.', en: 'I slept well. (no change: haben)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-31-perfekt-haben', note: 'Same structure, same participle rules; only the helper verb changes.' },

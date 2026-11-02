@@ -9,10 +9,11 @@ const topic: Topic = {
   germanTerm: 'Verbzweitstellung',
   tags: ['word order', 'syntax', 'verb second', 'inversion'],
   summary: 'In a German statement the conjugated verb is always the second element; whatever you put first, the subject moves behind the verb if needed.',
-  explanation: `
-### The one rule that shapes every German sentence
-
-In a normal statement, the **conjugated verb** (the one with the ending) is always in **position 2**. Not the second *word*, the second **element** (*Satzglied*): a group of words that belongs together counts as one position.
+  steps: [
+    {
+      title: 'The verb is always second',
+      text: `
+In a normal statement the **conjugated verb** (the one with the ending) is always in **position 2**. Not the second *word*: the second **element** (*Satzglied*), a group of words that belongs together.
 
 | position 1 | position 2 (verb) | the rest |
 |---|---|---|
@@ -20,69 +21,72 @@ In a normal statement, the **conjugated verb** (the one with the ending) is alwa
 | Morgens | **trinke** | ich Kaffee. |
 | Kaffee | **trinke** | ich morgens. |
 
-All three sentences are correct and mean *I drink coffee in the morning*. The only thing that never moves is the verb: it stays second.
+All three are correct and mean *I drink coffee in the morning*. Only the verb never moves.
+`,
+      examples: [
+        { de: 'Ich trinke morgens Kaffee.', en: 'I drink coffee in the morning. (subject first)' },
+        { de: 'Morgens trinke ich Kaffee.', en: 'In the morning I drink coffee. (time first, verb still second)' },
+        { de: 'Kaffee trinke ich morgens.', en: 'Coffee I drink in the morning. (object first, verb still second)' },
+      ],
+    },
+    {
+      title: 'What can be first?',
+      text: `
+Almost anything: the **subject**, a **time**, a **place** or an **object**. German speakers put the thing they want to stress or connect to in position 1. Starting with a time word (*heute, morgen, dann, jetzt*) is extremely common.
 
-### What can be first?
-
-Almost anything:
-
-- the **subject**: *Ich gehe heute ins Kino.*
-- a **time**: *Heute gehe ich ins Kino.*
-- a **place**: *In Berlin wohnt mein Bruder.*
-- an **object**: *Das Buch kenne ich.*
-
-English does not allow this. *Today go I to the cinema* is wrong in English but exactly how German works. German speakers put the thing they want to **emphasise or connect to** in position 1. Starting with a time word (*heute, morgen, dann, jetzt*) is extremely common.
-
-### The subject moves behind the verb
-
+English does not allow this: *Today go I to the cinema* is wrong in English but exactly how German works.
+`,
+      examples: [
+        { de: 'Ich gehe heute ins Kino.', en: 'I am going to the cinema today. (subject first)' },
+        { de: 'Heute gehe ich ins Kino.', en: 'Today I am going to the cinema. (time first)' },
+        { de: 'In Berlin wohnt mein Bruder.', en: 'My brother lives in Berlin. (place first)' },
+        { de: 'Das Buch kenne ich.', en: 'I know that book. (object first)' },
+      ],
+    },
+    {
+      title: 'The subject moves behind the verb',
+      text: `
 When something other than the subject is first, the subject goes **directly after the verb**. This swap is called **inversion** (*Inversion*).
 
-| normal | inverted |
-|---|---|
-| Ich habe heute Zeit. | Heute **habe ich** Zeit. |
-| Wir fahren am Montag nach Wien. | Am Montag **fahren wir** nach Wien. |
-
-Learners often write *Heute ich habe Zeit*. That puts the verb third, and it is the single most common word-order mistake. Check: what is in position 1? Then the verb. Then the subject.
-
-### Position 1 can be long
-
-A whole phrase can fill position 1. It still counts as **one** element:
-
-- *Am Montag um neun Uhr* **beginnt** der Kurs. – On Monday at nine the course starts.
-- *Mein Bruder und ich* **wohnen** in Köln. – My brother and I live in Cologne.
-
-### Connecting words that do not count
-
-A few short connectors sit in **position 0**: they join sentences but do not take a position. After **und** (and), **aber** (but), **oder** (or), **denn** (because) the verb-second rule starts fresh:
-
-- Ich bin müde, **aber** ich **arbeite**. – I am tired, but I am working.
-- Er kommt nicht, **denn** er **ist** krank. – He is not coming, because he is sick.
-
-Compare this with **dann** (then) and **deshalb** (therefore), which **do** count as position 1 and cause inversion: *Er ist krank, **deshalb kommt** er nicht.*
-
-### Where the other parts go
-
-After the verb and subject, the rest follows. For now, a simple guide: **time before place**, and the main information often at the end. *Ich fahre **morgen** **nach Berlin**.* Word order of the middle part has its own topic later.
-
-### Why it matters
-
-Verb-second is the skeleton of every German statement. Questions, commands, and later the "verb at the end" of sub-clauses are all described as variations of this rule. If you check "is my verb second?" in every sentence you write, you will remove most of your word-order errors at once.
+Learners often write *Heute ich habe Zeit*. That puts the verb third, the most common word-order mistake. Check: what is in position 1? Then the verb. Then the subject.
 `,
-  examples: [
-    { de: 'Ich lerne heute Deutsch.', en: 'I am learning German today. (subject first)' },
-    { de: 'Heute lerne ich Deutsch.', en: 'Today I am learning German. (time first, subject after the verb)' },
-    { de: 'Am Wochenende fahren wir nach Hamburg.', en: 'At the weekend we drive to Hamburg. (long time phrase = one position)' },
-    { de: 'Das Buch kenne ich nicht.', en: 'I do not know that book. (object first for emphasis)' },
-    { de: 'Jetzt habe ich Zeit.', en: 'Now I have time.' },
-    { de: 'Ich bin müde, aber ich arbeite.', en: 'I am tired, but I am working. (aber does not count as a position)' },
-    { de: 'Er ist krank, deshalb bleibt er zu Hause.', en: 'He is sick, so he stays at home. (deshalb takes position 1)' },
+      examples: [
+        { de: 'Heute habe ich Zeit.', en: 'Today I have time. (not: Heute ich habe Zeit)' },
+        { de: 'Am Montag fahren wir nach Wien.', en: 'On Monday we are going to Vienna. (verb, then wir)' },
+        { de: 'Jetzt habe ich Hunger.', en: 'Now I am hungry.' },
+      ],
+    },
+    {
+      title: 'Position 1 can be long',
+      text: `
+A whole phrase can fill position 1. It still counts as **one** element, so the verb comes after the whole phrase, however long it is. Count elements, not words.
+`,
+      examples: [
+        { de: 'Am Montag um neun Uhr beginnt der Kurs.', en: 'On Monday at nine the course starts. (one long time phrase, then the verb)' },
+        { de: 'Mein Bruder und ich wohnen in Köln.', en: 'My brother and I live in Cologne. (one long subject)' },
+        { de: 'Am Wochenende fahren wir nach Hamburg.', en: 'At the weekend we drive to Hamburg.' },
+      ],
+    },
+    {
+      title: 'und, aber, oder, denn do not count',
+      text: `
+A few short connectors sit in **position 0**: they join two sentences but take no position. After **und** (and), **aber** (but), **oder** (or) and **denn** (because) the verb-second rule starts fresh.
+
+Compare **dann** (then) and **deshalb** (therefore): they **do** count as position 1 and push the subject behind the verb.
+`,
+      examples: [
+        { de: 'Ich bin müde, aber ich arbeite.', en: 'I am tired, but I am working. (aber: position 0, then ich arbeite)' },
+        { de: 'Er kommt nicht, denn er ist krank.', en: 'He is not coming, because he is sick. (denn: position 0)' },
+        { de: 'Er ist krank, deshalb bleibt er zu Hause.', en: 'He is sick, so he stays at home. (deshalb: position 1, then the verb)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-05-present-tense-regular', note: 'The verb in position 2 is the conjugated verb from the present-tense topic.' },
     { topicId: 'a1-07-questions', note: 'In yes/no questions the verb moves to position 1; in W-questions the question word is first, the verb second.' },
     { topicId: 'a1-16-separable-verbs', note: 'With separable verbs the conjugated part is second and the prefix goes to the end.' },
     { topicId: 'a1-17-modal-verbs', note: 'With a modal verb the modal is second and the infinitive goes to the end: the sentence bracket.' },
-    { topicId: 'a1-30-word-order-midfield', note: 'What happens after the verb (time, manner, place) has its own rules.' },
+    { topicId: 'a1-30-word-order-midfield', note: 'What happens after the verb (time before place, and the rest) has its own rules.' },
   ],
   edgeCases: [
     '**Position = element, not word.** *Am Montag um neun Uhr* is one element, so the verb comes after the whole phrase.',

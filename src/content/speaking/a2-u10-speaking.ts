@@ -30,7 +30,7 @@ const scenario: SpeakingScenario = {
     { de: 'Wenn wir den Anschluss verpassen, nehmen wir den nächsten Zug.', en: 'If we miss the connection, we take the next train.' },
     { de: 'Warte mal, das habe ich nicht verstanden. Was meinst du?', en: 'Wait a moment, I did not understand that. What do you mean?' },
   ],
-  grammarFocus: ['a2-27-adverbial-connectors', 'a2-28-subjunctions-obwohl-damit', 'a2-29-modal-particles', 'a2-05-wenn-ob-indirect-questions'],
+  grammarFocus: ['a2-27-adverbial-connectors', 'a2-28-subjunctions-obwohl-damit', 'a2-28b-time-subjunctions', 'a2-29-modal-particles', 'a2-05-wenn-ob-indirect-questions', 'a2-05b-indirect-questions'],
   vocabFocus: ['die Verspätung', 'der Anschluss', 'das Gleis', 'die Fahrkarte', 'die Reservierung', 'die Abfahrt', 'die Ankunft', 'umsteigen', 'verpassen', 'ausfallen', 'ausgebucht'],
   minTurns: 6,
 };

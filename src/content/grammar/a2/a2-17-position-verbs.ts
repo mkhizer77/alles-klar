@@ -4,72 +4,89 @@ const topic: Topic = {
   id: 'a2-17-position-verbs',
   level: 'A2',
   unit: 6,
-  order: 17,
+  order: 18,
   title: 'Verbs of placing and position (stellen / stehen, legen / liegen …)',
   germanTerm: 'Positionsverben',
   tags: ['verbs', 'prepositions', 'accusative', 'dative', 'position'],
   summary: 'German uses pairs of verbs for "putting" and "being somewhere": one verb for the action (stellen, legen, setzen, hängen) and a partner verb for the resulting position (stehen, liegen, sitzen, hängen).',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'Put is not enough',
+      text: `
+English says *put* for almost everything. German is more precise. It has **position verbs** (*Positionsverben*) that come in **pairs**: one verb for the **action** of placing something (*stellen*) and one for the **state** that follows (*stehen*).
 
-English says *put* for almost everything: put the glass on the table, put the book in the bag, put the coat on the hook. German is more precise. It has a small set of **position verbs** (*Positionsverben*) that come in **pairs**:
-
-- one verb for the **action** of placing something (*stellen* – to stand something up),
-- one verb for the **state** that follows (*stehen* – to be standing).
-
-The action verbs answer **wohin?** (where to?) and take the **Accusative**. The state verbs answer **wo?** (where?) and take the **Dative**. This is the same rule as the two-way prepositions, so the two topics belong together.
-
-### The pairs
-
-| action (wohin? + Accusative) | state (wo? + Dative) | used for |
-|---|---|---|
-| **stellen** (to stand something up) | **stehen** (to stand) | upright things: bottles, glasses, lamps, people standing |
-| **legen** (to lay something down) | **liegen** (to lie) | flat things: books, pens, clothes, people lying |
-| **setzen** (to set / sit someone down) | **sitzen** (to sit) | people and animals sitting; *sich setzen* = to sit down |
-| **hängen** (to hang something up) | **hängen** (to be hanging) | pictures, coats, lamps on the ceiling |
-| **stecken** (to put inside) | **stecken** (to be inside) | keys in a lock, hands in pockets, a letter in an envelope |
-
-### The Perfekt forms
-
-The **action verbs are regular**: their Partizip II ends in *-t*. The **state verbs are irregular**: their Partizip II ends in *-en* and the vowel changes. Both groups use **haben**.
-
-| verb | er / sie / es | Perfekt |
-|---|---|---|
-| stellen | stellt | hat gestellt |
-| stehen | steht | hat gestanden |
-| legen | legt | hat gelegt |
-| liegen | liegt | hat gelegen |
-| setzen | setzt | hat gesetzt |
-| sitzen | sitzt | hat gesessen |
-| hängen | hängt | hat gehängt (action) / hat gehangen (state) |
-
-You may also see the one-word past (Präteritum) in stories: *stand, lag, saß, hing* for the state verbs, *stellte, legte, setzte, hängte* for the action verbs. You only need to recognise these for now.
-
-### How a sentence works
-
-Action: **subject + action verb + object (Accusative) + place (Accusative)**
-
-- Ich **stelle die Flasche** auf **den** Tisch. – *I put the bottle on the table.*
-
-State: **subject + state verb + place (Dative)**
-
-- Die Flasche **steht** auf **dem** Tisch. – *The bottle is (standing) on the table.*
-
-Notice that the thing being placed (*die Flasche*) becomes the subject of the state sentence.
-
-### Why it matters
-
-German speakers never say *Das Buch ist auf dem Tisch* when they can say *Das Buch liegt auf dem Tisch*. Using the right position verb is one of the clearest signs that you have moved past A1. It also forces you to pick the right case after a two-way preposition: action → Accusative, state → Dative. Get the verb right and the case follows automatically.
+Action verbs answer **wohin?** and take the **Accusative**. State verbs answer **wo?** and take the **Dative**. This is the two-way preposition rule again.
 `,
-  examples: [
-    { de: 'Ich stelle die Vase auf den Tisch.', en: 'I put the vase on the table. (stellen: upright → Accusative)' },
-    { de: 'Die Vase steht auf dem Tisch.', en: 'The vase is standing on the table. (stehen: state → Dative)' },
-    { de: 'Er legt das Handy in die Tasche.', en: 'He puts the phone in the bag. (legen: flat)' },
-    { de: 'Das Handy liegt in der Tasche.', en: 'The phone is in the bag.' },
-    { de: 'Setz dich bitte auf den Stuhl!', en: 'Please sit down on the chair. (sich setzen = to sit down)' },
-    { de: 'Wir sitzen schon im Restaurant.', en: 'We are already sitting in the restaurant.' },
-    { de: 'Sie hängt die Jacke an den Haken.', en: 'She hangs the jacket on the hook.' },
-    { de: 'Der Schlüssel steckt im Schloss.', en: 'The key is in the lock. (stecken: inside)' },
+      examples: [
+        { de: 'Ich stelle die Vase auf den Tisch.', en: 'I put the vase on the table. (action: auf den, Accusative)' },
+        { de: 'Die Vase steht auf dem Tisch.', en: 'The vase is standing on the table. (state: auf dem, Dative)' },
+        { de: 'Er legt das Handy in die Tasche.', en: 'He puts the phone in the bag. (action)' },
+        { de: 'Das Handy liegt in der Tasche.', en: 'The phone is in the bag. (state)' },
+      ],
+    },
+    {
+      title: 'stellen / stehen upright, legen / liegen flat',
+      text: `
+**stellen / stehen** are for things that stand **upright**: bottles, glasses, lamps, people on their feet. **legen / liegen** are for things that lie **flat**: books, pens, clothes, people in bed.
+
+So a bottle *steht* on the table, but a book *liegt* on it. Pick the verb by the shape of the thing, not by the English word *put*.
+`,
+      examples: [
+        { de: 'Stell die Flasche bitte in den Kühlschrank.', en: 'Please put the bottle in the fridge. (upright: stellen)' },
+        { de: 'Die Flasche steht im Kühlschrank.', en: 'The bottle is in the fridge. (stehen)' },
+        { de: 'Ich lege den Stift auf den Tisch.', en: 'I put the pen on the table. (flat: legen)' },
+        { de: 'Der Stift liegt auf dem Tisch.', en: 'The pen is lying on the table. (liegen)' },
+      ],
+    },
+    {
+      title: 'setzen / sitzen, hängen and stecken',
+      text: `
+**setzen / sitzen** are for people and animals sitting. *sich setzen* = to sit down.
+
+**hängen** is both the action (to hang something up) and the state (to be hanging): pictures, coats, lamps.
+
+**stecken** is also both: to put something **inside** and to be inside. Keys in a lock, hands in pockets, a letter in an envelope.
+`,
+      examples: [
+        { de: 'Setz dich bitte auf den Stuhl.', en: 'Please sit down on the chair. (sich setzen: wohin?)' },
+        { de: 'Wir sitzen schon im Restaurant.', en: 'We are already sitting in the restaurant. (wo?)' },
+        { de: 'Sie hängt die Jacke an den Haken.', en: 'She hangs the jacket on the hook. (action)' },
+        { de: 'Der Schlüssel steckt im Schloss.', en: 'The key is in the lock. (stecken: state)' },
+      ],
+    },
+    {
+      title: 'The Perfekt forms',
+      text: `
+The **action verbs are regular**: *hat gestellt, hat gelegt, hat gesetzt, hat gehängt*. The **state verbs are irregular**: the Partizip II ends in *-en* and the vowel changes. All of them use **haben**.
+
+| state verb | Perfekt |
+|---|---|
+| stehen | hat **gestanden** |
+| liegen | hat **gelegen** |
+| sitzen | hat **gesessen** |
+| hängen | hat **gehangen** |
+`,
+      examples: [
+        { de: 'Sie hat die Vase auf den Tisch gestellt.', en: 'She put the vase on the table. (regular: gestellt)' },
+        { de: 'Die Vase hat auf dem Tisch gestanden.', en: 'The vase stood on the table. (irregular: gestanden)' },
+        { de: 'Das Bild hat an der Wand gehangen.', en: 'The picture hung on the wall. (state: gehangen)' },
+      ],
+    },
+    {
+      title: 'The sentence pattern',
+      text: `
+Action: **subject + action verb + thing (Accusative) + place (Accusative)**.
+
+State: **subject + state verb + place (Dative)**.
+
+Notice that the thing being placed (*die Flasche*) becomes the **subject** of the state sentence. Get the verb right and the case follows: action → Accusative, state → Dative.
+`,
+      examples: [
+        { de: 'Ich stelle die Flasche auf den Tisch.', en: 'I put the bottle on the table. (die Flasche = object)' },
+        { de: 'Die Flasche steht auf dem Tisch.', en: 'The bottle is standing on the table. (die Flasche = subject)' },
+        { de: 'Wo liegen meine Schlüssel?', en: 'Where are my keys? (wo? → state verb)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-29-two-way-prepositions', note: 'The wohin? / wo? rule for prepositions is exactly the action / state rule for these verbs.' },
@@ -83,6 +100,7 @@ German speakers never say *Das Buch ist auf dem Tisch* when they can say *Das Bu
     'In the Perfekt, **stehen, liegen, sitzen** use *haben* in standard German: *Ich habe gesessen*. (In southern Germany and Austria you will hear *ich bin gesessen*, but the textbook form is *haben*.)',
     'The two forms of **hängen** look the same in the present (*hängt*). Only the Perfekt shows the difference: *hat gehängt* (action) vs *hat gehangen* (state).',
     'Do not add **sich** by mistake to the state verb: *Ich setze mich* (I sit down) but *Ich sitze* (I am sitting), never *Ich sitze mich*.',
+    'In stories you will see the Präteritum **stand, lag, saß, hing** (state) and **stellte, legte, setzte, hängte** (action). Recognise them; you do not need to produce them yet.',
   ],
   exercises: [
     {

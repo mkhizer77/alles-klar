@@ -9,12 +9,11 @@ const topic: Topic = {
   germanTerm: 'sein / haben',
   tags: ['verbs', 'sein', 'haben', 'irregular', 'present tense'],
   summary: 'sein (to be) and haben (to have) are the two most used German verbs; both are irregular, so their forms must be learned by heart.',
-  explanation: `
-### Why these two verbs come first
-
-**sein** (*to be*) and **haben** (*to have*) are the most frequent verbs in German. You need them to say who you are, how you feel, what you own and how old you are. Later they also build the past tense (*ich habe gegessen*, *ich bin gegangen*). Both are **irregular**: their forms do not follow the normal pattern, so you learn them as a set, like *am / is / are* in English.
-
-### sein – to be
+  steps: [
+    {
+      title: 'sein: to be',
+      text: `
+**sein** (*to be*) is the most frequent German verb. It is **irregular** (its forms do not follow the normal pattern), so you learn them as a set, like *am / is / are*.
 
 | pronoun | form | English |
 |---|---|---|
@@ -23,18 +22,39 @@ const topic: Topic = {
 | er / sie / es | **ist** | he / she / it is |
 | wir | **sind** | we are |
 | ihr | **seid** | you (all) are |
-| sie / Sie | **sind** | they are / you are (formal) |
+| sie / Sie | **sind** | they are / you are (polite) |
 
-Notice that *sein* itself never appears in these forms. The word *sein* is only the **infinitive**, the dictionary form. Say the table out loud several times: *bin, bist, ist, sind, seid, sind*.
+The word *sein* itself never appears in a sentence like this. It is only the **infinitive** (the dictionary form).
+`,
+      examples: [
+        { de: 'Ich bin Studentin.', en: 'I am a student.' },
+        { de: 'Du bist sehr nett.', en: 'You are very kind.' },
+        { de: 'Wir sind aus Kanada.', en: 'We are from Canada.' },
+        { de: 'Seid ihr müde?', en: 'Are you (all) tired? (ihr seid)' },
+      ],
+    },
+    {
+      title: 'What you use sein for',
+      text: `
+You use **sein** to say who or what someone is, how they are, and where they are:
 
-What you use *sein* for:
-
-- **Identity and job**: Ich **bin** Lehrerin. – I am a teacher.
-- **Qualities and feelings**: Er **ist** müde. – He is tired.
-- **Place**: Wir **sind** in Berlin. – We are in Berlin.
-- **Origin**: Sie **ist** aus Polen. – She is from Poland.
-
-### haben – to have
+- **identity and job**: Ich **bin** Lehrerin.
+- **qualities and feelings**: Er **ist** müde.
+- **place**: Wir **sind** in Berlin.
+- **origin**: Sie **ist** aus Polen.
+- **age**: Ich **bin** 30 Jahre alt.
+`,
+      examples: [
+        { de: 'Ich bin Lehrerin.', en: 'I am a teacher. (job)' },
+        { de: 'Er ist müde.', en: 'He is tired. (feeling)' },
+        { de: 'Wir sind in Berlin.', en: 'We are in Berlin. (place)' },
+        { de: 'Sie ist 25 Jahre alt.', en: 'She is 25 years old. (age uses sein)' },
+      ],
+    },
+    {
+      title: 'haben: to have',
+      text: `
+**haben** (*to have*) is almost regular. Only **du hast** and **er hat** are odd: the *b* disappears (not *habst*, not *habt*).
 
 | pronoun | form | English |
 |---|---|---|
@@ -43,43 +63,39 @@ What you use *sein* for:
 | er / sie / es | **hat** | he / she / it has |
 | wir | **haben** | we have |
 | ihr | **habt** | you (all) have |
-| sie / Sie | **haben** | they have / you have (formal) |
+| sie / Sie | **haben** | they have / you have (polite) |
 
-*haben* is almost regular. Only **du hast** and **er hat** are odd: the *b* disappears (not *habst*, *habt*).
-
-What you use *haben* for:
-
-- **Possession**: Ich **habe** ein Auto. – I have a car.
-- **Family**: Sie **hat** zwei Kinder. – She has two children.
-- **Hunger, thirst, time, fear**: Ich **habe** Hunger. – I am hungry. (literally: I have hunger)
-
-### The big difference from English
-
-Several English *to be* phrases use **haben** in German. These are fixed and worth memorising:
+You use it for things you own and for your family: Ich **habe** ein Auto. Sie **hat** zwei Kinder.
+`,
+      examples: [
+        { de: 'Ich habe einen Hund.', en: 'I have a dog.' },
+        { de: 'Er hat keine Zeit.', en: 'He has no time. (er hat: no b)' },
+        { de: 'Hast du Geschwister?', en: 'Do you have brothers or sisters? (du hast: no b)' },
+        { de: 'Wir haben ein Auto.', en: 'We have a car.' },
+      ],
+    },
+    {
+      title: 'Hunger, Durst and Angst use haben',
+      text: `
+Several English *to be* phrases use **haben** in German. Learn them as fixed phrases:
 
 | English (to be) | German (haben) |
 |---|---|
 | I **am** hungry | Ich **habe** Hunger |
 | I **am** thirsty | Ich **habe** Durst |
-| I **am** in a hurry | Ich **habe** es eilig |
 | I **am** afraid | Ich **habe** Angst |
+| I **am** in a hurry | Ich **habe** es eilig |
 | I **am** right | Ich **habe** Recht |
 
-But **age** uses *sein*: Ich **bin** 30 Jahre alt. – I am 30 years old. (Not *habe*, as in French or Spanish.)
-
-### Why it matters
-
-With just *sein*, *haben* and a few nouns you can already produce dozens of useful sentences: *Ich bin Anna, ich bin 28, ich bin aus London, ich habe einen Bruder, ich habe Hunger.* These two verbs also return in every later unit, especially the Perfekt (past tense), where *haben* or *sein* is the helper verb in every single sentence.
+But **age** stays with *sein*: Ich **bin** 30, not *Ich habe 30*.
 `,
-  examples: [
-    { de: 'Ich bin Studentin.', en: 'I am a student. (sein for your job or role)' },
-    { de: 'Du bist sehr nett.', en: 'You are very kind.' },
-    { de: 'Wir sind aus Kanada.', en: 'We are from Canada.' },
-    { de: 'Seid ihr müde?', en: 'Are you (all) tired? (ihr seid)' },
-    { de: 'Ich habe einen Hund.', en: 'I have a dog.' },
-    { de: 'Er hat keine Zeit.', en: 'He has no time. (er hat, no b)' },
-    { de: 'Hast du Hunger?', en: 'Are you hungry? (German: do you have hunger)' },
-    { de: 'Sie ist 25 Jahre alt.', en: 'She is 25 years old. (age uses sein)' },
+      examples: [
+        { de: 'Ich habe Hunger.', en: 'I am hungry. (literally: I have hunger)' },
+        { de: 'Hast du Durst?', en: 'Are you thirsty?' },
+        { de: 'Sie hat Angst.', en: 'She is afraid.' },
+        { de: 'Ich bin 30 Jahre alt.', en: 'I am 30 years old. (age: sein, not haben)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-03-personal-pronouns', note: 'Each pronoun has its own form of sein and haben; know the pronouns first.' },

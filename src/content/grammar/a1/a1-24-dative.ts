@@ -4,78 +4,82 @@ const topic: Topic = {
   id: 'a1-24-dative',
   level: 'A1',
   unit: 5,
-  order: 24,
+  order: 28,
   title: 'The Dative case: indirect objects',
   germanTerm: 'Dativ',
   tags: ['cases', 'dative', 'articles', 'objects'],
   summary: 'The Dative is the case of the receiver: the person you give, show or tell something to. Its articles are dem, der, dem, den.',
-  explanation: `
-### What it is
-
-Look at *I give the child the book.* There are two objects. *The book* is the thing that moves: the **direct object** (Accusative). *The child* is the person who **receives** it: the **indirect object**. In German, the indirect object stands in the **Dative** (*Dativ*).
-
-- Ich gebe **dem Kind** das Buch. – *I give the child the book.*
-- Sie zeigt **der Frau** den Weg. – *She shows the woman the way.*
-- Er schenkt **seinem Vater** eine Uhr. – *He gives his father a watch.*
+  steps: [
+    {
+      title: 'The Dative marks the receiver',
+      text: `
+Look at *I give the child the book.* There are two objects. *The book* is the thing that moves: the **direct object** (Accusative). *The child* **receives** it: the **indirect object**. In German the receiver stands in the **Dative** (*Dativ*).
 
 To find the Dative, ask **wem?** (to whom?): *Wem gebe ich das Buch? Dem Kind.*
-
-### The articles in the Dative
-
-Unlike the Accusative, the Dative changes **every** gender. This is the first case where the whole row looks new:
+`,
+      examples: [
+        { de: 'Ich gebe dem Kind das Buch.', en: 'I give the child the book. (dem Kind = receiver)' },
+        { de: 'Sie zeigt der Frau den Weg.', en: 'She shows the woman the way. (der Frau = receiver)' },
+        { de: 'Wem gehört das Auto?', en: 'Whose car is this? (wem asks for the Dative)' },
+      ],
+    },
+    {
+      title: 'The articles: dem, der, dem, den',
+      text: `
+Unlike the Accusative, the Dative changes **every** gender.
 
 | | masculine | feminine | neuter | plural |
 |---|---|---|---|---|
 | Nominative | der Mann | die Frau | das Kind | die Kinder |
-| Accusative | den Mann | die Frau | das Kind | die Kinder |
-| **Dative** | **dem** Mann | **der** Frau | **dem** Kind | **den** Kinder**n** |
+| **Dative** | **dem** Mann | **der** Frau | **dem** Kind | **den** Kindern |
 
-The same endings go on *ein*, *kein* and the possessives:
-
-| | masculine | feminine | neuter | plural |
-|---|---|---|---|---|
-| **Dative** | ein**em** / kein**em** / mein**em** Mann | ein**er** / kein**er** / mein**er** Frau | ein**em** / kein**em** / mein**em** Kind | – / kein**en** / mein**en** Kinder**n** |
-
-Three things to notice:
-
-1. Masculine and neuter are the same again: **dem / einem**.
-2. Feminine Dative is **der** – the same word as the masculine Nominative. Do not let that confuse you; the noun tells you which it is.
-3. In the **plural**, the article is **den** and the noun itself adds **-n** (*den Kindern, den Freunden, den Autos* stays without extra n because it already ends in -s).
-
-### Verbs of giving, showing and telling
-
-The Dative appears whenever a verb has a "receiver". These verbs very often take both a Dative person and an Accusative thing:
-
-| verb | meaning |
-|---|---|
-| **geben** | to give |
-| **schenken** | to give as a present |
-| **zeigen** | to show |
-| **bringen** | to bring |
-| **schicken** | to send |
-| **erklären** | to explain |
-| **kaufen** | to buy (for someone) |
-| **empfehlen** | to recommend |
-
-Pattern: **subject + verb + Dative (person) + Accusative (thing)**.
-
-- Ich schicke **meiner Mutter** eine Karte.
-- Der Kellner bringt **dem Gast** die Rechnung.
-
-When both objects are nouns, the Dative normally comes **first**.
-
-### Why it matters
-
-The Dative is not only for giving. In the next topics you will see that it is also demanded by a whole group of prepositions (*mit, von, zu …*), by certain verbs (*helfen, gefallen, danken*), and by location expressions (*im Haus, auf dem Tisch*). In fact, the Dative is used more often than the Accusative in everyday speech. Learning the four forms **dem, der, dem, den + -n** well now pays off in almost every later unit.
+Masculine and neuter are the same: **dem**. Feminine Dative is **der**, the same word as the masculine Nominative; the noun tells you which one it is.
 `,
-  examples: [
-    { de: 'Ich gebe dem Mann den Schlüssel.', en: 'I give the man the key. (dem Mann = receiver, Dative)' },
-    { de: 'Sie zeigt der Lehrerin das Foto.', en: 'She shows the teacher the photo. (feminine Dative: der)' },
-    { de: 'Wir schenken dem Kind ein Spiel.', en: 'We give the child a game. (neuter Dative: dem)' },
-    { de: 'Er erklärt den Schülern die Regel.', en: 'He explains the rule to the pupils. (plural: den + -n)' },
-    { de: 'Ich schicke meiner Oma eine Karte.', en: 'I send my grandma a card. (possessive: meiner)' },
-    { de: 'Der Kellner bringt einem Gast die Suppe.', en: 'The waiter brings a guest the soup. (einem)' },
-    { de: 'Wem gehört das Auto?', en: 'Whose car is this? (wem asks for the Dative)' },
+      examples: [
+        { de: 'Ich gebe dem Mann den Schlüssel.', en: 'I give the man the key. (masculine: dem)' },
+        { de: 'Sie zeigt der Lehrerin das Foto.', en: 'She shows the teacher the photo. (feminine: der)' },
+        { de: 'Wir schenken dem Kind ein Spiel.', en: 'We give the child a game. (neuter: dem)' },
+      ],
+    },
+    {
+      title: 'Plural nouns add -n',
+      text: `
+In the plural the article is **den** and the noun itself adds **-n**: *den Kinder**n***, *den Freunde**n***, *den Schüler**n***. Plurals that already end in **-n** or **-s** stay the same: *den Frauen*, *den Autos*.
+`,
+      examples: [
+        { de: 'Er erklärt den Schülern die Regel.', en: 'He explains the rule to the pupils. (den + Schülern)' },
+        { de: 'Sie gibt den Kindern Schokolade.', en: 'She gives the children chocolate. (den + Kindern)' },
+        { de: 'Ich zeige den Frauen den Weg.', en: 'I show the women the way. (Frauen already ends in -n)' },
+      ],
+    },
+    {
+      title: 'ein, kein and mein in the Dative',
+      text: `
+The same endings go on *ein*, *kein* and the possessives: **-em** for masculine and neuter, **-er** for feminine, **-en** for plural (plus **-n** on the noun).
+
+| masculine | feminine | neuter | plural |
+|---|---|---|---|
+| ein**em** / mein**em** Mann | ein**er** / mein**er** Frau | ein**em** / mein**em** Kind | mein**en** Kindern |
+`,
+      examples: [
+        { de: 'Der Kellner bringt einem Gast die Suppe.', en: 'The waiter brings a guest the soup. (einem)' },
+        { de: 'Ich schicke meiner Oma eine Karte.', en: 'I send my grandma a card. (meiner)' },
+        { de: 'Sie gibt ihren Kindern Geld.', en: 'She gives her children money. (ihren + Kindern)' },
+      ],
+    },
+    {
+      title: 'Verbs of giving, showing and telling',
+      text: `
+The Dative appears whenever a verb has a receiver. These verbs often take a Dative person **and** an Accusative thing: **geben, schenken, zeigen, bringen, schicken, erklären, kaufen, empfehlen**.
+
+Pattern: **subject + verb + Dative (person) + Accusative (thing)**. When both objects are nouns, the Dative comes **first**.
+`,
+      examples: [
+        { de: 'Ich schicke meiner Mutter eine Karte.', en: 'I send my mother a card. (person, then thing)' },
+        { de: 'Der Kellner bringt dem Gast die Rechnung.', en: 'The waiter brings the guest the bill.' },
+        { de: 'Sie kauft ihrem Sohn ein Eis.', en: 'She buys her son an ice cream.' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-20-accusative', note: 'The Accusative is the thing given; the Dative is the person who receives it. Many sentences have both.' },

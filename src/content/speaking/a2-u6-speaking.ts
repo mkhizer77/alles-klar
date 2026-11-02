@@ -30,7 +30,7 @@ const scenario: SpeakingScenario = {
     { de: 'Wie hoch ist die Gebühr und bis wann gilt die Frist?', en: 'How much is the fee and until when does the deadline run?' },
     { de: 'Entschuldigung, das habe ich nicht verstanden. Können Sie das wiederholen?', en: 'Sorry, I did not understand that. Could you repeat it?' },
   ],
-  grammarFocus: ['a2-16-two-way-prepositions-depth', 'a2-17-position-verbs', 'a2-18-directions-hin-her', 'a1-29-two-way-prepositions'],
+  grammarFocus: ['a2-16-two-way-prepositions-depth', 'a2-17-position-verbs', 'a2-18-directions-hin-her', 'a2-18b-nach-zu-in', 'a1-29-two-way-prepositions'],
   vocabFocus: ['die Anmeldung', 'der Personalausweis', 'das Formular', 'die Unterlagen', 'die Bescheinigung', 'der Schalter', 'die Gebühr', 'die Frist', 'die Kopie', 'ausfüllen', 'unterschreiben', 'abgeben'],
   minTurns: 6,
 };

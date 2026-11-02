@@ -4,70 +4,86 @@ const topic: Topic = {
   id: 'a2-22-um-zu-ohne-zu',
   level: 'A2',
   unit: 8,
-  order: 22,
+  order: 25,
   title: 'um … zu, ohne … zu, anstatt … zu',
   germanTerm: 'Finalsatz',
   tags: ['infinitive', 'zu', 'purpose', 'connectors', 'sentence structure'],
   summary: 'um … zu says why you do something (in order to), ohne … zu says what you do not do at the same time (without …ing), and anstatt … zu says what you do instead (instead of …ing).',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'Three small words in front of zu',
+      text: `
+You know *zu* + infinitive. Now put a small word in front of it, and the infinitive gets a **meaning**:
 
-Once you know *zu* + infinitive, you can put a small word in front of it to give the infinitive a **meaning**:
+| construction | English |
+|---|---|
+| **um … zu** + infinitive | in order to (a purpose) |
+| **ohne … zu** + infinitive | without …ing |
+| **anstatt … zu** / **statt … zu** + infinitive | instead of …ing |
 
-| construction | meaning | English |
-|---|---|---|
-| **um … zu** + infinitive | purpose, goal | in order to |
-| **ohne … zu** + infinitive | something does not happen | without …ing |
-| **anstatt … zu** / **statt … zu** + infinitive | an alternative | instead of …ing |
-
-All three build a clause that is separated from the main clause by a **comma**, and in all three the **zu + infinitive goes to the end**. (The *um … zu* clause is called a *Finalsatz*, a purpose clause.)
-
-- Ich lerne Deutsch, **um** in Berlin **zu arbeiten**. – *I learn German in order to work in Berlin.*
-- Er ging weg, **ohne** ein Wort **zu sagen**. – *He left without saying a word.*
-- Sie spielt Computer, **anstatt zu lernen**. – *She plays computer games instead of studying.*
-
-### How it works
-
-1. *um / ohne / anstatt* opens the clause.
-2. Everything that belongs to the infinitive (objects, places, times) goes in the middle.
-3. **zu + infinitive** closes the clause. With separable verbs *zu* goes inside: *um einzukaufen*.
-
-The clause can also come **first**. Then the main clause starts with the verb, because the whole infinitive clause fills position 1:
-
-- **Um fit zu bleiben**, **gehe** ich jeden Tag laufen.
-
-### um … zu: the key rule
-
-**um … zu** can only be used when the **subject of both actions is the same**. Who learns German? I do. Who wants to work in Berlin? I do. So *um … zu* is fine.
-
-If the subjects are different, you must use **damit** + a full subordinate clause instead:
-
-- Ich spreche langsam, **damit du mich verstehst**. – *I speak slowly so that you understand me.* (ich / du → damit)
-- Ich spreche langsam, **um** deutlich **zu sein**. – (ich / ich → um … zu)
-
-A good test: ask **Wozu?** (what for?). If the answer makes sense with *um … zu*, you have a purpose clause.
-
-### ohne … zu and anstatt … zu
-
-These two are easier: they also need the same subject, and there is no special rule to remember.
-
-- Sie geht aus dem Haus, **ohne** die Tür **abzuschließen**. – *She leaves the house without locking the door.*
-- Wir fahren mit dem Rad, **anstatt** das Auto **zu nehmen**. – *We cycle instead of taking the car.*
-
-Note that English uses the *-ing* form (*without saying*); German always uses *zu* + infinitive.
-
-### Why it matters
-
-These three constructions let you explain reasons, goals and choices in one sentence, which is exactly what A2 writing tasks ask for (*Warum lernen Sie Deutsch? Um …*). The *um … zu* vs *damit* distinction is also a favourite exam question, so make the "same subject" check a habit.
+The *um … zu* clause is called a *Finalsatz* (a purpose clause).
 `,
-  examples: [
-    { de: 'Ich lerne Deutsch, um in Deutschland zu studieren.', en: 'I am learning German in order to study in Germany. (purpose, same subject)' },
-    { de: 'Um fit zu bleiben, gehe ich dreimal pro Woche laufen.', en: 'To stay fit, I go running three times a week. (um-clause first → verb next)' },
-    { de: 'Er ging, ohne sich zu verabschieden.', en: 'He left without saying goodbye.' },
-    { de: 'Sie sieht fern, anstatt die Hausaufgaben zu machen.', en: 'She watches TV instead of doing her homework.' },
-    { de: 'Wir sparen Geld, um ein Auto zu kaufen.', en: 'We are saving money to buy a car.' },
-    { de: 'Ich rufe an, um einen Termin zu vereinbaren.', en: 'I am calling to make an appointment.' },
-    { de: 'Ich erkläre es noch einmal, damit alle es verstehen.', en: 'I will explain it again so that everyone understands. (different subjects → damit, not um … zu)' },
+      examples: [
+        { de: 'Ich lerne Deutsch, um in Berlin zu arbeiten.', en: 'I am learning German in order to work in Berlin. (purpose)' },
+        { de: 'Er ging weg, ohne ein Wort zu sagen.', en: 'He left without saying a word.' },
+        { de: 'Sie spielt Computer, anstatt zu lernen.', en: 'She plays computer games instead of studying.' },
+      ],
+    },
+    {
+      title: 'How the clause is built',
+      text: `
+All three work the same way:
+
+1. **um / ohne / anstatt** opens the clause, after a **comma**.
+2. Everything that belongs to the infinitive (objects, places, times) goes in the middle.
+3. **zu + infinitive** closes the clause. With a separable verb, *zu* goes inside: *um einzukaufen*.
+`,
+      examples: [
+        { de: 'Wir sparen Geld, um ein Auto zu kaufen.', en: 'We are saving money to buy a car. (um … ein Auto … zu kaufen)' },
+        { de: 'Ich rufe an, um einen Termin zu vereinbaren.', en: 'I am calling to make an appointment.' },
+        { de: 'Ich fahre in die Stadt, um einzukaufen.', en: 'I am going into town to do some shopping. (separable: ein-zu-kaufen)' },
+      ],
+    },
+    {
+      title: 'um … zu needs the same subject',
+      text: `
+**um … zu** only works when the **subject of both actions is the same**. Who learns German? I do. Who wants to work in Berlin? I do. So *um … zu* is fine.
+
+If the subjects are different, use **damit** + a full clause with the verb at the end instead.
+
+A good test: ask **Wozu?** (what for?). If the answer is a purpose, you have *um … zu* or *damit*.
+`,
+      examples: [
+        { de: 'Ich spreche langsam, um deutlich zu sein.', en: 'I speak slowly in order to be clear. (ich / ich: um … zu)' },
+        { de: 'Ich spreche langsam, damit du mich verstehst.', en: 'I speak slowly so that you understand me. (ich / du: damit)' },
+        { de: 'Ich erkläre es noch einmal, damit alle es verstehen.', en: 'I will explain it again so that everyone understands. (different subjects: damit)' },
+      ],
+    },
+    {
+      title: 'ohne … zu and anstatt … zu',
+      text: `
+These two are easier. They also need the same subject, and there is no other rule to remember.
+
+Notice that English uses the *-ing* form (*without saying*, *instead of taking*). German always uses *zu* + infinitive. **anstatt** and **statt** mean the same thing; *statt* is a little shorter and more casual.
+`,
+      examples: [
+        { de: 'Er ging, ohne sich zu verabschieden.', en: 'He left without saying goodbye.' },
+        { de: 'Sie geht aus dem Haus, ohne die Tür abzuschließen.', en: 'She leaves the house without locking the door.' },
+        { de: 'Wir fahren mit dem Rad, anstatt das Auto zu nehmen.', en: 'We cycle instead of taking the car.' },
+        { de: 'Sie sieht fern, statt die Hausaufgaben zu machen.', en: 'She watches TV instead of doing her homework. (statt = anstatt)' },
+      ],
+    },
+    {
+      title: 'The clause can come first',
+      text: `
+You can also start the sentence with the *um*-clause (or *ohne* / *anstatt*). The whole clause then fills **position 1**, so the main clause starts with the **verb** and the subject comes after it: *Um fit zu bleiben, **gehe ich** jeden Tag laufen.*
+`,
+      examples: [
+        { de: 'Um fit zu bleiben, gehe ich jeden Tag laufen.', en: 'To stay fit, I go running every day. (um-clause first, then the verb)' },
+        { de: 'Um Geld zu sparen, fahre ich mit dem Bus.', en: 'To save money, I take the bus.' },
+        { de: 'Anstatt zu lernen, sieht sie fern.', en: 'Instead of studying, she watches TV.' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a2-21-zu-infinitive', note: 'These are zu-infinitives with um, ohne or anstatt in front; the rules for zu and separable verbs are the same.' },

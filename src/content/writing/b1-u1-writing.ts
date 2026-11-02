@@ -24,7 +24,7 @@ const task: WritingTask = {
     { de: 'Was war euer Wendepunkt?', en: 'What was your turning point?', role: 'phrase' },
     { de: 'Liebe Grüße', en: 'Best wishes', role: 'closing' },
   ],
-  grammarFocus: ['b1-01-plusquamperfekt', 'b1-02-temporal-clauses', 'a2-02-prateritum-verbs', 'a2-06-als-vs-wenn'],
+  grammarFocus: ['b1-01-plusquamperfekt', 'b1-02-temporal-clauses', 'b1-02b-waehrend-seit-bis', 'a2-02-prateritum-verbs', 'a2-06-als-vs-wenn'],
   mustUse: [
     { label: 'the Plusquamperfekt (hatte/war + participle, e.g. nachdem ich … bestanden hatte)', pattern: '(\\b(hatte|hatten|war|waren)\\b[^.!?,;]*\\bge[\\wäöüß]+|[\\wäöüß]+(en|t) (hatte|hatten|war|waren)\\b)', min: 2 },
     { label: 'a temporal conjunction (nachdem, bevor, während, sobald, seitdem, solange, bis)', pattern: '\\b(nachdem|bevor|während|sobald|seitdem|solange|bis)\\b', min: 2 },

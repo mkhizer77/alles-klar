@@ -30,7 +30,7 @@ const scenario: SpeakingScenario = {
     { de: 'Donnerstagnachmittag passt mir besser, dann bin ich zu Hause.', en: 'Thursday afternoon suits me better, I will be at home then.' },
     { de: 'Entschuldigung, die Verbindung ist schlecht. Könnten Sie das bitte wiederholen?', en: 'Sorry, the line is bad. Could you repeat that, please?' },
   ],
-  grammarFocus: ['a2-19-futur-1', 'a2-20-konjunktiv-2-polite', 'a2-05-wenn-ob-indirect-questions', 'a1-17-modal-verbs'],
+  grammarFocus: ['a2-19-futur-1', 'a2-20-konjunktiv-2-polite', 'a2-20b-wishes-suggestions', 'a2-05-wenn-ob-indirect-questions', 'a2-05b-indirect-questions', 'a1-17-modal-verbs', 'a1-17b-modal-verbs-2'],
   vocabFocus: ['das WLAN', 'das Netz', 'das Gerät', 'der Anruf', 'der Fehler', 'das Passwort', 'funktionieren', 'einschalten', 'ausschalten', 'anschließen', 'zurückrufen'],
   minTurns: 6,
 };

@@ -4,76 +4,85 @@ const topic: Topic = {
   id: 'a2-23-relative-clauses-nom-acc',
   level: 'A2',
   unit: 8,
-  order: 23,
+  order: 26,
   title: 'Relative clauses in the Nominative and Accusative',
   germanTerm: 'Relativsatz',
   tags: ['relative clauses', 'pronouns', 'subordinate clauses', 'nominative', 'accusative'],
   summary: 'A relative clause gives extra information about a noun; it starts with der / die / das (or den in the Accusative), is set off by commas, and sends the verb to the end.',
-  explanation: `
-### What it is
-
+  steps: [
+    {
+      title: 'A mini-sentence that describes a noun',
+      text: `
 A **relative clause** (*Relativsatz*) is a mini-sentence that describes a noun, like English *the man **who lives next door*** or *the book **that I am reading***.
 
-- Das ist der Mann, **der** nebenan wohnt. – *That is the man who lives next door.*
-- Das ist das Buch, **das** ich gerade lese. – *That is the book that I am reading.*
+The word that opens the clause (*der, das*) is the **relative pronoun** (*Relativpronomen*). It stands for the noun before the comma. With it you join two short sentences into one.
+`,
+      examples: [
+        { de: 'Das ist der Mann, der nebenan wohnt.', en: 'That is the man who lives next door. (der = the man)' },
+        { de: 'Das ist das Buch, das ich gerade lese.', en: 'That is the book that I am reading. (das = the book)' },
+        { de: 'Ich habe einen Freund, der in Wien wohnt.', en: 'I have a friend who lives in Vienna. (two sentences joined into one)' },
+      ],
+    },
+    {
+      title: 'Comma, verb at the end',
+      text: `
+Three rules of shape:
 
-The word that opens the clause (*der, das*) is the **relative pronoun** (*Relativpronomen*). It stands for the noun before the comma.
-
-### Three rules
-
-1. A **comma** always separates the relative clause from the main clause (before and, if the sentence continues, after it).
-2. The **verb goes to the end** of the relative clause, like in every subordinate clause.
-3. The relative pronoun agrees with the noun in **gender and number**, but its **case** depends on its job inside the relative clause.
-
-### The pronouns
-
-Good news: in the Nominative and Accusative the relative pronouns look exactly like the definite articles.
+1. A **comma** separates the relative clause from the main clause, before it and, if the sentence continues, after it.
+2. The **verb goes to the end** of the relative clause, like in every subordinate clause. In the Perfekt, *habe* or *bin* goes last.
+3. The clause comes **directly after its noun**, even if that cuts the main clause in two.
+`,
+      examples: [
+        { de: 'Die Frau, die dort wartet, ist meine Lehrerin.', en: 'The woman who is waiting there is my teacher. (the clause cuts the main clause in two)' },
+        { de: 'Kennst du das Café, das neu eröffnet hat?', en: 'Do you know the café that has just opened? (hat at the end)' },
+        { de: 'Das Auto, das ich gekauft habe, ist rot.', en: 'The car that I bought is red. (Perfekt: habe last)' },
+      ],
+    },
+    {
+      title: 'The pronouns look like der, die, das',
+      text: `
+Good news: in the Nominative (the subject case) and Accusative (the object case) the relative pronouns are the same as the definite articles.
 
 | | masculine | feminine | neuter | plural |
 |---|---|---|---|---|
 | Nominative | **der** | **die** | **das** | **die** |
 | Accusative | **den** | **die** | **das** | **die** |
 
-Only the masculine Accusative changes: **der → den**.
-
-### Choosing the case
-
-Step 1: find the noun the clause describes. Its gender and number give you the row or column.
-
-Step 2: ask what the pronoun **does** inside the relative clause.
-
-- Is it the **subject** (who does the verb)? → **Nominative**.
-- Is it the **object** (what is acted on)? → **Accusative**.
-
-Compare:
-
-- Der Mann, **der** dort steht, ist mein Chef. – The man stands there. He is the subject → Nominative *der*.
-- Der Mann, **den** ich gestern getroffen habe, ist mein Chef. – I met him. He is the object → Accusative *den*.
-
-The main clause does not matter for this choice. *Der Mann* is the subject of the main clause in both examples, but inside the relative clause its job changes.
-
-### Where the relative clause goes
-
-The relative clause normally comes **directly after the noun** it describes, even if that breaks the main clause in two:
-
-- Die Frau, **die** neben mir wohnt, **ist** Ärztin.
-
-If the noun is at the end of the main clause, the relative clause simply follows:
-
-- Ich kenne die Frau, **die** neben dir wohnt.
-
-### Why it matters
-
-Relative clauses let you combine two short sentences into one, which makes your German sound much more fluent: instead of *Ich habe einen Freund. Er wohnt in Wien* you say *Ich habe einen Freund, der in Wien wohnt*. They are also everywhere in reading texts, so recognising the comma + der / die / das + verb-at-the-end pattern will speed up your understanding.
+The pronoun takes the **gender and number** of the noun it describes. Only the masculine Accusative is different: **der → den**.
 `,
-  examples: [
-    { de: 'Das ist der Mann, der nebenan wohnt.', en: 'That is the man who lives next door. (masculine, subject → der)' },
-    { de: 'Das ist der Mann, den ich gestern gesehen habe.', en: 'That is the man whom I saw yesterday. (masculine, object → den)' },
-    { de: 'Die Frau, die dort wartet, ist meine Lehrerin.', en: 'The woman who is waiting there is my teacher. (feminine → die)' },
-    { de: 'Das Buch, das ich lese, ist spannend.', en: 'The book that I am reading is exciting. (neuter → das)' },
-    { de: 'Die Kinder, die im Garten spielen, sind laut.', en: 'The children who are playing in the garden are loud. (plural → die)' },
-    { de: 'Ich habe einen Hund, der sehr alt ist.', en: 'I have a dog that is very old. (the main clause has Akkusativ einen Hund, but inside the relative clause the dog is the subject)' },
-    { de: 'Kennst du das Café, das neu eröffnet hat?', en: 'Do you know the café that has just opened?' },
+      examples: [
+        { de: 'Der Bus, der hier hält, fährt zum Bahnhof.', en: 'The bus that stops here goes to the station. (masculine: der)' },
+        { de: 'Das Kind, das dort sitzt, ist müde.', en: 'The child who is sitting there is tired. (neuter: das)' },
+        { de: 'Die Kinder, die im Garten spielen, sind laut.', en: 'The children who are playing in the garden are loud. (plural: die)' },
+      ],
+    },
+    {
+      title: 'Subject or object? Pick the case',
+      text: `
+The **case** of the pronoun depends on its job **inside the relative clause**, not on the main clause. Ask what the pronoun does there:
+
+- It does the verb (the **subject**)? → **Nominative**: *der Mann, **der** dort steht* (he stands).
+- The action is done to it (the **object**)? → **Accusative**: *der Mann, **den** ich getroffen habe* (I met him).
+`,
+      examples: [
+        { de: 'Der Mann, der dort steht, ist mein Chef.', en: 'The man who is standing there is my boss. (he stands: subject, der)' },
+        { de: 'Der Mann, den ich getroffen habe, ist mein Chef.', en: 'The man whom I met is my boss. (I met him: object, den)' },
+        { de: 'Ich sehe den Hund, der im Garten schläft.', en: 'I see the dog that is sleeping in the garden. (den in the main clause, but der inside: the dog sleeps)' },
+      ],
+    },
+    {
+      title: 'Join two sentences in three moves',
+      text: `
+To combine two sentences: find the repeated person or thing, replace it in the second sentence with the relative pronoun, and move that pronoun to the front and the verb to the end.
+
+*Ich habe einen Kollegen. Ich treffe **ihn** jeden Tag.* → *Ich habe einen Kollegen, **den** ich jeden Tag treffe.* (*ihn* was the object, so *den*.)
+`,
+      examples: [
+        { de: 'Ich habe einen Kollegen, den ich jeden Tag treffe.', en: 'I have a colleague whom I meet every day. (ihn → den)' },
+        { de: 'Das ist die Lehrerin, die uns Deutsch unterrichtet.', en: 'That is the teacher who teaches us German. (sie → die)' },
+        { de: 'Das ist der Film, den ich gestern gesehen habe.', en: 'That is the film that I saw yesterday. (ihn → den)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a2-04-subordinate-clauses-weil-dass', note: 'A relative clause is a subordinate clause: comma, then the verb at the end.' },
@@ -84,8 +93,8 @@ Relative clauses let you combine two short sentences into one, which makes your 
   ],
   edgeCases: [
     'The case of the relative pronoun comes from its job **inside** the relative clause, not from the noun in the main clause. *Ich sehe den Mann, **der** lacht* (den in the main clause, der in the relative clause).',
-    'The **plural** relative pronoun is *die* for all genders: *die Männer, die …*, *die Kinder, die …*.',
-    'The relative clause sits **right after its noun**. *Der Mann ist nett, der dort steht* sounds wrong; say *Der Mann, der dort steht, ist nett*.',
+    'The **plural** relative pronoun is **die** for all genders: *die Männer, die …*, *die Kinder, die …*.',
+    'The relative clause sits **right after its noun**. *Der Mann ist nett, der dort steht* sounds wrong; say *Der Mann, **der dort steht**, ist nett*.',
     'In the Perfekt the auxiliary goes last: *das Buch, das ich **gekauft habe***, not *das ich habe gekauft*.',
     'German does not drop the relative pronoun like English (*the book I read*). You always need it: *das Buch, **das** ich lese*.',
   ],

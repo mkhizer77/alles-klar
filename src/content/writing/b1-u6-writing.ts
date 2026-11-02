@@ -23,7 +23,7 @@ const task: WritingTask = {
     { de: 'deshalb / dabei', en: 'therefore / in doing so', role: 'connector' },
     { de: 'Gegen … hilft nur gemeinsames Handeln.', en: 'Only joint action helps against …', role: 'phrase' },
   ],
-  grammarFocus: ['b1-15-participles-as-adjectives', 'b1-13-n-declension', 'b1-14-adjectives-as-nouns', 'b1-16-adjective-declension-review'],
+  grammarFocus: ['b1-15-participles-as-adjectives', 'b1-15b-partizip-2-adjectives', 'b1-13-n-declension', 'b1-14-adjectives-as-nouns', 'b1-16-adjective-declension-review', 'b1-16b-adjectives-genitive'],
   mustUse: [
     { label: 'a present participle used as an adjective (wachsend-, schwimmend-, steigend-)', pattern: '\\b\\w+end(e|en|er|es|em)\\b', min: 2 },
     { label: 'a past participle used as an adjective (weggeworfene, gebrauchte, verschluckten)', pattern: '\\b(ge\\w+|zer\\w+|ver\\w+|weg\\w+|ab\\w+|be\\w+|ent\\w+)(te|ten|ter|tes|tem|ene|enen|ener|enes|enem)\\b', min: 2 },

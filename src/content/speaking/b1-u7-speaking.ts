@@ -31,7 +31,7 @@ const scenario: SpeakingScenario = {
     { de: 'Entweder wir finden einen Kompromiss, oder …', en: 'Either we find a compromise, or …' },
     { de: 'Wie bitte? Kannst du das noch mal sagen?', en: 'Pardon? Can you say that again?' },
   ],
-  grammarFocus: ['b1-17-two-part-conjunctions', 'b1-18-cause-consequence-concession', 'b1-19-purpose-manner', 'b1-20-conditions'],
+  grammarFocus: ['b1-17-two-part-conjunctions', 'b1-18-cause-consequence-concession', 'b1-18b-concession', 'b1-19-purpose-manner', 'b1-19b-manner-indem', 'b1-20-conditions'],
   vocabFocus: ['die Verbindung', 'die Störung', 'die Digitalisierung', 'der Datenschutz', 'das Gerät', 'die Software', 'die Sicherheit', 'sich einloggen', 'abstürzen', 'digital'],
   minTurns: 8,
 };

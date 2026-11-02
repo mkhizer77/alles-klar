@@ -25,7 +25,7 @@ const scenario: SpeakingScenario = {
     { de: 'Willst du mit uns Tennis spielen?', en: 'Do you want to play tennis with us?' },
     { de: 'Wie bitte? Sprich bitte langsam.', en: 'Pardon? Please speak slowly.' },
   ],
-  grammarFocus: ['a1-15-irregular-present', 'a1-16-separable-verbs', 'a1-17-modal-verbs', 'a1-18-imperative', 'a1-19-gern-lieber'],
+  grammarFocus: ['a1-15-irregular-present', 'a1-16-separable-verbs', 'a1-17-modal-verbs', 'a1-17b-modal-verbs-2', 'a1-18-imperative', 'a1-19-gern-lieber'],
   vocabFocus: ['aufstehen', 'anfangen', 'der Feierabend', 'die Pause', 'das Büro', 'der Kollege', 'die Freizeit', 'das Hobby', 'fernsehen', 'Sport'],
   minTurns: 5,
 };

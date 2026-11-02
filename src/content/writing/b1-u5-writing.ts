@@ -23,7 +23,7 @@ const task: WritingTask = {
     { de: 'außerdem', en: 'moreover', role: 'connector' },
     { de: 'Ich fand das Interview sehr …', en: 'I found the interview very …', role: 'phrase' },
   ],
-  grammarFocus: ['b1-12-indirect-speech', 'a2-05-wenn-ob-indirect-questions', 'a2-04-subordinate-clauses-weil-dass'],
+  grammarFocus: ['b1-12-indirect-speech', 'a2-05-wenn-ob-indirect-questions', 'a2-05b-indirect-questions', 'a2-04-subordinate-clauses-weil-dass'],
   mustUse: [
     { label: 'a reporting verb in the Präteritum (sagte, meinte, erklärte, betonte, antwortete, riet …)', pattern: '\\b(sagte|meinte|erklärte|betonte|antwortete|berichtete|erzählte|fragte|riet|behauptete|forderte)\\b', min: 3 },
     { label: 'a Konjunktiv I form (sei, seien, habe, könne, müsse, solle, brauche …)', pattern: '\\b(sei|seien|habe|könne|müsse|solle|wolle|dürfe|brauche|gebe|werde|wisse)\\b', min: 3 },

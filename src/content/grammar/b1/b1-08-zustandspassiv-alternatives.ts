@@ -4,85 +4,80 @@ const topic: Topic = {
   id: 'b1-08-zustandspassiv-alternatives',
   level: 'B1',
   unit: 3,
-  order: 8,
-  title: 'Zustandspassiv and alternatives (man, lassen, -bar)',
-  germanTerm: 'Zustandspassiv, Passiversatz',
-  tags: ['passive', 'sein', 'man', 'lassen', 'word formation'],
-  summary: 'The Zustandspassiv (sein + Partizip II) describes the state after an action (Die Tür ist geschlossen); man, sich lassen and -bar are ways to say the same thing without a passive.',
-  explanation: `
-### What it is
-
-Compare these two sentences:
-
-- Die Tür **wird** geschlossen. – *The door is being closed.* (someone is closing it right now)
-- Die Tür **ist** geschlossen. – *The door is closed.* (it is closed; the closing is finished)
+  order: 10,
+  title: 'Zustandspassiv: Das Geschäft ist geöffnet',
+  germanTerm: 'Zustandspassiv',
+  tags: ['passive', 'sein', 'Partizip II', 'tenses'],
+  summary: 'The Zustandspassiv (sein + Partizip II) describes the state after an action: Die Tür ist geschlossen. The Vorgangspassiv with werden describes the action itself: Die Tür wird geschlossen.',
+  steps: [
+    {
+      title: 'State or process?',
+      text: `
+Compare: *Die Tür **wird** geschlossen* – someone is closing it right now. *Die Tür **ist** geschlossen* – it is closed; the closing is finished.
 
 The first is the **Vorgangspassiv** (process passive) you know. The second is the **Zustandspassiv** (*Zustand* = state): it describes the **result**, the state that exists after the action. The Partizip II works almost like an adjective.
-
-### How the Zustandspassiv works
-
-**sein + Partizip II**. Only two tenses are common:
+`,
+      examples: [
+        { de: 'Die Tür wird geschlossen.', en: 'The door is being closed. (process: wird)' },
+        { de: 'Die Tür ist geschlossen.', en: 'The door is closed. (state: ist)' },
+        { de: 'Das Geschäft ist geöffnet.', en: 'The shop is open.' },
+      ],
+    },
+    {
+      title: 'sein + Partizip II, present and past',
+      text: `
+The Zustandspassiv is **sein + Partizip II**. Only two tenses are common: the present with **ist**, the past with **war**.
 
 | | process (werden) | state (sein) |
 |---|---|---|
 | present | Das Geschäft **wird** geöffnet. | Das Geschäft **ist** geöffnet. |
 | past | Das Geschäft **wurde** geöffnet. | Das Geschäft **war** geöffnet. |
 
-Typical state-passive sentences: *Die Rechnung ist bezahlt. Der Tisch ist gedeckt. Das Fenster ist geöffnet. Die Aufgaben sind erledigt.* Words like **schon**, **bereits** (already) and **seit** (since) often signal a state; **gerade** (right now) or **jeden Tag** signal a process.
-
-### Alternatives to the passive (Passiversatz)
-
-German often avoids the passive. *Passiversatz* simply means "something you say instead of the passive". Three common replacements:
-
-**1. man + active verb.** The most common one in speech.
-
-- Hier **wird** Deutsch **gesprochen**. = Hier **spricht man** Deutsch.
-- Hier **darf** nicht **geparkt werden**. = Hier **darf man** nicht parken.
-
-**2. sich lassen + Infinitiv** = *kann … werden* (something can be done).
-
-- Das Problem **kann gelöst werden**. = Das Problem **lässt sich** lösen.
-- Die Tür **kann nicht geöffnet werden**. = Die Tür **lässt sich** nicht öffnen.
-
-**3. Adjectives with -bar** = *kann … werden*.
-
-| passive | -bar adjective |
-|---|---|
-| Das kann gemacht werden. | Das ist **machbar**. |
-| Das kann gelöst werden. | Das ist **lösbar**. |
-| Das kann gelesen werden. | Das ist **lesbar**. |
-| Das kann getrunken werden. | Das ist **trinkbar**. |
-
-### You may also see …
-
-In formal notices you will read **sein + zu + Infinitiv**: *Die Aufgaben **sind** bis Freitag **zu erledigen**.* It means *must be done* (sometimes *can be done*). Recognise it; in your own writing say *Die Aufgaben müssen bis Freitag erledigt werden* or *Man muss die Aufgaben bis Freitag erledigen*.
-
-### Why it matters
-
-Knowing the difference between *wird geschlossen* and *ist geschlossen* stops a very common B1 mistake. The alternatives make your German sound natural: a native speaker says *Das lässt sich machen* or *Das ist machbar* far more often than *Das kann gemacht werden*. In the exam, using *man* and *sich lassen* correctly shows that you control the passive rather than just copying it.
+Typical sentences: *Die Rechnung ist bezahlt. Der Tisch ist gedeckt. Die Aufgaben sind erledigt.*
 `,
-  examples: [
-    { de: 'Die Tür ist geschlossen.', en: 'The door is closed. (state after the action)' },
-    { de: 'Die Tür wird gerade geschlossen.', en: 'The door is being closed right now. (process)' },
-    { de: 'Das Geschäft ist seit Montag geöffnet.', en: 'The shop has been open since Monday. (state with seit)' },
-    { de: 'Hier spricht man Deutsch.', en: 'German is spoken here. (man instead of the passive)' },
-    { de: 'Das Problem lässt sich leicht lösen.', en: 'The problem can easily be solved. (sich lassen = kann … werden)' },
-    { de: 'Hier darf man nicht parken.', en: 'Parking is not allowed here. (man + modal instead of darf nicht geparkt werden)' },
-    { de: 'Diese Aufgabe ist lösbar.', en: 'This task can be solved. (-bar = kann … werden)' },
+      examples: [
+        { de: 'Der Tisch ist gedeckt.', en: 'The table is set.' },
+        { de: 'Die Aufgaben sind erledigt.', en: 'The tasks are done. (plural: sind)' },
+        { de: 'Das Geschäft war gestern geschlossen.', en: 'The shop was closed yesterday. (past state: war)' },
+      ],
+    },
+    {
+      title: 'Signal words',
+      text: `
+Small words often tell you which passive you need. **schon**, **bereits** (already) and **seit** (since) point to a state that exists: use **sein**. **gerade** (right now) and **jeden Tag** (every day) point to an action happening: use **werden**.
+`,
+      examples: [
+        { de: 'Die Rechnung ist schon bezahlt.', en: 'The bill is already paid. (schon: state)' },
+        { de: 'Das Geschäft ist seit Montag geöffnet.', en: 'The shop has been open since Monday. (seit: state)' },
+        { de: 'Das Essen wird gerade gekocht.', en: 'The food is being cooked right now. (gerade: process)' },
+        { de: 'Die Zimmer werden jeden Tag geputzt.', en: 'The rooms are cleaned every day. (jeden Tag: process)' },
+      ],
+    },
+    {
+      title: 'ist geschlossen or ist geschlossen worden?',
+      text: `
+*Die Tür **ist** geschlossen* (state) looks like *Die Tür **ist** geschlossen **worden*** (Perfekt passive). The difference is **worden**: with it, you talk about the action that happened; without it, about the state now.
+
+Not every verb has a sensible state. *Das Buch ist gelesen* sounds strange. Use the Zustandspassiv with verbs that leave a visible result: *öffnen, schließen, bezahlen, erledigen, reparieren, decken*.
+`,
+      examples: [
+        { de: 'Die Tür ist geschlossen.', en: 'The door is closed. (state now)' },
+        { de: 'Die Tür ist um acht geschlossen worden.', en: 'The door was closed at eight. (action: worden)' },
+        { de: 'Das Auto ist repariert.', en: 'The car is repaired. (result of reparieren)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'b1-06-passive-present-past', note: 'The process passive with werden, which the Zustandspassiv contrasts with.' },
     { topicId: 'b1-07-passive-modals-perfekt', note: 'ist geschlossen (state) looks like ist geschlossen worden (Perfekt passive) but means something different.' },
-    { topicId: 'a2-25-indefinite-pronouns', note: 'man is the pronoun used for the most common passive alternative.' },
-    { topicId: 'b1-21-lassen', note: 'sich lassen + Infinitiv is one of the meanings of lassen covered in full there.' },
-    { topicId: 'b1-30-suffixes', note: 'The suffix -bar and how it turns verbs into adjectives.' },
+    { topicId: 'b1-08b-passive-alternatives', note: 'Sibling topic: how to say it without any passive at all (man, sich lassen, -bar).' },
+    { topicId: 'b1-15b-partizip-2-adjectives', note: 'The same Partizip II can stand before a noun as an adjective: die geöffnete Tür.' },
   ],
   edgeCases: [
-    '**ist geschlossen** (state) and **ist geschlossen worden** (Perfekt passive, process) are different. Without *worden* it is a state.',
+    '**ist geschlossen** (state) and **ist geschlossen worden** (Perfekt passive, action) are different. Without *worden* it is a state.',
     'Words like **gerade** and **jeden Tag** point to a process (*wird*), while **schon**, **bereits** and **seit** point to a state (*ist*).',
+    'The past of the state is **war**, not *wurde*: *Das Geschäft **war** gestern geschlossen* (it was closed), *Das Geschäft **wurde** gestern geschlossen* (someone closed it).',
     'Not every verb has a sensible Zustandspassiv. *Das Buch ist gelesen* is strange; use *Das Buch ist gelesen worden* or *Ich habe das Buch gelesen*.',
-    '**sich lassen** always needs *sich*, even with a plural subject: *Die Fenster lassen **sich** nicht öffnen.*',
-    'If you read **sein + zu + Infinitiv** (*Die Aufgabe ist zu erledigen*), it usually means *must be done*. Say it with *müssen … werden* or *man muss* yourself.',
   ],
   exercises: [
     {
@@ -109,77 +104,70 @@ Knowing the difference between *wird geschlossen* and *ist geschlossen* stops a 
       explanation: 'werden = process (the table is being set). sein = state (the table is set).',
     },
     {
-      type: 'match',
+      type: 'fill',
       id: 'b1-08-zustandspassiv-alternatives-ex04',
-      prompt: 'Match each passive sentence with the alternative that means the same.',
-      pairs: [
-        ['Das kann repariert werden.', 'Das lässt sich reparieren.'],
-        ['Das kann gemacht werden.', 'Das ist machbar.'],
-        ['Hier wird Deutsch gesprochen.', 'Hier spricht man Deutsch.'],
-        ['Hier darf nicht geparkt werden.', 'Hier darf man nicht parken.'],
-      ],
-      explanation: 'sich lassen and -bar replace kann … werden; man replaces a simple passive, with or without a modal verb.',
+      prompt: 'Die Aufgaben ___ schon erledigt. (sein)',
+      answer: ['sind'],
+      explanation: 'schon signals a state, so sein. The subject is plural (die Aufgaben), so sind erledigt.',
     },
     {
-      type: 'fill',
+      type: 'mc',
       id: 'b1-08-zustandspassiv-alternatives-ex05',
-      prompt: 'Das Problem lässt ___ leicht lösen.',
-      answer: ['sich'],
-      explanation: 'The structure is sich lassen + Infinitiv. sich is always needed.',
-    },
-    {
-      type: 'mc',
-      id: 'b1-08-zustandspassiv-alternatives-ex06',
-      prompt: 'What does "Diese Aufgabe ist lösbar." mean?',
-      options: ['This task can be solved.', 'This task must be solved.', 'This task has been solved.'],
-      answer: 0,
-      explanation: '-bar = kann … werden: lösbar = can be solved.',
-    },
-    {
-      type: 'order',
-      id: 'b1-08-zustandspassiv-alternatives-ex07',
-      prompt: 'Build the sentence: "The windows cannot be opened." (use sich lassen)',
-      words: ['öffnen.', 'Fenster', 'sich', 'Die', 'nicht', 'lassen'],
-      answer: ['Die Fenster lassen sich nicht öffnen.'],
-      explanation: 'sich lassen + Infinitiv = kann nicht … werden. lassen agrees with the plural subject (lassen), sich stays, öffnen goes to the end.',
-    },
-    {
-      type: 'fill',
-      id: 'b1-08-zustandspassiv-alternatives-ex08',
-      prompt: 'Hier ___ man nicht parken. (dürfen)',
-      answer: ['darf'],
-      explanation: 'man + active modal replaces Hier darf nicht geparkt werden. man takes the er-form: darf.',
-    },
-    {
-      type: 'translate',
-      id: 'b1-08-zustandspassiv-alternatives-ex09',
-      prompt: 'Translate as a state: "The bill is already paid."',
-      answer: ['Die Rechnung ist schon bezahlt.', 'Die Rechnung ist bereits bezahlt.'],
-      hint: 'die Rechnung = bill, bezahlen = to pay, schon / bereits = already',
-      explanation: 'Zustandspassiv: ist + bezahlt. schon signals that we describe the result, not the process.',
-    },
-    {
-      type: 'mc',
-      id: 'b1-08-zustandspassiv-alternatives-ex10',
       prompt: 'Complete: "Das Essen ___ gerade gekocht."',
       options: ['wird', 'ist', 'war'],
       answer: 0,
       explanation: 'gerade (right now) means the cooking is happening, so process passive: wird gekocht.',
     },
     {
+      type: 'match',
+      id: 'b1-08-zustandspassiv-alternatives-ex06',
+      prompt: 'Match each sentence with its meaning.',
+      pairs: [
+        ['Die Tür ist geschlossen.', 'The door is closed now.'],
+        ['Die Tür wird geschlossen.', 'Someone is closing the door.'],
+        ['Die Tür war geschlossen.', 'The door was closed at that time.'],
+        ['Die Tür wurde geschlossen.', 'Someone closed the door.'],
+      ],
+      explanation: 'ist / war + Partizip II = a state (present or past). wird / wurde + Partizip II = an action (present or past).',
+    },
+    {
       type: 'fill',
-      id: 'b1-08-zustandspassiv-alternatives-ex11',
-      prompt: 'Der Text ist gut ___. (lesen → adjective with -bar)',
-      answer: ['lesbar'],
-      explanation: 'lesen + -bar = lesbar (readable, can be read).',
+      id: 'b1-08-zustandspassiv-alternatives-ex07',
+      prompt: 'Das Geschäft ___ gestern geschlossen. (sein, past: it was closed all day)',
+      answer: ['war'],
+      explanation: 'A state in the past takes the Präteritum of sein: war geschlossen. wurde geschlossen would mean someone closed it.',
+    },
+    {
+      type: 'translate',
+      id: 'b1-08-zustandspassiv-alternatives-ex08',
+      prompt: 'Translate as a state: "The bill is already paid."',
+      answer: ['Die Rechnung ist schon bezahlt.', 'Die Rechnung ist bereits bezahlt.'],
+      hint: 'die Rechnung = bill, bezahlen = to pay, schon / bereits = already',
+      explanation: 'Zustandspassiv: ist + bezahlt. schon signals that we describe the result, not the process.',
+    },
+    {
+      type: 'order',
+      id: 'b1-08-zustandspassiv-alternatives-ex09',
+      prompt: 'Build the sentence: "The windows have been open since yesterday." (state)',
+      words: ['geöffnet.', 'Fenster', 'seit', 'Die', 'sind', 'gestern'],
+      answer: ['Die Fenster sind seit gestern geöffnet.'],
+      explanation: 'A state with seit: sein in position two (sind, plural), the time in the middle, Partizip II at the end.',
     },
     {
       type: 'mc',
-      id: 'b1-08-zustandspassiv-alternatives-ex12',
-      prompt: 'Which sentence means the same as "Die Tür kann nicht geöffnet werden."?',
-      options: ['Die Tür lässt sich nicht öffnen.', 'Die Tür ist geöffnet.', 'Die Tür wird nicht geöffnet.'],
+      id: 'b1-08-zustandspassiv-alternatives-ex10',
+      prompt: 'Which sentence says that someone closed the door (an action), not only that it is closed?',
+      options: ['Die Tür ist geschlossen worden.', 'Die Tür ist geschlossen.', 'Die Tür war geschlossen.'],
       answer: 0,
-      explanation: 'sich lassen + Infinitiv = kann … werden. The other options describe a state or a simple process, not possibility.',
+      explanation: 'worden makes it the Perfekt passive: an action happened. Without worden, ist / war geschlossen only describes the state.',
+    },
+    {
+      type: 'mc',
+      id: 'b1-08-zustandspassiv-alternatives-ex11',
+      prompt: 'Which sentence sounds wrong to a German speaker?',
+      options: ['Das Buch ist gelesen.', 'Das Buch ist gelesen worden.', 'Die Rechnung ist bezahlt.'],
+      answer: 0,
+      explanation: 'lesen leaves no visible state on the book, so the Zustandspassiv is strange. Say Das Buch ist gelesen worden or Ich habe das Buch gelesen.',
     },
   ],
 };

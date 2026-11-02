@@ -31,7 +31,7 @@ const scenario: SpeakingScenario = {
     { de: 'Könnten Sie mir das bitte schriftlich bestätigen?', en: 'Could you please confirm that in writing?' },
     { de: 'Wie bitte? Was bedeutet „Lastschrift“?', en: 'Pardon? What does "Lastschrift" mean?' },
   ],
-  grammarFocus: ['b1-21-lassen', 'b1-22-brauchen-zu-scheinen', 'b1-23-werden', 'b1-24-futur-2-probability', 'b1-25-noun-verb-combinations'],
+  grammarFocus: ['b1-21-lassen', 'b1-22-brauchen-zu-scheinen', 'b1-22b-haben-sein-zu', 'b1-23-werden', 'b1-24-futur-2-probability', 'b1-25-noun-verb-combinations'],
   vocabFocus: ['das Konto', 'die Gebühr', 'der Kontoauszug', 'die Überweisung', 'der Dauerauftrag', 'die Lastschrift', 'die Mahnung', 'abheben', 'überweisen', 'zurückzahlen', 'reklamieren', 'bargeldlos'],
   minTurns: 7,
 };

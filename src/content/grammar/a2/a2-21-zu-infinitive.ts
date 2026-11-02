@@ -4,51 +4,66 @@ const topic: Topic = {
   id: 'a2-21-zu-infinitive',
   level: 'A2',
   unit: 8,
-  order: 21,
+  order: 24,
   title: 'zu + infinitive',
   germanTerm: 'Infinitiv mit zu',
   tags: ['verbs', 'infinitive', 'zu', 'word order', 'sentence structure'],
   summary: 'After many verbs, adjectives and nouns, a second verb is attached with zu + infinitive at the end of the clause (Ich habe keine Zeit, zu kochen), but modal verbs and a few others take the plain infinitive.',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'zu + infinitive goes to the end',
+      text: `
+English joins two verbs with *to*: *I am trying to sleep*. German does the same with **zu** + infinitive (*Infinitiv mit zu*; the infinitive is the basic verb form, *schlafen*).
 
-English often joins two verbs with *to*: *I forgot to call*, *It is important to sleep*. German does the same with **zu** + infinitive (*Infinitiv mit zu*). The difference is the position: the **zu + infinitive goes to the end** of the clause, and there is usually a **comma** before this part of the sentence.
+The difference is the position. The **zu + infinitive goes to the end** of the clause, and there is usually a **comma** before this part of the sentence.
+`,
+      examples: [
+        { de: 'Ich versuche, pünktlich zu sein.', en: 'I am trying to be on time. (zu sein at the end)' },
+        { de: 'Es ist wichtig, jeden Tag zu üben.', en: 'It is important to practise every day.' },
+        { de: 'Ich hoffe, dich bald zu sehen.', en: 'I hope to see you soon.' },
+      ],
+    },
+    {
+      title: 'After these verbs',
+      text: `
+Some verbs almost always carry a second action with *zu*. Learn the common ones:
 
-- Ich habe vergessen, **dich anzurufen**. – *I forgot to call you.*
-- Es ist wichtig, **jeden Tag zu üben**. – *It is important to practise every day.*
-
-### When you need zu
-
-**1. After certain verbs.** The most common ones:
-
-| verb | example |
+| verb | meaning |
 |---|---|
-| anfangen / beginnen (to start) | Er fängt an, Deutsch zu lernen. |
-| aufhören (to stop) | Sie hört auf, zu rauchen. |
-| vergessen (to forget) | Vergiss nicht, die Tür abzuschließen. |
-| versuchen (to try) | Ich versuche, pünktlich zu sein. |
-| vorhaben (to plan) | Wir haben vor, umzuziehen. |
-| hoffen (to hope) | Ich hoffe, dich bald zu sehen. |
-| empfehlen (to recommend) | Er empfiehlt mir, früh zu kommen. |
-| bitten (to ask / request) | Sie bittet mich, leise zu sein. |
-| sich freuen (to look forward / be glad) | Ich freue mich, Sie kennenzulernen. |
+| anfangen | to start |
+| aufhören | to stop |
+| vergessen | to forget |
+| versuchen | to try |
+| vorhaben | to plan |
+| hoffen | to hope |
 
-**2. After "es ist + adjective".**
+Also **bitten** (to ask someone to do something), **empfehlen** (to recommend) and **sich freuen** (to be glad, to look forward).
+`,
+      examples: [
+        { de: 'Er fängt an, Deutsch zu lernen.', en: 'He is starting to learn German.' },
+        { de: 'Sie hört auf, so viel zu arbeiten.', en: 'She is stopping working so much.' },
+        { de: 'Wir haben vor, ein Haus zu kaufen.', en: 'We plan to buy a house.' },
+        { de: 'Sie bittet mich, leise zu sein.', en: 'She asks me to be quiet.' },
+      ],
+    },
+    {
+      title: 'After es ist + adjective and after nouns',
+      text: `
+You also need *zu* after **es ist + adjective** (*Es ist wichtig, …*) and after a few **nouns**, especially **Lust** (desire), **Zeit**, **Angst**, **Spaß** and **die Möglichkeit** (the chance).
 
-- Es ist **schwer**, das zu verstehen. – *It is hard to understand that.*
-- Es ist **gesund**, viel Obst zu essen.
-
-**3. After certain nouns**, especially *Lust, Zeit, Angst, Spaß* and *die Möglichkeit*:
-
-- Ich habe keine **Lust**, aufzuräumen. – *I do not feel like tidying up.*
-- Hast du **Zeit**, mit mir zu sprechen?
-- Es macht **Spaß**, Fahrrad zu fahren.
-
-### Where zu goes
-
-With a normal verb, **zu** stands directly before the infinitive: *zu kochen, zu lernen*.
-
-With a **separable verb**, *zu* slips **between the prefix and the stem**, written as one word:
+The pattern is the same: comma, then the rest of the idea, then *zu* + infinitive at the very end.
+`,
+      examples: [
+        { de: 'Es ist schwer, das zu verstehen.', en: 'It is hard to understand that. (es ist + adjective)' },
+        { de: 'Es ist gesund, viel Obst zu essen.', en: 'It is healthy to eat a lot of fruit.' },
+        { de: 'Ich habe keine Lust, heute zu kochen.', en: 'I do not feel like cooking today. (noun Lust + zu)' },
+        { de: 'Hast du Zeit, mit mir zu sprechen?', en: 'Do you have time to talk to me?' },
+      ],
+    },
+    {
+      title: 'Separable verbs: zu goes inside',
+      text: `
+With a normal verb, *zu* is a separate word before the infinitive: *zu kochen*. With a **separable verb** (a verb with a prefix that can split off, like *anrufen*), *zu* slips **between the prefix and the stem**, and you write it as one word.
 
 | infinitive | with zu |
 |---|---|
@@ -57,30 +72,44 @@ With a **separable verb**, *zu* slips **between the prefix and the stem**, writt
 | einkaufen | ein**zu**kaufen |
 | abschließen | ab**zu**schließen |
 | kennenlernen | kennen**zu**lernen |
-
-### When you do NOT need zu
-
-Some verbs take a **plain infinitive** with no *zu*:
-
-- **Modal verbs**: Ich muss **gehen**. Sie will **schlafen**.
-- **werden** (future): Ich werde **anrufen**.
-- **gehen** and **lernen** with another verb: Wir gehen **schwimmen**. Sie lernt **schwimmen**.
-
-You may also see *sehen, hören* and *lassen* with a plain infinitive (*Ich höre ihn singen*, *Ich lasse das Auto reparieren*). That is a B1 pattern; for now just notice there is no *zu*.
-
-### Why it matters
-
-The *zu*-infinitive lets you build longer, more natural sentences without a full subordinate clause. Instead of *Ich hoffe, dass ich dich bald sehe* you can say *Ich hoffe, dich bald zu sehen*. It is also the base for *um … zu*, *ohne … zu* and *anstatt … zu* in the next topic.
 `,
-  examples: [
-    { de: 'Ich habe keine Lust, heute zu kochen.', en: 'I do not feel like cooking today. (noun Lust + zu)' },
-    { de: 'Vergiss nicht, mich anzurufen!', en: 'Do not forget to call me! (separable: an-zu-rufen)' },
-    { de: 'Es ist wichtig, genug zu schlafen.', en: 'It is important to sleep enough. (es ist + adjective)' },
-    { de: 'Sie versucht, jeden Tag zu joggen.', en: 'She tries to jog every day.' },
-    { de: 'Wir haben vor, nächstes Jahr umzuziehen.', en: 'We plan to move next year.' },
-    { de: 'Ich muss jetzt gehen.', en: 'I have to go now. (modal verb: no zu)' },
-    { de: 'Gehen wir morgen schwimmen?', en: 'Shall we go swimming tomorrow? (gehen + infinitive: no zu)' },
-    { de: 'Ich freue mich, Sie kennenzulernen.', en: 'I am pleased to meet you. (kennen-zu-lernen)' },
+      examples: [
+        { de: 'Vergiss nicht, mich anzurufen!', en: 'Do not forget to call me! (an-zu-rufen)' },
+        { de: 'Ich habe keine Lust, aufzuräumen.', en: 'I do not feel like tidying up. (auf-zu-räumen)' },
+        { de: 'Ich freue mich, Sie kennenzulernen.', en: 'I am pleased to meet you. (kennen-zu-lernen)' },
+      ],
+    },
+    {
+      title: 'No zu after modal verbs, werden, gehen',
+      text: `
+Some verbs take the plain infinitive, with **no zu**:
+
+- **modal verbs** (*müssen, können, wollen* …): *Ich muss gehen.*
+- **werden** for the future: *Ich werde anrufen.*
+- **gehen** and **lernen** with another verb: *Wir gehen schwimmen.*
+
+If you are tempted to write *Ich will zu schlafen*, stop. After a modal verb there is never a *zu*.
+`,
+      examples: [
+        { de: 'Ich muss jetzt gehen.', en: 'I have to go now. (modal verb: no zu)' },
+        { de: 'Ich werde dich morgen anrufen.', en: 'I will call you tomorrow. (werden: no zu)' },
+        { de: 'Gehen wir morgen schwimmen?', en: 'Shall we go swimming tomorrow? (gehen + infinitive: no zu)' },
+        { de: 'Sie lernt schwimmen.', en: 'She is learning to swim. (lernen: no zu)' },
+      ],
+    },
+    {
+      title: 'Instead of a dass-clause',
+      text: `
+A *zu*-infinitive often replaces a **dass**-clause (a clause starting with *dass*, that) and sounds shorter and more natural: *Ich hoffe, dass ich dich sehe* becomes *Ich hoffe, dich zu sehen*.
+
+This only works when the **subject is the same** in both parts. If the subjects are different (*ich* hope, *du* come), keep *dass*.
+`,
+      examples: [
+        { de: 'Ich hoffe, dich bald zu sehen.', en: 'I hope to see you soon. (ich hope, ich see: zu works)' },
+        { de: 'Ich hoffe, die Prüfung zu bestehen.', en: 'I hope to pass the exam.' },
+        { de: 'Ich hoffe, dass du gesund bist.', en: 'I hope that you are well. (ich / du: different subjects, so dass stays)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-16-separable-verbs', note: 'With separable verbs, zu goes between prefix and stem: aufzustehen.' },
@@ -91,10 +120,11 @@ The *zu*-infinitive lets you build longer, more natural sentences without a full
   ],
   edgeCases: [
     'Never put *zu* after a **modal verb**: *Ich will zu schlafen* is wrong. Say *Ich will schlafen*.',
-    'With separable verbs *zu* goes **inside** the verb as one word: *anzurufen*, not *zu anrufen* or *an zu rufen*.',
+    'With separable verbs *zu* goes **inside** the verb as one word: **anzurufen**, not *zu anrufen* or *an zu rufen*.',
     'A *zu*-infinitive can only replace *dass* when the **subject is the same** in both parts. *Ich hoffe, dass du kommst* cannot become a *zu*-infinitive because the subjects differ (ich / du).',
     'The **comma** is optional when the zu-part is very short (*Ich versuche zu schlafen*), but it is always allowed. Use it: it makes the sentence easier to read.',
-    '*gehen* and *fahren* with another verb take no *zu*: *Wir gehen essen*, *Ich fahre einkaufen*, not *zu essen*.',
+    '**gehen** and **fahren** with another verb take no *zu*: *Wir gehen essen*, *Ich fahre einkaufen*, not *zu essen*.',
+    'You may also see **sehen, hören** and **lassen** with a plain infinitive: *Ich höre ihn singen*, *Ich lasse das Auto reparieren*. That is a B1 pattern; for now just notice there is no *zu*.',
   ],
   exercises: [
     {

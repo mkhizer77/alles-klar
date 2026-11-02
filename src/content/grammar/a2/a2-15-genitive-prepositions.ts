@@ -4,72 +4,86 @@ const topic: Topic = {
   id: 'a2-15-genitive-prepositions',
   level: 'A2',
   unit: 5,
-  order: 15,
+  order: 16,
   title: 'Genitive prepositions: wegen, trotz, während, statt',
   germanTerm: 'Präpositionen mit Genitiv',
   tags: ['prepositions', 'Genitive', 'cases', 'wegen', 'trotz', 'während', 'statt'],
   summary: 'The prepositions wegen (because of), trotz (despite), während (during) and statt (instead of) are followed by the Genitive in standard German: wegen des Regens, trotz des Wetters.',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'wegen: a reason in two words',
+      text: `
+You know prepositions that take the Accusative (*für, ohne*) and the Dative (*mit, nach*). A small group takes the **Genitive** (the "of" case from the last topic).
 
-You already know prepositions that take the Accusative (*für, ohne*) and the Dative (*mit, nach*). A small group takes the **Genitive** (the "of" case from the last topic). The most important one is **wegen** (because of): *Wegen des Regens bleiben wir zu Hause.* – *Because of the rain we are staying at home.* Three more are useful to know:
-
-| preposition | meaning | example |
-|---|---|---|
-| **wegen** | because of | wegen **des** Regen**s** – because of the rain |
-| **trotz** | despite, in spite of | trotz **des** Wetter**s** – despite the weather |
-| **während** | during | während **der** Ferien – during the holidays |
-| **statt / anstatt** | instead of | statt **eines** Brief**es** – instead of a letter |
-
-These prepositions let you add a **reason**, a **contrast**, a **time** or an **alternative** to a sentence in just two or three words, instead of a whole clause: *wegen des Regens* = *weil es geregnet hat*.
-
-### How it works
-
-After these prepositions the article and noun take the Genitive forms from the previous topic:
-
-| | masculine | feminine | neuter | plural |
-|---|---|---|---|---|
-| the | wegen **des** Sturm**s** | wegen **der** Krankheit | wegen **des** Wetter**s** | wegen **der** Kinder |
-| a | statt **eines** Brief**es** | statt **einer** E-Mail | statt **eines** Geschenk**s** | – |
-
-*mein, sein, ihr …* take the same endings as *ein*: *wegen **seiner** Krankheit*, *trotz **meines** Fehlers*.
-
-Remember: masculine and neuter nouns add **-s / -es**; feminine and plural nouns do not change.
-
-A few more examples:
-
-- **Wegen** der Baustelle ist die Straße gesperrt. – *Because of the roadworks the street is closed.*
-- **Trotz** seiner Erkältung geht er arbeiten. – *Despite his cold he goes to work.*
-- **Während** des Essens spricht er nicht. – *During the meal he doesn't talk.*
-- **Statt** einer Pizza nehme ich einen Salat. – *Instead of a pizza I'll have a salad.*
-
-### Word order
-
-A preposition phrase can start the sentence. Then the verb comes right after it (verb second):
-
-- **Wegen des Regens** bleiben wir zu Hause.
-- Wir bleiben **wegen des Regens** zu Hause.
-
-### Spoken German: you will hear the Dative
-
-In everyday speech many Germans say *wegen dem Regen, trotz dem Wetter* (Dative). You will hear it a lot. But in **writing and exams** the Genitive is the correct form, so learn and use *wegen des Regens*. On signs the noun often has no article at all: *wegen Umbau geschlossen* (closed because of renovation). Then there is no Genitive ending to add.
-
-### trotz is not trotzdem
-
-**trotz** is a preposition and needs a noun: *trotz des Regens*. **trotzdem** means *nevertheless* and starts a new sentence or clause: *Es regnet. Trotzdem gehen wir raus.* (You may also see *während* with a whole clause, *Während ich koche, …* = *While I cook, …*; that is a B1 topic.)
-
-### Why it matters
-
-*wegen* is the preposition you need to give a reason in two words: *wegen des Wetters*, *wegen Krankheit*. The other three make your sentences shorter and more precise, and they appear constantly in signs, emails and news: *trotz des Regens*, *während der Arbeitszeit*, *statt einer E-Mail*.
+The most important one is **wegen** (because of). It gives a reason in two or three words instead of a whole clause: *wegen des Regens* = *weil es regnet*.
 `,
-  examples: [
-    { de: 'Wegen des Regens bleiben wir zu Hause.', en: 'Because of the rain we are staying at home. (masculine: des Regens)' },
-    { de: 'Trotz des schlechten Wetters gehen wir spazieren.', en: 'Despite the bad weather we go for a walk. (neuter: des Wetters)' },
-    { de: 'Während der Ferien arbeite ich im Café.', en: 'During the holidays I work in the café. (plural: der Ferien)' },
-    { de: 'Statt einer Pizza nehme ich einen Salat.', en: 'Instead of a pizza I will have a salad. (feminine: einer Pizza)' },
-    { de: 'Wegen seiner Krankheit konnte er nicht kommen.', en: "Because of his illness he couldn't come. (possessive: seiner Krankheit)" },
-    { de: 'Während des Essens spricht er nicht.', en: "During the meal he doesn't talk. (neuter: des Essens)" },
-    { de: 'Das Geschäft ist wegen Umbau geschlossen.', en: 'The shop is closed because of renovation. (no article: no Genitive ending)' },
+      examples: [
+        { de: 'Wegen des Regens bleiben wir zu Hause.', en: 'Because of the rain we are staying at home. (des Regens)' },
+        { de: 'Wegen der Baustelle ist die Straße gesperrt.', en: 'Because of the roadworks the street is closed.' },
+        { de: 'Wegen seiner Krankheit konnte er nicht kommen.', en: "Because of his illness he couldn't come." },
+      ],
+    },
+    {
+      title: 'Three more: trotz, während, statt',
+      text: `
+Three more Genitive prepositions are useful at A2. They add a **contrast**, a **time** or an **alternative** to a sentence, again in just a few words.
+
+| preposition | meaning |
+|---|---|
+| **trotz** | despite, in spite of |
+| **während** | during |
+| **statt** (or *anstatt*) | instead of |
+`,
+      examples: [
+        { de: 'Trotz des Wetters gehen wir spazieren.', en: 'Despite the weather we go for a walk. (contrast)' },
+        { de: 'Während der Ferien arbeite ich im Café.', en: 'During the holidays I work in the café. (time)' },
+        { de: 'Statt einer Pizza nehme ich einen Salat.', en: 'Instead of a pizza I will have a salad. (alternative)' },
+      ],
+    },
+    {
+      title: 'The Genitive endings after them',
+      text: `
+After these prepositions the article and noun take the Genitive forms you know: **des** + noun with **-s / -es** for masculine and neuter, **der** and no change for feminine and plural.
+
+| | example |
+|---|---|
+| masculine | wegen **des** Sturm**s** |
+| feminine | wegen **der** Krankheit |
+| neuter | trotz **des** Wetter**s** |
+| plural | während **der** Ferien |
+
+*ein, mein, sein …* take the same endings: *statt **eines** Briefes*, *trotz **meines** Fehlers*.
+`,
+      examples: [
+        { de: 'Während des Essens spricht er nicht.', en: "During the meal he doesn't talk. (neuter: des Essens)" },
+        { de: 'Trotz seiner Erkältung geht er arbeiten.', en: 'Despite his cold he goes to work. (seiner: feminine)' },
+        { de: 'Statt eines Briefes schreibe ich eine E-Mail.', en: 'Instead of a letter I write an email. (eines Briefes)' },
+      ],
+    },
+    {
+      title: 'The phrase can start the sentence',
+      text: `
+A preposition phrase can stand in **position 1** or in the middle of the sentence. If it starts the sentence, the verb comes **right after it** (verb second) and the subject follows the verb. The meaning stays the same.
+`,
+      examples: [
+        { de: 'Trotz des Regens spielen die Kinder draußen.', en: 'Despite the rain the children play outside. (verb second)' },
+        { de: 'Die Kinder spielen trotz des Regens draußen.', en: 'The children play outside despite the rain. (same meaning)' },
+        { de: 'Während der Arbeit telefoniere ich nicht.', en: 'During work I do not make phone calls.' },
+      ],
+    },
+    {
+      title: 'What you hear and see every day',
+      text: `
+In everyday speech many Germans say *wegen **dem** Regen* (Dative). You will hear it a lot, but in writing and exams the Genitive is correct, so use *wegen des Regens*.
+
+On signs and in short notes the noun often has **no article**: *wegen Umbau geschlossen*. Then there is no Genitive ending to add.
+`,
+      examples: [
+        { de: 'Das Geschäft ist wegen Umbau geschlossen.', en: 'The shop is closed because of renovation. (no article: no ending)' },
+        { de: 'Er fehlt heute wegen Krankheit.', en: 'He is absent today because of illness.' },
+        { de: 'Wegen des Wetters fällt das Spiel aus.', en: 'Because of the weather the match is cancelled. (standard written form)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a2-14-genitive', note: 'The Genitive articles and noun endings that these prepositions require.' },

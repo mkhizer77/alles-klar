@@ -4,16 +4,22 @@ All content is TypeScript data under `src/content/`. Types live in `src/content/
 
 ## Grammar topics — `src/content/grammar/<a1|a2|b1>/<topic-id>.ts`
 
-One file per topic, default-exporting a `Topic`. See `src/content/grammar/a1/a1-11-nominative.ts` for the reference example; match its tone and depth.
+One file per topic, default-exporting a `Topic`. See `src/content/grammar/a1/a1-20-accusative.ts` for the reference example; match its tone, length and shape exactly.
+
+A topic is a **short lesson in steps**. The learner reads one small step, sees two to four example sentences for it, and moves on. Nothing in a step depends on a step the learner has not read yet.
 
 Rules:
-- **id / level / unit / order / title / germanTerm** must match `curriculum.ts` exactly (order = the topic's number within the level).
-- **Audience**: an adult who skipped A1 and has gaps. Write in **easy English**, short sentences, no linguistic jargon without an immediate plain explanation. Give the German term in italics the first time (*Nominativ*).
-- **summary**: one sentence, plain, what it is and when you use it.
-- **explanation**: markdown in a template literal, 300–600 words. Use `###` headings, tables for forms/endings, bold for the key words. Structure: *What it is* → *How it works* (rules + tables) → *Why it matters / when you use it*. Do **not** use backticks or `${` inside the template literal.
-- **examples**: 5–8 short German sentences with English, each showing one point. Add a short note in parentheses in the English when it helps.
-- **connections**: 2–5 links to other topic ids from `curriculum.ts` (prerequisites and follow-ups) with one sentence each on how they connect.
-- **edgeCases**: 3–6 markdown bullets: common mistakes, exceptions, things learners mix up.
+- **id / level / unit / order / title / germanTerm** must match `curriculum.ts` exactly (order = the topic's position within the level). Ids look like `a1-14-es-gibt-demonstratives`; a topic that was split off from another keeps that topic's number with a letter: `a1-14b-demonstratives`.
+- **Audience**: an adult who skipped A1 and has gaps. Write in **easy English**: short sentences, one idea at a time, "you" not "the learner". No grammar term without a plain-English gloss in brackets the first time (*Nominativ* (the subject case)). Prefer "the word for the doer" over "the agent".
+- **summary**: one sentence, under 40 words: what the structure is for and the one rule to remember.
+- **steps**: 3–7 `LessonStep`s (split-off topics usually 3–5). Each step:
+  - **title**: 2–7 words naming the one thing it teaches ("Only the masculine changes").
+  - **text**: markdown, **20–90 words**, 1–3 short paragraphs. One idea per step. Bold the German form the step is about. At most one small table (max 7 rows, 4 columns) and only for forms or endings. No headings, no backticks, no `${`.
+  - **examples**: 2–4 German sentences, each under 12 words, each showing exactly this step and nothing new, with English. Add a short note in brackets in the English when it helps: `'I have a dog. (ein → einen)'`. No brackets or slashes in the German, so the sentence can be used for dictation.
+  - Step 1 says what the structure is for, with the simplest example. The last step may be a quick method or "the rule in one line". Do **not** write a "Why it matters" step; the summary does that job.
+  - The whole lesson stays **under 450 words** of step text. If it does not fit, the topic is two topics: say so instead of squeezing.
+- **connections**: 1–6 links to other topic ids from `curriculum.ts` (prerequisites and follow-ups) with one short sentence each. A split-off topic links to its sibling.
+- **edgeCases**: 2–6 markdown bullets, each under 45 words: common mistakes, exceptions, things learners mix up. The German form in bold, the fix in the same line.
 - **exercises**: 9–12, mixed types, in rising difficulty. Ids: `<topic-id>-ex01`, `-ex02`, … Every exercise has an `explanation` that teaches, not just "correct".
   - `mc`: 3–4 options, exactly one correct, `answer` is the index. Distractors must be plausible.
   - `fill`: exactly one `___` in the prompt. Give the English word or base form in parentheses when it is not obvious: `Ich ___ (haben) Hunger.` List every acceptable spelling in `answer` (e.g. `['habe']`). Use real umlauts and ß.
@@ -21,7 +27,7 @@ Rules:
   - `match`: 4–6 pairs, left side and right side each unique.
   - `translate`: short English sentence → German. List all natural variants in `answer`. Add a `hint` with the needed vocabulary.
 - Content must be **correct standard German** (Hochdeutsch). When unsure, prefer the most common textbook form.
-- Keep the whole file under ~350 lines.
+- Keep the whole file under ~300 lines. Run `node scripts/validate-content.mjs src/content/grammar/<level>/<file>.ts` before you finish; it enforces every count above.
 
 ## Vocabulary — `src/content/vocab/<level>-u<unit>-<theme>.ts`
 

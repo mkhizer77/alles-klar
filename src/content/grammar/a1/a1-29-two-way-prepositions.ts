@@ -4,73 +4,85 @@ const topic: Topic = {
   id: 'a1-29-two-way-prepositions',
   level: 'A1',
   unit: 6,
-  order: 29,
+  order: 33,
   title: 'Two-way prepositions: wo? (Dative) vs wohin? (Accusative)',
   germanTerm: 'Wechselpräpositionen',
   tags: ['prepositions', 'dative', 'accusative', 'place'],
   summary: 'Nine prepositions of place – an, auf, hinter, in, neben, über, unter, vor, zwischen – take the Dative for a location (wo?) and the Accusative for a movement towards (wohin?).',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'Nine prepositions, two cases',
+      text: `
+Some prepositions are always Accusative (*für, ohne*) and some always Dative (*mit, zu*). A third group can take **either** case. These are the **two-way prepositions** (*Wechselpräpositionen*). All nine say where something is:
 
-You have met prepositions that are always Accusative (*für, ohne …*) and always Dative (*mit, zu …*). A third group can take **either** case. These are the **two-way prepositions** (*Wechselpräpositionen*). All nine describe **where** something is:
+**an** (at, on), **auf** (on), **hinter** (behind), **in** (in), **neben** (next to), **über** (above), **unter** (under), **vor** (in front of), **zwischen** (between).
+`,
+      examples: [
+        { de: 'Das Buch liegt auf dem Tisch.', en: 'The book is lying on the table. (auf + Dative)' },
+        { de: 'Ich lege das Buch auf den Tisch.', en: 'I put the book on the table. (auf + Accusative)' },
+        { de: 'Die Katze sitzt unter dem Stuhl.', en: 'The cat sits under the chair. (unter + Dative)' },
+      ],
+    },
+    {
+      title: 'Ask wo? or wohin?',
+      text: `
+The case depends on one question. **Wo?** (where is it?) asks for a **location**: use the **Dative**. **Wohin?** (where to?) asks for a **movement towards** a place: use the **Accusative**.
 
-| preposition | meaning |
-|---|---|
-| **an** | at, on (a vertical surface or edge) |
-| **auf** | on (a horizontal surface) |
-| **hinter** | behind |
-| **in** | in, into |
-| **neben** | next to |
-| **über** | above, over |
-| **unter** | under, below |
-| **vor** | in front of |
-| **zwischen** | between |
-
-### The rule: wo? or wohin?
-
-The case depends on one question:
-
-- **Wo?** (where is it? – a **location**, no movement to a new place) → **Dative**
-- **Wohin?** (where to? – **movement towards** a place) → **Accusative**
-
-| | wo? → Dative | wohin? → Accusative |
+| | wo? Dative | wohin? Accusative |
 |---|---|---|
-| in | Ich bin **in der** Küche. (I am in the kitchen) | Ich gehe **in die** Küche. (I go into the kitchen) |
-| auf | Das Buch liegt **auf dem** Tisch. | Ich lege das Buch **auf den** Tisch. |
-| an | Das Bild hängt **an der** Wand. | Ich hänge das Bild **an die** Wand. |
-| neben | Er sitzt **neben mir**. | Er setzt sich **neben mich**. |
+| in | Ich bin **in der** Küche. | Ich gehe **in die** Küche. |
+| auf | Es liegt **auf dem** Tisch. | Ich lege es **auf den** Tisch. |
+| an | Es hängt **an der** Wand. | Ich hänge es **an die** Wand. |
+`,
+      examples: [
+        { de: 'Ich bin in der Küche.', en: 'I am in the kitchen. (wo? → Dative)' },
+        { de: 'Ich gehe in die Küche.', en: 'I go into the kitchen. (wohin? → Accusative)' },
+        { de: 'Das Bild hängt an der Wand.', en: 'The picture hangs on the wall. (wo? → der)' },
+        { de: 'Ich hänge das Bild an die Wand.', en: 'I hang the picture on the wall. (wohin? → die)' },
+      ],
+    },
+    {
+      title: 'Moving inside a place is still wo?',
+      text: `
+It is not about whether the verb moves. Ask whether the thing **changes place**. *Ich laufe im Park* is Dative: I stay in the park the whole time. *Ich laufe in den Park* is Accusative: I go from outside into the park.
+`,
+      examples: [
+        { de: 'Die Kinder spielen im Garten.', en: 'The children play in the garden. (they stay there: Dative)' },
+        { de: 'Die Kinder laufen in den Garten.', en: 'The children run into the garden. (from outside: Accusative)' },
+        { de: 'Wir tanzen in der Küche.', en: 'We dance in the kitchen. (no change of place: Dative)' },
+      ],
+    },
+    {
+      title: 'Verbs that go with each side',
+      text: `
+Some verbs almost always sit on one side.
 
-The thing to understand: it is not about the verb moving or not. *Ich laufe im Park* (I run in the park) is Dative, because I stay in the park; the park is a location. *Ich laufe in den Park* is Accusative, because I go from outside into the park.
-
-### Typical verbs for each side
-
-| wo? (Dative) | wohin? (Accusative) |
+| wo? Dative | wohin? Accusative |
 |---|---|
 | sein, bleiben, wohnen | gehen, fahren, kommen, fliegen |
-| liegen (to lie), stehen (to stand), sitzen (to sit), hängen (to hang, be hanging) | legen (to lay), stellen (to put upright), setzen (to set), hängen (to hang up) |
+| liegen, stehen, sitzen, hängen | legen, stellen, setzen, hängen |
 
-The pairs *liegen / legen, stehen / stellen, sitzen / setzen* are a key A2 topic. For now, just notice: the short "position" verb goes with Dative, the "placing" verb with Accusative.
-
-### Contractions
-
-- in + dem → **im**, in + das → **ins**
-- an + dem → **am**, an + das → **ans**
-- auf + das → **aufs** (less common)
-
-So: *Ich bin **im** Kino* (location) but *Ich gehe **ins** Kino* (direction).
-
-### Why it matters
-
-This is the single most common case decision in German. Every time you say where you are, where you put something or where you go, you make it. The question test is simple and reliable: ask yourself **wo?** or **wohin?**. Combined with the articles you already know, that gives you *im Büro / ins Büro*, *auf dem Tisch / auf den Tisch*, *an der Wand / an die Wand*. Because the two-way prepositions also cover time (*am Montag*, *im Mai*, always Dative), you have already been using half of this topic without noticing.
+The short position verb (*liegen*, to lie) goes with the Dative; the placing verb (*legen*, to lay) goes with the Accusative. The pairs *liegen / legen, stehen / stellen, sitzen / setzen* are studied in full at A2.
 `,
-  examples: [
-    { de: 'Das Buch liegt auf dem Tisch.', en: 'The book is lying on the table. (wo? → Dative: dem)' },
-    { de: 'Ich lege das Buch auf den Tisch.', en: 'I put the book on the table. (wohin? → Accusative: den)' },
-    { de: 'Wir sind im Supermarkt.', en: 'We are in the supermarket. (in + dem = im, location)' },
-    { de: 'Wir gehen in den Supermarkt.', en: 'We go into the supermarket. (in + den, direction)' },
-    { de: 'Das Bild hängt an der Wand.', en: 'The picture hangs on the wall. (an + Dative)' },
-    { de: 'Sie fährt ans Meer.', en: 'She drives to the sea. (an + das = ans, direction)' },
-    { de: 'Die Katze sitzt zwischen den Stühlen.', en: 'The cat sits between the chairs. (Dative plural: den + -n)' },
+      examples: [
+        { de: 'Die Lampe steht auf dem Tisch.', en: 'The lamp stands on the table. (stehen: Dative)' },
+        { de: 'Ich stelle die Lampe auf den Tisch.', en: 'I put the lamp on the table. (stellen: Accusative)' },
+        { de: 'Er sitzt neben mir.', en: 'He sits next to me. (sitzen: Dative)' },
+        { de: 'Er setzt sich neben mich.', en: 'He sits down next to me. (setzen: Accusative)' },
+      ],
+    },
+    {
+      title: 'Short forms: im, ins, am, ans',
+      text: `
+Some preposition + article pairs melt into one word: in + dem = **im**, in + das = **ins**, an + dem = **am**, an + das = **ans**. So the Dative side gives *im Kino* (I am there) and the Accusative side gives *ins Kino* (I go there).
+`,
+      examples: [
+        { de: 'Ich bin im Kino.', en: 'I am at the cinema. (in + dem = im, location)' },
+        { de: 'Ich gehe ins Kino.', en: 'I go to the cinema. (in + das = ins, direction)' },
+        { de: 'Wir sitzen am Fenster.', en: 'We sit at the window. (an + dem = am)' },
+        { de: 'Sie fährt ans Meer.', en: 'She drives to the sea. (an + das = ans)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-20-accusative', note: 'The wohin? side uses the Accusative articles: den, die, das.' },

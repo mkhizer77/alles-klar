@@ -4,75 +4,111 @@ const topic: Topic = {
   id: 'b1-27-verb-preposition-b1',
   level: 'B1',
   unit: 9,
-  order: 27,
+  order: 37,
   title: 'Verb + preposition combinations: the B1 list',
   germanTerm: 'Verben mit Präpositionen (B1)',
   tags: ['verbs', 'prepositions', 'cases', 'vocabulary'],
-  summary: 'Many German verbs come with a fixed preposition and case (warten auf + Akkusativ, träumen von + Dativ); the B1 list groups the most important ones by preposition so you can learn them in blocks.',
-  explanation: `
-### The idea, in one line
+  summary: 'Many verbs come with a fixed preposition and case (warten auf + Akkusativ, träumen von + Dativ). Learn them in blocks by preposition; only an, auf, über and in need the case learned too.',
+  steps: [
+    {
+      title: 'Verbs glued to a preposition',
+      text: `
+Some verbs are "glued" to a preposition: **warten auf** (wait for), **sich interessieren für** (be interested in). The preposition has **no meaning of its own** here, so you cannot work it out from English. You learn three things together: the **verb**, its **preposition** and the **case** the preposition takes.
+`,
+      examples: [
+        { de: 'Ich warte auf den Bus.', en: 'I am waiting for the bus. (auf, not für)' },
+        { de: 'Sie interessiert sich für Musik.', en: 'She is interested in music. (für, not in)' },
+        { de: 'Er träumt von einem eigenen Haus.', en: 'He dreams of a house of his own. (von + Dative)' },
+      ],
+    },
+    {
+      title: 'Blocks with the Accusative: für, um, gegen',
+      text: `
+These prepositions always take the **Accusative**, whatever the verb. Learn each block as one list.
 
-Some verbs are "glued" to a preposition, and you need the right one to say the simplest things:
-
-- Ich warte **auf** den Bus. – *I am waiting for the bus.* (not *für*)
-- Sie interessiert sich **für** Musik. – *She is interested in music.* (not *in*)
-
-The preposition has **no meaning of its own** here – you cannot work it out, you have to learn it with the verb, together with the **case** it takes. This topic gives you the B1 set, grouped by preposition so the blocks stick.
-
-### Prepositions with a fixed case
-
-These prepositions always take the same case, whatever the verb:
-
-| Preposition + case | Verbs |
+| Preposition | Verbs |
 |---|---|
 | **für** + Akk | sich interessieren für, sich bedanken für, sich entschuldigen für, sorgen für, sich entscheiden für |
 | **um** + Akk | sich kümmern um, bitten um, sich bewerben um, es geht um, sich sorgen um |
 | **gegen** + Akk | protestieren gegen, kämpfen gegen |
-| **mit** + Dat | sich beschäftigen mit, anfangen mit, aufhören mit, rechnen mit, vergleichen mit, sich unterhalten mit, telefonieren mit |
-| **von** + Dat | träumen von, abhängen von, erzählen von, sich erholen von, halten von, sich verabschieden von |
-| **nach** + Dat | fragen nach, suchen nach, sich erkundigen nach |
-| **vor** + Dat | Angst haben vor, warnen vor, sich fürchten vor, schützen vor |
-| **zu** + Dat | gehören zu, passen zu, einladen zu, gratulieren zu, führen zu |
-| **aus** + Dat | bestehen aus, stammen aus |
-| **bei** + Dat | sich bedanken bei, sich beschweren bei, helfen bei, sich entschuldigen bei |
+`,
+      examples: [
+        { de: 'Sie kümmert sich um ihre Großmutter.', en: 'She looks after her grandmother. (um + Akk)' },
+        { de: 'Wir bedanken uns für das Geschenk.', en: 'We say thank you for the present. (für + Akk)' },
+        { de: 'Die Leute protestieren gegen die neuen Pläne.', en: 'The people are protesting against the new plans. (gegen + Akk)' },
+      ],
+    },
+    {
+      title: 'Blocks with the Dative: mit, von, nach, zu',
+      text: `
+These always take the **Dative**.
 
-### Two-way prepositions: the verb decides the case
-
-*an, auf, über, in* are two-way prepositions (they can take the Accusative or the Dative), so after a verb the case is **not** automatic. Most verbs take the **Accusative**; a few take the Dative. Learn these as exceptions.
+| Preposition | Verbs |
+|---|---|
+| **mit** | sich beschäftigen mit, anfangen mit, rechnen mit, sich unterhalten mit |
+| **von** | träumen von, abhängen von, erzählen von, halten von |
+| **nach** | fragen nach, suchen nach, sich erkundigen nach |
+| **vor** | Angst haben vor, warnen vor, sich fürchten vor |
+| **zu** | gehören zu, passen zu, einladen zu, gratulieren zu |
+| **aus, bei** | bestehen aus, stammen aus; sich bedanken bei, sich beschweren bei |
+`,
+      examples: [
+        { de: 'Ich träume von einem langen Urlaub.', en: 'I dream of a long holiday. (von + Dat)' },
+        { de: 'Sie fragt nach dem Weg.', en: 'She asks the way. (nach + Dat)' },
+        { de: 'Er hat Angst vor großen Hunden.', en: 'He is afraid of big dogs. (vor + Dat)' },
+        { de: 'Wir gratulieren dir zum Geburtstag.', en: 'We congratulate you on your birthday. (zu + Dat: zum = zu dem)' },
+      ],
+    },
+    {
+      title: 'Two-way prepositions: the verb decides',
+      text: `
+**an, auf, über, in** are two-way prepositions, so the verb decides the case. Most take the **Accusative**.
 
 | Preposition | + Akkusativ | + Dativ |
 |---|---|---|
-| **an** | denken an, sich erinnern an, sich gewöhnen an, glauben an | teilnehmen an, leiden an, arbeiten an |
-| **auf** | warten auf, sich freuen auf, achten auf, sich verlassen auf, verzichten auf, sich konzentrieren auf, reagieren auf, hoffen auf, sich vorbereiten auf | (none at B1) |
-| **über** | sprechen über, sich freuen über, sich ärgern über, nachdenken über, sich beschweren über, diskutieren über, sich informieren über, lachen über | (none) |
-| **in** | sich verlieben in | (none) |
+| **an** | denken an, sich erinnern an, glauben an | teilnehmen an, leiden an, arbeiten an |
+| **auf** | warten auf, achten auf, sich verlassen auf, hoffen auf | – |
+| **über** | sprechen über, sich ärgern über, nachdenken über, lachen über | – |
+| **in** | sich verlieben in | – |
 
-A handy pattern: **über is always Accusative**, **auf is always Accusative** with these verbs. Only **an** has a real split.
-
-### freuen: auf or über?
-
-*sich freuen* takes both, with different meanings:
-
-- sich freuen **auf** + Akk = look forward to something in the **future** (*Ich freue mich auf das Wochenende.*)
-- sich freuen **über** + Akk = be happy about something that **happened** (*Ich freue mich über das Geschenk.*)
-
-### Pronouns and clauses: da- and wo-
-
-When the object is a **thing** you refer back to, or a whole clause, use a **da-compound**: *Ich denke **daran**, dass …*, *Ich warte **darauf**.* To ask about a thing, use **wo-**: ***Worauf** wartest du?* For people, use the preposition + pronoun: *Ich warte **auf ihn**. **Auf wen** wartest du?*
-
-### Why it matters
-
-Verb + preposition errors are among the most frequent at B1, and examiners notice them. Each pair you know by heart lets you build correct sentences automatically, use da- and wo-compounds, and understand the matching nouns and adjectives (*Interesse an*, *stolz auf*) in the next topic.
+**auf** and **über**: always Accusative here. Only **an** splits.
 `,
-  examples: [
-    { de: 'Ich warte auf den Bus.', en: 'I am waiting for the bus. (auf + Akk)' },
-    { de: 'Sie interessiert sich für Musik.', en: 'She is interested in music. (für + Akk)' },
-    { de: 'Er erinnert sich an seine Kindheit.', en: 'He remembers his childhood. (an + Akk)' },
-    { de: 'Ich nehme am Kurs teil.', en: 'I take part in the course. (an + Dat: am = an dem)' },
-    { de: 'Wir freuen uns auf das Wochenende.', en: 'We are looking forward to the weekend. (auf = future)' },
-    { de: 'Ich freue mich über das Geschenk.', en: 'I am happy about the present. (über = something that happened)' },
-    { de: 'Sie kümmert sich um ihre Großmutter.', en: 'She looks after her grandmother. (um + Akk)' },
-    { de: 'Worauf wartest du? – Auf eine Antwort.', en: 'What are you waiting for? – For an answer. (wo-compound for a thing)' },
+      examples: [
+        { de: 'Er erinnert sich an seine Kindheit.', en: 'He remembers his childhood. (an + Akk)' },
+        { de: 'Ich nehme am Kurs teil.', en: 'I take part in the course. (an + Dat: am = an dem)' },
+        { de: 'Wir sprechen über das Problem.', en: 'We talk about the problem. (über + Akk)' },
+        { de: 'Sie hat sich in ihren Nachbarn verliebt.', en: 'She has fallen in love with her neighbour. (in + Akk)' },
+      ],
+    },
+    {
+      title: 'sich freuen: auf or über?',
+      text: `
+*sich freuen* takes both prepositions, with two different meanings:
+
+- **sich freuen auf** + Akk = look forward to something in the **future**
+- **sich freuen über** + Akk = be happy about something that **already happened**
+
+Ask yourself: has it happened yet? If not, use *auf*.
+`,
+      examples: [
+        { de: 'Wir freuen uns auf das Wochenende.', en: 'We are looking forward to the weekend. (auf: still to come)' },
+        { de: 'Ich freue mich über das Geschenk.', en: 'I am happy about the present. (über: already received)' },
+        { de: 'Sie freut sich auf deinen Besuch.', en: 'She is looking forward to your visit.' },
+      ],
+    },
+    {
+      title: 'Things and clauses: da- and wo-',
+      text: `
+When the object is a **thing** you refer back to, or a whole clause, use a **da-compound** (*darauf, daran, davon*): *Ich denke **daran**, dass …* To ask about a thing, use **wo-**: ***Worauf** wartest du?*
+
+For **people**, keep the preposition and use a pronoun: *Ich warte **auf ihn**. **Auf wen** wartest du?*
+`,
+      examples: [
+        { de: 'Ich denke daran, dass ich bald umziehe.', en: 'I am thinking about the fact that I am moving soon. (daran + dass-clause)' },
+        { de: 'Worauf wartest du? Auf eine Antwort.', en: 'What are you waiting for? For an answer. (wo- for a thing)' },
+        { de: 'Auf wen wartest du? Auf meinen Bruder.', en: 'Who are you waiting for? For my brother. (preposition + wen for a person)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a2-12-verbs-with-prepositions', note: 'The A2 topic introduced the idea with a short list; this is the full B1 set.' },
@@ -82,11 +118,11 @@ Verb + preposition errors are among the most frequent at B1, and examiners notic
     { topicId: 'b1-28-adjective-noun-prepositions', note: 'Adjectives and nouns from the same family often take the same preposition: sich interessieren für but Interesse an.' },
   ],
   edgeCases: [
-    '*sich freuen **auf*** (future) vs *sich freuen **über*** (already happened). Both are Accusative.',
-    '*an* splits: *denken an + Akk*, *teilnehmen an + Dat*. Learn the Dative verbs as the exceptions.',
-    '*sich bedanken **bei** jemandem **für** etwas* and *sich beschweren **bei** jemandem **über** etwas*: the person takes bei, the thing takes the second preposition.',
+    '**sich freuen auf** (future) vs **sich freuen über** (already happened). Both are Accusative.',
+    '**an** splits: *denken an + Akk*, *teilnehmen an + Dat*. Learn the Dative verbs as the exceptions.',
+    '**sich bedanken bei** jemandem **für** etwas and **sich beschweren bei** jemandem **über** etwas: the person takes bei, the thing takes the second preposition.',
     'Do not use the preposition for a clause directly: not *Ich denke an, dass …* but *Ich denke **daran**, dass …*.',
-    '*warten auf* (wait for), not *warten für*. English "for" is a frequent false friend.',
+    '**warten auf** (wait for), not *warten für*. English "for" is a frequent false friend.',
   ],
   exercises: [
     {

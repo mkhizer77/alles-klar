@@ -4,72 +4,95 @@ const topic: Topic = {
   id: 'a2-07-adjective-endings-definite',
   level: 'A2',
   unit: 3,
-  order: 7,
+  order: 8,
   title: 'Adjective endings after der / die / das',
   germanTerm: 'Adjektivdeklination (bestimmt)',
   tags: ['adjectives', 'adjective endings', 'declension', 'cases', 'definite article'],
-  summary: 'An adjective between a definite article (der, die, das) and its noun takes an ending: -e in the Nominative singular and feminine / neuter Accusative, and -en everywhere else.',
-  explanation: `
-### What it is
+  summary: 'An adjective between der, die, das and its noun takes an ending: -e while the article keeps its basic form, -en as soon as the article changes or the noun is plural.',
+  steps: [
+    {
+      title: 'The adjective gets an ending',
+      text: `
+In English an adjective never changes: *the old man, the old men*. In German an adjective that stands **directly in front of a noun** gets an **ending** (*Adjektivendung*): *der alt**e** Mann*.
 
-In English an adjective never changes: *the old man, the old woman, with the old men*. In German an adjective that stands **in front of a noun** gets an **ending** (*Adjektivendung*) that depends on the gender, number and case of the noun. Grammar books call this adjective declension (*Adjektivdeklination*); it just means "the adjective changes its ending".
+After the definite article (*der, die, das*) there are only **two endings** to learn: **-e** and **-en**. An adjective after the verb (*sein, werden, bleiben*) gets no ending at all.
+`,
+      examples: [
+        { de: 'Der alte Mann wohnt hier.', en: 'The old man lives here. (alt + e in front of the noun)' },
+        { de: 'Der Mann ist alt.', en: 'The man is old. (after the verb: no ending)' },
+        { de: 'Die Kinder sind müde.', en: 'The children are tired. (after the verb: no ending)' },
+      ],
+    },
+    {
+      title: 'Nominative: -e in the singular',
+      text: `
+In the **Nominative** (the subject case) the article has its basic form: *der, die, das*. The adjective takes **-e** in all three genders: *der alt**e** Mann, die alt**e** Frau, das alt**e** Haus*.
 
-- der alt**e** Mann – *the old man*
-- die alt**e** Frau – *the old woman*
-- mit den alt**en** Männern – *with the old men*
+The plural is different. After *die* in the plural the ending is **-en**: *die alt**en** Leute*.
+`,
+      examples: [
+        { de: 'Der kleine Hund schläft.', en: 'The small dog is sleeping. (masculine: -e)' },
+        { de: 'Die nette Frau wohnt nebenan.', en: 'The nice woman lives next door. (feminine: -e)' },
+        { de: 'Das neue Auto ist teuer.', en: 'The new car is expensive. (neuter: -e; teuer after the verb has no ending)' },
+        { de: 'Die alten Häuser sind schön.', en: 'The old houses are beautiful. (plural: -en)' },
+      ],
+    },
+    {
+      title: 'Accusative: only the masculine changes',
+      text: `
+In the **Accusative** (the case of the direct object) only the masculine article changes: *der → den*. The adjective follows: as soon as the article changes, the ending becomes **-en**: *den alt**en** Mann*.
 
-This topic covers the easiest group: adjectives after the **definite article** (*der, die, das*). There are only **two endings** to learn: **-e** and **-en**.
-
-### How it works: the table
+Feminine and neuter keep *die* and *das*, so the adjective keeps **-e**. The plural stays **-en**.
+`,
+      examples: [
+        { de: 'Ich sehe den kleinen Hund.', en: 'I see the small dog. (den → -en)' },
+        { de: 'Ich mag die alte Stadt.', en: 'I like the old city. (feminine: die stays, so -e stays)' },
+        { de: 'Er kauft das neue Auto.', en: 'He is buying the new car. (neuter: -e)' },
+        { de: 'Kennst du die neuen Nachbarn?', en: 'Do you know the new neighbours? (plural: -en)' },
+      ],
+    },
+    {
+      title: 'Dative: always -en',
+      text: `
+In the **Dative** the article changes in every gender: *dem, der, dem, den*. So the adjective is always **-en**: *mit dem alt**en** Mann*. Here is the whole table, article plus ending:
 
 | | masculine | feminine | neuter | plural |
 |---|---|---|---|---|
-| Nominative | der alt**e** Mann | die alt**e** Frau | das alt**e** Haus | die alt**en** Leute |
-| Accusative | den alt**en** Mann | die alt**e** Frau | das alt**e** Haus | die alt**en** Leute |
-| Dative | dem alt**en** Mann | der alt**en** Frau | dem alt**en** Haus | den alt**en** Leuten |
-
-The pattern is simple once you see it:
-
-- **-e** in five places: all three Nominative singular forms, plus feminine and neuter Accusative (where the article does not change either: *die → die*, *das → das*).
-- **-en** everywhere else: masculine Accusative, every Dative, and the whole plural.
-
-A useful way to remember it: the **article already shows the case**, so the adjective can be lazy. It only needs *-e* where the article is in its basic form, and *-en* as soon as the article changes (*den*, or *dem / der* in the Dative) or the noun is plural.
-
-You may also see the Genitive (*des alten Mannes*, *der alten Frau*): the adjective takes **-en** there too. You will learn that case in Unit 5; nothing new to remember for the adjective.
-
-### The same endings after dieser, jeder, welcher
-
-Words like **dieser** (this), **jeder** (every), **welcher** (which) and **alle** (all) behave like *der / die / das*. Use the same table:
-
-- dies**er** klein**e** Hund – *this small dog*
-- jed**e** neu**e** Idee – *every new idea*
-- mit dies**em** alt**en** Auto – *with this old car*
-
-### No ending after the noun
-
-An adjective **after** the verb (*sein, werden, bleiben*) describes the noun from a distance and takes **no ending** at all:
-
-- Der Mann ist **alt**. / Das Haus ist **groß**. / Die Kinder sind **müde**.
-
-Endings only appear when the adjective stands **directly in front of** the noun.
-
-### Small spelling changes
-
-- **hoch** loses its *c*: das hoh**e** Haus.
-- Adjectives ending in **-el** or **-er** drop the *e* before an ending: *dunkel* → das dunkl**e** Zimmer, *teuer* → die teur**e** Jacke.
-
-### Why it matters
-
-Adjective endings are everywhere: in every description, every menu, every advertisement. The definite-article pattern is the foundation; the next two topics (after *ein* and with no article) only add a few changes to this table. Learn the five *-e* positions here and you have done most of the work.
+| Nominative | der -e | die -e | das -e | die -en |
+| Accusative | den -en | die -e | das -e | die -en |
+| Dative | dem -en | der -en | dem -en | den -en |
 `,
-  examples: [
-    { de: 'Der kleine Hund schläft.', en: 'The small dog is sleeping. (Nominative masculine: -e)' },
-    { de: 'Ich sehe den kleinen Hund.', en: 'I see the small dog. (Accusative masculine: -en)' },
-    { de: 'Die nette Frau wohnt nebenan.', en: 'The nice woman lives next door. (Nominative feminine: -e)' },
-    { de: 'Das neue Auto ist teuer.', en: 'The new car is expensive. (Nominative neuter: -e; teuer after the verb has no ending)' },
-    { de: 'Wir fahren mit dem neuen Auto.', en: 'We are going in the new car. (Dative: -en)' },
-    { de: 'Die alten Häuser sind schön.', en: 'The old houses are beautiful. (plural: -en)' },
-    { de: 'Ich helfe der alten Frau.', en: 'I help the old woman. (Dative feminine: -en)' },
+      examples: [
+        { de: 'Wir fahren mit dem neuen Auto.', en: 'We are going in the new car. (Dative neuter: -en)' },
+        { de: 'Ich helfe der alten Frau.', en: 'I help the old woman. (Dative feminine: -en)' },
+        { de: 'Er spielt mit den kleinen Kindern.', en: 'He plays with the small children. (Dative plural: -en, noun also -n)' },
+      ],
+    },
+    {
+      title: 'Same endings after dieser, jeder, welcher',
+      text: `
+**dieser** (this), **jeder** (every), **welcher** (which) and **alle** (all) have the same endings as *der, die, das*. So the adjective after them follows the same table: **-e** or **-en**.
+`,
+      examples: [
+        { de: 'Dieser kleine Hund ist süß.', en: 'This small dog is cute. (like der: -e)' },
+        { de: 'Jede neue Idee ist willkommen.', en: 'Every new idea is welcome. (like die: -e)' },
+        { de: 'Wir fahren mit diesem alten Auto.', en: 'We are going in this old car. (Dative: -en)' },
+        { de: 'Alle neuen Schüler sind hier.', en: 'All the new pupils are here. (plural: -en)' },
+      ],
+    },
+    {
+      title: 'Spelling changes and the rule in one line',
+      text: `
+Two small spelling changes: **hoch** loses its *c* before an ending (*das hoh**e** Haus*), and adjectives in **-el** or **-er** drop the *e* (*dunkel → das dunkl**e** Zimmer*, *teuer → die teur**e** Jacke*).
+
+The rule in one line: the article already shows the case, so the adjective can be lazy. **-e** while the article keeps its basic form (*der, die, das*), **-en** as soon as it changes (*den, dem, der*) or the noun is plural.
+`,
+      examples: [
+        { de: 'Das hohe Gebäude ist neu.', en: 'The tall building is new. (hoch → hoh-)' },
+        { de: 'Wir sitzen im dunklen Zimmer.', en: 'We are sitting in the dark room. (dunkel → dunkl-, Dative -en)' },
+        { de: 'Die teure Jacke gefällt mir.', en: 'I like the expensive jacket. (teuer → teur-)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-09-gender-articles', note: 'You need the gender of the noun (der / die / das) to choose the ending.' },
@@ -84,6 +107,7 @@ Adjective endings are everywhere: in every description, every menu, every advert
     '**hoch** becomes **hoh-** before an ending: *das hohe Gebäude*. **dunkel / teuer** drop the e: *das dunkle Zimmer, die teure Uhr*.',
     'Two adjectives in a row take the **same** ending: *der große, alte Baum*; *mit dem kleinen, roten Auto*.',
     'In the Dative plural the **noun** also gets an -n if it does not already end in one: *mit den alten Männer**n***.',
+    'You may see the Genitive (*des alten Mannes, der alten Frau*): the adjective takes **-en** there too. The case itself comes in Unit 5.',
   ],
   exercises: [
     {

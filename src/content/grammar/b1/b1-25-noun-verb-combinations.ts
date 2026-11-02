@@ -4,65 +4,85 @@ const topic: Topic = {
   id: 'b1-25-noun-verb-combinations',
   level: 'B1',
   unit: 8,
-  order: 25,
+  order: 35,
   title: 'Noun–verb combinations (eine Entscheidung treffen)',
   germanTerm: 'Nomen-Verb-Verbindungen',
   tags: ['verbs', 'vocabulary', 'collocations', 'formal style'],
   summary: 'Noun–verb combinations are fixed pairs like eine Entscheidung treffen or eine Frage stellen, where the noun carries the meaning and the verb is just the partner that must be used with it.',
-  explanation: `
-### What they are for
+  steps: [
+    {
+      title: 'What they are: fixed noun plus verb',
+      text: `
+Some everyday ideas are said with a **noun plus a fixed verb**, and the verb is not the one English would choose. German does not "make" a decision; it *treffen* ("meets") it. It does not "ask" a question; it *stellen* ("puts") it.
 
-Some everyday ideas are said with a noun plus a fixed verb, and the verb is not the one English would choose:
-
-- Wir müssen **eine Entscheidung treffen**. – *We have to make a decision.* (literally "meet" a decision)
-- Darf ich **eine Frage stellen**? – *May I ask a question?* (literally "put" a question)
-
-A **noun–verb combination** (*Nomen-Verb-Verbindung*) is such a fixed pair: a noun that carries the meaning plus a verb that has lost most of its own meaning. English has them too: *to make a decision*, *to take a photo*, *to have a look*.
-
-The important point: the verb is **not free**. You cannot "make" a decision in German; you *treffen* it. You cannot "make" a question; you *stellen* it. Learners who choose the verb by translating from English make mistakes here, so these pairs must be learned as units.
-
-### The most useful combinations at B1
-
-| Combination | Simple verb | English |
-|---|---|---|
-| eine Entscheidung **treffen** | sich entscheiden | to make a decision |
-| eine Frage **stellen** | fragen | to ask a question |
-| Abschied **nehmen** (von) | sich verabschieden | to say goodbye |
-| Platz **nehmen** | sich setzen | to take a seat |
-| Rücksicht **nehmen** (auf) | – | to show consideration |
-| Bescheid **sagen / geben** | informieren | to let someone know |
-| eine Rolle **spielen** | wichtig sein | to play a role, to matter |
-| sich Mühe **geben** | sich anstrengen | to make an effort |
-| Sport **treiben / machen** | – | to do sport |
-| einen Fehler **machen** | – | to make a mistake |
-| ein Gespräch **führen** | sprechen | to have a conversation |
-| Interesse **haben** (an) | sich interessieren | to be interested |
-| zur Verfügung **stehen / stellen** | – | to be / make available |
-| in Frage **kommen** | möglich sein | to be an option |
-| zu Ende **gehen** | enden | to come to an end |
-
-Notice the small group of verbs that come up again and again: **treffen, stellen, nehmen, geben, führen, kommen, gehen, haben, machen**. Learning which noun goes with which is the whole task.
-
-### How they behave
-
-- The noun is usually in the **Accusative** (*eine Entscheidung*, *Platz*) or sits inside a **prepositional phrase** (*zur Verfügung*, *in Frage*, *zu Ende*).
-- The verb conjugates normally and takes its usual Perfekt form: *Ich **habe** eine Entscheidung **getroffen**.*
-- Some combinations come with a fixed preposition for the extra object: *Rücksicht nehmen **auf** + Akk*, *Interesse haben **an** + Dat*.
-- In a main clause the noun goes towards the **end**, like a separable prefix: *Er **nimmt** auf die Kinder **Rücksicht***.
-
-### Why it matters
-
-These combinations are the sound of **natural and written German**: letters, news, work emails and the B1 reading texts are full of them. Using them makes your own writing more precise and more natural. And since the verb is unpredictable, every pair you memorise is one mistake you will not make.
+A **noun–verb combination** (*Nomen-Verb-Verbindung*) is such a pair. The noun carries the meaning; the verb is just its partner. The verb is **not free**, so learn each pair as one unit.
 `,
-  examples: [
-    { de: 'Wir müssen bald eine Entscheidung treffen.', en: 'We have to make a decision soon.' },
-    { de: 'Darf ich Ihnen eine Frage stellen?', en: 'May I ask you a question?' },
-    { de: 'Bitte nehmen Sie Platz.', en: 'Please take a seat.' },
-    { de: 'Sag mir bitte Bescheid, wenn du kommst.', en: 'Please let me know when you are coming.' },
-    { de: 'Geld spielt bei dieser Entscheidung keine Rolle.', en: 'Money plays no role in this decision.' },
-    { de: 'Die Ferien gehen leider bald zu Ende.', en: 'Unfortunately the holidays are coming to an end soon.' },
-    { de: 'Ich stelle Ihnen mein Auto gern zur Verfügung.', en: 'I am happy to make my car available to you.' },
-    { de: 'Sie hat sich große Mühe gegeben.', en: 'She made a great effort. (Perfekt: gegeben)' },
+      examples: [
+        { de: 'Wir müssen eine Entscheidung treffen.', en: 'We have to make a decision. (treffen, not machen)' },
+        { de: 'Darf ich eine Frage stellen?', en: 'May I ask a question? (stellen, not fragen)' },
+        { de: 'Sie hat einen Fehler gemacht.', en: 'She made a mistake. (here machen is right)' },
+      ],
+    },
+    {
+      title: 'Pairs with nehmen and treffen',
+      text: `
+**nehmen** (to take) is the partner of several nouns: **Platz nehmen** (to sit down), **Abschied nehmen von** (to say goodbye to), **Rücksicht nehmen auf** (to show consideration for). **treffen** goes with **eine Entscheidung treffen** (to make a decision).
+`,
+      examples: [
+        { de: 'Bitte nehmen Sie Platz.', en: 'Please take a seat.' },
+        { de: 'Er nimmt Abschied von seinen Kollegen.', en: 'He says goodbye to his colleagues.' },
+        { de: 'Du musst auf deine Nachbarn Rücksicht nehmen.', en: 'You have to show consideration for your neighbours.' },
+        { de: 'Ich habe eine Entscheidung getroffen.', en: 'I have made a decision. (Perfekt: getroffen)' },
+      ],
+    },
+    {
+      title: 'Pairs with stellen, geben and sagen',
+      text: `
+**eine Frage stellen** means to ask a question. **sich Mühe geben** means to make an effort (with a Dative pronoun: *mir, dir, sich*). **Bescheid sagen** or **Bescheid geben** means to let someone know; *sagen* is informal, *geben* is neutral.
+`,
+      examples: [
+        { de: 'Darf ich Ihnen eine Frage stellen?', en: 'May I ask you a question?' },
+        { de: 'Sie hat sich große Mühe gegeben.', en: 'She made a great effort. (Perfekt: gegeben)' },
+        { de: 'Sag mir bitte Bescheid, wenn du kommst.', en: 'Please let me know when you are coming.' },
+      ],
+    },
+    {
+      title: 'Pairs with spielen, haben, führen, treiben',
+      text: `
+A few more pairs you meet at B1: **eine Rolle spielen** (to play a role, to matter), **Interesse haben an** + Dative (to be interested in), **ein Gespräch führen** (to have a conversation), **Sport treiben** or **Sport machen** (to do sport).
+`,
+      examples: [
+        { de: 'Geld spielt bei dieser Entscheidung keine Rolle.', en: 'Money plays no role in this decision.' },
+        { de: 'Ich habe Interesse an Kunst.', en: 'I am interested in art. (an + Dative)' },
+        { de: 'Wir haben ein langes Gespräch geführt.', en: 'We had a long conversation.' },
+        { de: 'Er treibt jeden Tag Sport.', en: 'He does sport every day.' },
+      ],
+    },
+    {
+      title: 'Pairs with a preposition inside',
+      text: `
+In some pairs the noun sits inside a **prepositional phrase**: **zur Verfügung stehen** (to be available), **zur Verfügung stellen** (to make available), **in Frage kommen** (to be an option), **zu Ende gehen** (to come to an end). Watch *stehen* (something is available) against *stellen* (someone makes it available).
+`,
+      examples: [
+        { de: 'Das Auto steht dir zur Verfügung.', en: 'The car is available to you. (stehen: it is available)' },
+        { de: 'Ich stelle dir mein Auto zur Verfügung.', en: 'I make my car available to you. (stellen: I make it available)' },
+        { de: 'Das kommt nicht in Frage.', en: 'That is out of the question.' },
+        { de: 'Die Ferien gehen bald zu Ende.', en: 'The holidays are coming to an end soon.' },
+      ],
+    },
+    {
+      title: 'How the pairs behave in a sentence',
+      text: `
+The noun is usually in the **Accusative** (the object case: *eine Entscheidung*, *Platz*) or inside a prepositional phrase (*zur Verfügung*). The verb conjugates normally and keeps its usual Perfekt form.
+
+In a main clause the noun goes towards the **end**, like a separable prefix. An extra object with its fixed preposition stands before it.
+`,
+      examples: [
+        { de: 'Er nimmt auf die Kinder Rücksicht.', en: 'He shows consideration for the children. (noun at the end)' },
+        { de: 'Wir haben gestern eine Entscheidung getroffen.', en: 'We made a decision yesterday. (normal Perfekt)' },
+        { de: 'Der Film ist leider schon zu Ende gegangen.', en: 'The film has unfortunately already come to an end.' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-20-accusative', note: 'The noun in most combinations is a direct object in the Accusative.' },
@@ -72,11 +92,11 @@ These combinations are the sound of **natural and written German**: letters, new
     { topicId: 'a2-30-word-formation-compounds', note: 'Many of the nouns here are -ung nouns built from verbs: Entscheidung, Verfügung.' },
   ],
   edgeCases: [
-    'Do not translate the verb from English: *eine Entscheidung **treffen*** (not *machen*), *eine Frage **stellen*** (not *machen* or *fragen*).',
-    '*Platz nehmen* (to sit down) is different from *Platz haben* (to have room). Both exist, but with different meanings.',
-    '*Bescheid sagen* is informal, *Bescheid geben* is neutral; both mean "to let someone know".',
-    'Watch the pair *zur Verfügung **stellen*** (someone makes something available) vs *zur Verfügung **stehen*** (something is available): *Ich stelle dir mein Auto zur Verfügung* / *Das Auto steht dir zur Verfügung*.',
-    'The fixed preposition belongs to the combination, not to the verb: *Rücksicht nehmen **auf***, but *Abschied nehmen **von***.',
+    'Do not translate the verb from English: **eine Entscheidung treffen** (not *machen*), **eine Frage stellen** (not *machen* or *fragen*).',
+    '**Platz nehmen** (to sit down) is different from **Platz haben** (to have room). Both exist, but with different meanings.',
+    '**Bescheid sagen** is informal, **Bescheid geben** is neutral; both mean "to let someone know".',
+    '**zur Verfügung stellen** (someone makes something available) vs **zur Verfügung stehen** (something is available): *Ich stelle dir mein Auto zur Verfügung* / *Das Auto steht dir zur Verfügung*.',
+    'The fixed preposition belongs to the combination, not to the verb: **Rücksicht nehmen auf**, but **Abschied nehmen von**.',
   ],
   exercises: [
     {

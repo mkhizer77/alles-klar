@@ -9,69 +9,87 @@ const topic: Topic = {
   germanTerm: 'Konjugation, Präsens',
   tags: ['verbs', 'present tense', 'conjugation', 'endings'],
   summary: 'Conjugation means changing the verb ending to match the subject; in the present tense regular verbs take the endings -e, -st, -t, -en, -t, -en.',
-  explanation: `
-### What conjugation is
+  steps: [
+    {
+      title: 'What conjugation is',
+      text: `
+In English the verb barely changes: *I play, you play, he play**s***. German changes the verb for **every** subject. This changing is called **conjugation** (*Konjugation*).
 
-In English the verb barely changes: *I play, you play, he play**s***. German changes the verb for **every** subject. This changing is called **conjugation** (*Konjugation*). It sounds technical, but it is just: *take the verb, cut off the ending, add the right new ending.*
-
-### Step 1: find the stem
-
+It sounds technical, but it is only this: take the verb, cut off its ending, add the right new ending for the subject.
+`,
+      examples: [
+        { de: 'Ich wohne in Hamburg.', en: 'I live in Hamburg. (wohn + e)' },
+        { de: 'Du wohnst in Hamburg.', en: 'You live in Hamburg. (wohn + st)' },
+        { de: 'Er wohnt in Hamburg.', en: 'He lives in Hamburg. (wohn + t)' },
+      ],
+    },
+    {
+      title: 'Step 1: find the stem',
+      text: `
 Every verb in the dictionary ends in **-en** (sometimes **-n**): *kommen, wohnen, lernen, machen*. This is the **infinitive** (*Infinitiv*). Cut off the **-en** and you have the **stem** (*Stamm*):
 
 - komm**en** → **komm**
 - wohn**en** → **wohn**
 - arbeit**en** → **arbeit**
+`,
+      examples: [
+        { de: 'Wir kommen aus Berlin.', en: 'We come from Berlin. (kommen: stem komm-)' },
+        { de: 'Ich lerne Deutsch.', en: 'I am learning German. (lernen: stem lern-)' },
+        { de: 'Er macht Sport.', en: 'He does sport. (machen: stem mach-)' },
+      ],
+    },
+    {
+      title: 'Step 2: add the ending',
+      text: `
+| pronoun | ending | wohnen (to live) |
+|---|---|---|
+| ich | **-e** | ich wohn**e** |
+| du | **-st** | du wohn**st** |
+| er / sie / es | **-t** | er wohn**t** |
+| wir | **-en** | wir wohn**en** |
+| ihr | **-t** | ihr wohn**t** |
+| sie / Sie | **-en** | sie wohn**en** |
 
-### Step 2: add the ending
+Three patterns make it easy: **wir** and **sie / Sie** look like the infinitive; **er** and **ihr** both take **-t**; only **du** takes **-st**. Verbs that follow this pattern are **regular** (*regelmäßig*), and most German verbs do.
+`,
+      examples: [
+        { de: 'Wo wohnst du?', en: 'Where do you live? (du + -st)' },
+        { de: 'Er lernt Deutsch.', en: 'He is learning German. (er + -t)' },
+        { de: 'Wir spielen Fußball.', en: 'We play football. (wir = infinitive)' },
+        { de: 'Ihr trinkt Kaffee.', en: 'You (all) drink coffee. (ihr + -t)' },
+      ],
+    },
+    {
+      title: 'Only one present tense',
+      text: `
+German has **no** separate "-ing" form. *Ich lerne* means both *I learn* and *I am learning*. There is also no *do* in questions: *Lernst du?* means *Do you learn?* and *Are you learning?*
 
-| pronoun | ending | wohnen (to live) | lernen (to learn) |
-|---|---|---|---|
-| ich | **-e** | ich wohn**e** | ich lern**e** |
-| du | **-st** | du wohn**st** | du lern**st** |
-| er / sie / es | **-t** | er wohn**t** | er lern**t** |
-| wir | **-en** | wir wohn**en** | wir lern**en** |
-| ihr | **-t** | ihr wohn**t** | ihr lern**t** |
-| sie / Sie | **-en** | sie wohn**en** | sie lern**en** |
-
-Three patterns make this easier to remember:
-
-1. **wir** and **sie / Sie** are always the same as the infinitive.
-2. **er / sie / es** and **ihr** are both **-t**.
-3. **du** is the only one with **-st**.
-
-Verbs that follow this pattern are called **regular** (*regelmäßig*). Most German verbs do: *machen, spielen, kaufen, gehen, trinken, hören, fragen, sagen, kochen, lieben …*
-
-### Only one present tense
-
-German has **no** separate "-ing" form. *Ich lerne* means both *I learn* and *I am learning*. There is also no *do* in questions or negatives: *Lernst du?* = *Do you learn? / Are you learning?* This makes German simpler than English here.
-
-The present tense is also used for the **future** when the time is clear: *Morgen lerne ich.* – *Tomorrow I will learn.*
-
-### Small spelling adjustments
-
-Some stems would be hard to say with the plain endings, so a letter is added or removed:
+The present tense is also used for the **future** when the time is clear: *Morgen lerne ich.*
+`,
+      examples: [
+        { de: 'Ich arbeite.', en: 'I work. I am working. (one form for both)' },
+        { de: 'Spielst du Tennis?', en: 'Do you play tennis? (no "do")' },
+        { de: 'Morgen kaufe ich ein Auto.', en: 'Tomorrow I am buying a car. (present tense for the future)' },
+      ],
+    },
+    {
+      title: 'Small spelling adjustments',
+      text: `
+Some stems would be hard to say with the plain endings, so a letter is added or removed. These verbs are still regular.
 
 | stem ends in | what happens | example |
 |---|---|---|
 | **-t, -d** | add **-e-** before -st and -t | du arbeit**est**, er arbeit**et**, ihr find**et** |
-| **-s, -ß, -z** | du ending is just **-t** (the s is already there) | du hei**ßt**, du tan**zt** (not heißst) |
-| **-er, -el** | ich and the infinitive have no -e- | ich wand**re** / wand**ere**, wir wand**ern** |
-
-These are not irregular verbs. The endings are the same; only the spelling bends a little so the word can be pronounced.
-
-### Why it matters
-
-Once you know these six endings you can use **thousands** of verbs. Every later verb topic (irregular verbs, separable verbs, modal verbs) starts from this pattern and only changes a detail. Practise until the endings feel automatic: hear *du* and your mouth should already want to say *-st*.
+| **-s, -ß, -z** | du ending is just **-t** | du hei**ßt**, du tan**zt** |
+| **-er, -el** | wir and sie have no -e-: just **-n** | wir wand**ern**, sie sammeln |
 `,
-  examples: [
-    { de: 'Ich wohne in Hamburg.', en: 'I live in Hamburg. (ich + -e)' },
-    { de: 'Wo wohnst du?', en: 'Where do you live? (du + -st, no "do")' },
-    { de: 'Er lernt Deutsch.', en: 'He is learning German. (er + -t, no -ing form)' },
-    { de: 'Wir spielen Fußball.', en: 'We play football. (wir = infinitive)' },
-    { de: 'Ihr trinkt Kaffee.', en: 'You (all) drink coffee. (ihr + -t)' },
-    { de: 'Sie arbeitet bei Siemens.', en: 'She works at Siemens. (stem ends in -t: arbeit-e-t)' },
-    { de: 'Du heißt Lena, oder?', en: 'Your name is Lena, right? (stem ends in -ß: just -t)' },
-    { de: 'Morgen kaufe ich ein Auto.', en: 'Tomorrow I am buying a car. (present tense for the future)' },
+      examples: [
+        { de: 'Sie arbeitet bei Siemens.', en: 'She works at Siemens. (arbeit-e-t)' },
+        { de: 'Findest du das gut?', en: 'Do you think that is good? (find-e-st)' },
+        { de: 'Du heißt Lena, oder?', en: 'Your name is Lena, right? (stem ends in -ß: just -t)' },
+        { de: 'Wir wandern gern.', en: 'We like hiking. (wander + n)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-03-personal-pronouns', note: 'Each ending belongs to one pronoun; the pronoun table is the key to this one.' },

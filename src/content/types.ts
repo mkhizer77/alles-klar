@@ -82,6 +82,16 @@ export interface Connection {
   note: string;
 }
 
+/** One small step of a lesson: one idea in a few plain sentences, shown with its own examples. */
+export interface LessonStep {
+  /** 2–7 words: the one thing this step teaches */
+  title: string;
+  /** markdown, easy English, 20–90 words; at most one small table of forms */
+  text: string;
+  /** 2–4 short German sentences that show exactly this step */
+  examples: Example[];
+}
+
 export interface Topic {
   id: string;
   level: Level;
@@ -93,9 +103,8 @@ export interface Topic {
   tags: string[];
   /** one sentence shown in search results and lists */
   summary: string;
-  /** markdown, easy English */
-  explanation: string;
-  examples: Example[];
+  /** the lesson, read top to bottom: 3–7 steps */
+  steps: LessonStep[];
   connections: Connection[];
   /** markdown bullets */
   edgeCases: string[];

@@ -4,86 +4,107 @@ const topic: Topic = {
   id: 'a2-10-comparative-superlative',
   level: 'A2',
   unit: 3,
-  order: 10,
+  order: 11,
   title: 'Comparative and superlative in full',
   germanTerm: 'Komparativ, Superlativ',
   tags: ['adjectives', 'comparison', 'comparative', 'superlative', 'als', 'wie'],
   summary: 'The comparative adds -er (often with an umlaut: älter), the superlative adds -(e)st- (am ältesten / der älteste), and both take normal adjective endings when they stand before a noun.',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'Three forms of an adjective',
+      text: `
+To compare you need three forms: the **basic form** (*Positiv*), the **comparative** (*Komparativ*: faster) and the **superlative** (*Superlativ*: fastest).
 
-To compare things you need three forms of an adjective:
+German builds both with **endings**, even for long adjectives. There is no *more / most*: *interessant**er*** (more interesting), *am interessant**esten*** (most interesting), never *mehr interessant*.
+`,
+      examples: [
+        { de: 'Das Auto ist schnell.', en: 'The car is fast. (basic form)' },
+        { de: 'Der Zug ist schneller.', en: 'The train is faster. (comparative: -er)' },
+        { de: 'Das Flugzeug ist am schnellsten.', en: 'The plane is the fastest. (superlative: am -sten)' },
+      ],
+    },
+    {
+      title: 'The comparative: -er, often with umlaut',
+      text: `
+Add **-er**. Short adjectives with **a, o, u** often take an umlaut. Adjectives in *-el* or *-er* drop the *e*: *teuer → teur**er***, *dunkel → dunkl**er***.
 
-| form | German term | example |
-|---|---|---|
-| basic | Positiv | schnell – *fast* |
-| comparative | **Komparativ** | schnell**er** – *faster* |
-| superlative | **Superlativ** | am schnell**sten** / der schnell**ste** – *fastest* |
+| basic | comparative | basic | comparative |
+|---|---|---|---|
+| alt | **älter** | klein | kleiner |
+| groß | **größer** | schnell | schneller |
+| jung | **jünger** | billig | billiger |
+| lang | **länger** | schön | schöner |
+| kurz | **kürzer** | teuer | **teurer** |
+| warm | **wärmer** | dunkel | **dunkler** |
+`,
+      examples: [
+        { de: 'Mein Bruder ist älter.', en: 'My brother is older. (alt → älter, with umlaut)' },
+        { de: 'Dieses Hotel ist billiger.', en: 'This hotel is cheaper. (no umlaut)' },
+        { de: 'Das Kleid ist teurer.', en: 'The dress is more expensive. (teuer → teurer)' },
+      ],
+    },
+    {
+      title: 'als and so … wie',
+      text: `
+To compare two things use the comparative + **als** (than): *größer **als***. To say two things are equal use **so … wie** (as … as) with the basic form: ***so** groß **wie***.
 
-German **always** uses endings, even for long adjectives. There is no *more* / *most*: *interessanter* (more interesting), *am interessantesten* (most interesting).
+After *als* and *wie* the pronoun stays in the Nominative: *älter als **ich***.
+`,
+      examples: [
+        { de: 'Berlin ist größer als Bonn.', en: 'Berlin is bigger than Bonn. (comparative + als)' },
+        { de: 'Er ist so groß wie sein Vater.', en: 'He is as tall as his father. (so … wie)' },
+        { de: 'Mein Bruder ist älter als ich.', en: 'My brother is older than me. (als + ich)' },
+      ],
+    },
+    {
+      title: 'The superlative after the verb: am -sten',
+      text: `
+After the verb, or to say how someone does something, the superlative is **am + adjective + -sten**: *Dieses Auto ist **am teuersten**.* The umlaut stays: *am ältesten*.
 
-### How it works: the comparative
+After **-t, -d, -s, -z, -ß, -sch** add **-est** so you can say it: *am ält**est**en, am heiß**est**en*. Exception: *groß → am größten*.
+`,
+      examples: [
+        { de: 'Dieses Auto ist am teuersten.', en: 'This car is the most expensive. (am -sten)' },
+        { de: 'Sie läuft am schnellsten.', en: 'She runs the fastest. (how she runs)' },
+        { de: 'Im Juli ist es am heißesten.', en: 'In July it is hottest. (-est after ß)' },
+        { de: 'Mein Opa ist am ältesten.', en: 'My grandpa is the oldest. (-est after t, umlaut)' },
+      ],
+    },
+    {
+      title: 'Before a noun: normal adjective endings',
+      text: `
+In front of a noun the superlative is **der / die / das + -ste**, and the comparative keeps its **-er**. Both then take the **normal adjective endings** on top: *der schnell**ste** Zug*, *in der größt**en** Stadt*, *ein größer**es** Haus*, *mein älter**er** Bruder*.
 
-Add **-er** to the adjective. Many short adjectives with **a, o, u** also take an umlaut:
-
-| basic | comparative | | basic | comparative |
-|---|---|---|---|---|
-| alt | **älter** | | klein | kleiner |
-| groß | **größer** | | schnell | schneller |
-| jung | **jünger** | | billig | billiger |
-| lang | **länger** | | schön | schöner |
-| kurz | **kürzer** | | interessant | interessanter |
-| warm | **wärmer** | | teuer | **teurer** |
-| kalt | **kälter** | | dunkel | **dunkler** |
-
-Adjectives ending in *-el* / *-er* drop the *e* (*teuer → teurer, dunkel → dunkler*).
-
-To compare two things use **als** (than): *Berlin ist größer **als** Bonn.* To say two things are equal use **so … wie** (as … as): *Er ist **so** groß **wie** sein Vater.*
-
-### How it works: the superlative
-
-There are two forms, depending on where the adjective stands:
-
-1. **After the verb / as an adverb: am -sten**
-   - Dieses Auto ist **am teuersten**. – *This car is the most expensive.*
-   - Sie läuft **am schnellsten**. – *She runs the fastest.*
-2. **Before a noun: der / die / das -ste + adjective ending**
-   - Das ist **der schnellste** Zug. – *That is the fastest train.*
-   - Er wohnt in **der größten** Stadt. – *He lives in the biggest city.*
-
-After **-t, -d, -s, -z, -ß, -sch** add **-est** so you can pronounce it: *am ältesten, am kürzesten, am heißesten, am hübschesten*. (*groß* is the exception: *am größten*.)
-
-### Irregular forms
+*am -sten* is never used before a noun.
+`,
+      examples: [
+        { de: 'Das ist der schnellste Zug.', en: 'That is the fastest train. (der + -ste + -e)' },
+        { de: 'Er wohnt in der größten Stadt.', en: 'He lives in the biggest city. (Dative: -en)' },
+        { de: 'Wir haben ein größeres Haus gekauft.', en: 'We bought a bigger house. (comparative + ein-word ending -es)' },
+        { de: 'Das ist mein älterer Bruder.', en: 'That is my older brother. (mein + masculine: -er)' },
+      ],
+    },
+    {
+      title: 'Five irregular ones',
+      text: `
+Five common adjectives change their form. Learn them as a set:
 
 | basic | comparative | superlative |
 |---|---|---|
-| gut | besser | am besten / der beste |
-| viel | mehr | am meisten / die meisten |
+| gut | besser | am besten |
+| viel | mehr | am meisten |
 | gern | lieber | am liebsten |
-| hoch | höher | am höchsten / der höchste |
-| nah | näher | am nächsten / der nächste |
+| hoch | höher | am höchsten |
+| nah | näher | am nächsten |
 
-### Comparatives and superlatives before a noun
-
-In front of a noun, both forms take the **normal adjective endings** on top of *-er* / *-st*:
-
-- ein **größeres** Haus (ein + neuter → -es)
-- mein **älterer** Bruder (mein + masculine → -er)
-- die **besten** Freunde (plural → -en)
-- der **schönste** Tag (der + masculine → -e)
-
-### Why it matters
-
-Comparing is a basic need: prices, sizes, opinions. With the comparative plus *als* and *so … wie*, the two superlative patterns, and the five irregular forms, you can handle almost every comparison in German. Watch two classic mistakes: *mehr* + adjective (*mehr schön* ✗ → *schöner* ✓) and *wie* instead of *als* after a comparative.
+*hoch* loses its *c* in *höher* and gets it back in *am höchsten*.
 `,
-  examples: [
-    { de: 'Mein Bruder ist älter als ich.', en: 'My brother is older than me. (comparative + als; umlaut)' },
-    { de: 'Er ist so groß wie sein Vater.', en: 'He is as tall as his father. (so … wie)' },
-    { de: 'Dieses Auto ist am teuersten.', en: 'This car is the most expensive. (superlative after the verb: am -sten)' },
-    { de: 'Das ist der schnellste Zug.', en: 'That is the fastest train. (superlative before a noun: der -ste)' },
-    { de: 'Ich trinke lieber Tee, am liebsten grünen Tee.', en: 'I prefer tea, and like green tea best of all. (gern → lieber → am liebsten)' },
-    { de: 'Der Winter ist die kälteste Jahreszeit.', en: 'Winter is the coldest season. (-est after -t; feminine -e)' },
-    { de: 'Wir haben ein größeres Haus gekauft.', en: 'We bought a bigger house. (comparative + ein-word ending -es)' },
+      examples: [
+        { de: 'Dieser Film ist besser als der andere.', en: 'This film is better than the other one. (gut → besser)' },
+        { de: 'Ich trinke lieber Tee, am liebsten grünen Tee.', en: 'I prefer tea, and like green tea best of all. (gern → lieber → am liebsten)' },
+        { de: 'Die Zugspitze ist am höchsten.', en: 'The Zugspitze is the highest. (hoch → am höchsten)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-35-comparative-basics', note: 'The A1 introduction to comparatives and als / wie; this topic completes the picture.' },

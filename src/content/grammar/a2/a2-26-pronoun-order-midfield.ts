@@ -4,76 +4,89 @@ const topic: Topic = {
   id: 'a2-26-pronoun-order-midfield',
   level: 'A2',
   unit: 9,
-  order: 26,
+  order: 29,
   title: 'Pronoun order in the midfield',
   germanTerm: 'Pronomen im Mittelfeld',
   tags: ['word order', 'pronouns', 'dative', 'accusative', 'midfield'],
   summary: 'When a sentence has two objects, pronouns come before nouns, and if both objects are pronouns the Accusative (es, ihn) comes before the Dative (mir, ihm).',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'Two objects: a person and a thing',
+      text: `
+Verbs like *geben, schenken, zeigen, erklären, schicken* often have **two objects**: a person (Dative) and a thing (Accusative). Both sit in the **midfield** (*Mittelfeld*), the part between the verb in position 2 and the verb at the end.
 
-Verbs like *geben, schenken, zeigen, erklären, schicken* often have **two objects**: a person (Dative) and a thing (Accusative). This topic is about the order of those two objects:
-
-- Ich gebe **dem Kind** **das Buch**. – *I give the child the book.*
-- Ich gebe **es** **ihm**. – *I give it to him.*
-
-Notice that the order flips when both objects are pronouns. This surprises many learners, so here are the rules. (The part of the sentence between the verb in position 2 and the verb at the end is called the **midfield**, *Mittelfeld*; that is where the objects live.)
-
-### Rule 1: two nouns → Dative before Accusative
-
-If both objects are nouns, the **person (Dative)** comes first, then the **thing (Accusative)**:
-
-- Ich schenke **meiner Mutter** **einen Schal**. – *I give my mother a scarf.*
-- Er zeigt **den Gästen** **die Wohnung**. – *He shows the guests the flat.*
-
-### Rule 2: two pronouns → Accusative before Dative
-
-If both objects are pronouns, the **thing (Accusative)** comes first:
-
-- Ich schenke **ihn** **ihr**. – *I give it to her.*
-- Er zeigt **sie** **ihnen**. – *He shows it to them.*
-- Kannst du **es** **mir** erklären? – *Can you explain it to me?*
-
-The Accusative pronouns are *mich, dich, ihn, sie, es, uns, euch, sie / Sie*; the Dative pronouns are *mir, dir, ihm, ihr, ihm, uns, euch, ihnen / Ihnen*.
-
-### Rule 3: pronoun + noun → pronoun first
-
-If one object is a pronoun and the other is a noun, the **pronoun always comes first**, whatever its case:
-
-- Ich gebe **ihm** das Buch. – (Dative pronoun first)
-- Ich gebe **es** dem Lehrer. – (Accusative pronoun first)
-
-### Summary table
-
-| objects | order | example |
-|---|---|---|
-| noun + noun | Dative → Accusative | Ich gebe **dem Mann** **den Schlüssel**. |
-| pronoun + pronoun | Accusative → Dative | Ich gebe **ihn** **ihm**. |
-| pronoun + noun | pronoun → noun | Ich gebe **ihm** den Schlüssel. / Ich gebe **ihn** dem Mann. |
-
-A memory trick: pronouns are short and known information, so they move **as far left as possible**. Among nouns, the person usually comes first.
-
-### Reflexive pronouns
-
-A reflexive pronoun (*mich, dich, sich …*) behaves like any other pronoun: it goes early in the midfield, right after the verb or the subject pronoun.
-
-- Ich habe **mich** sehr gefreut.
-- Gestern hat er **sich** verspätet.
-
-You may also see a pronoun **before a noun subject**: *Gestern hat **mir** der Chef eine E-Mail geschickt.* Both orders are correct (*Gestern hat der Chef mir …* is fine too); the pronoun-first version is what native speakers often prefer. You only need to recognise it.
-
-### Why it matters
-
-German can put objects in several places because the cases show who does what. But native speakers still expect a "normal" order, and *Ich gebe ihm es* sounds wrong to them. Getting this order right makes your sentences flow and keeps the listener from stumbling.
+This lesson is about the **order** of those two objects. Notice that the order flips when both are pronouns.
 `,
-  examples: [
-    { de: 'Ich gebe meinem Bruder das Buch.', en: 'I give my brother the book. (two nouns: Dative, then Accusative)' },
-    { de: 'Ich gebe es ihm.', en: 'I give it to him. (two pronouns: Accusative, then Dative)' },
-    { de: 'Ich gebe ihm das Buch.', en: 'I give him the book. (pronoun before noun)' },
-    { de: 'Ich gebe es meinem Bruder.', en: 'I give it to my brother. (pronoun before noun)' },
-    { de: 'Kannst du mir das erklären?', en: 'Can you explain that to me? (mir first; das = "that" is a pointing word and behaves like a noun here)' },
-    { de: 'Ich habe es ihr gestern gezeigt.', en: 'I showed it to her yesterday. (pronouns stay right after the verb in the Perfekt)' },
-    { de: 'Sie hat sich die Haare gewaschen.', en: 'She washed her hair. (reflexive pronoun early in the midfield)' },
+      examples: [
+        { de: 'Ich gebe dem Kind das Buch.', en: 'I give the child the book. (person, then thing)' },
+        { de: 'Ich gebe es ihm.', en: 'I give it to him. (thing, then person)' },
+      ],
+    },
+    {
+      title: 'Two nouns: Dative before Accusative',
+      text: `
+If both objects are nouns, the **person (Dative)** comes first, then the **thing (Accusative)**. This is the normal, neutral order.
+`,
+      examples: [
+        { de: 'Ich schenke meiner Mutter einen Schal.', en: 'I give my mother a scarf. (meiner Mutter, then einen Schal)' },
+        { de: 'Er zeigt den Gästen die Wohnung.', en: 'He shows the guests the flat.' },
+        { de: 'Ich gebe dem Mann den Schlüssel.', en: 'I give the man the key.' },
+      ],
+    },
+    {
+      title: 'Two pronouns: Accusative before Dative',
+      text: `
+If both objects are pronouns, the order flips: the **thing (Accusative)** comes first, then the **person (Dative)**.
+
+The Accusative pronouns are *mich, dich, ihn, sie, es, uns, euch, sie / Sie*. The Dative pronouns are *mir, dir, ihm, ihr, ihm, uns, euch, ihnen / Ihnen*. *Ich gebe ihm es* sounds wrong to a native speaker; it must be **es ihm**.
+`,
+      examples: [
+        { de: 'Ich schenke ihn ihr.', en: 'I give it to her. (ihn = der Schal, then ihr)' },
+        { de: 'Er zeigt sie ihnen.', en: 'He shows it to them. (sie = die Wohnung, then ihnen)' },
+        { de: 'Kannst du es mir erklären?', en: 'Can you explain it to me? (es, then mir)' },
+        { de: 'Ich habe es ihr gestern gezeigt.', en: 'I showed it to her yesterday. (the pronouns stay right after the verb)' },
+      ],
+    },
+    {
+      title: 'Pronoun and noun: pronoun first',
+      text: `
+If one object is a pronoun and the other is a noun, the **pronoun always comes first**, whatever its case. Pronouns are short and known information, so they move as far left as possible.
+`,
+      examples: [
+        { de: 'Ich gebe ihm das Buch.', en: 'I give him the book. (Dative pronoun first)' },
+        { de: 'Ich gebe es dem Lehrer.', en: 'I give it to the teacher. (Accusative pronoun first)' },
+        { de: 'Kannst du mir das Foto schicken?', en: 'Can you send me the photo? (mir before das Foto)' },
+      ],
+    },
+    {
+      title: 'The three rules in one table',
+      text: `
+| objects | order |
+|---|---|
+| noun + noun | Dative → Accusative |
+| pronoun + pronoun | Accusative → Dative |
+| pronoun + noun | pronoun → noun |
+
+The same order holds in a subordinate clause, right after the conjunction and the subject: *…, weil ich **es ihm** gegeben habe.*
+`,
+      examples: [
+        { de: 'Sie schickt ihrer Freundin ein Paket.', en: 'She sends her friend a parcel. (noun + noun)' },
+        { de: 'Sie schickt es ihr.', en: 'She sends it to her. (pronoun + pronoun)' },
+        { de: 'Sie schickt ihr ein Paket.', en: 'She sends her a parcel. (pronoun + noun)' },
+        { de: 'Ich bin froh, weil er es mir erklärt hat.', en: 'I am glad because he explained it to me. (same order after weil + subject)' },
+      ],
+    },
+    {
+      title: 'Reflexive pronouns go early too',
+      text: `
+A reflexive pronoun (*mich, dich, sich* …, the pronoun that points back at the subject) behaves like any other pronoun. It goes early in the midfield, right after the verb or the subject pronoun.
+`,
+      examples: [
+        { de: 'Ich habe mich sehr gefreut.', en: 'I was very pleased. (mich right after habe)' },
+        { de: 'Gestern hat er sich verspätet.', en: 'Yesterday he was late. (sich right after the subject er)' },
+        { de: 'Sie hat sich die Haare gewaschen.', en: 'She washed her hair. (sich before the noun die Haare)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-23-accusative-pronouns', note: 'The Accusative pronouns (mich, dich, ihn, sie, es …) are the ones that come first when both objects are pronouns.' },
@@ -87,6 +100,7 @@ German can put objects in several places because the cases show who does what. B
     '**es** is almost always first among the pronouns and never carries stress. You cannot start a sentence with the object *es* for emphasis.',
     'In a subordinate clause the same order applies, right after the conjunction and the subject: *…, weil ich **es ihm** gestern gegeben habe.*',
     'Pronouns stay in the midfield even in the Perfekt: *Ich habe **es ihr** gezeigt*, not *Ich habe gezeigt es ihr*.',
+    'You may also see a pronoun **before a noun subject**: *Gestern hat **mir** der Chef eine E-Mail geschickt.* Both orders are correct; you only need to recognise this one.',
   ],
   exercises: [
     {

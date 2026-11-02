@@ -28,7 +28,7 @@ const task: WritingTask = {
     { de: 'Vielen Dank im Voraus!', en: 'Many thanks in advance!', role: 'closing' },
     { de: 'Viele Grüße', en: 'Best regards', role: 'closing' },
   ],
-  grammarFocus: ['a2-19-futur-1', 'a2-20-konjunktiv-2-polite', 'a2-05-wenn-ob-indirect-questions'],
+  grammarFocus: ['a2-19-futur-1', 'a2-20-konjunktiv-2-polite', 'a2-20b-wishes-suggestions', 'a2-05-wenn-ob-indirect-questions', 'a2-05b-indirect-questions'],
   mustUse: [
     { label: 'Futur I with werden + infinitive (ich werde … arbeiten)', pattern: '\\b(werde|wirst|wird|werden|werdet)\\b', min: 2 },
     { label: 'a polite Konjunktiv II form (könnten, würden, hätte, wäre)', pattern: '\\b(könnte|könnten|könntest|würde|würden|würdest|hätte|hätten|hättest|wäre|wären|wärst)\\b', min: 3 },

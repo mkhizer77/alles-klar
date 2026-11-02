@@ -9,75 +9,112 @@ const topic: Topic = {
   germanTerm: 'Begrüßung, Anrede',
   tags: ['greetings', 'introductions', 'du', 'Sie', 'politeness'],
   summary: 'The phrases for saying hello, goodbye and who you are, and the rule for choosing between the informal du and the polite Sie.',
-  explanation: `
-### Saying hello and goodbye
+  steps: [
+    {
+      title: 'Saying hello and goodbye',
+      text: `
+German has a small set of fixed greetings. Some depend on the **time of day**, some on **how formal** the situation is.
 
-German has a small set of fixed phrases for greeting. Some depend on the **time of day**, some on **how formal** the situation is.
-
-| when | greeting | goodbye |
+| when | hello | goodbye |
 |---|---|---|
 | any time, neutral | **Guten Tag** | **Auf Wiedersehen** |
-| morning (until about 10–11) | **Guten Morgen** | – |
-| evening | **Guten Abend** | **Gute Nacht** (only when going to bed) |
-| informal, any time | **Hallo**, **Hi** | **Tschüs**, **Bis später** (see you later) |
-| on the phone | **Guten Tag** / **Hallo** | **Auf Wiederhören** (literally: until we hear again) |
+| morning | **Guten Morgen** | |
+| evening | **Guten Abend** | **Gute Nacht** (only at bedtime) |
+| informal | **Hallo** | **Tschüs**, **Bis später** |
+| on the phone | **Guten Tag** | **Auf Wiederhören** |
 
-In the south of Germany and in Austria you will hear **Grüß Gott** and **Servus**. In Switzerland **Grüezi**. You do not need to use them, but it helps to recognise them.
+*Wiedersehen* means "see again", so it is for face to face. *Wiederhören* means "hear again": the phone.
+`,
+      examples: [
+        { de: 'Guten Tag, Frau Weber.', en: 'Good day, Mrs Weber. (neutral, any time)' },
+        { de: 'Hallo, Lena! Tschüs, bis morgen!', en: 'Hi, Lena! Bye, see you tomorrow! (informal)' },
+        { de: 'Auf Wiederhören!', en: 'Goodbye! (on the phone)' },
+        { de: 'Gute Nacht!', en: 'Good night! (someone is going to bed)' },
+      ],
+    },
+    {
+      title: 'Saying your name',
+      text: `
+There are three ways to say your name, and all three are common:
 
-### Introducing yourself
+- **Ich heiße** Maria. (literally: I am called)
+- **Ich bin** Maria.
+- **Mein Name ist** Maria. (slightly formal)
 
-Three ways to say your name; all three are common:
+When you meet someone new, you add **Freut mich.** (Nice to meet you.)
+`,
+      examples: [
+        { de: 'Ich heiße Maria.', en: 'My name is Maria.' },
+        { de: 'Hallo, ich bin Tom.', en: 'Hello, I am Tom.' },
+        { de: 'Mein Name ist Peter Schmidt.', en: 'My name is Peter Schmidt. (slightly formal)' },
+        { de: 'Freut mich!', en: 'Nice to meet you!' },
+      ],
+    },
+    {
+      title: 'The first three questions',
+      text: `
+After the name come three questions. Each has an informal form (for *du*) and a polite form (for *Sie*).
 
-- **Ich heiße** Maria. – *My name is Maria.* (literally: I am called)
-- **Ich bin** Maria. – *I am Maria.*
-- **Mein Name ist** Maria. – *My name is Maria.* (slightly formal)
+| question | polite form | answer |
+|---|---|---|
+| **Wie heißt du?** (What is your name?) | Wie heißen Sie? | Ich heiße Anna. |
+| **Woher kommst du?** (Where are you from?) | Woher kommen Sie? | Ich komme **aus** Polen. |
+| **Wo wohnst du?** (Where do you live?) | Wo wohnen Sie? | Ich wohne **in** Berlin. |
 
-Then the usual questions and answers:
+Note **aus** for the country and **in** for the town.
+`,
+      examples: [
+        { de: 'Wie heißen Sie?', en: 'What is your name? (polite)' },
+        { de: 'Woher kommst du? Ich komme aus Italien.', en: 'Where are you from? I am from Italy. (aus + country)' },
+        { de: 'Wo wohnen Sie? Ich wohne in Hamburg.', en: 'Where do you live? I live in Hamburg. (in + town)' },
+      ],
+    },
+    {
+      title: 'How are you?',
+      text: `
+**Wie geht es dir?** is the informal "How are you?"; the polite form is **Wie geht es Ihnen?** Among friends it shrinks to **Wie geht's?**
 
-| question | answer |
-|---|---|
-| **Wie heißt du?** / **Wie heißen Sie?** (What is your name?) | Ich heiße … |
-| **Woher kommst du?** / **Woher kommen Sie?** (Where are you from?) | Ich komme **aus** Spanien. |
-| **Wo wohnst du?** / **Wo wohnen Sie?** (Where do you live?) | Ich wohne **in** Berlin. |
-| **Wie geht es dir?** / **Wie geht es Ihnen?** (How are you?) | Gut, danke. Und dir? / Und Ihnen? |
-
-*Wie geht's?* is the short, informal version of *Wie geht es dir?* The answers go from **sehr gut** (very good), **gut**, **es geht** (so-so) to **nicht so gut**.
-
-When you meet someone: **Freut mich.** (*Nice to meet you.*) When someone thanks you: **Bitte.** (*You're welcome.*)
-
-### du or Sie? The most important social rule
-
-English has one *you*. German has two, and choosing the wrong one can sound rude or strangely distant.
+The answers go from **sehr gut** (very good) and **gut** to **es geht** (so-so) and **nicht so gut**. Then you ask back: **Und dir?** or **Und Ihnen?** Do not say *Ich bin gut*; say **Mir geht es gut** or just **Gut, danke**.
+`,
+      examples: [
+        { de: 'Wie geht es dir? Gut, danke. Und dir?', en: 'How are you? Fine, thanks. And you? (informal)' },
+        { de: 'Wie geht es Ihnen? Danke, sehr gut.', en: 'How are you? Thank you, very well. (polite)' },
+        { de: 'Wie geht\'s? Es geht.', en: 'How is it going? So-so.' },
+      ],
+    },
+    {
+      title: 'du or Sie?',
+      text: `
+English has one *you*. German has two, and the wrong one can sound rude or oddly distant.
 
 | | du | Sie |
 |---|---|---|
-| who | family, friends, children, students, colleagues who offered it | strangers, officials, shop staff, your doctor, older people, at work until offered otherwise |
-| verb form | du komm**st**, du heiß**t** | Sie komm**en**, Sie heiß**en** |
-| spelling | always lower case (*du*) | always a capital **S** (*Sie*) |
+| who | family, friends, children, fellow students | strangers, officials, shop staff, at work |
+| verb ending | du komm**st** | Sie komm**en** |
+| spelling | small *d* | always capital **S** |
 
-The safe rule for an adult learner: **use Sie with every adult you do not know.** Wait for the German speaker to offer *du* ("Wir können uns duzen" or simply by using *du* with you). Young people among themselves, and almost everybody online, use *du*.
-
-The plural of *du* is **ihr** (*you all*, informal). The plural of *Sie* is also **Sie**.
-
-### Titles and polite words
-
-- **Herr** Müller (Mr), **Frau** Müller (Mrs / Ms). *Fräulein* is no longer used.
-- **bitte** = please (and *you're welcome*, and *here you are*), **danke** = thank you, **Entschuldigung** = excuse me / sorry.
-- A letter or email starts with **Sehr geehrte Frau Müller** (formal) or **Liebe Anna** / **Lieber Tom** (informal) and ends with **Mit freundlichen Grüßen** or **Viele Grüße**.
-
-### Why it matters
-
-These phrases are the first thing you say in every conversation, and they decide the tone of everything after. Getting *du* and *Sie* right is worth more than any single grammar rule for making a good impression.
+The safe rule: **use Sie with every adult you do not know**, and wait for the German speaker to offer *du*. For several friends at once the word is **ihr**.
 `,
-  examples: [
-    { de: 'Guten Tag, ich heiße Peter Schmidt.', en: 'Good day, my name is Peter Schmidt. (formal introduction)' },
-    { de: 'Hallo, ich bin Lena. Und du?', en: 'Hi, I am Lena. And you? (informal)' },
-    { de: 'Wie heißen Sie?', en: 'What is your name? (polite Sie, verb ends in -en)' },
-    { de: 'Woher kommst du? – Ich komme aus Italien.', en: 'Where are you from? – I am from Italy.' },
-    { de: 'Wie geht es Ihnen? – Danke, gut. Und Ihnen?', en: 'How are you? – Fine, thanks. And you? (formal)' },
-    { de: 'Freut mich!', en: 'Nice to meet you!' },
-    { de: 'Tschüs, bis morgen!', en: 'Bye, see you tomorrow! (informal)' },
-    { de: 'Auf Wiedersehen, Frau Weber.', en: 'Goodbye, Mrs Weber. (formal)' },
+      examples: [
+        { de: 'Kommst du aus Berlin?', en: 'Are you from Berlin? (du: a friend, verb ends in -st)' },
+        { de: 'Kommen Sie aus Berlin?', en: 'Are you from Berlin? (Sie: a stranger, verb ends in -en)' },
+        { de: 'Kommt ihr aus Berlin?', en: 'Are you all from Berlin? (ihr: several friends)' },
+      ],
+    },
+    {
+      title: 'Titles and polite words',
+      text: `
+**Herr** Müller is Mr Müller, **Frau** Müller is Mrs or Ms Müller. *Fräulein* is no longer used.
+
+The small polite words: **bitte** (please, and also "you're welcome"), **danke** (thank you), **Entschuldigung** (excuse me, sorry). A letter starts with **Sehr geehrte Frau Müller** (formal) or **Liebe Anna** / **Lieber Tom** (informal) and ends with **Mit freundlichen Grüßen** or **Viele Grüße**.
+`,
+      examples: [
+        { de: 'Guten Tag, Herr Müller.', en: 'Good day, Mr Müller.' },
+        { de: 'Danke schön! Bitte schön.', en: 'Thank you! You are welcome.' },
+        { de: 'Entschuldigung!', en: 'Excuse me! (or: Sorry!)' },
+        { de: 'Sehr geehrte Frau Müller', en: 'Dear Mrs Müller (formal letter opening)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-01-pronunciation', note: 'You will need the letter names to spell your name after introducing yourself.' },
@@ -86,11 +123,12 @@ These phrases are the first thing you say in every conversation, and they decide
     { topicId: 'a1-07-questions', note: 'Wie, woher and wo are W-question words; that topic explains how to build questions.' },
   ],
   edgeCases: [
-    '**Sie** (polite you) is always written with a capital S, even in the middle of a sentence. Lower-case *sie* means *she* or *they*. The verb form is the same (*Sie kommen* / *sie kommen*), so only the capital letter and the context tell them apart.',
+    '**Sie** (polite you) always has a capital S, even mid-sentence. Lower-case *sie* means *she* or *they*. The verb form is the same (*Sie kommen* / *sie kommen*), so only the capital and the context tell them apart.',
     '**Gute Nacht** is not an evening greeting. You say it only when someone is going to bed. In the evening you greet with *Guten Abend*.',
     '**Auf Wiedersehen** is for face to face; on the phone use **Auf Wiederhören**.',
     '**Ich bin gut** is wrong for "I am well". Say **Mir geht es gut** or just **Gut, danke**.',
     'Do not switch to *du* just because someone is friendly. Colleagues in many German offices use *Sie* for years. Wait for the offer.',
+    'In the south and in Austria you will hear **Grüß Gott** and **Servus**, in Switzerland **Grüezi**. You only need to recognise them; *Guten Tag* works everywhere.',
   ],
   exercises: [
     {

@@ -30,7 +30,7 @@ const scenario: SpeakingScenario = {
     { de: 'Und wie habt ihr beide euch kennengelernt?', en: 'And how did you two meet?' },
     { de: 'Wie bitte? Das habe ich nicht verstanden.', en: 'Pardon? I did not understand that.' },
   ],
-  grammarFocus: ['b1-01-plusquamperfekt', 'b1-02-temporal-clauses', 'b1-03-modals-perfekt'],
+  grammarFocus: ['b1-01-plusquamperfekt', 'b1-02-temporal-clauses', 'b1-02b-waehrend-seit-bis', 'b1-03-modals-perfekt'],
   vocabFocus: ['die Kindheit', 'die Jugend', 'die Beziehung', 'der Partner', 'die Freundschaft', 'aufwachsen', 'sich verlieben', 'sich gewöhnen an', 'vermissen', 'unterstützen'],
   minTurns: 7,
 };

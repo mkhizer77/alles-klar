@@ -29,7 +29,7 @@ const task: WritingTask = {
     { de: 'sonst', en: 'otherwise', role: 'connector' },
     { de: 'Mit freundlichen Grüßen', en: 'Kind regards', role: 'closing' },
   ],
-  grammarFocus: ['a2-27-adverbial-connectors', 'a2-28-subjunctions-obwohl-damit', 'a2-29-modal-particles', 'a2-31-reading-writing-email'],
+  grammarFocus: ['a2-27-adverbial-connectors', 'a2-28-subjunctions-obwohl-damit', 'a2-28b-time-subjunctions', 'a2-29-modal-particles', 'a2-31b-semi-formal-email'],
   mustUse: [
     { label: 'an adverbial connector (deshalb, trotzdem, sonst, also, dann)', pattern: '\\b(deshalb|deswegen|darum|trotzdem|sonst|also|dann)\\b', min: 2 },
     { label: 'a subjunction such as obwohl or damit (also bevor, nachdem, bis, seitdem)', pattern: '\\b(obwohl|damit|bevor|nachdem|bis|seitdem)\\b', min: 2 },

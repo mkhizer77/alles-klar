@@ -1,4 +1,4 @@
-import type { Level, Topic, VocabSet, Word, GlossaryTerm, ReadingText, WritingTask, SpeakingScenario, MockExam } from './types';
+import type { Level, Topic, Example, VocabSet, Word, GlossaryTerm, ReadingText, WritingTask, SpeakingScenario, MockExam } from './types';
 import { curriculum } from './curriculum';
 import { glossary } from './glossary';
 
@@ -45,6 +45,11 @@ export const readingsForLevel = (level: Level): ReadingText[] => Object.values(r
 
 export const topics: Record<string, Topic> = {};
 for (const m of Object.values(topicModules)) topics[m.default.id] = m.default;
+
+/** Every example sentence of a topic, in lesson order. */
+export const topicExamples = (t: Topic): Example[] => t.steps.flatMap((s) => s.examples);
+/** The lesson text of a topic as one string (for search). */
+export const topicText = (t: Topic): string => t.steps.map((s) => `${s.title} ${s.text}`).join(' ');
 
 // A headword that appears at two levels is kept only at the lower level, so a
 // learner never gets the same card twice.
@@ -129,7 +134,7 @@ export function searchConcepts(query: string, level?: Level): SearchHit[] {
       [t.germanTerm, 6],
       [t.tags.join(' '), 3],
       [t.summary, 2],
-      [t.explanation.slice(0, 1500), 0.5],
+      [topicText(t).slice(0, 1500), 0.5],
     ]);
     if (score > 0) hits.push({ kind: 'topic', score, topic: t });
   }

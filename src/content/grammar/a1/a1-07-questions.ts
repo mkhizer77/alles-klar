@@ -9,73 +9,96 @@ const topic: Topic = {
   germanTerm: 'Ja/Nein-Fragen, W-Fragen',
   tags: ['questions', 'word order', 'question words', 'wer wie wo'],
   summary: 'A yes/no question starts with the verb; a W-question starts with a question word (wer, wie, wo …) and the verb comes second.',
-  explanation: `
-### Two kinds of question
-
+  steps: [
+    {
+      title: 'Yes/no questions: verb first',
+      text: `
 German has two question shapes, and both are simpler than English because there is **no "do"**.
 
-1. **Yes/no questions** (*Ja/Nein-Fragen*): the answer is *ja* or *nein*. The **verb goes first**.
-2. **W-questions** (*W-Fragen*): they ask for information and start with a question word. Most of these words begin with **w**, which gives them their name.
-
-### Yes/no questions: verb first
-
-Take a statement and move the conjugated verb to the front. Nothing else changes.
+A **yes/no question** (*Ja/Nein-Frage*) is answered with *ja* or *nein*. Take a statement and move the conjugated verb to the **front**. Nothing else changes.
 
 | statement | question |
 |---|---|
 | Du wohnst in Berlin. | **Wohnst** du in Berlin? |
 | Sie hat Kinder. | **Hat** sie Kinder? |
 | Ihr kommt morgen. | **Kommt** ihr morgen? |
+`,
+      examples: [
+        { de: 'Wohnst du in Berlin? Ja.', en: 'Do you live in Berlin? Yes. (verb first, no "do")' },
+        { de: 'Hat sie Kinder? Nein.', en: 'Does she have children? No.' },
+        { de: 'Kommt ihr morgen?', en: 'Are you all coming tomorrow?' },
+      ],
+    },
+    {
+      title: 'ja, nein and doch',
+      text: `
+The answers are **ja** and **nein**, plus a third word English does not have: **doch**. You use *doch* to say "yes" to a question that was asked in the **negative**: *Hast du **kein** Auto?* – ***Doch**, ich habe ein Auto.* (On the contrary, I do.)
 
-Compare English: *Do you live in Berlin?* German has no *do*; the verb itself jumps forward. The voice goes **up** at the end.
+Answering *ja* to a negative question is confusing, so always use *doch*.
+`,
+      examples: [
+        { de: 'Hast du ein Auto? Ja.', en: 'Do you have a car? Yes.' },
+        { de: 'Hast du kein Auto? Doch!', en: 'Don\'t you have a car? Yes, I do! (doch answers a negative question)' },
+        { de: 'Hast du keine Zeit? Doch, ich habe Zeit.', en: 'Don\'t you have time? Yes, I do have time.' },
+      ],
+    },
+    {
+      title: 'W-questions: question word, then verb',
+      text: `
+A **W-question** (*W-Frage*) asks for information. The question word takes **position 1**, the verb **position 2**, then the subject: the normal verb-second rule. Most of these words begin with **w**, which gives them their name.
 
-Answers: **Ja.** / **Nein.** – and a special word: **Doch.** You use *doch* to say "yes" to a question that was asked in the negative: *Hast du **kein** Auto?* – ***Doch**, ich habe ein Auto.* (On the contrary, I do.)
-
-### W-questions: question word first, verb second
-
-The question word takes **position 1**, the verb **position 2**, then the subject. This is the normal verb-second rule.
-
-| question word | meaning | example |
+| word | meaning | example |
 |---|---|---|
 | **wer** | who | Wer ist das? |
 | **was** | what | Was machst du? |
-| **wo** | where | Wo wohnst du? |
-| **woher** | where from | Woher kommst du? |
-| **wohin** | where to | Wohin gehst du? |
 | **wann** | when | Wann beginnt der Kurs? |
 | **wie** | how | Wie geht es dir? |
 | **warum** | why | Warum lernst du Deutsch? |
-| **welche / welcher / welches** | which | Welche Sprache sprichst du? |
-
-The three **wo** words are often mixed up: **wo** = where (position), **woher** = where from (origin, answer with *aus*), **wohin** = where to (direction, answer with *nach* or *in*).
-
-### wie + another word
-
-**wie** combines with other words, just like English *how*:
-
-- **Wie viel** kostet das? – How much does that cost?
-- **Wie viele** Kinder hast du? – How many children do you have?
-- **Wie alt** bist du? – How old are you?
-- **Wie lange** bleibst du? – How long are you staying?
-- **Wie spät** ist es? – What time is it? (literally: how late)
-
-### Polite questions with Sie
-
-With *Sie* the verb has the *-en* ending and the question works the same way: *Wohnen Sie in Berlin? Woher kommen Sie?* This is the form you will use with every adult stranger.
-
-### Why it matters
-
-Questions are how you get information and keep a conversation going. The two patterns here, **verb first** and **W-word + verb**, cover almost every question you will ever ask in German. They are also the clearest example of the verb-position rules: statement = verb second, yes/no question = verb first.
+| **welche** | which | Welche Sprache sprichst du? |
 `,
-  examples: [
-    { de: 'Wohnst du in Berlin? – Ja.', en: 'Do you live in Berlin? – Yes. (verb first, no "do")' },
-    { de: 'Hat sie Kinder? – Nein.', en: 'Does she have children? – No.' },
-    { de: 'Wer ist das?', en: 'Who is that?' },
-    { de: 'Was machst du heute?', en: 'What are you doing today?' },
-    { de: 'Woher kommen Sie?', en: 'Where are you from? (formal)' },
-    { de: 'Wohin gehst du? – Nach Hause.', en: 'Where are you going? – Home. (wohin = direction)' },
-    { de: 'Wie viel kostet das?', en: 'How much does that cost?' },
-    { de: 'Hast du keine Zeit? – Doch!', en: 'Don\'t you have time? – Yes, I do! (doch answers a negative question)' },
+      examples: [
+        { de: 'Wer ist das?', en: 'Who is that?' },
+        { de: 'Was machst du heute?', en: 'What are you doing today? (Was, then machst, then du)' },
+        { de: 'Wann beginnt der Kurs?', en: 'When does the course start?' },
+        { de: 'Warum lernst du Deutsch?', en: 'Why are you learning German?' },
+      ],
+    },
+    {
+      title: 'wo, woher and wohin',
+      text: `
+English uses *where* for all three; German has three words. **wo** = where (a position), **woher** = where from (origin, answer with *aus*), **wohin** = where to (direction, answer with *nach* or *in*).
+`,
+      examples: [
+        { de: 'Wo bist du?', en: 'Where are you? (position)' },
+        { de: 'Woher kommst du? Aus Spanien.', en: 'Where are you from? From Spain. (origin: aus)' },
+        { de: 'Wohin gehst du? Nach Hause.', en: 'Where are you going? Home. (direction: nach)' },
+      ],
+    },
+    {
+      title: 'wie + another word',
+      text: `
+**wie** combines with other words, just like English *how*: **wie viel** (how much), **wie viele** (how many, for things you can count), **wie alt** (how old), **wie lange** (how long).
+
+One looks odd: **Wie spät ist es?** (literally "how late is it") means *What time is it?*
+`,
+      examples: [
+        { de: 'Wie viel kostet das?', en: 'How much does that cost?' },
+        { de: 'Wie viele Kinder hast du?', en: 'How many children do you have? (countable: wie viele)' },
+        { de: 'Wie alt bist du?', en: 'How old are you?' },
+        { de: 'Wie spät ist es?', en: 'What time is it?' },
+      ],
+    },
+    {
+      title: 'Polite questions with Sie',
+      text: `
+With **Sie** the verb has the **-en** ending, and both question shapes work the same way: verb first for yes/no, question word first for W-questions. This is the form you use with every adult stranger.
+`,
+      examples: [
+        { de: 'Wohnen Sie in Berlin?', en: 'Do you live in Berlin? (polite yes/no question)' },
+        { de: 'Woher kommen Sie?', en: 'Where are you from? (polite W-question)' },
+        { de: 'Sprechen Sie Deutsch?', en: 'Do you speak German?' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-06-verb-second', note: 'W-questions follow the verb-second rule; yes/no questions move the verb to position 1.' },

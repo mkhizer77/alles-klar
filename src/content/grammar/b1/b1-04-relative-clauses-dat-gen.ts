@@ -4,76 +4,100 @@ const topic: Topic = {
   id: 'b1-04-relative-clauses-dat-gen',
   level: 'B1',
   unit: 2,
-  order: 4,
+  order: 5,
   title: 'Relative clauses in the Dative and Genitive',
   germanTerm: 'Relativsatz (Dativ / Genitiv)',
   tags: ['relative clauses', 'pronouns', 'Dative', 'Genitive', 'subordinate clauses'],
   summary: 'The relative pronoun takes the Dative (dem, der, denen) when it is an indirect object or follows a Dative verb; the Genitive forms dessen / deren ("whose") are there to recognise.',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'When the relative pronoun is Dative',
+      text: `
+A **relative clause** (*Relativsatz*) adds information about a noun: *the man **who** lives next door*. It starts with a **relative pronoun** (*der, die, das* and their forms).
 
-A **relative clause** (*Relativsatz*) adds information about a noun: *the man **who** lives next door*, *the book **that** I read*. At A2 you learned the relative pronouns (*Relativpronomen*, the words *der / die / das* that start the clause) in the Nominative and Accusative. Now we add the **Dative**, which you need whenever the person in the clause is helped, thanked or given something:
-
-- Der Mann, **dem** ich geholfen habe, ist mein Nachbar. – *The man I helped is my neighbour.*
-
-### The table of relative pronouns
-
-The relative pronouns look almost exactly like the definite articles (*der, die, das*). Only the Dative plural is different (in bold):
+At A2 you used the Nominative and Accusative. Now you add the **Dative** (the case of the receiver). You need it whenever the person in the clause is helped, thanked or given something.
+`,
+      examples: [
+        { de: 'Der Mann, dem ich geholfen habe, ist mein Nachbar.', en: 'The man I helped is my neighbour. (helfen + Dative → dem)' },
+        { de: 'Das ist der Arzt, dem ich vertraue.', en: 'That is the doctor I trust. (vertrauen + Dative → dem)' },
+        { de: 'Die Frau, der ich das Buch gegeben habe, ist Lehrerin.', en: 'The woman I gave the book to is a teacher. (receiver → der)' },
+      ],
+    },
+    {
+      title: 'The table: only denen is new',
+      text: `
+The relative pronouns look almost exactly like the definite articles (*der, die, das*). Only the Dative plural is different: **denen**.
 
 | | masculine | feminine | neuter | plural |
 |---|---|---|---|---|
 | Nominative | der | die | das | die |
 | Accusative | den | die | das | die |
 | Dative | dem | der | dem | **denen** |
-
-### Two rules decide the form
-
-1. **Gender and number** come from the noun **before** the clause (the noun you are describing).
-2. **Case** comes from the job the pronoun does **inside** the relative clause.
-
-Take *der Mann*: masculine singular. Now look inside the clause:
-
-- Der Mann, **der** dort steht … (he stands → subject → Nominative)
-- Der Mann, **den** ich kenne … (I know him → object → Accusative)
-- Der Mann, **dem** ich helfe … (I help him → helfen takes Dative → Dative)
-
-### The Dative
-
-You need the Dative pronoun when, inside the clause, the pronoun is:
-
-- an **indirect object** (someone who receives something): *die Frau, **der** ich das Buch gegeben habe*
-- the object of a **Dative verb** (helfen, danken, gefallen, gehören, vertrauen …): *die Kinder, **denen** wir geholfen haben*
-
-Watch the plural: *die Leute, **denen** das Restaurant gehört* – not *die*.
-
-A quick check: say the clause as a normal sentence with a pronoun. *Ich helfe **ihm*** → Dative → *der Mann, **dem** ich helfe*. *Ich kenne **ihn*** → Accusative → *der Mann, **den** ich kenne*.
-
-### Word order
-
-As in every subordinate clause, the conjugated verb goes to the **end**, and the relative clause is separated by commas. It usually comes directly after the noun it describes: *Die Frau, **der** ich geholfen habe, ist meine Tante.*
-
-### You may also see …
-
-German also has a relative pronoun for **whose**, the Genitive: **dessen** (masculine and neuter) and **deren** (feminine and plural). *Der Freund, **dessen** Auto kaputt ist, fährt mit dem Bus.* – *The friend whose car is broken takes the bus.* The noun after *dessen / deren* has no article. You will meet this in reading texts at B1; you do not need to produce it yet. If you want to say the same thing, a second sentence is fine: *Sein Auto ist kaputt. Er fährt mit dem Bus.*
-
-### Why it matters
-
-Relative clauses are the main way to describe people and things precisely, in job applications (*die Firma, bei der ich gearbeitet habe*), in presentations and in everyday talk. Getting the Dative right is a clear sign of B1 level, and the next topic builds on this with prepositions (*der Mann, **mit dem** …*).
 `,
-  examples: [
-    { de: 'Der Mann, dem ich geholfen habe, ist mein Nachbar.', en: 'The man I helped is my neighbour. (helfen + Dative → dem)' },
-    { de: 'Die Frau, der ich das Buch gegeben habe, ist Lehrerin.', en: 'The woman I gave the book to is a teacher. (indirect object → der)' },
-    { de: 'Die Kinder, denen wir Geschenke gebracht haben, waren glücklich.', en: 'The children we brought presents to were happy. (plural Dative → denen)' },
-    { de: 'Das ist der Arzt, dem ich vertraue.', en: 'That is the doctor I trust. (vertrauen + Dative → dem)' },
-    { de: 'Die Leute, denen das Restaurant gehört, sind sehr nett.', en: 'The people who own the restaurant are very nice. (gehören + Dative)' },
-    { de: 'Der Freund, dessen Auto kaputt ist, fährt mit dem Bus.', en: 'The friend whose car is broken takes the bus. (dessen = whose, for recognition)' },
+      examples: [
+        { de: 'Die Kinder, denen wir geholfen haben, waren glücklich.', en: 'The children we helped were happy. (plural Dative → denen)' },
+        { de: 'Die Leute, denen das Restaurant gehört, sind nett.', en: 'The people who own the restaurant are nice. (gehören + Dative)' },
+        { de: 'Das Kind, dem ich ein Eis gekauft habe, lacht.', en: 'The child I bought an ice cream for is laughing. (neuter Dative → dem)' },
+      ],
+    },
+    {
+      title: 'Gender from outside, case from inside',
+      text: `
+Two rules decide the form. **Gender and number** come from the noun **before** the clause. **Case** comes from the job the pronoun does **inside** the relative clause.
+
+Take *der Mann*: masculine singular. Now look inside the clause. He stands there → subject → *der*. I know him → object → *den*. I help him → *helfen* takes the Dative → *dem*.
+`,
+      examples: [
+        { de: 'Der Mann, der dort steht, ist mein Chef.', en: 'The man who is standing there is my boss. (subject → der)' },
+        { de: 'Der Mann, den ich kenne, ist mein Chef.', en: 'The man I know is my boss. (object → den)' },
+        { de: 'Der Mann, dem ich helfe, ist mein Chef.', en: 'The man I am helping is my boss. (helfen → dem)' },
+      ],
+    },
+    {
+      title: 'A quick check with ihm and ihn',
+      text: `
+Not sure which case? Say the clause as a normal sentence with a personal pronoun. *Ich helfe **ihm*** → Dative → *der Mann, **dem** ich helfe*. *Ich kenne **ihn*** → Accusative → *der Mann, **den** ich kenne*.
+
+The Dative verbs to remember: **helfen, danken, gefallen, gehören, vertrauen**. Giving someone something also makes that person Dative.
+`,
+      examples: [
+        { de: 'Das ist die Kollegin, der ich oft helfe.', en: 'That is the colleague I often help. (ich helfe ihr → der)' },
+        { de: 'Der Lehrer, dem ich danke, geht in Rente.', en: 'The teacher I am thanking is retiring. (ich danke ihm → dem)' },
+        { de: 'Das Mädchen, dem das Buch gefällt, liest viel.', en: 'The girl who likes the book reads a lot. (gefallen → dem)' },
+      ],
+    },
+    {
+      title: 'Commas and the verb at the end',
+      text: `
+As in every subordinate clause (a clause that cannot stand alone), the conjugated verb goes to the **end**. The relative clause is separated by **commas** and usually comes directly after the noun it describes.
+
+If the main clause goes on afterwards, it continues with its verb right after the second comma.
+`,
+      examples: [
+        { de: 'Die Frau, der ich geholfen habe, ist meine Tante.', en: 'The woman I helped is my aunt. (habe at the end, then ist)' },
+        { de: 'Ich kenne die Nachbarn, denen das Haus gehört.', en: 'I know the neighbours who own the house.' },
+      ],
+    },
+    {
+      title: 'You may also see dessen and deren',
+      text: `
+German also has a relative pronoun for **whose**, the Genitive: **dessen** (masculine and neuter) and **deren** (feminine and plural). The noun after *dessen / deren* has no article.
+
+You will meet this in reading texts at B1; you do not need to produce it yet. If you want to say the same thing, a second sentence is fine: *Sein Auto ist kaputt. Er fährt mit dem Bus.*
+`,
+      examples: [
+        { de: 'Der Freund, dessen Auto kaputt ist, fährt mit dem Bus.', en: 'The friend whose car is broken takes the bus. (dessen = whose)' },
+        { de: 'Die Frau, deren Sohn hier arbeitet, ist nett.', en: 'The woman whose son works here is nice. (deren = whose, feminine)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a2-23-relative-clauses-nom-acc', note: 'The Nominative and Accusative relative pronouns and the basic word order come from there.' },
     { topicId: 'a1-26-dative-verbs', note: 'helfen, danken, gefallen, gehören … force the Dative pronoun dem / der / denen.' },
     { topicId: 'a1-24-dative', note: 'The indirect object is in the Dative, inside relative clauses too.' },
     { topicId: 'a2-14-genitive', note: 'dessen / deren ("whose") belong to the Genitive case; you only need to recognise them at B1.' },
-    { topicId: 'b1-05-relative-clauses-prepositions', note: 'Next step: relative clauses with prepositions, wo, was and wer.' },
+    { topicId: 'b1-05-relative-clauses-prepositions', note: 'Next step: the preposition comes before the pronoun and decides its case (mit dem, für die).' },
+    { topicId: 'b1-05b-relative-wo-was-wer', note: 'wo, was and wer replace the pronoun for places, things in general and "whoever".' },
   ],
   edgeCases: [
     'The Dative plural is **denen**, not *den*: *die Leute, denen ich vertraue*.',

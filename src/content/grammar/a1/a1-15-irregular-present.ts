@@ -4,65 +4,87 @@ const topic: Topic = {
   id: 'a1-15-irregular-present',
   level: 'A1',
   unit: 3,
-  order: 15,
+  order: 17,
   title: 'Irregular present tense: stem-changing verbs',
   germanTerm: 'unregelmäßige Verben',
   tags: ['verbs', 'present tense', 'irregular', 'stem change', 'umlaut'],
   summary: 'Some common verbs change their stem vowel in the du and er / sie / es forms only (fahren → du fährst, sprechen → er spricht); the endings stay regular.',
-  explanation: `
-### What changes, and what does not
+  steps: [
+    {
+      title: 'Only du and er change',
+      text: `
+Some frequent verbs are **irregular** (*unregelmäßig*): the vowel in the **stem** (the verb without -en) changes. The **endings** stay regular, and only **du** and **er / sie / es** change.
 
-A group of frequent verbs is called **irregular** (*unregelmäßig*) or **stem-changing**. The name sounds worse than the reality: the **endings** are exactly the regular ones (-e, -st, -t, -en, -t, -en). Only the **vowel in the stem** changes, and only in **two** forms: **du** and **er / sie / es**.
-
-| | sprechen (to speak) | fahren (to drive) |
+| | sprechen | fahren |
 |---|---|---|
-| ich | sprech**e** | fahr**e** |
-| du | **sprich**st | **fähr**st |
-| er / sie / es | **sprich**t | **fähr**t |
-| wir | sprech**en** | fahr**en** |
-| ihr | sprech**t** | fahr**t** |
-| sie / Sie | sprech**en** | fahr**en** |
+| ich | spreche | fahre |
+| du | **sprichst** | **fährst** |
+| er / sie / es | **spricht** | **fährt** |
+| wir | sprechen | fahren |
+| ihr | sprecht | fahrt |
+| sie / Sie | sprechen | fahren |
 
-*ich, wir, ihr, sie* always keep the dictionary vowel. If you remember "**du and er change, the rest stay**", you have the whole rule.
-
-### The three kinds of change
-
-| change | verbs | du / er forms |
-|---|---|---|
-| **e → i** | sprechen, essen, geben, nehmen, helfen, treffen, vergessen, werfen | du sprichst / er spricht, du isst / er isst, du gibst / er gibt, du **nimmst** / er **nimmt**, du hilfst / er hilft, du triffst / er trifft |
-| **e → ie** | lesen, sehen, empfehlen | du liest / er liest, du siehst / er sieht, er empfiehlt |
-| **a → ä** | fahren, schlafen, tragen, waschen, laufen (au → äu), fallen, fangen, halten, lassen | du fährst / er fährt, du schläfst / er schläft, du trägst / er trägt, du wäschst / er wäscht, du läufst / er läuft, er hält |
-
-These lists cover almost all A1 stem-changers. Only verbs with **e** or **a** (and **au**) in the stem can change; a verb like *kommen* or *trinken* is safe.
-
-### Spelling details
-
-- **nehmen** changes more than the vowel: *du nimmst, er nimmt* (the *h* goes, the *m* doubles).
-- Stems that end in **-s, -ss, -ß** take only *-t* for du: *du liest* (lesen), *du isst* (essen). So *du isst* and *er isst* look the same.
-- **halten** and **raten** end in -t, but in the changed forms they do **not** add the extra *-e-*: *er hält* (not *hältet*), *du hältst*.
-- **wissen** (to know a fact) is a special case: *ich weiß, du weißt, er weiß, wir wissen, ihr wisst, sie wissen*. The singular looks like a different verb.
-
-### Which verbs are irregular?
-
-There is no way to see it from the infinitive: *fahren* changes, *machen* does not; *sprechen* changes, *lernen* does not. Dictionaries mark the change, often as *fahren (fährt)* or *sprechen (spricht)*. The **er form** is the one to memorise with each new verb; the du form follows from it (*er fährt → du fährst*).
-
-### The imperative preview
-
-The *e → i / ie* change also appears when you give an order to one friend: *Sprich lauter! Lies das! Nimm das!* The *a → ä* change does **not**: *Fahr vorsichtig!* This comes back in the imperative topic.
-
-### Why it matters
-
-These are among the most frequent verbs in the language: eating, sleeping, reading, speaking, driving, giving, taking. Using *er fahrt* or *du sprechst* is understood but sounds very foreign, and the same verbs are irregular again in the past tense. Memorise the *er* form of each one as you meet it.
+Rule: **du and er change, the rest stay**.
 `,
-  examples: [
-    { de: 'Ich spreche Deutsch, und du sprichst Englisch.', en: 'I speak German, and you speak English. (e → i only in du)' },
-    { de: 'Er fährt nach Hamburg.', en: 'He drives to Hamburg. (a → ä)' },
-    { de: 'Sie liest ein Buch.', en: 'She reads a book. (e → ie)' },
-    { de: 'Was isst du gern?', en: 'What do you like to eat? (essen → isst)' },
-    { de: 'Er nimmt den Bus.', en: 'He takes the bus. (nehmen → nimmt, with spelling change)' },
-    { de: 'Das Kind schläft.', en: 'The child is sleeping. (schlafen → schläft)' },
-    { de: 'Wir fahren und ihr fahrt auch.', en: 'We drive and you (all) drive too. (wir and ihr keep the vowel)' },
-    { de: 'Ich weiß nicht.', en: 'I don\'t know. (wissen: weiß in the singular)' },
+      examples: [
+        { de: 'Ich spreche Deutsch, und du sprichst Englisch.', en: 'I speak German, and you speak English. (e → i only in du)' },
+        { de: 'Er fährt nach Hamburg.', en: 'He drives to Hamburg. (a → ä)' },
+        { de: 'Wir fahren und ihr fahrt auch.', en: 'We drive and you all drive too. (wir and ihr keep the vowel)' },
+      ],
+    },
+    {
+      title: 'e → i: sprechen, essen, geben, nehmen',
+      text: `
+The first group changes **e → i**: *sprechen, essen, geben, nehmen, helfen, treffen, vergessen*.
+
+One verb changes more than the vowel: **nehmen** → *du nimmst, er nimmt*. The *h* goes and the *m* doubles.
+`,
+      examples: [
+        { de: 'Was isst du gern?', en: 'What do you like to eat? (essen → isst)' },
+        { de: 'Er nimmt den Bus.', en: 'He takes the bus. (nehmen → nimmt, h gone, mm)' },
+        { de: 'Sie gibt mir das Buch.', en: 'She gives me the book. (geben → gibt)' },
+        { de: 'Hilfst du mir?', en: 'Are you helping me? (helfen → hilfst)' },
+      ],
+    },
+    {
+      title: 'e → ie: lesen, sehen',
+      text: `
+A small group changes **e → ie**: *lesen, sehen, empfehlen*.
+
+Spelling note: when the stem ends in **-s, -ss** or **-ß**, the du form adds only **-t**, not *-st*. So *du liest* and *er liest* look the same, and so do *du isst* and *er isst*.
+`,
+      examples: [
+        { de: 'Sie liest ein Buch.', en: 'She reads a book. (lesen → liest)' },
+        { de: 'Siehst du den Film?', en: 'Are you watching the film? (sehen → siehst)' },
+        { de: 'Du liest sehr schnell.', en: 'You read very fast. (stem in -s: du liest, not liesst)' },
+      ],
+    },
+    {
+      title: 'a → ä: fahren, schlafen, tragen',
+      text: `
+The biggest group changes **a → ä**: *fahren, schlafen, tragen, waschen, fallen, halten, lassen*. **laufen** does the same with **au → äu**: *er läuft*.
+
+Spelling note: **halten** ends in -t, but the changed forms do **not** add an extra *-e-*: *du hältst, er hält* (not *hältet*).
+`,
+      examples: [
+        { de: 'Das Kind schläft.', en: 'The child is sleeping. (schlafen → schläft)' },
+        { de: 'Er läuft sehr schnell.', en: 'He runs very fast. (au → äu)' },
+        { de: 'Der Bus hält hier.', en: 'The bus stops here. (halten → hält, no extra -e-)' },
+      ],
+    },
+    {
+      title: 'wissen, and how to spot the rest',
+      text: `
+**wissen** (to know a fact) is special: the whole singular changes. *ich weiß, du weißt, er weiß*, then regular *wir wissen, ihr wisst, sie wissen*.
+
+You cannot see from the infinitive whether a verb changes: *fahren* does, *machen* does not. Dictionaries show it as *fahren (fährt)*. So learn the **er form** with each new verb; the du form follows from it.
+`,
+      examples: [
+        { de: 'Ich weiß nicht.', en: "I don't know. (wissen: weiß in the singular)" },
+        { de: 'Weißt du das?', en: 'Do you know that? (du weißt)' },
+        { de: 'Er lernt Deutsch und macht Hausaufgaben.', en: 'He learns German and does homework. (lernen, machen: regular)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-05-present-tense-regular', note: 'The endings are the regular ones; only the stem vowel is new.' },

@@ -4,85 +4,89 @@ const topic: Topic = {
   id: 'b1-07-passive-modals-perfekt',
   level: 'B1',
   unit: 3,
-  order: 7,
+  order: 9,
   title: 'Passive with modal verbs and in the Perfekt',
   germanTerm: 'Passiv mit Modalverben',
   tags: ['passive', 'modal verbs', 'Perfekt', 'werden', 'word order'],
   summary: 'With a modal the passive ends in Partizip II + werden (muss repariert werden); in the Perfekt the passive is ist + Partizip II + worden.',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'Two more passive forms',
+      text: `
+You can say *Das Auto wird repariert* and *Das Auto wurde repariert*. Real texts need two more forms:
 
-You can now say *Das Auto wird repariert* and *Das Auto wurde repariert*. Two more forms are needed for real texts:
-
-- with a **modal verb**: Das Auto **muss** repariert **werden**. – *The car **must be** repaired.*
-- in the **Perfekt**: Das Auto **ist** repariert **worden**. – *The car **has been** repaired.*
+- with a **modal verb** (müssen, können, dürfen, sollen): Das Auto **muss** repariert **werden**. – must be repaired
+- in the **Perfekt** (the spoken past): Das Auto **ist** repariert **worden**. – has been repaired
 
 Both use pieces you already know. The only new word is **worden**.
+`,
+      examples: [
+        { de: 'Das Auto muss repariert werden.', en: 'The car must be repaired. (modal + Partizip II + werden)' },
+        { de: 'Das Auto ist repariert worden.', en: 'The car has been repaired. (ist + Partizip II + worden)' },
+      ],
+    },
+    {
+      title: 'Modal in position two, werden at the end',
+      text: `
+The modal verb is conjugated in position two, as always. At the end of the sentence stand **Partizip II + werden**, with werden in the infinitive (the dictionary form). The pattern is the same for every modal.
+`,
+      examples: [
+        { de: 'Die Rechnung muss bis Freitag bezahlt werden.', en: 'The bill has to be paid by Friday.' },
+        { de: 'Das Fenster kann nicht geöffnet werden.', en: 'The window cannot be opened.' },
+        { de: 'Hier darf nicht geparkt werden.', en: 'Parking is not allowed here.' },
+        { de: 'Der Text soll übersetzt werden.', en: 'The text is supposed to be translated.' },
+      ],
+    },
+    {
+      title: 'The modal in the past and in dass-clauses',
+      text: `
+For the past, put the **modal** into the Präteritum: *musste, konnte, durfte, sollte*. The end of the sentence does not change: *Das Auto **musste** repariert **werden**.*
 
-### Passive with modal verbs
-
-The modal verb is conjugated in position two. At the end of the sentence stand **Partizip II + werden** (werden in the infinitive):
-
-| tense | example |
-|---|---|
-| present | Das Auto **muss** repariert **werden**. |
-| Präteritum | Das Auto **musste** repariert **werden**. |
-
-The pattern is the same for every modal:
-
-- Die Rechnung **muss** bis Freitag bezahlt **werden**. – *has to be paid*
-- Das Fenster **kann** nicht geöffnet **werden**. – *cannot be opened*
-- Hier **darf** nicht geparkt **werden**. – *parking is not allowed*
-- Der Text **soll** übersetzt **werden**. – *is supposed to be translated*
-
-In a **subordinate clause** the whole block moves to the end, and the modal comes last: *Ich glaube, dass die Rechnung **bezahlt werden muss**.*
-
-### Passive in the Perfekt
-
-The Perfekt of the passive is built with **sein + Partizip II + worden**:
+In a **subordinate clause** (after *dass, weil, wenn*) the whole verb block moves to the end and the modal comes last: *…, dass die Rechnung bezahlt werden **muss**.*
+`,
+      examples: [
+        { de: 'Die Rechnung musste bis Freitag bezahlt werden.', en: 'The bill had to be paid by Friday. (musste)' },
+        { de: 'Die Tür konnte nicht geöffnet werden.', en: 'The door could not be opened.' },
+        { de: 'Ich glaube, dass die Rechnung bezahlt werden muss.', en: 'I think that the bill has to be paid. (modal last)' },
+      ],
+    },
+    {
+      title: 'The Perfekt passive: ist … worden',
+      text: `
+The Perfekt of the passive is **sein + Partizip II + worden**. The helper is **sein**, not *haben*, and *worden* stands at the very end.
 
 | | Präteritum passive | Perfekt passive |
 |---|---|---|
 | ich | wurde gefragt | **bin** gefragt **worden** |
-| du | wurdest gefragt | **bist** gefragt **worden** |
 | er / sie / es | wurde gefragt | **ist** gefragt **worden** |
-| wir | wurden gefragt | **sind** gefragt **worden** |
-| ihr | wurdet gefragt | **seid** gefragt **worden** |
-| sie / Sie | wurden gefragt | **sind** gefragt **worden** |
-
-- Das Haus **ist** 1990 gebaut **worden**. – *The house was built in 1990.*
-- Die Kinder **sind** vom Arzt untersucht **worden**. – *The children have been examined by the doctor.*
-
-Two things to notice:
-
-1. The helper is **sein**, not *haben*.
-2. The participle of *werden* is **worden** (not *geworden*) when it is the passive helper. *Geworden* means "became": *Er ist Arzt **geworden**.*
-
-Both *wurde gebaut* and *ist gebaut worden* mean the same. The Präteritum is more common in writing, the Perfekt in speech. If you are unsure, *wurde gebaut* is always a safe choice.
-
-### You may also see …
-
-Very rarely a text combines a modal and the passive in the Perfekt: *Das Problem **hat** gelöst **werden müssen**.* (*The problem had to be solved.*) You do not need this form. Say it with the Präteritum instead: *Das Problem **musste** gelöst **werden**.*
-
-### Why it matters
-
-*Muss gemacht werden* and *ist gemacht worden* are among the most frequent structures in instructions, reports and news. Recognising **worden** instantly tells you "this is a Perfekt passive" when reading, and the modal passive lets you say what has to be done without naming anyone, which is exactly the tone of formal emails at B1.
+| wir / sie / Sie | wurden gefragt | **sind** gefragt **worden** |
 `,
-  examples: [
-    { de: 'Das Fenster muss repariert werden.', en: 'The window must be repaired. (modal + Partizip II + werden)' },
-    { de: 'Die Rechnung musste bis Freitag bezahlt werden.', en: 'The bill had to be paid by Friday. (modal in the Präteritum)' },
-    { de: 'Die Tür konnte nicht geöffnet werden.', en: 'The door could not be opened.' },
-    { de: 'Ich glaube, dass die Rechnung bezahlt werden muss.', en: 'I think that the bill has to be paid. (modal last in the subordinate clause)' },
-    { de: 'Das Haus ist 1990 gebaut worden.', en: 'The house was built in 1990. (Perfekt passive: ist … worden)' },
-    { de: 'Die Kinder sind vom Arzt untersucht worden.', en: 'The children have been examined by the doctor.' },
-    { de: 'Das Problem musste gelöst werden.', en: 'The problem had to be solved. (modal in the Präteritum: the easy way to say it)' },
+      examples: [
+        { de: 'Das Haus ist 1990 gebaut worden.', en: 'The house was built in 1990. (ist … worden)' },
+        { de: 'Die Kinder sind vom Arzt untersucht worden.', en: 'The children have been examined by the doctor. (plural: sind)' },
+        { de: 'Ich bin nach dem Weg gefragt worden.', en: 'I was asked the way. (ich: bin)' },
+      ],
+    },
+    {
+      title: 'worden, not geworden; wurde is safe',
+      text: `
+The participle of werden is **worden** (no ge-) when it is the passive helper. **Geworden** means "became": *Er ist Arzt **geworden**.*
+
+*Wurde gebaut* and *ist gebaut worden* mean the same. The Präteritum is more common in writing, the Perfekt in speech. You mainly need to **recognise** *ist … worden* when reading. In your own sentences, **wurde** is always a safe choice.
+`,
+      examples: [
+        { de: 'Das Haus ist 1990 gebaut worden.', en: 'The house was built in 1990. (passive: worden)' },
+        { de: 'Er ist Arzt geworden.', en: 'He became a doctor. (geworden = became)' },
+        { de: 'Das Haus wurde 1990 gebaut.', en: 'The house was built in 1990. (the safe choice: wurde)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'b1-06-passive-present-past', note: 'The basic passive with werden; this topic adds modals and the Perfekt.' },
     { topicId: 'a1-17-modal-verbs', note: 'The modal verb is conjugated as usual; only the end of the sentence changes.' },
     { topicId: 'b1-03-modals-perfekt', note: 'As with modals in the Perfekt, the Präteritum (musste … werden) is the form to use yourself.' },
     { topicId: 'a1-32-perfekt-sein', note: 'The Perfekt passive takes sein, like the verbs of movement.' },
-    { topicId: 'b1-08-zustandspassiv-alternatives', note: 'ist repariert (state) vs ist repariert worden (completed process) is explained there.' },
+    { topicId: 'b1-08-zustandspassiv-alternatives', note: 'ist repariert (state) vs ist repariert worden (completed action) is explained there.' },
   ],
   edgeCases: [
     'Perfekt passive = **ist … worden**, not *ist … geworden*. *Geworden* means "became": *Sie ist müde geworden.*',
@@ -90,6 +94,7 @@ Very rarely a text combines a modal and the passive in the Perfekt: *Das Problem
     'With a modal, **werden** stays in the infinitive at the end: *muss repariert **werden***, not *muss repariert wird*.',
     'In a subordinate clause the modal goes last: *…, dass es repariert werden **muss***.',
     'Do not mix the state passive with the Perfekt passive: *Die Tür ist geschlossen* (it is closed now) vs *Die Tür ist geschlossen worden* (someone closed it).',
+    'Very rarely you will read a modal and the passive in the Perfekt: *Das Problem **hat** gelöst **werden müssen**.* You do not need it; say *Das Problem musste gelöst werden.*',
   ],
   exercises: [
     {

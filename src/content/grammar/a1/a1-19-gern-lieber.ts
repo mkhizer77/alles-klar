@@ -4,82 +4,87 @@ const topic: Topic = {
   id: 'a1-19-gern-lieber',
   level: 'A1',
   unit: 3,
-  order: 19,
+  order: 23,
   title: 'gern, lieber, am liebsten: likes and preferences',
   germanTerm: 'Vorlieben',
   tags: ['adverbs', 'likes', 'preferences', 'gern', 'mögen'],
   summary: 'gern is the little word you add to a verb to say you like doing something; lieber and am liebsten turn it into "prefer" and "like most of all".',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'verb + gern = I like doing it',
+      text: `
+In English you say *I like swimming*. German has no verb for "like doing". It keeps the normal verb and adds the small word **gern** (gladly, with pleasure). *gern* is an **adverb** (*Adverb*, a word that says how you do something).
 
-In English you say *I like swimming* or *I like to swim*. German does not build this with a verb meaning "like". Instead it keeps the normal verb and adds the small word **gern** (gladly, with pleasure). *Gern* is an **adverb** (*Adverb*), a word that describes how you do something.
-
-- Ich schwimme **gern**. – *I like swimming.* (literally: I swim gladly.)
-- Er kocht **gern**. – *He likes cooking.*
-- Wir reisen **gern**. – *We like travelling.*
-
-So the recipe is simple: **subject + verb + gern**. The verb stays exactly as it is.
-
-### Where gern goes
-
-*Gern* comes **after the verb**. If there is an object (a thing), *gern* usually stands **before** that object:
-
-- Ich trinke **gern** Kaffee. – *I like drinking coffee.*
-- Sie liest **gern** Bücher. – *She likes reading books.*
-
-To say you do **not** like something, put **nicht** in front: **nicht gern**.
-
-- Ich stehe **nicht gern** früh auf. – *I don't like getting up early.*
-
-### The three steps: gern, lieber, am liebsten
-
-*Gern* has two more forms. They work like *good – better – best* in English.
-
-| form | meaning | example |
-|---|---|---|
-| **gern** | like (doing) | Ich spiele **gern** Fußball. |
-| **lieber** | prefer, would rather | Ich spiele **lieber** Tennis. |
-| **am liebsten** | like most of all | Ich spiele **am liebsten** Schach. |
-
-To compare two things with *lieber*, use **als** (than):
-
-- Ich trinke **lieber** Tee **als** Kaffee. – *I prefer tea to coffee.*
-- Wir fahren **lieber** mit dem Zug **als** mit dem Bus. – *We'd rather take the train than the bus.*
-
-A question with *lieber* often offers two choices with **oder**:
-
-- Trinkst du **lieber** Tee **oder** Kaffee? – *Do you prefer tea or coffee?*
-
-### gern vs mögen vs möchten
-
-Learners mix up three words that all look like "like". Keep them apart like this:
-
-| word | use with | example |
-|---|---|---|
-| **gern** | a **verb** (an activity) | Ich tanze **gern**. |
-| **mögen** (ich mag) | a **noun** (a thing or person) | Ich **mag** Musik. Ich **mag** dich. |
-| **möchten** (ich möchte) | a wish right now: "would like" | Ich **möchte** einen Kaffee, bitte. |
-
-*Mögen* is irregular: ich mag, du magst, er/sie/es mag, wir mögen, ihr mögt, sie/Sie mögen. *Möchten* is polite "want", not "like". *Ich möchte Kaffee* means you want one now; *Ich mag Kaffee* means you like coffee in general.
-
-### Why it matters
-
-Talking about hobbies, food and free time is one of the first things you do in any conversation, and it is a fixed part of A1 speaking tests: *Was machst du gern in deiner Freizeit?* With just *gern*, *lieber*, *am liebsten* and *mögen* you can describe all your likes and dislikes without learning any new verbs. *Lieber* also comes back later as the comparative of *gern*, so you are already learning a piece of the comparison system.
-
-Note: *gern* and *gerne* are both correct. *Gerne* is just a slightly softer, more spoken variant. On its own, **Gern!** or **Gerne!** means *Gladly!* or *You're welcome!*
+So the recipe is: **subject + verb + gern**. The verb stays exactly as it is.
 `,
-  examples: [
-    { de: 'Ich spiele gern Gitarre.', en: 'I like playing the guitar. (verb + gern)' },
-    { de: 'Isst du gern Pizza?', en: 'Do you like eating pizza?' },
-    { de: 'Er geht nicht gern ins Kino.', en: 'He does not like going to the cinema. (nicht gern)' },
-    { de: 'Ich trinke lieber Wasser als Cola.', en: 'I prefer water to cola. (lieber ... als)' },
-    { de: 'Am liebsten schlafe ich lange.', en: 'Most of all I like sleeping in. (am liebsten first, verb second)' },
-    { de: 'Wir mögen unsere Nachbarn.', en: 'We like our neighbours. (mögen + noun)' },
-    { de: 'Fährst du lieber Rad oder gehst du lieber zu Fuß?', en: 'Would you rather cycle or walk?' },
+      examples: [
+        { de: 'Ich schwimme gern.', en: 'I like swimming. (literally: I swim gladly)' },
+        { de: 'Er kocht gern.', en: 'He likes cooking.' },
+        { de: 'Wir reisen gern.', en: 'We like travelling.' },
+      ],
+    },
+    {
+      title: 'Where gern goes',
+      text: `
+*gern* comes **after the verb**. If there is an object (a thing), *gern* usually stands **before** that object.
+
+To say you do **not** like something, put *nicht* in front: **nicht gern**.
+`,
+      examples: [
+        { de: 'Ich trinke gern Kaffee.', en: 'I like drinking coffee. (gern before the object)' },
+        { de: 'Sie liest gern Bücher.', en: 'She likes reading books.' },
+        { de: 'Ich stehe nicht gern früh auf.', en: "I don't like getting up early. (nicht gern)" },
+      ],
+    },
+    {
+      title: 'lieber: prefer',
+      text: `
+*gern* has two more forms, like *good – better – best* in English. The first is **lieber** (prefer, would rather).
+
+To compare two things, use **als** (than): *lieber Tee **als** Kaffee*. A question with *lieber* often offers two choices with **oder** (or).
+`,
+      examples: [
+        { de: 'Ich spiele lieber Tennis.', en: 'I prefer playing tennis.' },
+        { de: 'Ich trinke lieber Tee als Kaffee.', en: 'I prefer tea to coffee. (lieber … als)' },
+        { de: 'Trinkst du lieber Tee oder Kaffee?', en: 'Do you prefer tea or coffee? (lieber … oder)' },
+      ],
+    },
+    {
+      title: 'am liebsten: most of all',
+      text: `
+The top step is **am liebsten** (like most of all). The three steps together:
+
+| form | meaning |
+|---|---|
+| **gern** | like (doing) |
+| **lieber** | prefer, would rather |
+| **am liebsten** | like most of all |
+
+*am liebsten* can start the sentence; then the verb still comes second.
+`,
+      examples: [
+        { de: 'Ich spiele am liebsten Schach.', en: 'Most of all I like playing chess.' },
+        { de: 'Am liebsten schlafe ich lange.', en: 'Most of all I like sleeping in. (am liebsten first, verb second)' },
+        { de: 'Was isst du am liebsten?', en: 'What do you like eating most?' },
+      ],
+    },
+    {
+      title: 'gern, mögen and möchten',
+      text: `
+Three words look like "like". Keep them apart: **gern** goes with a **verb** (an activity). **mögen** (*ich mag*) goes with a **noun** (a thing or person). **möchten** (*ich möchte*) is a wish right now: "would like".
+
+*mögen* is irregular: *ich mag, du magst, er mag, wir mögen, ihr mögt, sie mögen*.
+`,
+      examples: [
+        { de: 'Ich tanze gern.', en: 'I like dancing. (gern + verb)' },
+        { de: 'Ich mag Musik.', en: 'I like music. (mögen + noun)' },
+        { de: 'Ich möchte einen Kaffee, bitte.', en: 'I would like a coffee, please. (möchten: a wish now)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-05-present-tense-regular', note: 'gern simply attaches to a normally conjugated present-tense verb.' },
-    { topicId: 'a1-17-modal-verbs', note: 'möchten (would like) is a modal verb; do not confuse it with gern and mögen.' },
+    { topicId: 'a1-17b-modal-verbs-2', note: 'möchten (would like) is a modal verb; do not confuse it with gern and mögen.' },
     { topicId: 'a1-06-verb-second', note: 'When am liebsten or lieber starts the sentence, the verb still stays in second position.' },
     { topicId: 'a1-35-comparative-basics', note: 'gern – lieber – am liebsten is an irregular comparison, like gut – besser – am besten.' },
   ],
@@ -89,6 +94,7 @@ Note: *gern* and *gerne* are both correct. *Gerne* is just a slightly softer, mo
     '**möchten** is a wish, not a like: *Ich möchte ein Eis* = I would like an ice cream (now). *Ich esse gern Eis* = I like ice cream (in general).',
     'The comparative of gern is **lieber**, never *gerner*. The superlative is **am liebsten**, never *am gernsten*.',
     'With a separable verb, gern sits between verb and prefix: *Ich stehe gern früh auf*.',
+    '**gern** and **gerne** are both correct; *gerne* is a softer, more spoken variant. On its own, *Gern!* means "Gladly!" or "You\'re welcome!"',
   ],
   exercises: [
     {

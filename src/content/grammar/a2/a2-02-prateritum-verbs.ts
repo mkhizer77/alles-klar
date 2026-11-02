@@ -9,62 +9,99 @@ const topic: Topic = {
   germanTerm: 'Präteritum',
   tags: ['past tense', 'Präteritum', 'verbs', 'irregular verbs'],
   summary: 'The Präteritum is the one-word past tense (machte, ging, kam) you mostly read in stories and news; regular verbs add -te, and the most common irregular verbs (ging, kam, gab) are worth recognising.',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'The past tense you read',
+      text: `
+The **Präteritum** (the simple past) is a past tense with one word and no helper verb: *ich machte* = I made, *er ging* = he went. You know it from *war, hatte* and the modals (*konnte, musste*).
 
-The **Präteritum** (the simple past) is a past tense with one word and no helper verb: *Ich machte* = *I made / did*, *er ging* = *he went*. You already know it from *war, hatte* and the modal verbs (*konnte, musste …*). This topic shows how the other verbs form it.
-
-At A2 the main job is to **recognise** this tense when you read: novels, newspapers, fairy tales and reports are written in it. When you speak, you keep using the Perfekt (*ich habe gemacht*). So learn the pattern for regular verbs, and learn to recognise the most common irregular forms.
-
-### Regular verbs: add -te
-
-Take the stem (infinitive without *-en*) and add the endings. They are the same endings you used with the modals.
-
-| | machen (stem mach-) | arbeiten (stem arbeit-) |
-|---|---|---|
-| ich | mach**te** | arbeit**ete** |
-| du | mach**test** | arbeit**etest** |
-| er / sie / es | mach**te** | arbeit**ete** |
-| wir | mach**ten** | arbeit**eten** |
-| ihr | mach**tet** | arbeit**etet** |
-| sie / Sie | mach**ten** | arbeit**eten** |
-
-If the stem ends in **-t** or **-d** (*arbeiten, warten, reden, baden*), add an **-e-** before the ending so you can pronounce it: *arbeitete, wartete, redete*.
-
-### Irregular verbs: the vowel changes
-
-Irregular verbs do **not** add *-te*. Instead the vowel in the stem changes: *gehen → ging*, *kommen → kam*. The *ich* and *er / sie / es* forms have **no ending at all** (*ich ging, er ging*); *wir* and *sie* add *-en* (*wir gingen*).
-
-There is no rule for the vowel change; you learn it with the verb, usually as a trio: *gehen – ging – gegangen*. At A2 you do not need to produce all of these. You need to **recognise** the common ones when you read a story:
-
-| infinitive | Präteritum | | infinitive | Präteritum |
-|---|---|---|---|---|
-| sein | war | | sehen | sah |
-| haben | hatte | | geben | gab |
-| werden | wurde | | nehmen | nahm |
-| gehen | ging | | sprechen | sprach |
-| kommen | kam | | essen | aß |
-| fahren | fuhr | | trinken | trank |
-| finden | fand | | schreiben | schrieb |
-| bleiben | blieb | | lesen | las |
-| laufen | lief | | schlafen | schlief |
-
-### A few verbs do both
-
-A small group changes the vowel **and** adds *-te*: *bringen – brachte*, *denken – dachte*, *wissen – wusste*, *kennen – kannte*. Watch out: *kannte* means *knew (a person or place)*, not *could* (*konnte*).
-
-### Why it matters
-
-Once you know the pattern you can follow any German text about the past. A few forms are also used in speech: *war, hatte, wurde, wusste, es gab* (there was). Learn these first. For the rest, start with the table above and add verbs as you meet them in reading texts.
+At A2 your main job is to **recognise** it when you read: novels, newspapers, fairy tales and reports are written in it. When you speak, you keep using the Perfekt (*ich habe gemacht*).
 `,
-  examples: [
-    { de: 'Gestern arbeitete ich bis acht Uhr.', en: 'Yesterday I worked until eight. (stem ends in -t: -ete)' },
-    { de: 'Er ging nach Hause und schlief sofort ein.', en: 'He went home and fell asleep at once. (irregular: ging, schlief)' },
-    { de: 'Wir kauften Brot und Käse.', en: 'We bought bread and cheese. (regular: kauften)' },
-    { de: 'Die Kinder spielten den ganzen Tag im Garten.', en: 'The children played in the garden all day.' },
-    { de: 'Sie schrieb mir einen langen Brief.', en: 'She wrote me a long letter. (schreiben → schrieb)' },
-    { de: 'Ich wusste nichts davon.', en: "I didn't know anything about it. (mixed verb: wusste)" },
-    { de: 'Es gab damals kein Internet.', en: 'There was no internet back then. (geben → gab)' },
+      examples: [
+        { de: 'Er ging nach Hause und schlief sofort ein.', en: 'He went home and fell asleep at once. (ging, schlief)' },
+        { de: 'Wir kauften Brot und Käse.', en: 'We bought bread and cheese. (kauften)' },
+        { de: 'Es gab damals kein Internet.', en: 'There was no internet back then. (gab)' },
+      ],
+    },
+    {
+      title: 'Regular verbs: add -te',
+      text: `
+Take the stem (the infinitive without *-en*) and add **-te** plus the person ending. These are the same endings as the modals.
+
+| |machen|
+|---|---|
+|ich|machte|
+|du|machtest|
+|er, sie, es|machte|
+|wir|machten|
+|ihr|machtet|
+|sie, Sie|machten|
+
+The ich-form and the er-form are the same: *ich machte, er machte*.
+`,
+      examples: [
+        { de: 'Die Kinder spielten den ganzen Tag im Garten.', en: 'The children played in the garden all day. (spiel- + -ten)' },
+        { de: 'Sie lernte Deutsch in Berlin.', en: 'She learned German in Berlin. (lern- + -te)' },
+        { de: 'Ich machte gestern die Hausaufgaben.', en: 'I did the homework yesterday.' },
+      ],
+    },
+    {
+      title: 'Stems in -t or -d: add -e-',
+      text: `
+If the stem ends in **-t** or **-d** (*arbeiten, warten, reden, baden*), put an **-e-** before the ending so you can say it: *arbeit-e-te, wart-e-te, red-e-te*. Without the extra -e- the word cannot be pronounced.
+`,
+      examples: [
+        { de: 'Gestern arbeitete ich bis acht Uhr.', en: 'Yesterday I worked until eight. (arbeit- + -ete)' },
+        { de: 'Wir warteten eine Stunde.', en: 'We waited for an hour. (wart- + -eten)' },
+        { de: 'Er redete sehr lange.', en: 'He talked for a very long time. (red- + -ete)' },
+      ],
+    },
+    {
+      title: 'Irregular verbs: the vowel changes',
+      text: `
+Irregular verbs do **not** add *-te*. The vowel in the stem changes instead: *gehen → ging*, *kommen → kam*. The ich-form and the er-form have **no ending** (*ich ging, er ging*); *wir* and *sie* add *-en* (*wir gingen*).
+
+There is no rule for the vowel. Learn to recognise the common ones:
+
+|infinitive|Präteritum|infinitive|Präteritum|
+|---|---|---|---|
+|gehen|ging|sehen|sah|
+|kommen|kam|geben|gab|
+|fahren|fuhr|nehmen|nahm|
+|bleiben|blieb|essen|aß|
+|schreiben|schrieb|trinken|trank|
+|lesen|las|finden|fand|
+`,
+      examples: [
+        { de: 'Sie schrieb mir einen langen Brief.', en: 'She wrote me a long letter. (schreiben → schrieb)' },
+        { de: 'Wir fuhren nach Berlin.', en: 'We drove to Berlin. (fahren → fuhren)' },
+        { de: 'Er aß einen Apfel und trank Tee.', en: 'He ate an apple and drank tea. (aß, trank: no ending)' },
+      ],
+    },
+    {
+      title: 'A few verbs do both',
+      text: `
+A small group changes the vowel **and** adds *-te*: *bringen → brachte*, *denken → dachte*, *wissen → wusste*, *kennen → kannte*.
+
+Watch out: **kannte** (from *kennen*) means knew a person or place. **konnte** (from *können*) means could.
+`,
+      examples: [
+        { de: 'Ich wusste nichts davon.', en: "I didn't know anything about it. (wissen → wusste)" },
+        { de: 'Sie brachte mir ein Geschenk.', en: 'She brought me a present. (bringen → brachte)' },
+        { de: 'Er kannte den Mann nicht.', en: "He didn't know the man. (kennen → kannte)" },
+      ],
+    },
+    {
+      title: 'Which forms to say, not just read',
+      text: `
+A few Präteritum forms are also normal in speech: **war, hatte, wurde, wusste** and **es gab** (there was). Learn these first and use them when you talk. For all other verbs, start with the table above and add verbs as you meet them in reading texts.
+`,
+      examples: [
+        { de: 'Es gab viele Leute auf der Party.', en: 'There were lots of people at the party. (es gab)' },
+        { de: 'Er wurde Lehrer.', en: 'He became a teacher. (werden → wurde)' },
+        { de: 'Das wusste ich nicht.', en: "I didn't know that. (wusste)" },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-33-war-hatte', note: 'war and hatte are the first two Präteritum forms you learned.' },

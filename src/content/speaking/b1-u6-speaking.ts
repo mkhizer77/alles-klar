@@ -30,7 +30,7 @@ const scenario: SpeakingScenario = {
     { de: 'Das wäre eine gute Maßnahme für den Umweltschutz.', en: 'That would be a good measure for environmental protection.' },
     { de: 'Wie bitte? Was meinen Sie mit …?', en: 'Pardon? What do you mean by …?' },
   ],
-  grammarFocus: ['b1-13-n-declension', 'b1-14-adjectives-as-nouns', 'b1-15-participles-as-adjectives', 'b1-16-adjective-declension-review'],
+  grammarFocus: ['b1-13-n-declension', 'b1-14-adjectives-as-nouns', 'b1-15-participles-as-adjectives', 'b1-15b-partizip-2-adjectives', 'b1-16-adjective-declension-review', 'b1-16b-adjectives-genitive'],
   vocabFocus: ['der Umweltschutz', 'der Abfall', 'die Mülltrennung', 'das Plastik', 'die Verpackung', 'das Recycling', 'die Maßnahme', 'das Bewusstsein', 'wegwerfen', 'recyceln', 'umweltfreundlich', 'schützen'],
   minTurns: 7,
 };

@@ -4,65 +4,71 @@ const topic: Topic = {
   id: 'a1-11-nominative',
   level: 'A1',
   unit: 2,
-  order: 11,
+  order: 12,
   title: 'The Nominative case',
   germanTerm: 'Nominativ',
   tags: ['cases', 'nouns', 'articles', 'subject'],
   summary: 'The Nominative is the "subject" case: the form a noun takes when it is the one doing the action, or when it comes after sein, werden or bleiben.',
-  explanation: `
-### What a "case" is
-
-German nouns change their article (and sometimes their ending) depending on the **job** they do in a sentence. Each job has a name. These names are the **cases** (*Fälle*). German has four: Nominative, Accusative, Dative and Genitive.
-
-Think of a case as a **label** that tells you "this noun is the subject", "this noun is the thing being acted on", and so on. English mostly shows this with word order. German shows it with the article.
-
-### The Nominative = the subject
+  steps: [
+    {
+      title: 'The Nominative marks the subject',
+      text: `
+German nouns change their article depending on the **job** they do in a sentence. Each job has a name. These names are the **cases** (*Fälle*). Think of a case as a label: "this noun is the subject", "this noun is the thing being acted on".
 
 The **Nominative** (*Nominativ*) is the case of the **subject**: the person or thing that *does* the verb.
+`,
+      examples: [
+        { de: 'Der Hund schläft.', en: 'The dog sleeps. (who sleeps? the dog: subject)' },
+        { de: 'Die Frau liest.', en: 'The woman reads.' },
+        { de: 'Das Kind spielt.', en: 'The child plays.' },
+      ],
+    },
+    {
+      title: 'Find the subject with wer? or was?',
+      text: `
+To find the subject, ask **wer?** (who?) or **was?** (what?) in front of the verb. The answer is in the Nominative.
 
-- **Der Hund** schläft. – *The dog sleeps.* (Who sleeps? The dog.)
-- **Die Frau** liest. – *The woman reads.*
-- **Das Kind** spielt. – *The child plays.*
-
-To find the subject, ask **wer?** (who?) or **was?** (what?) before the verb. The answer is in the Nominative.
-
-### The articles in the Nominative
-
-This is the "dictionary form" of a noun. It is the form you learn a word in, and the form you see in a word list.
+*Der Mann trinkt Kaffee.* Who drinks? *Der Mann.* So *der Mann* is the subject.
+`,
+      examples: [
+        { de: 'Wer kommt heute?', en: 'Who is coming today? (wer asks for the subject)' },
+        { de: 'Was ist das?', en: 'What is that?' },
+        { de: 'Der Mann trinkt Kaffee.', en: 'The man drinks coffee. (who drinks? der Mann)' },
+      ],
+    },
+    {
+      title: 'The articles in the Nominative',
+      text: `
+This is the **dictionary form** of a noun: the form you learn a word in.
 
 | | masculine | feminine | neuter | plural |
 |---|---|---|---|---|
-| definite (the) | **der** Mann | **die** Frau | **das** Kind | **die** Kinder |
-| indefinite (a) | **ein** Mann | **eine** Frau | **ein** Kind | – Kinder |
-| negative (no) | **kein** Mann | **keine** Frau | **kein** Kind | **keine** Kinder |
+| the | **der** Mann | **die** Frau | **das** Kind | **die** Kinder |
+| a | **ein** Mann | **eine** Frau | **ein** Kind | – Kinder |
+| no | **kein** Mann | **keine** Frau | **kein** Kind | **keine** Kinder |
 
-Notice: masculine and neuter both use **ein**. Feminine and plural both use **die / -e**. These patterns come back in every other case, so it is worth knowing them well now.
-
-### The Nominative after sein, werden, bleiben
-
-A few verbs do not *do* anything to an object; they just say what the subject **is**. After **sein** (to be), **werden** (to become) and **bleiben** (to stay), the noun after the verb is *also* in the Nominative. Both sides of the verb describe the same person or thing.
-
-- Er ist **ein Lehrer**. – *He is a teacher.*
-- Das wird **ein schöner Tag**. – *This is becoming a nice day.*
-- Sie bleibt **meine Freundin**. – *She stays my friend.*
-
-### Why it matters
-
-Almost everything else in German grammar starts from the Nominative:
-
-1. The verb ending depends on the Nominative subject (*ich geh-e*, *du geh-st*).
-2. The other cases are described as "changes" from the Nominative (*der* → *den* in the Accusative).
-3. Adjective endings (later) are built on the same der / die / das pattern.
-
-So when you learn a noun, always learn it **with its Nominative article**: not *Hund* but **der Hund**.
+Notice: masculine and neuter both use **ein**. Feminine and plural both end in **-e**.
 `,
-  examples: [
-    { de: 'Der Mann trinkt Kaffee.', en: 'The man drinks coffee. (der Mann = subject)' },
-    { de: 'Eine Frau wartet.', en: 'A woman is waiting.' },
-    { de: 'Das Auto ist neu.', en: 'The car is new.' },
-    { de: 'Die Kinder spielen im Garten.', en: 'The children play in the garden. (plural subject)' },
-    { de: 'Mein Bruder ist ein Student.', en: 'My brother is a student. (both Nominative, because of ist)' },
-    { de: 'Wer kommt heute?', en: 'Who is coming today? (wer asks for the Nominative)' },
+      examples: [
+        { de: 'Eine Frau wartet.', en: 'A woman is waiting. (feminine: eine)' },
+        { de: 'Ein Kind spielt.', en: 'A child is playing. (neuter: ein, like masculine)' },
+        { de: 'Die Kinder spielen im Garten.', en: 'The children play in the garden. (plural: die)' },
+        { de: 'Kinder spielen gern.', en: 'Children like playing. (plural: no ein)' },
+      ],
+    },
+    {
+      title: 'After sein, werden and bleiben',
+      text: `
+A few verbs do not *do* anything to an object. They only say what the subject **is**. After **sein** (to be), **werden** (to become) and **bleiben** (to stay) the noun after the verb is *also* in the Nominative. Both sides of the verb describe the same person or thing.
+
+So after *ist* you say **ein**, never *einen*.
+`,
+      examples: [
+        { de: 'Er ist ein Lehrer.', en: 'He is a teacher. (both sides Nominative)' },
+        { de: 'Das ist ein Hund.', en: 'That is a dog. (ein, not einen)' },
+        { de: 'Sie bleibt meine Freundin.', en: 'She stays my friend.' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-09-gender-articles', note: 'The Nominative articles der / die / das are the ones you learn with each noun.' },

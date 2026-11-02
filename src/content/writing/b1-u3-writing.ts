@@ -23,7 +23,7 @@ const task: WritingTask = {
     { de: 'deshalb / außerdem', en: 'therefore / in addition', role: 'connector' },
     { de: 'Bitte teilt diesen Beitrag!', en: 'Please share this post!', role: 'closing' },
   ],
-  grammarFocus: ['b1-06-passive-present-past', 'b1-07-passive-modals-perfekt', 'b1-08-zustandspassiv-alternatives'],
+  grammarFocus: ['b1-06-passive-present-past', 'b1-07-passive-modals-perfekt', 'b1-08-zustandspassiv-alternatives', 'b1-08b-passive-alternatives'],
   mustUse: [
     { label: 'a form of werden for the passive (wird, werden, wurde, wurden, worden)', pattern: '\\b(wird|werden|wurde|wurden|worden)\\b', min: 4 },
     { label: 'a participle directly followed by werden/wurde/worden (geschlossen werden, informiert wurden)', pattern: '(?<![a-zäöü])([\\wäöüß]*ge[\\wäöüß]+|[\\wäöüß]+iert) (wird|werden|wurde|wurden|worden)\\b', min: 2 },

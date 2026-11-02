@@ -4,83 +4,90 @@ const topic: Topic = {
   id: 'a1-35-comparative-basics',
   level: 'A1',
   unit: 8,
-  order: 35,
+  order: 39,
   title: 'Comparing: comparative basics and wie / als',
   germanTerm: 'Komparativ',
   tags: ['adjectives', 'comparison', 'comparative', 'als', 'wie'],
   summary: 'To compare, add -er to the adjective (and often an umlaut) and use als for "than"; for "as … as" use so … wie.',
-  explanation: `
-### What it is
-
-The **comparative** (*Komparativ*) is the form of an adjective that says *more*: *bigger, faster, more expensive*. German builds it with one ending, **-er**, on every adjective, short or long. There is no *more* word in front:
-
-- schnell → schnell**er** (faster)
-- klein → klein**er** (smaller)
-- interessant → interessant**er** (more interesting, not *mehr interessant*)
-
-### Two ways to compare
-
-**1. Not equal: comparative + als** (than)
-
-- Berlin ist **größer als** München. – *Berlin is bigger than Munich.*
-- Der Zug ist **schneller als** der Bus.
-- Ich bin **älter als** mein Bruder.
-
-**2. Equal: so + adjective + wie** (as … as)
-
-- Anna ist **so alt wie** Tom. – *Anna is as old as Tom.*
-- Das Buch ist **nicht so teuer wie** der Film. – *The book is not as expensive as the film.*
-
-The pair is the biggest source of mistakes: **als** goes with the *-er* form, **wie** goes with *so*. Never *größer wie*.
-
-### The umlaut
-
-Many short adjectives with **a, o, u** add an umlaut in the comparative:
-
-| adjective | comparative | meaning |
-|---|---|---|
-| alt | **ä**lter | older |
-| jung | j**ü**nger | younger |
-| groß | gr**ö**ßer | bigger |
-| lang | l**ä**nger | longer |
-| kurz | k**ü**rzer | shorter |
-| warm | w**ä**rmer | warmer |
-| kalt | k**ä**lter | colder |
-| stark | st**ä**rker | stronger |
-
-Not all do: *schnell → schneller*, *klein → kleiner*, *laut → lauter*, *langsam → langsamer*. Learn the umlaut ones as a short list; the most common A1 ones are in the table.
-
-### Irregular comparatives
-
-A few very common words have their own forms. They are worth learning first because you use them every day:
-
-| base | comparative | meaning |
-|---|---|---|
-| gut | **besser** | better |
-| viel | **mehr** | more |
-| gern | **lieber** | rather, prefer |
-| hoch | **höher** | higher |
-| nah | **näher** | nearer |
-| teuer | **teurer** | more expensive (drops an e) |
-| dunkel | **dunkler** | darker (drops an e) |
-
-### The superlative, briefly
-
-To say *the most*, use **am + adjective + -sten**: *am schnellsten, am größten, am besten*. This form is used after a verb: *Der ICE ist am schnellsten.* The full superlative (*der schnellste Zug*) is an A2 topic.
-
-### Why it matters
-
-Comparing is a basic everyday action: which is cheaper, which is faster, who is older, what you prefer. The German system is simpler than the English one in one way (always *-er*, never *more*) and trickier in another (*als* vs *wie*, umlauts). With the table above and the rule *-er + als*, you can compare anything at A1. And you already know one comparative very well: *lieber*, the comparative of *gern*.
+  steps: [
+    {
+      title: 'The comparative: always -er',
+      text: `
+The **comparative** (*Komparativ*) is the adjective form that says *more*: bigger, faster, more expensive. German adds one ending, **-er**, to every adjective, short or long. There is no word for *more* in front: *interessant → interessant**er***, never *mehr interessant*.
 `,
-  examples: [
-    { de: 'Mein Bruder ist älter als ich.', en: 'My brother is older than me. (alt → älter, + als)' },
-    { de: 'Der Bus ist langsamer als der Zug.', en: 'The bus is slower than the train. (no umlaut: langsamer)' },
-    { de: 'Dieses Handy ist teurer als das andere.', en: 'This phone is more expensive than the other one. (teuer → teurer)' },
-    { de: 'Anna ist so groß wie ihre Mutter.', en: 'Anna is as tall as her mother. (so … wie)' },
-    { de: 'Heute ist es nicht so kalt wie gestern.', en: 'Today it is not as cold as yesterday. (nicht so … wie)' },
-    { de: 'Dein Deutsch ist besser als mein Englisch.', en: 'Your German is better than my English. (gut → besser)' },
-    { de: 'Ich trinke lieber Tee als Kaffee.', en: 'I prefer tea to coffee. (gern → lieber)' },
-    { de: 'Im Sommer ist es am wärmsten.', en: 'In summer it is warmest. (am + -sten)' },
+      examples: [
+        { de: 'Der Zug ist schneller.', en: 'The train is faster. (schnell + -er)' },
+        { de: 'Mein Zimmer ist kleiner.', en: 'My room is smaller. (klein + -er)' },
+        { de: 'Das Buch ist interessanter.', en: 'The book is more interesting. (long adjective, still -er)' },
+      ],
+    },
+    {
+      title: 'als for than, so … wie for as … as',
+      text: `
+There are two ways to compare. Not equal: comparative + **als** (than). Equal: **so** + adjective + **wie** (as … as).
+
+This pair causes most mistakes: **als** goes with the *-er* form, **wie** goes with *so*. Never *größer wie*.
+`,
+      examples: [
+        { de: 'Berlin ist größer als München.', en: 'Berlin is bigger than Munich. (-er + als)' },
+        { de: 'Ich bin älter als mein Bruder.', en: 'I am older than my brother.' },
+        { de: 'Anna ist so alt wie Tom.', en: 'Anna is as old as Tom. (so … wie)' },
+        { de: 'Das Buch ist nicht so teuer wie der Film.', en: 'The book is not as expensive as the film. (nicht so … wie)' },
+      ],
+    },
+    {
+      title: 'Short adjectives often add an umlaut',
+      text: `
+Many short adjectives with **a, o, u** add an umlaut in the comparative.
+
+| adjective | comparative |
+|---|---|
+| alt | **älter** |
+| jung | **jünger** |
+| groß | **größer** |
+| lang | **länger** |
+| kurz | **kürzer** |
+| kalt | **kälter** |
+
+Not all do: *schnell → schneller*, *laut → lauter*, *langsam → langsamer*. Learn the umlaut ones as a short list.
+`,
+      examples: [
+        { de: 'Mein Bruder ist älter als ich.', en: 'My brother is older than me. (alt → älter)' },
+        { de: 'Im Winter ist es kälter als im Sommer.', en: 'In winter it is colder than in summer. (kalt → kälter)' },
+        { de: 'Der Bus ist langsamer als der Zug.', en: 'The bus is slower than the train. (no umlaut: langsamer)' },
+      ],
+    },
+    {
+      title: 'Irregular comparatives',
+      text: `
+A few very common words have their own forms. Learn these first; you use them every day. *teuer* and *dunkel* just drop an *e*.
+
+| base | comparative |
+|---|---|
+| gut | **besser** |
+| viel | **mehr** |
+| gern | **lieber** |
+| hoch | **höher** |
+| teuer | **teurer** |
+| dunkel | **dunkler** |
+`,
+      examples: [
+        { de: 'Dein Deutsch ist besser als mein Englisch.', en: 'Your German is better than my English. (gut → besser)' },
+        { de: 'Ich trinke lieber Tee als Kaffee.', en: 'I prefer tea to coffee. (gern → lieber)' },
+        { de: 'Dieses Handy ist teurer als das andere.', en: 'This phone is more expensive than the other one. (teuer → teurer)' },
+      ],
+    },
+    {
+      title: 'The superlative, briefly: am -sten',
+      text: `
+To say *the most*, use **am** + adjective + **-sten**: *am schnellsten, am größten, am besten*. Use it after a verb. The full superlative in front of a noun (*der schnellste Zug*) is an A2 topic.
+`,
+      examples: [
+        { de: 'Der ICE ist am schnellsten.', en: 'The ICE is the fastest. (am + -sten)' },
+        { de: 'Im Sommer ist es am wärmsten.', en: 'In summer it is warmest.' },
+        { de: 'Dieses Restaurant ist am besten.', en: 'This restaurant is the best. (gut → am besten)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-19-gern-lieber', note: 'lieber and am liebsten are the comparative and superlative of gern.' },

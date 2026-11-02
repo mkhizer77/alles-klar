@@ -4,22 +4,29 @@ const topic: Topic = {
   id: 'a1-13-negation',
   level: 'A1',
   unit: 2,
-  order: 13,
+  order: 14,
   title: 'Negation: nicht vs kein',
   germanTerm: 'Negation',
   tags: ['negation', 'nicht', 'kein', 'word order'],
   summary: 'kein negates a noun that has ein or no article (kein Auto); nicht negates everything else (verbs, adjectives, names, nouns with der / die / das).',
-  explanation: `
-### Two ways to say "not"
-
+  steps: [
+    {
+      title: 'Two words for "not"',
+      text: `
 English uses *not* and *no / not a*. German uses **nicht** and **kein**. The choice is not about meaning but about **what you are negating**:
 
 - **kein** goes in front of a **noun** that would otherwise have *ein* or **no article**.
 - **nicht** negates **everything else**.
-
-### kein: "not a / no"
-
-*kein* replaces *ein* and takes the same endings, plus a plural form:
+`,
+      examples: [
+        { de: 'Ich habe kein Auto.', en: 'I do not have a car. (ein Auto → kein Auto)' },
+        { de: 'Ich komme nicht.', en: 'I am not coming. (verb → nicht)' },
+      ],
+    },
+    {
+      title: 'kein: not a, no',
+      text: `
+**kein** replaces *ein* and takes the same endings, plus a plural form.
 
 | gender | positive | negative |
 |---|---|---|
@@ -28,65 +35,77 @@ English uses *not* and *no / not a*. German uses **nicht** and **kein**. The cho
 | neuter | ein Auto | **kein** Auto |
 | plural | – Kinder | **keine** Kinder |
 
-- *Ich habe **ein** Auto.* → *Ich habe **kein** Auto.* – I don't have a car.
-- *Ich habe **Zeit**.* → *Ich habe **keine** Zeit.* – I have no time.
-- *Das sind **Freunde**.* → *Das sind **keine** Freunde.* – Those are not friends.
-
-Rule of thumb: if the noun has **ein / eine** or **nothing** in front of it, negate with **kein**. Nouns without an article include plurals (*Kinder*), uncountables (*Zeit, Geld, Hunger*) and jobs (*Ich bin Lehrer → Ich bin kein Lehrer*).
-
-### nicht: "not"
-
-*nicht* negates the verb, an adjective, an adverb, a name, or a noun with a **definite** article or a possessive:
+Nouns with no article also take *kein*: plurals (*Kinder*), uncountables (*Zeit, Geld*) and jobs (*Ich bin Lehrer → Ich bin kein Lehrer*).
+`,
+      examples: [
+        { de: 'Wir haben keine Zeit.', en: 'We have no time. (no article → keine)' },
+        { de: 'Das sind keine Äpfel.', en: 'Those are not apples. (plural → keine)' },
+        { de: 'Ich bin kein Arzt.', en: 'I am not a doctor. (job without article → kein)' },
+      ],
+    },
+    {
+      title: 'nicht: everything else',
+      text: `
+**nicht** negates the verb, an adjective, a name, or a noun with **der / die / das** or a possessive (*mein, dein …*).
 
 | what is negated | example |
 |---|---|
-| the verb / whole sentence | Ich komme **nicht**. |
+| the verb, the whole sentence | Ich komme **nicht**. |
 | an adjective | Das Auto ist **nicht** neu. |
-| an adverb or place | Er wohnt **nicht** hier. |
 | a noun with der / die / das | Das ist **nicht** der Chef. |
-| a noun with mein / dein … | Das ist **nicht** mein Buch. |
+| a noun with mein / dein | Das ist **nicht** mein Buch. |
 | a name | Ich heiße **nicht** Anna. |
-
-### Where does nicht go?
-
-This is the hard part for learners. Two simple rules cover most sentences at A1:
-
-1. **nicht goes at the end** when it negates the whole sentence: *Ich arbeite heute **nicht**.* – *Er kommt morgen **nicht**.*
-2. **nicht goes directly before** the specific thing it negates: an adjective (*Das ist **nicht** teuer*), a place or direction (*Ich fahre **nicht** nach Berlin*), or a second verb part at the end (*Ich kann **nicht** kommen*).
-
-So *nicht* moves back to the end, but stops in front of adjectives, places and verb parts that are already at the end.
-
-### Answering a negative question: doch
-
-When someone asks a question with *nicht* or *kein* and you want to say "yes, actually", use **doch**:
-
-- *Hast du **kein** Geld?* – ***Doch**, ich habe Geld.*
-- *Kommst du **nicht**?* – ***Doch**, ich komme.*
-
-A plain *ja* would be confusing here.
-
-### Other negative words
-
-- **nichts** = nothing: *Ich sehe nichts.* (Do not confuse with *nicht*.)
-- **nie** = never: *Er trinkt nie Kaffee.*
-- **niemand** = nobody: *Niemand ist da.*
-- **nicht mehr** = no longer, **noch nicht** = not yet: *Ich wohne nicht mehr in Bonn. Er ist noch nicht da.*
-
-German uses **only one** negative word per idea: *Ich sehe nichts* (not *Ich sehe nicht nichts*).
-
-### Why it matters
-
-You need negation in every second conversation: *Ich habe keine Zeit, ich verstehe nicht, das ist nicht richtig.* The *kein / nicht* choice is a classic test item, and once you see that *kein* = *not ein*, it becomes mechanical.
 `,
-  examples: [
-    { de: 'Ich habe kein Auto.', en: 'I do not have a car. (ein Auto → kein Auto)' },
-    { de: 'Wir haben keine Zeit.', en: 'We have no time. (no article → keine)' },
-    { de: 'Das sind keine Äpfel.', en: 'Those are not apples. (plural → keine)' },
-    { de: 'Ich bin kein Arzt.', en: 'I am not a doctor. (job without article → kein)' },
-    { de: 'Ich komme heute nicht.', en: 'I am not coming today. (whole sentence: nicht at the end)' },
-    { de: 'Das Hotel ist nicht teuer.', en: 'The hotel is not expensive. (nicht before the adjective)' },
-    { de: 'Das ist nicht mein Schlüssel.', en: 'That is not my key. (possessive → nicht)' },
-    { de: 'Kommst du nicht? – Doch!', en: 'Aren\'t you coming? – Yes, I am!' },
+      examples: [
+        { de: 'Das Auto ist nicht neu.', en: 'The car is not new. (adjective)' },
+        { de: 'Das ist nicht mein Schlüssel.', en: 'That is not my key. (possessive → nicht)' },
+        { de: 'Ich heiße nicht Anna.', en: 'My name is not Anna. (name)' },
+      ],
+    },
+    {
+      title: 'Where nicht goes',
+      text: `
+Two simple rules cover most sentences at A1:
+
+1. **nicht goes at the end** when it negates the whole sentence: *Ich arbeite heute **nicht**.*
+2. **nicht goes directly before** the specific thing it negates: an adjective (*Das ist **nicht** teuer*), a place (*Ich fahre **nicht** nach Berlin*), or a second verb part at the end (*Ich kann **nicht** kommen*).
+
+So *nicht* moves towards the end, but stops in front of adjectives, places and verb parts that are already there.
+`,
+      examples: [
+        { de: 'Ich arbeite heute nicht.', en: 'I am not working today. (whole sentence: nicht at the end)' },
+        { de: 'Das Hotel ist nicht teuer.', en: 'The hotel is not expensive. (before the adjective)' },
+        { de: 'Ich fahre nicht nach Berlin.', en: 'I am not going to Berlin. (before the place)' },
+        { de: 'Ich kann nicht kommen.', en: 'I cannot come. (before the verb part at the end)' },
+      ],
+    },
+    {
+      title: 'Answering a negative question: doch',
+      text: `
+When someone asks a question with *nicht* or *kein* and you want to say "yes, actually", use **doch**. A plain *ja* would be confusing here.
+`,
+      examples: [
+        { de: 'Kommst du nicht? Doch, ich komme.', en: 'Aren\'t you coming? Yes, I am.' },
+        { de: 'Hast du kein Geld? Doch, ich habe Geld.', en: 'Do you have no money? Yes, I do have money.' },
+      ],
+    },
+    {
+      title: 'Other negative words',
+      text: `
+- **nichts** = nothing. Do not confuse it with *nicht*.
+- **nie** = never.
+- **niemand** = nobody.
+- **nicht mehr** = no longer, **noch nicht** = not yet.
+
+German uses **only one** negative word per idea: *Ich sehe nichts*, not *Ich sehe nicht nichts*.
+`,
+      examples: [
+        { de: 'Ich sehe nichts.', en: 'I see nothing. (nichts, not nicht)' },
+        { de: 'Er trinkt nie Kaffee.', en: 'He never drinks coffee.' },
+        { de: 'Niemand ist da.', en: 'Nobody is there.' },
+        { de: 'Er ist noch nicht da.', en: 'He is not there yet.' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-12-indefinite-articles', note: 'kein has exactly the endings of ein, plus keine in the plural.' },

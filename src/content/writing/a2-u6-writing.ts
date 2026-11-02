@@ -29,7 +29,7 @@ const task: WritingTask = {
     { de: 'im ersten Stock, Zimmer …', en: 'on the first floor, room …', role: 'phrase' },
     { de: 'Vielen Dank und bis …!', en: 'Many thanks and see you on …!', role: 'closing' },
   ],
-  grammarFocus: ['a2-16-two-way-prepositions-depth', 'a2-17-position-verbs', 'a2-18-directions-hin-her', 'a1-18-imperative'],
+  grammarFocus: ['a2-16-two-way-prepositions-depth', 'a2-17-position-verbs', 'a2-18-directions-hin-her', 'a2-18b-nach-zu-in', 'a1-18-imperative'],
   mustUse: [
     { label: 'a verb of position or placing (liegt, steht, hängt, leg, stell, häng …)', pattern: '\\b(liegt|liegen|steht|stehen|hängt|hängen|sitzt|sitzen|leg|legst|legen|stell|stellst|stellen|häng|hängst|setz|setzt|setzen)\\b', min: 4 },
     { label: 'a two-way preposition with its article (auf dem Tisch, auf den Balkon, im Schrank)', pattern: '\\b(im|am|ins|ans|(in|an|auf|unter|vor|hinter|neben|zwischen) (dem|der|den|das|die|einem|einer|einen|ein|eine|meinem|meiner|meinen|meine|mein|deinem|deiner|deinen))\\b', min: 4 },

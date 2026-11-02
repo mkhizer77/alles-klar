@@ -29,7 +29,7 @@ const task: WritingTask = {
     { de: 'Vielen Dank im Voraus.', en: 'Many thanks in advance.', role: 'closing' },
     { de: 'Mit freundlichen Grüßen', en: 'Kind regards', role: 'closing' },
   ],
-  grammarFocus: ['a2-04-subordinate-clauses-weil-dass', 'a2-05-wenn-ob-indirect-questions', 'a1-36-writing-short-messages'],
+  grammarFocus: ['a2-04-subordinate-clauses-weil-dass', 'a2-05-wenn-ob-indirect-questions', 'a2-05b-indirect-questions', 'a1-36-writing-short-messages'],
   mustUse: [
     { label: 'a reason with weil', pattern: '\\bweil\\b', min: 1 },
     { label: 'a dass-clause', pattern: '\\bdass\\b', min: 1 },

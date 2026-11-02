@@ -54,28 +54,35 @@ export default function TopicPage() {
           German: <span className="font-semibold text-text">{topic.germanTerm}</span>
         </p>
         <p className="mt-3 text-base leading-relaxed bg-info-soft rounded-xl p-3">{topic.summary}</p>
+        <p className="mt-2 text-xs text-muted">{topic.steps.length} short steps · read each one, then its examples</p>
       </header>
 
-      <Md source={topic.explanation} />
-
-      <section className="mt-8">
-        <h2 className="font-bold text-lg mb-2">Examples</h2>
-        <div className="grid gap-2">
-          {topic.examples.map((ex, i) => (
-            <div key={i} className="flex gap-3 items-start p-3 rounded-xl bg-surface border border-line">
-              {canSpeak() && (
-                <button type="button" onClick={() => speak(ex.de)} className="shrink-0 mt-0.5 text-primary hover:text-primary-strong" aria-label="Listen">
-                  <SpeakerIcon />
-                </button>
-              )}
-              <div>
-                <div className="font-semibold">{ex.de}</div>
-                <div className="text-sm text-muted">{ex.en}</div>
-              </div>
+      <ol className="grid gap-4" aria-label="Lesson steps">
+        {topic.steps.map((s, i) => (
+          <li key={i} className="rounded-2xl border border-line bg-surface p-4">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="shrink-0 inline-flex items-center justify-center w-7 h-7 rounded-full bg-primary text-on-primary text-sm font-bold">{i + 1}</span>
+              <h2 className="font-bold text-lg leading-snug">{s.title}</h2>
             </div>
-          ))}
-        </div>
-      </section>
+            <Md source={s.text} />
+            <div className="mt-3 grid gap-1.5">
+              {s.examples.map((ex, j) => (
+                <div key={j} className="flex gap-3 items-start px-3 py-2 rounded-xl bg-info-soft/60">
+                  {canSpeak() && (
+                    <button type="button" onClick={() => speak(ex.de)} className="shrink-0 mt-0.5 text-primary hover:text-primary-strong" aria-label="Listen">
+                      <SpeakerIcon />
+                    </button>
+                  )}
+                  <div>
+                    <div className="font-semibold">{ex.de}</div>
+                    <div className="text-sm text-muted">{ex.en}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </li>
+        ))}
+      </ol>
 
       {topic.connections.length > 0 && (
         <section className="mt-8">

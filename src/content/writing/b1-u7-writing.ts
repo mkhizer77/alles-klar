@@ -23,7 +23,7 @@ const task: WritingTask = {
     { de: 'Meiner Meinung nach sollte …', en: 'In my opinion … should …', role: 'phrase' },
     { de: 'Ein Kompromiss wäre, dass …', en: 'A compromise would be that …', role: 'phrase' },
   ],
-  grammarFocus: ['b1-17-two-part-conjunctions', 'b1-18-cause-consequence-concession', 'a2-27-adverbial-connectors', 'a2-28-subjunctions-obwohl-damit'],
+  grammarFocus: ['b1-17-two-part-conjunctions', 'b1-18-cause-consequence-concession', 'b1-18b-concession', 'a2-27-adverbial-connectors', 'a2-28-subjunctions-obwohl-damit', 'a2-28b-time-subjunctions'],
   mustUse: [
     { label: 'a je … desto sentence', pattern: '\\bje\\b[^.!?]*\\bdesto\\b', min: 1 },
     { label: 'another two-part conjunction (sowohl … als auch, weder … noch, entweder … oder, nicht nur … sondern auch)', pattern: '\\b(sowohl\\b[^.!?]*\\bals auch|weder\\b[^.!?]*\\bnoch|entweder\\b[^.!?]*\\boder|nicht nur\\b[^.!?]*\\bsondern auch)\\b', min: 1 },

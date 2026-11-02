@@ -5,80 +5,83 @@ const topic: Topic = {
   level: 'A2',
   unit: 2,
   order: 5,
-  title: 'wenn, ob and indirect questions',
-  germanTerm: 'Nebensatz: wenn / ob / W-Wort',
-  tags: ['word order', 'subordinate clauses', 'conjunctions', 'questions', 'wenn', 'ob'],
-  summary: 'wenn means "if / when" for conditions, ob means "whether" for reported yes/no questions, and question words (wo, wann, warum …) start indirect questions; all three send the verb to the end.',
-  explanation: `
-### What it is
+  title: 'wenn and ob: if and whether',
+  germanTerm: 'Nebensatz: wenn / ob',
+  tags: ['word order', 'subordinate clauses', 'conjunctions', 'wenn', 'ob'],
+  summary: 'wenn means "if / when" for a condition or a time, ob means "whether" for a reported yes/no question; both send the verb to the end of the clause.',
+  steps: [
+    {
+      title: 'Two more words that move the verb',
+      text: `
+*weil* and *dass* push the verb to the end of the clause. Two more small words do exactly the same:
 
-In the last topic you learned that *weil* and *dass* push the verb to the end of the clause. Three more things do exactly the same:
+- **wenn** = if / when (a condition or a time)
+- **ob** = whether (a reported yes/no question)
 
-1. **wenn** = if / when (a condition or a time)
-2. **ob** = whether / if (a reported yes/no question)
-3. **question words** (*wo, wann, warum, wie, was, wer …*) in an **indirect question** (*indirekte Frage*)
-
-An indirect question is a question that sits inside another sentence: *I don't know **where he lives**.*
-
-### wenn: if or when
-
-**wenn** introduces a condition or a repeated / future time:
-
-- **Wenn** es regnet, bleiben wir zu Hause. – *If / when it rains, we stay at home.*
-- Ich rufe dich an, **wenn** ich zu Hause **bin**. – *I'll call you when I'm home.*
-
-English *if* and *when* are both *wenn* here. (For *when* about a single event in the past, see the next topic on *als*.)
-
-### ob: whether
-
-Use **ob** to report a **yes/no question**. If the original question has no question word, the indirect version starts with *ob*:
-
-| direct question | indirect question |
-|---|---|
-| Kommt er heute? | Ich weiß nicht, **ob** er heute **kommt**. |
-| Hat sie Zeit? | Weißt du, **ob** sie Zeit **hat**? |
-| Ist das Geschäft offen? | Ich frage mich, **ob** das Geschäft offen **ist**. |
-
-Test: can you say *whether* in English? Then it is **ob**, never *wenn*. *I don't know if he's coming* = *I don't know whether he's coming* → *ob*.
-
-### Question words: indirect W-questions
-
-If the original question starts with a W-word, keep that word and send the verb to the end:
-
-| direct question | indirect question |
-|---|---|
-| Wo wohnt sie? | Ich weiß nicht, **wo** sie **wohnt**. |
-| Wann beginnt der Film? | Weißt du, **wann** der Film **beginnt**? |
-| Warum lacht er? | Ich frage mich, **warum** er **lacht**. |
-| Wie viel kostet das? | Können Sie mir sagen, **wie viel** das **kostet**? |
-
-Useful opening phrases: *Ich weiß nicht, … / Weißt du, … / Kannst du mir sagen, … / Können Sie mir sagen, … / Ich frage mich, … / Ich möchte wissen, …*
-
-Notice the punctuation: if the main clause is a question (*Weißt du, …?*), the whole sentence ends with a question mark; if it is a statement (*Ich weiß nicht, …*), it ends with a full stop.
-
-### Why it matters
-
-Indirect questions are the **polite** way to ask for information: *Wo ist der Bahnhof?* is fine, but *Können Sie mir sagen, wo der Bahnhof ist?* is friendlier and sounds much more fluent. And *wenn*-clauses are how you talk about plans and conditions: *Wenn ich Zeit habe, …*. All of this uses the one Nebensatz rule: **verb at the end**.
+Both start a **Nebensatz** (a subordinate clause, the part that cannot stand alone), so the conjugated verb is the last word and a comma separates the two parts.
 `,
-  examples: [
-    { de: 'Wenn es regnet, bleiben wir zu Hause.', en: 'If it rains, we stay at home. (condition)' },
-    { de: 'Ich rufe dich an, wenn ich zu Hause bin.', en: "I'll call you when I'm home. (future time)" },
-    { de: 'Ich weiß nicht, ob er heute kommt.', en: "I don't know whether he is coming today. (yes/no question → ob)" },
-    { de: 'Weißt du, ob das Museum montags offen ist?', en: 'Do you know whether the museum is open on Mondays?' },
-    { de: 'Kannst du mir sagen, wo der Bahnhof ist?', en: 'Can you tell me where the station is? (indirect W-question)' },
-    { de: 'Ich frage mich, warum sie nicht geantwortet hat.', en: "I wonder why she didn't reply. (Perfekt: hat at the end)" },
-    { de: 'Können Sie mir sagen, wie viel das kostet?', en: 'Can you tell me how much that costs? (polite)' },
+      examples: [
+        { de: 'Wenn ich Zeit habe, koche ich.', en: 'When I have time, I cook. (habe at the end)' },
+        { de: 'Ich weiß nicht, ob sie kommt.', en: "I don't know whether she is coming. (kommt at the end)" },
+      ],
+    },
+    {
+      title: 'wenn: if or when',
+      text: `
+**wenn** introduces a condition or a time that is now, in the future or repeated. English *if* and *when* are both **wenn** here.
+
+When the wenn-clause comes first, the main verb follows straight after the comma: *Wenn es regnet, **bleiben** wir zu Hause.*
+`,
+      examples: [
+        { de: 'Wenn es regnet, bleiben wir zu Hause.', en: 'If it rains, we stay at home. (condition)' },
+        { de: 'Ich rufe dich an, wenn ich zu Hause bin.', en: "I'll call you when I'm home. (future time)" },
+        { de: 'Wenn du morgen kommst, kochen wir zusammen.', en: "If you come tomorrow, we'll cook together." },
+      ],
+    },
+    {
+      title: 'ob: reporting a yes/no question',
+      text: `
+Use **ob** to report a question that has no question word, a **yes/no question**. The direct question *Kommt er heute?* becomes *…, ob er heute kommt.* The verb that was at the front moves to the end.
+
+|direct question|indirect question|
+|---|---|
+|Kommt er heute?|Ich weiß nicht, **ob** er heute **kommt**.|
+|Hat sie Zeit?|Weißt du, **ob** sie Zeit **hat**?|
+|Ist das Geschäft offen?|Ich frage mich, **ob** das Geschäft offen **ist**.|
+
+The main clause decides the final punctuation: *Weißt du, ob …?* but *Ich weiß nicht, ob … .*
+`,
+      examples: [
+        { de: 'Ich weiß nicht, ob er heute kommt.', en: "I don't know whether he is coming today." },
+        { de: 'Weißt du, ob das Museum montags offen ist?', en: 'Do you know whether the museum is open on Mondays?' },
+        { de: 'Ich frage mich, ob sie das Buch gelesen hat.', en: 'I wonder whether she has read the book. (Perfekt: hat at the end)' },
+      ],
+    },
+    {
+      title: 'The whether test',
+      text: `
+English **if** has two meanings, and German keeps them apart. Ask: can you say **whether** instead? *I don't know if he's coming* = *whether he's coming* → **ob**. *If it rains, we stay home*: you cannot say *whether* → **wenn**.
+
+**wann** (at what time?) is only a question word, not a joining word for conditions.
+`,
+      examples: [
+        { de: 'Frag ihn, ob er Zeit hat.', en: 'Ask him if he has time. (= whether → ob)' },
+        { de: 'Ich komme, wenn ich Zeit habe.', en: "I'll come if I have time. (condition → wenn)" },
+        { de: 'Ich weiß nicht, ob ich Zeit habe.', en: "I don't know if I have time. (= whether → ob)" },
+      ],
+    },
   ],
   connections: [
-    { topicId: 'a2-04-subordinate-clauses-weil-dass', note: 'The basic Nebensatz rule (verb at the end) that wenn, ob and W-words follow.' },
-    { topicId: 'a1-07-questions', note: 'The direct questions that indirect questions are built from.' },
+    { topicId: 'a2-04-subordinate-clauses-weil-dass', note: 'The basic Nebensatz rule (verb at the end) that wenn and ob follow.' },
+    { topicId: 'a2-05b-indirect-questions', note: 'When the reported question has a W-word (wo, wann, warum), keep the W-word instead of ob.' },
+    { topicId: 'a1-07-questions', note: 'The direct yes/no questions that ob-clauses are built from.' },
     { topicId: 'a2-06-als-vs-wenn', note: 'When "when" is about a single past event, German uses als instead of wenn.' },
     { topicId: 'b1-20-conditions', note: 'falls, sofern and other ways to express conditions build on wenn.' },
   ],
   edgeCases: [
     'English **if** has two meanings. For a condition (*if it rains*) use **wenn**; for a reported yes/no question (*I wonder if he\'s coming* = whether) use **ob**.',
-    'The verb goes to the end in an indirect question: *Ich weiß nicht, wo er **wohnt*** ✓, not *wo wohnt er* ✗.',
-    '**wann** is only a question word (*Wann kommst du?* / *Ich weiß nicht, wann er kommt*). For "when" as a conjunction use **wenn** or **als**.',
+    'The verb goes to the end: *Ich weiß nicht, ob er **kommt*** ✓, not *ob kommt er* ✗.',
+    '**wann** is only a question word (*Wann kommst du?*). For "when" as a joining word use **wenn** or **als**.',
     'The main clause decides the final punctuation: *Weißt du, ob er kommt**?*** but *Ich weiß nicht, ob er kommt**.***',
     'When the wenn-clause comes first, the main verb follows straight after the comma: *Wenn ich Zeit habe, **koche** ich.*',
   ],
@@ -92,69 +95,65 @@ Indirect questions are the **polite** way to ask for information: *Wo ist der Ba
       explanation: 'The original question is "Kommt er heute?" (yes/no), so the indirect question needs ob (= whether).',
     },
     {
-      type: 'fill',
-      id: 'a2-05-wenn-ob-indirect-questions-ex02',
-      prompt: 'Weißt du, ___ der Bus abfährt? (at what time)',
-      answer: ['wann'],
-      explanation: 'The direct question is "Wann fährt der Bus ab?". Keep the question word wann and put the verb (abfährt) at the end.',
-    },
-    {
       type: 'mc',
-      id: 'a2-05-wenn-ob-indirect-questions-ex03',
+      id: 'a2-05-wenn-ob-indirect-questions-ex02',
       prompt: 'Complete: "___ es morgen regnet, bleiben wir zu Hause."',
       options: ['Wenn', 'Ob', 'Wann'],
       answer: 0,
       explanation: 'This is a condition (if it rains), so it is wenn. ob only reports yes/no questions, and wann only asks questions.',
     },
     {
-      type: 'order',
-      id: 'a2-05-wenn-ob-indirect-questions-ex04',
-      prompt: 'Build the polite question: "Can you tell me where the station is?"',
-      words: ['sagen,', 'du', 'der', 'ist?', 'wo', 'Kannst', 'mir', 'Bahnhof'],
-      answer: ['Kannst du mir sagen, wo der Bahnhof ist?'],
-      explanation: 'Main clause question (Kannst du mir sagen), comma, then wo + der Bahnhof + ist at the end.',
+      type: 'fill',
+      id: 'a2-05-wenn-ob-indirect-questions-ex03',
+      prompt: 'Wir kochen zusammen, ___ du morgen kommst. (if)',
+      answer: ['wenn'],
+      explanation: 'Your coming is a condition for cooking together, and you cannot say "whether" here, so it is wenn.',
     },
     {
       type: 'fill',
-      id: 'a2-05-wenn-ob-indirect-questions-ex05',
+      id: 'a2-05-wenn-ob-indirect-questions-ex04',
       prompt: 'Ich frage mich, ___ sie das Buch gelesen hat. (whether)',
       answer: ['ob'],
       explanation: '"Hat sie das Buch gelesen?" is a yes/no question, so the indirect form uses ob. Note hat at the very end.',
     },
     {
-      type: 'match',
-      id: 'a2-05-wenn-ob-indirect-questions-ex06',
-      prompt: 'Match each direct question with its indirect form.',
-      pairs: [
-        ['Kommt er?', 'ob er kommt'],
-        ['Wo wohnt sie?', 'wo sie wohnt'],
-        ['Warum lacht er?', 'warum er lacht'],
-        ['Hat sie Zeit?', 'ob sie Zeit hat'],
-      ],
-      explanation: 'Yes/no questions become ob-clauses; W-questions keep their W-word. In every case the verb moves to the end.',
-    },
-    {
       type: 'mc',
-      id: 'a2-05-wenn-ob-indirect-questions-ex07',
-      prompt: 'Make "Wann beginnt der Film?" indirect after "Ich weiß nicht, …"',
-      options: ['Ich weiß nicht, wann der Film beginnt.', 'Ich weiß nicht, wann beginnt der Film.', 'Ich weiß nicht, ob der Film beginnt.'],
+      id: 'a2-05-wenn-ob-indirect-questions-ex05',
+      prompt: 'Which sentence is correct?',
+      options: ['Ich weiß nicht, ob er kommt.', 'Ich weiß nicht, ob kommt er.', 'Ich weiß nicht, wenn er kommt.'],
       answer: 0,
-      explanation: 'Keep wann, move the verb to the end. The second option has main-clause word order; the third changes the meaning (whether it begins at all).',
+      explanation: 'ob reports the yes/no question "Kommt er?" and sends kommt to the end. The second option keeps question word order; the third uses wenn, which cannot report a question.',
     },
     {
       type: 'fill',
-      id: 'a2-05-wenn-ob-indirect-questions-ex08',
+      id: 'a2-05-wenn-ob-indirect-questions-ex06',
       prompt: 'Ich rufe dich an, ___ ich zu Hause bin. (when)',
       answer: ['wenn'],
       explanation: '"When I am home" is a future time / condition, so it is wenn. (als would be for a single past event.)',
     },
     {
+      type: 'order',
+      id: 'a2-05-wenn-ob-indirect-questions-ex07',
+      prompt: 'Build the question: "Do you know whether the museum is open today?"',
+      words: ['heute', 'Weißt', 'ist?', 'das', 'ob', 'du,', 'Museum', 'offen'],
+      answer: ['Weißt du, ob das Museum heute offen ist?'],
+      explanation: 'Main clause question (Weißt du), comma, then ob + das Museum heute offen + ist at the end. The main clause is a question, so the sentence ends with a question mark.',
+    },
+    {
       type: 'mc',
-      id: 'a2-05-wenn-ob-indirect-questions-ex09',
+      id: 'a2-05-wenn-ob-indirect-questions-ex08',
       prompt: '"Ask him if he has time." Which word translates "if" here?',
       options: ['wenn', 'ob', 'wann'],
       answer: 1,
       explanation: 'You can replace this "if" with "whether" (ask him whether he has time), so it is ob: Frag ihn, ob er Zeit hat.',
+    },
+    {
+      type: 'mc',
+      id: 'a2-05-wenn-ob-indirect-questions-ex09',
+      prompt: 'Complete: "Wenn ich Zeit habe, ___ dich an."',
+      options: ['rufe ich', 'ich rufe', 'ich anrufe'],
+      answer: 0,
+      explanation: 'The wenn-clause is position 1, so the main verb rufe comes right after the comma, then ich. The prefix an stays at the end of the main clause.',
     },
     {
       type: 'translate',
@@ -165,11 +164,12 @@ Indirect questions are the **polite** way to ask for information: *Wo ist der Ba
       explanation: 'Ich weiß nicht, + ob + sie + kommt. The verb of the ob-clause is the last word.',
     },
     {
-      type: 'fill',
+      type: 'translate',
       id: 'a2-05-wenn-ob-indirect-questions-ex11',
-      prompt: 'Können Sie mir sagen, ___ das kostet? (how much)',
-      answer: ['wie viel'],
-      explanation: 'The direct question is "Wie viel kostet das?". The question phrase wie viel stays, and kostet goes to the end.',
+      prompt: 'Translate: "Do you know whether he has time?"',
+      answer: ['Weißt du, ob er Zeit hat?', 'Wissen Sie, ob er Zeit hat?'],
+      hint: 'Zeit haben = to have time',
+      explanation: 'Weißt du, + ob + er Zeit + hat. The main clause is a question, so the whole sentence ends with a question mark.',
     },
     {
       type: 'translate',

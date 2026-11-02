@@ -9,51 +9,80 @@ const topic: Topic = {
   germanTerm: 'Präteritum Modalverben',
   tags: ['past tense', 'modal verbs', 'Präteritum', 'verbs'],
   summary: 'The simple past of the modal verbs (konnte, musste, wollte, durfte, sollte, mochte) is the normal way to say "could", "had to" or "wanted to" about the past, even in everyday speech.',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'The one-word past: ich konnte',
+      text: `
+The **Präteritum** (the simple past) is the past tense with one word: *ich konnte* = I could, *ich musste* = I had to. You already know two forms from A1: **war** (was) and **hatte** (had).
 
-The **Präteritum** (*Präteritum*, also called the simple past) is the one-word past tense: *ich konnte* = *I could*, *ich musste* = *I had to*. You already know two Präteritum forms from A1: **war** (was) and **hatte** (had). The modal verbs work the same way, and like *war* and *hatte* they are used in the Präteritum **all the time**, even when people are chatting. Nobody says *ich habe gekonnt* when they mean *I could*.
-
-### How it works
-
-Take the infinitive, **drop the umlaut**, and add the endings **-te, -test, -te, -ten, -tet, -ten**. These are the same endings as the regular Präteritum of other verbs, so learning them here pays off twice.
-
-| | können | müssen | wollen | dürfen | sollen | mögen |
-|---|---|---|---|---|---|---|
-| ich | konnte | musste | wollte | durfte | sollte | mochte |
-| du | konntest | musstest | wolltest | durftest | solltest | mochtest |
-| er / sie / es | konnte | musste | wollte | durfte | sollte | mochte |
-| wir | konnten | mussten | wollten | durften | sollten | mochten |
-| ihr | konntet | musstet | wolltet | durftet | solltet | mochtet |
-| sie / Sie | konnten | mussten | wollten | durften | sollten | mochten |
-
-Three things to notice:
-
-1. **No umlaut** in the past: *können* → *konnte*, *müssen* → *musste*, *dürfen* → *durfte*. If you keep the umlaut (*könnte*, *müsste*, *dürfte*) you get a different form, the polite *Konjunktiv II* (*I could / would be able to*). That is a later topic; for now, past = no dots.
-2. **mögen** changes its consonant: *mögen* → **mochte** (not *mögte*). *Ich mochte den Film nicht* = *I didn't like the film*.
-3. **möchten** has no past tense of its own. For *I wanted* use **wollte**: *Ich möchte Kaffee* (now) → *Ich wollte Kaffee* (past).
-
-### Word order stays the same
-
-The modal takes position 2 and the other verb stays at the end as an infinitive, exactly as in the present:
-
-- Ich **kann** heute nicht **kommen**. → Ich **konnte** gestern nicht **kommen**.
-- Wir **müssen** früh **aufstehen**. → Wir **mussten** früh **aufstehen**.
-
-In a question the modal moves to the front: **Konntest** du das lesen? (*Could you read that?*)
-
-### Why it matters
-
-Telling any story about the past needs these forms: what you wanted, what you had to do, what you were allowed to do as a child. The Perfekt of a modal verb (*Ich habe nicht kommen können*) exists but sounds heavy, so German speakers reach for the Präteritum instead. If you remember **war, hatte** and the six forms above, you can already talk about the past much more naturally than with the Perfekt alone.
+The modal verbs (*können, müssen, wollen, dürfen, sollen, mögen*) work the same way. Like *war* and *hatte*, you use them in the Präteritum all the time, even when chatting. Nobody says *ich habe gekonnt*.
 `,
-  examples: [
-    { de: 'Ich konnte gestern nicht kommen.', en: "I couldn't come yesterday. (konnte, no umlaut)" },
-    { de: 'Wir mussten um sechs Uhr aufstehen.', en: 'We had to get up at six.' },
-    { de: 'Sie wollte Ärztin werden.', en: 'She wanted to become a doctor.' },
-    { de: 'Als Kind durfte ich nicht lange fernsehen.', en: "As a child I wasn't allowed to watch TV for long." },
-    { de: 'Du solltest den Brief gestern schicken.', en: 'You were supposed to send the letter yesterday.' },
-    { de: 'Er mochte keinen Spinat.', en: "He didn't like spinach. (mögen → mochte)" },
-    { de: 'Konntet ihr das Haus finden?', en: 'Were you able to find the house? (question: modal first)' },
+      examples: [
+        { de: 'Ich konnte gestern nicht kommen.', en: "I couldn't come yesterday." },
+        { de: 'Wir mussten um sechs Uhr aufstehen.', en: 'We had to get up at six.' },
+        { de: 'Sie wollte Ärztin werden.', en: 'She wanted to become a doctor.' },
+      ],
+    },
+    {
+      title: 'Drop the umlaut, add -te',
+      text: `
+Take the infinitive, **drop the umlaut** (the two dots) and add the endings **-te, -test, -te, -ten, -tet, -ten**.
+
+| |können|müssen|wollen|
+|---|---|---|---|
+|ich|konnte|musste|wollte|
+|du|konntest|musstest|wolltest|
+|er, sie, es|konnte|musste|wollte|
+|wir|konnten|mussten|wollten|
+|ihr|konntet|musstet|wolltet|
+|sie, Sie|konnten|mussten|wollten|
+
+*dürfen* → **durfte** and *sollen* → **sollte** follow the same pattern. The ich-form and the er-form are the same, just like *war* and *hatte*.
+`,
+      examples: [
+        { de: 'Konntest du das lesen?', en: 'Could you read that? (du: -test)' },
+        { de: 'Ihr musstet lange warten.', en: 'You had to wait a long time. (ihr: -tet)' },
+        { de: 'Als Kind durfte ich nicht lange fernsehen.', en: "As a child I wasn't allowed to watch TV for long." },
+      ],
+    },
+    {
+      title: 'mögen becomes mochte',
+      text: `
+Two special cases. **mögen** changes its consonant: the past is **mochte**, not *mögte*. *Ich mochte den Film nicht* = I didn't like the film.
+
+**möchten** (would like) has no past tense of its own. For "I wanted" use **wollte**: *Ich möchte Kaffee* (now) → *Ich wollte Kaffee* (past).
+`,
+      examples: [
+        { de: 'Er mochte keinen Spinat.', en: "He didn't like spinach. (mögen → mochte)" },
+        { de: 'Als Kind mochte ich keine Suppe.', en: "As a child I didn't like soup." },
+        { de: 'Ich wollte ein Eis.', en: 'I wanted an ice cream. (past of ich möchte ein Eis)' },
+      ],
+    },
+    {
+      title: 'Word order stays the same',
+      text: `
+The sentence pattern is the same as in the present. The modal takes **position 2** and the other verb stays at the **end** as an infinitive (the basic form).
+
+*Ich kann heute nicht kommen.* → *Ich konnte gestern nicht kommen.*
+
+In a question the modal moves to the front: *Konntest du das lesen?*
+`,
+      examples: [
+        { de: 'Wir mussten früh aufstehen.', en: 'We had to get up early. (mussten position 2, aufstehen at the end)' },
+        { de: 'Du solltest den Brief gestern schicken.', en: 'You were supposed to send the letter yesterday.' },
+        { de: 'Konntet ihr das Haus finden?', en: 'Were you able to find the house? (question: modal first)' },
+      ],
+    },
+    {
+      title: 'konnte is not könnte',
+      text: `
+Keep the dots off. **konnte** (no umlaut) is the past: I could, I was able to. **könnte** (with umlaut) is a different form, the polite *Konjunktiv II* (I could, if …). The same goes for *musste / müsste* and *durfte / dürfte*. For now: past = no dots.
+`,
+      examples: [
+        { de: 'Ich konnte nicht kommen.', en: "I couldn't come. (past)" },
+        { de: 'Ich könnte morgen kommen.', en: 'I could come tomorrow. (polite, not past)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-17-modal-verbs', note: 'The present tense modals; the Präteritum keeps the same sentence pattern with the infinitive at the end.' },

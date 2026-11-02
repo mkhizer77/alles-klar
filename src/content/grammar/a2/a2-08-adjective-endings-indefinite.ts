@@ -4,62 +4,89 @@ const topic: Topic = {
   id: 'a2-08-adjective-endings-indefinite',
   level: 'A2',
   unit: 3,
-  order: 8,
+  order: 9,
   title: 'Adjective endings after ein / kein / mein',
   germanTerm: 'Adjektivdeklination (unbestimmt)',
   tags: ['adjectives', 'adjective endings', 'declension', 'cases', 'indefinite article', 'possessives'],
-  summary: 'After ein, kein and the possessives (mein, dein …) the adjective shows the gender where the article cannot: -er for masculine, -es for neuter, -e for feminine in the Nominative; otherwise -en, like after der.',
-  explanation: `
-### What it is
+  summary: 'After ein, kein and the possessives the adjective shows the gender where the article cannot: ein alter Mann, ein altes Haus. Everywhere else it is -e or -en, as after der.',
+  steps: [
+    {
+      title: 'ein cannot show the gender',
+      text: `
+After *der, die, das* the adjective only needs **-e** or **-en**, because the article already shows the gender. **ein** cannot do that: *ein Mann* and *ein Kind* look the same. So after *ein* the **adjective** shows the gender itself: *ein alt**er** Mann, ein alt**es** Kind*.
 
-After the definite article the adjective only needs **-e** or **-en**, because *der / die / das* already tell you the gender. The **indefinite article** *ein* is less helpful: *ein Mann* and *ein Kind* look the same. So in exactly those places the **adjective** steps in and shows the gender itself.
-
-This group of words is called the **ein-words** (*ein-Wörter*): **ein**, **kein**, and all the possessive articles **mein, dein, sein, ihr, unser, euer, Ihr**.
-
-### How it works: the table
-
-| | masculine | feminine | neuter | plural (kein / mein) |
-|---|---|---|---|---|
-| Nominative | ein alt**er** Mann | eine alt**e** Frau | ein alt**es** Haus | keine alt**en** Leute |
-| Accusative | einen alt**en** Mann | eine alt**e** Frau | ein alt**es** Haus | keine alt**en** Leute |
-| Dative | einem alt**en** Mann | einer alt**en** Frau | einem alt**en** Haus | keinen alt**en** Leuten |
-
-(You may also see the Genitive, *eines alten Mannes*: the adjective takes **-en** there too, so nothing new to learn.)
-
-Compare this with the *der*-table and you will see that only **three cells** are different:
-
-| | after der / die / das | after ein / kein / mein |
-|---|---|---|
-| Nominative masculine | der alt**e** Mann | ein alt**er** Mann |
-| Nominative neuter | das alt**e** Haus | ein alt**es** Haus |
-| Accusative neuter | das alt**e** Haus | ein alt**es** Haus |
-
-Why these three? Because here *ein* has **no ending** (*ein*, not *einer* or *eines*). The adjective takes the ending the definite article would have had: *d**er*** → alt**er**, *d**as*** → alt**es**. Everywhere else *ein* does have an ending (*eine, einen, einem, einer*), so the adjective behaves exactly as after *der*: **-e** for feminine Nominative / Accusative, **-en** for everything else.
-
-### Plural: only with kein and the possessives
-
-*ein* has no plural. But *kein* and the possessives do, and there the rule is easy: **always -en**.
-
-- kein**e** gut**en** Ideen – *no good ideas*
-- mein**e** alt**en** Freunde – *my old friends*
-- mit unser**en** neu**en** Nachbarn – *with our new neighbours*
-
-### The rule in one line
-
-Does the ein-word have an ending? **Yes** → adjective gets **-e** (feminine Nom / Acc) or **-en** (all the rest). **No** (*ein, kein, mein* without ending) → adjective shows the gender: **-er** (masculine) or **-es** (neuter).
-
-### Why it matters
-
-*Ein* and the possessives are the articles you use most when you describe things for the first time: *Ich habe ein neues Auto*, *Das ist mein bester Freund*, *Sie hat eine kleine Wohnung*. The three special cells (*-er, -es, -es*) are the ones learners get wrong most often, so practise them until *ein neues Auto* and *ein guter Film* come automatically.
+The words that behave like *ein* are the **ein-words**: **ein, kein** and the possessives **mein, dein, sein, ihr, unser, euer, Ihr**.
 `,
-  examples: [
-    { de: 'Das ist ein netter Mann.', en: 'That is a nice man. (Nominative masculine: -er, because ein has no ending)' },
-    { de: 'Ich habe ein neues Auto.', en: 'I have a new car. (Accusative neuter: -es)' },
-    { de: 'Sie hat eine kleine Katze.', en: 'She has a small cat. (feminine: -e)' },
-    { de: 'Ich kaufe einen großen Tisch.', en: 'I am buying a big table. (Accusative masculine: -en)' },
-    { de: 'Er wohnt in einem alten Haus.', en: 'He lives in an old house. (Dative: -en)' },
-    { de: 'Das ist mein bester Freund.', en: 'That is my best friend. (mein works like ein: -er)' },
-    { de: 'Ich habe keine guten Ideen.', en: 'I have no good ideas. (plural: -en)' },
+      examples: [
+        { de: 'Das ist ein netter Mann.', en: 'That is a nice man. (-er shows masculine)' },
+        { de: 'Das ist ein kleines Kind.', en: 'That is a small child. (-es shows neuter)' },
+        { de: 'Das ist mein bester Freund.', en: 'That is my best friend. (mein works like ein)' },
+      ],
+    },
+    {
+      title: 'Nominative: -er, -e, -es',
+      text: `
+In the **Nominative** (the subject case) the adjective takes the ending the definite article would have had: *d**er*** → **-er**, *d**as*** → **-es**. The feminine *eine* already has an ending, so the adjective takes the plain **-e**, as after *die*.
+`,
+      examples: [
+        { de: 'Ein guter Film läuft heute.', en: 'A good film is on today. (masculine: -er)' },
+        { de: 'Eine kleine Katze sitzt dort.', en: 'A small cat is sitting there. (feminine: -e)' },
+        { de: 'Ein neues Auto steht draußen.', en: 'A new car is outside. (neuter: -es)' },
+      ],
+    },
+    {
+      title: 'Accusative: einen -en, eine -e, ein -es',
+      text: `
+In the **Accusative** (the case of the direct object) the masculine article becomes *einen*. It now has an ending, so the adjective takes **-en**, just as after *den*. Feminine *eine* keeps **-e**. Neuter *ein* does not change, so the adjective still shows the gender with **-es**.
+`,
+      examples: [
+        { de: 'Ich kaufe einen großen Tisch.', en: 'I am buying a big table. (einen → -en)' },
+        { de: 'Sie hat eine kleine Katze.', en: 'She has a small cat. (eine → -e)' },
+        { de: 'Ich habe ein neues Auto.', en: 'I have a new car. (ein → -es)' },
+      ],
+    },
+    {
+      title: 'Dative: always -en',
+      text: `
+In the **Dative** every ein-word has an ending: *einem, einer, einem*. So the adjective is always **-en**. The whole table, ein-word plus ending:
+
+| | masculine | feminine | neuter |
+|---|---|---|---|
+| Nominative | ein -er | eine -e | ein -es |
+| Accusative | einen -en | eine -e | ein -es |
+| Dative | einem -en | einer -en | einem -en |
+
+Only **three cells** differ from the *der*-table: the three where *ein* has no ending.
+`,
+      examples: [
+        { de: 'Er wohnt in einem alten Haus.', en: 'He lives in an old house. (Dative neuter: -en)' },
+        { de: 'Ich spreche mit meiner alten Schwester.', en: 'I am talking to my older sister. (Dative feminine: -en)' },
+        { de: 'Sie hilft einem kleinen Kind.', en: 'She helps a small child. (Dative: -en)' },
+      ],
+    },
+    {
+      title: 'Plural: always -en',
+      text: `
+*ein* has no plural, but **kein** and the possessives do. There the rule is easy: in the plural the adjective is always **-en**, in every case, also in the Nominative.
+`,
+      examples: [
+        { de: 'Ich habe keine guten Ideen.', en: 'I have no good ideas. (plural: -en)' },
+        { de: 'Meine alten Freunde kommen heute.', en: 'My old friends are coming today. (Nominative plural: -en)' },
+        { de: 'Wir wohnen bei unseren neuen Nachbarn.', en: 'We are staying with our new neighbours. (Dative plural: -en)' },
+      ],
+    },
+    {
+      title: 'The rule in one line',
+      text: `
+Ask one question: **does the ein-word have an ending?** Yes (*eine, einen, einem, einer, keine, meine* …) → the adjective takes **-e** (feminine Nominative and Accusative) or **-en** (everything else). No (*ein, kein, mein, unser* …) → the adjective shows the gender: **-er** for masculine, **-es** for neuter.
+`,
+      examples: [
+        { de: 'Das ist ein guter Film.', en: 'That is a good film. (ein has no ending → -er)' },
+        { de: 'Das ist unser kleines Haus.', en: 'That is our small house. (unser has no ending → -es)' },
+        { de: 'Das ist eine gute Idee.', en: 'That is a good idea. (eine has an ending → -e)' },
+        { de: 'Ich kenne einen guten Arzt.', en: 'I know a good doctor. (einen has an ending → -en)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a2-07-adjective-endings-definite', note: 'The base table; this topic changes only three cells of it.' },
@@ -74,6 +101,7 @@ Does the ein-word have an ending? **Yes** → adjective gets **-e** (feminine No
     'Possessives follow *ein*, not *der*: *mein neuer Chef* (not *mein neue Chef*), *unser kleines Haus*.',
     '**unser** and **euer** are ein-words even though they end in -er: *unser alter Hund* (Nominative), *euer neues Auto*.',
     'The plural of the ein-words is always **-en**: *keine neuen Schuhe, meine alten Bücher*, also in the Nominative.',
+    'You may see the Genitive (*eines alten Mannes*): the adjective takes **-en** there too, so nothing new to learn.',
   ],
   exercises: [
     {

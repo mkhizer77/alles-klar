@@ -24,7 +24,7 @@ const task: WritingTask = {
     { de: 'Für eine Antwort bis zum … wäre ich Ihnen dankbar.', en: 'I would be grateful for a reply by …', role: 'phrase' },
     { de: 'Mit freundlichen Grüßen', en: 'Yours faithfully', role: 'closing' },
   ],
-  grammarFocus: ['b1-30-suffixes', 'b1-31-register-formal-informal', 'b1-29-prefixes', 'a2-31-reading-writing-email'],
+  grammarFocus: ['b1-30-suffixes', 'b1-30b-adjective-suffixes', 'b1-31-register-formal-informal', 'b1-29-prefixes', 'a2-31b-semi-formal-email'],
   mustUse: [
     { label: 'nouns ending in -ung (Anmeldung, Ankündigung, Erklärung, Änderung …)', pattern: '\\b\\w+ung(en)?\\b', min: 3 },
     { label: 'nouns ending in -heit or -keit (Klarheit, Unsicherheit, Zuverlässigkeit …)', pattern: '\\b\\w+(heit|keit)(en)?\\b', min: 2 },

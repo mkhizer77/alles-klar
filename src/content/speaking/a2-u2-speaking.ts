@@ -30,7 +30,7 @@ const scenario: SpeakingScenario = {
     { de: 'Entschuldigung, was bedeutet „Nebenkosten“?', en: 'Sorry, what does "Nebenkosten" mean?' },
     { de: 'Ich möchte die Wohnung gern nehmen. Wann wissen Sie, ob ich sie bekomme?', en: 'I would like to take the flat. When will you know whether I get it?' },
   ],
-  grammarFocus: ['a2-04-subordinate-clauses-weil-dass', 'a2-05-wenn-ob-indirect-questions', 'a1-34-coordinating-conjunctions', 'a1-17-modal-verbs'],
+  grammarFocus: ['a2-04-subordinate-clauses-weil-dass', 'a2-05-wenn-ob-indirect-questions', 'a2-05b-indirect-questions', 'a1-34-coordinating-conjunctions', 'a1-17-modal-verbs', 'a1-17b-modal-verbs-2'],
   vocabFocus: ['die Miete', 'die Nebenkosten', 'die Kaution', 'der Vermieter', 'die Heizung', 'der Balkon', 'die Besichtigung', 'das Haustier', 'einziehen', 'zentral', 'günstig'],
   minTurns: 6,
 };

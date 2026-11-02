@@ -4,79 +4,104 @@ const topic: Topic = {
   id: 'a2-27-adverbial-connectors',
   level: 'A2',
   unit: 10,
-  order: 27,
+  order: 30,
   title: 'Adverbial connectors: deshalb, trotzdem, dann, also, sonst',
   germanTerm: 'Konnektoren (Position 1)',
   tags: ['connectors', 'word order', 'adverbs', 'verb second', 'text'],
   summary: 'Words like deshalb (therefore), trotzdem (nevertheless), dann (then), also (so) and sonst (otherwise) link two main clauses; they take position 1, so the verb comes right after them.',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'Connectors link two main clauses',
+      text: `
+You already know two ways to join sentences. *und, aber, denn* sit in position 0 and change nothing. *weil, dass* send the verb to the end.
 
-To link ideas you already know two kinds of words: **coordinating conjunctions** (*und, aber, denn* – position 0, no change in word order) and **subjunctions** (*weil, dass* – they push the verb to the end). There is a third group: **adverbial connectors** (*Konnektoren*). They are adverbs, so they **count as position 1** and the **verb comes directly after them**.
+**Adverbial connectors** (*Konnektoren*: linking adverbs like *deshalb* and *trotzdem*) are a third group. They join two main clauses, and they **take position 1**. So the verb comes right after them.
+`,
+      examples: [
+        { de: 'Es regnet. Deshalb bleibe ich zu Hause.', en: 'It is raining. That is why I am staying at home. (result)' },
+        { de: 'Es regnet, trotzdem gehe ich raus.', en: 'It is raining; nevertheless I am going out. (contrast)' },
+      ],
+    },
+    {
+      title: 'The main connectors',
+      text: `
+Each connector has one job:
 
-- Es regnet. **Deshalb bleibe** ich zu Hause. – *It is raining. Therefore I am staying at home.*
-- Es regnet, **trotzdem gehe** ich raus. – *It is raining; nevertheless I am going out.*
-
-### The main connectors
-
-| connector | meaning | what it does |
+| connector | meaning | job |
 |---|---|---|
-| **deshalb / deswegen / darum / daher** | therefore, that is why | gives a result |
-| **trotzdem** | nevertheless, even so | gives an unexpected contrast |
-| **dann** | then, after that | orders events in time |
-| **also** | so, therefore | draws a conclusion |
-| **sonst** | otherwise, or else | states what happens if not |
-| **außerdem** | besides, moreover | adds a point |
-| **danach / davor** | after that / before that | orders events in time |
+| **deshalb** | therefore | result |
+| **trotzdem** | nevertheless | unexpected contrast |
+| **dann** | then | time order |
+| **also** | so | conclusion |
+| **sonst** | otherwise | if not, then |
+| **außerdem** | besides | adds a point |
 
-*deshalb, deswegen, darum* and *daher* all mean the same. Pick one and use it; *deshalb* is the most common.
+*deswegen, darum* and *daher* mean the same as *deshalb*. *deshalb* is the most common, so use that one.
+`,
+      examples: [
+        { de: 'Ich bin müde. Deshalb gehe ich früh ins Bett.', en: 'I am tired. That is why I am going to bed early. (result)' },
+        { de: 'Zuerst frühstücken wir, dann fahren wir los.', en: 'First we have breakfast, then we set off. (time order)' },
+        { de: 'Der Zug fällt aus. Also nehmen wir das Auto.', en: 'The train is cancelled. So we take the car. (conclusion)' },
+        { de: 'Die Wohnung ist schön. Außerdem ist sie günstig.', en: 'The flat is nice. Besides, it is cheap. (adding a point)' },
+      ],
+    },
+    {
+      title: 'Connector, verb, subject',
+      text: `
+The connector fills **position 1**. The verb stays in position 2, so the **subject moves behind the verb**. This is the same rule as with *gestern* or *morgen* at the start of a sentence.
 
-### Word order: position 1, then the verb
-
-The connector fills **position 1**. The verb stays in **position 2**, and the subject moves **after** the verb, just as after *gestern* or *morgen* at the start of a sentence.
-
-| position 1 | verb (2) | subject | rest |
+| position 1 | verb | subject | rest |
 |---|---|---|---|
 | Deshalb | bleibe | ich | zu Hause. |
 | Trotzdem | gehe | ich | raus. |
-| Dann | essen | wir | zusammen. |
 | Sonst | kommst | du | zu spät. |
 
-The connector can also stand **inside** the sentence, in the midfield. Then the subject stays in position 1:
-
-- Ich **bleibe deshalb** zu Hause.
-- Ich **gehe trotzdem** raus.
-
-Both versions are correct. Starting with the connector sounds a bit more emphatic.
-
-### Compare the three groups
-
-| type | example | verb position |
-|---|---|---|
-| conjunction (position 0) | Ich bleibe zu Hause, **denn** es regnet. | normal (2nd) |
-| connector (position 1) | Es regnet, **deshalb** bleibe ich zu Hause. | right after the connector |
-| subjunction | Ich bleibe zu Hause, **weil** es regnet. | at the end |
-
-*deshalb* and *weil* express the same idea from two directions: *weil* introduces the **reason**, *deshalb* introduces the **result**.
-
-### sonst: a warning
-
-**sonst** is a very useful word for warnings and conditions. It means *if not, then …*:
-
-- Beeil dich, **sonst** verpasst du den Bus! – *Hurry up, otherwise you will miss the bus.*
-
-### Why it matters
-
-These connectors are what turn a list of short sentences into a text. Exam writing tasks at A2 reward *deshalb*, *trotzdem* and *außerdem* explicitly. The only thing you have to remember is the word order: **connector – verb – subject**.
+The common mistake is *Deshalb ich bleibe …*: the verb must come first.
 `,
-  examples: [
-    { de: 'Ich bin müde. Deshalb gehe ich früh ins Bett.', en: 'I am tired. That is why I am going to bed early. (result)' },
-    { de: 'Das Wetter ist schlecht, trotzdem machen wir einen Spaziergang.', en: 'The weather is bad; nevertheless we are going for a walk. (contrast)' },
-    { de: 'Zuerst frühstücken wir, dann fahren wir los.', en: 'First we have breakfast, then we set off. (time order)' },
-    { de: 'Der Zug fällt aus. Also nehmen wir das Auto.', en: 'The train is cancelled. So we take the car. (conclusion)' },
-    { de: 'Nimm einen Schirm mit, sonst wirst du nass.', en: 'Take an umbrella, otherwise you will get wet. (warning)' },
-    { de: 'Die Wohnung ist schön. Außerdem ist sie günstig.', en: 'The flat is nice. Besides, it is cheap. (adding a point)' },
-    { de: 'Ich habe deshalb keine Zeit.', en: 'That is why I have no time. (connector in the midfield, subject first)' },
+      examples: [
+        { de: 'Deshalb nehmen wir den Bus.', en: 'That is why we are taking the bus. (connector, verb, subject)' },
+        { de: 'Trotzdem arbeitet er weiter.', en: 'Nevertheless he keeps working.' },
+        { de: 'Dann essen wir zusammen.', en: 'Then we eat together.' },
+      ],
+    },
+    {
+      title: 'The connector can move inside',
+      text: `
+The connector can also stand **inside** the sentence, in the midfield (the part after the verb). Then the subject stays in position 1 and nothing moves.
+
+Both versions are correct. Starting with the connector sounds a little more emphatic.
+`,
+      examples: [
+        { de: 'Ich bleibe deshalb zu Hause.', en: 'That is why I am staying at home. (subject first, connector after the verb)' },
+        { de: 'Ich gehe trotzdem zur Party.', en: 'I am going to the party anyway.' },
+        { de: 'Wir nehmen also das Auto.', en: 'So we take the car.' },
+      ],
+    },
+    {
+      title: 'deshalb or weil? trotzdem or obwohl?',
+      text: `
+Some connectors have a partner among the subjunctions (*Subjunktionen*: joining words that send the verb to the end). The meaning is the same; only the word order is different.
+
+*weil* introduces the **reason**, *deshalb* introduces the **result**. *obwohl* and *trotzdem* both mark a contrast.
+`,
+      examples: [
+        { de: 'Ich bleibe zu Hause, weil es regnet.', en: 'I am staying at home because it is raining. (weil: reason, verb at the end)' },
+        { de: 'Es regnet, deshalb bleibe ich zu Hause.', en: 'It is raining, so I am staying at home. (deshalb: result, verb right after)' },
+        { de: 'Obwohl es regnet, gehe ich raus.', en: 'Although it is raining, I am going out. (obwohl: verb at the end)' },
+        { de: 'Es regnet, trotzdem gehe ich raus.', en: 'It is raining; nevertheless I am going out. (trotzdem: verb right after)' },
+      ],
+    },
+    {
+      title: 'sonst: a warning',
+      text: `
+**sonst** means *otherwise* or *or else*: if not, then this happens. It is perfect for warnings and small conditions. Like every connector, it takes position 1 and the verb follows it directly.
+`,
+      examples: [
+        { de: 'Beeil dich, sonst verpasst du den Bus!', en: 'Hurry up, otherwise you will miss the bus!' },
+        { de: 'Nimm einen Schirm mit, sonst wirst du nass.', en: 'Take an umbrella, otherwise you will get wet.' },
+        { de: 'Iss etwas, sonst hast du später Hunger.', en: 'Eat something, or else you will be hungry later.' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-34-coordinating-conjunctions', note: 'und, aber, denn are position 0 and do not change word order; connectors are position 1 and do.' },

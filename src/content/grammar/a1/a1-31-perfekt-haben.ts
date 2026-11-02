@@ -4,85 +4,100 @@ const topic: Topic = {
   id: 'a1-31-perfekt-haben',
   level: 'A1',
   unit: 7,
-  order: 31,
+  order: 35,
   title: 'The Perfekt with haben: Partizip II',
   germanTerm: 'Perfekt, Partizip II',
   tags: ['past tense', 'perfekt', 'participle', 'haben'],
   summary: 'The Perfekt is the everyday past tense: a form of haben in position 2 plus the Partizip II (ge-mach-t, ge-trunk-en) at the end of the sentence.',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'The everyday past tense',
+      text: `
+When Germans talk about the past in conversation, they almost always use the **Perfekt**. It covers both English *I did* and *I have done*.
 
-When Germans talk about the past in conversation, they almost always use the **Perfekt**. It corresponds to both English *I did* and *I have done*:
-
-- Ich **habe** gestern Pizza **gegessen**. – *I ate pizza yesterday.*
-- Wir **haben** einen Film **gesehen**. – *We watched a film.*
-- **Hast** du schon **gefrühstückt**? – *Have you had breakfast yet?*
-
-The Perfekt has two parts: a **helper verb** (*Hilfsverb*) in position 2 – for most verbs **haben** – and a special verb form at the end called the **Partizip II** (past participle).
-
-### The sentence bracket again
-
-The helper verb and the participle form a bracket around the rest of the sentence, exactly like a modal verb and its infinitive:
+It has two parts: a **helper verb** (*Hilfsverb*) in position 2, for most verbs **haben**, and a special verb form at the end, the **Partizip II** (past participle).
+`,
+      examples: [
+        { de: 'Ich habe gestern Pizza gegessen.', en: 'I ate pizza yesterday. (habe … gegessen)' },
+        { de: 'Wir haben einen Film gesehen.', en: 'We watched a film. (haben … gesehen)' },
+        { de: 'Hast du schon gefrühstückt?', en: 'Have you had breakfast yet? (hast … gefrühstückt)' },
+      ],
+    },
+    {
+      title: 'haben and the participle form a bracket',
+      text: `
+The helper verb and the participle frame the rest of the sentence, exactly like a modal verb and its infinitive. **haben** is conjugated normally: *ich habe, du hast, er hat, wir haben, ihr habt, sie haben*. The participle never changes and is always the **last word**.
 
 | position 1 | position 2 | midfield | end |
 |---|---|---|---|
 | Ich | **habe** | gestern viel | **gearbeitet**. |
 | Gestern | **habe** | ich viel | **gearbeitet**. |
 | **Hast** | du | das Buch | **gelesen**? |
+`,
+      examples: [
+        { de: 'Ich habe gestern viel gearbeitet.', en: 'I worked a lot yesterday.' },
+        { de: 'Gestern habe ich viel gearbeitet.', en: 'Yesterday I worked a lot. (time first, habe second)' },
+        { de: 'Hast du das Buch gelesen?', en: 'Did you read the book? (question: hast first, participle last)' },
+        { de: 'Was hast du am Wochenende gemacht?', en: 'What did you do at the weekend? (the most common A1 question)' },
+      ],
+    },
+    {
+      title: 'Regular verbs: ge- + stem + -t',
+      text: `
+For regular (weak) verbs, take the stem, put **ge-** in front and **-t** at the end: *machen → **ge**mach**t***, *kaufen → gekauft*, *spielen → gespielt*, *lernen → gelernt*.
 
-*Haben* is conjugated normally: ich habe, du hast, er/sie/es hat, wir haben, ihr habt, sie/Sie haben.
-
-### Building the Partizip II
-
-**1. Regular (weak) verbs: ge- + stem + -t**
+If the stem ends in **-t** or **-d**, the ending is **-et**, so you can hear it: *arbeiten → gearbeitet*.
+`,
+      examples: [
+        { de: 'Ich habe Fußball gespielt.', en: 'I played football. (ge-spiel-t)' },
+        { de: 'Sie hat ein Auto gekauft.', en: 'She bought a car. (ge-kauf-t)' },
+        { de: 'Wir haben heute viel gearbeitet.', en: 'We worked a lot today. (stem ends in -t: -et)' },
+      ],
+    },
+    {
+      title: 'Irregular verbs: ge- + stem + -en',
+      text: `
+Irregular (strong) verbs take **ge-** and **-en**, and the vowel often changes. There is no rule to predict it, so learn each pair like vocabulary: *trinken – getrunken*.
 
 | infinitive | Partizip II |
 |---|---|
-| machen | **ge**mach**t** |
-| kaufen | **ge**kauf**t** |
-| spielen | **ge**spiel**t** |
-| lernen | **ge**lern**t** |
-| arbeiten | **ge**arbeit**et** (stem ends in -t, so -et) |
-
-**2. Irregular (strong) verbs: ge- + (changed) stem + -en**
-
-| infinitive | Partizip II |
-|---|---|
-| essen | **ge**g**essen** |
-| trinken | **ge**tr**u**nk**en** |
-| sehen | **ge**seh**en** |
-| lesen | **ge**les**en** |
-| schreiben | **ge**schr**ie**b**en** |
-| finden | **ge**f**u**nd**en** |
-| sprechen | **ge**spr**o**ch**en** |
-| nehmen | **ge**n**omm**en |
-
-The vowel often changes, and there is no rule to predict it. You learn each one with its infinitive, like a vocabulary pair: *trinken – getrunken*.
-
-**3. Separable verbs: prefix + ge + stem**
-
-The **ge-** goes between the prefix and the stem: *einkaufen → ein**ge**kauft*, *aufräumen → auf**ge**räumt*, *anrufen → an**ge**rufen*.
-
-**4. No ge- at all**
-
-Two groups never take ge-:
-- Verbs with the inseparable prefixes **be-, ver-, er-, ent-, emp-, ge-, zer-**: *besuchen → besucht*, *verstehen → verstanden*, *erklären → erklärt*, *bekommen → bekommen*.
-- Verbs ending in **-ieren**: *studieren → studiert*, *telefonieren → telefoniert*, *passieren → passiert*.
+| essen | **gegessen** |
+| trinken | **getrunken** |
+| sehen | **gesehen** |
+| lesen | **gelesen** |
+| schreiben | **geschrieben** |
+| finden | **gefunden** |
+`,
+      examples: [
+        { de: 'Wir haben Pizza gegessen.', en: 'We ate pizza. (essen → gegessen)' },
+        { de: 'Hast du den Kaffee getrunken?', en: 'Did you drink the coffee? (trinken → getrunken)' },
+        { de: 'Er hat einen Brief geschrieben.', en: 'He wrote a letter. (schreiben → geschrieben)' },
+      ],
+    },
+    {
+      title: 'Separable verbs: prefix + ge + stem',
+      text: `
+With separable verbs the **ge-** goes between the prefix and the stem: *einkaufen → ein**ge**kauft*, *aufräumen → aufgeräumt*, *anrufen → angerufen*. The whole participle stays one word at the end of the sentence.
+`,
+      examples: [
+        { de: 'Sie hat am Samstag eingekauft.', en: 'She went shopping on Saturday. (ein-ge-kauft)' },
+        { de: 'Ich habe mein Zimmer aufgeräumt.', en: 'I tidied my room. (auf-ge-räumt)' },
+        { de: 'Er hat mich gestern angerufen.', en: 'He called me yesterday. (an-ge-rufen)' },
+      ],
+    },
+    {
+      title: 'No ge- at all',
+      text: `
+Two groups never take **ge-**. Verbs with the prefixes **be-, ver-, er-, ent-, emp-, ge-, zer-**: *besuchen → besucht*, *verstehen → verstanden*, *bekommen → bekommen*. And verbs ending in **-ieren**: *studieren → studiert*, *telefonieren → telefoniert*.
 
 Both groups keep the *-t* or *-en* ending; they just skip the *ge-*.
-
-### Why it matters
-
-Without the Perfekt you cannot say what you did yesterday, at the weekend or on holiday. It is the main past tense of spoken German and of emails and messages; the written Präteritum (*ich machte*) comes later. The bracket structure is the same one you already use with modal verbs and separable verbs, so the only new work is learning the participles. The next topic covers the verbs that use **sein** instead of *haben* (*ich bin gegangen*).
 `,
-  examples: [
-    { de: 'Ich habe gestern Fußball gespielt.', en: 'I played football yesterday. (regular: gespielt)' },
-    { de: 'Wir haben Pizza gegessen.', en: 'We ate pizza. (irregular: gegessen)' },
-    { de: 'Hast du den Film gesehen?', en: 'Did you see the film? (question: hast first, participle last)' },
-    { de: 'Sie hat am Samstag eingekauft.', en: 'She went shopping on Saturday. (separable: ein-ge-kauft)' },
-    { de: 'Er hat seine Oma besucht.', en: 'He visited his grandma. (be- prefix: no ge-)' },
-    { de: 'Ich habe zwei Stunden telefoniert.', en: 'I was on the phone for two hours. (-ieren: no ge-)' },
-    { de: 'Was hast du am Wochenende gemacht?', en: 'What did you do at the weekend? (the most common A1 question)' },
+      examples: [
+        { de: 'Er hat seine Oma besucht.', en: 'He visited his grandma. (be-: no ge-)' },
+        { de: 'Ich habe das nicht verstanden.', en: 'I did not understand that. (ver-: no ge-)' },
+        { de: 'Ich habe zwei Stunden telefoniert.', en: 'I was on the phone for two hours. (-ieren: no ge-)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-04-sein-haben', note: 'The helper verb haben is conjugated exactly as you learned it.' },

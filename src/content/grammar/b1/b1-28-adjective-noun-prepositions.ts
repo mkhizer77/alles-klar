@@ -4,77 +4,99 @@ const topic: Topic = {
   id: 'b1-28-adjective-noun-prepositions',
   level: 'B1',
   unit: 9,
-  order: 28,
+  order: 38,
   title: 'Prepositions with adjectives and nouns (stolz auf, Angst vor)',
   germanTerm: 'Adjektive / Nomen mit Präpositionen',
   tags: ['adjectives', 'nouns', 'prepositions', 'cases', 'vocabulary'],
-  summary: 'Like verbs, many adjectives and nouns come with a fixed preposition and case (stolz auf + Akkusativ, Angst vor + Dativ), and often the noun takes a different preposition from its verb.',
-  explanation: `
-### Not only verbs
+  summary: 'Like verbs, many adjectives and nouns come with a fixed preposition and case: stolz auf + Akkusativ, Angst vor + Dativ. Learn verb, adjective and noun of one family together.',
+  steps: [
+    {
+      title: 'Not only verbs',
+      text: `
+You know that verbs can carry a fixed preposition (*warten auf*). **Adjectives** and **nouns** do the same: **stolz auf** (proud of), **Angst vor** (fear of). The preposition is fixed, the case is fixed, and you learn the whole unit.
 
-Adjectives and nouns can also come with a fixed preposition, and you need them for everyday feelings and opinions:
-
-- Ich bin **stolz auf** dich. – *I am proud of you.*
-- Ich habe **Angst vor** Spinnen. – *I am afraid of spiders.*
-
-You know that verbs can carry a fixed preposition (*warten auf*). **Adjectives** and **nouns** do the same: *stolz **auf*** (proud of), *Angst **vor*** (fear of). The preposition is fixed, the case is fixed, and you learn the whole unit. Adjectives with prepositions mostly appear after **sein**; nouns with prepositions often sit inside **noun–verb combinations** (*Angst haben vor*).
-
-### Adjectives with prepositions
-
+Adjectives with prepositions mostly stand after **sein**. Nouns with prepositions often sit inside a noun–verb combination: *Angst haben vor*.
+`,
+      examples: [
+        { de: 'Ich bin stolz auf dich.', en: 'I am proud of you. (adjective after sein)' },
+        { de: 'Ich habe Angst vor Spinnen.', en: 'I am afraid of spiders. (noun inside Angst haben vor)' },
+        { de: 'Bist du zufrieden mit deinem neuen Job?', en: 'Are you happy with your new job?' },
+      ],
+    },
+    {
+      title: 'Adjectives with the Accusative: auf, über, für, in',
+      text: `
 | Preposition + case | Adjectives |
 |---|---|
 | **auf** + Akk | stolz auf, neugierig auf, gespannt auf, böse auf, wütend auf |
 | **über** + Akk | froh über, glücklich über, traurig über, enttäuscht über |
 | **für** + Akk | verantwortlich für, bekannt für, dankbar für, typisch für, wichtig für |
 | **in** + Akk | verliebt in |
+
+Notice the two feeling groups: **über** for feelings about something that **happened** (*froh, traurig*), **auf** for feelings directed at a **person or a future thing** (*stolz, gespannt*).
+`,
+      examples: [
+        { de: 'Sie ist stolz auf ihre Tochter.', en: 'She is proud of her daughter. (auf + Akk)' },
+        { de: 'Wir sind froh über das gute Ergebnis.', en: 'We are glad about the good result. (über + Akk)' },
+        { de: 'Er ist verantwortlich für das Projekt.', en: 'He is responsible for the project. (für + Akk)' },
+        { de: 'Er ist verliebt in seine Nachbarin.', en: 'He is in love with his neighbour. (in + Akk)' },
+      ],
+    },
+    {
+      title: 'Adjectives with the Dative: mit, von, zu',
+      text: `
+| Preposition + case | Adjectives |
+|---|---|
 | **an** + Dat | interessiert an |
 | **mit** + Dat | zufrieden mit, einverstanden mit, fertig mit, verheiratet mit |
 | **von** + Dat | abhängig von, begeistert von, überzeugt von, müde von |
 | **zu** + Dat | freundlich zu, nett zu |
 | **bei** + Dat | beliebt bei |
 
-Notice the big groups: **über** for feelings about something that happened (*froh, traurig, enttäuscht*), **auf** for feelings directed at a person or a future thing (*stolz, neugierig, gespannt*), **mit** for satisfaction and agreement (*zufrieden, einverstanden*).
-
-### Nouns with prepositions
-
+**mit** is the block for satisfaction and agreement: *zufrieden mit, einverstanden mit*.
+`,
+      examples: [
+        { de: 'Ich bin sehr interessiert an dieser Stelle.', en: 'I am very interested in this position. (an + Dat)' },
+        { de: 'Ich bin mit dem Plan einverstanden.', en: 'I agree with the plan. (mit + Dat)' },
+        { de: 'Sie ist von dem Film begeistert.', en: 'She is thrilled by the film. (von + Dat)' },
+        { de: 'Sei nett zu deinem Bruder.', en: 'Be nice to your brother. (zu + Dat)' },
+      ],
+    },
+    {
+      title: 'Nouns with prepositions',
+      text: `
 | Preposition + case | Nouns |
 |---|---|
-| **auf** + Akk | die Lust auf, die Hoffnung auf, die Antwort auf, die Freude auf |
-| **über** + Akk | die Freude über, der Ärger über, die Diskussion über, die Information über |
-| **für** + Akk | der Grund für, die Verantwortung für, der Dank für |
-| **um** + Akk | die Bitte um, die Sorge um, die Bewerbung um |
-| **an** + Dat | das Interesse an, die Teilnahme an |
-| **vor** + Dat | die Angst vor |
-| **nach** + Dat | die Frage nach, die Suche nach |
-| **mit** + Dat | der Kontakt mit |
-| **zu** + Dat | die Einladung zu |
+| **auf** + Akk | Lust auf, Hoffnung auf, Antwort auf |
+| **über** + Akk | Freude über, Ärger über, Diskussion über |
+| **für** + Akk | Grund für, Verantwortung für, Dank für |
+| **um** + Akk | Bitte um, Sorge um, Bewerbung um |
+| **an** + Dat | Interesse an, Teilnahme an |
+| **vor, nach** + Dat | Angst vor; Frage nach, Suche nach |
 
-### Same family, same preposition – usually
-
-Often the verb, the adjective and the noun share the preposition, which makes learning easier:
-
-| Verb | Adjective | Noun |
-|---|---|---|
-| sich freuen **auf** | gespannt **auf** | die Freude **auf** |
-| hoffen **auf** | – | die Hoffnung **auf** |
-| Angst haben **vor** | – | die Angst **vor** |
-| sich ärgern **über** | – | der Ärger **über** |
-
-But there is one **trap** where the family changes preposition: *sich interessieren **für*** → *interessiert **an*** / *das Interesse **an***.
-
-### Why it matters
-
-Adjectives and nouns with prepositions appear constantly in B1 speaking and writing: *Ich bin zufrieden mit …*, *Ich habe keine Lust auf …*, *Der Grund für … ist …*. Getting the preposition right makes you sound fluent. Learning verb, adjective and noun together as a family is the fastest way to cover all three.
+All are **die** except *der Grund, der Ärger, der Dank, das Interesse*.
 `,
-  examples: [
-    { de: 'Sie ist stolz auf ihre Tochter.', en: 'She is proud of her daughter. (auf + Akk)' },
-    { de: 'Ich habe Angst vor Spinnen.', en: 'I am afraid of spiders. (vor + Dat)' },
-    { de: 'Bist du zufrieden mit deinem neuen Job?', en: 'Are you happy with your new job? (mit + Dat)' },
-    { de: 'Er ist verliebt in seine Nachbarin.', en: 'He is in love with his neighbour. (in + Akk)' },
-    { de: 'Hast du Lust auf ein Eis?', en: 'Do you feel like an ice cream? (Lust auf + Akk)' },
-    { de: 'Die Antwort auf deine Frage ist Nein.', en: 'The answer to your question is no. (Antwort auf + Akk)' },
-    { de: 'Ich bin sehr interessiert an dieser Stelle.', en: 'I am very interested in this position. (an + Dat, although the verb takes für)' },
-    { de: 'Wir sind froh über das gute Ergebnis.', en: 'We are glad about the good result. (über + Akk)' },
+      examples: [
+        { de: 'Hast du Lust auf ein Eis?', en: 'Do you feel like an ice cream? (Lust auf + Akk)' },
+        { de: 'Die Antwort auf deine Frage ist Nein.', en: 'The answer to your question is no. (Antwort auf + Akk)' },
+        { de: 'Der Grund für meine Absage ist eine Krankheit.', en: 'The reason for my cancellation is an illness. (Grund für + Akk)' },
+        { de: 'Die Suche nach einer Wohnung dauert lange.', en: 'The search for a flat takes a long time. (Suche nach + Dat)' },
+      ],
+    },
+    {
+      title: 'Same family, same preposition, usually',
+      text: `
+Often the verb, the adjective and the noun of one family share the preposition, so learn them together: *hoffen **auf*** / *die Hoffnung **auf***; *Angst haben **vor*** / *die Angst **vor***; *sich ärgern **über*** / *der Ärger **über***.
+
+One **trap**: *sich interessieren **für***, but *interessiert **an*** and *das Interesse **an***. The family changes preposition.
+`,
+      examples: [
+        { de: 'Ich hoffe auf gutes Wetter.', en: 'I hope for good weather. (verb: hoffen auf)' },
+        { de: 'Die Hoffnung auf gutes Wetter ist groß.', en: 'The hope for good weather is great. (noun: Hoffnung auf)' },
+        { de: 'Sie interessiert sich für Kunst.', en: 'She is interested in art. (verb: für)' },
+        { de: 'Sie hat großes Interesse an Kunst.', en: 'She has a great interest in art. (noun: an)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'b1-27-verb-preposition-b1', note: 'The verb list is the base; adjectives and nouns of the same family often share the preposition.' },
@@ -84,10 +106,10 @@ Adjectives and nouns with prepositions appear constantly in B1 speaking and writ
     { topicId: 'a1-29-two-way-prepositions', note: 'an, auf, über and in are two-way prepositions; here the adjective or noun fixes the case.' },
   ],
   edgeCases: [
-    '*sich interessieren **für***, but *interessiert **an*** and *Interesse **an***. The family changes preposition.',
-    '*über* with adjectives of feeling is always **Accusative**: *traurig über **den** Verlust*.',
-    '*enttäuscht* takes both *von* (a person: *enttäuscht von dir*) and *über* (a thing: *enttäuscht über das Ergebnis*).',
-    '*nett zu* and *freundlich zu* take the **Dative**: *Sei nett **zu** deinem Bruder* (be nice to your brother).',
+    '**sich interessieren für**, but **interessiert an** and **Interesse an**. The family changes preposition.',
+    '**über** with adjectives of feeling is always Accusative: *traurig über **den** Verlust*.',
+    '**enttäuscht** takes both *von* (a person: *enttäuscht von dir*) and *über* (a thing: *enttäuscht über das Ergebnis*).',
+    '**nett zu** and **freundlich zu** take the Dative: *Sei nett **zu** deinem Bruder* (be nice to your brother).',
     'With a clause instead of a noun, use the da-compound: *Ich bin stolz **darauf**, dass du die Prüfung bestanden hast.*',
   ],
   exercises: [

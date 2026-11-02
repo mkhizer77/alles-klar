@@ -4,28 +4,46 @@ const topic: Topic = {
   id: 'b1-10-konjunktiv-2-past',
   level: 'B1',
   unit: 4,
-  order: 10,
+  order: 14,
   title: 'Konjunktiv II in the past (hätte gemacht, wäre gegangen)',
   germanTerm: 'Konjunktiv II Vergangenheit',
   tags: ['Konjunktiv II', 'past', 'conditional', 'regret', 'modal verbs'],
   summary: 'Konjunktiv II of the past (hätte / wäre + Partizip II) talks about what would have happened or what you wish had happened: "I would have come", "if only I had known".',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'What the past Konjunktiv II is for',
+      text: `
+The present Konjunktiv II says *If I had time, I would help* (now, but it is not the case). The **past Konjunktiv II** moves the same unreal idea into the past: *If I **had had** time, I **would have** helped* (back then, but it did not happen).
 
-The present Konjunktiv II says *If I had time, I would help* (now, but it is not the case). The **past Konjunktiv II** moves the same unreal idea into the past: *If I **had had** time, I **would have** helped* (back then, but it did not happen). It is the form for **regrets**, **missed chances** and **imagined past outcomes**.
-
-- Wenn ich das **gewusst hätte**, **wäre** ich **gekommen**. – *If I had known that, I would have come.*
-
-### How it works
-
-There is only **one** past form of Konjunktiv II, and it is easy: take the Plusquamperfekt and put the helper into Konjunktiv II.
+It is the form for **regrets**, **missed chances** and **imagined past outcomes**.
+`,
+      examples: [
+        { de: 'Wenn ich das gewusst hätte, wäre ich gekommen.', en: 'If I had known that, I would have come. (I did not know)' },
+        { de: 'Ich hätte dich angerufen, aber mein Handy war kaputt.', en: 'I would have called you, but my phone was broken.' },
+      ],
+    },
+    {
+      title: 'The form: hätte / wäre + Partizip II',
+      text: `
+There is only **one** past form, and it is easy. Take the Plusquamperfekt (*hatte / war* + Partizip II) and put the helper into Konjunktiv II:
 
 | Plusquamperfekt | Konjunktiv II past |
 |---|---|
 | ich **hatte** gemacht | ich **hätte** gemacht |
 | ich **war** gegangen | ich **wäre** gegangen |
 
-So the formula is **hätte / wäre + Partizip II**. The helper follows the Perfekt rule: *sein* for movement and change of state, *haben* for the rest.
+Choose the helper as in the Perfekt: **sein** for movement and change of state, **haben** for the rest. There is **no würde** in the past.
+`,
+      examples: [
+        { de: 'Ich hätte das gemacht.', en: 'I would have done that. (machen → hätte)' },
+        { de: 'Ich wäre nach Hause gegangen.', en: 'I would have gone home. (gehen → wäre)' },
+        { de: 'Wir wären gern länger geblieben.', en: 'We would have liked to stay longer. (bleiben → wäre)' },
+      ],
+    },
+    {
+      title: 'The helper changes with the person',
+      text: `
+The Partizip II never changes. Only the helper takes the usual Konjunktiv II endings:
 
 | | haben-verbs | sein-verbs |
 |---|---|---|
@@ -35,60 +53,59 @@ So the formula is **hätte / wäre + Partizip II**. The helper follows the Perfe
 | wir | **hätten** gelernt | **wären** gefahren |
 | ihr | **hättet** gelernt | **wärt** gefahren |
 | sie / Sie | **hätten** gelernt | **wären** gefahren |
-
-There is no *würde* form in the past. Always use *hätte* or *wäre* + Partizip II.
-
-### Three uses
-
-**1. Unreal condition in the past.** Both halves in the past Konjunktiv II:
-
-- **Wenn** er **gelernt hätte**, **hätte** er die Prüfung **bestanden**.
-- **Wenn** du früher **aufgestanden wärst**, **hättest** du den Bus nicht **verpasst**.
-
-**2. Wish or regret about the past.**
-
-- **Hätte** ich doch nur mehr **gelernt**! – *If only I had studied more!*
-- **Wäre** ich doch zu Hause **geblieben**! – *If only I had stayed home!*
-
-**3. A past situation seen in another way.**
-
-- Ohne deine Hilfe **hätte** ich das nicht **geschafft**. – *Without your help I would not have managed.*
-- Ich **hätte** dich **angerufen**, aber mein Handy war kaputt.
-- Wir **wären** gern länger **geblieben**. – *We would have liked to stay longer.*
-
-### With modal verbs
-
-Two phrases with modal verbs are worth learning as fixed patterns. They end in the **double infinitive** you know from Unit 1 (two verbs in the infinitive, the modal last): **hätte + Infinitiv + Modal**.
-
-| form | meaning |
-|---|---|
-| Ich **hätte** das **machen sollen**. | I should have done that. |
-| Du **hättest** mich **fragen können**. | You could have asked me. |
-
-*Hätte … sollen* (should have) and *hätte … können* (could have) are all you need. You may also see the same pattern with other modals (*Er hätte nicht kommen müssen* – he would not have had to come); it works the same way.
-
-### Why it matters
-
-Talking about a past mistake or a missed opportunity is a classic B1 speaking task (*Was hättest du anders gemacht?*). The past Konjunktiv II also lets you give feedback softly (*Sie hätten früher anrufen können*). Because it reuses the Plusquamperfekt and the double infinitive, it costs you almost no new forms.
 `,
-  examples: [
-    { de: 'Wenn ich das gewusst hätte, wäre ich gekommen.', en: 'If I had known that, I would have come.' },
-    { de: 'Wenn er gelernt hätte, hätte er die Prüfung bestanden.', en: 'If he had studied, he would have passed the exam.' },
-    { de: 'Hätte ich doch nur mehr gelernt!', en: 'If only I had studied more! (regret, verb first)' },
-    { de: 'Ohne deine Hilfe hätte ich das nicht geschafft.', en: 'Without your help I would not have managed.' },
-    { de: 'Wir wären gern länger geblieben.', en: 'We would have liked to stay longer. (bleiben → wäre)' },
-    { de: 'Du hättest mich fragen sollen.', en: 'You should have asked me. (hätte + double infinitive)' },
-    { de: 'Ich hätte dich angerufen, aber mein Handy war kaputt.', en: 'I would have called you, but my phone was broken.' },
+      examples: [
+        { de: 'Du hättest mehr gelernt.', en: 'You would have studied more. (du: hättest)' },
+        { de: 'Wir wären früher gefahren.', en: 'We would have left earlier. (wir: wären)' },
+        { de: 'Sie hätten das nicht gesagt.', en: 'They would not have said that. (sie: hätten)' },
+      ],
+    },
+    {
+      title: 'Unreal condition in the past',
+      text: `
+Both halves are in the past Konjunktiv II. In the **wenn** clause the helper goes to the **end**, after the Partizip II. The main clause then starts with the helper. Without *wenn* a past situation can also be seen in another way: *Ohne deine Hilfe hätte ich das nicht geschafft.*
+`,
+      examples: [
+        { de: 'Wenn er gelernt hätte, hätte er die Prüfung bestanden.', en: 'If he had studied, he would have passed the exam.' },
+        { de: 'Wenn du früher aufgestanden wärst, hättest du den Bus nicht verpasst.', en: 'If you had got up earlier, you would not have missed the bus.' },
+        { de: 'Ohne deine Hilfe hätte ich das nicht geschafft.', en: 'Without your help I would not have managed.' },
+      ],
+    },
+    {
+      title: 'Regret: Hätte ich doch …!',
+      text: `
+A wish or regret about the past works like a present wish: drop *wenn*, put the **helper first**, add **doch** or **nur**, and the Partizip II stays at the end.
+`,
+      examples: [
+        { de: 'Hätte ich doch nur mehr gelernt!', en: 'If only I had studied more! (regret, helper first)' },
+        { de: 'Wäre ich doch zu Hause geblieben!', en: 'If only I had stayed home!' },
+        { de: 'Wenn ich das doch gewusst hätte!', en: 'If only I had known that! (with wenn: helper at the end)' },
+      ],
+    },
+    {
+      title: 'Should have, could have',
+      text: `
+Two phrases with modal verbs are worth learning as fixed patterns. They end in the **double infinitive** (two verbs in the infinitive, the modal last): **hätte + Infinitiv + sollen / können**.
+
+*Hätte … sollen* (should have) and *hätte … können* (could have) are all you need. You may also read the same pattern with other modals (*Er hätte nicht kommen müssen*); it works the same way.
+`,
+      examples: [
+        { de: 'Ich hätte das machen sollen.', en: 'I should have done that. (hätte + machen sollen)' },
+        { de: 'Du hättest mich fragen können.', en: 'You could have asked me. (hätte + fragen können)' },
+        { de: 'Sie hätten früher anrufen können.', en: 'You could have called earlier. (soft feedback)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'b1-09-konjunktiv-2-irreal', note: 'The present Konjunktiv II (hätte, wäre, würde); here the same idea goes into the past.' },
+    { topicId: 'b1-09b-irreal-wishes-advice', note: 'Present wishes (Hätte ich doch Zeit!) work like the past regrets here.' },
     { topicId: 'b1-01-plusquamperfekt', note: 'hatte / war + Partizip II is the structure; add an umlaut and you have the past Konjunktiv II.' },
     { topicId: 'a1-32-perfekt-sein', note: 'Verbs with sein in the Perfekt take wäre here.' },
     { topicId: 'b1-03-modals-perfekt', note: 'hätte … machen sollen ends in the same double infinitive as hat … machen müssen.' },
   ],
   edgeCases: [
     'There is no *würde* in the past: *ich **wäre** gegangen*, not *ich würde gegangen*.',
-    'Choose the helper as in the Perfekt: *wäre gefahren* (movement), *hätte gegessen*.',
+    'Choose the helper as in the Perfekt: ***wäre** gefahren* (movement), ***hätte** gegessen*.',
     '**Should have** = *hätte … sollen*, **could have** = *hätte … können*. Both end in a double infinitive, never a participle.',
     'In a wish without *wenn*, the helper comes first: ***Hätte** ich das gewusst!*',
     'Both halves of an unreal past condition are in the past Konjunktiv II: *Wenn ich Zeit **gehabt hätte**, **wäre** ich **gekommen**.*',

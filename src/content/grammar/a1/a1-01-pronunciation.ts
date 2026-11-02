@@ -9,86 +9,130 @@ const topic: Topic = {
   germanTerm: 'Aussprache',
   tags: ['pronunciation', 'alphabet', 'spelling', 'sounds'],
   summary: 'German spelling is very regular: once you know how each letter and letter group sounds, you can read almost any word out loud correctly.',
-  explanation: `
-### Why this is good news
-
-German spelling is much more **regular** than English. A letter (or a group of letters) nearly always makes the same sound. Learn about twenty rules and you can pronounce new words you have never heard.
-
-### The alphabet (*das Alphabet*)
-
-You need the letter names to spell your name or email. Most are close to English, but a few are traps.
+  steps: [
+    {
+      title: 'The alphabet: letter names',
+      text: `
+German spelling is much more regular than English: a letter nearly always makes the same sound. First you need the **letter names**, to spell your name or email. Most are close to English, but a few are traps.
 
 | letter | name sounds like | letter | name sounds like |
 |---|---|---|---|
 | A | "ah" | J | "yot" |
-| E | "eh" (like *ay* in *say*, but short) | V | "fow" (rhymes with *cow*) |
+| E | "eh" | V | "fow" (rhymes with cow) |
 | I | "ee" | W | "veh" |
 | Y | "üpsilon" | Z | "tset" |
 
-The extra letters are **ä, ö, ü** (*Umlaute*) and **ß** (*Eszett*). When spelling out loud you say "a-Umlaut", "o-Umlaut", "u-Umlaut" and "Eszett".
+The extra letters are **ä, ö, ü** (*Umlaute*) and **ß** (*Eszett*). Out loud you say "a-Umlaut", "o-Umlaut", "u-Umlaut", "Eszett".
+`,
+      examples: [
+        { de: 'Buchstabieren Sie das bitte.', en: 'Please spell that.' },
+        { de: 'Mein Name ist Weber: W-E-B-E-R.', en: 'My name is Weber. (W is said "veh")' },
+        { de: 'Ich heiße Jana: J-A-N-A.', en: 'My name is Jana. (J is said "yot")' },
+      ],
+    },
+    {
+      title: 'Vowels: long or short',
+      text: `
+Every vowel is either **long** or **short**. A vowel is long when it is doubled (*Boot*), followed by **h** (*Bahn*), or followed by only **one** consonant (*Name*). It is short before a **double consonant** (*Mutter*, *kommen*).
 
-### Vowels: long or short
-
-A vowel is usually **long** when doubled (*Boot*), followed by **h** (*Bahn*), or followed by only **one** consonant (*Name*). It is **short** before a **double consonant** (*Mutter*, *kommen*).
-
-The umlauts are separate sounds:
+The **h** after a vowel is silent: it only shows that the vowel is long.
+`,
+      examples: [
+        { de: 'der Name', en: 'the name (long a: only one consonant follows)' },
+        { de: 'die Mutter', en: 'the mother (short u: double consonant)' },
+        { de: 'die Bahn', en: 'the train (long a: silent h)' },
+        { de: 'das Boot', en: 'the boat (long o: double vowel)' },
+      ],
+    },
+    {
+      title: 'The umlauts: ä, ö, ü',
+      text: `
+The dots change the vowel into a new sound. These are separate letters, not decoration.
 
 | letter | how to make it | example |
 |---|---|---|
-| **ä** | like *e* in *bed* (long: like *ai* in *fair*) | *Männer*, *spät* |
-| **ö** | say "eh" but round your lips as for "oh" | *schön*, *können* |
-| **ü** | say "ee" but round your lips as for "oo" | *über*, *fünf* |
-
-### Letter groups you must know
+| **ä** | like *e* in *bed*; long like *ai* in *fair* | Männer, spät |
+| **ö** | say "eh" but round your lips as for "oh" | schön, können |
+| **ü** | say "ee" but round your lips as for "oo" | über, fünf |
+`,
+      examples: [
+        { de: 'spät', en: 'late (long ä)' },
+        { de: 'schön', en: 'beautiful (ö: "eh" with rounded lips)' },
+        { de: 'fünf', en: 'five (ü: "ee" with rounded lips)' },
+        { de: 'die Männer', en: 'the men (short ä, like e in bed)' },
+      ],
+    },
+    {
+      title: 'Letter pairs: ei, ie, eu, au',
+      text: `
+Four vowel pairs appear in hundreds of A1 words:
 
 | letters | sound | examples |
 |---|---|---|
-| **ei** | like English *eye* | *mein*, *nein*, *drei* |
-| **ie** | long *ee* | *sie*, *vier*, *Liebe* |
-| **eu / äu** | like *oy* in *boy* | *neu*, *heute*, *Häuser* |
-| **au** | like *ow* in *cow* | *Haus*, *Auto* |
-| **sch** | English *sh* | *Schule*, *schön* |
-| **sp / st** at the start of a word | *shp / sht* | *sprechen*, *Straße* |
-| **ch** after a, o, u, au | rough sound in the throat, like Scottish *loch* | *Buch*, *auch*, *Nacht* |
-| **ch** after e, i, ä, ö, ü, l, n, r | soft hiss, like the *h* in *huge* | *ich*, *nicht*, *Milch* |
-| **-ig** at the end of a word | sounds like *-ich* | *zwanzig*, *richtig* |
+| **ei** | like English *eye* | mein, nein, drei |
+| **ie** | long *ee* | sie, vier, Liebe |
+| **eu, äu** | like *oy* in *boy* | neu, heute, Häuser |
+| **au** | like *ow* in *cow* | Haus, Auto |
 
 Memory aid for **ei** and **ie**: say the **second** letter's English name. *ei* = "I", *ie* = "E".
+`,
+      examples: [
+        { de: 'nein', en: 'no (ei = eye)' },
+        { de: 'vier', en: 'four (ie = ee)' },
+        { de: 'heute', en: 'today (eu = oy)' },
+        { de: 'das Haus', en: 'the house (au = ow)' },
+      ],
+    },
+    {
+      title: 'ch, sch, sp, st and z',
+      text: `
+**ch** has two sounds. After **a, o, u, au** it is rough in the throat, like Scottish *loch*: *Buch, auch, Nacht*. After **e, i, ä, ö, ü, l, n, r** it is a soft hiss, like the *h* in *huge*: *ich, nicht, Milch*. A final **-ig** sounds like *-ich*: *zwanzig*.
 
-### Single consonants that differ from English
+**sch** is English *sh*. At the start of a word, **sp** and **st** are said *shp* and *sht*. **z** is always *ts*, as in *cats*.
+`,
+      examples: [
+        { de: 'das Buch', en: 'the book (rough ch after u)' },
+        { de: 'Ich spreche nicht.', en: 'I do not speak. (sp = shp, soft ch in nicht)' },
+        { de: 'Straße, Schule', en: 'street, school (st = sht, sch = sh)' },
+        { de: 'zehn, zwanzig', en: 'ten, twenty (z = ts, -ig = -ich)' },
+      ],
+    },
+    {
+      title: 'w, v, j, s and r',
+      text: `
+These single letters sound different from English:
 
 | letter | sound | examples |
 |---|---|---|
-| **w** | English *v* | *Wasser*, *wir* |
-| **v** | usually English *f* | *Vater*, *vier*, *von* |
-| **z** | *ts* (as in *cats*) | *zehn*, *Zeit*, *Zug* |
-| **s** before a vowel | English *z* (buzzing) | *Sonne*, *sieben*, *lesen* |
-| **s** at the end, **ss**, **ß** | sharp *s* | *Haus*, *essen*, *Straße* |
-| **j** | English *y* | *ja*, *Januar* |
-| **r** | in the throat; at the end of a word almost "ah" | *rot*, *Mutter* |
-| **b, d, g** at the end of a word | become *p, t, k* | *halb*, *Hund*, *Tag* |
+| **w** | English *v* | Wasser, wir |
+| **v** | usually English *f* | Vater, vier |
+| **j** | English *y* | ja, Januar |
+| **s** before a vowel | buzzing *z* | Sonne, lesen |
+| **ss, ß**, final **s** | sharp *s* | essen, Straße, Haus |
+| **r** | in the throat; at the end almost "ah" | rot, Mutter |
 
-**ß** and **ss** both make a sharp *s*: **ß** after a **long** vowel or double vowel (*Straße*, *heißen*), **ss** after a **short** vowel (*essen*, *Fluss*).
-
-### Spelling conventions
-
-- Every **noun** starts with a **capital letter**: *der Tisch*, *die Zeit*. This is the most visible German spelling rule.
-- *Sie* (polite *you*) is always capitalised; *sie* (she / they) is not.
-- Stress is normally on the **first syllable**: **AR**-beit, **MOR**-gen. Words from French or Latin often stress the end: *Stu-DENT*, *Mu-SIK*.
-- Without an umlaut key you may write *ae, oe, ue, ss*. In the app, always use the real letters.
-
-### Why it matters
-
-If you can read new words aloud correctly from the start, you remember them better, and people understand you even when your grammar is not perfect yet.
+**ß** follows a **long** vowel (*Straße*), **ss** a **short** one (*essen*).
 `,
-  examples: [
-    { de: 'Ich heiße Anna.', en: 'My name is Anna. (ß = sharp s after the long ei)' },
-    { de: 'Wie bitte? Buchstabieren Sie das bitte.', en: 'Pardon? Please spell that.' },
-    { de: 'Mein Name ist Weber: W-E-B-E-R.', en: 'My name is Weber. (W is said "veh")' },
-    { de: 'Vier, sieben, zwanzig.', en: 'Four, seven, twenty. (v = f, ie = ee, z = ts, -ig = -ich)' },
-    { de: 'Ich spreche nicht viel Deutsch.', en: 'I do not speak much German. (sp = shp, ch soft, eu = oy)' },
-    { de: 'Das Haus ist neu und schön.', en: 'The house is new and nice. (au = ow, eu = oy, sch = sh, ö rounded)' },
-    { de: 'Heute ist Dienstag.', en: 'Today is Tuesday. (Nouns and day names are capitalised.)' },
+      examples: [
+        { de: 'das Wasser', en: 'the water (w = English v)' },
+        { de: 'der Vater', en: 'the father (v = f)' },
+        { de: 'ja', en: 'yes (j = y)' },
+        { de: 'die Sonne', en: 'the sun (s before a vowel buzzes like z)' },
+      ],
+    },
+    {
+      title: 'Capital letters and stress',
+      text: `
+Two spelling rules you see in every sentence. Every **noun** starts with a **capital letter**: *der Tisch, die Zeit, Dienstag*. The polite **Sie** (you) is always capitalised; *sie* (she, they) is not.
+
+Stress is normally on the **first syllable**: **AR**-beit, **MOR**-gen. Words from French or Latin often stress the end: *Stu-DENT*, *Mu-SIK*.
+`,
+      examples: [
+        { de: 'Heute ist Dienstag.', en: 'Today is Tuesday. (nouns and day names are capitalised)' },
+        { de: 'Ich habe einen Hund.', en: 'I have a dog. (only the noun Hund gets a capital)' },
+        { de: 'Kommen Sie aus Berlin?', en: 'Are you from Berlin? (polite Sie with a capital S)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-02-greetings', note: 'Your first conversations include spelling your name, which uses the letter names from here.' },
@@ -101,7 +145,7 @@ If you can read new words aloud correctly from the start, you remember them bett
     '**ch** is never a *k* or a *ch* as in *church*, except in a few loanwords (*Chef*, *Chance* with *sh*; *Chor*, *Christ* with *k*).',
     'The **ß** never starts a word and never follows a short vowel. After a short vowel write **ss**: *dass*, *muss*, *Fluss*. Swiss German does not use ß at all.',
     'Final **-e** is always pronounced as a short, weak "uh": *Name* has two syllables, *bitte* has two syllables.',
-    '**h** after a vowel is silent and only shows the vowel is long: *gehen*, *Uhr*, *zehn*.',
+    '**b, d, g** at the end of a word sound like *p, t, k*: *halb*, *Hund*, *Tag*. The spelling does not change.',
   ],
   exercises: [
     {

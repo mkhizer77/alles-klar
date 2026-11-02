@@ -4,37 +4,61 @@ const topic: Topic = {
   id: 'b1-11-als-ob',
   level: 'B1',
   unit: 4,
-  order: 11,
-  title: 'als ob, irreal comparisons and polite suggestions',
+  order: 15,
+  title: 'als ob: irreal comparisons',
   germanTerm: 'als ob',
-  tags: ['Konjunktiv II', 'als ob', 'comparison', 'suggestions', 'politeness'],
-  summary: 'als ob + Konjunktiv II makes an unreal comparison ("as if he knew everything"); the same Konjunktiv II gives you soft suggestions like Du solltest … and Wie wäre es, wenn …?',
-  explanation: `
-### What it is
+  tags: ['Konjunktiv II', 'als ob', 'comparison', 'subordinate clauses'],
+  summary: 'als ob + Konjunktiv II makes an unreal comparison: "he acts as if he knew everything". The verb goes to the end after als ob; after als alone it comes right after als.',
+  steps: [
+    {
+      title: 'What als ob is for',
+      text: `
+Sometimes you compare a situation with something that is **not true**: *He acts **as if** he knew everything* (he does not). German does this with **als ob** (as if). Because the comparison is unreal, the verb is in **Konjunktiv II** (the "would" form): *wäre, hätte, wüsste, könnte* or *würde + Infinitiv*.
+`,
+      examples: [
+        { de: 'Er tut so, als ob er alles wüsste.', en: 'He acts as if he knew everything. (he does not)' },
+        { de: 'Sie sieht aus, als ob sie krank wäre.', en: 'She looks as if she were ill.' },
+        { de: 'Er redet, als ob er mich nicht kennen würde.', en: 'He talks as if he did not know me. (würde + Infinitiv)' },
+      ],
+    },
+    {
+      title: 'Verb at the end after als ob',
+      text: `
+**als ob** is a subordinating conjunction (a joining word that sends the verb to the end). So the Konjunktiv II verb stands at the **end** of the clause, after a comma. With *würde* the infinitive comes first and **würde** last.
+`,
+      examples: [
+        { de: 'Er tut, als ob er müde wäre.', en: 'He acts as if he were tired. (wäre at the end)' },
+        { de: 'Sie tut so, als ob sie mich nicht kennen würde.', en: 'She acts as if she did not know me. (kennen würde at the end)' },
+        { de: 'Es scheint, als ob es gleich regnen würde.', en: 'It seems as if it is going to rain soon.' },
+      ],
+    },
+    {
+      title: 'An "as if" situation in the past',
+      text: `
+If the imagined situation lies in the **past**, use the past Konjunktiv II from the last topic: **hätte / wäre + Partizip II**. The helper still goes to the very end.
+`,
+      examples: [
+        { de: 'Er redet, als ob er alles schon gesehen hätte.', en: 'He talks as if he had already seen everything. (gesehen hätte)' },
+        { de: 'Sie tut so, als ob sie nie dort gewesen wäre.', en: 'She acts as if she had never been there. (gewesen wäre)' },
+      ],
+    },
+    {
+      title: 'als without ob: verb right after als',
+      text: `
+You will often read **als** without *ob*. It means exactly the same, but the word order changes: the verb comes **directly after als**, and the subject follows it.
 
-Sometimes you compare a situation with something that is **not true**: *He acts **as if** he knew everything* (he does not). German does this with **als ob** (*as if*) and, because the comparison is unreal, the verb is in **Konjunktiv II**.
-
-- Er tut so, **als ob** er alles **wüsste**. – *He acts as if he knew everything.*
-
-The second half of this topic uses the same Konjunktiv II for **polite suggestions** (*Du solltest …*, *Wie wäre es, wenn …?*), which you need constantly in the B1 speaking exam.
-
-### als ob: how it works
-
-**als ob** is a subordinating conjunction, so the verb goes to the **end** of the clause:
-
-- Sie sieht aus, **als ob** sie krank **wäre**.
-- Er redet, **als ob** er alles schon **gesehen hätte**.
-
-**Which Konjunktiv II?** Choose by time, exactly as in the last two topics. For the present you only need the forms you already know (*wäre, hätte, wüsste, könnte* and *würde + Infinitiv*):
-
-| the "as if" situation is … | form | example |
-|---|---|---|
-| now | present Konjunktiv II (wäre, hätte, würde + Infinitiv …) | als ob er krank **wäre** |
-| in the past | past Konjunktiv II (hätte / wäre + Partizip II) | als ob er es schon **gesehen hätte** |
-
-**You may also see** *als* without *ob*: *Er tut, **als wäre** er müde.* It means the same, but the verb then comes directly after *als*. Recognise it when you read it; use *als ob* with the verb at the end in your own sentences, because that follows the normal rule for subordinate clauses.
-
-### Typical openers
+Recognise this form when you read it. In your own sentences use **als ob** with the verb at the end, because that follows the normal rule for subordinate clauses.
+`,
+      examples: [
+        { de: 'Er tut, als wäre er müde.', en: 'He acts as if he were tired. (= als ob er müde wäre)' },
+        { de: 'Sie spricht, als wäre sie die Chefin.', en: 'She talks as if she were the boss.' },
+        { de: 'Es sieht aus, als hätte es geregnet.', en: 'It looks as if it had rained.' },
+      ],
+    },
+    {
+      title: 'Typical openers',
+      text: `
+A few main clauses almost always come before *als ob*. Learn them as fixed openers:
 
 | German | English |
 |---|---|
@@ -42,49 +66,27 @@ The second half of this topic uses the same Konjunktiv II for **polite suggestio
 | Es sieht (so) aus, als ob … | It looks as if … |
 | Es scheint, als ob … | It seems as if … |
 
-### Polite suggestions and advice
-
-Konjunktiv II softens a suggestion. Instead of the direct *Geh zum Arzt!* you can say:
-
-| suggestion | meaning |
-|---|---|
-| Du **solltest** zum Arzt gehen. | You should see a doctor. |
-| Du **könntest** mehr schlafen. | You could sleep more. |
-| **Wie wäre es**, wenn wir morgen gehen? | How about going tomorrow? |
-| **Wie wäre es mit** einem Spaziergang? | How about a walk? |
-| **Es wäre besser**, wenn du früher kommst. | It would be better if you came earlier. |
-| **An deiner Stelle würde** ich das nicht tun. | If I were you, I would not do that. |
-| **Könnten Sie** mir bitte helfen? | Could you please help me? |
-| **Hätten Sie** vielleicht Zeit? | Would you perhaps have time? |
-
-After *Wie wäre es, wenn …* and *Es wäre besser, wenn …* the *wenn* clause is often in the **present indicative** (*wenn wir morgen gehen*), because the suggestion is real and possible. Konjunktiv II is also fine there (*wenn wir morgen gehen würden*).
-
-### Why it matters
-
-*Als ob* appears all the time in stories, descriptions of people and opinions. The suggestion phrases are exam gold: in the B1 speaking test you plan something together with a partner, and *Wie wäre es, wenn …?*, *Wir könnten …* and *Du solltest …* are exactly the tools you need to sound polite and natural.
+Watch out: **als** also means "when" for a single past event (*Als ich klein war …*). With Konjunktiv II it means "as if".
 `,
-  examples: [
-    { de: 'Er tut so, als ob er alles wüsste.', en: 'He acts as if he knew everything. (als ob + verb at the end)' },
-    { de: 'Sie sieht aus, als ob sie krank wäre.', en: 'She looks as if she were ill. (es sieht aus, als ob …)' },
-    { de: 'Er redet, als ob er alles schon gesehen hätte.', en: 'He talks as if he had already seen everything. (past Konjunktiv II)' },
-    { de: 'Es scheint, als ob es gleich regnen würde.', en: 'It seems as if it is going to rain soon. (würde + Infinitiv)' },
-    { de: 'Du solltest mehr schlafen.', en: 'You should sleep more. (soft advice)' },
-    { de: 'Wie wäre es, wenn wir morgen ins Kino gehen?', en: 'How about going to the cinema tomorrow? (suggestion)' },
-    { de: 'Könnten Sie mir bitte helfen?', en: 'Could you please help me? (polite request)' },
+      examples: [
+        { de: 'Es sieht so aus, als ob es gleich regnen würde.', en: 'It looks as if it is going to rain soon.' },
+        { de: 'Es scheint, als ob er recht hätte.', en: 'It seems as if he were right.' },
+        { de: 'Als ich klein war, hatte ich einen Hund.', en: 'When I was small, I had a dog. (als = when, not as if)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'b1-09-konjunktiv-2-irreal', note: 'The Konjunktiv II forms (wäre, hätte, wüsste, würde) used after als ob.' },
     { topicId: 'b1-10-konjunktiv-2-past', note: 'For an "as if" situation in the past you need hätte / wäre + Partizip II.' },
-    { topicId: 'a2-20-konjunktiv-2-polite', note: 'Könnten Sie …? and Hätten Sie …? were introduced there; here they join a full set of suggestion phrases.' },
+    { topicId: 'b1-09b-irreal-wishes-advice', note: 'Wishes and soft suggestions use the same Konjunktiv II.' },
     { topicId: 'a2-06-als-vs-wenn', note: 'als also means "when" (one-time past). After a comma with Konjunktiv II it means "as if".' },
-    { topicId: 'b1-32-opinions-speaking', note: 'The suggestion phrases are the core of the B1 speaking task "planning something together".' },
+    { topicId: 'a2-04-subordinate-clauses-weil-dass', note: 'als ob sends the verb to the end, like weil and dass.' },
   ],
   edgeCases: [
-    '**als ob** is a subordinating conjunction: the verb goes to the **end**: *als ob er krank **wäre***. If you read *als wäre er krank* (no *ob*), it means the same.',
+    '**als ob** is a subordinating conjunction: the verb goes to the **end**: *als ob er krank **wäre***. If you read *als **wäre** er krank* (no *ob*), it means the same.',
     'After *als ob* use **Konjunktiv II**, not the normal present form: *als ob er krank **wäre***, not *als ob er krank ist* (heard in speech, but not standard).',
-    '*als* has two meanings: *Als ich klein war* (when, Präteritum) and *…, als ob er müde wäre* (as if, Konjunktiv II).',
-    '*Wie wäre es mit* + **Dative**: *Wie wäre es mit **einem** Kaffee?*',
-    '*Du solltest* is advice (should); *Du müsstest* is stronger (you would really have to). Choose *solltest* for friendly suggestions.',
+    '*als* has two meanings: ***Als** ich klein war* (when, Präteritum) and *…, **als ob** er müde wäre* (as if, Konjunktiv II).',
+    'For a past comparison the helper is last: *als ob er es **gesehen hätte***, not *als ob er es hätte gesehen*.',
   ],
   exercises: [
     {
@@ -111,78 +113,65 @@ After *Wie wäre es, wenn …* and *Es wäre besser, wenn …* the *wenn* clause
       explanation: 'als ob is a subordinating conjunction, so the verb (wäre) goes to the very end of the clause.',
     },
     {
-      type: 'order',
+      type: 'mc',
       id: 'b1-11-als-ob-ex04',
-      prompt: 'Build the sentence: "She acts as if she did not know me."',
-      words: ['mich', 'Sie', 'als', 'nicht', 'tut', 'ob', 'würde.', 'so,', 'kennen', 'sie'],
-      answer: ['Sie tut so, als ob sie mich nicht kennen würde.'],
-      explanation: 'als ob clause with würde at the very end: kennen würde. so after tut is optional but common.',
-    },
-    {
-      type: 'fill',
-      id: 'b1-11-als-ob-ex05',
-      prompt: 'Er redet, als ob er alles schon ___ hätte. (sehen)',
-      answer: ['gesehen'],
-      explanation: 'The "as if" situation is in the past, so past Konjunktiv II: gesehen hätte.',
-    },
-    {
-      type: 'match',
-      id: 'b1-11-als-ob-ex06',
-      prompt: 'Match each suggestion phrase with its meaning.',
-      pairs: [
-        ['Wie wäre es mit …?', 'How about …?'],
-        ['Du solltest …', 'You should …'],
-        ['Könnten Sie …?', 'Could you …?'],
-        ['An deiner Stelle würde ich …', 'If I were you, I would …'],
-        ['Es wäre besser, wenn …', 'It would be better if …'],
-      ],
-      explanation: 'All of these use Konjunktiv II to make a suggestion or request sound polite and soft.',
-    },
-    {
-      type: 'mc',
-      id: 'b1-11-als-ob-ex07',
-      prompt: 'Complete the suggestion: "___ wäre es, wenn wir morgen gehen?"',
-      options: ['Wie', 'Was', 'Wo'],
-      answer: 0,
-      explanation: 'The fixed phrase is Wie wäre es, wenn … (How about …).',
-    },
-    {
-      type: 'fill',
-      id: 'b1-11-als-ob-ex08',
-      prompt: 'Du ___ mehr schlafen. (sollen, friendly advice)',
-      answer: ['solltest'],
-      explanation: 'Du solltest = you should. Konjunktiv II of sollen has no umlaut.',
-    },
-    {
-      type: 'translate',
-      id: 'b1-11-als-ob-ex09',
-      prompt: 'Translate as friendly advice: "You should see a doctor."',
-      answer: ['Du solltest zum Arzt gehen.', 'Sie sollten zum Arzt gehen.', 'Du solltest zu einem Arzt gehen.', 'Du solltest einen Arzt aufsuchen.'],
-      hint: 'zum Arzt gehen = to see a doctor',
-      explanation: 'solltest + Infinitiv at the end. The Sie-form sollten is also correct.',
-    },
-    {
-      type: 'mc',
-      id: 'b1-11-als-ob-ex10',
       prompt: 'What does "Es sieht so aus, als ob es gleich regnen würde." mean?',
       options: ['It looks as if it is going to rain soon.', 'It rained a moment ago.', 'It would be nice if it rained.'],
       answer: 0,
       explanation: 'Es sieht so aus, als ob … = it looks as if …; gleich = soon.',
     },
     {
+      type: 'fill',
+      id: 'b1-11-als-ob-ex05',
+      prompt: 'Es scheint, als ob es gleich regnen ___. (werden, Konjunktiv II)',
+      answer: ['würde'],
+      explanation: 'regnen is a normal verb, so würde + Infinitiv. In the als ob clause the infinitive regnen comes first and würde goes to the very end.',
+    },
+    {
       type: 'order',
-      id: 'b1-11-als-ob-ex11',
-      prompt: 'Build the polite request: "Could you please help me?"',
-      words: ['helfen?', 'Sie', 'bitte', 'Könnten', 'mir'],
-      answer: ['Könnten Sie mir bitte helfen?'],
-      explanation: 'Yes/no question: Konjunktiv II verb first (Könnten), then Sie, mir, bitte and the infinitive at the end.',
+      id: 'b1-11-als-ob-ex06',
+      prompt: 'Build the sentence: "She acts as if she did not know me."',
+      words: ['mich', 'Sie', 'als', 'nicht', 'tut', 'ob', 'würde.', 'so,', 'kennen', 'sie'],
+      answer: ['Sie tut so, als ob sie mich nicht kennen würde.'],
+      explanation: 'als ob clause with würde at the very end: kennen würde. so after tut is optional but common.',
+    },
+    {
+      type: 'mc',
+      id: 'b1-11-als-ob-ex07',
+      prompt: 'Which sentence means the same as "Er tut, als ob er müde wäre."?',
+      options: ['Er tut, als wäre er müde.', 'Er tut, als er müde wäre.', 'Er tut, als müde er wäre.'],
+      answer: 0,
+      explanation: 'Without ob the verb comes directly after als: als wäre er müde. The meaning does not change.',
+    },
+    {
+      type: 'mc',
+      id: 'b1-11-als-ob-ex08',
+      prompt: 'In which sentence does als mean "as if"?',
+      options: ['Er spricht, als wäre er der Chef.', 'Als ich klein war, hatte ich einen Hund.', 'Sie ist älter als ich.'],
+      answer: 0,
+      explanation: 'als + Konjunktiv II after a comma = as if. Als ich klein war = when (one-time past); älter als = than.',
     },
     {
       type: 'fill',
-      id: 'b1-11-als-ob-ex12',
+      id: 'b1-11-als-ob-ex09',
+      prompt: 'Er redet, als ob er alles schon ___ hätte. (sehen)',
+      answer: ['gesehen'],
+      explanation: 'The "as if" situation is in the past, so past Konjunktiv II: gesehen hätte.',
+    },
+    {
+      type: 'fill',
+      id: 'b1-11-als-ob-ex10',
       prompt: 'Er tut so, als ob er den Film schon gesehen ___. (haben)',
       answer: ['hätte'],
       explanation: 'The "as if" situation is in the past, so past Konjunktiv II: gesehen hätte, with hätte at the end of the als ob clause.',
+    },
+    {
+      type: 'translate',
+      id: 'b1-11-als-ob-ex11',
+      prompt: 'Translate: "She looks as if she were tired."',
+      answer: ['Sie sieht aus, als ob sie müde wäre.', 'Sie sieht so aus, als ob sie müde wäre.', 'Sie sieht aus, als wäre sie müde.', 'Sie sieht so aus, als wäre sie müde.'],
+      hint: 'aussehen = to look (appearance), müde = tired',
+      explanation: 'Opener Sie sieht (so) aus, then als ob with wäre at the end. als wäre sie müde (verb right after als) is also correct.',
     },
   ],
 };

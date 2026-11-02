@@ -4,80 +4,92 @@ const topic: Topic = {
   id: 'b1-23-werden',
   level: 'B1',
   unit: 8,
-  order: 23,
+  order: 33,
   title: 'The three jobs of werden (future, passive, change)',
   germanTerm: 'werden',
   tags: ['verbs', 'werden', 'future', 'passive', 'tenses'],
   summary: 'werden has three jobs: as a full verb it means "to become", with an infinitive it builds the future, and with a Partizip II it builds the passive – the end of the clause tells you which.',
-  explanation: `
-### One verb, three jobs
+  steps: [
+    {
+      title: 'One verb, three jobs',
+      text: `
+**werden** appears in many German sentences, and it is easy to feel unsure what it means each time. There are only **three jobs**, and the word at the **end of the clause** tells you which one you are looking at.
 
-**werden** appears in a huge number of German sentences, and learners often feel unsure what it means each time. The good news: there are only **three jobs**, and the word at the **end of the clause** tells you which one you are looking at.
+An **adjective or noun** at the end = *to become*. An **infinitive** (the basic verb form) = the future. A **Partizip II** (the *ge-* form) = the passive.
+`,
+      examples: [
+        { de: 'Es wird kalt.', en: 'It is getting cold. (adjective: become)' },
+        { de: 'Ich werde morgen anrufen.', en: 'I will call tomorrow. (infinitive: future)' },
+        { de: 'Das Haus wird gebaut.', en: 'The house is being built. (Partizip II: passive)' },
+      ],
+    },
+    {
+      title: 'The forms: du wirst, er wird',
+      text: `
+*werden* is irregular. The *du* and *er* forms lose the *-d-* of the stem: **du wirst, er wird**. The Präteritum (the simple past) is **wurde**, and the Partizip II is **geworden**.
 
-| Job | What stands at the end | Meaning | Example |
-|---|---|---|---|
-| 1. **Full verb** | adjective or noun (or nothing) | to become, to get | Es **wird** kalt. / Er **wird** Arzt. |
-| 2. **Future** (*Futur I*) | **infinitive** | will | Ich **werde** morgen **anrufen**. |
-| 3. **Passive** (*Passiv*) | **Partizip II** | is / gets done | Das Haus **wird gebaut**. |
-
-So: look to the end. *Infinitive* → future. *Partizip II* → passive. *Adjective / noun* → change.
-
-### Forms of werden
-
-| | Present | Präteritum | Partizip II |
-|---|---|---|---|
-| ich | werde | wurde | geworden / worden |
-| du | **wirst** | wurdest | |
-| er / sie / es | **wird** | wurde | |
-| wir | werden | wurden | |
-| ihr | werdet | wurdet | |
-| sie / Sie | werden | wurden | |
-
-*werden* is irregular: *du wirst, er wird* (no *-d-* in the stem), Präteritum *wurde*.
-
-### Job 1: becoming
-
-As a full verb, *werden* describes a **change of state**. The thing after it is an adjective or a Nominative noun:
-
-- Die Tage **werden** länger. (The days are getting longer.)
-- Sie **wird** Lehrerin. (She is becoming a teacher.)
-- Er **ist** gestern 30 **geworden**. (He turned 30 yesterday.)
+| | Present | Präteritum |
+|---|---|---|
+| ich | werde | wurde |
+| du | **wirst** | wurdest |
+| er / sie / es | **wird** | wurde |
+| wir | werden | wurden |
+| ihr | werdet | wurdet |
+| sie / Sie | werden | wurden |
+`,
+      examples: [
+        { de: 'Du wirst bald 30.', en: 'You will soon be 30. (du wirst)' },
+        { de: 'Er wurde gestern 40.', en: 'He turned 40 yesterday. (Präteritum: wurde)' },
+      ],
+    },
+    {
+      title: 'Job 1: becoming',
+      text: `
+As a full verb, *werden* means **to become, to get**. It describes a change. After it comes an **adjective** or a noun in the **Nominative** (the subject case), just as after *sein*.
 
 The Perfekt uses **sein** and the participle **geworden**.
-
-### Job 2: the future
-
-*werden* + **infinitive** at the end = *Futur I*. German often uses the present tense for the future, so *werden* mainly adds a sense of promise, prediction or intention:
-
-- Ich **werde** dir **helfen**. (I will help you.)
-- Es **wird** morgen **regnen**. (It is going to rain tomorrow.)
-
-### Job 3: the passive
-
-*werden* + **Partizip II** at the end = the passive (*Vorgangspassiv*, the "something is being done" passive). The subject is not the doer but the thing something is done to:
-
-- Der Brief **wird geschrieben**. (The letter is being written.)
-- Die Brücke **wurde** 1950 **gebaut**. (The bridge was built in 1950.)
-- Das Auto **ist** repariert **worden**. (The car has been repaired.)
-
-Note the special participle: in the passive Perfekt it is **worden** without *ge-*, placed after the main participle.
-
-### A fourth look-alike: würde
-
-**würde** is the *Konjunktiv II* of *werden*. It also takes an infinitive at the end but means "would": *Ich **würde** gern **kommen*** (I would like to come). It is not a tense; it is a mood.
-
-### Why it matters
-
-Being able to **decode** *werden* instantly is essential for reading B1 texts, where news reports mix passive and future freely. Being able to **choose** the right job lets you talk about plans (*werde … machen*), processes (*wird … gemacht*) and changes (*wird … besser*) with one familiar verb.
 `,
-  examples: [
-    { de: 'Es wird dunkel.', en: 'It is getting dark. (full verb: adjective at the end)' },
-    { de: 'Mein Bruder wird Ingenieur.', en: 'My brother is becoming an engineer. (full verb: Nominative noun)' },
-    { de: 'Wir werden nächstes Jahr nach Spanien fahren.', en: 'We will go to Spain next year. (future: infinitive at the end)' },
-    { de: 'Der Kuchen wird gerade gebacken.', en: 'The cake is being baked right now. (passive: Partizip II at the end)' },
-    { de: 'Die Schule wurde 1900 gebaut.', en: 'The school was built in 1900. (passive Präteritum: wurde)' },
-    { de: 'Sie ist Mutter geworden.', en: 'She has become a mother. (Perfekt of the full verb: geworden)' },
-    { de: 'Das Fenster ist gestern repariert worden.', en: 'The window was repaired yesterday. (passive Perfekt: worden)' },
+      examples: [
+        { de: 'Die Tage werden länger.', en: 'The days are getting longer.' },
+        { de: 'Sie wird Lehrerin.', en: 'She is becoming a teacher. (Nominative noun)' },
+        { de: 'Er ist gestern 30 geworden.', en: 'He turned 30 yesterday. (Perfekt: ist … geworden)' },
+      ],
+    },
+    {
+      title: 'Job 2: the future',
+      text: `
+*werden* + **infinitive** at the end = **Futur I**, the future tense. German often uses the present tense for the future, so *werden* mainly adds a sense of promise, prediction or firm intention.
+`,
+      examples: [
+        { de: 'Ich werde dir helfen.', en: 'I will help you. (promise)' },
+        { de: 'Es wird morgen regnen.', en: 'It is going to rain tomorrow. (prediction)' },
+        { de: 'Wir werden nächstes Jahr nach Spanien fahren.', en: 'We will go to Spain next year. (infinitive at the end)' },
+      ],
+    },
+    {
+      title: 'Job 3: the passive',
+      text: `
+*werden* + **Partizip II** at the end = the **passive** (*Vorgangspassiv*, the "something is being done" form). The subject is not the doer but the thing something is done to.
+
+In the past: **wurde** + Partizip II. In the Perfekt the participle of *werden* is **worden** without *ge-*, placed after the main participle.
+`,
+      examples: [
+        { de: 'Der Brief wird geschrieben.', en: 'The letter is being written.' },
+        { de: 'Die Brücke wurde 1950 gebaut.', en: 'The bridge was built in 1950. (wurde)' },
+        { de: 'Das Auto ist repariert worden.', en: 'The car has been repaired. (Perfekt: ist … worden)' },
+      ],
+    },
+    {
+      title: 'A look-alike: würde means would',
+      text: `
+**würde** is the *Konjunktiv II* (the "would" form) of *werden*. It also takes an infinitive at the end, but it means **would**, not "will". It is not a tense; it is a polite or unreal way of speaking.
+`,
+      examples: [
+        { de: 'Ich würde gern kommen.', en: 'I would like to come.' },
+        { de: 'Würdest du mir helfen?', en: 'Would you help me?' },
+        { de: 'Ich werde morgen kommen.', en: 'I will come tomorrow. (werde = will, not would)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-11-nominative', note: 'After werden as a full verb, the noun is in the Nominative, just as after sein.' },
@@ -89,9 +101,9 @@ Being able to **decode** *werden* instantly is essential for reading B1 texts, w
   edgeCases: [
     '**geworden** (Perfekt of the full verb: *Er ist alt geworden*) vs **worden** (passive Perfekt: *Es ist gemacht worden*). Both go with *sein*.',
     'The full verb takes the **Nominative**: *Er wird **ein** guter Arzt*, not *einen*.',
-    '*werden* + Partizip II is passive, but *sein* + Partizip II is the Zustandspassiv (state): *Die Tür wird geschlossen* (is being closed) vs *Die Tür ist geschlossen* (is closed).',
-    'In the future and passive, *werden* is only a helper: the real meaning is in the verb at the end. In job 1 *werden* carries the meaning itself.',
-    '*du wirst / er wird* lose the *-d-* of the stem; do not write *werdst* or *werdt*.',
+    '**werden** + Partizip II is the passive, but **sein** + Partizip II is the Zustandspassiv (state): *Die Tür wird geschlossen* (is being closed) vs *Die Tür ist geschlossen* (is closed).',
+    'In the future and passive, *werden* is only a helper: the real meaning is in the verb at the end. In job 1 **werden** carries the meaning itself.',
+    '**du wirst / er wird** lose the *-d-* of the stem; do not write *werdst* or *werdt*.',
   ],
   exercises: [
     {

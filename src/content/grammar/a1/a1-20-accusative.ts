@@ -4,73 +4,81 @@ const topic: Topic = {
   id: 'a1-20-accusative',
   level: 'A1',
   unit: 4,
-  order: 20,
+  order: 24,
   title: 'The Accusative case: direct objects',
   germanTerm: 'Akkusativ',
   tags: ['cases', 'accusative', 'articles', 'objects'],
-  summary: 'The Accusative is the case of the direct object: the thing the action is done to. Only the masculine article changes (der → den, ein → einen).',
-  explanation: `
-### What it is
+  summary: 'The Accusative is the case of the direct object: the thing the action is done to. Only the masculine article changes: der → den, ein → einen.',
+  steps: [
+    {
+      title: 'What the Accusative is for',
+      text: `
+In *Der Mann liest das Buch* two things are named. *Der Mann* does the reading: he is the **subject**. *Das Buch* is the thing being read: the **direct object**.
 
-In the sentence *The man reads the book*, there are two nouns. *The man* does the reading: he is the **subject** (Nominative). *The book* is the thing being read: it is the **direct object**. In German the direct object stands in the **Accusative** (*Akkusativ*).
-
-- Der Mann liest **das Buch**. – *The man reads the book.*
-- Ich sehe **den Hund**. – *I see the dog.*
-- Sie kauft **einen Apfel**. – *She buys an apple.*
-
-To find the Accusative, ask **wen?** (whom?) for people or **was?** (what?) for things, after the verb: *Was liest der Mann? Das Buch.*
-
-### The articles in the Accusative
-
-Here is the good news: compared with the Nominative, **only the masculine changes**. Feminine, neuter and plural look exactly the same.
+In German the direct object stands in the **Accusative** (*Akkusativ*). To find it, ask **wen?** (whom?) or **was?** (what?) after the verb: *Was liest der Mann?* – *das Buch*.
+`,
+      examples: [
+        { de: 'Der Mann liest das Buch.', en: 'The man reads the book. (das Buch = the thing being read)' },
+        { de: 'Ich sehe den Hund.', en: 'I see the dog. (den Hund = the thing being seen)' },
+        { de: 'Was kaufst du?', en: 'What are you buying? (was? asks for the object)' },
+      ],
+    },
+    {
+      title: 'Only the masculine changes',
+      text: `
+Good news: compared with the Nominative, **only the masculine article changes**. Feminine, neuter and plural stay exactly the same.
 
 | | masculine | feminine | neuter | plural |
 |---|---|---|---|---|
-| Nominative (the) | der Mann | die Frau | das Kind | die Kinder |
-| **Accusative (the)** | **den** Mann | die Frau | das Kind | die Kinder |
-| Nominative (a / no) | ein / kein Mann | eine / keine Frau | ein / kein Kind | – / keine Kinder |
-| **Accusative (a / no)** | **einen / keinen** Mann | eine / keine Frau | ein / kein Kind | – / keine Kinder |
+| Nominative | der Mann | die Frau | das Kind | die Kinder |
+| **Accusative** | **den** Mann | die Frau | das Kind | die Kinder |
 
-So the whole Accusative comes down to one rule: **masculine gets -en** (der → den, ein → einen, kein → keinen). Everything else stays as it is.
-
-### Verbs that take the Accusative
-
-Most German verbs that have an object take the Accusative. These very common ones always do:
-
-| verb | example |
-|---|---|
-| **haben** (to have) | Ich habe **einen** Bruder. |
-| **sehen** (to see) | Siehst du **den** Bus? |
-| **kaufen** (to buy) | Wir kaufen **einen** Tisch. |
-| **brauchen** (to need) | Er braucht **einen** Stift. |
-| **essen / trinken** | Ich esse **einen** Apfel. |
-| **suchen / finden** | Sie sucht **den** Schlüssel. |
-| **kennen** (to know a person) | Kennst du **den** Mann? |
-| **es gibt** (there is) | Es gibt **einen** Park. |
-
-Note **es gibt**: the noun after it is always Accusative, even though English says *there is a park*.
-
-### Nominative and Accusative together
-
-A typical sentence has one Nominative (the doer) and one Accusative (the thing). The article tells you which is which, not the position:
-
-- **Der** Hund sieht **die** Katze. – *The dog sees the cat.*
-- **Den** Hund sieht **die** Katze. – *The cat sees the dog.* (den = object, so the cat is doing the seeing)
-
-With feminine and neuter nouns the forms are identical, so there the word order decides: *Die Frau sieht das Kind* is normally read as the woman seeing the child.
-
-### Why it matters
-
-The Accusative is the most frequent case after the Nominative. Every time you say what you have, want, eat, buy, see or need, you use it. The single change **der → den / ein → einen** is small, but native speakers hear it immediately when it is missing. It also prepares you for the next topics: possessive articles (*meinen*), Accusative prepositions (*für den*) and Accusative pronouns (*ihn*) all follow exactly this pattern.
+So the whole rule is: **der → den**.
 `,
-  examples: [
-    { de: 'Ich habe einen Hund.', en: 'I have a dog. (masculine: ein → einen)' },
-    { de: 'Sie trinkt den Kaffee.', en: 'She drinks the coffee. (der → den)' },
-    { de: 'Wir kaufen eine Lampe.', en: 'We buy a lamp. (feminine: no change)' },
-    { de: 'Er liest das Buch.', en: 'He reads the book. (neuter: no change)' },
-    { de: 'Kennst du die Kinder?', en: 'Do you know the children? (plural: no change)' },
-    { de: 'Es gibt keinen Parkplatz.', en: 'There is no parking space. (es gibt + Accusative)' },
-    { de: 'Wen suchst du?', en: 'Who are you looking for? (wen asks for the Accusative)' },
+      examples: [
+        { de: 'Sie trinkt den Kaffee.', en: 'She drinks the coffee. (der → den)' },
+        { de: 'Wir kaufen die Lampe.', en: 'We buy the lamp. (feminine: no change)' },
+        { de: 'Er liest das Buch.', en: 'He reads the book. (neuter: no change)' },
+        { de: 'Kennst du die Kinder?', en: 'Do you know the children? (plural: no change)' },
+      ],
+    },
+    {
+      title: 'ein and kein become einen, keinen',
+      text: `
+The same -en ending goes on **ein** and **kein** when the noun is masculine: **ein → einen**, **kein → keinen**. Feminine *eine / keine* and neuter *ein / kein* do not change.
+`,
+      examples: [
+        { de: 'Ich habe einen Bruder.', en: 'I have a brother. (ein → einen)' },
+        { de: 'Wir haben keinen Hund.', en: "We don't have a dog. (kein → keinen)" },
+        { de: 'Sie hat eine Schwester.', en: 'She has a sister. (feminine: eine stays)' },
+      ],
+    },
+    {
+      title: 'Verbs that take the Accusative',
+      text: `
+Most verbs with an object take the Accusative. These very common ones always do: **haben, sehen, kaufen, brauchen, essen, trinken, suchen, finden, kennen**.
+
+One more to remember: **es gibt** (there is / there are). The noun after it is always Accusative, even though English makes it the subject.
+`,
+      examples: [
+        { de: 'Er braucht einen Stift.', en: 'He needs a pen.' },
+        { de: 'Kennst du den Mann?', en: 'Do you know the man?' },
+        { de: 'Es gibt einen Park.', en: 'There is a park. (es gibt + Accusative)' },
+      ],
+    },
+    {
+      title: 'The article tells you who does what',
+      text: `
+A sentence usually has one Nominative (the doer) and one Accusative (the thing). The **article** shows which is which, not the position in the sentence. *Den Hund sieht die Katze* still means the cat is looking, because *den* marks the dog as the object.
+
+After **sein** there is no object, so no Accusative: *Das ist **ein** Hund.*
+`,
+      examples: [
+        { de: 'Der Hund sieht die Katze.', en: 'The dog sees the cat.' },
+        { de: 'Den Hund sieht die Katze.', en: 'The cat sees the dog. (den = object, so the cat is the doer)' },
+        { de: 'Das ist ein Tisch.', en: 'That is a table. (sein: no Accusative)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-11-nominative', note: 'The Nominative is the starting point; the Accusative changes only the masculine form.' },
@@ -80,11 +88,11 @@ The Accusative is the most frequent case after the Nominative. Every time you sa
     { topicId: 'a1-24-dative', note: 'The Dative is the next case, used for the person who receives something.' },
   ],
   edgeCases: [
-    'Only **masculine** changes. Writing *die Frau* → *dien Frau* or *das Buch* → *dasen Buch* is a common invented mistake; feminine and neuter stay the same.',
+    'Only **masculine** changes. *die Frau* and *das Buch* stay the same in the Accusative; there is no *dien* or *dasen*.',
     'After **sein**, **werden** and **bleiben** there is no Accusative: *Das ist **ein** Hund*, not *einen Hund*.',
     '**es gibt** always takes the Accusative: *Es gibt **einen** Fehler*, even though "a mistake" feels like the subject.',
-    'A few masculine nouns also add **-n / -en** on the noun itself: *den Jungen*, *den Herrn*, *den Studenten*, *den Kollegen*. This is the n-declension, covered at B1.',
-    '**wen** (whom) is the Accusative question word; **wer** (who) is the Nominative one. *Wer sieht wen?*',
+    'A few masculine nouns also add **-n / -en** on the noun itself: *den Jungen*, *den Herrn*, *den Kollegen*. This is the n-declension, taught at B1.',
+    '**wen** (whom) asks for the Accusative; **wer** (who) asks for the Nominative. *Wer sieht wen?*',
   ],
   exercises: [
     {

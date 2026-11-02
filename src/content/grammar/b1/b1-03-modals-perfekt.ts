@@ -4,59 +4,87 @@ const topic: Topic = {
   id: 'b1-03-modals-perfekt',
   level: 'B1',
   unit: 1,
-  order: 3,
+  order: 4,
   title: 'Modal verbs in the Perfekt (double infinitive)',
   germanTerm: 'Modalverben im Perfekt',
   tags: ['modal verbs', 'Perfekt', 'tenses', 'word order'],
   summary: 'When a modal verb goes into the Perfekt with another verb, both stay in the infinitive at the end: Ich habe arbeiten müssen (the "double infinitive").',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'Two infinitives instead of a participle',
+      text: `
+You know the modal verbs (*Modalverben*: können, müssen, wollen, dürfen, sollen, mögen) in the present and in the Präteritum (*ich musste*). Sometimes you also need them in the **Perfekt**, for example in a spoken story.
 
-You know the modal verbs (*Modalverben*: können, müssen, wollen, dürfen, sollen, mögen) in the present and in the Präteritum (*ich musste, ich konnte*). Sometimes you also need them in the **Perfekt**, for example in a spoken story: *Ich **habe** gestern lange **arbeiten müssen**.* – *I had to work late yesterday.*
-
-The surprising part: there is **no Partizip II** at the end. Instead you see **two infinitives**: *arbeiten müssen*. This is called the **double infinitive** (*Ersatzinfinitiv* or *doppelter Infinitiv*).
-
-### How it works
-
-**Rule 1: Modal + another verb → haben + Infinitiv + Modal-Infinitiv.**
+The surprising part: there is **no Partizip II** (past participle) at the end. Instead you see **two infinitives**: *arbeiten müssen*. This is called the **double infinitive**.
+`,
+      examples: [
+        { de: 'Ich habe gestern lange arbeiten müssen.', en: 'I had to work late yesterday. (two infinitives at the end)' },
+        { de: 'Er hat nicht kommen können.', en: 'He was not able to come.' },
+        { de: 'Das Kind hat nicht schlafen wollen.', en: 'The child did not want to sleep.' },
+      ],
+    },
+    {
+      title: 'haben + verb + modal',
+      text: `
+The rule: **modal + another verb → haben + infinitive + modal infinitive**. Compare the three tenses:
 
 | Präsens | Präteritum | Perfekt |
 |---|---|---|
 | Ich muss arbeiten. | Ich musste arbeiten. | Ich **habe** arbeiten **müssen**. |
 | Er kann nicht kommen. | Er konnte nicht kommen. | Er **hat** nicht kommen **können**. |
 | Wir dürfen den Film sehen. | Wir durften den Film sehen. | Wir **haben** den Film sehen **dürfen**. |
-| Sie will nicht schlafen. | Sie wollte nicht schlafen. | Sie **hat** nicht schlafen **wollen**. |
-
-The helper verb is **always haben**, even with movement verbs: *Ich **habe** nach Hause gehen müssen* (not *bin*). The order at the end is fixed: first the main verb, then the modal.
-
-**Rule 2: Modal without another verb → normal Partizip II.**
-
-When the modal stands alone (the other verb is understood from the context), it has a normal participle with *ge-*. The three you will actually meet:
-
-| modal | Partizip II | example |
-|---|---|---|
-| können | gekonnt | Ich habe das nicht **gekonnt**. – *I was not able to.* |
-| wollen | gewollt | Sie hat das nicht **gewollt**. – *She did not want that.* |
-| mögen | gemocht | Ich habe ihn nie **gemocht**. – *I never liked him.* |
-
-*Gemocht* is the common one (with a noun object: *ich habe den Film gemocht*). *Gemusst, gedurft* and *gesollt* exist too, but they are rare.
-
-### You may also see …
-
-In a *dass* or *weil* clause the helper verb normally goes to the very end. With a double infinitive you will see **haben** in front of the two infinitives instead: *Er sagt, dass er gestern **hat arbeiten müssen**.* Just recognise this pattern when you read it. In your own sentences use the Präteritum: *Er sagt, dass er gestern **arbeiten musste**.*
-
-### Why it matters
-
-In practice Germans **prefer the Präteritum** for modals (*ich musste, ich konnte*) even in speech, because it is shorter. So you will mostly **hear and read** the double infinitive rather than produce it. But you need to recognise it, and the same shape returns in the past Konjunktiv II (*ich hätte arbeiten müssen* – I should have worked) and in the passive with modals, both B1 topics. Learn the shape now and those will feel familiar.
 `,
-  examples: [
-    { de: 'Ich habe gestern lange arbeiten müssen.', en: 'I had to work late yesterday. (double infinitive at the end)' },
-    { de: 'Er hat nicht kommen können.', en: 'He was not able to come.' },
-    { de: 'Wir haben den Film nicht sehen dürfen.', en: 'We were not allowed to watch the film.' },
-    { de: 'Das Kind hat nicht schlafen wollen.', en: 'The child did not want to sleep.' },
-    { de: 'Ich habe das leider nicht gekonnt.', en: 'Unfortunately I was not able to (do it). (modal alone → gekonnt)' },
-    { de: 'Sie hat früher aufstehen müssen.', en: 'She had to get up earlier. (haben, even though aufstehen alone takes sein)' },
-    { de: 'Ich musste gestern arbeiten.', en: 'I had to work yesterday. (Präteritum, the more common choice)' },
+      examples: [
+        { de: 'Wir haben den Film nicht sehen dürfen.', en: 'We were not allowed to watch the film.' },
+        { de: 'Sie hat das Auto nicht kaufen können.', en: 'She was not able to buy the car.' },
+        { de: 'Ich habe früh aufstehen müssen.', en: 'I had to get up early.' },
+      ],
+    },
+    {
+      title: 'Always haben, verb before modal',
+      text: `
+Two things are fixed. The helper is **always haben**, even with movement verbs that normally take *sein*: *Ich **habe** nach Hause gehen müssen*, not *bin*.
+
+And the order at the end never changes: first the **main verb**, then the **modal**: *gehen müssen*, not *müssen gehen*.
+`,
+      examples: [
+        { de: 'Ich habe nach Hause gehen müssen.', en: 'I had to go home. (haben, although gehen alone takes sein)' },
+        { de: 'Sie hat früher aufstehen müssen.', en: 'She had to get up earlier. (haben, not sein)' },
+        { de: 'Er hat nicht mitkommen wollen.', en: 'He did not want to come along. (main verb first, modal last)' },
+      ],
+    },
+    {
+      title: 'Modal alone: normal Partizip II',
+      text: `
+When the modal stands **alone**, because the other verb is understood from the context, it has a normal participle with **ge-**. The three you will actually meet:
+
+| modal | Partizip II |
+|---|---|
+| können | gekonnt |
+| wollen | gewollt |
+| mögen | gemocht |
+
+*gemocht* is the common one, with a noun object: *Ich habe den Film gemocht.*
+`,
+      examples: [
+        { de: 'Ich habe das leider nicht gekonnt.', en: 'Unfortunately I was not able to. (modal alone → gekonnt)' },
+        { de: 'Sie hat das nicht gewollt.', en: 'She did not want that.' },
+        { de: 'Ich habe ihn nie gemocht.', en: 'I never liked him. (mögen + noun object → gemocht)' },
+      ],
+    },
+    {
+      title: 'Germans usually say musste',
+      text: `
+In practice Germans **prefer the Präteritum** for modals (*ich musste, ich konnte*), even in speech, because it is shorter. So you will mostly **hear and read** the double infinitive rather than produce it.
+
+In a *dass* or *weil* clause you may read **haben** in front of the two infinitives: *…, dass er **hat** arbeiten müssen*. Recognise it; in your own sentences write *…, dass er arbeiten **musste***.
+`,
+      examples: [
+        { de: 'Ich musste gestern arbeiten.', en: 'I had to work yesterday. (Präteritum, the more common choice)' },
+        { de: 'Er sagt, dass er gestern hat arbeiten müssen.', en: 'He says that he had to work yesterday. (recognise this pattern)' },
+        { de: 'Er sagt, dass er gestern arbeiten musste.', en: 'He says that he had to work yesterday. (write this one)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-17-modal-verbs', note: 'The modal verbs themselves and their present-tense forms.' },

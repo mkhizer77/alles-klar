@@ -12,6 +12,7 @@
     "start": "NODE_ENV=production node server/node.ts",
     "preview": "vite preview",
     "validate": "node scripts/validate-content.mjs",
+    "curriculum-doc": "node scripts/curriculum-doc.mjs",
     "typecheck": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.server.json --noEmit",
     "deploy:api": "wrangler deploy",
     "test": "node --test server/core/*.test.ts tests/*.test.ts"

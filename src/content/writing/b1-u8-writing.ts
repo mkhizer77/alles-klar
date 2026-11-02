@@ -24,7 +24,7 @@ const task: WritingTask = {
     { de: 'Andernfalls werde ich …', en: 'Otherwise I will …', role: 'connector' },
     { de: 'Mit freundlichen Grüßen', en: 'Yours faithfully', role: 'closing' },
   ],
-  grammarFocus: ['b1-21-lassen', 'b1-22-brauchen-zu-scheinen', 'b1-25-noun-verb-combinations', 'b1-23-werden'],
+  grammarFocus: ['b1-21-lassen', 'b1-22-brauchen-zu-scheinen', 'b1-22b-haben-sein-zu', 'b1-25-noun-verb-combinations', 'b1-23-werden'],
   mustUse: [
     { label: 'a form of lassen (reparieren lassen, ließ sich nicht laden, lasse … abholen)', pattern: '\\b(lasse|lässt|lassen|ließ|ließen|gelassen)(?![a-zäöü])', min: 2 },
     { label: 'brauchen … zu (Sie brauchen mir nur … zu schicken)', pattern: '\\bbrauch(e|st|t|en)\\b[^.!?]*\\bzu\\b', min: 1 },

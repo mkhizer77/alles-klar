@@ -4,60 +4,81 @@ const topic: Topic = {
   id: 'a2-09-adjective-endings-no-article',
   level: 'A2',
   unit: 3,
-  order: 9,
+  order: 10,
   title: 'Adjective endings with no article',
   germanTerm: 'Adjektivdeklination (Nullartikel)',
   tags: ['adjectives', 'adjective endings', 'declension', 'cases', 'no article'],
-  summary: 'When there is no article at all (guter Wein, frische Milch, liebe Grüße), the adjective takes the ending the definite article would have had, so it shows gender and case by itself.',
-  explanation: `
-### What it is
+  summary: 'When there is no article at all (guter Wein, frische Milch, liebe Grüße), the adjective takes the ending der / die / das would have had, so it shows gender and case by itself.',
+  steps: [
+    {
+      title: 'No article: the adjective shows the case',
+      text: `
+Sometimes a noun has **no article** (*Nullartikel*): things you cannot count (*Milch, Wein, Brot*), plurals in general (*Kinder, Freunde*) and set phrases (*Guten Tag!*).
 
-Sometimes a noun has **no article** in front of it (*Nullartikel*): uncountable things (*Milch, Wein, Brot*), plurals in general (*Kinder, Freunde*), and set phrases (*Guten Tag!*). If an adjective comes before such a noun, there is nothing else to show the case and gender, so the **adjective does the whole job**. It takes the ending that *der / die / das* would have had.
+If an adjective stands before such a noun, nothing else shows gender and case. So the **adjective takes the ending that der / die / das would have had**: *gut**er** Wein* (like *d**er***), *kalt**es** Wasser* (like *d**as***).
+`,
+      examples: [
+        { de: 'Guter Wein ist teuer.', en: 'Good wine is expensive. (like der: -er)' },
+        { de: 'Frische Milch ist gesund.', en: 'Fresh milk is healthy. (like die: -e)' },
+        { de: 'Kaltes Wasser tut gut.', en: 'Cold water does you good. (like das: -es)' },
+      ],
+    },
+    {
+      title: 'Nominative: -er, -e, -es, plural -e',
+      text: `
+In the **Nominative** (the subject case) copy the article endings: masculine **-er**, feminine **-e**, neuter **-es**. The plural copies *die*, so it is **-e**: *klein**e** Kinder*.
 
-- gut**er** Wein (like d**er**) – *good wine*
-- frisch**e** Milch (like d**ie**) – *fresh milk*
-- kalt**es** Wasser (like d**as**) – *cold water*
-- klein**e** Kinder (like d**ie**) – *small children*
+Letters start this way too, with no article: *Lieb**e** Anna, / Lieb**er** Paul, / Lieb**e** Eltern,*.
+`,
+      examples: [
+        { de: 'Frisches Brot schmeckt gut.', en: 'Fresh bread tastes good. (neuter: -es)' },
+        { de: 'Kleine Kinder spielen gern.', en: 'Small children like to play. (plural: -e)' },
+        { de: 'Lieber Paul, wie geht es dir?', en: 'Dear Paul, how are you? (letter: masculine -er)' },
+      ],
+    },
+    {
+      title: 'Accusative: Guten Tag, Gute Nacht',
+      text: `
+In the **Accusative** (the case of the direct object) only the masculine changes, as always: **-en** (like *d**en***). Feminine **-e**, neuter **-es** and plural **-e** stay the same.
 
-### How it works: the table
+Greetings and wishes are Accusative, because a verb like *Ich wünsche dir …* is hidden: *Gut**en** Tag* (masculine), *Gut**e** Nacht* (feminine), *Froh**es** Fest* (neuter), *Lieb**e** Grüße* (plural).
+`,
+      examples: [
+        { de: 'Ich trinke gern schwarzen Kaffee.', en: 'I like drinking black coffee. (masculine: -en)' },
+        { de: 'Hier gibt es frisches Brot.', en: 'There is fresh bread here. (neuter: -es)' },
+        { de: 'Guten Morgen! Gute Reise!', en: 'Good morning! Have a good trip! (masculine -en, feminine -e)' },
+        { de: 'Liebe Grüße aus Berlin!', en: 'Best wishes from Berlin! (plural: -e)' },
+      ],
+    },
+    {
+      title: 'Dative: -em, -er, -em, -en',
+      text: `
+In the **Dative** the adjective copies *dem, der, dem, den*: **-em, -er, -em, -en**. You mostly need to **recognise** these, in phrases like *mit gut**en** Freunden* or *bei schön**em** Wetter*. The whole table, endings only:
 
 | | masculine | feminine | neuter | plural |
 |---|---|---|---|---|
-| Nominative | gut**er** Wein | gut**e** Milch | gut**es** Brot | gut**e** Freunde |
-| Accusative | gut**en** Wein | gut**e** Milch | gut**es** Brot | gut**e** Freunde |
-| Dative | gut**em** Wein | gut**er** Milch | gut**em** Brot | gut**en** Freunden |
-
-Compare the endings with the definite articles (*der, die, das, die / den, die, das, die / dem, der, dem, den*) and you will see they match.
-
-At A2 you mostly need the **Nominative and Accusative** rows: greetings, food and drink, plurals. The Dative row is for recognising phrases like *mit guten Freunden* or *bei schönem Wetter*; the endings **-em** and **-er** are simply the article ending (*dem, der*) moved onto the adjective. (You may also see a Genitive like *trotz starken Regens*; that is B1 material.)
-
-### When you need this table
-
-1. **Uncountable nouns** (food, drink, materials): *Ich trinke gern schwarz**en** Kaffee. Hier gibt es frisch**es** Brot.*
-2. **Plurals without an article**: *Viel**e** jung**e** Leute lernen Deutsch. Wir haben zwei klein**e** Kinder.* After numbers and after *viele, einige, wenige, andere, mehrere* the adjective also takes these plural endings (*viele gute Freunde*).
-3. **Greetings and wishes**, which are mostly in the Accusative because a verb like *Ich wünsche dir …* is hidden:
-
-| phrase | gender / case |
-|---|---|
-| Gut**en** Morgen! / Gut**en** Tag! / Gut**en** Abend! | masculine Accusative |
-| Gut**e** Nacht! / Gut**e** Reise! / Gut**e** Besserung! | feminine Accusative |
-| Froh**es** Fest! / Froh**es** neu**es** Jahr! | neuter Accusative |
-| Lieb**e** Grüße! / Schön**e** Ferien! / Herzlich**e** Glückwünsche! | plural Accusative |
-
-4. **Letters and emails**: *Lieb**e** Anna, / Lieb**er** Herr Müller, / Lieb**e** Freunde,* (Nominative, no article).
-
-### Why it matters
-
-You use this table every day without noticing: *Guten Tag*, *Liebe Grüße*, *Gute Nacht*. Understanding why it is *Guten Tag* but *Gute Nacht* (masculine vs feminine Accusative) turns a list of fixed phrases into a system. And with uncountable nouns (*kaltes Wasser, frisches Obst, warme Milch*) there is simply no other way to say it.
+| Nominative | -er | -e | -es | -e |
+| Accusative | -en | -e | -es | -e |
+| Dative | -em | -er | -em | -en |
 `,
-  examples: [
-    { de: 'Ich trinke gern schwarzen Kaffee.', en: 'I like drinking black coffee. (Accusative masculine: -en)' },
-    { de: 'Frische Milch ist gesund.', en: 'Fresh milk is healthy. (Nominative feminine: -e)' },
-    { de: 'Hier gibt es frisches Brot.', en: 'There is fresh bread here. (Accusative neuter: -es)' },
-    { de: 'Viele junge Leute lernen Deutsch.', en: 'Many young people learn German. (plural Nominative: -e)' },
-    { de: 'Mit guten Freunden ist alles leichter.', en: 'With good friends everything is easier. (Dative plural: -en, noun also -n)' },
-    { de: 'Guten Tag! Gute Nacht! Frohes Fest!', en: 'Good day! Good night! Happy holiday! (masculine / feminine / neuter Accusative)' },
-    { de: 'Liebe Grüße aus Berlin!', en: 'Best wishes from Berlin! (plural)' },
+      examples: [
+        { de: 'Mit guten Freunden ist alles leichter.', en: 'With good friends everything is easier. (Dative plural: -en, noun also -n)' },
+        { de: 'Bei schönem Wetter gehen wir spazieren.', en: 'In nice weather we go for a walk. (Dative neuter: -em)' },
+        { de: 'Er trinkt Tee mit heißer Milch.', en: 'He drinks tea with hot milk. (Dative feminine: -er)' },
+      ],
+    },
+    {
+      title: 'Where you meet these endings',
+      text: `
+Three places. **Food and drink** without an article: *frisch**es** Obst, warm**e** Milch*. **Plurals after numbers and after viele, einige, wenige, andere, mehrere**: *zwei klein**e** Kinder, viel**e** nett**e** Leute*. **Set phrases and letters**: *Herzlich**e** Glückwünsche!*, *Lieb**e** Grüße*, *Lieb**e** Anna,* *Lieb**er** Herr Müller,*.
+`,
+      examples: [
+        { de: 'Wir haben zwei kleine Kinder.', en: 'We have two small children. (after a number: -e)' },
+        { de: 'Viele junge Leute lernen Deutsch.', en: 'Many young people learn German. (after viele: -e)' },
+        { de: 'Liebe Anna, wie geht es dir?', en: 'Dear Anna, how are you? (letter opening: feminine -e)' },
+        { de: 'Herzliche Glückwünsche zum Geburtstag!', en: 'Happy birthday! (plural: -e)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a2-07-adjective-endings-definite', note: 'The adjective copies the ending of der / die / das from that table.' },

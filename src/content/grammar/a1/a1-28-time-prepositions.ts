@@ -4,68 +4,86 @@ const topic: Topic = {
   id: 'a1-28-time-prepositions',
   level: 'A1',
   unit: 6,
-  order: 28,
+  order: 32,
   title: 'Prepositions of time: am, um, im, von … bis, seit, vor, nach',
   germanTerm: 'temporale Präpositionen',
   tags: ['prepositions', 'time', 'dative', 'calendar'],
   summary: 'am for days and dates, um for clock times, im for months and seasons, plus von … bis, seit, vor and nach to say when something happens.',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'am, um, im: the core three',
+      text: `
+To say **when** something happens, German uses prepositions (small words like *on, at, in*). The three you need most are **am**, **um** and **im**. Each one is tied to one kind of time.
 
-To say **when** something happens, German uses a small set of prepositions, each tied to a kind of time: a day, a clock time, a month. These are the **temporal prepositions** (*temporale Präpositionen*). English has the same idea (*on Monday, at 8, in May*), but the pairs do not always match, so learn each German word with its own job.
+| | used for |
+|---|---|
+| **am** | days, parts of the day, dates |
+| **um** | clock times |
+| **im** | months, seasons, years |
 
-### The core three: am, um, im
-
-| preposition | used for | examples |
-|---|---|---|
-| **am** (an + dem) | days, parts of the day, dates | **am** Montag, **am** Morgen, **am** Wochenende, **am** 3. Mai |
-| **um** | clock times | **um** 8 Uhr, **um** halb neun, **um** Mitternacht |
-| **im** (in + dem) | months, seasons, longer periods | **im** Januar, **im** Sommer, **im** Jahr 2020 |
-
-A quick test: if you can put a clock on it, use **um**. If it is a day, use **am**. If it is longer than a day, use **im**.
-
-One exception inside *am*: the night is feminine, so it is **in der Nacht**, not *am Nacht*.
-
-### Start and end: von … bis, ab
-
-- **von … bis** = from … to: *von Montag bis Freitag*, *von 9 bis 17 Uhr*.
-- **bis** alone = until: *bis morgen*, *bis 18 Uhr*, *Bis später!* (see you later).
-- **ab** = from (a point onwards): *ab morgen*, *ab Montag*, *ab 1. Juni*.
-
-### Before, after, ago: vor, nach, seit, in
-
-These four take the **Dative**:
-
-| preposition | meaning | example |
-|---|---|---|
-| **vor** | before; ago | **vor dem** Essen (before the meal); **vor** zwei Jahren (two years ago) |
-| **nach** | after | **nach dem** Kurs (after the course); **nach** Weihnachten |
-| **seit** | since, for (still going on) | **seit** 2019; **seit einem** Monat |
-| **in** | in (time from now) | **in** zwei Wochen (in two weeks); **in einer** Stunde |
-
-*Vor* with a number means **ago**: *vor drei Tagen* = three days ago. The English word order is reversed: *ago* comes last, *vor* comes first.
-
-*Seit* always goes with the **present tense** for something that started in the past and is still true: *Ich lerne seit einem Jahr Deutsch* (I have been learning German for a year).
-
-### Years and no preposition
-
-Years take **no** preposition on their own: *Ich bin 1990 geboren.* If you want a preposition, it is *im Jahr 1990*, never *in 1990* (that is an English habit that sounds wrong in German).
-
-Some time words also work without a preposition at all: *heute, morgen, gestern, jeden Tag, nächste Woche, letztes Jahr*.
-
-### Why it matters
-
-Appointments, opening hours, timetables and simple plans all depend on these words: *Der Kurs ist am Dienstag um 18 Uhr. Die Praxis ist von 8 bis 12 Uhr geöffnet. Ich bin seit März in Berlin.* They are short, fixed and very frequent, so a few minutes of practice removes a lot of small errors. The Dative forms you learned in unit 5 (*dem, der, einem*) show up again here, which is good revision.
+A quick test: can you put a clock on it? Then **um**. Is it a day? **am**. Longer than a day? **im**.
 `,
-  examples: [
-    { de: 'Der Kurs beginnt am Montag.', en: 'The course starts on Monday. (am + day)' },
-    { de: 'Wir treffen uns um 19 Uhr.', en: 'We meet at 7 pm. (um + clock time)' },
-    { de: 'Im Winter ist es kalt.', en: 'In winter it is cold. (im + season)' },
-    { de: 'Das Geschäft ist von 9 bis 18 Uhr geöffnet.', en: 'The shop is open from 9 to 6. (von … bis)' },
-    { de: 'Ich wohne seit drei Jahren in Wien.', en: 'I have lived in Vienna for three years. (seit + present tense)' },
-    { de: 'Vor einer Woche war ich krank.', en: 'A week ago I was ill. (vor + Dative = ago)' },
-    { de: 'Nach dem Essen trinken wir Kaffee.', en: 'After the meal we drink coffee. (nach + Dative)' },
-    { de: 'In zwei Tagen fliege ich nach Rom.', en: 'In two days I fly to Rome. (in + time from now)' },
+      examples: [
+        { de: 'Der Kurs beginnt am Montag.', en: 'The course starts on Monday. (am + day)' },
+        { de: 'Wir treffen uns um 19 Uhr.', en: 'We meet at 7 pm. (um + clock time)' },
+        { de: 'Im Winter ist es kalt.', en: 'In winter it is cold. (im + season)' },
+        { de: 'Am 3. Mai habe ich Geburtstag.', en: 'My birthday is on 3 May. (am + date)' },
+      ],
+    },
+    {
+      title: 'Start and end: von … bis, ab',
+      text: `
+For a period with a start and an end, use **von … bis** (from … to). **bis** on its own means *until*. **ab** means *from* a point onwards. These words usually have no article after them: *bis Freitag*, *ab Montag*, *von 9 bis 17 Uhr*.
+`,
+      examples: [
+        { de: 'Die Bank ist von 9 bis 16 Uhr geöffnet.', en: 'The bank is open from 9 to 4. (von … bis)' },
+        { de: 'Ich bleibe bis morgen.', en: 'I am staying until tomorrow. (bis = until)' },
+        { de: 'Ab Montag habe ich Urlaub.', en: 'From Monday I am on holiday. (ab = from … onwards)' },
+        { de: 'Bis später!', en: 'See you later!' },
+      ],
+    },
+    {
+      title: 'vor, nach, seit, in take the Dative',
+      text: `
+Four more time words take the **Dative** (the case with *dem, der, einem*): **vor** (before), **nach** (after), **seit** (since, for) and **in** (in … from now). So it is *vor dem Essen*, *nach dem Kurs*, *seit einem Monat*, *in einer Stunde*.
+
+**in** here points to the future: *in zwei Wochen* = two weeks from now.
+`,
+      examples: [
+        { de: 'Vor dem Kurs trinke ich einen Kaffee.', en: 'Before the course I drink a coffee. (vor + Dative)' },
+        { de: 'Nach dem Essen trinken wir Kaffee.', en: 'After the meal we drink coffee. (nach + Dative)' },
+        { de: 'In zwei Tagen fliege ich nach Rom.', en: 'In two days I fly to Rome. (in + time from now)' },
+        { de: 'Seit einem Monat wohne ich hier.', en: 'I have been living here for a month. (seit + Dative)' },
+      ],
+    },
+    {
+      title: 'vor means ago, seit means still going on',
+      text: `
+**vor** with a number means **ago**: *vor drei Tagen* = three days ago. English puts *ago* last; German puts *vor* first.
+
+**seit** is for something that started in the past and is **still true now**. It always goes with the **present tense**: *Ich lerne seit einem Jahr Deutsch* = I have been learning German for a year.
+`,
+      examples: [
+        { de: 'Vor einer Woche war ich krank.', en: 'A week ago I was ill. (vor + Dative = ago)' },
+        { de: 'Vor zwei Jahren war ich in Rom.', en: 'Two years ago I was in Rome.' },
+        { de: 'Ich wohne seit drei Jahren in Wien.', en: 'I have lived in Vienna for three years. (seit + present tense)' },
+        { de: 'Sie arbeitet seit Mai hier.', en: 'She has been working here since May.' },
+      ],
+    },
+    {
+      title: 'Years take no preposition',
+      text: `
+A year on its own takes **no** preposition: *Ich bin 1990 geboren.* If you want a preposition, say **im Jahr 1990**, never *in 1990*; that is an English habit.
+
+Some time words also work without any preposition: *heute, morgen, gestern, jeden Tag, nächste Woche, letztes Jahr*.
+`,
+      examples: [
+        { de: 'Ich bin 1990 geboren.', en: 'I was born in 1990. (no preposition)' },
+        { de: 'Mein Bruder ist 2001 geboren.', en: 'My brother was born in 2001.' },
+        { de: 'Jeden Tag lerne ich Deutsch.', en: 'Every day I learn German. (no preposition)' },
+        { de: 'Nächste Woche habe ich frei.', en: 'Next week I am off.' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-08-numbers-time', note: 'Clock times (um 8 Uhr, halb neun) and dates (am 3. Mai) are built with the numbers learned there.' },

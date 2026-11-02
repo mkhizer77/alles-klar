@@ -4,77 +4,92 @@ const topic: Topic = {
   id: 'a1-21-possessive-articles',
   level: 'A1',
   unit: 4,
-  order: 21,
+  order: 25,
   title: 'Possessive articles: mein, dein, sein …',
   germanTerm: 'Possessivartikel',
   tags: ['articles', 'possessives', 'accusative', 'nominative'],
   summary: 'mein, dein, sein, ihr, unser, euer, Ihr say whose something is; they take the same endings as ein and kein.',
-  explanation: `
-### What it is
-
-A **possessive article** (*Possessivartikel*) is the word for *my*, *your*, *his*, *her* and so on. It stands in front of a noun instead of *der / ein* and tells you who something belongs to:
-
-- **mein** Bruder – *my brother*
-- **deine** Schwester – *your sister*
-- **unser** Haus – *our house*
-
-### One possessive for each person
-
-Every personal pronoun has its own possessive. Learn them as a pair:
+  steps: [
+    {
+      title: 'What a possessive article is',
+      text: `
+A **possessive article** (*Possessivartikel*) is the word for *my*, *your*, *his*, *her* and so on. It stands in front of a noun instead of *der* or *ein* and tells you who something belongs to: **mein** Bruder, **deine** Schwester, **unser** Haus.
+`,
+      examples: [
+        { de: 'Mein Vater ist Arzt.', en: 'My father is a doctor.' },
+        { de: 'Wo ist deine Jacke?', en: 'Where is your jacket?' },
+        { de: 'Das ist unser Haus.', en: 'That is our house.' },
+      ],
+    },
+    {
+      title: 'One possessive for each person',
+      text: `
+Every personal pronoun has its own possessive. Learn them as pairs.
 
 | pronoun | possessive | meaning |
 |---|---|---|
 | ich | **mein** | my |
-| du | **dein** | your (one person, informal) |
-| er | **sein** | his |
-| sie | **ihr** | her |
-| es | **sein** | its |
+| du | **dein** | your |
+| er, es | **sein** | his, its |
+| sie | **ihr** | her, their |
 | wir | **unser** | our |
-| ihr | **euer** | your (several people, informal) |
-| sie | **ihr** | their |
-| Sie | **Ihr** | your (formal, always capital I) |
+| ihr | **euer** | your (several people) |
 
-Notice that **sein** is used for *er* and *es*, and **ihr** is used for *sie* (she), *sie* (they) and, with a capital letter, *Sie* (formal you). The context tells you which one is meant.
-
-### The endings: exactly like ein and kein
-
-The base form (*mein*, *dein* …) is only the beginning. A possessive gets an ending depending on the **gender** and **case** of the noun that follows. The endings are the same ones you already know from **ein** and **kein**:
+Formal *Sie* has **Ihr** with a capital I. So *ihr* can mean her, their or formal your; the context tells you which.
+`,
+      examples: [
+        { de: 'Das ist sein Auto.', en: 'That is his car. (owner er → sein)' },
+        { de: 'Wo ist euer Hund?', en: 'Where is your dog? (owner ihr → euer)' },
+        { de: 'Haben Sie Ihr Ticket?', en: 'Do you have your ticket? (formal Ihr, capital I)' },
+      ],
+    },
+    {
+      title: 'The endings copy ein and kein',
+      text: `
+The base word (*mein*, *dein* …) gets an ending that depends on the noun after it. The endings are exactly the ones you know from **ein** and **kein**.
 
 | | masculine | feminine | neuter | plural |
 |---|---|---|---|---|
 | Nominative | mein Bruder | mein**e** Schwester | mein Kind | mein**e** Kinder |
 | Accusative | mein**en** Bruder | mein**e** Schwester | mein Kind | mein**e** Kinder |
 
-The same pattern applies to *dein, sein, ihr, unser, euer, Ihr*: *seine Mutter*, *ihren Vater*, *unser Auto*, *Ihre Kinder*.
-
-One small spelling change: **euer** drops its middle **e** when an ending is added: *euer Haus* but *eu**r**e Kinder*, *eu**r**en Freund*. (*Unser* keeps its e: *unsere*, *unseren*.)
-
-### Owner vs thing: the two decisions
-
-To choose the right form you make **two** separate decisions:
+The same pattern works for *dein, sein, ihr, unser, euer, Ihr*.
+`,
+      examples: [
+        { de: 'Ich besuche meinen Vater.', en: 'I visit my father. (masculine Accusative: meinen)' },
+        { de: 'Er liebt seine Frau.', en: 'He loves his wife. (feminine: seine)' },
+        { de: 'Wir kennen ihr Kind.', en: 'We know her child. (neuter: no ending)' },
+        { de: 'Sind das deine Bücher?', en: 'Are these your books? (plural: deine)' },
+      ],
+    },
+    {
+      title: 'euer drops its middle e',
+      text: `
+One small spelling change: **euer** loses its middle **e** as soon as an ending is added: *euer Haus* but **eure** Kinder, **euren** Freund. *Unser* keeps its e: *unsere Lehrerin*, *unseren Hund*.
+`,
+      examples: [
+        { de: 'Ist das euer Auto?', en: 'Is that your car? (no ending: euer)' },
+        { de: 'Sind das eure Bücher?', en: 'Are these your books? (euer + e = eure)' },
+        { de: 'Wir kennen euren Lehrer.', en: 'We know your teacher. (euer + en = euren)' },
+        { de: 'Das ist unsere Lehrerin.', en: 'That is our teacher. (unser keeps its e)' },
+      ],
+    },
+    {
+      title: 'Owner picks the word, noun picks the ending',
+      text: `
+To find the right form, make **two** separate decisions:
 
 1. **Who owns it?** This picks the base word: *mein, dein, sein, ihr …*
-2. **What is the noun, and what case is it in?** This picks the ending: *-, -e, -en*.
+2. **What is the noun, and what case is it in?** This picks the ending: no ending, *-e* or *-en*.
 
-Example: *She loves her brother.*
-- Owner is *she* → **ihr**.
-- *Bruder* is masculine, and he is the object of *lieben* (Accusative) → **-en**.
-- Result: Sie liebt **ihren** Bruder.
-
-English speakers often let the thing decide the base word. *Her brother* is **ihr Bruder**, not *sein Bruder*: the brother is male, but the owner is female, and only the owner matters for choosing *ihr*.
-
-### Why it matters
-
-You cannot talk about your family, your job, your flat or your day without possessives: *Mein Mann arbeitet …*, *Wo ist dein Handy?*, *Ich besuche meine Eltern.* Because the endings copy *ein / kein*, learning possessives also makes those endings automatic. Later the same endings appear in the Dative (*meinem, meiner*) and in adjective declension, so this table is worth knowing cold.
+*She loves her brother*: the owner is *she* → **ihr**. *Bruder* is masculine and the object → **-en**. Result: *Sie liebt **ihren** Bruder.* The brother is male, but only the owner matters for choosing *ihr*.
 `,
-  examples: [
-    { de: 'Mein Vater ist Arzt.', en: 'My father is a doctor. (masculine Nominative, no ending)' },
-    { de: 'Ich besuche meinen Vater.', en: 'I visit my father. (masculine Accusative: meinen)' },
-    { de: 'Wo ist deine Jacke?', en: 'Where is your jacket? (feminine: deine)' },
-    { de: 'Sie sucht ihren Schlüssel.', en: 'She is looking for her key. (owner sie → ihr, masculine object → ihren)' },
-    { de: 'Er liebt seine Frau.', en: 'He loves his wife. (owner er → sein, feminine → seine)' },
-    { de: 'Sind das eure Bücher?', en: 'Are these your books? (ihr → euer, drops the e: eure)' },
-    { de: 'Haben Sie Ihren Pass?', en: 'Do you have your passport? (formal Ihr, capital I)' },
+      examples: [
+        { de: 'Sie liebt ihren Bruder.', en: 'She loves her brother. (owner sie → ihr; masculine object → ihren)' },
+        { de: 'Er liebt seine Schwester.', en: 'He loves his sister. (owner er → sein; feminine → seine)' },
+        { de: 'Haben Sie Ihren Pass?', en: 'Do you have your passport? (formal Ihr; masculine object → Ihren)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-12-indefinite-articles', note: 'Possessives take exactly the endings of ein and kein.' },

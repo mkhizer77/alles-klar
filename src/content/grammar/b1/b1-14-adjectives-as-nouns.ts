@@ -4,42 +4,50 @@ const topic: Topic = {
   id: 'b1-14-adjectives-as-nouns',
   level: 'B1',
   unit: 6,
-  order: 14,
+  order: 19,
   title: 'Adjectives used as nouns (der Deutsche, etwas Neues)',
   germanTerm: 'substantivierte Adjektive',
   tags: ['adjectives', 'nouns', 'declension', 'cases'],
   summary: 'An adjective can become a noun (der Deutsche, die Angestellte, etwas Neues); it is written with a capital letter but keeps its adjective endings.',
-  explanation: `
-### What it is for
+  steps: [
+    {
+      title: 'An adjective can become a noun',
+      text: `
+German can turn almost any adjective into a noun: *deutsch* → **der Deutsche** (the German man), *neu* → **etwas Neues** (something new). These are **adjectives used as nouns** (*substantivierte Adjektive*). You need them to name people by a quality (a German, an adult, an employee) and to say "something new".
 
-You need this to name people by a quality – a German, an adult, an employee, a relative – and to say "something new" or "nothing special":
-
-- Er ist **Deutscher**. – *He is German.*
-- Ich habe **etwas Neues** gekauft. – *I bought something new.*
-
-German can turn almost any adjective into a noun: *deutsch* → **der Deutsche** (the German man), *alt* → **die Alte** (the old woman), *neu* → **etwas Neues** (something new). These are **adjectives used as nouns** (*substantivierte Adjektive*).
-
-Two rules cover everything:
-
-1. Write them with a **capital letter**, like every noun.
-2. They keep their **adjective endings**, as if the real noun (*Mann, Frau, Leute*) were still there.
-
-So *der Deutsche* is really *der deutsche (Mann)*, and *ein Deutscher* is *ein deutscher (Mann)*. The ending changes with the article and the case, exactly as you learned at A2.
-
-### People: masculine, feminine, plural
+Two rules cover everything: write them with a **capital letter**, and keep the **adjective ending**, as if the noun (*Mann, Frau, Leute*) were still there.
+`,
+      examples: [
+        { de: 'Er ist Deutscher.', en: 'He is German. (like ein deutscher Mann, without Mann)' },
+        { de: 'Ich habe etwas Neues gekauft.', en: 'I bought something new.' },
+        { de: 'Die Erwachsenen sitzen am Tisch.', en: 'The adults are sitting at the table. (like die erwachsenen Leute)' },
+      ],
+    },
+    {
+      title: 'People: the ending follows the article',
+      text: `
+*Der Deutsche* is really *der deutsche (Mann)*, so the ending changes with the article and the case, as at A2.
 
 | | masculine | feminine | plural |
 |---|---|---|---|
-| Nominative, definite | der Deutsch**e** | die Deutsch**e** | die Deutsch**en** |
-| Nominative, indefinite / none | ein Deutsch**er** | eine Deutsch**e** | Deutsch**e** |
-| Accusative, definite | den Deutsch**en** | die Deutsch**e** | die Deutsch**en** |
-| Accusative, indefinite / none | einen Deutsch**en** | eine Deutsch**e** | Deutsch**e** |
-| Dative, definite | dem Deutsch**en** | der Deutsch**en** | den Deutsch**en** |
-| Dative, indefinite / none | einem Deutsch**en** | einer Deutsch**en** | Deutsch**en** |
+| Nominative | der Deutsch**e**, ein Deutsch**er** | die Deutsch**e** | die Deutsch**en**, Deutsch**e** |
+| Accusative | den Deutsch**en**, einen Deutsch**en** | die Deutsch**e** | die Deutsch**en**, Deutsch**e** |
+| Dative | dem Deutsch**en**, einem Deutsch**en** | der Deutsch**en** | den Deutsch**en**, Deutsch**en** |
 
-Common nouns of this type, all built the same way:
+Two forms trip people up: *Er ist **Deutscher*** (no article → -er) but *Sie ist **Deutsche*** (feminine → -e).
+`,
+      examples: [
+        { de: 'Sie ist Deutsche.', en: 'She is German. (feminine: -e)' },
+        { de: 'Ich kenne den Deutschen nicht.', en: 'I do not know the German. (den → -en)' },
+        { de: 'Viele Deutsche fahren im Sommer nach Italien.', en: 'Many Germans go to Italy in summer. (plural, no article: -e)' },
+      ],
+    },
+    {
+      title: 'Common people words of this type',
+      text: `
+These everyday nouns are all built the same way, from an adjective or a participle. Each one has a masculine form (*der*), a feminine form (*die*) and the usual endings.
 
-| adjective / participle | as a noun |
+| adjective | as a noun |
 |---|---|
 | bekannt | der / die Bekannte (acquaintance) |
 | verwandt | der / die Verwandte (relative) |
@@ -47,44 +55,48 @@ Common nouns of this type, all built the same way:
 | jugendlich | der / die Jugendliche (young person) |
 | angestellt | der / die Angestellte (employee) |
 | krank | der / die Kranke (sick person) |
-| arbeitslos | der / die Arbeitslose (unemployed person) |
-
-Watch the two forms that trip people up: *Er ist **Deutscher*** (no article → -er) but *Sie ist **Deutsche*** (feminine → -e).
-
-### Things and ideas: the neuter
-
-After **etwas, nichts, viel, wenig** and **alles**, an adjective becomes a **neuter** noun:
+`,
+      examples: [
+        { de: 'Ich habe einen alten Bekannten getroffen.', en: 'I met an old acquaintance. (einen … -en, like einen alten Mann)' },
+        { de: 'Die Jugendlichen treffen sich im Park.', en: 'The young people meet in the park. (plural after die: -en)' },
+        { de: 'Wir helfen einem Verwandten.', en: 'We are helping a relative. (Dative after einem: -en)' },
+      ],
+    },
+    {
+      title: 'Things: etwas Neues, alles Gute',
+      text: `
+After **etwas, nichts, viel, wenig** and **alles**, an adjective becomes a **neuter** noun for a thing or an idea.
 
 | after | ending | examples |
 |---|---|---|
 | etwas, nichts, viel, wenig | **-es** | etwas Neu**es**, nichts Besonder**es**, viel Gut**es** |
 | alles | **-e** | alles Gut**e**, alles Möglich**e** |
-
-- Ich habe **etwas Neues** gekauft. – *I bought something new.*
-- Es gibt **nichts Besonderes** zu berichten. – *There is nothing special to report.*
-- Ich wünsche dir **alles Gute**! – *All the best!*
-
-With *das* the neuter is used for abstract ideas and superlatives: **das Gute**, **das Beste**, **das Schönste**, **das Wichtigste**. These take *was* in a relative clause: *das Beste, **was** ich je gegessen habe*.
-
-### Why it matters
-
-You cannot avoid these words: *Deutsche, Erwachsene, Jugendliche, Angestellte, Bekannte, Verwandte* appear in every text about people, and *etwas Neues / nichts Besonderes / alles Gute* in every conversation. The only skill you need is the adjective ending, so this topic is a good moment to check that you have it, before the full review two topics from now.
 `,
-  examples: [
-    { de: 'Er ist Deutscher.', en: 'He is German. (no article, masculine → -er)' },
-    { de: 'Sie ist Deutsche.', en: 'She is German. (feminine → -e)' },
-    { de: 'Ich habe einen alten Bekannten getroffen.', en: 'I met an old acquaintance. (einen … -en, like einen alten Mann)' },
-    { de: 'Die Jugendlichen treffen sich im Park.', en: 'The young people meet in the park. (plural after die → -en)' },
-    { de: 'Ich habe etwas Neues gekauft.', en: 'I bought something new. (etwas + -es)' },
-    { de: 'Es gibt nichts Besonderes zu berichten.', en: 'There is nothing special to report.' },
-    { de: 'Ich wünsche dir alles Gute!', en: 'All the best! (alles + -e)' },
+      examples: [
+        { de: 'Es gibt nichts Besonderes zu berichten.', en: 'There is nothing special to report. (nichts + -es)' },
+        { de: 'Ich wünsche dir alles Gute!', en: 'All the best! (alles + -e)' },
+        { de: 'Wir haben viel Interessantes gesehen.', en: 'We saw a lot of interesting things. (viel + -es)' },
+      ],
+    },
+    {
+      title: 'das Beste, was …',
+      text: `
+With **das** the neuter form names an idea or a superlative: **das Gute**, **das Beste**, **das Schönste**, **das Wichtigste**. It never refers to a person.
+
+When a relative clause follows, the pronoun is **was**, not *das*: *das Beste, **was** ich je gegessen habe*.
+`,
+      examples: [
+        { de: 'Das Wichtigste ist die Gesundheit.', en: 'The most important thing is health. (das + -e)' },
+        { de: 'Das ist das Beste, was ich je gegessen habe.', en: 'That is the best thing I have ever eaten. (relative pronoun was)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a2-07-adjective-endings-definite', note: 'der Deutsche / den Deutschen use the endings after der / die / das.' },
     { topicId: 'a2-08-adjective-endings-indefinite', note: 'ein Deutscher / einen Deutschen use the endings after ein / kein / mein.' },
     { topicId: 'a2-09-adjective-endings-no-article', note: 'Deutsche (plural) and Er ist Deutscher follow the no-article pattern.' },
     { topicId: 'b1-13-n-declension', note: 'der Kollege / den Kollegen looks similar but is a real noun with the n-declension, not an adjective.' },
-    { topicId: 'b1-05-relative-clauses-prepositions', note: 'das Beste, was … : neuter nominalised adjectives take was as relative pronoun.' },
+    { topicId: 'b1-05-relative-clauses-prepositions', note: 'das Beste, was … : neuter adjective-nouns take was as relative pronoun.' },
   ],
   edgeCases: [
     'Masculine without article ends in **-er**: *Er ist Deutsch**er***. Feminine ends in **-e**: *Sie ist Deutsch**e***. Do not say *Er ist Deutsche*.',

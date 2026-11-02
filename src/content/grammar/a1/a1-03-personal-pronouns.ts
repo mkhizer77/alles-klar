@@ -9,27 +9,30 @@ const topic: Topic = {
   germanTerm: 'Personalpronomen',
   tags: ['pronouns', 'subject', 'du', 'Sie', 'er sie es'],
   summary: 'Personal pronouns are the short words for people and things (I, you, he, she, it, we, they); German has nine of them, and the one you choose decides the verb ending.',
-  explanation: `
-### What a personal pronoun is
-
-A **personal pronoun** (*Personalpronomen*) stands in for a name or a noun so you do not have to repeat it. *Anna is tired. **She** goes home.* English has seven (I, you, he, she, it, we, they). German has **nine**, because *you* is split three ways.
-
-### The full set
+  steps: [
+    {
+      title: 'The nine pronouns',
+      text: `
+A **personal pronoun** (*Personalpronomen*) stands in for a name or a noun, so you do not repeat it: *Anna ist müde. **Sie** geht nach Hause.* English has seven; German has **nine**, because *you* is split three ways.
 
 | person | singular | plural |
 |---|---|---|
 | 1st (the speaker) | **ich** – I | **wir** – we |
-| 2nd, informal (the listener) | **du** – you (one friend) | **ihr** – you (several friends) |
-| 2nd, formal | **Sie** – you (one or more strangers) | **Sie** – you |
+| 2nd, informal | **du** – you | **ihr** – you all |
+| 2nd, polite | **Sie** – you | **Sie** – you |
 | 3rd (someone else) | **er** – he, **sie** – she, **es** – it | **sie** – they |
 
-Two things to notice straight away:
-
-1. **ich** is written with a small *i*, unlike English *I*.
-2. **sie / Sie** appears three times. Lower-case *sie* can mean *she* or *they*; capital *Sie* means polite *you*. The verb tells *she* and *they* apart: *sie komm**t*** (she comes) but *sie komm**en*** (they come). *Sie* (you) also takes *-en*, so for *Sie* and *they* only the capital letter and the context help.
-
-### Three kinds of "you"
-
+Note: **ich** is written with a small *i*, unlike English *I*.
+`,
+      examples: [
+        { de: 'Das ist Anna. Sie wohnt in Köln.', en: 'This is Anna. She lives in Cologne. (sie replaces Anna)' },
+        { de: 'Ich bin müde.', en: 'I am tired. (ich with a small i)' },
+        { de: 'Wir lernen Deutsch.', en: 'We are learning German.' },
+      ],
+    },
+    {
+      title: 'Three kinds of "you"',
+      text: `
 | pronoun | use it for |
 |---|---|
 | **du** | one person you are close to: friend, family member, child, fellow student |
@@ -37,21 +40,42 @@ Two things to notice straight away:
 | **Sie** | one or more adults you do not know well, or in formal situations |
 
 If in doubt, use **Sie**. Nobody is offended by too much politeness.
+`,
+      examples: [
+        { de: 'Kommst du aus Berlin?', en: 'Are you from Berlin? (du: one friend)' },
+        { de: 'Kommt ihr aus Berlin?', en: 'Are you all from Berlin? (ihr: several friends)' },
+        { de: 'Kommen Sie aus Berlin?', en: 'Are you from Berlin? (Sie: polite)' },
+      ],
+    },
+    {
+      title: 'sie, sie and Sie',
+      text: `
+The same word appears three times. Lower-case **sie** means *she* or *they*; capital **Sie** means polite *you*.
 
-### er, sie, es are about grammar, not biology
+The **verb** tells *she* and *they* apart: *sie komm**t*** (she comes) but *sie komm**en*** (they come). Polite *Sie* also takes *-en*, so for *Sie* (you) and *sie* (they) only the capital letter and the context help.
+`,
+      examples: [
+        { de: 'Sie wohnt in Köln.', en: 'She lives in Cologne. (verb ends in -t: she)' },
+        { de: 'Tom und Lisa? Sie arbeiten heute.', en: 'Tom and Lisa? They are working today. (verb ends in -en: they)' },
+        { de: 'Woher kommen Sie, Frau Müller?', en: 'Where are you from, Mrs Müller? (capital S: polite you)' },
+      ],
+    },
+    {
+      title: 'er, sie, es follow the noun',
+      text: `
+In English *it* is for things. In German the pronoun follows the **gender of the noun**, even for objects: **der → er, die → sie, das → es**.
 
-In English, *it* is for things and *he / she* for people. In German the pronoun follows the **gender of the noun**, even for objects:
-
-| noun | pronoun |
-|---|---|
-| **der** Tisch (table) | **er** ist groß. – It is big. |
-| **die** Lampe (lamp) | **sie** ist neu. – It is new. |
-| **das** Buch (book) | **es** ist gut. – It is good. |
-
-So *der Stuhl* becomes *er*, and even *das Mädchen* (the girl) is grammatically *es*. This feels strange at first, but it is completely regular: **der → er, die → sie, das → es**.
-
-### The pronoun decides the verb ending
-
+So *der Tisch* (the table) becomes *er*, *die Lampe* becomes *sie*, and even *das Mädchen* (the girl) is grammatically *es*. It feels strange at first, but it is completely regular.
+`,
+      examples: [
+        { de: 'Der Tisch ist alt. Er ist aus Holz.', en: 'The table is old. It is made of wood. (der → er)' },
+        { de: 'Die Lampe ist neu. Sie ist schön.', en: 'The lamp is new. It is nice. (die → sie)' },
+        { de: 'Das Buch ist gut. Es ist neu.', en: 'The book is good. It is new. (das → es)' },
+      ],
+    },
+    {
+      title: 'The pronoun decides the verb ending',
+      text: `
 The main job of the pronoun is to tell you which verb ending to use. Here is *kommen* (to come):
 
 | pronoun | ending | form |
@@ -64,20 +88,14 @@ The main job of the pronoun is to tell you which verb ending to use. Here is *ko
 | sie / Sie | -en | sie komm**en** |
 
 Pronoun and ending always go together. If you hear *kommst*, the subject must be *du*.
-
-### Why it matters
-
-You use a pronoun in nearly every sentence, and every verb form depends on it. Learning the nine pronouns and their endings now makes all later verb topics (present tense, irregular verbs, modals) much easier, because the pattern never changes.
 `,
-  examples: [
-    { de: 'Ich bin müde.', en: 'I am tired. (ich with small i)' },
-    { de: 'Kommst du aus Berlin?', en: 'Are you from Berlin? (du, one friend)' },
-    { de: 'Kommt ihr aus Berlin?', en: 'Are you (all) from Berlin? (ihr, several friends)' },
-    { de: 'Kommen Sie aus Berlin?', en: 'Are you from Berlin? (Sie, polite)' },
-    { de: 'Das ist Anna. Sie wohnt in Köln.', en: 'This is Anna. She lives in Cologne.' },
-    { de: 'Der Tisch ist alt. Er ist aus Holz.', en: 'The table is old. It is made of wood. (der Tisch → er)' },
-    { de: 'Wir lernen Deutsch.', en: 'We are learning German.' },
-    { de: 'Tom und Lisa? Sie arbeiten heute.', en: 'Tom and Lisa? They are working today. (sie + -en)' },
+      examples: [
+        { de: 'Ich komme aus Polen.', en: 'I come from Poland. (ich + -e)' },
+        { de: 'Kommst du heute?', en: 'Are you coming today? (du + -st)' },
+        { de: 'Er kommt aus Spanien.', en: 'He comes from Spain. (er + -t)' },
+        { de: 'Wir kommen morgen.', en: 'We are coming tomorrow. (wir + -en)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-02-greetings', note: 'The du / Sie choice from the greetings topic is the same rule applied to pronouns.' },

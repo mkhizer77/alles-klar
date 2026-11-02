@@ -31,7 +31,7 @@ const scenario: SpeakingScenario = {
     { de: 'Zusammenfassend kann man sagen, dass …', en: 'In summary one can say that …' },
     { de: 'Entschuldigung, könnten Sie die Frage bitte wiederholen?', en: 'Sorry, could you please repeat the question?' },
   ],
-  grammarFocus: ['b1-32-opinions-speaking', 'b1-30-suffixes', 'b1-17-two-part-conjunctions', 'b1-18-cause-consequence-concession'],
+  grammarFocus: ['b1-32-opinions-speaking', 'b1-32b-structuring-a-talk', 'b1-30-suffixes', 'b1-30b-adjective-suffixes', 'b1-17-two-part-conjunctions', 'b1-18-cause-consequence-concession', 'b1-18b-concession'],
   vocabFocus: ['der Vorteil', 'der Nachteil', 'das Argument', 'die Begründung', 'der Standpunkt', 'das Fazit', 'die Überzeugung', 'zustimmen', 'widersprechen', 'abwägen', 'begründen', 'einerseits … andererseits', 'allerdings'],
   minTurns: 8,
 };

@@ -4,86 +4,88 @@ const topic: Topic = {
   id: 'a1-36-writing-short-messages',
   level: 'A1',
   unit: 8,
-  order: 36,
+  order: 40,
   title: 'Writing short messages: emails, forms, notes',
   germanTerm: 'Schreiben A1',
   tags: ['writing', 'email', 'forms', 'fixed phrases', 'exam'],
   summary: 'A short German email, note or form follows a fixed shape: greeting, a few sentences with the key information, closing and name; learn the shape and the set phrases.',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'Short texts have a fixed shape',
+      text: `
+At A1 you write **short texts**: an email to a friend, a note, a short reply, and you fill in a **form** (*Formular*). None of this needs new grammar. You need the **shape** of each text and a few **fixed phrases** (*Redemittel*).
 
-At A1 you are expected to write **short texts**: an informal email to a friend, a note on the fridge, a short reply, and to fill in a **form** (*Formular*) with your personal details. None of this needs new grammar. What you need is the **shape** of each text and a small set of **fixed phrases** (*Redemittel*) that Germans use every time.
-
-### The shape of an informal email
-
-| part | German | notes |
-|---|---|---|
-| subject line | **Betreff:** Party am Samstag | short, no full sentence |
-| greeting | **Liebe** Anna, / **Lieber** Tom, / **Hallo** Tom, | *Liebe* for a woman, *Lieber* for a man; comma after the name |
-| first line | **vielen Dank für deine E-Mail.** | starts with a **lowercase** letter, because the comma continues the sentence |
-| body | 3–5 short sentences | say why you write, give the information, ask a question |
-| closing | **Liebe Grüße** / **Viele Grüße** / **Bis bald** | no comma after the closing |
-| name | Max | on its own line |
-
-A full example, line by line:
-
-- *Liebe Anna,*
-- *vielen Dank für deine Einladung. Ich komme gern zur Party. Ich bringe einen Salat mit. Wann soll ich kommen?*
-- *Liebe Grüße*
-- *Max*
-
-### Useful fixed phrases
-
-| purpose | phrase |
-|---|---|
-| open | *Wie geht es dir? Mir geht es gut.* |
-| thank | *Vielen Dank für deine E-Mail / Einladung / Hilfe.* |
-| reason for writing | *Ich schreibe dir, denn … / Ich habe eine Frage.* |
-| invite | *Hast du am Samstag Zeit? Kommst du mit?* |
-| accept / decline | *Ich komme gern. / Leider kann ich nicht kommen, denn …* |
-| ask | *Kannst du mir bitte … schicken? Wann treffen wir uns?* |
-| close | *Schreib mir bald! / Bis Samstag! / Ich freue mich.* |
-
-### A formal email
-
-For an office, a doctor or a landlord, the frame changes but the idea stays the same:
-
-- Greeting: **Sehr geehrte Damen und Herren,** (unknown person) / **Sehr geehrte Frau Müller,** / **Sehr geehrter Herr Braun,**
-- Use **Sie / Ihnen / Ihr** throughout.
-- Closing: **Mit freundlichen Grüßen** and your full name.
-
-### A note (eine Notiz)
-
-A note is even shorter: *Hallo Lena, ich bin beim Arzt. Bin um 18 Uhr zurück. Das Essen ist im Kühlschrank. Bis später, Max.* Notes may drop the subject (*Bin um 18 Uhr zurück*), which is fine here and only here.
-
-### Filling in a form
-
-Forms ask for your details with fixed labels. Learn them so you recognise them instantly:
-
-| label | meaning |
-|---|---|
-| **Vorname / Nachname (Familienname)** | first name / surname |
-| **Geburtsdatum / Geburtsort** | date / place of birth |
-| **Straße, Hausnummer** | street, house number |
-| **Postleitzahl (PLZ), Wohnort** | postcode, town |
-| **Land / Staatsangehörigkeit** | country / nationality |
-| **Telefonnummer, E-Mail-Adresse** | phone, email |
-| **Familienstand** | marital status (ledig, verheiratet) |
-| **Datum, Unterschrift** | date, signature |
-
-### Why it matters
-
-Writing is a full part of the A1 exam, and the markers look for three things: the right **greeting and closing**, all the **requested information**, and **short, correct sentences**. The fixed frame carries most of that. In real life the same frame covers a message to a colleague, a reply to a landlord or a text to a new friend.
+An informal email has five parts: greeting, first line, three to five short sentences, closing, your name.
 `,
-  examples: [
-    { de: 'Liebe Frau Schmidt, vielen Dank für Ihre E-Mail.', en: 'Dear Ms Schmidt, thank you for your email. (Liebe for a woman; lowercase after the comma; formal Ihre)' },
-    { de: 'Lieber Tom, wie geht es dir?', en: 'Dear Tom, how are you? (Lieber for a man)' },
-    { de: 'Hast du am Samstag Zeit? Wir machen eine Party.', en: 'Are you free on Saturday? We are having a party. (invitation)' },
-    { de: 'Leider kann ich nicht kommen, denn ich muss arbeiten.', en: 'Unfortunately I cannot come, because I have to work. (declining with a reason)' },
-    { de: 'Kannst du mir bitte die Adresse schicken?', en: 'Can you please send me the address? (polite request)' },
-    { de: 'Liebe Grüße, Anna', en: 'Best wishes, Anna (informal closing; usually on two lines)' },
-    { de: 'Mit freundlichen Grüßen, Anna Berger', en: 'Kind regards, Anna Berger (formal closing)' },
-    { de: 'Vorname: Anna. Nachname: Berger. Wohnort: Köln.', en: 'First name: Anna. Surname: Berger. Town: Cologne. (form fields)' },
+      examples: [
+        { de: 'Liebe Anna,', en: 'Dear Anna, (greeting, comma after the name)' },
+        { de: 'vielen Dank für deine Einladung.', en: 'thank you for your invitation. (first line, lowercase after the comma)' },
+        { de: 'Ich komme gern zur Party. Wann soll ich kommen?', en: 'I am happy to come to the party. When should I come? (body)' },
+        { de: 'Liebe Grüße', en: 'Best wishes (closing; your name goes on the next line)' },
+      ],
+    },
+    {
+      title: 'Greeting and first line',
+      text: `
+**Liebe** + a woman's name, **Lieber** + a man's name, or **Hallo** + name. A comma follows the name.
+
+The next line continues the sentence, so it starts with a **lowercase** letter: *Liebe Anna,* then *vielen Dank für deine E-Mail*. Only nouns and *Sie*-forms keep their capital.
+`,
+      examples: [
+        { de: 'Lieber Tom, wie geht es dir?', en: 'Dear Tom, how are you? (Lieber for a man)' },
+        { de: 'Liebe Anna, vielen Dank für deine E-Mail.', en: 'Dear Anna, thank you for your email. (Liebe for a woman; lowercase vielen)' },
+        { de: 'Hallo Max, ich habe eine Frage.', en: 'Hi Max, I have a question. (lowercase ich)' },
+      ],
+    },
+    {
+      title: 'Phrases for the body',
+      text: `
+In the body, say why you write, give the information and ask a question. These phrases do most of the work: *Ich schreibe dir, denn …* / *Hast du am Samstag Zeit?* / *Ich komme gern.* / *Leider kann ich nicht kommen, denn …* / *Kannst du mir bitte … schicken?* / *Wann treffen wir uns?*
+`,
+      examples: [
+        { de: 'Hast du am Samstag Zeit? Wir machen eine Party.', en: 'Are you free on Saturday? We are having a party. (invitation)' },
+        { de: 'Leider kann ich nicht kommen, denn ich muss arbeiten.', en: 'Unfortunately I cannot come, because I have to work. (declining with a reason)' },
+        { de: 'Kannst du mir bitte die Adresse schicken?', en: 'Can you please send me the address? (polite request)' },
+        { de: 'Wann treffen wir uns?', en: 'When shall we meet? (asking a question)' },
+      ],
+    },
+    {
+      title: 'Closing and name',
+      text: `
+Informal closings: **Liebe Grüße**, **Viele Grüße**, **Bis bald**. The closing stands on its own line with **no comma** after it; your name goes on the next line.
+
+Before the closing you can add one short last sentence: *Schreib mir bald!* or *Ich freue mich.*
+`,
+      examples: [
+        { de: 'Schreib mir bald!', en: 'Write to me soon! (last sentence before the closing)' },
+        { de: 'Ich freue mich. Bis Samstag!', en: 'I am looking forward to it. See you on Saturday!' },
+        { de: 'Viele Grüße', en: 'Best regards (closing, no comma; name on the next line)' },
+      ],
+    },
+    {
+      title: 'A formal email',
+      text: `
+For an office, a doctor or a landlord, the frame is the same but the words change. Greeting: **Sehr geehrte Damen und Herren,** (unknown person), **Sehr geehrte Frau Müller,** or **Sehr geehrter Herr Braun,**. Use **Sie, Ihnen, Ihr** throughout. Closing: **Mit freundlichen Grüßen** and your full name.
+`,
+      examples: [
+        { de: 'Sehr geehrte Frau Schmidt, vielen Dank für Ihre E-Mail.', en: 'Dear Ms Schmidt, thank you for your email. (formal; Ihre, not deine)' },
+        { de: 'Sehr geehrter Herr Braun, ich habe eine Frage.', en: 'Dear Mr Braun, I have a question. (geehrter for a man)' },
+        { de: 'Mit freundlichen Grüßen', en: 'Kind regards (formal closing; full name on the next line)' },
+      ],
+    },
+    {
+      title: 'A note and a form',
+      text: `
+A **note** (*Notiz*) is even shorter and may drop the subject: *Bin um 18 Uhr zurück.* That is fine here and only here.
+
+A **form** asks for your details with fixed labels: **Vorname** (first name), **Nachname** (surname), **Geburtsdatum** (date of birth), **Straße, Hausnummer** (street, house number), **Postleitzahl, Wohnort** (postcode, town), **Telefonnummer**, **Unterschrift** (signature).
+`,
+      examples: [
+        { de: 'Hallo Lena, ich bin beim Arzt. Bin um 18 Uhr zurück.', en: 'Hi Lena, I am at the doctor. Back at 6 pm. (note, subject dropped)' },
+        { de: 'Das Essen ist im Kühlschrank. Bis später, Max.', en: 'The food is in the fridge. See you later, Max.' },
+        { de: 'Vorname: Anna. Nachname: Berger. Wohnort: Köln.', en: 'First name: Anna. Surname: Berger. Town: Cologne. (form fields)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-02-greetings', note: 'du vs Sie decides every form in the email: dein / Ihr, dir / Ihnen, Liebe / Sehr geehrte.' },

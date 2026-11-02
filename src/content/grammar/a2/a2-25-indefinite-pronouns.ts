@@ -4,79 +4,97 @@ const topic: Topic = {
   id: 'a2-25-indefinite-pronouns',
   level: 'A2',
   unit: 9,
-  order: 25,
+  order: 28,
   title: 'man, jemand, niemand, etwas, nichts',
   germanTerm: 'Indefinitpronomen',
   tags: ['pronouns', 'indefinite', 'man', 'negation', 'subject'],
   summary: 'Indefinite pronouns stand for people or things you do not name: man (one / people in general), jemand (someone), niemand (nobody), etwas (something) and nichts (nothing).',
-  explanation: `
-### What it is
-
-Sometimes you talk about a person or thing without saying who or what it is: *Someone called*, *Nobody knows*, *You can't smoke here*. German uses **indefinite pronouns** (*Indefinitpronomen*) for this.
+  steps: [
+    {
+      title: 'Words for people you do not name',
+      text: `
+Sometimes you talk about a person or thing without saying who or what it is: *Someone called*, *Nobody knows*. German uses **indefinite pronouns** (*Indefinitpronomen*, "unspecific" pronouns) for this.
 
 | pronoun | meaning | for |
 |---|---|---|
-| **man** | one, you, people, they (in general) | people |
-| **jemand** | someone, somebody, anyone | people |
-| **niemand** | nobody, no one | people |
+| **man** | one, you, people in general | people |
+| **jemand** | someone, anyone | people |
+| **niemand** | nobody | people |
 | **etwas** | something, anything | things |
 | **nichts** | nothing | things |
 | **alles** | everything | things |
-| **alle** | everyone, everybody | people (plural) |
+`,
+      examples: [
+        { de: 'Jemand hat angerufen.', en: 'Someone called.' },
+        { de: 'Ich möchte etwas essen.', en: 'I would like to eat something.' },
+        { de: 'Niemand weiß die Antwort.', en: 'Nobody knows the answer.' },
+      ],
+    },
+    {
+      title: 'man: people in general',
+      text: `
+**man** is used all the time for general statements, rules and customs. It means *people in general* and often matches English *you*, *one* or *they*. Three rules:
 
-### man: the most important one
-
-**man** is used all the time for general statements. It means *people in general* and often matches English *you*, *one* or *they*.
-
-- In Deutschland **trinkt man** viel Kaffee. – *People drink a lot of coffee in Germany.*
-- Hier **darf man** nicht rauchen. – *You may not smoke here.*
-- Wie **sagt man** das auf Deutsch? – *How do you say that in German?*
-
-Rules for *man*:
-
-1. It is always **third person singular**: *man ist, man hat, man kann* (like *er / sie / es*).
-2. It is written with a **small m**. *Man* with a capital M is only at the start of a sentence; *der Mann* (the man) is a different word.
-3. It is only used as the **subject** of the sentence. (You may also see *einen* / *einem* standing in for *man* as an object, *Das macht einen müde*; that is B1 material.)
-
-### jemand and niemand
-
-Both are singular and are used for people.
-
-- **Jemand** hat angerufen. – *Someone called.*
-- Ist **jemand** zu Hause? – *Is anyone at home?*
-- **Niemand** weiß die Antwort. – *Nobody knows the answer.*
+1. It is always **third person singular**, like *er / sie / es*: *man ist, man hat, man kann*.
+2. It has a **small m**. *Man* with a capital M is only at the start of a sentence; *der Mann* (the man) is a different word.
+3. It is only used as the **subject**.
+`,
+      examples: [
+        { de: 'In Deutschland trinkt man viel Kaffee.', en: 'People drink a lot of coffee in Germany. (man + trinkt, singular)' },
+        { de: 'Hier darf man nicht rauchen.', en: 'You may not smoke here. (a rule with man + modal verb)' },
+        { de: 'Wie sagt man das auf Deutsch?', en: 'How do you say that in German?' },
+      ],
+    },
+    {
+      title: 'jemand and niemand',
+      text: `
+Both are **singular** and stand for people. *jemand* is *someone* or, in a question, *anyone*; *niemand* is *nobody*.
 
 As an object they can take an ending (*Ich habe jemand**en** gesehen*, *Ich helfe niemand**em***), but in everyday German the plain form is also common and correct: *Ich habe niemand gesehen.*
-
-**niemand** already contains the negation. Do not add *nicht*: *Niemand kommt*, not *Niemand kommt nicht*.
-
-### etwas and nichts
-
-These stand for things and **never change their form**.
-
-- Ich möchte **etwas** essen. – *I would like to eat something.*
-- Hast du **etwas** gesagt? – *Did you say something / anything?*
-- Ich habe **nichts** verstanden. – *I understood nothing. / I did not understand anything.*
-
-Like *niemand*, **nichts** is already negative, so there is no *nicht*: *Ich habe nichts gekauft*, not *nichts nicht*.
-
-Some fixed phrases put an adjective after *etwas* and *nichts*, written with a capital letter and the ending **-es**: *etwas Neues* (something new), *nichts Besonderes* (nothing special), *etwas Schönes*. Learn these as whole phrases.
-
-In speech *etwas* is often shortened to **was**: *Möchtest du was trinken?*
-
-### Why it matters
-
-*man* lets you talk about rules, customs and instructions without naming anyone (*Hier kann man gut essen*). *jemand / niemand / etwas / nichts* are the words you need for everyday questions and answers (*Hat jemand Zeit? – Nein, niemand.*). And remembering that *niemand* and *nichts* are already negative saves you from the double negative, one of the most common mistakes at this level.
 `,
-  examples: [
-    { de: 'In Deutschland isst man viel Brot.', en: 'People eat a lot of bread in Germany. (man = people in general)' },
-    { de: 'Hier darf man nicht parken.', en: 'You may not park here. (rule with man + modal)' },
-    { de: 'Wie schreibt man das?', en: 'How do you spell that?' },
-    { de: 'Jemand hat an der Tür geklingelt.', en: 'Someone rang the doorbell.' },
-    { de: 'Niemand hat mir geholfen.', en: 'Nobody helped me. (no extra nicht)' },
-    { de: 'Möchtest du etwas trinken?', en: 'Would you like something to drink?' },
-    { de: 'Ich habe heute nichts gegessen.', en: 'I have eaten nothing today.' },
-    { de: 'Gibt es etwas Neues?', en: 'Is there anything new? (etwas + capitalised adjective + -es)' },
+      examples: [
+        { de: 'Jemand hat an der Tür geklingelt.', en: 'Someone rang the doorbell.' },
+        { de: 'Ist jemand zu Hause?', en: 'Is anyone at home? (in a question: anyone)' },
+        { de: 'Niemand hat mir geholfen.', en: 'Nobody helped me.' },
+        { de: 'Ich habe niemanden gesehen.', en: 'I did not see anyone. (object: niemanden)' },
+      ],
+    },
+    {
+      title: 'etwas and nichts',
+      text: `
+These stand for **things** and **never change their form**. *etwas* is *something* (or *anything* in a question); *nichts* is *nothing*.
+
+In relaxed speech *etwas* is often shortened to **was**: *Möchtest du was trinken?*
+`,
+      examples: [
+        { de: 'Möchtest du etwas trinken?', en: 'Would you like something to drink?' },
+        { de: 'Hast du etwas gesagt?', en: 'Did you say something? (in a question: anything)' },
+        { de: 'Ich habe heute nichts gegessen.', en: 'I have eaten nothing today.' },
+        { de: 'Möchtest du was trinken?', en: 'Do you want something to drink? (was = etwas, casual)' },
+      ],
+    },
+    {
+      title: 'niemand and nichts are already negative',
+      text: `
+**niemand** and **nichts** contain the negation themselves, like *kein*. So you never add **nicht**: *Niemand kommt*, not *Niemand kommt nicht*. English says *I did not see anything*; German says *Ich habe nichts gesehen*, with no second negative word.
+`,
+      examples: [
+        { de: 'Niemand ist gekommen.', en: 'Nobody came. (no extra nicht)' },
+        { de: 'Ich habe nichts verstanden.', en: 'I did not understand anything. (nichts, no nicht)' },
+        { de: 'Ich habe nichts gekauft.', en: 'I did not buy anything.' },
+      ],
+    },
+    {
+      title: 'etwas Neues, nichts Besonderes',
+      text: `
+In some fixed phrases an adjective follows *etwas* or *nichts*. It is written with a **capital letter** and gets the ending **-es**: *etwas Neues* (something new), *nichts Besonderes* (nothing special), *etwas Schönes*. Learn these as whole phrases.
+`,
+      examples: [
+        { de: 'Gibt es etwas Neues?', en: 'Is there anything new? (etwas + Neues)' },
+        { de: 'Ich habe nichts Besonderes gemacht.', en: 'I did nothing special. (nichts + Besonderes)' },
+        { de: 'Wir haben etwas Schönes gesehen.', en: 'We saw something beautiful.' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-03-personal-pronouns', note: 'man takes the same verb form as er / sie / es.' },

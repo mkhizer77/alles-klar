@@ -4,65 +4,98 @@ const topic: Topic = {
   id: 'a2-14-genitive',
   level: 'A2',
   unit: 5,
-  order: 14,
+  order: 15,
   title: 'The Genitive case and possession with von',
   germanTerm: 'Genitiv',
   tags: ['cases', 'Genitive', 'possession', 'articles', 'nouns'],
-  summary: 'The Genitive is the "of / belonging to" case (das Auto des Vaters, der Name der Frau, Annas Buch); masculine and neuter nouns add -s, and in speech people usually say von + Dative instead.',
-  explanation: `
-### What it is
+  summary: 'The Genitive is the "of / belonging to" case (das Auto des Vaters, Annas Buch): masculine and neuter take des + -s, feminine and plural take der, and in speech people say von + Dative instead.',
+  steps: [
+    {
+      title: 'What the Genitive is for',
+      text: `
+The **Genitive** (*Genitiv*, the "of" case) is the fourth and last German case. It answers **wessen?** (whose?) and shows that one thing belongs to another: *das Auto **des Vaters*** = the father's car.
 
-The **Genitive** (*Genitiv*) is the fourth and last German case. It answers the question **wessen?** (whose?) and shows that one thing **belongs to** or is **part of** another:
-
-- das Auto **des Vaters** – *the father's car / the car of the father*
-- der Name **der Straße** – *the name of the street*
-- die Farbe **des Hauses** – *the colour of the house*
-
-English does the same with *'s* or *of*. In German the Genitive phrase always comes **after** the noun it belongs to: *das Auto* first, then *des Vaters*.
-
-### How it works: des and der
-
-| | masculine | feminine | neuter | plural |
-|---|---|---|---|---|
-| the | **des** Vater**s** | **der** Frau | **des** Haus**es** | **der** Kinder |
-
-Two patterns to remember:
-
-- Masculine and neuter: **des**, and the noun itself gets an **-s** (*des Vaters, des Autos*). Short nouns and nouns ending in *-s* get **-es** so you can say them: *des Mannes, des Kindes, des Hauses*.
-- Feminine and plural: **der**, and the noun does **not** change: *der Frau, der Kinder*.
-
-*mein, dein, sein …* and *ein* follow the same pattern: **meines** Vaters, **meiner** Mutter, **eines** Kindes. The ending is the same as on *des / der*.
-
-Note that feminine Genitive *der* looks exactly like the Dative *der Frau*; the question *wessen?* tells you which it is.
-
-### Names
-
-Names simply add **-s**, with **no apostrophe**: **Peters** Auto, **Annas** Buch, **Frau Müllers** Büro. The name goes **before** the noun, like in English. (Only a name that already ends in *-s* gets an apostrophe instead: *Klaus' Auto*.)
-
-### Spoken German: von + Dative
-
-In conversation most people avoid the Genitive and say **von + Dative** instead:
-
-| written / formal (Genitive) | spoken (von + Dative) |
-|---|---|
-| das Auto meines Vaters | das Auto **von meinem Vater** |
-| die Tasche der Lehrerin | die Tasche **von der Lehrerin** |
-| der Hund der Nachbarn | der Hund **von den Nachbarn** |
-
-Both are correct. Use *von* when you speak; use the Genitive in writing and in fixed phrases. You still need to **recognise** the Genitive, because every text, sign and news report uses it.
-
-### Why it matters
-
-The Genitive appears in every written text, in fixed expressions (*Anfang des Jahres, Ende der Woche*) and after *wegen* (because of), which is the next topic. Once you know *des + -s* for masculine / neuter and *der* for feminine / plural, you can read it anywhere, and *von + Dative* gives you an easy spoken alternative.
+English uses *'s* or *of*. In German the Genitive phrase comes **after** the noun it belongs to: *das Auto* first, then *des Vaters*.
 `,
-  examples: [
-    { de: 'Das ist das Auto meines Vaters.', en: "That is my father's car. (masculine: meines Vaters)" },
-    { de: 'Der Name der Straße ist sehr lang.', en: 'The name of the street is very long. (feminine: der, no noun ending)' },
-    { de: 'Die Farbe des Hauses gefällt mir.', en: 'I like the colour of the house. (neuter, -es after -s)' },
-    { de: 'Das Spielzeug der Kinder liegt überall.', en: "The children's toys are everywhere. (plural: der Kinder)" },
-    { de: 'Annas Buch liegt auf dem Tisch.', en: "Anna's book is on the table. (name + s, no apostrophe)" },
-    { de: 'Das ist das Fahrrad von meiner Schwester.', en: "That is my sister's bike. (spoken: von + Dative)" },
-    { de: 'Wessen Jacke ist das?', en: 'Whose jacket is that? (wessen asks for the Genitive)' },
+      examples: [
+        { de: 'Das ist das Auto des Vaters.', en: "That is the father's car. (des Vaters = of the father)" },
+        { de: 'Der Name der Straße ist lang.', en: 'The name of the street is long.' },
+        { de: 'Wessen Jacke ist das?', en: 'Whose jacket is that? (wessen asks for the Genitive)' },
+      ],
+    },
+    {
+      title: 'Masculine and neuter: des and -s',
+      text: `
+For masculine and neuter nouns the article is **des**, and the noun itself gets an **-s**: *des Vaters, des Autos*.
+
+Short nouns of one syllable, and nouns that end in *-s*, get **-es** so you can say them: *des Mannes, des Kindes, des Hauses*.
+
+| | masculine | neuter |
+|---|---|---|
+| Genitive | **des** Vater**s** | **des** Haus**es** |
+`,
+      examples: [
+        { de: 'Die Farbe des Autos gefällt mir.', en: 'I like the colour of the car. (Auto + s)' },
+        { de: 'Das Haus des Mannes ist alt.', en: "The man's house is old. (one syllable: -es)" },
+        { de: 'Die Tür des Hauses ist grün.', en: 'The door of the house is green. (ends in -s: -es)' },
+      ],
+    },
+    {
+      title: 'Feminine and plural: der, no change',
+      text: `
+For feminine and plural nouns the article is **der**, and the noun does **not** change: *der Frau, der Kinder*.
+
+Careful: feminine Genitive *der* looks exactly like the Dative (*Ich helfe der Frau*). Ask *wessen?* If the answer is "whose", it is the Genitive.
+
+| | feminine | plural |
+|---|---|---|
+| Genitive | **der** Frau | **der** Kinder |
+`,
+      examples: [
+        { de: 'Der Name der Frau ist Anna.', en: "The woman's name is Anna. (feminine: der)" },
+        { de: 'Das Spielzeug der Kinder liegt überall.', en: "The children's toys are everywhere. (plural: der)" },
+        { de: 'Die Tasche der Lehrerin ist neu.', en: "The teacher's bag is new." },
+      ],
+    },
+    {
+      title: 'mein and ein take the same endings',
+      text: `
+*ein* and the possessive articles (*mein, dein, sein …*) take the **same endings** as *des / der*: **meines** Vaters, **meiner** Mutter, **eines** Kindes. The noun still adds -s in the masculine and neuter.
+
+The Genitive phrase always comes **after** the noun: *das Haus meiner Eltern*, never *meiner Eltern Haus*.
+`,
+      examples: [
+        { de: 'Das ist das Haus meiner Eltern.', en: "That is my parents' house. (meiner: plural)" },
+        { de: 'Die Farbe meines Autos ist rot.', en: 'The colour of my car is red. (meines + s)' },
+        { de: 'Das Zimmer eines Kindes ist oft unordentlich.', en: "A child's room is often messy. (eines Kindes)" },
+      ],
+    },
+    {
+      title: 'Names: add -s, no apostrophe',
+      text: `
+Names simply add **-s**, with **no apostrophe**: *Peters Auto, Annas Buch, Frau Müllers Büro*. The name goes **before** the noun, like in English.
+
+Only a name that already ends in *-s* gets an apostrophe instead of a second s: *Klaus' Auto*.
+`,
+      examples: [
+        { de: 'Annas Buch liegt auf dem Tisch.', en: "Anna's book is on the table. (no apostrophe)" },
+        { de: 'Das ist Frau Müllers Büro.', en: "That is Ms Müller's office." },
+        { de: 'Peters Schwester wohnt in Köln.', en: "Peter's sister lives in Cologne." },
+      ],
+    },
+    {
+      title: 'In speech: von + Dative',
+      text: `
+In conversation most people avoid the Genitive and say **von + Dative** instead: *das Auto von meinem Vater*. Both are correct. Use *von* when you speak and the Genitive when you write.
+
+You still need to **recognise** the Genitive: every text, sign and news report uses it.
+`,
+      examples: [
+        { de: 'Das Auto von meinem Vater ist neu.', en: "My father's car is new. (spoken: von + Dative)" },
+        { de: 'Das Auto meines Vaters ist neu.', en: "My father's car is new. (written: Genitive)" },
+        { de: 'Der Hund von den Nachbarn bellt.', en: "The neighbours' dog is barking. (von den: Dative plural)" },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-24-dative', note: 'The Dative is the case after von in the spoken alternative.' },

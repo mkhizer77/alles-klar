@@ -4,19 +4,29 @@ const topic: Topic = {
   id: 'a2-11-reflexive-verbs',
   level: 'A2',
   unit: 4,
-  order: 11,
+  order: 12,
   title: 'Reflexive verbs (sich waschen, sich freuen)',
   germanTerm: 'Reflexive Verben',
   tags: ['verbs', 'reflexive', 'pronouns', 'Accusative', 'Dative'],
   summary: 'Reflexive verbs come with a pronoun that points back to the subject (ich wasche mich, er freut sich); the pronoun is Accusative, or Dative when the sentence also has a direct object (ich wasche mir die Hände).',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'The action comes back to the subject',
+      text: `
+A **reflexive verb** (*reflexives Verb*) is a verb whose action comes back to the subject. English sometimes shows this with *myself, yourself* (*I wash myself*), but often not (*I'm looking forward to it*). German uses a **reflexive pronoun** (*Reflexivpronomen*) much more often.
 
-A **reflexive verb** (*reflexives Verb*) is a verb whose action comes back to the subject. English sometimes shows this with *myself, yourself* (*I wash myself*), but often does not (*I'm looking forward to it*). German uses a **reflexive pronoun** (*Reflexivpronomen*) much more often, and for many verbs it is simply part of the verb: *sich freuen* (to be glad), *sich beeilen* (to hurry).
-
-In the dictionary these verbs are listed with **sich**: *sich waschen, sich setzen, sich erinnern*.
-
-### The reflexive pronouns
+In the dictionary these verbs are listed with **sich**: *sich waschen, sich freuen, sich setzen*.
+`,
+      examples: [
+        { de: 'Ich wasche mich.', en: 'I wash. (mich points back to ich)' },
+        { de: 'Er freut sich.', en: 'He is glad. (sich freuen: to be glad)' },
+        { de: 'Setzen Sie sich bitte!', en: 'Please sit down. (sich setzen: to sit down)' },
+      ],
+    },
+    {
+      title: 'The reflexive pronouns',
+      text: `
+These are the normal Accusative and Dative pronouns, plus **one new word: sich** for *er, sie, es*, plural *sie* and *Sie*.
 
 | subject | Accusative | Dative |
 |---|---|---|
@@ -27,55 +37,68 @@ In the dictionary these verbs are listed with **sich**: *sich waschen, sich setz
 | ihr | **euch** | **euch** |
 | sie / Sie | **sich** | **sich** |
 
-Good news: these are the normal Accusative and Dative pronouns you already know, with one new word: **sich** for all third persons and for *Sie*. Only *ich* and *du* have different Accusative and Dative forms, so that is the only place you have to choose.
-
-### Accusative or Dative?
-
-Most reflexive verbs take the **Accusative**:
-
-- Ich wasche **mich**. – *I wash (myself).*
-- Du ziehst **dich** an. – *You get dressed.*
-- Er freut **sich**. – *He is glad.*
-
-Use the **Dative** when the sentence has **another direct object**. Then the body part or thing is the Accusative, and the reflexive pronoun moves to the Dative:
-
-- Ich wasche **mir** die Hände. – *I wash my hands.* (die Hände = direct object)
-- Du putzt **dir** die Zähne. – *You brush your teeth.*
-- Ich kaufe **mir** ein Buch. – *I'm buying myself a book.*
-
-Note that German says *die Hände*, not *meine Hände*: the Dative pronoun already tells you whose hands.
-
-### Two kinds of reflexive verbs
-
-1. **Optional**: the verb also works with a normal object. *Ich wasche das Auto* / *Ich wasche mich*. Examples: *waschen, kämmen, anziehen, setzen, verletzen*.
-2. **Always reflexive**: the pronoun cannot be removed, and often there is no "self" meaning in English at all. Learn these as a unit:
-
-| verb | meaning | | verb | meaning |
-|---|---|---|---|---|
-| sich freuen | to be glad | | sich erholen | to recover, relax |
-| sich beeilen | to hurry | | sich erkälten | to catch a cold |
-| sich erinnern | to remember | | sich verabreden | to arrange to meet |
-| sich interessieren | to be interested | | sich bedanken | to say thank you |
-| sich ausruhen | to rest | | sich verspäten | to be late |
-
-### Word order and the Perfekt
-
-The pronoun stands **right after the conjugated verb** (the verb with the ending): *Ich freue **mich** sehr.* In a question, or when the sentence starts with another word, it follows the subject: *Freust du **dich**? Heute beeile ich **mich**.* In a subordinate clause (*Nebensatz*) it comes right after the subject: *…, weil ich **mich** beeile.*
-
-The Perfekt is **always with haben**: *Ich habe mich gefreut. Er hat sich erkältet.*
-
-### Why it matters
-
-Daily routine (*sich waschen, sich anziehen, sich beeilen*), feelings (*sich freuen, sich ärgern*) and health (*sich erkälten, sich verletzen*) are all reflexive. Many of these verbs also combine with a fixed preposition (*sich freuen auf, sich interessieren für*), which is the next topic.
+Only *ich* and *du* have two different forms.
 `,
-  examples: [
-    { de: 'Ich wasche mich jeden Morgen.', en: 'I wash every morning. (Accusative: mich)' },
-    { de: 'Ich wasche mir die Hände.', en: 'I wash my hands. (Dative mir, because die Hände is the direct object)' },
-    { de: 'Er freut sich auf das Wochenende.', en: 'He is looking forward to the weekend. (sich for er)' },
-    { de: 'Wir müssen uns beeilen.', en: 'We have to hurry. (uns for wir, always reflexive)' },
-    { de: 'Setzt euch bitte!', en: 'Please sit down! (euch for ihr)' },
-    { de: 'Erinnerst du dich an mich?', en: 'Do you remember me? (question: pronoun after the subject)' },
-    { de: 'Ich habe mich gestern erkältet.', en: 'I caught a cold yesterday. (Perfekt with haben)' },
+      examples: [
+        { de: 'Du ziehst dich an.', en: 'You get dressed. (du → dich)' },
+        { de: 'Wir müssen uns beeilen.', en: 'We have to hurry. (wir → uns)' },
+        { de: 'Setzt euch bitte!', en: 'Please sit down. (ihr → euch)' },
+        { de: 'Sie freuen sich.', en: 'They are glad. (sie / Sie → sich)' },
+      ],
+    },
+    {
+      title: 'Most verbs take the Accusative',
+      text: `
+If the reflexive pronoun is the only object in the sentence, it stands in the **Accusative**: *mich, dich, sich, uns, euch, sich*. This is the normal case for reflexive verbs, so start from the Accusative every time.
+`,
+      examples: [
+        { de: 'Ich wasche mich jeden Morgen.', en: 'I wash every morning. (Accusative: mich)' },
+        { de: 'Erinnerst du dich an mich?', en: 'Do you remember me? (Accusative: dich)' },
+        { de: 'Die Kinder ziehen sich an.', en: 'The children get dressed. (Accusative: sich)' },
+      ],
+    },
+    {
+      title: 'Dative when there is another object',
+      text: `
+Use the **Dative** (*mir, dir* …) when the sentence also has a **direct object**, often a body part or a thing you get for yourself. The body part is the Accusative, so the pronoun moves to the Dative.
+
+Note that German says *die Hände*, not *meine Hände*: the pronoun *mir* already tells you whose hands.
+`,
+      examples: [
+        { de: 'Ich wasche mir die Hände.', en: 'I wash my hands. (mir, because die Hände is the object)' },
+        { de: 'Du putzt dir die Zähne.', en: 'You brush your teeth. (dir + die Zähne)' },
+        { de: 'Ich kaufe mir ein Buch.', en: 'I am buying myself a book. (mir + ein Buch)' },
+        { de: 'Er wäscht sich die Haare.', en: 'He washes his hair. (sich: the same in both cases)' },
+      ],
+    },
+    {
+      title: 'Verbs that are always reflexive',
+      text: `
+Some verbs work with or without the pronoun: *Ich wasche das Auto* / *Ich wasche mich* (*waschen, kämmen, anziehen, setzen*).
+
+Others are **always reflexive**, and often there is no "self" in the English at all. Learn these as one unit: **sich freuen** (to be glad), **sich beeilen** (to hurry), **sich erinnern** (to remember), **sich interessieren** (to be interested), **sich ausruhen** (to rest), **sich erholen** (to recover), **sich erkälten** (to catch a cold), **sich verabreden** (to arrange to meet), **sich bedanken** (to say thank you), **sich verspäten** (to be late).
+`,
+      examples: [
+        { de: 'Wir müssen uns beeilen.', en: 'We have to hurry. (sich beeilen)' },
+        { de: 'Ich interessiere mich für Musik.', en: 'I am interested in music. (sich interessieren)' },
+        { de: 'Sie erholt sich im Urlaub.', en: 'She is recovering on holiday. (sich erholen)' },
+        { de: 'Er verspätet sich oft.', en: 'He is often late. (sich verspäten)' },
+      ],
+    },
+    {
+      title: 'Word order and the Perfekt',
+      text: `
+The pronoun stands **right after the conjugated verb** (the verb with the ending): *Ich freue **mich** sehr.* In a question, or when another word starts the sentence, it follows the subject: *Freust du **dich**?* In a subordinate clause (*Nebensatz*) it comes right after the subject: *…, weil ich **mich** beeile.*
+
+The Perfekt is **always with haben**: *Ich habe mich gefreut.*
+`,
+      examples: [
+        { de: 'Ich freue mich auf das Wochenende.', en: 'I am looking forward to the weekend. (right after the verb)' },
+        { de: 'Heute beeile ich mich.', en: 'Today I am hurrying. (after the subject)' },
+        { de: 'Ich bleibe zu Hause, weil ich mich erkältet habe.', en: 'I am staying at home because I caught a cold. (Nebensatz: after the subject)' },
+        { de: 'Er hat sich gestern erkältet.', en: 'He caught a cold yesterday. (Perfekt with haben)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-23-accusative-pronouns', note: 'mich, dich, uns, euch are the normal Accusative pronouns; only sich is new.' },

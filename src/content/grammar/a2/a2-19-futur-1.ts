@@ -4,79 +4,101 @@ const topic: Topic = {
   id: 'a2-19-futur-1',
   level: 'A2',
   unit: 7,
-  order: 19,
+  order: 21,
   title: 'Future with werden and future with Präsens',
   germanTerm: 'Futur I',
   tags: ['verbs', 'tense', 'future', 'werden', 'word order'],
-  summary: 'German usually talks about the future with the present tense plus a time word; the real future tense (werden + infinitive) is for predictions, promises and guesses.',
-  explanation: `
-### What it is
+  summary: 'German usually talks about the future with the present tense plus a time word; the real future tense (werden + infinitive) is for predictions, promises and intentions.',
+  steps: [
+    {
+      title: 'Two ways to talk about the future',
+      text: `
+German has a future tense, **Futur I**, built with **werden** + infinitive. But Germans use it much less than English speakers use *will*. Most of the time the **present tense** (*Präsens*) does the job, as long as a time word makes clear that you mean the future.
 
-German has a future tense, **Futur I** (*Futur I*), built with **werden** + infinitive. But here is the surprise: Germans use it much less than English speakers use *will*. Most of the time the **present tense** (*Präsens*) does the job, as long as the context makes clear that you mean the future.
+Both sentences below are correct; the first is more natural in everyday speech.
+`,
+      examples: [
+        { de: 'Morgen fahre ich nach Köln.', en: 'Tomorrow I am going to Cologne. (Präsens + time word)' },
+        { de: 'Ich werde dich morgen anrufen.', en: 'I will call you tomorrow. (Futur I)' },
+        { de: 'Nächste Woche beginnt der Kurs.', en: 'The course starts next week. (Präsens)' },
+      ],
+    },
+    {
+      title: 'Plans: Präsens plus a time word',
+      text: `
+For plans and fixed arrangements use the **present tense + a time expression**: *morgen, nächste Woche, bald, am Montag, in zwei Jahren*.
 
-- Morgen **fahre** ich nach Köln. – *Tomorrow I am going to Cologne.* (Präsens)
-- Ich **werde** dich morgen **anrufen**. – *I will call you tomorrow.* (Futur I)
-
-Both are correct. The first is more natural in everyday speech.
-
-### Future with Präsens
-
-Use the present tense + a time expression (*morgen, nächste Woche, bald, am Montag, in zwei Jahren*). This is the normal way to talk about plans and fixed arrangements.
-
-- Nächste Woche **beginnt** der Kurs. – *The course starts next week.*
-- Am Samstag **haben** wir Besuch. – *We have visitors on Saturday.*
-
-If there is no time word, the present tense means *now*, so add one when you need to be clear.
-
-### Future with werden
-
-**werden** is conjugated and stands in **position 2**. The main verb goes to the **end** of the sentence as an infinitive. This is the same bracket you know from modal verbs.
+Without a time word the present tense means *now*, so add one when you need to be clear. Do not translate every English *will* with *werden*: *I will see you tomorrow* is simply *Wir sehen uns morgen*.
+`,
+      examples: [
+        { de: 'Am Samstag haben wir Besuch.', en: 'We have visitors on Saturday.' },
+        { de: 'Wir sehen uns morgen.', en: 'We will see each other tomorrow. (no werden needed)' },
+        { de: 'In zwei Jahren mache ich das Abitur.', en: 'In two years I am doing my Abitur.' },
+      ],
+    },
+    {
+      title: 'The forms of werden',
+      text: `
+**werden** is irregular in the *du* and *er* forms: the stem changes to **wir-**. The endings are the usual ones; only the stem is new.
 
 | | werden |
 |---|---|
 | ich | werde |
-| du | wirst |
-| er / sie / es | wird |
+| du | **wirst** |
+| er / sie / es | **wird** |
 | wir | werden |
 | ihr | werdet |
 | sie / Sie | werden |
+`,
+      examples: [
+        { de: 'Wirst du mir helfen?', en: 'Will you help me? (du wirst)' },
+        { de: 'Es wird heute Nacht schneien.', en: 'It is going to snow tonight. (es wird)' },
+        { de: 'Wir werden ein Haus kaufen.', en: 'We will buy a house. (wir werden)' },
+      ],
+    },
+    {
+      title: 'werden second, infinitive last',
+      text: `
+*werden* is conjugated and stands in **position 2**. The main verb goes to the **end** of the sentence as an infinitive. This is the same bracket you know from modal verbs.
 
-- Ich **werde** nächstes Jahr mehr Sport **machen**.
-- **Wirst** du mir **helfen**?
-- Es **wird** heute Abend **regnen**.
-
-In a subordinate clause (after *dass*, *weil* …), *werden* goes to the very end, after the infinitive:
-
-- Ich glaube, dass es morgen regnen **wird**.
-
-### When to choose werden
-
-Use Futur I when you want to express more than a plan:
+In a subordinate clause (after *dass, weil* …) *werden* moves to the **very end**, after the infinitive: *…, dass es morgen regnen **wird**.*
+`,
+      examples: [
+        { de: 'Ich werde nächstes Jahr mehr Sport machen.', en: 'I will do more sport next year. (werde … machen)' },
+        { de: 'Morgen werde ich dich anrufen.', en: 'Tomorrow I will call you. (time first, werde second)' },
+        { de: 'Ich glaube, dass es morgen regnen wird.', en: 'I think it will rain tomorrow. (wird at the end of the dass-clause)' },
+      ],
+    },
+    {
+      title: 'When to choose werden',
+      text: `
+Use Futur I when you want to say more than a plan. A forecast, a promise or a firm decision sounds stronger with *werden*.
 
 | meaning | example |
 |---|---|
-| **prediction** | Es wird morgen regnen. – *It is going to rain tomorrow.* |
-| **promise** | Ich werde dich anrufen. – *I will call you.* |
-| **intention** | Ich werde mehr Sport machen. – *I am going to do more sport.* |
-
-You may also see *werden* + **wohl** for a guess about the present: *Er wird wohl krank sein* = *He is probably ill.* You only need to recognise this; it is a B1 topic.
-
-### werden also means "to become"
-
-Be careful: *werden* is also a normal verb meaning *to become*: *Ich werde müde* (I am getting tired), *Sie wird Ärztin* (she is becoming a doctor). If *werden* is followed by an **infinitive** at the end, it is the future. If it is followed by an adjective or noun, it means *become*.
-
-### Why it matters
-
-You need the Präsens form to sound natural when you make plans, and you need *werden* to make promises and predictions. Knowing the difference also helps you read: *Es wird regnen* is a forecast, *Es wird dunkel* means it is getting dark.
+| **prediction** | Es wird morgen regnen. |
+| **promise** | Ich werde dich anrufen. |
+| **intention** | Ich werde mehr Sport machen. |
 `,
-  examples: [
-    { de: 'Morgen fahre ich nach Hamburg.', en: 'Tomorrow I am going to Hamburg. (Präsens + time word)' },
-    { de: 'Ich werde dich morgen anrufen.', en: 'I will call you tomorrow. (promise)' },
-    { de: 'Es wird heute Nacht schneien.', en: 'It is going to snow tonight. (prediction)' },
-    { de: 'Wir werden nächstes Jahr ein Haus kaufen.', en: 'We will buy a house next year. (intention)' },
-    { de: 'Wirst du mir helfen?', en: 'Will you help me? (question: werden first, infinitive last)' },
-    { de: 'Ich hoffe, dass du die Prüfung bestehen wirst.', en: 'I hope you will pass the exam. (werden at the end of the dass-clause)' },
-    { de: 'Es wird langsam dunkel.', en: 'It is slowly getting dark. (werden = to become, no infinitive)' },
+      examples: [
+        { de: 'Es wird heute Abend regnen.', en: 'It is going to rain this evening. (prediction)' },
+        { de: 'Ich werde dir helfen, versprochen.', en: 'I will help you, I promise. (promise)' },
+        { de: 'Ab Montag werde ich nicht mehr rauchen.', en: 'From Monday I will not smoke any more. (intention)' },
+      ],
+    },
+    {
+      title: 'werden also means "to become"',
+      text: `
+*werden* is also a normal verb meaning **to become**: *Ich werde müde* (I am getting tired), *Sie wird Ärztin* (she is becoming a doctor).
+
+The test: if *werden* has an **infinitive** at the end, it is the future. If it is followed by an adjective or a noun, it means *become*.
+`,
+      examples: [
+        { de: 'Es wird langsam dunkel.', en: 'It is slowly getting dark. (werden + adjective = become)' },
+        { de: 'Sie wird Ärztin.', en: 'She is becoming a doctor. (werden + noun = become)' },
+        { de: 'Ich werde morgen kochen.', en: 'I will cook tomorrow. (infinitive at the end = future)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-17-modal-verbs', note: 'werden + infinitive forms the same sentence bracket as a modal verb: conjugated verb second, infinitive at the end.' },

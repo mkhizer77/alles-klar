@@ -4,86 +4,118 @@ const topic: Topic = {
   id: 'a2-16-two-way-prepositions-depth',
   level: 'A2',
   unit: 6,
-  order: 16,
+  order: 17,
   title: 'Two-way prepositions in depth',
   germanTerm: 'Wechselpräpositionen',
   tags: ['prepositions', 'two-way prepositions', 'Accusative', 'Dative', 'location', 'direction'],
   summary: 'The nine two-way prepositions (an, auf, hinter, in, neben, über, unter, vor, zwischen) take the Dative for a location (wo?) and the Accusative for a direction (wohin?), with fixed cases in their non-spatial meanings.',
-  explanation: `
-### What it is
-
-Nine prepositions can take **either** the Dative or the Accusative. They are the **two-way prepositions** (*Wechselpräpositionen*):
-
-**an, auf, hinter, in, neben, über, unter, vor, zwischen**
+  steps: [
+    {
+      title: 'Nine prepositions, two cases',
+      text: `
+Nine prepositions can take **either** the Dative or the Accusative. They are the **two-way prepositions** (*Wechselpräpositionen*): **an, auf, hinter, in, neben, über, unter, vor, zwischen**.
 
 The case tells you whether something **is** somewhere or **moves** somewhere:
 
-- **wo?** (where? location, no movement across a border) → **Dative**
+- **wo?** (where? a location) → **Dative**
 - **wohin?** (where to? movement towards a goal) → **Accusative**
-
-You met the basic idea at A1. This topic gives you the full set, the short forms, the meanings of each preposition and the cases when they are **not** about place.
-
-### How it works: the two columns
+`,
+      examples: [
+        { de: 'Das Buch liegt auf dem Tisch.', en: 'The book is lying on the table. (wo? → Dative)' },
+        { de: 'Ich lege das Buch auf den Tisch.', en: 'I put the book on the table. (wohin? → Accusative)' },
+        { de: 'Er wartet in der Küche.', en: 'He is waiting in the kitchen. (wo?)' },
+        { de: 'Er geht in die Küche.', en: 'He goes into the kitchen. (wohin?)' },
+      ],
+    },
+    {
+      title: 'Let the verb decide',
+      text: `
+Look at the verb. Verbs of **being** somewhere (*sein, liegen, stehen, sitzen, wohnen, bleiben*) answer *wo?* → Dative. Verbs that **move** something to a new place (*gehen, fahren, legen, stellen, setzen*) answer *wohin?* → Accusative.
 
 | | wo? → Dative | wohin? → Accusative |
 |---|---|---|
-| masculine | Das Buch liegt auf **dem** Tisch. | Ich lege das Buch auf **den** Tisch. |
-| feminine | Er wartet in **der** Küche. | Er geht in **die** Küche. |
-| neuter | Wir sind **im** Kino. (in dem) | Wir gehen **ins** Kino. (in das) |
-| plural | Die Kinder spielen hinter **den** Häusern. | Sie laufen hinter **die** Häuser. |
-
-A quick way to decide: is the sentence answering **wo?** or **wohin?** Verbs of being (*sein, liegen, stehen, sitzen, hängen, wohnen, bleiben*) answer *wo* → Dative. Verbs of moving something or someone to a new place (*gehen, fahren, legen, stellen, setzen, hängen*) answer *wohin* → Accusative.
-
-### Short forms
-
-| full form | short form | | full form | short form |
-|---|---|---|---|---|
-| in dem | **im** | | in das | **ins** |
-| an dem | **am** | | an das | **ans** |
-| | | | auf das | **aufs** |
-
-### What each preposition means
-
-| preposition | meaning | typical examples |
-|---|---|---|
-| an | at / on (vertical surface, edge, water) | an der Wand, am Fenster, am See, am Meer |
-| auf | on (horizontal surface); at (some public places) | auf dem Tisch, auf dem Markt, auf der Post, auf der Bank |
-| in | in / into | in der Stadt, im Bett, in die Schweiz |
-| hinter | behind | hinter dem Haus |
-| vor | in front of | vor der Tür |
-| neben | next to | neben dem Sofa |
-| über | above / over | über dem Tisch, über die Straße |
-| unter | under | unter dem Bett |
-| zwischen | between | zwischen den Stühlen |
-
-*an* vs *auf*: **an** touches from the side (*das Bild an der Wand*), **auf** rests on top (*die Lampe auf dem Tisch*). For places use *an* with water and edges (*am Strand, am Bahnhof*) and *auf* with public institutions and open spaces (*auf der Post, auf dem Marktplatz*).
-
-### When the meaning is not about place
-
-Several two-way prepositions have a fixed case when they are not spatial:
-
-- **Time** with *an, in, vor*: always **Dative**. *am Montag, im Mai, in einer Woche, vor zwei Jahren.*
-- **über** meaning *about*: always **Accusative**. *Wir sprechen über den Film.*
-- **Verb + preposition combinations**: fixed case, learned with the verb. *warten auf + A, denken an + A, Angst haben vor + D.*
-
-### Why it matters
-
-Two-way prepositions are the most frequent prepositions in German; you use several in every description of a room or a route. The Dative / Accusative contrast behind *im / ins* and *auf dem / auf den* is also the basis for the position verbs (*stellen / stehen, legen / liegen*) in the next topic.
+| masculine | auf **dem** Tisch | auf **den** Tisch |
+| feminine | in **der** Küche | in **die** Küche |
+| neuter | in **dem** Kino | in **das** Kino |
+| plural | hinter **den** Häusern | hinter **die** Häuser |
 `,
-  examples: [
-    { de: 'Das Buch liegt auf dem Tisch.', en: 'The book is lying on the table. (wo? → Dative)' },
-    { de: 'Ich lege das Buch auf den Tisch.', en: 'I put the book on the table. (wohin? → Accusative)' },
-    { de: 'Wir sind im Kino.', en: 'We are at the cinema. (im = in dem)' },
-    { de: 'Wir gehen ins Kino.', en: 'We are going to the cinema. (ins = in das)' },
-    { de: 'Das Bild hängt an der Wand.', en: 'The picture hangs on the wall. (an = vertical surface)' },
-    { de: 'Am Montag fahre ich in die Schweiz.', en: 'On Monday I am going to Switzerland. (time: am = Dative; direction: in die = Accusative)' },
-    { de: 'Wir sprechen über den Film.', en: 'We are talking about the film. (über = about: always Accusative)' },
+      examples: [
+        { de: 'Die Kinder spielen hinter den Häusern.', en: 'The children are playing behind the houses. (Dative plural: -n)' },
+        { de: 'Sie laufen hinter die Häuser.', en: 'They run behind the houses. (Accusative plural)' },
+        { de: 'Wir wohnen über dem Supermarkt.', en: 'We live above the supermarket. (wohnen: wo?)' },
+      ],
+    },
+    {
+      title: 'Short forms: im, ins, am, ans',
+      text: `
+Some articles melt into the preposition. You hear the short forms far more often than the long ones.
+
+| full form | short form |
+|---|---|
+| in dem | **im** |
+| in das | **ins** |
+| an dem | **am** |
+| an das | **ans** |
+| auf das | **aufs** |
+
+Dative *dem* becomes **-m** (*im, am*); Accusative *das* becomes **-s** (*ins, ans, aufs*).
+`,
+      examples: [
+        { de: 'Wir sind im Kino.', en: 'We are at the cinema. (im = in dem, wo?)' },
+        { de: 'Wir gehen ins Kino.', en: 'We are going to the cinema. (ins = in das, wohin?)' },
+        { de: 'Ich sitze am Fenster.', en: 'I am sitting at the window. (am = an dem)' },
+      ],
+    },
+    {
+      title: 'an, auf and in: the tricky three',
+      text: `
+**an** = at or on a **vertical** surface, an edge or water: *an der Wand, am Fenster, am See*.
+
+**auf** = on a **horizontal** surface, and at some public places: *auf dem Tisch, auf dem Markt, auf der Post, auf der Bank*.
+
+**in** = in or into, for buildings you are inside and for countries with an article: *im Büro, in der Schule, in die Schweiz*.
+`,
+      examples: [
+        { de: 'Das Bild hängt an der Wand.', en: 'The picture hangs on the wall. (an: vertical)' },
+        { de: 'Die Lampe steht auf dem Tisch.', en: 'The lamp stands on the table. (auf: on top)' },
+        { de: 'Ich bin auf der Post.', en: 'I am at the post office. (auf: public place)' },
+        { de: 'Wir fahren in die Schweiz.', en: 'We are going to Switzerland. (in + Accusative: country with an article)' },
+      ],
+    },
+    {
+      title: 'The other six',
+      text: `
+The rest are easy because they match English: **hinter** (behind), **vor** (in front of), **neben** (next to), **über** (above, over), **unter** (under), **zwischen** (between). The same rule applies: *wo?* Dative, *wohin?* Accusative.
+`,
+      examples: [
+        { de: 'Die Katze schläft unter dem Bett.', en: 'The cat is sleeping under the bed. (wo?)' },
+        { de: 'Er stellt das Fahrrad vor die Tür.', en: 'He puts the bike in front of the door. (wohin?)' },
+        { de: 'Sie sitzt zwischen ihrem Bruder und ihrer Mutter.', en: 'She is sitting between her brother and her mother. (wo?)' },
+        { de: 'Das Sofa steht neben dem Fenster.', en: 'The sofa is next to the window.' },
+      ],
+    },
+    {
+      title: 'When the meaning is not about place',
+      text: `
+Some two-way prepositions have jobs that have nothing to do with place. Then the case is **fixed**:
+
+- **Time** with *an, in, vor*: always **Dative**. *am Montag, im Mai, vor zwei Jahren.*
+- **über** meaning *about*: always **Accusative**. *Wir sprechen über den Film.*
+- **Verb + preposition** pairs (*warten auf, denken an*): a fixed case, learned with the verb.
+`,
+      examples: [
+        { de: 'Am Montag habe ich frei.', en: 'On Monday I am off. (time: Dative)' },
+        { de: 'Vor zwei Jahren war ich in Rom.', en: 'Two years ago I was in Rome. (time: Dative)' },
+        { de: 'Wir sprechen über den Film.', en: 'We are talking about the film. (über = about: Accusative)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-29-two-way-prepositions', note: 'The A1 introduction to wo? (Dative) vs wohin? (Accusative).' },
     { topicId: 'a1-24-dative', note: 'The Dative articles dem / der / dem / den used for locations.' },
     { topicId: 'a1-20-accusative', note: 'The Accusative articles den / die / das / die used for directions.' },
     { topicId: 'a2-17-position-verbs', note: 'stellen / stehen, legen / liegen are the verbs that switch between the two cases.' },
+    { topicId: 'a2-18b-nach-zu-in', note: 'in die Schweiz but nach Deutschland: when "to" is in, nach or zu.' },
     { topicId: 'a2-12-verbs-with-prepositions', note: 'In verb + preposition combinations the case is fixed and must be learned with the verb.' },
   ],
   edgeCases: [

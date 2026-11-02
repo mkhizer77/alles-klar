@@ -4,69 +4,89 @@ const topic: Topic = {
   id: 'a2-13-da-wo-compounds',
   level: 'A2',
   unit: 4,
-  order: 13,
+  order: 14,
   title: 'da- and wo- compounds (darauf, worauf)',
   germanTerm: 'Präpositionaladverbien',
   tags: ['prepositions', 'pronouns', 'questions', 'da-compounds', 'wo-compounds'],
   summary: 'When the object of a preposition is a thing (not a person), German replaces "preposition + it" with da(r)+preposition (darauf, damit) and asks with wo(r)+preposition (worauf, womit).',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'Preposition + it, preposition + what',
+      text: `
+In English you say *I'm waiting for it* or *What are you waiting for?* In German a preposition cannot simply be followed by *es* or *was* when the object is a **thing**. Instead the preposition fuses with a small word:
 
-In English you can say *I'm waiting for it* or *What are you waiting for?* In German, a preposition cannot simply be followed by *es* or *was* when the object is a **thing**. Instead the preposition fuses with a small word:
+**da** + preposition = *preposition + it / that*: *da**rauf*** (for it). **wo** + preposition = *preposition + what*: *wo**rauf*** (for what?). Grammar books call these *Präpositionaladverbien*; we say **da- and wo-compounds**.
+`,
+      examples: [
+        { de: 'Ich warte darauf.', en: 'I am waiting for it. (auf + it = darauf)' },
+        { de: 'Worauf wartest du?', en: 'What are you waiting for? (auf + what = worauf)' },
+        { de: 'Ich habe keine Zeit dafür.', en: 'I have no time for it. (für + it = dafür)' },
+      ],
+    },
+    {
+      title: 'Add -r- before a vowel',
+      text: `
+A preposition that starts with a **vowel** (*auf, an, über, in, um*) gets an **-r-** in between: *da-r-auf, wo-r-an*. Before a consonant there is no *r*: *damit, wovon*.
 
-- **da** + preposition = *preposition + it / that / them*: da**rauf** (for it), da**mit** (with it)
-- **wo** + preposition = *preposition + what*: wo**rauf** (for what), wo**mit** (with what)
-
-Grammar books call these **Präpositionaladverbien**; we simply say *da-* and *wo-compounds* (a compound is two words glued into one).
-
-### How it works
-
-If the preposition starts with a **vowel** (*auf, an, über, in, um, aus*), an **-r-** is inserted so it can be pronounced: *da-r-auf, wo-r-an*.
-
-| preposition | da-compound (it / that) | wo-compound (what?) |
+| preposition | da- (it) | wo- (what?) |
 |---|---|---|
 | auf | **darauf** | **worauf** |
 | an | **daran** | **woran** |
 | über | **darüber** | **worüber** |
-| in | **darin** | **worin** |
-| um | **darum** | **worum** |
 | für | **dafür** | **wofür** |
 | mit | **damit** | **womit** |
 | von | **davon** | **wovon** |
-| nach | **danach** | **wonach** |
-| vor | **davor** | **wovor** |
-| bei | **dabei** | **wobei** |
-| zu | **dazu** | **wozu** |
 
-The compound takes over the preposition **and** the case, so you no longer have to think about Accusative or Dative. *Ich warte auf **den Bus*** → *Ich warte **darauf***.
-
-### Things vs people
-
-This is the key rule. Compounds are **only for things and ideas**. For **people** you keep the preposition and use a normal pronoun or *wen / wem*:
-
-| | thing | person |
-|---|---|---|
-| statement | Ich warte **darauf**. | Ich warte **auf ihn**. |
-| question | **Worauf** wartest du? | **Auf wen** wartest du? |
-| statement | Ich denke **daran**. | Ich denke **an sie**. |
-| question | **Woran** denkst du? | **An wen** denkst du? |
-| statement | Ich spreche **damit**. (with it) | Ich spreche **mit ihr**. |
-| question | **Womit** fährst du? | **Mit wem** fährst du? |
-
-You may also see a da-compound pointing to a whole clause: *Ich freue mich **darauf**, dass du kommst* (*I'm looking forward to you coming*). Here *darauf* means "to this": that you come. You only need to recognise this pattern for now; it is practised at B1.
-
-### Why it matters
-
-Without compounds you cannot ask the simplest follow-up questions in a conversation: *Worüber redet ihr? Wofür ist das? Woran denkst du?* And without them your answers sound clumsy (*Ich warte auf es* is wrong). They also let you connect sentences: *Ich habe ein Problem. Ich muss **darüber** nachdenken.* Learn them together with the verb + preposition list from the previous topic.
+The same way: *darin, darum, davor, dabei, danach, dazu*.
 `,
-  examples: [
-    { de: 'Wartest du auf den Bus? – Ja, ich warte darauf.', en: 'Are you waiting for the bus? – Yes, I am waiting for it. (thing → darauf)' },
-    { de: 'Wartest du auf Anna? – Ja, ich warte auf sie.', en: 'Are you waiting for Anna? – Yes, I am waiting for her. (person → auf sie)' },
-    { de: 'Worauf wartest du?', en: 'What are you waiting for? (thing → wo + r + auf)' },
-    { de: 'Auf wen wartest du?', en: 'Who are you waiting for? (person → auf wen)' },
-    { de: 'Womit fährst du zur Arbeit? – Mit dem Fahrrad.', en: 'What do you go to work with? – By bike. (mit → womit, no r)' },
-    { de: 'Wofür interessierst du dich? – Für Fußball.', en: 'What are you interested in? – Football. (für → wofür, no r)' },
-    { de: 'Das Thema ist schwierig. Wir sprechen morgen darüber.', en: 'The topic is difficult. We will talk about it tomorrow.' },
+      examples: [
+        { de: 'Woran denkst du?', en: 'What are you thinking of? (an → wo-r-an)' },
+        { de: 'Ich denke oft daran.', en: 'I often think of it. (da-r-an)' },
+        { de: 'Womit fährst du zur Arbeit?', en: 'What do you go to work with? (mit: no r)' },
+        { de: 'Wofür interessierst du dich?', en: 'What are you interested in? (für: no r)' },
+      ],
+    },
+    {
+      title: 'da-compounds are only for things',
+      text: `
+This is the key rule. A da-compound stands for a **thing or an idea**. For a **person** you keep the preposition and use a normal pronoun: *Ich warte **darauf*** (the bus) but *Ich warte **auf ihn*** (my brother).
+
+The compound takes over the preposition **and** its case, so you no longer have to think about Accusative or Dative.
+`,
+      examples: [
+        { de: 'Wartest du auf den Bus? Ja, ich warte darauf.', en: 'Are you waiting for the bus? Yes, I am waiting for it. (thing → darauf)' },
+        { de: 'Wartest du auf Anna? Ja, ich warte auf sie.', en: 'Are you waiting for Anna? Yes, I am waiting for her. (person → auf sie)' },
+        { de: 'Das Thema ist schwierig. Wir sprechen morgen darüber.', en: 'The topic is difficult. We will talk about it tomorrow. (thing → darüber)' },
+        { de: 'Ich denke oft an sie.', en: 'I often think of her. (person → an sie)' },
+      ],
+    },
+    {
+      title: 'wo-compounds ask about things',
+      text: `
+The same rule for questions. **Worauf? Womit? Wofür?** ask about a **thing**. For a **person** use the preposition + **wen** (Accusative) or **wem** (Dative): *Auf wen? Mit wem?*
+
+The wo-compound is one word in position 1, then comes the verb: *Worauf wartest du?*, never *Wo wartest du auf?*
+`,
+      examples: [
+        { de: 'Worauf wartest du?', en: 'What are you waiting for? (thing → worauf)' },
+        { de: 'Auf wen wartest du?', en: 'Who are you waiting for? (person → auf wen)' },
+        { de: 'Worüber sprecht ihr?', en: 'What are you talking about? (thing: a topic)' },
+        { de: 'Mit wem fährst du?', en: 'Who are you going with? (person → mit wem)' },
+      ],
+    },
+    {
+      title: 'One word replaces the whole phrase',
+      text: `
+The compound replaces the **whole** preposition phrase, so there is no extra pronoun: *Ich warte darauf*, not *Ich warte darauf es*. This lets you link sentences: *Ich habe ein Problem. Ich muss **darüber** nachdenken.*
+
+You may also see a da-compound pointing to a whole clause: *Ich freue mich **darauf**, dass du kommst* (I'm looking forward to you coming). Just recognise this for now; it is practised at B1.
+`,
+      examples: [
+        { de: 'Ich habe ein Problem. Ich muss darüber nachdenken.', en: 'I have a problem. I have to think about it. (darüber = about it)' },
+        { de: 'Hast du die Hausaufgaben gemacht? Ich habe damit angefangen.', en: 'Have you done the homework? I have started on it. (damit = with it)' },
+        { de: 'Ich freue mich darauf, dass du kommst.', en: 'I am looking forward to you coming. (darauf points to the dass-clause)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a2-12-verbs-with-prepositions', note: 'The verb + preposition pairs that da- and wo-compounds are built on.' },
@@ -79,7 +99,6 @@ Without compounds you cannot ask the simplest follow-up questions in a conversat
     'Insert **-r-** only before a vowel: da**r**auf, wo**r**an, da**r**über, but da**mit**, wo**von**, da**nach**.',
     'Compounds are for **things**, never for people: *Ich denke an ihn* (person), *Ich denke daran* (thing). *Woran denkst du?* asks about a thing, *An wen denkst du?* about a person.',
     '**damit** also means "so that" as a conjunction, and **darum / deshalb** mean "that is why". Context tells you which meaning is intended.',
-    'The compound replaces the whole preposition phrase, so no extra pronoun: *Ich warte darauf*, not *Ich warte darauf es*.',
     'In the question the compound is one word: *Worauf wartest du?*, not *Wo wartest du auf?*',
   ],
   exercises: [

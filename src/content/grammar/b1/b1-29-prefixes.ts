@@ -4,77 +4,116 @@ const topic: Topic = {
   id: 'b1-29-prefixes',
   level: 'B1',
   unit: 10,
-  order: 29,
+  order: 39,
   title: 'Prefixes: un-, ver-, be-, er-, ent-, zer-, miss-',
   germanTerm: 'Präfixe',
   tags: ['word formation', 'prefixes', 'verbs', 'vocabulary'],
-  summary: 'Prefixes are small pieces added to the front of a word that change its meaning in a predictable way: un- makes the opposite, zer- means "into pieces", ent- means "away", and so on – knowing them lets you decode words you have never seen.',
-  explanation: `
-### What a prefix does
+  summary: 'A prefix is a syllable at the front of a word that changes its meaning in a predictable way: un- makes the opposite, zer- means into pieces, ent- means away. Knowing them lets you decode new words.',
+  steps: [
+    {
+      title: 'What a prefix does',
+      text: `
+A **prefix** (*Präfix*) is a syllable attached to the **front** of a word: *glücklich* (happy) → **un**glücklich (unhappy), *brechen* (break) → **zer**brechen (break into pieces).
 
-Knowing a few prefixes lets you guess new words from words you already know:
-
-- *glücklich* (happy) → **un**glücklich (unhappy)
-- *brechen* (to break) → **zer**brechen (to break into pieces)
-
-A **prefix** (*Präfix*) is a syllable attached to the **front** of a word. The base word keeps its core meaning, and the prefix adds a twist: "not", "wrong", "away", "into pieces". If you know the twist, you can often guess a new word without a dictionary.
-
-Most of the prefixes here go on **verbs** and are **inseparable** (*untrennbar*): they never split off, they are unstressed, and the Partizip II has **no ge-**. Only *un-* is different: it goes on adjectives and nouns.
-
-### The prefixes and their meanings
-
-| Prefix | Core meaning | Examples |
-|---|---|---|
-| **un-** | not, the opposite (adjectives, nouns) | un**glücklich**, un**möglich**, die Un**ordnung**, das Un**glück** |
-| **ver-** | 1. wrong (often reflexive) 2. change / away / finish 3. makes a verb from an adjective | 1. sich ver**laufen**, sich ver**schreiben** 2. ver**reisen**, ver**kaufen**, ver**schwinden** 3. ver**bessern**, ver**größern** |
-| **be-** | turns a verb or noun into a verb with a **direct object** | be**antworten** (eine Frage), be**suchen**, be**zahlen** |
-| **er-** | reach a result, achieve | er**reichen**, er**finden**, er**kennen**, er**klären** |
-| **ent-** | away, remove, undo | ent**fernen**, ent**decken**, ent**kommen**, ent**schuldigen** |
-| **zer-** | into pieces, destroy | zer**brechen**, zer**stören**, zer**reißen**, zer**schneiden** |
-| **miss-** | wrong, bad, failed | miss**verstehen**, der Miss**erfolg**, das Miss**verständnis** |
-
-### How to use the table
-
-- **un-** is the easiest: *möglich* → *unmöglich*, *freundlich* → *unfreundlich*, *Glück* → *Unglück*. It does not work on every adjective (not *unalt*), but it works on hundreds.
-- **ver-** with **sich** usually means "do it wrong": *sich verlaufen* (get lost), *sich verfahren* (drive the wrong way), *sich versprechen* (misspeak). Without *sich* it often means change or away: *verbessern* (make better), *verkaufen* (sell), *verreisen* (go away on a trip).
-- **be-** is the "object-maker": *antworten auf eine Frage* → *eine Frage beantworten*. The preposition disappears and the noun becomes a direct object.
-- **ent-** often means the opposite of the base: *decken* (cover) → *entdecken* (discover, uncover); *laden* (load) → *entladen* (unload).
-- **zer-** always means that something ends up in pieces.
-
-### Grammar of these prefixes
-
-| Feature | Inseparable prefixes (ver-, be-, er-, ent-, zer-, miss-) |
-|---|---|
-| Stress | on the **stem**: ver**STE**hen, be**ZAH**len |
-| Partizip II | **no ge-**: verstanden, bezahlt, zerbrochen |
-| zu + infinitive | *zu* stands in front as one word: zu verstehen |
-
-### Why it matters
-
-German builds thousands of words from a small set of prefixes. With the table above you can decode *entfernen*, *zerreißen* or *missverstehen* on first sight, and you can **build** words yourself: *unhöflich*, *verbessern*. That pays off in the B1 reading part, where unknown words are the main obstacle.
+The base word keeps its core meaning. The prefix adds a twist: "not", "wrong", "away", "into pieces". If you know the twist, you can guess a new word without a dictionary.
 `,
-  examples: [
-    { de: 'Das ist leider unmöglich.', en: 'Unfortunately that is impossible. (un- = not)' },
-    { de: 'Ich habe mich in der Stadt verlaufen.', en: 'I got lost in the city. (sich ver- = did it wrong)' },
-    { de: 'Kannst du diese Frage beantworten?', en: 'Can you answer this question? (be- = takes a direct object)' },
-    { de: 'Wer hat das Telefon erfunden?', en: 'Who invented the telephone? (er- = achieve a result)' },
-    { de: 'Bitte entfernen Sie den Aufkleber.', en: 'Please remove the sticker. (ent- = away)' },
-    { de: 'Das Glas ist zerbrochen.', en: 'The glass is broken into pieces. (zer- = into pieces)' },
-    { de: 'Ich habe dich missverstanden.', en: 'I misunderstood you. (miss- = wrong; no ge- in the participle)' },
+      examples: [
+        { de: 'Das ist leider unmöglich.', en: 'Unfortunately that is impossible. (un- = not)' },
+        { de: 'Das Glas ist zerbrochen.', en: 'The glass is broken into pieces. (zer- = into pieces)' },
+        { de: 'Ich habe dich missverstanden.', en: 'I misunderstood you. (miss- = wrong)' },
+      ],
+    },
+    {
+      title: 'un-: the opposite',
+      text: `
+**un-** means "not" or "the opposite". It goes on **adjectives** and **nouns**: *möglich* → *unmöglich*, *freundlich* → *unfreundlich*, *die Ordnung* → *die Unordnung*.
+
+It does not work on every adjective (there is no *unalt*), but it works on hundreds. It never goes on a verb: say *nicht machen*, not *unmachen*.
+`,
+      examples: [
+        { de: 'Der Kellner war sehr unfreundlich.', en: 'The waiter was very unfriendly. (freundlich → unfreundlich)' },
+        { de: 'In seinem Zimmer herrscht Unordnung.', en: 'His room is a mess. (Ordnung → Unordnung)' },
+        { de: 'Das war ein großes Unglück.', en: 'That was a great misfortune. (Glück → Unglück)' },
+      ],
+    },
+    {
+      title: 'ver-: wrong, away, or make into',
+      text: `
+**ver-** has three common meanings:
+
+1. with **sich**: do it **wrong** – *sich verlaufen* (get lost), *sich verschreiben* (make a slip of the pen), *sich versprechen* (misspeak)
+2. **change, away, finish** – *verkaufen* (sell), *verreisen* (go away on a trip), *verschwinden* (disappear)
+3. makes a verb from an **adjective** – *besser* → *verbessern*, *größer* → *vergrößern*
+`,
+      examples: [
+        { de: 'Ich habe mich in der Stadt verlaufen.', en: 'I got lost in the city. (sich ver- = did it wrong)' },
+        { de: 'Er hat sein altes Auto verkauft.', en: 'He sold his old car. (ver- = away)' },
+        { de: 'Ich möchte mein Deutsch verbessern.', en: 'I want to improve my German. (besser → verbessern)' },
+      ],
+    },
+    {
+      title: 'be- and er-',
+      text: `
+**be-** is the "object-maker": it turns a verb with a preposition into a verb with a **direct object**. *antworten auf eine Frage* → *eine Frage **be**antworten*. Also *besuchen, bezahlen*.
+
+**er-** means reaching a **result**: *erreichen* (reach), *erfinden* (invent), *erkennen* (recognise), *erklären* (explain).
+`,
+      examples: [
+        { de: 'Kannst du diese Frage beantworten?', en: 'Can you answer this question? (be-: direct object, no preposition)' },
+        { de: 'Wir besuchen morgen meine Oma.', en: 'We are visiting my grandma tomorrow.' },
+        { de: 'Wer hat das Telefon erfunden?', en: 'Who invented the telephone? (er- = achieve a result)' },
+        { de: 'Sie hat ihren Fehler erkannt.', en: 'She has recognised her mistake.' },
+      ],
+    },
+    {
+      title: 'ent-, zer-, miss-',
+      text: `
+| Prefix | Meaning | Examples |
+|---|---|---|
+| **ent-** | away, remove, undo | entfernen, entkommen, entdecken, entladen |
+| **zer-** | into pieces, destroy | zerbrechen, zerstören, zerreißen, zerschneiden |
+| **miss-** | wrong, bad, failed | missverstehen, der Misserfolg, das Missverständnis |
+
+**ent-** often undoes the base word: *decken* (cover) → *entdecken* (uncover, discover); *laden* (load) → *entladen* (unload). **zer-** always ends in pieces.
+`,
+      examples: [
+        { de: 'Bitte entfernen Sie den Aufkleber.', en: 'Please remove the sticker. (ent- = away)' },
+        { de: 'Der Hund hat die Zeitung zerrissen.', en: 'The dog tore the newspaper to pieces. (zer-)' },
+        { de: 'Das war nur ein Missverständnis.', en: 'That was only a misunderstanding. (miss- = wrong)' },
+      ],
+    },
+    {
+      title: 'The grammar of inseparable prefixes',
+      text: `
+*ver-, be-, er-, ent-, zer-, miss-* are **inseparable** (*untrennbar*): they never split off the verb.
+
+| Feature | Rule |
+|---|---|
+| Stress | on the stem: ver**STE**hen, be**ZAH**len |
+| Partizip II | **no ge-**: verstanden, bezahlt, zerbrochen |
+| zu + infinitive | *zu* stands in front as a separate word: zu verstehen |
+`,
+      examples: [
+        { de: 'Ich habe die Rechnung schon bezahlt.', en: 'I have already paid the bill. (bezahlt, no ge-)' },
+        { de: 'Er hat mich nicht verstanden.', en: 'He did not understand me. (verstanden, no ge-)' },
+        { de: 'Es ist schwer, das zu verstehen.', en: 'It is hard to understand that. (zu + verstehen)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-16-separable-verbs', note: 'be-, ver-, er-, ent-, zer- and miss- are the inseparable prefixes introduced there.' },
     { topicId: 'a1-31-perfekt-haben', note: 'Verbs with inseparable prefixes form the Partizip II without ge-.' },
     { topicId: 'a2-30-word-formation-compounds', note: 'Word formation 1 covered compounds and -ung / -er; prefixes are the next tool.' },
-    { topicId: 'b1-30-suffixes', note: 'Prefixes change the meaning; suffixes change the word type. Together they explain most long German words.' },
+    { topicId: 'b1-30-suffixes', note: 'Prefixes change the meaning; noun suffixes like -heit and -ung change the word type.' },
+    { topicId: 'b1-30b-adjective-suffixes', note: '-lich, -ig, -bar and -los are the adjective suffixes; together with prefixes they explain most long words.' },
     { topicId: 'a2-11-reflexive-verbs', note: 'The "wrong" meaning of ver- usually needs a reflexive pronoun: sich verlaufen.' },
   ],
   edgeCases: [
     'Inseparable prefixes take **no ge-** in the Partizip II: *verstanden*, *bezahlt*, not *geverstanden*.',
-    '*ver-* has several meanings; *sich* is the signal for "wrong": *sich verfahren* (go the wrong way) vs *verfahren* (proceed).',
-    '*un-* only negates; it never attaches to verbs. *unmachen* does not exist; use *nicht machen*.',
-    '*entschuldigen* and *entdecken* follow the "away" idea only loosely. Learn frequent ent-verbs as vocabulary.',
-    '*be-* verbs take a direct object without a preposition: *eine Frage beantworten*, not *auf eine Frage beantworten*.',
+    '**ver-** has several meanings; *sich* is the signal for "wrong": *sich verfahren* (go the wrong way) vs *verfahren* (proceed).',
+    '**un-** only negates; it never attaches to verbs. *unmachen* does not exist; use *nicht machen*.',
+    '**entschuldigen** and **entdecken** follow the "away" idea only loosely. Learn frequent ent-verbs as vocabulary.',
+    '**be-** verbs take a direct object without a preposition: *eine Frage beantworten*, not *auf eine Frage beantworten*.',
   ],
   exercises: [
     {

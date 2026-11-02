@@ -24,7 +24,7 @@ const task: WritingTask = {
     { de: 'oder', en: 'or', role: 'connector' },
     { de: 'Und ihr? Was macht ihr …?', en: 'And you? What do you do …?', role: 'closing' },
   ],
-  grammarFocus: ['a1-15-irregular-present', 'a1-16-separable-verbs', 'a1-17-modal-verbs', 'a1-19-gern-lieber'],
+  grammarFocus: ['a1-15-irregular-present', 'a1-16-separable-verbs', 'a1-17-modal-verbs', 'a1-17b-modal-verbs-2', 'a1-19-gern-lieber'],
   mustUse: [
     { label: 'a separable verb with its prefix at the end of the clause (ich stehe … auf, ich kaufe … ein)', pattern: '\\b(auf|an|ein|aus|mit|zurück|fern|ab|los)\\s*[.,!?]', min: 2 },
     { label: 'a modal verb (muss, kann, will, möchte, darf, soll)', pattern: '\\b(muss|musst|müssen|kann|kannst|können|will|willst|wollen|möchte|möchtest|darf|soll)\\b', min: 2 },

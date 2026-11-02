@@ -4,191 +4,194 @@ const topic: Topic = {
   id: 'a2-31-reading-writing-email',
   level: 'A2',
   unit: 10,
-  order: 31,
-  title: 'Reading strategies and writing a semi-formal email',
-  germanTerm: 'Lesen & Schreiben A2',
-  tags: ['reading', 'writing', 'email', 'register', 'skills', 'exam'],
-  summary: 'Read German texts with three strategies (skim, scan, guess from context) and write a semi-formal email with the right opening, body phrases and closing.',
-  explanation: `
-### Part 1: reading strategies
+  order: 36,
+  title: 'Reading strategies',
+  germanTerm: 'Lesen A2',
+  tags: ['reading', 'skills', 'exam', 'strategies'],
+  summary: 'You do not need every word of a German text: read for the gist, scan for numbers and names, guess unknown words from their parts and the context, and check true/false statements against the text.',
+  steps: [
+    {
+      title: 'Read for the gist first',
+      text: `
+You do not need to understand every word. Good readers use **strategies** (*Lesestrategien*), and A2 exams test exactly these.
 
-You do not need to understand every word of a German text. Good readers use three strategies (*Lesestrategien*), and A2 exams test exactly these.
-
-**1. Skimming (globales Lesen)** – read fast to get the main idea. Look at the **title**, the **first sentence** of each paragraph, **bold words** and **pictures**. Ask: *What kind of text is this and what is it about?*
-
-**2. Scanning (selektives Lesen)** – you already know what you are looking for (a time, a price, a name). Let your eyes jump through the text to **numbers**, **capital letters** (names, places) or the **key word** from the question.
-
-**3. Guessing from context (Wörter erschließen)** – when a word is new, do not stop. Use:
-
-| clue | example |
-|---|---|
-| **international words** | Information, Hotel, Restaurant, Computer |
-| **compounds** | Fahr-karten-automat: you know *fahren* and *Karte* |
-| **the sentence around it** | *Ich habe Durst. Gibst du mir bitte ein Glas …?* – the word is a drink |
-| **grammar** | capital letter → noun; *-ung* → feminine noun; *ge-…-t* → past participle |
-
-Only look up a word if you need it for the answer.
-
-### Part 2: the shape of a semi-formal email
-
-A semi-formal email (*halbformelle E-Mail*) goes to someone you do not know well: a teacher, a landlord, an office. You use **Sie**, but the tone is friendly. The parts always come in this order.
-
-| part | formal / semi-formal (Sie) | informal (du) |
-|---|---|---|
-| subject line (*Betreff*) | Anfrage: Deutschkurs im März | Party am Samstag |
-| greeting (*Anrede*) | **Sehr geehrte Frau Müller,** / **Sehr geehrter Herr Schmidt,** / **Sehr geehrte Damen und Herren,** (unknown) | **Liebe Anna,** / **Lieber Tom,** / **Hallo Tom,** |
-| first line | Vielen Dank für Ihre E-Mail. / Ich schreibe Ihnen, weil … | Danke für deine Nachricht! / Wie geht es dir? |
-| body | Ich habe eine Frage zu … / Könnten Sie mir bitte sagen, ob …? / Ich würde gern … / Leider kann ich … | Ich habe eine Idee: … / Kannst du …? / Hast du Lust, …? |
-| last line | Vielen Dank im Voraus. / Ich freue mich auf Ihre Antwort. | Ich freue mich auf dich! / Bis bald! |
-| closing (*Grußformel*) | **Mit freundlichen Grüßen** | **Viele Grüße** / **Liebe Grüße** |
-| name | Maria Schneider | Maria |
-
-Three details that cost points:
-
-1. After the greeting comes a **comma**, and the next line starts with a **small letter**: *Sehr geehrte Frau Müller,* ↵ *vielen Dank für …*
-2. **Sehr geehrte** for a woman, **Sehr geehrter** for a man (the ending agrees with Frau / Herr). **Liebe** for a woman, **Lieber** for a man.
-3. There is **no comma** after the closing: *Mit freundlichen Grüßen* ↵ *Maria Schneider*.
-
-### Keep the register consistent
-
-After *Sehr geehrte Frau Müller* use **Sie, Ihnen, Ihr** throughout and close with *Mit freundlichen Grüßen*. After *Liebe Anna* use **du, dir, dein** and close with *Liebe Grüße*. Mixing them is the most common mistake.
-
-### A short model
-
-*Sehr geehrte Frau Weber,*
-
-*vielen Dank für die Informationen. Könnten Sie mir bitte sagen, wann der Kurs beginnt? Ich würde gern am Abendkurs teilnehmen.*
-
-*Mit freundlichen Grüßen*
-
-*Maria Schneider*
-
-### Why it matters
-
-Reading strategies save time in exams and in real life (timetables, official letters, websites). The email shape is exactly what the A2 writing task checks: greeting, closing, consistent register and an answer to every point.
+Strategy one: **read for the gist** (*globales Lesen*). Read fast. Look at the **title**, the **first sentence** of each paragraph, **bold words** and **pictures**. Then ask yourself: what kind of text is this, and what is it about? An advert, a timetable, an email?
 `,
-  examples: [
-    { de: 'Sehr geehrte Frau Müller,', en: 'Dear Ms Müller, (formal greeting to a woman; comma, then a small letter on the next line)' },
-    { de: 'Sehr geehrter Herr Schmidt,', en: 'Dear Mr Schmidt, (formal greeting to a man: -er)' },
-    { de: 'Sehr geehrte Damen und Herren,', en: 'Dear Sir or Madam, (when you do not know the name)' },
-    { de: 'Lieber Tom, / Liebe Anna,', en: 'Dear Tom, / Dear Anna, (informal)' },
-    { de: 'Ich schreibe Ihnen, weil ich eine Frage zum Kurs habe.', en: 'I am writing to you because I have a question about the course. (semi-formal opening)' },
-    { de: 'Könnten Sie mir bitte mitteilen, ob noch Plätze frei sind?', en: 'Could you please let me know whether there are still places available?' },
-    { de: 'Ich freue mich auf Ihre Antwort.', en: 'I look forward to your reply.' },
-    { de: 'Mit freundlichen Grüßen', en: 'Yours sincerely / Kind regards (formal closing, no comma after it)' },
+      examples: [
+        { de: 'Worum geht es in dem Text?', en: 'What is the text about? (the gist question)' },
+        { de: 'Das ist eine Anzeige für eine Wohnung.', en: 'This is an advert for a flat. (kind of text + topic)' },
+        { de: 'Der Text ist eine E-Mail von Anna.', en: 'The text is an email from Anna.' },
+      ],
+    },
+    {
+      title: 'Scan for numbers and names',
+      text: `
+Strategy two: **scanning** (*selektives Lesen*). You already know what you are looking for: a time, a price, a name. Do not read; let your eyes **jump** through the text to **numbers**, **capital letters** (names and places) and the **key word** from the question. Stop only when you hit it.
+`,
+      examples: [
+        { de: 'Wann fährt der Zug?', en: 'When does the train leave? (scan for a time)' },
+        { de: 'Der Zug fährt um acht Uhr fünfzehn ab.', en: 'The train leaves at 8.15. (the number you were looking for)' },
+        { de: 'Der Kurs kostet hundertzwanzig Euro.', en: 'The course costs 120 euros. (scan for the price)' },
+        { de: 'Frau Weber arbeitet in Hamburg.', en: 'Ms Weber works in Hamburg. (capital letters: a name and a place)' },
+      ],
+    },
+    {
+      title: 'Guess new words from their parts',
+      text: `
+Strategy three: **guess from context** (*Wörter erschließen*). When a word is new, do not stop. Use:
+
+- **international words**: Information, Hotel, Restaurant, Computer
+- **compounds** (*Komposita*, glued words): *Fahr-karten-automat*, you know *fahren* and *Karte*
+- **the sentence around it**: *Ich habe Durst. Gibst du mir ein Glas …?* The word is a drink.
+
+Only look a word up if you need it for the answer.
+`,
+      examples: [
+        { de: 'Am Bahnhof gibt es einen Fahrkartenautomaten.', en: 'There is a ticket machine at the station. (fahren + Karte + Automat)' },
+        { de: 'Das Hotel hat ein gutes Restaurant.', en: 'The hotel has a good restaurant. (international words)' },
+        { de: 'Die Öffnungszeiten stehen an der Tür.', en: 'The opening hours are on the door. (öffnen + Zeiten)' },
+      ],
+    },
+    {
+      title: 'Use headings and connectors',
+      text: `
+**Headings** tell you where to look: a timetable has *Abfahrt* and *Ankunft*, a form has *Name* and *Adresse*. Go to the right part and skip the rest.
+
+**Connectors** (*Konnektoren*, joining words) tell you what comes next. After **aber** expect the opposite. After **deshalb** expect a result. **Leider** announces bad news, **zum Glück** good news.
+`,
+      examples: [
+        { de: 'Das Zimmer ist groß, aber laut.', en: 'The room is big, but noisy. (aber: something negative follows)' },
+        { de: 'Es regnet, deshalb bleiben wir zu Hause.', en: "It is raining, so we stay at home. (deshalb: a result follows)" },
+        { de: 'Leider ist der Kurs schon voll.', en: 'Unfortunately the course is already full. (leider: bad news)' },
+      ],
+    },
+    {
+      title: 'True or false: check against the text',
+      text: `
+Many tasks give a statement and ask **richtig oder falsch**? Read the statement first, pick its **key word**, and scan for it in the text. Then compare the two sentences word by word.
+
+Watch out: a statement is false when the text says the **opposite** or gives a **different** number. A statement that *sounds* reasonable is not true unless the text says it.
+`,
+      examples: [
+        { de: 'Der Laden ist sonntags geschlossen.', en: 'The shop is closed on Sundays. (the text)' },
+        { de: 'Der Laden ist sonntags geöffnet.', en: 'The shop is open on Sundays. (statement: falsch, the opposite)' },
+        { de: 'Der Laden ist am Sonntag zu.', en: 'The shop is closed on Sunday. (statement: richtig, same meaning, other words)' },
+      ],
+    },
   ],
   connections: [
-    { topicId: 'a1-36-writing-short-messages', note: 'At A1 you wrote short informal notes; now you add the formal greeting, closing and Sie-forms.' },
-    { topicId: 'a1-02-greetings', note: 'The du / Sie choice decides every phrase in the email.' },
-    { topicId: 'a2-20-konjunktiv-2-polite', note: 'Könnten Sie …? and Ich würde gern … are the polite verbs that carry a semi-formal email.' },
-    { topicId: 'a2-30-word-formation-compounds', note: 'Splitting compounds is the main trick for guessing unknown words while reading.' },
-    { topicId: 'b1-31-register-formal-informal', note: 'At B1 the same structure is extended to complaints and job applications.' },
+    { topicId: 'a2-31b-semi-formal-email', note: 'The sibling topic: writing a semi-formal email with the right greeting, closing and register.' },
+    { topicId: 'a2-30-word-formation-compounds', note: 'Splitting compounds from the right is the main trick for guessing unknown words.' },
+    { topicId: 'a2-30b-nouns-from-verbs', note: 'An ending like -ung tells you a word is a noun and what verb it comes from.' },
+    { topicId: 'a2-27-adverbial-connectors', note: 'deshalb, trotzdem and the other connectors signal what the next sentence will say.' },
+    { topicId: 'b1-32-opinions-speaking', note: 'At B1 the same connectors help you structure your own opinion.' },
   ],
   edgeCases: [
-    '**Sehr geehrte** (woman) vs **Sehr geehrter** (man), **Liebe** (woman) vs **Lieber** (man). The ending must match the person.',
-    'After the greeting there is a **comma**, and the email continues with a **small letter**: *Liebe Anna,* ↵ *danke für deine Mail.*',
-    '**No comma** after *Mit freundlichen Grüßen* or *Viele Grüße*. The name follows on the next line.',
-    '*Hallo Frau Müller,* is acceptable for a semi-formal email to someone you have met before; *Hi* or *Hey* are not.',
-    'When you guess a word from context, check that your guess fits the **grammar**: a capitalised word cannot be a verb.',
+    'When you guess a word, check that your guess fits the **grammar**: a capitalised word in the middle of a sentence is a noun, not a verb.',
+    '**nur**, **nicht** and **kein** flip a statement. *Der Kurs ist **nur** für Anfänger* and *Der Kurs ist für alle* cannot both be true.',
+    'A statement with a **different number** is false: text *um 9 Uhr*, statement *um 19 Uhr* → falsch. Scan the digits twice.',
+    'Do not translate the whole text. Read the **questions** first, then look for the answers; the rest of the text can stay unread.',
   ],
   exercises: [
     {
       type: 'mc',
       id: 'a2-31-reading-writing-email-ex01',
+      prompt: 'You want to know what kind of text you are reading and what it is about. Which strategy?',
+      options: ['read for the gist (title, first sentences, bold words)', 'scan for a number', 'look up every new word'],
+      answer: 0,
+      explanation: 'The gist question (what is it about?) is answered by reading fast: title, first sentences, bold words and pictures.',
+    },
+    {
+      type: 'mc',
+      id: 'a2-31-reading-writing-email-ex02',
       prompt: 'You need to find the departure time in a train timetable. Which strategy?',
-      options: ['skimming (read for the main idea)', 'scanning (look for the number)', 'read every word'],
+      options: ['read for the gist', 'scan for the number', 'read every word'],
       answer: 1,
       explanation: 'You already know what you are looking for (a time), so you scan for numbers and the station name. No need to read the whole text.',
     },
     {
       type: 'mc',
-      id: 'a2-31-reading-writing-email-ex02',
-      prompt: 'Which greeting is correct for an email to Frau Weber, whom you do not know well?',
-      options: ['Sehr geehrter Frau Weber,', 'Sehr geehrte Frau Weber,', 'Liebe Frau Weber!'],
-      answer: 1,
-      explanation: 'Frau is feminine, so Sehr geehrte. The greeting ends with a comma, not an exclamation mark, in a semi-formal email.',
-    },
-    {
-      type: 'fill',
       id: 'a2-31-reading-writing-email-ex03',
-      prompt: 'Sehr ___ Herr Schmidt, (formal greeting to a man)',
-      answer: ['geehrter'],
-      explanation: 'The ending agrees with Herr (masculine): Sehr geehrter Herr Schmidt. For a woman it is Sehr geehrte Frau …',
-    },
-    {
-      type: 'match',
-      id: 'a2-31-reading-writing-email-ex04',
-      prompt: 'Match each phrase with its register.',
-      pairs: [
-        ['Sehr geehrte Damen und Herren,', 'formal greeting, name unknown'],
-        ['Lieber Jonas,', 'informal greeting'],
-        ['Mit freundlichen Grüßen', 'formal closing'],
-        ['Liebe Grüße', 'informal closing'],
-        ['Ich freue mich auf Ihre Antwort.', 'formal last line'],
-      ],
-      explanation: 'Formal emails use Sie / Ihr and Mit freundlichen Grüßen; informal ones use du / dein and Liebe or Viele Grüße.',
-    },
-    {
-      type: 'mc',
-      id: 'a2-31-reading-writing-email-ex05',
-      prompt: 'Which line can follow "Sehr geehrte Frau Müller," in a semi-formal email?',
-      options: ['Vielen Dank für Ihre E-Mail.', 'vielen Dank für Ihre E-Mail.', 'Danke für deine Mail!'],
+      prompt: 'You are looking for the name of a person in a long email. What do you scan for?',
+      options: ['verbs at the end of the sentence', 'words with a capital letter', 'the word "und"'],
       answer: 1,
-      explanation: 'After the comma the sentence continues, so it starts with a small letter. Option 3 uses du, which does not match Sehr geehrte.',
+      explanation: 'Names and places start with a capital letter in the middle of a sentence, so your eyes can jump to them.',
     },
     {
       type: 'mc',
-      id: 'a2-31-reading-writing-email-ex06',
+      id: 'a2-31-reading-writing-email-ex04',
       prompt: 'You read: "Am Bahnhof gibt es einen Fahrkartenautomaten." You do not know Fahrkartenautomat. Best guess?',
       options: ['a ticket machine (fahren + Karte + Automat)', 'a kind of car', 'a train driver'],
       answer: 0,
       explanation: 'Split the compound: Fahr-karten-automat. You know fahren, Karte and Automat (international word), and the context is a station.',
     },
     {
+      type: 'mc',
+      id: 'a2-31-reading-writing-email-ex05',
+      prompt: 'On a shop door you read "Öffnungszeiten: Mo–Fr 9–18 Uhr". What does Öffnungszeiten mean?',
+      options: ['prices', 'opening hours', 'address'],
+      answer: 1,
+      explanation: 'Öffnung comes from öffnen (to open) and Zeiten means times. The times after it confirm the guess.',
+    },
+    {
       type: 'fill',
+      id: 'a2-31-reading-writing-email-ex06',
+      prompt: 'Guess from context: "Ich habe Durst. Gibst du mir bitte ein Glas ___?"',
+      answer: ['Wasser', 'Saft', 'Milch', 'Apfelsaft', 'Orangensaft', 'Cola', 'Tee', 'Limonade', 'Bier', 'Wein'],
+      explanation: 'Durst (thirst) and ein Glas tell you the missing word is a drink. Any drink fits; the context does the work, not a dictionary.',
+    },
+    {
+      type: 'match',
       id: 'a2-31-reading-writing-email-ex07',
-      prompt: 'Ich schreibe ___, weil ich eine Frage zum Kurs habe. (to you, formal)',
-      answer: ['Ihnen'],
-      explanation: 'schreiben takes the Dative. The formal Sie in the Dative is Ihnen, with a capital I.',
+      prompt: 'Match the connector with what it tells you comes next.',
+      pairs: [
+        ['aber', 'the opposite'],
+        ['deshalb', 'a result'],
+        ['leider', 'bad news'],
+        ['zum Glück', 'good news'],
+        ['trotzdem', 'something unexpected'],
+      ],
+      explanation: 'Connectors are signposts. If you know what kind of information follows, you can read faster and guess unknown words.',
     },
     {
       type: 'mc',
       id: 'a2-31-reading-writing-email-ex08',
-      prompt: 'Which closing fits an email that started with "Liebe Anna,"?',
-      options: ['Mit freundlichen Grüßen', 'Liebe Grüße', 'Hochachtungsvoll'],
+      prompt: '"Die Wohnung ist schön, aber ___." Which word fits after aber?',
+      options: ['hell', 'teuer', 'groß'],
       answer: 1,
-      explanation: 'An informal email ends informally: Liebe Grüße or Viele Grüße. Mit freundlichen Grüßen is formal; Hochachtungsvoll is very old-fashioned and formal.',
+      explanation: 'aber announces the opposite of schön, so something negative: teuer. hell and groß would be more good news.',
     },
     {
-      type: 'order',
+      type: 'mc',
       id: 'a2-31-reading-writing-email-ex09',
-      prompt: 'Build the polite request for an email: "Could you please tell me when the course starts?"',
-      words: ['wann', 'Kurs', 'mir', 'beginnt?', 'Sie', 'sagen,', 'Könnten', 'bitte', 'der'],
-      answer: ['Könnten Sie mir bitte sagen, wann der Kurs beginnt?'],
-      explanation: 'Könnten Sie + mir + bitte + sagen, then an indirect question with wann and the verb beginnt at the end.',
+      prompt: 'Text: "Der Supermarkt ist montags bis samstags von 8 bis 20 Uhr geöffnet." Statement: "Der Supermarkt ist am Sonntag geöffnet."',
+      options: ['richtig', 'falsch'],
+      answer: 1,
+      explanation: 'The text lists Monday to Saturday only. Sunday is not in the list, so the statement is false.',
     },
     {
       type: 'mc',
       id: 'a2-31-reading-writing-email-ex10',
-      prompt: 'Which email has a register mistake?',
-      options: ['Sehr geehrter Herr Braun, könnten Sie mir bitte helfen? Mit freundlichen Grüßen, Lena', 'Hallo Max, kannst du mir helfen? Viele Grüße, Lena', 'Sehr geehrte Frau Braun, kannst du mir bitte helfen? Mit freundlichen Grüßen, Lena'],
-      answer: 2,
-      explanation: 'Option 3 opens formally (Sehr geehrte) but uses du. The register must stay the same from the greeting to the closing.',
+      prompt: 'Text: "Das Konzert beginnt um 19 Uhr. Einlass ist ab 18 Uhr." Statement: "Man kann schon um 18 Uhr hineingehen."',
+      options: ['richtig', 'falsch'],
+      answer: 0,
+      explanation: 'Einlass (from einlassen, to let in) ab 18 Uhr means the doors open at 18.00. The statement says the same with other words, so it is true.',
     },
     {
-      type: 'fill',
+      type: 'order',
       id: 'a2-31-reading-writing-email-ex11',
-      prompt: 'Ich freue mich auf ___ Antwort. (your, formal)',
-      answer: ['Ihre'],
-      explanation: 'The formal possessive is Ihr with a capital I. Antwort is feminine and in the Accusative after auf: Ihre Antwort.',
+      prompt: 'Build the gist question: "What is the text about?"',
+      words: ['Text?', 'geht', 'dem', 'Worum', 'in', 'es'],
+      answer: ['Worum geht es in dem Text?'],
+      explanation: 'Worum geht es … is the standard question for the main idea. Ask it before you read the details.',
     },
     {
       type: 'translate',
       id: 'a2-31-reading-writing-email-ex12',
-      prompt: 'Translate the formal closing: "Kind regards" (the standard German formula)',
-      answer: ['Mit freundlichen Grüßen', 'Mit freundlichen Grüßen.'],
-      hint: 'der Gruß, die Grüße = greeting(s); freundlich = friendly',
-      explanation: 'Mit freundlichen Grüßen is the standard formal closing. Grüßen is Dative plural after mit, and the adjective takes -en.',
+      prompt: 'Translate: "The shop is closed on Sundays."',
+      answer: ['Der Laden ist sonntags geschlossen.', 'Das Geschäft ist sonntags geschlossen.', 'Der Laden ist am Sonntag geschlossen.', 'Das Geschäft ist am Sonntag geschlossen.', 'Der Laden ist sonntags zu.', 'Das Geschäft ist sonntags zu.'],
+      hint: 'der Laden / das Geschäft = shop; sonntags = on Sundays; geschlossen = closed',
+      explanation: 'In a true/false task this sentence and "Der Laden ist sonntags geöffnet" are opposites: geschlossen vs geöffnet is the key word to compare.',
     },
   ],
 };

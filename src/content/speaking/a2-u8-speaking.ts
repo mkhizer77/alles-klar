@@ -30,7 +30,7 @@ const scenario: SpeakingScenario = {
     { de: 'Ich versuche, pünktlich um acht am Bahnhof zu sein.', en: 'I will try to be at the station at eight sharp.' },
     { de: 'Was meinst du damit? Kannst du das anders sagen?', en: 'What do you mean by that? Can you say it differently?' },
   ],
-  grammarFocus: ['a2-21-zu-infinitive', 'a2-22-um-zu-ohne-zu', 'a2-23-relative-clauses-nom-acc', 'a2-05-wenn-ob-indirect-questions'],
+  grammarFocus: ['a2-21-zu-infinitive', 'a2-22-um-zu-ohne-zu', 'a2-23-relative-clauses-nom-acc', 'a2-05-wenn-ob-indirect-questions', 'a2-05b-indirect-questions'],
   vocabFocus: ['die Natur', 'die Landschaft', 'der See', 'die Luft', 'das Gewitter', 'der Müll', 'die Umwelt', 'wandern', 'wegwerfen', 'umweltfreundlich'],
   minTurns: 6,
 };

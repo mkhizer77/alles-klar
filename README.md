@@ -6,7 +6,7 @@ A self-paced German course from A1 to B1 that runs as a web app and installs on 
 
 | Area | What you get |
 |------|--------------|
-| **Learn** | 100 topics (A1: 36, A2: 32, B1: 32) in units, each with an explanation, examples with speech, how it connects to other rules, edge cases, and 9–12 exercises. |
+| **Learn** | 123 topics (A1: 40, A2: 39, B1: 44) in units, each a short lesson in 3–7 steps with example sentences read aloud, how it connects to other rules, edge cases, and 9–12 exercises. |
 | **Reading** | One text per unit (28 in all: profiles, ads, emails, reports, reviews…) with a strategy tip, a glossary, read-aloud, and 6–8 comprehension questions. |
 | **Writing** | A guided task per unit with content points, useful phrases to tap in, autosaved drafts, automatic checks (length, greeting/closing, required structures), a model answer with notes and a self-check list. |
 | **Listening** | "Type what you hear" dictation sets per unit, spoken by the device's German voice, with slow replay and a word-level diff. |

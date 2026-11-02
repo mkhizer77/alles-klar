@@ -4,78 +4,84 @@ const topic: Topic = {
   id: 'a2-24-dieser-jeder-welcher',
   level: 'A2',
   unit: 9,
-  order: 24,
+  order: 27,
   title: 'dieser, jeder, welcher, alle, mancher',
   germanTerm: 'Demonstrativ- und Indefinitartikel',
   tags: ['articles', 'determiners', 'cases', 'der-words', 'endings'],
   summary: 'dieser (this), jeder (every), welcher (which), alle (all) and mancher (some) are "der-words": they take the same endings as der / die / das in every case.',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'Small words that behave like der',
+      text: `
+Besides *der / die / das* and *ein / eine*, German has a group of small words that stand in front of a noun and **take the endings of der / die / das**. Grammar books call them **der-words**.
 
-Besides *der / die / das* and *ein / eine*, German has a group of small words that go in front of a noun and **behave like der / die / das**: *dieser Pullover* (this sweater), *jeden Tag* (every day), *welches Buch?* (which book?). Grammar books call them **der-words** because they take the endings of *der*. The most useful are:
-
-| der-word | meaning | note |
-|---|---|---|
-| **dieser** | this, these | points at something |
-| **jeder** | every, each | singular only |
-| **alle** | all | plural only (the plural of *jeder*) |
-| **welcher** | which? | question word |
-| **mancher** | some | mostly plural: *manche Leute* |
-
-(You may also see **jener** = that, in formal or old texts. In speech people say *der … dort* instead.)
-
-Once you know the endings of *der / die / das* in the Nominative, Accusative and Dative, you know the endings of all these words.
-
-### The endings
-
-Take the last letter(s) of the definite article and attach them to the stem *dies-*, *jed-*, *welch-*, *all-*, *manch-*.
+| der-word | meaning |
+|---|---|
+| **dieser** | this, these |
+| **jeder** | every, each |
+| **alle** | all |
+| **welcher** | which? |
+| **mancher** | some |
+`,
+      examples: [
+        { de: 'Dieser Pullover ist zu groß.', en: 'This sweater is too big. (dieser, like der Pullover)' },
+        { de: 'Welche Farbe magst du?', en: 'Which colour do you like? (welche, like die Farbe)' },
+        { de: 'Jeden Morgen trinke ich Kaffee.', en: 'Every morning I drink coffee. (jeden, like den Morgen)' },
+      ],
+    },
+    {
+      title: 'Copy the ending of der, die, das',
+      text: `
+Take the last letters of the definite article and put them on the stem *dies-*, *jed-*, *welch-*, *all-*, *manch-*. The table shows *dieser* in the Nominative (subject), Accusative (object) and Dative.
 
 | | masculine | feminine | neuter | plural |
 |---|---|---|---|---|
 | Nominative | dies**er** (der) | dies**e** (die) | dies**es** (das) | dies**e** (die) |
 | Accusative | dies**en** (den) | dies**e** (die) | dies**es** (das) | dies**e** (die) |
 | Dative | dies**em** (dem) | dies**er** (der) | dies**em** (dem) | dies**en** (den) |
-
-The only surprise is the **neuter**: *das* becomes **-es** (*dieses Haus, welches Buch, jedes Kind*), not *-as*.
-
-Examples with the other words:
-
-- **Jeder** Schüler bekommt ein Buch. – *Every pupil gets a book.* (masc. Nom.)
-- Ich kenne **jeden** Nachbarn. – *I know every neighbour.* (masc. Acc.)
-- **Welche** Farbe magst du? – *Which colour do you like?* (fem. Nom. / Acc.)
-- Mit **welchem** Bus fährst du? – *Which bus do you take?* (masc. Dat.)
-- **Alle** Kinder spielen. – *All the children are playing.* (pl. Nom.)
-- Ich habe **manche** Wörter vergessen. – *I have forgotten some words.* (pl. Acc.)
-
-### jeder vs alle
-
-*jeder* is singular: it looks at the group one person at a time. *alle* is plural: it looks at the whole group.
-
-- **Jeder** Student hat einen Laptop. – *Every student has a laptop.*
-- **Alle** Studenten haben einen Laptop. – *All students have a laptop.*
-
-The meaning is almost the same, but the verb must agree: *jeder … hat* (singular), *alle … haben* (plural).
-
-### Used alone
-
-All of these words can also stand **without a noun**, as pronouns. The endings stay the same:
-
-- Welches Hemd nimmst du? – **Dieses**. – *Which shirt are you taking? This one.*
-- Ich habe zwei Brüder. **Jeder** hat ein Auto. – *Each has a car.*
-
-### Why it matters
-
-These words are everywhere: *jeden Tag* (every day), *diese Woche* (this week), *welche Größe?* (which size?), *alle zusammen* (all together). Learning them as der-words also prepares you for adjective endings: after a der-word the adjective takes the same endings as after *der / die / das* (*dieser große Hund, jedes kleine Kind*).
 `,
-  examples: [
-    { de: 'Dieser Pullover ist zu groß.', en: 'This sweater is too big. (masculine Nominative: -er like der)' },
-    { de: 'Ich nehme diese Tasche.', en: 'I will take this bag. (feminine Accusative: -e like die)' },
-    { de: 'Welches Buch liest du?', en: 'Which book are you reading? (neuter: -es like das)' },
-    { de: 'Jeden Morgen trinke ich Kaffee.', en: 'Every morning I drink coffee. (masculine Accusative for time: jeden Morgen)' },
-    { de: 'Alle Gäste sind schon da.', en: 'All the guests are already here. (plural, verb plural)' },
-    { de: 'Mit welchem Zug fährst du?', en: 'Which train are you taking? (masculine Dative: -em like dem)' },
-    { de: 'Manche Leute mögen keinen Kaffee.', en: 'Some people do not like coffee. (manche: plural)' },
-    { de: 'Welche Jacke? – Diese hier.', en: 'Which jacket? This one here. (used alone as a pronoun)' },
+      examples: [
+        { de: 'Ich nehme diese Tasche.', en: 'I will take this bag. (feminine Accusative: -e like die)' },
+        { de: 'Ich kenne jeden Lehrer an der Schule.', en: 'I know every teacher at the school. (masculine Accusative: -en like den)' },
+        { de: 'Mit welchem Zug fährst du?', en: 'Which train are you taking? (masculine Dative: -em like dem)' },
+        { de: 'Alle Gäste sind schon da.', en: 'All the guests are already here. (plural Nominative: -e like die)' },
+      ],
+    },
+    {
+      title: 'The neuter ends in -es',
+      text: `
+The only surprise is the **neuter**. *das* does not become *dies-as*: the ending is **-es**. So it is *dieses Haus*, *welches Buch*, *jedes Kind*, in both the Nominative and the Accusative.
+`,
+      examples: [
+        { de: 'Dieses Haus ist sehr alt.', en: 'This house is very old. (das Haus → dieses)' },
+        { de: 'Welches Buch liest du?', en: 'Which book are you reading? (das Buch → welches)' },
+        { de: 'Jedes Kind bekommt ein Geschenk.', en: 'Every child gets a present. (das Kind → jedes)' },
+      ],
+    },
+    {
+      title: 'jeder is singular, alle is plural',
+      text: `
+*jeder* looks at a group one person at a time, so it is **singular** and the verb is singular too. *alle* looks at the whole group, so it is **plural** with a plural verb. The meaning is almost the same; *alle* is simply the plural of *jeder*.
+
+*mancher* (some) is used mostly in the plural: *manche Leute*.
+`,
+      examples: [
+        { de: 'Jeder Student hat einen Laptop.', en: 'Every student has a laptop. (jeder + hat: singular)' },
+        { de: 'Alle Studenten haben einen Laptop.', en: 'All students have a laptop. (alle + haben: plural)' },
+        { de: 'Manche Leute mögen keinen Kaffee.', en: 'Some people do not like coffee. (manche: plural)' },
+      ],
+    },
+    {
+      title: 'Used alone, without a noun',
+      text: `
+All of these words can also stand **on their own**, as pronouns (words that replace a noun). The endings stay exactly the same, because the ending still shows the gender and case of the thing you mean.
+`,
+      examples: [
+        { de: 'Welche Jacke? Diese hier.', en: 'Which jacket? This one here. (diese = die Jacke)' },
+        { de: 'Welches Hemd nimmst du? Dieses.', en: 'Which shirt are you taking? This one. (dieses = das Hemd)' },
+        { de: 'Ich habe zwei Brüder. Jeder hat ein Auto.', en: 'I have two brothers. Each has a car.' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-09-gender-articles', note: 'The endings of dieser, jeder, welcher copy the endings of der / die / das.' },
@@ -89,6 +95,7 @@ These words are everywhere: *jeden Tag* (every day), *diese Woche* (this week), 
     'Time expressions use the **Accusative**: *jeden Tag, jede Woche, jedes Jahr, diesen Sommer*.',
     '**welcher** as a question word must agree with the noun: *Welcher Tag?* (der Tag), *Welche Uhrzeit?* (die Uhrzeit), *Welches Datum?* (das Datum).',
     'In the Dative plural the noun gets **-n** too: *mit allen Kindern, in diesen Häusern*.',
+    'You may also see **jener** (that) in formal or old texts. In speech people say *der … dort* instead; you only need to recognise it.',
   ],
   exercises: [
     {

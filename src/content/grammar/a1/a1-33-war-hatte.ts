@@ -4,78 +4,89 @@ const topic: Topic = {
   id: 'a1-33-war-hatte',
   level: 'A1',
   unit: 7,
-  order: 33,
+  order: 37,
   title: 'war and hatte: the Präteritum of sein and haben',
   germanTerm: 'Präteritum',
   tags: ['past tense', 'präteritum', 'sein', 'haben'],
   summary: 'For "was" and "had", German uses the short simple-past forms war and hatte instead of the Perfekt, even in conversation.',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'was and had: war and hatte',
+      text: `
+German has a second past tense, the **Präteritum** (simple past), the form of books and newspapers. In speech it is mostly replaced by the Perfekt, with two big exceptions: **sein** and **haben**.
 
-German has a second past tense besides the Perfekt: the **Präteritum** (simple past), the form you see in books and newspapers (*er ging, sie sagte*). In everyday speech it is mostly replaced by the Perfekt. There are two big exceptions: **sein** and **haben**. For these two verbs, everyone, everywhere, uses the Präteritum forms **war** (was) and **hatte** (had), even in casual conversation.
-
-- Ich **war** gestern krank. – *I was ill yesterday.*
-- Wir **hatten** keine Zeit. – *We had no time.*
-- **Warst** du schon mal in Berlin? – *Have you ever been to Berlin?*
-
-*Ich bin gewesen* and *ich habe gehabt* exist, but they sound heavy. Use *war* and *hatte*.
-
-### The forms of war
-
-| pronoun | sein (present) | sein (Präteritum) |
-|---|---|---|
-| ich | bin | **war** |
-| du | bist | **warst** |
-| er / sie / es | ist | **war** |
-| wir | sind | **waren** |
-| ihr | seid | **wart** |
-| sie / Sie | sind | **waren** |
-
-Notice *ich war* and *er war* are identical, with no ending at all.
-
-### The forms of hatte
-
-| pronoun | haben (present) | haben (Präteritum) |
-|---|---|---|
-| ich | habe | **hatte** |
-| du | hast | **hattest** |
-| er / sie / es | hat | **hatte** |
-| wir | haben | **hatten** |
-| ihr | habt | **hattet** |
-| sie / Sie | haben | **hatten** |
-
-Again *ich hatte* = *er hatte*. The endings *-, -st, -, -n, -t, -n* are the standard Präteritum endings you will meet again with other verbs at A2.
-
-### How it works in a sentence
-
-*War* and *hatte* are ordinary conjugated verbs, so they take **position 2** (or position 1 in a yes/no question). There is no participle and no bracket:
-
-- Gestern **war** ich im Kino. – *Yesterday I was at the cinema.*
-- **Hattest** du Hunger? – *Were you hungry?*
-- Das Wetter **war** schön, aber wir **hatten** keinen Plan.
-
-A useful fixed phrase: **es gab** (there was / there were), the Präteritum of *es gibt*: *Es gab keinen Kaffee.* Like *es gibt*, it takes the Accusative.
-
-### Combining with the Perfekt
-
-In a story you mix the two: *war / hatte* for states and background, Perfekt for actions:
-
-- Ich **war** am Samstag in München. Ich **habe** meine Schwester **besucht** und wir **sind** ins Museum **gegangen**. Das Wetter **war** super.
-
-This mix is exactly how native speakers tell a story and is what examiners expect in A1 writing.
-
-### Why it matters
-
-*War* and *hatte* are among the most frequent words in German. They describe any past state: where you were, how you felt, what you had, how the weather was. Because they have no bracket, they are also the easiest past forms to use. Learning them now gives you a quick way to add background to the Perfekt sentences from the previous two topics, and it introduces the Präteritum endings that modal verbs (*konnte, musste*) and regular verbs use at A2.
+For these two verbs, everyone says **war** (was) and **hatte** (had), even in casual conversation. *Ich bin gewesen* and *ich habe gehabt* exist, but they sound heavy.
 `,
-  examples: [
-    { de: 'Ich war gestern zu Hause.', en: 'I was at home yesterday. (ich war)' },
-    { de: 'Warst du schon mal in Wien?', en: 'Have you ever been to Vienna? (du warst; question, verb first)' },
-    { de: 'Wir waren im Urlaub.', en: 'We were on holiday. (wir waren)' },
-    { de: 'Er hatte keine Zeit.', en: 'He had no time. (er hatte)' },
-    { de: 'Hattet ihr Spaß?', en: 'Did you (all) have fun? (ihr hattet)' },
-    { de: 'Das Wetter war schlecht und wir hatten kein Auto.', en: 'The weather was bad and we had no car. (both forms together)' },
-    { de: 'Es gab viele Leute auf der Party.', en: 'There were a lot of people at the party. (es gab = there was / were)' },
+      examples: [
+        { de: 'Ich war gestern krank.', en: 'I was ill yesterday. (war = was)' },
+        { de: 'Wir hatten keine Zeit.', en: 'We had no time. (hatten = had)' },
+        { de: 'Warst du schon mal in Berlin?', en: 'Have you ever been to Berlin? (warst, question: verb first)' },
+      ],
+    },
+    {
+      title: 'The forms of war',
+      text: `
+**war** has no ending for *ich* and *er / sie / es*. The other forms add *-st, -en, -t, -en*.
+
+| pronoun | sein (Präteritum) |
+|---|---|
+| ich | **war** |
+| du | **warst** |
+| er / sie / es | **war** |
+| wir | **waren** |
+| ihr | **wart** |
+| sie / Sie | **waren** |
+`,
+      examples: [
+        { de: 'Ich war gestern zu Hause.', en: 'I was at home yesterday. (ich war)' },
+        { de: 'Wir waren im Urlaub.', en: 'We were on holiday. (wir waren)' },
+        { de: 'Wart ihr am Wochenende in Berlin?', en: 'Were you (all) in Berlin at the weekend? (ihr wart)' },
+      ],
+    },
+    {
+      title: 'The forms of hatte',
+      text: `
+**hatte** follows the same pattern: no ending for *ich* and *er / sie / es*, then *-st, -n, -t, -n*. These are the standard Präteritum endings; you meet them again with other verbs at A2.
+
+| pronoun | haben (Präteritum) |
+|---|---|
+| ich | **hatte** |
+| du | **hattest** |
+| er / sie / es | **hatte** |
+| wir | **hatten** |
+| ihr | **hattet** |
+| sie / Sie | **hatten** |
+`,
+      examples: [
+        { de: 'Er hatte keine Zeit.', en: 'He had no time. (er hatte)' },
+        { de: 'Hattet ihr Spaß?', en: 'Did you (all) have fun? (ihr hattet)' },
+        { de: 'Sie hatten kein Auto.', en: 'They had no car. (sie hatten)' },
+      ],
+    },
+    {
+      title: 'Position 2, no bracket',
+      text: `
+**war** and **hatte** are ordinary conjugated verbs, so they take **position 2**, or position 1 in a yes/no question. There is no participle and no bracket.
+
+A useful fixed phrase: **es gab** (there was / there were), the Präteritum of *es gibt*. Like *es gibt*, it takes the Accusative.
+`,
+      examples: [
+        { de: 'Gestern war ich im Kino.', en: 'Yesterday I was at the cinema. (time first, war second)' },
+        { de: 'Hattest du Hunger?', en: 'Were you hungry? (question: hattest first)' },
+        { de: 'Es gab viele Leute auf der Party.', en: 'There were a lot of people at the party. (es gab)' },
+      ],
+    },
+    {
+      title: 'Mixing war and the Perfekt',
+      text: `
+In a story you mix the two: **war / hatte** for states and background, the **Perfekt** for actions. This is exactly how native speakers tell a story, and it is what examiners expect in A1 writing.
+`,
+      examples: [
+        { de: 'Ich war in Köln und habe meine Oma besucht.', en: 'I was in Cologne and visited my grandma. (state + action)' },
+        { de: 'Das Wetter war schlecht und wir hatten kein Auto.', en: 'The weather was bad and we had no car. (background)' },
+        { de: 'Wir sind ins Museum gegangen.', en: 'We went to the museum. (action: Perfekt)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-04-sein-haben', note: 'war and hatte are the past forms of the two verbs you learned first.' },

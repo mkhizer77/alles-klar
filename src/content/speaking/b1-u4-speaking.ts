@@ -31,7 +31,7 @@ const scenario: SpeakingScenario = {
     { de: 'Das ist doch nur eine Ausrede!', en: 'That is just an excuse!' },
     { de: 'Was meinst du mit …?', en: 'What do you mean by …?' },
   ],
-  grammarFocus: ['b1-09-konjunktiv-2-irreal', 'b1-10-konjunktiv-2-past', 'b1-11-als-ob'],
+  grammarFocus: ['b1-09-konjunktiv-2-irreal', 'b1-10-konjunktiv-2-past', 'b1-11-als-ob', 'b1-09b-irreal-wishes-advice'],
   vocabFocus: ['die Bewegung', 'die Ernährung', 'das Training', 'die Ausdauer', 'der Stress', 'die Entspannung', 'abnehmen', 'sich bewegen', 'verzichten auf', 'ausgewogen', 'erschöpft', 'fit'],
   minTurns: 7,
 };

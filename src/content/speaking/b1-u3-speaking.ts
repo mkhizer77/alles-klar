@@ -31,7 +31,7 @@ const scenario: SpeakingScenario = {
     { de: 'Wie bitte? Was meinst du damit?', en: 'Pardon? What do you mean by that?' },
     { de: 'Gehst du zur Bürgerversammlung?', en: 'Are you going to the citizens\' meeting?' },
   ],
-  grammarFocus: ['b1-06-passive-present-past', 'b1-07-passive-modals-perfekt', 'b1-08-zustandspassiv-alternatives'],
+  grammarFocus: ['b1-06-passive-present-past', 'b1-07-passive-modals-perfekt', 'b1-08-zustandspassiv-alternatives', 'b1-08b-passive-alternatives'],
   vocabFocus: ['die Debatte', 'die Reform', 'der Bürger', 'die Mehrheit', 'der Protest', 'die Öffentlichkeit', 'die Umfrage', 'beschließen', 'fordern', 'demonstrieren', 'öffentlich'],
   minTurns: 7,
 };

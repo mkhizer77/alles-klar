@@ -23,7 +23,7 @@ const task: WritingTask = {
     { de: 'Über eine Einladung zu einem Gespräch würde ich mich sehr freuen.', en: 'I would be very pleased to be invited to an interview.', role: 'phrase' },
     { de: 'Mit freundlichen Grüßen', en: 'Yours sincerely', role: 'closing' },
   ],
-  grammarFocus: ['b1-04-relative-clauses-dat-gen', 'b1-05-relative-clauses-prepositions', 'a2-23-relative-clauses-nom-acc', 'a2-31-reading-writing-email'],
+  grammarFocus: ['b1-04-relative-clauses-dat-gen', 'b1-05-relative-clauses-prepositions', 'a2-23-relative-clauses-nom-acc', 'a2-31b-semi-formal-email'],
   mustUse: [
     { label: 'a relative clause with a preposition (…, in der / für die / mit dem / von der …)', pattern: ', (in|mit|für|von|bei|über|an|auf|zu|nach|aus|unter) (dem|der|den|denen|die|das)\\b', min: 2 },
     { label: 'a genitive relative pronoun (deren / dessen)', pattern: '\\b(deren|dessen)\\b', min: 1 },

@@ -4,91 +4,100 @@ const topic: Topic = {
   id: 'a2-30-word-formation-compounds',
   level: 'A2',
   unit: 10,
-  order: 30,
-  title: 'Word formation 1: compound nouns and -ung / -er / -in',
-  germanTerm: 'Wortbildung',
-  tags: ['nouns', 'word formation', 'compounds', 'suffixes', 'gender', 'vocabulary'],
-  summary: 'German builds new nouns by gluing words together (Haus + Tür = Haustür) and by adding endings to verbs and nouns (-ung, -er, -in); the last part decides the gender.',
-  explanation: `
-### What it is
+  order: 34,
+  title: 'Compound nouns: der Kühlschrank',
+  germanTerm: 'Komposita',
+  tags: ['nouns', 'word formation', 'compounds', 'gender', 'vocabulary'],
+  summary: 'German glues words together into one noun (Haus + Tür = Haustür). The last part is the main thing and decides the gender and the plural.',
+  steps: [
+    {
+      title: 'Two words become one',
+      text: `
+German is famous for long words like *Krankenversicherungskarte*. They are not new words. They are **compounds** (*Komposita*): two or more words you already know, written as **one word**.
 
-German is famous for long words like *Krankenversicherungskarte* (health insurance card). They are not really new words; they are **compounds** (*Komposita*) built from smaller words you already know. German also makes nouns from verbs with endings like **-ung** and **-er**. Learning these patterns (*Wortbildung*) lets you understand and build hundreds of words you have never seen.
-
-### Compound nouns
-
-Two (or more) nouns are written as **one word**. The **last word** is the main thing; the words before it describe it.
-
-| parts | compound | meaning |
-|---|---|---|
-| das Haus + die Tür | **die** Haustür | front door (a kind of door) |
-| die Tür + der Schlüssel | **der** Türschlüssel | door key (a kind of key) |
-| der Kaffee + die Tasse | **die** Kaffeetasse | coffee cup |
-| die Stadt + der Plan | **der** Stadtplan | city map |
-| das Wort + das Buch | **das** Wörterbuch | dictionary |
-
-Two rules follow from this:
-
-1. The **gender** of the compound is the gender of the **last** word: *die* Haustür because *die* Tür.
-2. The **plural** is the plural of the last word: *die Haustüren* (Tür → Türen).
-
-The first part can also be a verb stem (*schlafen* → das **Schlaf**zimmer), an adjective (*groß* → die **Groß**stadt) or a preposition (*vor* → der **Vor**name).
-
-### Linking letters
-
-Sometimes a small sound is inserted between the parts so the word is easier to say: der Geburt**s**tag, die Arbeit**s**zeit (**-s-**); die Straße**n**bahn, der Familie**n**name (**-n-**); das Kind**er**zimmer, das Wört**er**buch (**-er-**). There is no simple rule for which letter appears, so when you learn a compound, learn the joining letter with it. Many compounds have none: *die Haustür, der Stadtplan*.
-
-### Nouns from verbs: -ung
-
-Add **-ung** to a verb stem and you get a noun for the action or its result. These nouns are **always feminine** and their plural is **-en**.
-
-| verb | noun |
-|---|---|
-| wohnen | **die** Wohnung (flat) |
-| üben | **die** Übung (exercise) |
-| erklären | **die** Erklärung (explanation) |
-| bestellen | **die** Bestellung (order) |
-| einladen | **die** Einladung (invitation) |
-
-### People and tools: -er and -in
-
-Add **-er** to a verb stem for the person (or machine) that does it. These are **always masculine** and have **no plural ending**. Add **-in** for the female person (plural **-innen**).
-
-| verb | male person / thing | female person |
-|---|---|---|
-| lehren | **der** Lehrer | **die** Lehrerin |
-| arbeiten | **der** Arbeiter | **die** Arbeiterin |
-| fahren | **der** Fahrer | **die** Fahrerin |
-| kochen | **der** Koch (irregular) | **die** Köchin |
-| drucken | **der** Drucker (printer, a tool) | – |
-
-Some stems take an umlaut: *backen* → der B**ä**cker, *kaufen* → der Verk**ä**ufer. The **-in** form often adds an umlaut too: der Arzt → die **Ä**rztin, der Koch → die K**ö**chin.
-
-### Why it matters
-
-With these patterns you can **guess the gender** of thousands of words without looking them up: anything ending in *-ung* is *die*, any person ending in *-er* is *der*, in *-in* is *die*, and any compound takes its gender from the last word. Reading becomes faster, because you can split a long word into parts: *Arbeit-s-zeit-verkürz-ung*.
+The **last** word is the main thing. The words before it say what kind: *die Haustür* is a kind of door, *der Kühlschrank* is a kind of cupboard (one that cools).
 `,
-  examples: [
-    { de: 'Die Haustür ist offen.', en: 'The front door is open. (Haus + Tür → die, because die Tür)' },
-    { de: 'Wo ist der Stadtplan?', en: 'Where is the city map? (Stadt + Plan → der, because der Plan)' },
-    { de: 'Mein Geburtstag ist im Mai.', en: 'My birthday is in May. (Geburt + s + Tag: joining -s-)' },
-    { de: 'Das Kinderzimmer ist klein.', en: 'The children\'s room is small. (Kind + er + Zimmer)' },
-    { de: 'Die Wohnung hat drei Zimmer.', en: 'The flat has three rooms. (wohnen → die Wohnung)' },
-    { de: 'Vielen Dank für die Einladung!', en: 'Thank you for the invitation! (einladen → die Einladung)' },
-    { de: 'Der Fahrer wartet vor dem Haus.', en: 'The driver is waiting in front of the house. (fahren → der Fahrer)' },
-    { de: 'Meine Ärztin ist sehr nett.', en: 'My (female) doctor is very nice. (der Arzt → die Ärztin, with umlaut)' },
+      examples: [
+        { de: 'Die Haustür ist offen.', en: 'The front door is open. (Haus + Tür: a kind of door)' },
+        { de: 'Der Kühlschrank ist leer.', en: 'The fridge is empty. (kühl + Schrank: a cupboard that cools)' },
+        { de: 'Ich trinke aus der Kaffeetasse.', en: 'I drink from the coffee cup. (Kaffee + Tasse)' },
+      ],
+    },
+    {
+      title: 'The last part gives gender and plural',
+      text: `
+The last word is the main thing, so it decides the **gender** (der / die / das) and the **plural**: *die Tür, die Türen* → **die** Haustür, die Haus**türen**. The first word, *das Haus*, does not matter.
+
+| parts | compound | plural |
+|---|---|---|
+| das Haus + die Tür | **die** Haustür | die Haustüren |
+| die Stadt + der Plan | **der** Stadtplan | die Stadtpläne |
+| das Wort + das Buch | **das** Wörterbuch | die Wörterbücher |
+`,
+      examples: [
+        { de: 'Wo ist der Stadtplan?', en: 'Where is the city map? (der, because der Plan)' },
+        { de: 'Das Wörterbuch ist alt.', en: 'The dictionary is old. (das, because das Buch)' },
+        { de: 'Die Haustüren sind neu.', en: 'The front doors are new. (plural of die Tür)' },
+      ],
+    },
+    {
+      title: 'Read long words from the right',
+      text: `
+When you meet a long word, start at the **end** and work backwards. The last part tells you what it is; each part to the left adds a detail.
+
+*Krankenversicherungskarte*: **Karte** (a card) ← *Versicherung* (insurance) ← *kranken* (sick). So: a card for health insurance, and it is **die** Karte.
+`,
+      examples: [
+        { de: 'Hier ist meine Krankenversicherungskarte.', en: 'Here is my health insurance card. (Karte = a card)' },
+        { de: 'Der Fahrkartenautomat ist kaputt.', en: 'The ticket machine is broken. (Automat = a machine for Fahrkarten)' },
+        { de: 'Die Bushaltestelle ist gleich hier.', en: 'The bus stop is right here. (Stelle = a place, for the Bus to halten)' },
+      ],
+    },
+    {
+      title: 'The first part: verb, adjective, preposition',
+      text: `
+The first part is often a noun, but it can also be a **verb stem** (*schlafen* → das **Schlaf**zimmer), an **adjective** (*groß* → die **Groß**stadt) or a **preposition** (*vor* → der **Vor**name). The rule stays the same: the last part is the main thing and gives the gender.
+`,
+      examples: [
+        { de: 'Das Schlafzimmer ist klein.', en: 'The bedroom is small. (schlafen + Zimmer)' },
+        { de: 'Berlin ist eine Großstadt.', en: 'Berlin is a big city. (groß + Stadt)' },
+        { de: 'Mein Vorname ist Anna.', en: 'My first name is Anna. (vor + Name)' },
+      ],
+    },
+    {
+      title: 'Linking letters: -s-, -n-, -e-, -er-',
+      text: `
+Sometimes a small sound sits between the parts so the word is easier to say: a **linking letter** (*Fugenelement*).
+
+| letter | example |
+|---|---|
+| **-s-** | der Geburt**s**tag, die Arbeit**s**zeit |
+| **-n-** | die Straße**n**bahn, der Familie**n**name |
+| **-e-** | das Tag**e**buch, die Hund**e**hütte |
+| **-er-** | das Kind**er**zimmer, das Wört**er**buch |
+
+There is no simple rule for which letter appears, so learn it with the word. Many compounds have none: *die Haustür*.
+`,
+      examples: [
+        { de: 'Mein Geburtstag ist im Mai.', en: 'My birthday is in May. (Geburt + s + Tag)' },
+        { de: 'Die Straßenbahn kommt gleich.', en: 'The tram is coming soon. (Straße + n + Bahn)' },
+        { de: 'Das Kinderzimmer ist bunt.', en: "The children's room is colourful. (Kind + er + Zimmer)" },
+        { de: 'Ich schreibe ein Tagebuch.', en: 'I keep a diary. (Tag + e + Buch)' },
+      ],
+    },
   ],
   connections: [
-    { topicId: 'a1-09-gender-articles', note: 'The last part of a compound decides the gender; -ung is always die, -er for people always der.' },
-    { topicId: 'a1-10-plural', note: 'A compound takes the plural of its last word; -ung nouns take -en; -in nouns take -nen.' },
-    { topicId: 'b1-29-prefixes', note: 'At B1 you learn how prefixes (un-, ver-, be-) change the meaning of verbs and adjectives.' },
-    { topicId: 'b1-30-suffixes', note: 'More noun and adjective endings (-heit, -keit, -schaft, -lich, -bar) follow the same idea as -ung and -er.' },
+    { topicId: 'a1-09-gender-articles', note: 'The last part of a compound decides the gender: die Tür, so die Haustür.' },
+    { topicId: 'a1-10-plural', note: 'A compound takes the plural of its last word: die Türen, so die Haustüren.' },
+    { topicId: 'a2-30b-nouns-from-verbs', note: 'The sibling topic: nouns built from verbs with -ung, -er and -in.' },
+    { topicId: 'a2-31-reading-writing-email', note: 'Splitting compounds from the right is the main trick for guessing unknown words while reading.' },
+    { topicId: 'b1-30-suffixes', note: 'At B1 more noun endings (-heit, -keit, -schaft) follow the same idea: the ending decides the gender.' },
   ],
   edgeCases: [
     'The **last** word decides everything. *Der Apfelbaum* (der Baum) but *das Apfelmus* (das Mus). Learners often take the gender of the first word by mistake.',
-    'Joining letters are not predictable. *Arbeit**s**zeit* has -s-, but *Arbeitgeber* (employer) has none. Learn them with the word.',
-    '*-er* makes a **person or tool**, not an action: *der Drucker* is a printer (machine), *das Drucken* is the printing. The action noun is usually *-ung* or the capitalised infinitive.',
-    'Some professions are not formed with -er: *der Arzt / die Ärztin*, *der Koch / die Köchin*. The **-in** ending still works for the female form.',
-    'The umlaut in *-in* words follows the male form if it already has one, and some add it: *Bäcker → Bäckerin* (no change), *Arzt → Ärztin* (added).',
+    'Linking letters are not predictable. *Arbeit**s**zeit* has -s-, but *Arbeitgeber* (employer) has none. Learn them with the word.',
+    'The plural changes only the **last** part: *der Stadtplan → die Stadtpläne*, *der Kühlschrank → die Kühlschränke*. The first part never changes.',
+    'Some linking letters bring an umlaut: *das Wort → das Wörterbuch*, *das Buch → der Bücherschrank*. Say the word out loud and it sounds natural.',
   ],
   exercises: [
     {
@@ -100,26 +109,28 @@ With these patterns you can **guess the gender** of thousands of words without l
       explanation: 'The last word decides the gender. die Tür → die Haustür.',
     },
     {
-      type: 'fill',
-      id: 'a2-30-word-formation-compounds-ex02',
-      prompt: 'wohnen → die ___ (noun with -ung)',
-      answer: ['Wohnung'],
-      explanation: 'Verb stem wohn- + -ung = die Wohnung. All -ung nouns are feminine.',
-    },
-    {
-      type: 'fill',
-      id: 'a2-30-word-formation-compounds-ex03',
-      prompt: 'fahren → der ___ (the person who drives)',
-      answer: ['Fahrer'],
-      explanation: 'Verb stem fahr- + -er = der Fahrer. People formed with -er are masculine.',
-    },
-    {
       type: 'mc',
-      id: 'a2-30-word-formation-compounds-ex04',
+      id: 'a2-30-word-formation-compounds-ex02',
       prompt: 'Which compound means "coffee cup"?',
       options: ['die Tassekaffee', 'die Kaffeetasse', 'der Kaffeetasse'],
       answer: 1,
       explanation: 'The main thing (the cup) comes last: Kaffee + Tasse. Gender from die Tasse → die Kaffeetasse.',
+    },
+    {
+      type: 'mc',
+      id: 'a2-30-word-formation-compounds-ex03',
+      prompt: 'der Apfel + der Baum. Which is correct?',
+      options: ['der Apfelbaum', 'die Apfelbaum', 'das Apfelbaum'],
+      answer: 0,
+      explanation: 'Baum is the last word and is masculine, so der Apfelbaum. Compare das Apfelmus, because das Mus.',
+    },
+    {
+      type: 'mc',
+      id: 'a2-30-word-formation-compounds-ex04',
+      prompt: 'What is the first part of "das Schlafzimmer"?',
+      options: ['a noun (der Schlaf)', 'a verb stem (schlafen)', 'an adjective'],
+      answer: 1,
+      explanation: 'Schlaf- comes from the verb schlafen: a room for sleeping. The last part, Zimmer, gives the gender: das.',
     },
     {
       type: 'match',
@@ -132,60 +143,60 @@ With these patterns you can **guess the gender** of thousands of words without l
         ['Straße + Bahn', 'die Straßenbahn'],
         ['Wort + Buch', 'das Wörterbuch'],
       ],
-      explanation: 'Some compounds need a joining element: -er- (Kinderzimmer), -s- (Geburtstag), -n- (Straßenbahn), -er- with umlaut (Wörterbuch).',
+      explanation: 'Some compounds need a linking letter: -er- (Kinderzimmer), -s- (Geburtstag), -n- (Straßenbahn), -er- with umlaut (Wörterbuch). Stadtplan has none.',
     },
     {
       type: 'fill',
       id: 'a2-30-word-formation-compounds-ex06',
-      prompt: 'der Arzt → die ___ (female doctor)',
-      answer: ['Ärztin'],
-      explanation: 'Add -in for the female form. Arzt takes an umlaut: Ärztin.',
-    },
-    {
-      type: 'mc',
-      id: 'a2-30-word-formation-compounds-ex07',
-      prompt: 'What is the plural of "die Erklärung"?',
-      options: ['die Erklärunge', 'die Erklärungen', 'die Erklärungs'],
-      answer: 1,
-      explanation: 'All -ung nouns form the plural with -en: die Erklärungen.',
+      prompt: 'die Arbeit + die Zeit = die ___ (working hours; needs a linking -s-)',
+      answer: ['Arbeitszeit'],
+      explanation: 'Arbeit takes the linking letter -s- in compounds: Arbeitszeit, Arbeitsplatz, Arbeitstag.',
     },
     {
       type: 'fill',
-      id: 'a2-30-word-formation-compounds-ex08',
-      prompt: 'die Arbeit + die Zeit = die ___ (working hours; needs a joining -s-)',
-      answer: ['Arbeitszeit'],
-      explanation: 'Arbeit takes the joining element -s- in compounds: Arbeitszeit, Arbeitsplatz, Arbeitstag.',
+      id: 'a2-30-word-formation-compounds-ex07',
+      prompt: 'die Familie + der Name = der ___ (surname; needs a linking -n-)',
+      answer: ['Familienname'],
+      explanation: 'Familie takes -n- in compounds: Familienname, Familienfoto. The gender comes from der Name.',
     },
     {
       type: 'mc',
-      id: 'a2-30-word-formation-compounds-ex09',
-      prompt: 'Which word is a tool or machine, not a person?',
-      options: ['der Lehrer', 'der Drucker', 'der Bäcker'],
+      id: 'a2-30-word-formation-compounds-ex08',
+      prompt: 'What is the plural of "das Wörterbuch"?',
+      options: ['die Wörterbuchs', 'die Wörterbücher', 'die Wörterbuche'],
       answer: 1,
-      explanation: 'der Drucker is the printer (machine) from drucken. Lehrer and Bäcker are people.',
+      explanation: 'The plural is the plural of the last word: das Buch → die Bücher, so die Wörterbücher.',
+    },
+    {
+      type: 'fill',
+      id: 'a2-30-word-formation-compounds-ex09',
+      prompt: 'Ein Kühlschrank, zwei ___. (plural; der Schrank → die Schränke)',
+      answer: ['Kühlschränke'],
+      explanation: 'Only the last part changes in the plural: Schrank → Schränke, so Kühlschrank → Kühlschränke.',
     },
     {
       type: 'mc',
       id: 'a2-30-word-formation-compounds-ex10',
-      prompt: 'Split "Krankenversicherungskarte" correctly. What is the main thing?',
+      prompt: 'Split "Krankenversicherungskarte" from the right. What is the main thing?',
       options: ['die Karte', 'die Versicherung', 'der Kranke'],
       answer: 0,
       explanation: 'Krank-en-versicherung-s-karte: the last part is Karte, so it is a kind of card, and the gender is die.',
     },
     {
-      type: 'fill',
+      type: 'order',
       id: 'a2-30-word-formation-compounds-ex11',
-      prompt: 'einladen → die ___ (invitation)',
-      answer: ['Einladung'],
-      explanation: 'The separable prefix stays: einlad- + -ung = die Einladung.',
+      prompt: 'Build the question: "Where is the city map?"',
+      words: ['Stadtplan?', 'der', 'Wo', 'ist'],
+      answer: ['Wo ist der Stadtplan?'],
+      explanation: 'Stadt + Plan is one word, and it is der because der Plan is masculine.',
     },
     {
       type: 'translate',
       id: 'a2-30-word-formation-compounds-ex12',
-      prompt: 'Translate: "The teacher (female) is explaining the exercise."',
-      answer: ['Die Lehrerin erklärt die Übung.', 'Die Lehrerin erklärt die Aufgabe.'],
-      hint: 'lehren → der Lehrer → die Lehrerin; üben → die Übung',
-      explanation: 'Lehrer + -in = die Lehrerin. üben + -ung = die Übung (feminine, Accusative die).',
+      prompt: 'Translate: "The front door is open."',
+      answer: ['Die Haustür ist offen.', 'Die Haustür ist auf.', 'Die Haustür ist geöffnet.'],
+      hint: 'das Haus + die Tür; offen = open',
+      explanation: 'Haus + Tür is written as one word. The gender comes from die Tür: die Haustür.',
     },
   ],
 };

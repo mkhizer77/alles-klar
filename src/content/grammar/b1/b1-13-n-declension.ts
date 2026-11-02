@@ -4,22 +4,29 @@ const topic: Topic = {
   id: 'b1-13-n-declension',
   level: 'B1',
   unit: 6,
-  order: 13,
+  order: 18,
   title: 'N-declension: der Junge, den Jungen, der Kollege',
   germanTerm: 'n-Deklination',
   tags: ['nouns', 'cases', 'declension', 'masculine'],
   summary: 'A group of masculine nouns (der Junge, der Kollege, der Student, der Herr) adds -n or -en in every case except the Nominative singular: den Jungen, dem Kollegen, des Studenten.',
-  explanation: `
-### What it is for
+  steps: [
+    {
+      title: 'What the n-declension is for',
+      text: `
+Most German nouns do not change in the Accusative or Dative: *der Tisch, den Tisch, dem Tisch*. One small group of **masculine** nouns is different. They add **-n** or **-en** as soon as they are not the subject: *der Junge*, but *den Jungen*.
 
-A few very common words for people (*Herr, Kollege, Kunde, Student, Nachbar*) change their form as soon as they are not the subject of the sentence. You need this every time you write a letter or talk about a colleague:
-
-- Ich kenne **den Jungen** nicht. – *I do not know the boy.* (not *den Junge*)
-- Ich schreibe **Herrn** Müller. – *I am writing to Mr Müller.*
-
-Most German nouns do not change in the Accusative or Dative singular: *der Tisch, den Tisch, dem Tisch*. One small group of **masculine** nouns is different. They add **-n** or **-en** in **every form except the Nominative singular**. This is the **n-declension** (*n-Deklination*, also called the "weak declension").
-
-### How it works
+This is the **n-declension** (*n-Deklination*). You need it every time you write to *Herrn Müller* or talk about a *Kollegen*.
+`,
+      examples: [
+        { de: 'Der Junge spielt im Garten.', en: 'The boy is playing in the garden. (subject: no ending)' },
+        { de: 'Ich kenne den Jungen nicht.', en: 'I do not know the boy. (object: den Jungen)' },
+        { de: 'Ich schreibe Herrn Müller.', en: 'I am writing to Mr Müller. (Herr → Herrn)' },
+      ],
+    },
+    {
+      title: 'The endings: -n or -en',
+      text: `
+The ending is **-n** after *-e* (*Junge → Jungen*) and **-en** after a consonant (*Student → Studenten*). *Herr* takes only **-n** in the singular.
 
 | | der Junge | der Student | der Herr |
 |---|---|---|---|
@@ -27,44 +34,59 @@ Most German nouns do not change in the Accusative or Dative singular: *der Tisch
 | Accusative | den Junge**n** | den Student**en** | den Herr**n** |
 | Dative | dem Junge**n** | dem Student**en** | dem Herr**n** |
 | Genitive | des Junge**n** | des Student**en** | des Herr**n** |
-| Plural (all cases) | die Junge**n** | die Student**en** | die Herr**en** |
+`,
+      examples: [
+        { de: 'Wir sprechen mit dem Studenten.', en: 'We are talking to the student. (Dative: -en)' },
+        { de: 'Der Arzt hilft dem Patienten.', en: 'The doctor helps the patient. (helfen + Dative)' },
+        { de: 'Kennst du Herrn Müller?', en: 'Do you know Mr Müller? (Accusative: Herrn)' },
+      ],
+    },
+    {
+      title: 'No -s in the Genitive',
+      text: `
+The **Genitive** (the "of" case) has **no -s** with these nouns: *des Studenten*, not *des Studentens*. The **plural** is also *-n / -en*: *die Studenten, die Kollegen, die Herren*.
 
-Two things make life easier:
-
-1. The ending is **-n** after *-e* (Junge → Jungen) and **-en** after a consonant (Student → Studenten).
-2. The **Genitive has no -s**: *des Studenten*, not *des Studentens*.
-
-The plural of these nouns is also -n / -en, so apart from the Nominative singular **every form looks the same**.
-
-### Which nouns belong to the group?
-
-All of them are **masculine**, and almost all of them are **people**. At B1 you need the frequent ones:
+So apart from the Nominative singular, **every form looks the same**. One ending covers everything.
+`,
+      examples: [
+        { de: 'Das ist das Auto des Kollegen.', en: "That is the colleague's car. (Genitive: -n, no -s)" },
+        { de: 'Die Studenten lernen in der Bibliothek.', en: 'The students study in the library. (plural: -en)' },
+        { de: 'Guten Abend, meine Damen und Herren!', en: 'Good evening, ladies and gentlemen! (plural: Herren)' },
+      ],
+    },
+    {
+      title: 'Which nouns belong to the group',
+      text: `
+All of them are **masculine**, and almost all are **people**. At B1 you need the frequent ones:
 
 | group | examples |
 |---|---|
-| masculine nouns for people ending in **-e** | der Junge, der Kollege, der Kunde, der Franzose |
-| a few short nouns for people | der Herr (-n), der Mensch, der Nachbar (-n) |
-| people words from other languages ending in **-ent, -ant, -ist** | der Student, der Präsident, der Praktikant, der Polizist, der Tourist, der Journalist |
+| people nouns ending in **-e** | der Junge, der Kollege, der Kunde, der Franzose |
+| a few short nouns for people | der Herr, der Mensch, der Nachbar |
+| foreign words in **-ent, -ant, -ist** | der Student, der Präsident, der Polizist, der Tourist |
 
-A quick check: *masculine + ends in -e + a person* → almost certainly n-declension. Masculine nouns like *der Lehrer*, *der Vater* or *der Tisch* are **not** in the group.
-
-### One more to know: der Name
-
-**der Name** takes -n everywhere **and** an extra -s in the Genitive: *den Namen, dem Namen, des Name**ns***. You will meet it in *Wie ist der Name des Kunden?* and in forms.
-
-You may also see a few more unusual nouns of this kind (*der Gedanke* – thought, *das Herz* – heart, with *des Herzens*). You do not need to use them at B1.
-
-### Why it matters
-
-These are very common words: *Herr, Mensch, Kollege, Kunde, Student, Nachbar*. Every form of address uses one: *Sehr geehrter **Herr** Müller* (Nominative) but *Ich schreibe **Herrn** Müller* (Dative) and *Kennen Sie **Herrn** Müller?* (Accusative). Getting *Herrn* right in a letter is a small detail that examiners notice. The next topic, adjectives used as nouns (*der Deutsche, den Deutschen*), looks similar but follows a different rule, so keep the two groups apart.
+Quick check: *masculine + ends in -e + a person* → almost certainly n-declension. *Der Lehrer, der Vater* are **not** in the group.
 `,
-  examples: [
-    { de: 'Ich kenne den Jungen nicht.', en: 'I do not know the boy. (Accusative → -n)' },
-    { de: 'Das ist das Auto des Kollegen.', en: 'That is the colleague\'s car. (Genitive → -n, no -s)' },
-    { de: 'Wir sprechen mit dem Studenten.', en: 'We are talking to the student. (Dative → -en)' },
-    { de: 'Kennst du Herrn Müller?', en: 'Do you know Mr Müller? (Herr → Herrn)' },
-    { de: 'Der Arzt hilft dem Patienten.', en: 'The doctor helps the patient. (helfen + Dative → -en)' },
-    { de: 'Ich habe den Namen des Präsidenten vergessen.', en: 'I have forgotten the name of the president.' },
+      examples: [
+        { de: 'Ich warte auf den Kunden.', en: 'I am waiting for the customer. (der Kunde → den Kunden)' },
+        { de: 'Sie fragt den Polizisten nach dem Weg.', en: 'She asks the policeman the way. (-ist → -isten)' },
+        { de: 'Er grüßt den Nachbarn.', en: 'He greets the neighbour. (der Nachbar → den Nachbarn)' },
+        { de: 'Ich sehe den Lehrer.', en: 'I see the teacher. (der Lehrer: no ending)' },
+      ],
+    },
+    {
+      title: 'One special one: der Name',
+      text: `
+**der Name** takes *-n* everywhere **and** an extra *-s* in the Genitive: *den Namen, dem Namen, des Name**ns***. You meet it in forms and in questions like *Wie ist der Name des Kunden?*
+
+You may also see *der Gedanke* (thought) and *das Herz* (heart, *des Herzens*) built the same way. You only need to recognise them.
+`,
+      examples: [
+        { de: 'Ich habe den Namen des Präsidenten vergessen.', en: 'I have forgotten the name of the president. (den Namen, des Präsidenten)' },
+        { de: 'Wie ist der Name des Kunden?', en: 'What is the name of the customer? (der Name: Nominative, no ending)' },
+        { de: 'Am Anfang des Namens steht ein K.', en: 'At the beginning of the name there is a K. (Genitive: des Namens)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-09-gender-articles', note: 'Only masculine nouns belong to the n-declension, so you must know the gender.' },

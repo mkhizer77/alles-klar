@@ -4,69 +4,99 @@ const topic: Topic = {
   id: 'a1-12-indefinite-articles',
   level: 'A1',
   unit: 2,
-  order: 12,
+  order: 13,
   title: 'Indefinite articles ein / eine and no article',
   germanTerm: 'unbestimmter Artikel',
   tags: ['articles', 'ein', 'eine', 'nouns', 'zero article'],
   summary: 'ein (masculine and neuter) and eine (feminine) mean "a / an"; the plural has no indefinite article, and jobs, nationalities and uncountable things often take no article at all.',
-  explanation: `
-### Definite or indefinite?
+  steps: [
+    {
+      title: 'ein and eine mean "a"',
+      text: `
+English has two kinds of article: **the** (a specific thing both people know) and **a / an** (one of many, or something new in the conversation). German has the same two kinds.
 
-English has two kinds of article: **the** (definite: a specific thing both people know) and **a / an** (indefinite: one of many, or something new in the conversation). German has the same two kinds. The **indefinite article** (*unbestimmter Artikel*) is **ein** or **eine**, depending on the gender of the noun.
-
-- *Das ist **ein** Tisch.* – That is **a** table. (any table)
-- *Das ist **der** Tisch.* – That is **the** table. (the one we talked about)
-
-### The forms in the Nominative
-
-| gender | definite | indefinite |
+The word for *a* is the **indefinite article** (*unbestimmter Artikel*): **ein** or **eine**, depending on the gender of the noun.
+`,
+      examples: [
+        { de: 'Das ist ein Tisch.', en: 'That is a table. (any table)' },
+        { de: 'Das ist der Tisch.', en: 'That is the table. (the one we talked about)' },
+        { de: 'Ich habe ein Problem.', en: 'I have a problem. (something new)' },
+      ],
+    },
+    {
+      title: 'Only the feminine adds -e',
+      text: `
+| gender | the | a |
 |---|---|---|
 | masculine | der Mann | **ein** Mann |
 | feminine | die Frau | **eine** Frau |
 | neuter | das Kind | **ein** Kind |
-| plural | die Kinder | **–** Kinder |
 
-Two things to remember:
-
-1. **Masculine and neuter both take *ein*.** Only the feminine adds **-e**.
-2. **There is no plural of *ein*.** English has none either (*a children* is impossible), so this feels natural: *Das sind Kinder.* – Those are children.
-
-### The negative form: kein
-
-*kein* works exactly like *ein* and means *not a / no*: **kein** Mann, **keine** Frau, **kein** Kind. Unlike *ein*, it **does** have a plural: **keine** Kinder. The negation topic goes into detail.
-
-### When German uses no article
-
-German drops the article in several places where English keeps *a*. These are worth learning as a group, because English speakers tend to put *ein* everywhere.
-
-| situation | German | English |
-|---|---|---|
-| **jobs** after sein / werden | Ich bin Lehrer. Sie wird Ärztin. | I am **a** teacher. She is becoming **a** doctor. |
-| **nationality** | Er ist Italiener. | He is **an** Italian. |
-| **religion, role** | Sie ist Studentin. Er ist Vegetarier. | She is **a** student. He is **a** vegetarian. |
-| **uncountable things** | Ich trinke Wasser. Hast du Zeit? | I drink water. Do you have time? |
-| **plural, general** | Ich habe Kinder. Wir brauchen Stühle. | I have children. We need chairs. |
-| **after Hunger / Durst** | Ich habe Hunger. | I am hungry. |
-
-So **Ich bin ein Lehrer** is not wrong, but it sounds like a translation. Germans say **Ich bin Lehrer**. If there is an adjective, the article comes back: *Ich bin **ein guter** Lehrer.*
-
-### ein as the number one
-
-*ein* also means *one*. *Ich habe **ein** Kind* can mean *I have a child* or *I have one child*. In speech you stress it when you mean the number: *Ich habe EIN Kind, nicht zwei.*
-
-### Why it matters
-
-*ein / eine* is the form you use when you introduce something new: *Ich habe ein Problem. Da ist eine Bäckerei.* Together with *der / die / das* it carries the gender through the sentence, and its endings reappear in *kein* and in all the possessive words (*mein, dein, sein …*), which follow exactly the same pattern. Learn *ein / eine / ein* now and you have already learned *mein / meine / mein*.
+Masculine and neuter both take **ein**. Only the feminine adds **-e**: **eine**.
 `,
-  examples: [
-    { de: 'Das ist ein Tisch.', en: 'That is a table. (masculine → ein)' },
-    { de: 'Das ist eine Lampe.', en: 'That is a lamp. (feminine → eine)' },
-    { de: 'Das ist ein Buch.', en: 'That is a book. (neuter → ein)' },
-    { de: 'Das sind Bücher.', en: 'Those are books. (plural: no article)' },
-    { de: 'Ich bin Ingenieurin.', en: 'I am an engineer. (job: no article in German)' },
-    { de: 'Er ist Franzose.', en: 'He is French / a Frenchman. (nationality: no article)' },
-    { de: 'Ich trinke gern Tee.', en: 'I like drinking tea. (uncountable: no article)' },
-    { de: 'Ich habe ein Problem.', en: 'I have a problem. (introducing something new)' },
+      examples: [
+        { de: 'Das ist ein Tisch.', en: 'That is a table. (masculine → ein)' },
+        { de: 'Das ist eine Lampe.', en: 'That is a lamp. (feminine → eine)' },
+        { de: 'Das ist ein Buch.', en: 'That is a book. (neuter → ein)' },
+      ],
+    },
+    {
+      title: 'There is no plural of ein',
+      text: `
+**ein** has no plural form. English has none either (*a children* is impossible), so this feels natural. In the plural the noun stands alone: *Das sind Kinder.*
+`,
+      examples: [
+        { de: 'Das sind Bücher.', en: 'Those are books. (plural: no article)' },
+        { de: 'Ich habe Kinder.', en: 'I have children.' },
+        { de: 'Wir brauchen Stühle.', en: 'We need chairs.' },
+      ],
+    },
+    {
+      title: 'kein: the negative twin',
+      text: `
+**kein** means *not a / no*. It works exactly like *ein* and takes the same endings: **kein** Mann, **keine** Frau, **kein** Kind. Unlike *ein*, it **does** have a plural: **keine** Kinder. The negation topic goes into detail.
+`,
+      examples: [
+        { de: 'Ich habe kein Auto.', en: 'I do not have a car. (ein → kein)' },
+        { de: 'Sie hat keine Schwester.', en: 'She has no sister. (eine → keine)' },
+        { de: 'Wir haben keine Kinder.', en: 'We have no children. (plural: keine)' },
+      ],
+    },
+    {
+      title: 'No article for jobs and nationalities',
+      text: `
+After **sein** and **werden**, German drops the article for **jobs**, **nationalities** and **roles** where English keeps *a*. *Ich bin ein Lehrer* is understood, but it sounds like a translation. Germans say **Ich bin Lehrer**.
+
+With an adjective the article comes back: *Ich bin **ein guter** Lehrer.*
+`,
+      examples: [
+        { de: 'Ich bin Ingenieurin.', en: 'I am an engineer. (job: no article)' },
+        { de: 'Er ist Franzose.', en: 'He is French. (nationality: no article)' },
+        { de: 'Sie ist Studentin.', en: 'She is a student. (role: no article)' },
+        { de: 'Er ist ein guter Lehrer.', en: 'He is a good teacher. (with an adjective: article back)' },
+      ],
+    },
+    {
+      title: 'No article for uncountable things',
+      text: `
+Things you cannot count (*Wasser, Zeit, Geld, Brot*) take no article, just like in English. The same goes for the fixed phrases **Hunger haben** and **Durst haben** (to be hungry / thirsty).
+`,
+      examples: [
+        { de: 'Ich trinke gern Tee.', en: 'I like drinking tea. (uncountable: no article)' },
+        { de: 'Hast du Zeit?', en: 'Do you have time?' },
+        { de: 'Ich habe Hunger.', en: 'I am hungry. (fixed phrase: no article)' },
+      ],
+    },
+    {
+      title: 'ein also means one',
+      text: `
+**ein** is also the number *one*. *Ich habe ein Kind* can mean *I have a child* or *I have one child*. When you mean the number, you stress *ein* in speech, or add *nur* (only).
+`,
+      examples: [
+        { de: 'Ich habe nur ein Kind.', en: 'I have only one child. (ein = one)' },
+        { de: 'Einen Kaffee, bitte.', en: 'One coffee, please. (ein = one, Accusative after ordering)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-09-gender-articles', note: 'ein / eine / ein follow the same three genders as der / die / das.' },

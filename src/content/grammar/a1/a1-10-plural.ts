@@ -4,47 +4,89 @@ const topic: Topic = {
   id: 'a1-10-plural',
   level: 'A1',
   unit: 2,
-  order: 10,
+  order: 11,
   title: 'Plural forms',
   germanTerm: 'Plural',
   tags: ['nouns', 'plural', 'endings', 'umlaut'],
   summary: 'German has five main plural endings (-e, -en, -er, -s and no ending), often with an umlaut; the article in the plural is always die.',
-  explanation: `
-### Not one plural, but five
+  steps: [
+    {
+      title: 'Not one plural, but five',
+      text: `
+English adds *-s* and is done. German has **five** plural patterns, and some also add an **umlaut** (the dots: ä, ö, ü). The plural is not fully predictable, so you learn it with the noun, like the gender: **der Tisch, die Tische**.
 
-English adds *-s* and is done. German has **five** plural patterns, and some add an **umlaut** (ä, ö, ü) to the vowel. The plural is not fully predictable, so you learn it with the noun, like the gender: **der Tisch, die Tische**.
-
-The good news: in the plural the article is always **die**, and the ending you choose often follows the gender and the ending of the singular.
-
-### The five patterns
-
-| pattern | typical for | examples |
+The good news: in the plural the article is always **die**.
+`,
+      examples: [
+        { de: 'Die Tische sind aus Holz.', en: 'The tables are made of wood. (der Tisch → die Tische)' },
+        { de: 'Ich habe zwei Brüder.', en: 'I have two brothers. (der Bruder → die Brüder: umlaut)' },
+        { de: 'Die Kinder spielen im Garten.', en: 'The children play in the garden. (das Kind → die Kinder)' },
+      ],
+    },
+    {
+      title: 'The five patterns',
+      text: `
+| pattern | typical for | example |
 |---|---|---|
-| **-e** (often with umlaut) | most masculine nouns, many one-syllable nouns | der Tisch → die Tisch**e**, der Stuhl → die St**ü**hl**e**, der Tag → die Tag**e** |
-| **-(e)n** | almost all feminine nouns, nouns in -e | die Lampe → die Lampe**n**, die Frau → die Frau**en**, die Zeitung → die Zeitung**en** |
-| **-er** (often with umlaut) | many short neuter nouns, a few masculine | das Kind → die Kind**er**, das Buch → die B**ü**ch**er**, der Mann → die M**ä**nn**er** |
-| **-s** | foreign words, words ending in a vowel, abbreviations | das Auto → die Auto**s**, das Handy → die Handy**s**, der Park → die Park**s** |
-| **no ending** (sometimes umlaut) | masculine and neuter nouns in -er, -el, -en, and -chen / -lein | der Lehrer → die Lehrer, das Mädchen → die Mädchen, der Apfel → die **Ä**pfel |
+| **-e** (often umlaut) | most masculine nouns | der Stuhl → die Stühle |
+| **-(e)n** | almost all feminine nouns | die Lampe → die Lampen |
+| **-er** (often umlaut) | short neuter nouns | das Kind → die Kinder |
+| **-s** | foreign words, vowel endings | das Auto → die Autos |
+| **no ending** | masculine, neuter in -er, -el, -en | der Lehrer → die Lehrer |
+`,
+      examples: [
+        { de: 'Die Stühle sind neu.', en: 'The chairs are new. (-e with umlaut)' },
+        { de: 'Die Lampen sind an.', en: 'The lamps are on. (feminine → -n)' },
+        { de: 'Wir haben drei Autos.', en: 'We have three cars. (-s for foreign words)' },
+        { de: 'Die Lehrer sind nett.', en: 'The teachers are nice. (-er: no ending)' },
+      ],
+    },
+    {
+      title: 'Rules that are nearly always true',
+      text: `
+1. **Feminine nouns take -(e)n:** *die Blume → die Blumen*. Rare exceptions: *die Mutter → die Mütter, die Tochter → die Töchter*.
+2. **Female job titles in -in double the n:** *die Lehrerin → die Lehrerinnen*.
+3. **-chen and -lein never change:** *das Brötchen → die Brötchen*.
+4. **Masculine and neuter nouns in -er, -el, -en add nothing:** *der Computer → die Computer*.
+5. **Words ending in -a, -o, -i, -y and English words take -s:** *das Sofa → die Sofas*.
+`,
+      examples: [
+        { de: 'Die Blumen sind schön.', en: 'The flowers are beautiful. (feminine → -n)' },
+        { de: 'Die Lehrerinnen sind nett.', en: 'The (female) teachers are nice. (-in → -innen)' },
+        { de: 'Die Brötchen sind frisch.', en: 'The bread rolls are fresh. (-chen: no change)' },
+        { de: 'Die Sofas sind bequem.', en: 'The sofas are comfortable. (-a → -s)' },
+      ],
+    },
+    {
+      title: 'The umlaut',
+      text: `
+Only **a, o, u** and **au** can take an umlaut: *a → ä, o → ö, u → ü, au → äu*. It appears mostly with the **-e** and **-er** patterns and with the no-ending pattern.
 
-### Rules that are nearly always true
+Feminine nouns with **-en** never add an umlaut: *die Frau → die Frauen*.
+`,
+      examples: [
+        { de: 'Die Äpfel sind rot.', en: 'The apples are red. (der Apfel → die Äpfel)' },
+        { de: 'Die Häuser sind alt.', en: 'The houses are old. (das Haus → die Häuser: au → äu)' },
+        { de: 'Die Frauen warten.', en: 'The women are waiting. (feminine -en: no umlaut)' },
+      ],
+    },
+    {
+      title: 'Nouns with no plural or no singular',
+      text: `
+Some nouns are used only in the singular: *das Wasser, die Milch, das Geld, die Zeit, das Obst*. Some exist only in the plural: *die Eltern* (parents), *die Leute* (people), *die Ferien* (holidays).
 
-1. **Feminine nouns take -(e)n.** *die Blume → die Blumen, die Schwester → die Schwestern.* Exceptions are rare (*die Mutter → die Mütter, die Tochter → die Töchter*).
-2. **Female job titles in -in double the n:** *die Lehrerin → die Lehrer**innen**, die Freundin → die Freund**innen**.*
-3. **-chen and -lein never change:** *das Brötchen → die Brötchen.*
-4. **Masculine and neuter nouns in -er, -el, -en add nothing:** *der Computer → die Computer, der Schlüssel → die Schlüssel.*
-5. **Words that end in -a, -o, -i, -y or come from English take -s:** *das Sofa → die Sofas, das Café → die Cafés.*
-
-### The umlaut
-
-Only **a, o, u** (and *au*) can take an umlaut: *a → ä, o → ö, u → ü, au → äu*. It appears mostly with the **-e** and **-er** patterns and with the no-ending pattern: *der Apfel → die Äpfel, das Haus → die Häuser, der Vater → die Väter*. Feminine nouns with *-en* never add an umlaut (*die Frau → die Frauen*).
-
-### Nouns with no plural, or no singular
-
-Some nouns are used only in the singular: *das Wasser, die Milch, das Geld, die Zeit, das Obst*. Some exist only in the plural: *die Eltern* (parents), *die Leute* (people), *die Ferien* (holidays). **Euro** and **Cent** keep the singular after a number: *zehn Euro*.
-
-### How to read a dictionary entry
-
-Dictionaries and word lists write the plural as a short code after the noun:
+**Euro** and **Cent** keep the singular after a number: *zehn Euro*.
+`,
+      examples: [
+        { de: 'Meine Eltern wohnen in Bonn.', en: 'My parents live in Bonn. (Eltern has no singular)' },
+        { de: 'Das kostet zwanzig Euro.', en: 'That costs twenty euros. (Euro has no plural ending)' },
+        { de: 'Ich trinke viel Wasser.', en: 'I drink a lot of water. (Wasser has no plural)' },
+      ],
+    },
+    {
+      title: 'How to read a dictionary entry',
+      text: `
+Dictionaries and word lists write the plural as a short code after the noun. The symbol **¨** means umlaut.
 
 | entry | means |
 |---|---|
@@ -52,24 +94,15 @@ Dictionaries and word lists write the plural as a short code after the noun:
 | der Stuhl, ¨-e | die Stühle (umlaut + -e) |
 | das Kind, -er | die Kinder |
 | die Lampe, -n | die Lampen |
-| das Auto, -s | die Autos |
 | der Lehrer, - | die Lehrer (no change) |
 
-In this app the plural is written out in full (*die Tische*).
-
-### Why it matters
-
-You will use plurals constantly: *zwei Kinder, drei Tage, viele Freunde*. Getting the plural right also matters later because the plural article changes in the Dative (*den Kindern*). Learn each noun as a triple: **gender, singular, plural**.
+In this app the plural is written out in full: *die Tische*.
 `,
-  examples: [
-    { de: 'Ich habe zwei Brüder.', en: 'I have two brothers. (der Bruder → die Brüder: umlaut, no ending)' },
-    { de: 'Die Tische sind aus Holz.', en: 'The tables are made of wood. (-e)' },
-    { de: 'Die Lampen sind an.', en: 'The lamps are on. (feminine → -n)' },
-    { de: 'Die Kinder spielen im Garten.', en: 'The children play in the garden. (-er)' },
-    { de: 'Wir haben drei Autos.', en: 'We have three cars. (-s for foreign words)' },
-    { de: 'Die Lehrerinnen sind nett.', en: 'The (female) teachers are nice. (-in → -innen)' },
-    { de: 'Meine Eltern wohnen in Bonn.', en: 'My parents live in Bonn. (Eltern has no singular)' },
-    { de: 'Das kostet zwanzig Euro.', en: 'That costs twenty euros. (Euro has no plural ending)' },
+      examples: [
+        { de: 'Der Stuhl ist bequem.', en: 'The chair is comfortable. (der Stuhl, ¨-e)' },
+        { de: 'Die Stühle sind bequem.', en: 'The chairs are comfortable. (umlaut + -e)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-09-gender-articles', note: 'Gender predicts the plural pattern: feminine → -(e)n, neuter often -er.' },

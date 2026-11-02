@@ -4,76 +4,77 @@ const topic: Topic = {
   id: 'a1-23-accusative-pronouns',
   level: 'A1',
   unit: 4,
-  order: 23,
+  order: 27,
   title: 'Personal pronouns in the Accusative (mich, dich …)',
   germanTerm: 'Akkusativpronomen',
   tags: ['pronouns', 'accusative', 'objects'],
   summary: 'When a person or thing is the object of the sentence, the pronoun changes: ich → mich, du → dich, er → ihn, just like I → me in English.',
-  explanation: `
-### What it is
-
-English pronouns change when they are the object: *I* becomes *me*, *he* becomes *him*, *we* becomes *us*. German does the same, and the object form is the **Accusative pronoun** (*Akkusativpronomen*).
-
-- Ich sehe **dich**. – *I see you.*
-- Kennst du **ihn**? – *Do you know him?*
-- Sie liebt **mich**. – *She loves me.*
-
-### The forms
-
-| Nominative (subject) | Accusative (object) | English |
-|---|---|---|
-| ich | **mich** | me |
-| du | **dich** | you |
-| er | **ihn** | him / it (masculine) |
-| sie | **sie** | her / it (feminine) |
-| es | **es** | it (neuter) |
-| wir | **uns** | us |
-| ihr | **euch** | you (plural) |
-| sie | **sie** | them |
-| Sie | **Sie** | you (formal) |
-
-Good news: **sie, es, sie, Sie** do not change at all. Only five forms are new: **mich, dich, ihn, uns, euch**. And the one that matters most is **er → ihn**, because it mirrors *der → den* in the article system.
-
-### Pronouns stand for things too
-
-In German, a pronoun must match the **gender of the noun**, not whether it is a person or a thing. A table (*der Tisch*) is "he", a lamp (*die Lampe*) is "she", a book (*das Buch*) is "it":
-
-- Wo ist der Schlüssel? Ich finde **ihn** nicht. – *Where is the key? I can't find it.*
-- Magst du die Suppe? Ja, ich mag **sie**. – *Do you like the soup? Yes, I like it.*
-- Hast du das Buch? Ja, ich habe **es**. – *Do you have the book? Yes, I have it.*
-
-English uses *it* for all three. German picks *ihn / sie / es* according to the article.
-
-### Where the pronoun goes
-
-An object pronoun likes to stand **early** in the sentence, right after the verb (or after the subject if the subject comes after the verb):
-
-- Ich rufe **dich** morgen an. – *I'll call you tomorrow.*
-- Morgen rufe ich **dich** an.
-- Kannst du **mich** hören? – *Can you hear me?*
-
-A pronoun object comes **before** a noun object or a time expression, never at the very end if something else can go there.
-
-### After Accusative prepositions
-
-The five Accusative prepositions (*durch, für, gegen, ohne, um*) take the same forms:
-
-- Das ist **für dich**. – *That's for you.*
-- Ich gehe nicht **ohne euch**. – *I'm not going without you (all).*
-- Alle sind **gegen ihn**. – *Everyone is against him.*
-
-### Why it matters
-
-Without object pronouns you have to repeat nouns all the time: *I see the man. I know the man. I like the man.* With them, conversation becomes natural: *Ich sehe ihn, ich kenne ihn, ich mag ihn.* They also appear in many everyday phrases: *Ich liebe dich*, *Wie findest du es?*, *Besuch uns mal!*, *Freut mich* (nice to meet you). And the pattern *er → ihn* is the same -n you already know from *den* and *einen*.
+  steps: [
+    {
+      title: 'ich becomes mich, like I becomes me',
+      text: `
+English pronouns change when they are the object: *I* becomes *me*, *he* becomes *him*. German does the same. The object form is the **Accusative pronoun** (*Akkusativpronomen*): *ich* → **mich**, *du* → **dich**, *er* → **ihn**.
 `,
-  examples: [
-    { de: 'Ich liebe dich.', en: 'I love you. (du → dich)' },
-    { de: 'Kennst du ihn?', en: 'Do you know him? (er → ihn)' },
-    { de: 'Der Lehrer fragt uns.', en: 'The teacher asks us. (wir → uns)' },
-    { de: 'Ich sehe euch morgen.', en: 'I will see you (all) tomorrow. (ihr → euch)' },
-    { de: 'Wo ist mein Stift? Ich brauche ihn.', en: 'Where is my pen? I need it. (der Stift → ihn)' },
-    { de: 'Die Pizza ist gut. Ich esse sie gern.', en: 'The pizza is good. I like eating it. (die Pizza → sie)' },
-    { de: 'Das Geschenk ist für Sie, Frau Weber.', en: 'The present is for you, Ms Weber. (formal Sie)' },
+      examples: [
+        { de: 'Ich liebe dich.', en: 'I love you. (du → dich)' },
+        { de: 'Kennst du ihn?', en: 'Do you know him? (er → ihn)' },
+        { de: 'Sie liebt mich.', en: 'She loves me. (ich → mich)' },
+      ],
+    },
+    {
+      title: 'Only five forms are new',
+      text: `
+| subject | object |
+|---|---|
+| ich | **mich** |
+| du | **dich** |
+| er | **ihn** |
+| sie, es, Sie | sie, es, Sie |
+| wir | **uns** |
+| ihr | **euch** |
+
+Good news: **sie, es, Sie** do not change at all. Only **mich, dich, ihn, uns, euch** are new. The one that matters most is **er → ihn**: it mirrors *der → den* in the article system.
+`,
+      examples: [
+        { de: 'Der Lehrer fragt uns.', en: 'The teacher asks us. (wir → uns)' },
+        { de: 'Ich sehe euch morgen.', en: 'I will see you all tomorrow. (ihr → euch)' },
+        { de: 'Ich verstehe Sie nicht.', en: 'I do not understand you. (formal Sie: no change)' },
+        { de: 'Kennst du sie?', en: 'Do you know her? (sie: no change)' },
+      ],
+    },
+    {
+      title: 'Things are ihn, sie or es by gender',
+      text: `
+A pronoun must match the **gender of the noun**, not whether it is a person or a thing. A table (*der Tisch*) is "he", a lamp (*die Lampe*) is "she", a book (*das Buch*) is "it". English uses *it* for all three; German picks **ihn / sie / es** by the article.
+`,
+      examples: [
+        { de: 'Wo ist mein Stift? Ich brauche ihn.', en: 'Where is my pen? I need it. (der Stift → ihn)' },
+        { de: 'Die Pizza ist gut. Ich esse sie gern.', en: 'The pizza is good. I like eating it. (die Pizza → sie)' },
+        { de: 'Hast du das Buch? Ja, ich habe es.', en: 'Do you have the book? Yes, I have it. (das Buch → es)' },
+      ],
+    },
+    {
+      title: 'The pronoun goes early',
+      text: `
+An object pronoun likes to stand **early** in the sentence: right after the verb, or after the subject when the subject follows the verb. It comes **before** a time word, never at the very end if something else can go there.
+`,
+      examples: [
+        { de: 'Ich rufe dich morgen an.', en: 'I will call you tomorrow. (dich before morgen)' },
+        { de: 'Morgen rufe ich dich an.', en: 'Tomorrow I will call you. (after the subject ich)' },
+        { de: 'Kannst du mich hören?', en: 'Can you hear me?' },
+      ],
+    },
+    {
+      title: 'After für, ohne, gegen and the others',
+      text: `
+The five Accusative prepositions (*durch, für, gegen, ohne, um*) take the same forms: **für dich**, **ohne euch**, **gegen ihn**. Some everyday phrases use them too: *Freut mich* (nice to meet you), *Besuch uns mal!* (come and visit us).
+`,
+      examples: [
+        { de: 'Das ist für dich.', en: 'That is for you. (für + dich)' },
+        { de: 'Ich gehe nicht ohne euch.', en: 'I am not going without you all. (ohne + euch)' },
+        { de: 'Alle sind gegen ihn.', en: 'Everyone is against him. (gegen + ihn)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-03-personal-pronouns', note: 'The Nominative pronouns ich, du, er are the base forms; mich, dich, ihn are their object versions.' },

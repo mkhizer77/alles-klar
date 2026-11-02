@@ -4,80 +4,110 @@ const topic: Topic = {
   id: 'a1-18-imperative',
   level: 'A1',
   unit: 3,
-  order: 18,
+  order: 22,
   title: 'The imperative: giving instructions',
   germanTerm: 'Imperativ',
   tags: ['verbs', 'imperative', 'commands', 'requests', 'du ihr Sie'],
   summary: 'The imperative is the form for instructions and requests; it has three versions, one each for du, ihr and Sie, and the verb always comes first.',
-  explanation: `
-### What the imperative is
+  steps: [
+    {
+      title: 'What the imperative is for',
+      text: `
+The **imperative** (*Imperativ*) is the verb form for telling someone to do something: *Come in! Sit down! Please wait.* It covers orders, instructions, recipes, advice and polite requests.
 
-The **imperative** (*Imperativ*) is the verb form for telling someone to do something: *Come in! Sit down! Please wait.* It covers orders, instructions, recipes, advice and polite requests. Because German has three words for *you*, it has **three imperative forms**. The verb always stands **first** in the sentence, and the sentence often ends with an exclamation mark.
-
-### The three forms
-
-| who you speak to | how to build it | kommen | warten |
-|---|---|---|---|
-| **du** (one friend) | du form **without -st** and **without du** | Komm! | Warte! |
-| **ihr** (several friends) | ihr form **without ihr** | Kommt! | Wartet! |
-| **Sie** (formal) | infinitive + **Sie** (verb first) | Kommen Sie! | Warten Sie! |
-
-**du**: take *du kommst*, remove *-st* and the pronoun: **Komm!** This works for almost every verb: *du gehst → Geh!*, *du machst → Mach!*, *du trinkst → Trink!* Older books add an *-e* (*Komme!*, *Gehe!*); today that sounds formal or poetic. The *-e* is only needed when the stem ends in **-t, -d** or a consonant cluster, to make it pronounceable: *Warte! Arbeite! Öffne!*
-
-**ihr**: simply the normal *ihr* form without the pronoun: *ihr kommt → Kommt!*, *ihr wartet → Wartet!* No changes at all.
-
-**Sie**: the infinitive, then *Sie*. It looks like a question with the verb first, but the voice goes down: *Kommen Sie bitte herein.* Always keep *Sie*; dropping it is wrong.
-
-### Irregular verbs in the du form
-
-Verbs with the **e → i / ie** change keep the change in the du imperative, because it is built from the du form:
-
-| infinitive | du form | imperative |
+German has three words for *you*, so it has **three imperative forms**: one for **du**, one for **ihr**, one for **Sie**. The verb always comes **first**.
+`,
+      examples: [
+        { de: 'Komm!', en: 'Come! (du: one friend)' },
+        { de: 'Wartet hier!', en: 'Wait here! (ihr: several friends)' },
+        { de: 'Kommen Sie bitte!', en: 'Please come! (Sie: formal)' },
+      ],
+    },
+    {
+      title: 'The three forms',
+      text: `
+| who you speak to | how to build it | kommen |
 |---|---|---|
-| sprechen | du sprichst | **Sprich** lauter! |
-| nehmen | du nimmst | **Nimm** das! |
-| lesen | du liest | **Lies** das! |
-| essen | du isst | **Iss**! |
-| geben | du gibst | **Gib** mir das Buch! |
+| **du** | du form without **-st** and without *du* | Komm! |
+| **ihr** | ihr form without *ihr* | Kommt! |
+| **Sie** | infinitive + **Sie** | Kommen Sie! |
 
-Verbs with the **a → ä** change **lose** the umlaut in the imperative: *du fährst → **Fahr** langsam!*, *du schläfst → **Schlaf** gut!*, *du läufst → **Lauf**!*
+**du**: take *du kommst*, remove *-st* and the pronoun: *Komm!* **ihr**: the normal ihr form, no pronoun. **Sie**: the infinitive, then *Sie*. Always keep *Sie*; dropping it is wrong.
+`,
+      examples: [
+        { de: 'Komm bitte herein!', en: 'Please come in! (du kommst → Komm)' },
+        { de: 'Geht nach Hause!', en: 'Go home! (ihr geht → Geht)' },
+        { de: 'Nehmen Sie Platz, bitte.', en: 'Please take a seat. (infinitive + Sie)' },
+      ],
+    },
+    {
+      title: 'du form: when to keep an -e',
+      text: `
+For most verbs the du imperative is the bare stem: *Geh! Mach! Trink!* Older books add an *-e* (*Gehe!*); today that sounds formal.
 
-### sein and haben
+The **-e** is only needed when the stem ends in **-t, -d** or a group of consonants, so you can say it: ***Warte! Arbeite! Öffne!***
+`,
+      examples: [
+        { de: 'Warte bitte!', en: 'Please wait! (stem in -t: keep the -e)' },
+        { de: 'Öffne das Fenster!', en: 'Open the window! (stem öffn-: keep the -e)' },
+        { de: 'Mach die Tür zu!', en: 'Close the door! (bare stem)' },
+      ],
+    },
+    {
+      title: 'Irregular verbs in the du form',
+      text: `
+Verbs with the **e → i / ie** change keep it, because the form is built from the du form: *du sprichst → **Sprich**!*, *du nimmst → **Nimm**!*, *du liest → **Lies**!*
+
+Verbs with the **a → ä** change **lose** the umlaut: *du fährst → **Fahr**!*, *du schläfst → **Schlaf**!*
+`,
+      examples: [
+        { de: 'Sprich bitte langsamer.', en: 'Please speak more slowly. (e → i stays)' },
+        { de: 'Lies das!', en: 'Read that! (e → ie stays)' },
+        { de: 'Fahr vorsichtig!', en: 'Drive carefully! (no umlaut)' },
+        { de: 'Schlaf gut!', en: 'Sleep well! (no umlaut)' },
+      ],
+    },
+    {
+      title: 'sein and haben',
+      text: `
+**sein** has special forms you need to memorise. **haben** is regular, but note the du form *Hab!*
 
 | | du | ihr | Sie |
 |---|---|---|---|
 | sein | **Sei** ruhig! | **Seid** ruhig! | **Seien Sie** ruhig! |
 | haben | **Hab** Geduld! | **Habt** Geduld! | **Haben Sie** Geduld! |
-
-*Sei* and *Seien Sie* are special forms you need to memorise. *Seien Sie so nett* (be so kind) is a useful polite phrase.
-
-### Separable verbs
-
-The prefix goes to the end, as always: *aufstehen → **Steh** auf! **Steht** auf! **Stehen Sie** auf!*; *mitkommen → **Komm** mit!*
-
-### Making it polite
-
-A bare imperative can sound harsh. German softens it with **bitte** (please), **mal** (just, a little) or **doch**, in the middle or at the end:
-
-- Komm **bitte** herein. – Please come in.
-- Warte **mal**! – Just wait a second.
-- Setzen Sie sich **doch**. – Do sit down.
-
-Even more polite is a question with a modal: *Können Sie mir bitte helfen?* or *Könnten Sie …?*
-
-### Why it matters
-
-You hear the imperative constantly: on signs (*Drücken* – push, *Ziehen* – pull), in recipes, in directions (*Gehen Sie geradeaus*), from teachers and in every request. Knowing which of the three forms to use, and softening it with *bitte* or *mal*, keeps you from sounding rude.
 `,
-  examples: [
-    { de: 'Komm bitte herein!', en: 'Please come in! (du: no -st, no pronoun)' },
-    { de: 'Wartet hier!', en: 'Wait here! (ihr: normal ihr form without the pronoun)' },
-    { de: 'Nehmen Sie Platz, bitte.', en: 'Please take a seat. (Sie: infinitive + Sie)' },
-    { de: 'Sprich bitte langsamer.', en: 'Please speak more slowly. (e → i stays)' },
-    { de: 'Fahr vorsichtig!', en: 'Drive carefully! (no umlaut in the imperative)' },
-    { de: 'Sei nicht traurig.', en: 'Don\'t be sad. (sein → sei)' },
-    { de: 'Steh auf!', en: 'Get up! (separable: prefix at the end)' },
-    { de: 'Gehen Sie geradeaus und dann links.', en: 'Go straight ahead and then left. (directions, formal)' },
+      examples: [
+        { de: 'Sei nicht traurig.', en: "Don't be sad. (sein → Sei)" },
+        { de: 'Seid leise, Kinder!', en: 'Be quiet, children! (ihr → Seid)' },
+        { de: 'Seien Sie so nett.', en: 'Be so kind. (a useful polite phrase)' },
+      ],
+    },
+    {
+      title: 'Separable verbs',
+      text: `
+With a **separable verb** the prefix goes to the **end**, as always. The verb part comes first in its imperative form: *aufstehen → Steh auf! Steht auf! Stehen Sie auf!*
+`,
+      examples: [
+        { de: 'Steh auf!', en: 'Get up! (du)' },
+        { de: 'Komm mit!', en: 'Come along! (du)' },
+        { de: 'Rufen Sie mich an!', en: 'Call me! (Sie)' },
+      ],
+    },
+    {
+      title: 'Making it polite',
+      text: `
+A bare imperative can sound harsh. German softens it with **bitte** (please), **mal** (just) or **doch**, in the middle or at the end.
+
+Even more polite is a question with a modal verb: *Können Sie mir bitte helfen?*
+`,
+      examples: [
+        { de: 'Komm bitte herein.', en: 'Please come in. (bitte)' },
+        { de: 'Warte mal!', en: 'Just wait a second! (mal)' },
+        { de: 'Setzen Sie sich doch.', en: 'Do sit down. (doch)' },
+        { de: 'Können Sie mir bitte helfen?', en: 'Can you help me, please? (question: most polite)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-05-present-tense-regular', note: 'The du and ihr imperatives are built from the present-tense du and ihr forms.' },

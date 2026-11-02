@@ -4,74 +4,80 @@ const topic: Topic = {
   id: 'a1-34-coordinating-conjunctions',
   level: 'A1',
   unit: 8,
-  order: 34,
+  order: 38,
   title: 'Coordinating conjunctions: und, aber, oder, denn, sondern',
   germanTerm: 'Konjunktionen (Position 0)',
   tags: ['conjunctions', 'word order', 'sentences'],
   summary: 'und, aber, oder, denn and sondern join two sentences without changing the word order of either one; they sit in "position 0".',
-  explanation: `
-### What it is
-
-A **conjunction** (*Konjunktion*) joins two parts of a sentence. The five in this topic are the easiest in German because they **do not change the word order**. The second sentence keeps its verb in position 2, as if the conjunction were not there. That is why they are said to be in **position 0**:
-
-| first sentence | position 0 | position 1 | position 2 | rest |
-|---|---|---|---|---|
-| Ich bleibe zu Hause, | **denn** | ich | bin | müde. |
-| Er trinkt Kaffee, | **aber** | sie | trinkt | Tee. |
-| Wir gehen ins Kino | **oder** | wir | bleiben | hier. |
-
-### The five conjunctions
-
-| conjunction | meaning | use |
-|---|---|---|
-| **und** | and | adds something |
-| **aber** | but | contrast |
-| **oder** | or | choice |
-| **denn** | because, for | gives a reason |
-| **sondern** | but rather, but instead | corrects a negative statement |
-
-- Ich lerne Deutsch **und** ich arbeite in Berlin.
-- Das Hotel ist schön, **aber** es ist teuer.
-- Möchtest du Tee **oder** Kaffee?
-- Ich gehe nicht aus, **denn** ich habe keine Zeit.
-- Ich komme nicht aus Spanien, **sondern** aus Portugal.
-
-### aber vs sondern
-
-Both translate as *but*, so this pair needs care. Use **sondern** only when the first part is **negative** (*nicht*, *kein*) and the second part **replaces** it with the correct information:
-
-- Das ist **nicht** mein Auto, **sondern** das Auto von Lena. (not X but Y)
-- Ich trinke **keinen** Kaffee, **sondern** Tee.
-
-Use **aber** for a normal contrast, even after a negative, when the second part does not replace the first:
-
-- Ich trinke keinen Kaffee, **aber** ich mag den Geruch. (contrast, no replacement)
-- Das Auto ist alt, **aber** es fährt gut.
-
-Test: can you say *not … but rather …* in English? Then it is *sondern*.
-
-### Comma and shortening
-
-- A **comma** always goes before **aber**, **denn** and **sondern**.
-- Before **und** and **oder** there is usually **no comma**.
-- If both halves have the **same subject**, you can leave it out after *und*, *oder*, *aber* and *sondern*: *Ich koche **und** esse zu Hause.* Not after *denn*: *denn* always needs a full sentence with its own subject.
-
-### denn vs weil
-
-*Denn* and *weil* both mean *because*. The difference is word order: after **denn** the verb stays in position 2; after **weil** the verb goes to the end (*weil ich müde **bin***). *Weil* is an A2 topic. At A1, use *denn* and keep the normal order.
-
-### Why it matters
-
-These five words let you build longer, more natural sentences from the simple ones you already know, with no new grammar. They are everywhere in speaking and writing: *Ich heiße Ana und ich komme aus Brasilien. Ich lerne Deutsch, denn ich wohne jetzt in Hamburg.* Learning that they sit in position 0 also prepares you for the big contrast at A2, where *weil*, *dass* and *wenn* push the verb to the end.
+  steps: [
+    {
+      title: 'Joining sentences in position 0',
+      text: `
+A **conjunction** (*Konjunktion*) joins two sentences. The five in this topic are the easiest in German because they **do not change the word order**. The second sentence keeps its verb in position 2, as if the conjunction were not there. That is why they are said to sit in **position 0**.
 `,
-  examples: [
-    { de: 'Ich komme aus Italien und ich wohne in Berlin.', en: 'I come from Italy and I live in Berlin. (und, verb still second)' },
-    { de: 'Das Essen ist gut, aber das Restaurant ist teuer.', en: 'The food is good, but the restaurant is expensive. (aber = contrast)' },
-    { de: 'Fahren wir mit dem Bus oder gehen wir zu Fuß?', en: 'Shall we take the bus or walk? (oder = choice)' },
-    { de: 'Ich bleibe heute zu Hause, denn ich bin krank.', en: 'I am staying at home today, because I am ill. (denn + normal order)' },
-    { de: 'Er ist nicht Lehrer, sondern Arzt.', en: 'He is not a teacher but a doctor. (sondern after a negative)' },
-    { de: 'Ich gehe einkaufen und koche dann.', en: 'I go shopping and then cook. (same subject left out after und)' },
-    { de: 'Sie spricht kein Deutsch, aber sie versteht viel.', en: 'She speaks no German, but she understands a lot. (negative + aber: contrast, not replacement)' },
+      examples: [
+        { de: 'Ich bleibe zu Hause, denn ich bin müde.', en: 'I am staying at home, because I am tired. (denn, then ich bin: verb second)' },
+        { de: 'Er trinkt Kaffee, aber sie trinkt Tee.', en: 'He drinks coffee, but she drinks tea.' },
+        { de: 'Wir gehen ins Kino oder wir bleiben hier.', en: 'We go to the cinema or we stay here.' },
+      ],
+    },
+    {
+      title: 'The five words and their jobs',
+      text: `
+Learn the five with what they do.
+
+| conjunction | meaning |
+|---|---|
+| **und** | and: adds something |
+| **aber** | but: contrast |
+| **oder** | or: choice |
+| **denn** | because: gives a reason |
+| **sondern** | but rather: corrects a negative |
+`,
+      examples: [
+        { de: 'Ich lerne Deutsch und ich arbeite in Berlin.', en: 'I learn German and I work in Berlin. (und)' },
+        { de: 'Das Hotel ist schön, aber es ist teuer.', en: 'The hotel is nice, but it is expensive. (aber)' },
+        { de: 'Möchtest du Tee oder Kaffee?', en: 'Would you like tea or coffee? (oder)' },
+        { de: 'Ich gehe nicht aus, denn ich habe keine Zeit.', en: 'I am not going out, because I have no time. (denn)' },
+      ],
+    },
+    {
+      title: 'aber or sondern?',
+      text: `
+Both mean *but*. Use **sondern** only when the first part is **negative** (*nicht*, *kein*) and the second part **replaces** it with the correct information: *not X but Y*.
+
+Use **aber** for a normal contrast, even after a negative, when the second part does not replace the first. Test: can you say *not … but rather …* in English? Then it is *sondern*.
+`,
+      examples: [
+        { de: 'Ich komme nicht aus Spanien, sondern aus Portugal.', en: 'I am not from Spain but from Portugal. (nicht … sondern)' },
+        { de: 'Ich trinke keinen Kaffee, sondern Tee.', en: 'I do not drink coffee but tea. (kein … sondern)' },
+        { de: 'Ich trinke keinen Kaffee, aber ich mag den Geruch.', en: 'I do not drink coffee, but I like the smell. (contrast, no replacement: aber)' },
+        { de: 'Das Auto ist alt, aber es fährt gut.', en: 'The car is old, but it runs well. (aber)' },
+      ],
+    },
+    {
+      title: 'Comma and dropping the subject',
+      text: `
+A **comma** always goes before **aber**, **denn** and **sondern**. Before **und** and **oder** there is usually no comma.
+
+If both halves have the same subject, you can leave it out after *und, oder, aber* and *sondern*. Not after **denn**: *denn* always needs a full sentence with its own subject.
+`,
+      examples: [
+        { de: 'Ich koche und esse zu Hause.', en: 'I cook and eat at home. (same subject, left out after und)' },
+        { de: 'Ich gehe einkaufen und koche dann.', en: 'I go shopping and then cook.' },
+        { de: 'Ich bleibe hier, denn ich bin müde.', en: 'I am staying here, because I am tired. (denn keeps its subject)' },
+      ],
+    },
+    {
+      title: 'denn, not weil, at A1',
+      text: `
+*denn* and *weil* both mean *because*. The difference is word order: after **denn** the verb stays in position 2; after *weil* the verb goes to the end. *weil* is an A2 topic. At A1, use **denn** and keep the normal order.
+`,
+      examples: [
+        { de: 'Ich lerne Deutsch, denn ich wohne in Hamburg.', en: 'I learn German, because I live in Hamburg. (denn ich wohne)' },
+        { de: 'Sie kommt nicht, denn sie ist krank.', en: 'She is not coming, because she is ill. (denn sie ist)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-06-verb-second', note: 'After these conjunctions the verb stays in position 2; the rule is not broken.' },

@@ -219,13 +219,37 @@ for (const f of files) {
     if (d.level !== c.level) err(f, `level ${d.level} should be ${c.level}`);
     if (d.unit !== c.unit) err(f, `unit ${d.unit} should be ${c.unit}`);
     if (d.order !== c.order) err(f, `order ${d.order} should be ${c.order}`);
+    if (!/^(a1|a2|b1)-\d\d[a-z]?-[a-z0-9-]+$/.test(d.id)) err(f, `topic id ${d.id} must look like a1-14-es-gibt or a1-14b-demonstratives`);
     if (!d.summary || !d.germanTerm || !d.title) err(f, 'missing summary/germanTerm/title');
-    const wc = (d.explanation || '').split(/\s+/).length;
-    if (wc < 200) err(f, `explanation too short (${wc} words)`);
-    if (/`|\$\{/.test(d.explanation || '')) err(f, 'explanation contains backtick or ${');
-    if (!Array.isArray(d.examples) || d.examples.length < 4) err(f, 'need at least 4 examples');
-    if (!Array.isArray(d.edgeCases) || d.edgeCases.length < 2) err(f, 'need at least 2 edge cases');
-    if (!Array.isArray(d.connections) || d.connections.length < 1) err(f, 'need at least 1 connection');
+    const wordsOf = (t) => (t || '').replace(/[|]|^-{3,}$|^\s*-{3,}\s*$/gm, ' ').trim().split(/\s+/).filter((w) => /[\p{L}\p{N}]/u.test(w)).length;
+    if (wordsOf(d.summary) > 40) err(f, `summary has ${wordsOf(d.summary)} words; keep it under 40`);
+    if (d.explanation || d.examples) err(f, 'old format: explanation/examples must become steps');
+    const steps = Array.isArray(d.steps) ? d.steps : [];
+    if (steps.length < 3 || steps.length > 7) err(f, `need 3–7 steps, has ${steps.length}`);
+    let total = 0, nEx = 0;
+    steps.forEach((st, i) => {
+      const tag = `step ${i + 1}`;
+      const tw = wordsOf(st.title);
+      if (!st.title || tw > 8) err(f, `${tag}: title must be 1–8 words`);
+      const w = wordsOf(st.text); total += w;
+      if (w < 15) err(f, `${tag}: text too short (${w} words)`);
+      if (w > 100) err(f, `${tag}: text too long (${w} words; keep each step under 90)`);
+      if (/`|\$\{/.test(st.text || '')) err(f, `${tag}: text contains backtick or \${'{'}`);
+      if ((st.text || '').split('\n').filter((l) => l.startsWith('|')).length > 8) err(f, `${tag}: table too big (max 7 rows)`);
+      if (/^#{1,6} /m.test(st.text || '')) err(f, `${tag}: no headings inside a step (the title is the heading)`);
+      const exs = Array.isArray(st.examples) ? st.examples : [];
+      if (exs.length < 2 || exs.length > 4) err(f, `${tag}: need 2–4 examples, has ${exs.length}`);
+      for (const ex of exs) {
+        nEx++;
+        if (!ex.de || !ex.en) err(f, `${tag}: example needs de and en`);
+        if (wordsOf(ex.de) > 16) err(f, `${tag}: example "${ex.de}" is ${wordsOf(ex.de)} words; keep examples short`);
+      }
+    });
+    if (total > 450) err(f, `lesson text has ${total} words across steps; keep the whole lesson under 450`);
+    if (nEx < 6) err(f, `need at least 6 examples across steps, has ${nEx}`);
+    if (!Array.isArray(d.edgeCases) || d.edgeCases.length < 2 || d.edgeCases.length > 6) err(f, 'need 2–6 edge cases');
+    for (const e of d.edgeCases || []) if (wordsOf(e) > 45) err(f, `edge case too long (${wordsOf(e)} words): "${e.slice(0, 40)}…"`);
+    if (!Array.isArray(d.connections) || d.connections.length < 1 || d.connections.length > 6) err(f, 'need 1–6 connections');
     for (const cn of d.connections || []) { if (!allIds.has(cn.topicId)) err(f, `connection to unknown topic ${cn.topicId}`); if (cn.topicId === d.id) err(f, 'connection to itself'); }
     checkExercises(f, d.id, d.exercises, 8, '-ex');
   } else if (Array.isArray(d.words)) {

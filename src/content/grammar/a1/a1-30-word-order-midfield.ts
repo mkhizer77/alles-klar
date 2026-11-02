@@ -4,78 +4,73 @@ const topic: Topic = {
   id: 'a1-30-word-order-midfield',
   level: 'A1',
   unit: 6,
-  order: 30,
+  order: 34,
   title: 'Word order of time, manner, place and the sentence bracket',
   germanTerm: 'Satzklammer, TeKaMoLo',
   tags: ['word order', 'syntax', 'sentence bracket', 'adverbs'],
   summary: 'German sentences form a bracket (verb in position 2, second verb part at the end); inside it, extra information follows the order time – cause – manner – place.',
-  explanation: `
-### What it is
+  steps: [
+    {
+      title: 'The sentence bracket',
+      text: `
+In a statement the **conjugated verb** (the verb with its ending) is in **position 2**. Many sentences also have a **second verb part**: an infinitive after a modal verb, or a separable prefix. That part goes to the **very end**.
 
-You already know the main rule: in a statement the **conjugated verb** is in **position 2**. But many sentences have a **second verb part** as well: an infinitive after a modal verb, a separable prefix, or (soon) a participle. That second part goes to the **very end**. The two verb parts form a frame around everything else. This frame is the **sentence bracket** (*Satzklammer*).
-
-| position 1 | position 2 (verb) | midfield | end (verb part 2) |
-|---|---|---|---|
-| Ich | **muss** | heute mit dem Bus zur Arbeit | **fahren**. |
-| Er | **steht** | jeden Tag um sechs Uhr | **auf**. |
-| Wir | **wollen** | am Wochenende nach Köln | **fahren**. |
-| Morgen | **kaufe** | ich im Supermarkt Brot | **ein**. |
-
-Everything between the two verb parts is the **midfield** (*Mittelfeld*). This topic is about what goes where inside the midfield.
-
-### The order in the midfield: Te – Ka – Mo – Lo
-
-When a sentence has several pieces of extra information, German prefers this order:
-
-| short | question | German term | example |
-|---|---|---|---|
-| **Te** | **when?** (temporal) | wann? | heute, um acht Uhr, am Montag |
-| **Ka** | **why?** (causal) | warum? | wegen des Wetters (rare at A1) |
-| **Mo** | **how?** (modal) | wie? | mit dem Auto, schnell, gern |
-| **Lo** | **where / where to?** (local) | wo? wohin? | zu Hause, nach Berlin, im Park |
-
-Ich fahre **morgen** (Te) **mit dem Zug** (Mo) **nach Hamburg** (Lo).
-*I am going to Hamburg by train tomorrow.*
-
-Notice the English is almost the opposite order (place, manner, time). In German, **time first, place last** is the strong tendency, and it is a good rule to follow at A1.
-
-### Time can also go first
-
-A time expression very often takes **position 1**. Then the subject moves to after the verb, and the rest of the midfield keeps its order:
-
-- **Morgen** fahre ich mit dem Zug nach Hamburg.
-- **Am Samstag** gehen wir zusammen ins Kino.
-
-Starting with the time is very natural in German and makes your speech sound less like a list of *ich … ich … ich*.
-
-### Objects and pronouns in the midfield
-
-Two more rules keep the midfield tidy:
-
-1. **Pronouns come early**, right after the verb (or after the subject): *Ich rufe **dich** morgen an.*
-2. **Dative noun before Accusative noun**: *Ich gebe **dem Kind** heute **das Buch**.* The time word can sit between them or before both: *Ich gebe heute dem Kind das Buch.*
-
-A rough overall order: **verb – pronouns – time – Dative noun – manner – Accusative noun – place – verb part 2**. You do not need to use every slot; just keep the ones you have in this order.
-
-### Where nicht goes
-
-*Nicht* goes **after** time expressions and **before** the thing it negates, usually before manner, place and verb part 2:
-
-- Ich fahre heute **nicht** mit dem Auto.
-- Er kommt morgen **nicht** mit.
-
-### Why it matters
-
-Word order is what makes a sentence sound German rather than translated. The bracket is the skeleton: once you hear *Ich muss …*, you wait for the infinitive at the end. The Te-Ka-Mo-Lo order fills the bracket in the way native speakers expect. In the next unit the Perfekt adds a new bracket (*habe … gemacht*), so getting comfortable with the frame now makes the past tense feel familiar instead of strange.
+The two verb parts form a frame around the rest. This frame is the **sentence bracket** (*Satzklammer*). Everything inside it is the **midfield** (*Mittelfeld*).
 `,
-  examples: [
-    { de: 'Ich muss heute lange arbeiten.', en: 'I have to work late today. (bracket: muss … arbeiten)' },
-    { de: 'Sie steht am Montag um sechs Uhr auf.', en: 'She gets up at six on Monday. (bracket: steht … auf)' },
-    { de: 'Wir fahren morgen mit dem Auto nach Berlin.', en: 'We drive to Berlin by car tomorrow. (time – manner – place)' },
-    { de: 'Am Sonntag gehe ich gern im Park spazieren.', en: 'On Sunday I like going for a walk in the park. (time in position 1)' },
-    { de: 'Ich kaufe heute im Supermarkt Brot ein.', en: 'I am buying bread at the supermarket today. (time – place – object – prefix)' },
-    { de: 'Er gibt dir morgen das Geld.', en: 'He will give you the money tomorrow. (pronoun early, then time, then noun object)' },
-    { de: 'Ich kann heute leider nicht kommen.', en: 'Unfortunately I cannot come today. (nicht before the final verb part)' },
+      examples: [
+        { de: 'Ich muss heute lange arbeiten.', en: 'I have to work late today. (bracket: muss … arbeiten)' },
+        { de: 'Sie steht am Montag um sechs Uhr auf.', en: 'She gets up at six on Monday. (bracket: steht … auf)' },
+        { de: 'Wir wollen am Wochenende nach Köln fahren.', en: 'We want to go to Cologne at the weekend. (bracket: wollen … fahren)' },
+      ],
+    },
+    {
+      title: 'Inside the bracket: time, manner, place',
+      text: `
+When the midfield has several pieces of extra information, German likes this order: **time** (when?), **manner** (how?), **place** (where? where to?). The German short name is *Te-Ka-Mo-Lo*; the *Ka* (why?) is rare at A1.
+
+English is almost the opposite (place, manner, time), so remember: **time first, place last**.
+`,
+      examples: [
+        { de: 'Ich fahre morgen mit dem Zug nach Hamburg.', en: 'I am going to Hamburg by train tomorrow. (time – manner – place)' },
+        { de: 'Wir gehen heute zusammen ins Kino.', en: 'We are going to the cinema together today.' },
+        { de: 'Er geht jeden Tag zu Fuß zur Arbeit.', en: 'He walks to work every day. (time – manner – place)' },
+      ],
+    },
+    {
+      title: 'Time can go first',
+      text: `
+A time expression very often takes **position 1**. Then the verb stays second and the **subject moves after it**. The rest of the midfield keeps its order. Starting with the time sounds very natural in German and avoids *ich … ich … ich*.
+`,
+      examples: [
+        { de: 'Morgen fahre ich mit dem Zug nach Hamburg.', en: 'Tomorrow I am going to Hamburg by train. (time first, then verb, then ich)' },
+        { de: 'Am Samstag gehen wir zusammen ins Kino.', en: 'On Saturday we are going to the cinema together.' },
+        { de: 'Heute muss ich lange arbeiten.', en: 'Today I have to work late.' },
+      ],
+    },
+    {
+      title: 'Pronouns early, Dative before Accusative',
+      text: `
+Two more rules keep the midfield tidy. **Pronouns come early**, right after the verb or the subject: *Ich rufe **dich** morgen an.* A **Dative noun** comes before an **Accusative noun**: *Ich gebe **dem Kind** das Buch.* The time word can go before both or between them.
+
+A rough overall order: verb – pronouns – time – Dative noun – manner – Accusative noun – place – verb part 2. You do not need every slot; just keep the ones you have in this order.
+`,
+      examples: [
+        { de: 'Ich rufe dich morgen an.', en: 'I will call you tomorrow. (pronoun before time)' },
+        { de: 'Er gibt dir morgen das Geld.', en: 'He will give you the money tomorrow. (pronoun, time, noun object)' },
+        { de: 'Ich gebe dem Kind heute das Buch.', en: 'I give the child the book today. (Dative noun before Accusative noun)' },
+      ],
+    },
+    {
+      title: 'Where nicht goes',
+      text: `
+**nicht** goes **after** time expressions and **before** the thing it negates: usually before manner, place and the second verb part. It never goes after the final verb part.
+`,
+      examples: [
+        { de: 'Ich fahre heute nicht mit dem Auto.', en: 'I am not going by car today. (nicht before manner)' },
+        { de: 'Er kommt morgen nicht mit.', en: 'He is not coming along tomorrow. (nicht before the prefix)' },
+        { de: 'Ich kann heute leider nicht kommen.', en: 'Unfortunately I cannot come today. (nicht before the final verb part)' },
+      ],
+    },
   ],
   connections: [
     { topicId: 'a1-06-verb-second', note: 'Position 2 for the verb is the base rule; the bracket adds the second verb part at the end.' },
