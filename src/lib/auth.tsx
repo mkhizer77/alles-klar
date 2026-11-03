@@ -12,10 +12,17 @@ interface User {
   local: boolean;
 }
 
+/** Shown once on the home screen after signing in. */
+export type Welcome = 'created' | 'signedIn' | null;
+
 interface AuthCtx {
   user: User | null;
   loading: boolean;
   offline: boolean;
+  welcome: Welcome;
+  dismissWelcome: () => void;
+  /** Sign in, or create the account when the name is free. */
+  enter: (username: string, password: string) => Promise<void>;
   login: (username: string, password: string) => Promise<void>;
   register: (username: string, password: string) => Promise<void>;
   continueLocally: () => void;
@@ -25,6 +32,8 @@ interface AuthCtx {
 
 const Ctx = createContext<AuthCtx>(null!);
 const backend = new ApiSyncBackend(api);
+/** The last account that used this device; survives sign-out so another account's data is never mixed in. */
+const LS_LAST_ACCOUNT = 'ak:lastAccount';
 
 function remembered(): string | null {
   try {
@@ -43,11 +52,17 @@ function remember(username: string | null) {
   }
 }
 
-/** Switch the store to an account. Device-only progress is kept and uploaded; another account's progress is cleared. */
+/** Switch the store to an account. Device-only progress (or this account's own) is kept and uploaded; another account's progress is cleared first. */
 function adoptAccount(username: string, token: string) {
-  const previous = remembered();
-  if (previous === LOCAL_USER) store.markAllDirty();
-  else if (previous && previous !== username) store.reset();
+  let last: string | null = null;
+  try {
+    last = localStorage.getItem(LS_LAST_ACCOUNT);
+    localStorage.setItem(LS_LAST_ACCOUNT, username);
+  } catch {
+    /* ignore */
+  }
+  if (last && last !== username) store.reset();
+  else store.markAllDirty();
   remember(username);
   api.setToken(token);
   store.setBackend(backend);
@@ -57,6 +72,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
   const [offline, setOffline] = useState(!navigator.onLine);
+  const [welcome, setWelcome] = useState<Welcome>(null);
 
   useEffect(() => {
     const on = () => setOffline(false);
@@ -111,6 +127,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     user,
     loading,
     offline,
+    welcome,
+    dismissWelcome: () => setWelcome(null),
+    async enter(username, password) {
+      const data = await api.enter(username, password);
+      adoptAccount(data.username, data.token);
+      setWelcome(data.created ? 'created' : 'signedIn');
+      setUser({ username: data.username, local: false });
+    },
     async login(username, password) {
       const data = await api.login(username, password);
       adoptAccount(data.username, data.token);

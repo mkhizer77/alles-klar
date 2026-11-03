@@ -182,7 +182,7 @@ export default function SettingsPage() {
           </p>
         )}
         <div className="mt-3 flex gap-2 flex-wrap">
-          <Button variant="secondary" onClick={() => logout()}>{user?.local ? 'Sign in or create account' : 'Sign out'}</Button>
+          <Button variant="secondary" onClick={() => logout()}>{user?.local ? 'Sign in to sync across devices' : 'Sign out'}</Button>
           {!confirmDelete ? (
             <Button variant="ghost" className="!text-danger" onClick={() => setConfirmDelete(true)}>{user?.local ? 'Delete all progress on this device' : 'Delete account and all progress'}</Button>
           ) : (

@@ -60,6 +60,11 @@ export class ApiClient {
     return this.request<{ username: string; token: string }>('/api/auth/login', { method: 'POST', body: JSON.stringify({ username, password }) });
   }
 
+  /** One step: signs in, or creates the account when the name is free. */
+  enter(username: string, password: string) {
+    return this.request<{ username: string; token: string; created: boolean }>('/api/auth/enter', { method: 'POST', body: JSON.stringify({ username, password }) });
+  }
+
   me() {
     return this.request<{ user: { username: string } | null }>('/api/auth/me');
   }

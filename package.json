@@ -15,6 +15,7 @@
     "curriculum-doc": "node scripts/curriculum-doc.mjs",
     "typecheck": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.server.json --noEmit",
     "deploy:api": "wrangler deploy",
+    "setup:api": "node scripts/setup-api.mjs",
     "test": "node --test server/core/*.test.ts tests/*.test.ts"
   },
   "dependencies": {

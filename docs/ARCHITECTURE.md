@@ -91,6 +91,14 @@ Automatic on every push to `main` (`.github/workflows/pages.yml`), at https://mk
 
 ### API (Cloudflare, once)
 
+One command does it all: signs in to Cloudflare (a free account is enough), creates the D1 database, writes its id into `wrangler.toml`, deploys the Worker, checks `/api/health`, sets the repository variable `API_URL` with the GitHub CLI and starts a new Pages build. Commit the `wrangler.toml` change afterwards.
+
+```bash
+pnpm setup:api
+```
+
+By hand it is the same three steps:
+
 ```bash
 pnpm wrangler login
 pnpm wrangler d1 create alles-klar        # paste the database_id into wrangler.toml

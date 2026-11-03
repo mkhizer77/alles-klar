@@ -45,8 +45,8 @@ pnpm test         # API core against an in-memory database
 ## Hosting (free)
 
 - **App**: GitHub Pages, deployed by GitHub Actions on every push to `main`: https://mkhizer77.github.io/alles-klar/
-- **API + database**: one Cloudflare Worker with a D1 database (free tiers). One-time setup is three commands; see [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md#deploying).
-- Without the API the site works in "device only" mode; creating an account later uploads what you have done.
+- **API + database**: one Cloudflare Worker with a D1 database (free tiers). One-time setup is `pnpm setup:api`; see [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md#deploying).
+- Signing in is one form: any name and password. A new name creates the account, a known one signs in, and the same pair on another device brings the progress along. Without the API the site works in "device only" mode; signing in later uploads what you have done.
 
 Install on a phone: open the site in Safari or Chrome and choose "Add to Home Screen". It works offline; progress syncs when you are back online.
 

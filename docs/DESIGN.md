@@ -7,6 +7,7 @@ Screens are in `docs/screenshots/`. Mobile uses a bottom tab bar (Home, Learn, V
 | Screen | Route | Purpose |
 |--------|-------|---------|
 | Sign in / Create account | `/` (signed out) | Username + password only. Explains what is stored. |
+| Login | `/` (signed out) | One form: name and password. A free name creates the account, a known one signs in; "Continue without an account" keeps progress on the device. |
 | Home | `/` | Greeting, streak, today's vocabulary (new + due), "Continue learning" (first topic under 80 %), level progress bars, last test, concept search shortcut. |
 | Learn | `/learn/:level` | Level tabs, unit sections with vocabulary theme, topic rows with status (New / Read / score). Link to the level test. |
 | Topic | `/topic/:id` | Summary, explanation (markdown with tables), examples with speech, how it connects (links), watch out (edge cases), practice card. Prev/next topic links. Sticky Practice button on mobile. |

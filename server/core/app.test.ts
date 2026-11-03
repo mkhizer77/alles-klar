@@ -42,6 +42,25 @@ test('rejects bad usernames, duplicates and wrong passwords', async () => {
   assert.equal((await app.request('/api/auth/login', json({ username: 'anna', password: 'secret1' }))).status, 200);
 });
 
+test('enter creates a new name and signs an existing one in', async () => {
+  const app = await makeApp();
+  const first = await app.request('/api/auth/enter', json({ username: 'lena', password: 'secret1' }));
+  assert.equal(first.status, 200);
+  const a = (await first.json()) as { username: string; token: string; created: boolean };
+  assert.equal(a.created, true);
+  assert.ok(a.token.length > 20);
+
+  const again = await app.request('/api/auth/enter', json({ username: 'lena', password: 'secret1' }));
+  const b = (await again.json()) as { username: string; token: string; created: boolean };
+  assert.equal(b.created, false);
+  assert.notEqual(b.token, a.token);
+  const me = await app.request('/api/auth/me', { headers: { authorization: `Bearer ${b.token}` } });
+  assert.deepEqual(await me.json(), { user: { username: 'lena' } });
+
+  assert.equal((await app.request('/api/auth/enter', json({ username: 'lena', password: 'other12' }))).status, 401);
+  assert.equal((await app.request('/api/auth/enter', json({ username: 'x', password: 'secret1' }))).status, 400);
+});
+
 test('kv store keeps the newest value per key', async () => {
   const app = await makeApp();
   const reg = await app.request('/api/auth/register', json({ username: 'anna', password: 'secret1' }));

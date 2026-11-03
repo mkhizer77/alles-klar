@@ -6,7 +6,7 @@ import { deckWords, deckStats } from '../lib/vocab';
 import { store } from '../lib/store';
 import { keys, EMPTY_ACTIVITY, EMPTY_TESTS, type Activity, type TestAttempt } from '../lib/models';
 import { topics, unitOfTopic, levels, readingForUnit, writingForUnit, speakingForUnit } from '../content';
-import { Card, LinkButton, ProgressBar, LevelPill } from '../components/ui';
+import { Button, Card, LinkButton, ProgressBar, LevelPill } from '../components/ui';
 import { FlameIcon, ChevronRight } from '../components/icons';
 import { todayStr } from '../lib/date';
 
@@ -14,7 +14,7 @@ const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 export default function Home() {
   useStoreVersion();
-  const { user } = useAuth();
+  const { user, welcome, dismissWelcome, logout } = useAuth();
   const settings = getSettings();
   const activity = store.get<Activity>(keys.activity, EMPTY_ACTIVITY);
   const tests = store.get<TestAttempt[]>(keys.tests, EMPTY_TESTS);
@@ -42,6 +42,38 @@ export default function Home() {
           <FlameIcon size={18} /> {s}
         </div>
       </div>
+
+      {welcome && (
+        <Card className="bg-success-soft border-success/30">
+          <div className="flex items-start gap-3">
+            <div className="flex-1 text-sm">
+              <div className="font-bold text-success">{welcome === 'created' ? `Account created: ${user?.username}` : `Welcome back, ${user?.username}`}</div>
+              <p className="text-muted mt-0.5">
+                {welcome === 'created'
+                  ? 'Sign in with the same name and password on your phone or laptop and your progress is there too.'
+                  : 'Your progress is synced. Anything you do here shows up on your other devices.'}
+              </p>
+            </div>
+            <button type="button" onClick={dismissWelcome} className="text-sm font-semibold text-success" aria-label="Dismiss">
+              OK
+            </button>
+          </div>
+        </Card>
+      )}
+
+      {user?.local && (
+        <Card className="border-dashed">
+          <div className="flex items-center gap-3">
+            <div className="flex-1 text-sm">
+              <div className="font-semibold">Progress is only on this device</div>
+              <p className="text-muted mt-0.5">Sign in with any name and password to keep it safe and use it on your phone and laptop.</p>
+            </div>
+            <Button size="sm" variant="secondary" onClick={() => logout()} className="shrink-0">
+              Sign in
+            </Button>
+          </div>
+        </Card>
+      )}
 
       <Card className="bg-gradient-to-br from-primary to-primary-strong text-on-primary border-0">
         <div className="flex items-center justify-between">

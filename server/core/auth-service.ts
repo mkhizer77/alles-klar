@@ -58,6 +58,23 @@ export class AuthService {
     return { username: user.username, token: await this.openSession(user.id) };
   }
 
+  /**
+   * One step in, for the single sign-in form: a name nobody uses gets a new
+   * account; a known name signs in when the password matches.
+   */
+  async enter(username: unknown, password: unknown, clientKey: string) {
+    if (!AuthService.validUsername(username)) throw new AuthError('Name: 3–32 letters, numbers, . _ -', 400);
+    if (!AuthService.validPassword(password)) throw new AuthError('Password: at least 6 characters', 400);
+    const user = await this.deps.users.findByUsername(username);
+    if (!user) return { ...(await this.register(username, password)), created: true };
+    if (this.tooManyFailures(clientKey)) throw new AuthError('Too many attempts, try again in 15 minutes', 429);
+    if (!(await this.deps.hasher.verify(password, user.passHash))) {
+      this.recordFailure(clientKey);
+      throw new AuthError('That name already has an account and this is not its password', 401);
+    }
+    return { username: user.username, token: await this.openSession(user.id), created: false };
+  }
+
   resolve(token: string) {
     return this.deps.sessions.resolve(token, this.deps.now());
   }

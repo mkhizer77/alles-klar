@@ -88,6 +88,11 @@ export function createApp(opts: AppOptions) {
     return c.json(await auth.login(username, password, clientKey(c)));
   });
 
+  app.post('/api/auth/enter', async (c) => {
+    const { username, password } = await body(c);
+    return c.json(await auth.enter(username, password, clientKey(c)));
+  });
+
   app.get('/api/auth/me', (c) => {
     const a = c.get('auth');
     return c.json({ user: a ? { username: a.username } : null });
