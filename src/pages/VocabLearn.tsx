@@ -152,14 +152,24 @@ export default function VocabLearn() {
       setPrevShown(true);
     }
   };
-  const onPointerEnd = (e: ReactPointerEvent<HTMLDivElement>) => {
+  /** The browser took the gesture (edge swipe, scroll): put everything back, decide nothing. */
+  const onPointerCancel = () => {
     const d = drag.current;
     drag.current = null;
     if (!d?.locked) return;
     setDragging(false);
-    const mx = e.clientX - d.x;
-    const dt = performance.now() - d.prevT;
-    const v = dt > 0 ? (e.clientX - d.prevX) / dt : 0;
+    setDx(0);
+    hideTimer.current = setTimeout(() => setPrevShown(false), SETTLE_MS);
+  };
+  const onPointerEnd = () => {
+    const d = drag.current;
+    drag.current = null;
+    if (!d?.locked) return;
+    setDragging(false);
+    // judge by where the finger last was: the release event itself may carry no position
+    const mx = d.lastX - d.x;
+    const dt = d.lastT - d.prevT;
+    const v = dt > 0 ? (d.lastX - d.prevX) / dt : 0;
     const threshold = Math.min(100, (deckRef.current?.offsetWidth ?? 320) * 0.25);
     const flick = Math.abs(mx) > 30 && Math.abs(v) > FLICK && Math.sign(v) === Math.sign(mx);
     if (mx < 0 && (mx < -threshold || flick)) commit('left');
@@ -224,7 +234,7 @@ export default function VocabLearn() {
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
         onPointerUp={onPointerEnd}
-        onPointerCancel={onPointerEnd}
+        onPointerCancel={onPointerCancel}
         className={`relative flex-1 min-h-[24rem] max-h-[36rem] select-none ${dragging ? 'cursor-grabbing' : 'cursor-grab'}`}
         style={{ touchAction: 'pan-y', WebkitTouchCallout: 'none' }}
       >
