@@ -8,12 +8,24 @@ import { WordFront, WordDetails } from '../components/WordCard';
 import { ProgressBar, LinkButton, Button } from '../components/ui';
 import { XIcon, ChevronLeft, ChevronRight } from '../components/icons';
 
+/** 'left': the front card is thrown away to the left (next word). 'right': the previous card is pulled back in from the left. */
 type Dir = 'left' | 'right';
-/** How the front card arrived: lifted from the back of the stack (after a swipe left) or back from the left edge (after a swipe right). */
-type Enter = 'none' | 'from-left' | null;
 
 const SLOP = 8;
-const OUT_MS = 220;
+const SETTLE_MS = 220;
+/** px/ms: a quick flick commits even when the finger did not travel the full distance */
+const FLICK = 0.5;
+const PREV_OFFSET = 'calc(-100% - 24px)';
+
+interface Drag {
+  x: number;
+  y: number;
+  locked: boolean;
+  lastX: number;
+  lastT: number;
+  prevX: number;
+  prevT: number;
+}
 
 export default function VocabLearn() {
   useStoreVersion();
@@ -27,16 +39,22 @@ export default function VocabLearn() {
   const stats = deckStats(words);
 
   const [i, setI] = useState(() => getPosition(setId, level, words.length));
+  const iRef = useRef(i);
+  iRef.current = i;
   const [dx, setDx] = useState(0);
   const [dragging, setDragging] = useState(false);
-  const [leaving, setLeaving] = useState<Dir | null>(null);
-  const [enter, setEnter] = useState<Enter>(null);
-  const start = useRef<{ x: number; y: number; locked: boolean } | null>(null);
-  const cardRef = useRef<HTMLDivElement>(null);
+  const [settling, setSettling] = useState<Dir | null>(null);
+  const [prevShown, setPrevShown] = useState(false);
+  const [fresh, setFresh] = useState(true); // first card pops in; later ones arrive by gesture
+  const pending = useRef<Dir | null>(null);
+  const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const hideTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const drag = useRef<Drag | null>(null);
+  const deckRef = useRef<HTMLDivElement>(null);
 
-  const atEnd = i >= words.length;
   const word: Word | undefined = words[i];
-  const hasNext = i < words.length; // the last card can still be swiped to the end card
+  const atEnd = i >= words.length;
+  const hasNext = i < words.length; // the last word can still be swiped away to reach the end card
   const hasPrev = i > 0;
 
   // Looking at a card starts the word and remembers the position.
@@ -47,70 +65,109 @@ export default function VocabLearn() {
     }
   }, [word, i, setId, level]);
 
-  const go = useCallback(
-    (dir: Dir) => {
-      if (leaving) return;
-      if (dir === 'left') {
-        if (!hasNext) return;
-        setLeaving('left');
-        setTimeout(() => {
-          setI((n) => n + 1);
-          setDx(0);
-          setLeaving(null);
-          setEnter('none');
-        }, OUT_MS);
-      } else {
-        if (!hasPrev) return;
-        setI((n) => n - 1);
-        setDx(0);
-        setEnter('from-left');
-      }
+  useEffect(
+    () => () => {
+      if (timer.current) clearTimeout(timer.current);
+      if (hideTimer.current) clearTimeout(hideTimer.current);
     },
-    [leaving, hasNext, hasPrev],
+    [],
+  );
+
+  /** Apply a committed swipe now (normally when its animation ends, earlier when a new gesture starts). */
+  const finishSettle = useCallback(() => {
+    if (!timer.current) return;
+    clearTimeout(timer.current);
+    timer.current = null;
+    const dir = pending.current;
+    pending.current = null;
+    if (dir) {
+      iRef.current += dir === 'left' ? 1 : -1;
+      setI(iRef.current);
+    }
+    setSettling(null);
+    setPrevShown(false);
+    setDx(0);
+    setFresh(false);
+  }, []);
+
+  const commit = useCallback(
+    (dir: Dir) => {
+      finishSettle();
+      const cur = iRef.current;
+      if (dir === 'left' ? cur >= words.length : cur <= 0) {
+        setDx(0);
+        return;
+      }
+      if (dir === 'right') setPrevShown(true);
+      pending.current = dir;
+      setSettling(dir);
+      timer.current = setTimeout(finishSettle, SETTLE_MS);
+    },
+    [finishSettle, words.length],
   );
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'ArrowRight') go('left');
-      else if (e.key === 'ArrowLeft') go('right');
+      if (e.key === 'ArrowRight') commit('left');
+      else if (e.key === 'ArrowLeft') commit('right');
       else return;
       e.preventDefault();
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [go]);
+  }, [commit]);
 
   const onPointerDown = (e: ReactPointerEvent<HTMLDivElement>) => {
-    if (leaving || e.button !== 0) return;
-    start.current = { x: e.clientX, y: e.clientY, locked: false };
+    if (e.button !== 0) return;
+    finishSettle();
+    const now = performance.now();
+    drag.current = { x: e.clientX, y: e.clientY, locked: false, lastX: e.clientX, lastT: now, prevX: e.clientX, prevT: now };
   };
   const onPointerMove = (e: ReactPointerEvent<HTMLDivElement>) => {
-    const s = start.current;
-    if (!s) return;
-    const mx = e.clientX - s.x;
-    const my = e.clientY - s.y;
-    if (!s.locked) {
+    const d = drag.current;
+    if (!d) return;
+    const mx = e.clientX - d.x;
+    const my = e.clientY - d.y;
+    if (!d.locked) {
       if (Math.abs(my) > SLOP && Math.abs(my) > Math.abs(mx)) {
-        start.current = null; // the finger is scrolling the page
+        drag.current = null; // the finger is scrolling the page
         return;
       }
       if (Math.abs(mx) < SLOP) return;
-      s.locked = true;
+      d.locked = true;
       setDragging(true);
-      e.currentTarget.setPointerCapture(e.pointerId);
+      try {
+        e.currentTarget.setPointerCapture(e.pointerId);
+      } catch {
+        /* capture is a nicety; the gesture works without it */
+      }
     }
+    d.prevX = d.lastX;
+    d.prevT = d.lastT;
+    d.lastX = e.clientX;
+    d.lastT = performance.now();
     setDx(mx);
+    if (mx > 0 && iRef.current > 0) {
+      if (hideTimer.current) clearTimeout(hideTimer.current);
+      setPrevShown(true);
+    }
   };
   const onPointerEnd = (e: ReactPointerEvent<HTMLDivElement>) => {
-    const s = start.current;
-    start.current = null;
-    if (!s?.locked) return;
+    const d = drag.current;
+    drag.current = null;
+    if (!d?.locked) return;
     setDragging(false);
-    const mx = e.clientX - s.x;
-    const threshold = Math.min(110, (cardRef.current?.offsetWidth ?? 320) * 0.28);
-    if (mx < -threshold && hasNext) go('left');
-    else if (mx > threshold && hasPrev) go('right');
-    else setDx(0);
+    const mx = e.clientX - d.x;
+    const dt = performance.now() - d.prevT;
+    const v = dt > 0 ? (e.clientX - d.prevX) / dt : 0;
+    const threshold = Math.min(100, (deckRef.current?.offsetWidth ?? 320) * 0.25);
+    const flick = Math.abs(mx) > 30 && Math.abs(v) > FLICK && Math.sign(v) === Math.sign(mx);
+    if (mx < 0 && (mx < -threshold || flick)) commit('left');
+    else if (mx > 0 && (mx > threshold || flick)) commit('right');
+    else {
+      setDx(0);
+      hideTimer.current = setTimeout(() => setPrevShown(false), SETTLE_MS);
+    }
   };
 
   if (words.length === 0) {
@@ -123,13 +180,26 @@ export default function VocabLearn() {
     );
   }
 
-  const frontStyle: CSSProperties = leaving
-    ? { transform: `translateX(${leaving === 'left' ? '-130%' : '130%'}) rotate(${leaving === 'left' ? -14 : 14}deg)`, opacity: 0, transition: `transform ${OUT_MS}ms ease-in, opacity ${OUT_MS}ms ease-in` }
-    : { transform: `translateX(${dx}px) rotate(${dx / 22}deg)`, transition: dragging ? 'none' : 'transform 220ms cubic-bezier(.2,.8,.3,1.1)' };
-  const pull = Math.min(1, Math.abs(dx) / 120);
-  const nextHint = dx < -SLOP && hasNext;
-  const prevHint = dx > SLOP && hasPrev;
+  const width = deckRef.current?.offsetWidth ?? 320;
+  const ease = dragging ? 'none' : `transform ${SETTLE_MS}ms cubic-bezier(.2,.8,.3,1), opacity ${SETTLE_MS}ms ease`;
+  // how far the gesture has progressed, 0–1, in whichever direction it is going
+  const pullLeft = settling === 'left' ? 1 : Math.min(1, Math.max(0, -dx) / 120);
+  const pullRight = settling === 'right' ? 1 : Math.min(1, Math.max(0, dx) / width);
+  const pullingPrev = hasPrev && (dx > 0 || settling === 'right');
+
+  let frontStyle: CSSProperties;
+  if (settling === 'left') frontStyle = { transform: 'translateX(-130%) rotate(-14deg)', opacity: 0, transition: ease };
+  else if (pullingPrev) frontStyle = { transform: `scale(${1 - 0.06 * pullRight}) translateY(${14 * pullRight}px)`, transition: ease };
+  else if ((dx > 0 && !hasPrev) || (dx < 0 && !hasNext)) frontStyle = { transform: `translateX(${dx / 3}px)`, transition: ease }; // nothing there: resist
+  else frontStyle = { transform: `translateX(${dx}px) rotate(${dx / 22}deg)`, transition: ease };
+
+  const prevStyle: CSSProperties =
+    settling === 'right' || !prevShown || dx <= 0
+      ? { transform: `translateX(${settling === 'right' ? '0' : PREV_OFFSET}) rotate(${settling === 'right' ? 0 : -8}deg)`, transition: ease }
+      : { transform: `translateX(calc(${PREV_OFFSET} + ${dx}px)) rotate(${-8 * (1 - pullRight)}deg)`, transition: 'none' };
+
   const backWord = words[i + 1];
+  const prevWord = words[i - 1];
 
   return (
     <div className="flex flex-col min-h-[75dvh]">
@@ -149,14 +219,18 @@ export default function VocabLearn() {
         </span>
       </div>
 
-      <div className="relative flex-1 min-h-[24rem] max-h-[36rem] select-none" style={{ touchAction: 'pan-y' }}>
-        {/* the next card peeks out from behind and rises into place as the front one leaves */}
+      <div
+        ref={deckRef}
+        onPointerDown={onPointerDown}
+        onPointerMove={onPointerMove}
+        onPointerUp={onPointerEnd}
+        onPointerCancel={onPointerEnd}
+        className={`relative flex-1 min-h-[24rem] max-h-[36rem] select-none ${dragging ? 'cursor-grabbing' : 'cursor-grab'}`}
+        style={{ touchAction: 'pan-y', WebkitTouchCallout: 'none' }}
+      >
+        {/* the next card peeks out from behind and rises into place as the front one is thrown away */}
         {!atEnd && (
-          <div
-            aria-hidden
-            className="absolute inset-0 rounded-3xl border border-line bg-surface shadow-sm overflow-hidden"
-            style={{ transform: leaving === 'left' ? 'none' : `scale(${0.94 + 0.06 * pull}) translateY(${14 - 14 * pull}px)`, transition: dragging ? 'none' : `transform ${OUT_MS}ms ease` }}
-          >
+          <div aria-hidden className="absolute inset-0 rounded-3xl border border-line bg-surface shadow-sm overflow-hidden" style={{ transform: `scale(${0.94 + 0.06 * pullLeft}) translateY(${14 - 14 * pullLeft}px)`, transition: ease }}>
             {backWord && (
               <div className="p-6 h-full flex flex-col opacity-40">
                 <CardBody w={backWord} autoSpeak={false} />
@@ -167,13 +241,7 @@ export default function VocabLearn() {
 
         <div
           key={i}
-          ref={cardRef}
-          onPointerDown={onPointerDown}
-          onPointerMove={onPointerMove}
-          onPointerUp={onPointerEnd}
-          onPointerCancel={onPointerEnd}
-          onAnimationEnd={() => setEnter(null)}
-          className={`absolute inset-0 rounded-3xl border border-line bg-surface shadow-md p-6 flex flex-col overflow-y-auto ${dragging ? 'cursor-grabbing' : 'cursor-grab'} ${enter === 'from-left' ? 'deck-from-left' : enter === null ? 'animate-pop' : ''}`}
+          className={`absolute inset-0 rounded-3xl border border-line bg-surface shadow-md p-6 flex flex-col overflow-y-auto ${fresh ? 'animate-pop' : ''}`}
           style={frontStyle}
           aria-live="polite"
         >
@@ -183,14 +251,24 @@ export default function VocabLearn() {
                 <span className="truncate">{labelFor(word, setId)}</span>
                 {stats.learned > 0 && <span className="shrink-0">{stats.learned} learned</span>}
               </div>
-              <CardBody w={word} autoSpeak={settings.autoSpeak && !leaving} />
+              <CardBody w={word} autoSpeak={settings.autoSpeak && !settling} />
             </>
           ) : (
-            <EndCard title={title} count={words.length} setId={setId} level={level} onRestart={() => { setPosition(setId, level, 0); setI(0); setEnter('from-left'); }} />
+            <EndCard title={title} count={words.length} setId={setId} level={level} onRestart={() => { setPosition(setId, level, 0); iRef.current = 0; setI(0); setFresh(true); }} />
           )}
-          {nextHint && <Corner side="left">Next</Corner>}
-          {prevHint && <Corner side="right">Back</Corner>}
+          {dx < -SLOP && hasNext && <Corner side="left">Next</Corner>}
         </div>
+
+        {/* the previous card is pulled back in from the left, on top of everything */}
+        {prevShown && prevWord && (
+          <div aria-hidden className="absolute inset-0 rounded-3xl border border-line bg-surface shadow-lg p-6 flex flex-col overflow-hidden" style={prevStyle}>
+            <div className="text-xs text-muted mb-4 flex items-center justify-between">
+              <span className="truncate">{labelFor(prevWord, setId)}</span>
+            </div>
+            <CardBody w={prevWord} autoSpeak={false} />
+            <Corner side="right">Back</Corner>
+          </div>
+        )}
       </div>
 
       <div className="mt-5 flex items-center justify-between text-xs text-muted">
