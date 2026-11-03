@@ -30,8 +30,8 @@ try {
   /* not signed in */
 }
 if (!signedIn) {
-  console.log('Not signed in. A browser window opens; sign in or create a free Cloudflare account, then come back here.');
-  if (!interactive('pnpm exec wrangler login')) fail('Cloudflare sign-in did not complete.');
+  console.log('Not signed in. Open the link below in the browser where you are signed in to Cloudflare and click Allow at the bottom of the page.');
+  if (!interactive('pnpm exec wrangler login --browser=false')) fail('Cloudflare sign-in did not complete.');
 }
 
 // 2. The D1 database: reuse one named alles-klar, else create it, and write its id into wrangler.toml.
@@ -74,8 +74,14 @@ console.log(`API is at ${apiUrl}`);
 
 // 4. Smoke test.
 step('Checking the API answers');
-const health = await fetch(`${apiUrl}/api/health`).then((r) => r.json()).catch(() => null);
-if (!health?.ok) fail(`${apiUrl}/api/health did not answer {"ok":true}. Wait a minute and run again.`);
+let healthy = false;
+for (let attempt = 1; attempt <= 6 && !healthy; attempt++) {
+  // a fresh Worker can take half a minute to answer on its new URL
+  const health = await fetch(`${apiUrl}/api/health`).then((r) => r.json()).catch(() => null);
+  healthy = Boolean(health?.ok);
+  if (!healthy) await new Promise((r) => setTimeout(r, 10_000));
+}
+if (!healthy) fail(`${apiUrl}/api/health did not answer {"ok":true}. Wait a minute and run again.`);
 console.log('OK');
 
 // 5. Tell the GitHub Pages build about it and rebuild the site.

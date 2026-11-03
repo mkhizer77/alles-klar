@@ -12,4 +12,4 @@ PBKDF2_ITERATIONS = "20000"
 binding = "DB"
 database_name = "alles-klar"
 # Replace with the id printed by: pnpm wrangler d1 create alles-klar
-database_id = "REPLACE_WITH_D1_DATABASE_ID"
+database_id = "3e408b17-7fe4-473a-8bfb-34a38aa5b5e9"
