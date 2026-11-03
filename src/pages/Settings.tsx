@@ -97,7 +97,7 @@ export default function SettingsPage() {
 
       <Card>
         <h2 className="font-bold mb-1">Vocabulary</h2>
-        <p className="text-sm text-muted mb-3">How many new words to introduce per day.</p>
+        <p className="text-sm text-muted mb-3">Daily goal for new words. Learn mode counts the words you swipe through; nothing stops you going past it.</p>
         <div className="flex gap-2 flex-wrap">
           {[5, 10, 15, 20, 30].map((n) => (
             <Chip key={n} active={s.newWordsPerDay === n} onClick={() => set({ newWordsPerDay: n })}>
@@ -119,23 +119,6 @@ export default function SettingsPage() {
           <button type="button" className="text-primary font-semibold" onClick={() => set({ reviewDays: [1, 3, 5] })}>Mon / Wed / Fri</button>
           <button type="button" className="text-primary font-semibold" onClick={() => set({ reviewDays: [2, 6] })}>Tue / Sat</button>
         </div>
-
-        <p className="text-sm text-muted mt-5 mb-2">How you are quizzed.</p>
-        <div className="flex gap-2 flex-wrap">
-          {(
-            [
-              ['mixed', 'Mixed'],
-              ['flashcard', 'Flashcards'],
-              ['mc', 'Multiple choice'],
-              ['type', 'Type the word'],
-            ] as const
-          ).map(([v, l]) => (
-            <Chip key={v} active={s.vocabMode === v} onClick={() => set({ vocabMode: v })}>
-              {l}
-            </Chip>
-          ))}
-        </div>
-        <p className="text-xs text-muted mt-2">Mixed: new words as flashcards, reviews rotate through flashcard, choice and typing. Typing is the strongest test of recall.</p>
 
         <p className="text-sm text-muted mt-5 mb-2">Scheduling method.</p>
         <div className="flex gap-2 flex-wrap">

@@ -6,7 +6,8 @@ export interface Settings {
   newWordsPerDay: number;
   /** 0 = Sunday … 6 = Saturday */
   reviewDays: number[];
-  vocabMode: 'flashcard' | 'mc' | 'type' | 'mixed';
+  /** the level the learner is currently learning and revising words at */
+  vocabLevel: Level;
   scheduler: Scheduler;
   feedback: 'instant' | 'end';
   theme: 'system' | 'light' | 'dark';
@@ -18,7 +19,7 @@ export interface Settings {
 export const DEFAULT_SETTINGS: Settings = {
   newWordsPerDay: 10,
   reviewDays: [0, 1, 2, 3, 4, 5, 6],
-  vocabMode: 'mixed',
+  vocabLevel: 'A1',
   scheduler: 'sm2',
   feedback: 'instant',
   theme: 'system',
@@ -92,6 +93,8 @@ export const keys = {
   settings: 'settings',
   topic: (id: string) => `topic:${id}`,
   word: (id: string) => `word:${id}`,
+  /** where the learn deck was left: the index of the last card seen, per level or per list */
+  vocabPos: (scope: string) => `vocabpos:${scope}`,
   activity: 'activity',
   tests: 'tests',
   reading: (id: string) => `reading:${id}`,

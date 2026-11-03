@@ -1,7 +1,8 @@
 import { Link } from 'react-router';
 import { useAuth } from '../lib/auth';
 import { useStoreVersion } from '../lib/store';
-import { getSettings, levelStats, nextTopicId, streak, vocabStats } from '../lib/progress';
+import { getSettings, levelStats, nextTopicId, streak } from '../lib/progress';
+import { deckWords, deckStats } from '../lib/vocab';
 import { store } from '../lib/store';
 import { keys, EMPTY_ACTIVITY, EMPTY_TESTS, type Activity, type TestAttempt } from '../lib/models';
 import { topics, unitOfTopic, levels, readingForUnit, writingForUnit, speakingForUnit } from '../content';
@@ -18,10 +19,9 @@ export default function Home() {
   const activity = store.get<Activity>(keys.activity, EMPTY_ACTIVITY);
   const tests = store.get<TestAttempt[]>(keys.tests, EMPTY_TESTS);
   const s = streak(activity);
-  const vs = vocabStats();
+  const vs = deckStats(deckWords(null, settings.vocabLevel));
   const today = activity[todayStr()] || { exercises: 0, words: 0 };
   const reviewDay = settings.reviewDays.includes(new Date().getDay());
-  const newLeft = Math.max(0, settings.newWordsPerDay - vs.newToday);
   const nextId = nextTopicId();
   const next = nextId ? topics[nextId] : null;
   const nextUnit = nextId ? unitOfTopic(nextId) : null;
@@ -46,21 +46,21 @@ export default function Home() {
       <Card className="bg-gradient-to-br from-primary to-primary-strong text-on-primary border-0">
         <div className="flex items-center justify-between">
           <div>
-            <div className="text-xs uppercase tracking-wide opacity-80">Today's vocabulary</div>
+            <div className="text-xs uppercase tracking-wide opacity-80">Vocabulary · {settings.vocabLevel}</div>
             <div className="mt-1 text-2xl font-bold">
-              {newLeft} new · {vs.due} to review
+              {vs.due} to revise · {vs.learned} learned
             </div>
             <div className="text-sm opacity-80 mt-0.5">
-              {today.words > 0 ? `${today.words} cards done today` : 'Nothing done yet today'} · {vs.introduced} of {vs.total} words started
+              {today.words > 0 ? `${today.words} cards today` : 'Nothing done yet today'} · {vs.newToday} of {settings.newWordsPerDay} new words
             </div>
           </div>
         </div>
         <div className="mt-4 flex gap-2">
-          <LinkButton to="/vocab/session" className="!bg-white !text-primary-strong hover:!brightness-95">
-            Start session
+          <LinkButton to={`/vocab/learn?level=${settings.vocabLevel}`} className="!bg-white !text-primary-strong hover:!brightness-95">
+            Learn new
           </LinkButton>
-          <LinkButton to="/vocab" variant="ghost" className="!text-white hover:!bg-white/10">
-            Browse words
+          <LinkButton to={`/vocab/revise?level=${settings.vocabLevel}`} variant="ghost" className="!text-white hover:!bg-white/10">
+            Revise
           </LinkButton>
         </div>
       </Card>

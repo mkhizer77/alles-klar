@@ -11,7 +11,8 @@ import TopicPage from './pages/TopicPage';
 import Practice from './pages/Practice';
 import Concepts from './pages/Concepts';
 import Vocab from './pages/Vocab';
-import VocabSession from './pages/VocabSession';
+import VocabLearn from './pages/VocabLearn';
+import VocabRevise from './pages/VocabRevise';
 import Tests from './pages/Tests';
 import TestRun from './pages/TestRun';
 import ExamRun, { ExamOverview } from './pages/ExamRun';
@@ -77,7 +78,9 @@ export default function App() {
         <Route path="/speaking/:id" element={<Speaking />} />
         <Route path="/concepts" element={<Concepts />} />
         <Route path="/vocab" element={<Vocab />} />
-        <Route path="/vocab/session" element={<VocabSession />} />
+        <Route path="/vocab/learn" element={<VocabLearn />} />
+        <Route path="/vocab/revise" element={<VocabRevise />} />
+        <Route path="/vocab/session" element={<Navigate to="/vocab/revise" replace />} />
         <Route path="/tests" element={<Tests />} />
         <Route path="/tests/:level" element={<TestRun />} />
         <Route path="/exam/:id" element={<ExamOverview />} />

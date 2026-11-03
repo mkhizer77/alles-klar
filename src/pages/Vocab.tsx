@@ -3,14 +3,15 @@ import { Link } from 'react-router';
 import { vocabSets, levels } from '../content';
 import type { Word, Level, PartOfSpeech } from '../content/types';
 import { store, useStoreVersion } from '../lib/store';
-import { getSettings, vocabStats } from '../lib/progress';
+import { getSettings } from '../lib/progress';
 import { keys } from '../lib/models';
 import type { Card as SrsCard } from '../lib/srs';
 import { todayStr } from '../lib/date';
 import { speak, canSpeak } from '../lib/tts';
 import { addMyWord, findExisting, isMyWord, removeMyWord, searchWords, useMyWords, MY_WORDS_SET, type NewWord } from '../lib/my-words';
-import { Badge, Button, Card, Chip, LinkButton, LevelPill, PageHeader, ProgressBar } from '../components/ui';
-import { SpeakerIcon, ChevronRight, SearchIcon, PlusIcon, TrashIcon, XIcon } from '../components/icons';
+import { deckWords, deckStats, getPosition, LEVEL_INFO } from '../lib/vocab';
+import { Badge, Button, Card, Chip, LevelPill, PageHeader, ProgressBar } from '../components/ui';
+import { SpeakerIcon, ChevronRight, SearchIcon, PlusIcon, TrashIcon, XIcon, CardsIcon, CheckIcon } from '../components/icons';
 
 const POS: { value: PartOfSpeech; label: string }[] = [
   { value: 'noun', label: 'noun' },
@@ -28,8 +29,8 @@ const POS: { value: PartOfSpeech; label: string }[] = [
 export default function Vocab() {
   useStoreVersion();
   const settings = getSettings();
-  const vs = vocabStats();
-  const newLeft = Math.max(0, settings.newWordsPerDay - vs.newToday);
+  const level = settings.vocabLevel;
+  const setLevel = (l: Level) => store.set(keys.settings, { ...settings, vocabLevel: l });
   const [open, setOpen] = useState<string | null>(null);
   const [q, setQ] = useState('');
   const [adding, setAdding] = useState(false);
@@ -45,33 +46,31 @@ export default function Vocab() {
 
   return (
     <div>
-      <PageHeader title="Vocabulary" subtitle="A few new words a day, reviewed just before you would forget them." />
-      <Card className="mb-4">
-        <div className="grid grid-cols-3 text-center">
-          <div>
-            <div className="text-2xl font-bold">{vs.due}</div>
-            <div className="text-xs text-muted">due now</div>
-          </div>
-          <div>
-            <div className="text-2xl font-bold">{newLeft}</div>
-            <div className="text-xs text-muted">new today</div>
-          </div>
-          <div>
-            <div className="text-2xl font-bold">{vs.introduced}</div>
-            <div className="text-xs text-muted">of {vs.total} started</div>
-          </div>
-        </div>
-        <ProgressBar value={vs.introduced} max={vs.total} className="mt-3" />
-        <div className="mt-4 flex gap-2 flex-wrap">
-          <LinkButton to="/vocab/session" size="lg">
-            Start session
-          </LinkButton>
-          <LinkButton to="/settings" variant="secondary" size="lg">
-            {settings.newWordsPerDay} new/day · {settings.vocabMode}
-          </LinkButton>
-        </div>
-      </Card>
+      <PageHeader title="Vocabulary" subtitle="Pick a level. Learn new words by swiping, then revise the ones you know." />
 
+      <div className="grid grid-cols-3 gap-2 mb-3" role="radiogroup" aria-label="Level">
+        {levels.map((l) => {
+          const active = l === level;
+          return (
+            <button
+              key={l}
+              type="button"
+              role="radio"
+              aria-checked={active}
+              onClick={() => setLevel(l)}
+              className={`rounded-2xl border-2 px-3 py-2.5 text-left transition ${active ? 'border-primary bg-info-soft' : 'border-line bg-surface hover:border-muted'}`}
+            >
+              <LevelPill level={l} />
+              <div className={`mt-1 font-semibold text-sm truncate ${active ? 'text-primary' : ''}`}>{LEVEL_INFO[l].name}</div>
+              <div className="hidden sm:block text-xs text-muted mt-0.5">{LEVEL_INFO[l].hint}</div>
+            </button>
+          );
+        })}
+      </div>
+
+      <LevelOptions level={level} />
+
+      <h2 className="font-bold text-lg mb-2 mt-6">All words</h2>
       <div className="flex gap-2 mb-4">
         <div className="relative flex-1">
           <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-muted" size={20} />
@@ -124,7 +123,7 @@ export default function Vocab() {
           <MyWordsSection words={mine} onAdd={() => startAdd()} />
 
           <h2 className="font-bold text-lg mb-2">Word lists</h2>
-          <p className="text-sm text-muted mb-3">Browse by theme, or practise one list on its own.</p>
+          <p className="text-sm text-muted mb-3">Browse by theme, or learn and revise one list on its own.</p>
           <div className="grid gap-4">
             {levels.map((l) => {
               const sets = vocabSets.filter((s) => s.level === l);
@@ -152,9 +151,7 @@ export default function Vocab() {
                           </button>
                           {isOpen && (
                             <div className="px-3 pb-3">
-                              <Link to={`/vocab/session?set=${s.id}`} className="inline-block mb-2 text-sm font-semibold text-primary">
-                                Practise this list →
-                              </Link>
+                              <ListActions setId={s.id} />
                               <ul className="grid gap-1">
                                 {s.words.map((w) => (
                                   <WordRow key={w.id} w={w} />
@@ -172,6 +169,51 @@ export default function Vocab() {
           </div>
         </>
       )}
+    </div>
+  );
+}
+
+/** The two ways in at the chosen level: continue the learn deck, or revise what is already started. */
+function LevelOptions({ level }: { level: Level }) {
+  const words = deckWords(null, level);
+  const st = deckStats(words);
+  const pos = getPosition(null, level, words.length);
+  const started = st.learned > 0;
+  const next = words[pos];
+  const nextLabel = next ? (next.article ? `${next.article} ${next.de}` : next.de) : '';
+  return (
+    <div className="grid sm:grid-cols-2 gap-3">
+      <Link to={`/vocab/learn?level=${level}`} className="group rounded-2xl p-4 bg-gradient-to-br from-primary to-primary-strong text-on-primary shadow-sm active:scale-[0.99] transition">
+        <div className="flex items-center gap-2 text-xs uppercase tracking-wide opacity-80">
+          <CardsIcon size={16} /> Learn new
+        </div>
+        <div className="mt-2 text-xl font-bold">{started ? 'Continue' : 'Start'} at word {Math.min(pos + 1, words.length)} of {words.length}</div>
+        <div className="text-sm opacity-85 mt-0.5 truncate">{next ? `Next up: ${nextLabel}` : 'Every word seen – swipe back through them'}</div>
+        <ProgressBar value={st.learned} max={st.total} color="bg-white/90" className="mt-3 !bg-white/25" />
+        <div className="mt-1.5 text-xs opacity-80">{st.learned} of {st.total} words learned · {st.newToday} today</div>
+      </Link>
+      <Link
+        to={`/vocab/revise?level=${level}`}
+        aria-disabled={!started}
+        className={`rounded-2xl p-4 border-2 bg-surface shadow-sm active:scale-[0.99] transition ${started ? 'border-line hover:border-primary' : 'border-dashed border-line opacity-70'}`}
+      >
+        <div className="flex items-center gap-2 text-xs uppercase tracking-wide text-muted">
+          <CheckIcon size={16} /> Revise
+        </div>
+        <div className="mt-2 text-xl font-bold">{started ? (st.due > 0 ? `${st.due} due now` : 'Nothing due') : 'Learn first'}</div>
+        <div className="text-sm text-muted mt-0.5">
+          {started ? `Tap to see the meaning, then rate yourself. ${st.learned} words to pick from.` : 'Words you swipe through in Learn show up here for testing.'}
+        </div>
+      </Link>
+    </div>
+  );
+}
+
+function ListActions({ setId }: { setId: string }) {
+  return (
+    <div className="flex gap-4 mb-2 text-sm font-semibold">
+      <Link to={`/vocab/learn?set=${setId}`} className="text-primary">Learn this list →</Link>
+      <Link to={`/vocab/revise?set=${setId}`} className="text-primary">Revise this list →</Link>
     </div>
   );
 }
@@ -202,9 +244,7 @@ function MyWordsSection({ words, onAdd }: { words: Word[]; onAdd: () => void }) 
           </button>
           {open && (
             <div className="px-3 pb-3">
-              <Link to={`/vocab/session?set=${MY_WORDS_SET}`} className="inline-block mb-2 text-sm font-semibold text-primary">
-                Practise this list →
-              </Link>
+              <ListActions setId={MY_WORDS_SET} />
               <ul className="grid gap-1">
                 {words.map((w) => (
                   <WordRow key={w.id} w={w} showLevel removable />
