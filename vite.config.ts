@@ -7,6 +7,10 @@ const base = process.env.VITE_BASE || '/';
 
 export default defineConfig({
   base,
+  define: {
+    // shown at the bottom of Settings, so a cached old build is easy to spot
+    __BUILD_TIME__: JSON.stringify(new Date().toISOString().slice(0, 16).replace('T', ' ') + ' UTC'),
+  },
   plugins: [
     react(),
     tailwindcss(),

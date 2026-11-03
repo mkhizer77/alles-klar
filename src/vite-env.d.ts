@@ -5,3 +5,5 @@ interface ImportMetaEnv {
   /** Origin of the API when it is hosted separately, e.g. https://alles-klar-api.<account>.workers.dev */
   readonly VITE_API_URL?: string;
 }
+
+declare const __BUILD_TIME__: string;

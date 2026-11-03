@@ -194,6 +194,7 @@ export default function SettingsPage() {
       <p className="text-xs text-muted text-center">
         Install on your phone: open this site in Safari or Chrome, then “Add to Home Screen”. It works offline; progress syncs when you are back online.
       </p>
+      <p className="text-xs text-muted text-center">Build {__BUILD_TIME__}</p>
     </div>
   );
 }

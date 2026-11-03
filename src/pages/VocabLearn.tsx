@@ -11,20 +11,20 @@ import { XIcon, ChevronLeft, ChevronRight } from '../components/icons';
 /** 'left': the front card is thrown away to the left (next word). 'right': the previous card is pulled back in from the left. */
 type Dir = 'left' | 'right';
 
-const SLOP = 8;
+const SLOP = 6;
 const SETTLE_MS = 220;
 /** px/ms: a quick flick commits even when the finger did not travel the full distance */
-const FLICK = 0.5;
+const FLICK = 0.4;
 const PREV_OFFSET = 'calc(-100% - 24px)';
 
-interface Drag {
+/** One finger (or mouse button) being tracked. Only this pointer id counts until it lifts. */
+interface Gesture {
+  id: number;
+  x0: number;
   x: number;
-  y: number;
   locked: boolean;
-  lastX: number;
-  lastT: number;
-  prevX: number;
-  prevT: number;
+  /** recent positions for the release velocity */
+  samples: { x: number; t: number }[];
 }
 
 export default function VocabLearn() {
@@ -49,7 +49,7 @@ export default function VocabLearn() {
   const pending = useRef<Dir | null>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const hideTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const drag = useRef<Drag | null>(null);
+  const gesture = useRef<Gesture | null>(null);
   const deckRef = useRef<HTMLDivElement>(null);
 
   const word: Word | undefined = words[i];
@@ -117,24 +117,28 @@ export default function VocabLearn() {
     return () => window.removeEventListener('keydown', onKey);
   }, [commit]);
 
+  const springBack = () => {
+    setDragging(false);
+    setDx(0);
+    hideTimer.current = setTimeout(() => setPrevShown(false), SETTLE_MS);
+  };
+
   const onPointerDown = (e: ReactPointerEvent<HTMLDivElement>) => {
-    if (e.button !== 0) return;
+    if (gesture.current) return; // a second finger never takes over
+    if (e.pointerType === 'mouse' && e.button !== 0) return;
     finishSettle();
-    const now = performance.now();
-    drag.current = { x: e.clientX, y: e.clientY, locked: false, lastX: e.clientX, lastT: now, prevX: e.clientX, prevT: now };
+    gesture.current = { id: e.pointerId, x0: e.clientX, x: e.clientX, locked: false, samples: [{ x: e.clientX, t: performance.now() }] };
   };
   const onPointerMove = (e: ReactPointerEvent<HTMLDivElement>) => {
-    const d = drag.current;
-    if (!d) return;
-    const mx = e.clientX - d.x;
-    const my = e.clientY - d.y;
-    if (!d.locked) {
-      if (Math.abs(my) > SLOP && Math.abs(my) > Math.abs(mx)) {
-        drag.current = null; // the finger is scrolling the page
-        return;
-      }
+    const g = gesture.current;
+    if (!g || e.pointerId !== g.id) return;
+    g.x = e.clientX;
+    g.samples.push({ x: e.clientX, t: performance.now() });
+    if (g.samples.length > 8) g.samples.shift();
+    const mx = g.x - g.x0;
+    if (!g.locked) {
       if (Math.abs(mx) < SLOP) return;
-      d.locked = true;
+      g.locked = true;
       setDragging(true);
       try {
         e.currentTarget.setPointerCapture(e.pointerId);
@@ -142,42 +146,36 @@ export default function VocabLearn() {
         /* capture is a nicety; the gesture works without it */
       }
     }
-    d.prevX = d.lastX;
-    d.prevT = d.lastT;
-    d.lastX = e.clientX;
-    d.lastT = performance.now();
     setDx(mx);
     if (mx > 0 && iRef.current > 0) {
       if (hideTimer.current) clearTimeout(hideTimer.current);
       setPrevShown(true);
     }
   };
-  /** The browser took the gesture (edge swipe, scroll): put everything back, decide nothing. */
-  const onPointerCancel = () => {
-    const d = drag.current;
-    drag.current = null;
-    if (!d?.locked) return;
-    setDragging(false);
-    setDx(0);
-    hideTimer.current = setTimeout(() => setPrevShown(false), SETTLE_MS);
+  /** The browser took the gesture away: put everything back, decide nothing. */
+  const onPointerCancel = (e: ReactPointerEvent<HTMLDivElement>) => {
+    const g = gesture.current;
+    if (!g || e.pointerId !== g.id) return;
+    gesture.current = null;
+    if (g.locked) springBack();
   };
-  const onPointerEnd = () => {
-    const d = drag.current;
-    drag.current = null;
-    if (!d?.locked) return;
-    setDragging(false);
-    // judge by where the finger last was: the release event itself may carry no position
-    const mx = d.lastX - d.x;
-    const dt = d.lastT - d.prevT;
-    const v = dt > 0 ? (d.lastX - d.prevX) / dt : 0;
-    const threshold = Math.min(100, (deckRef.current?.offsetWidth ?? 320) * 0.25);
-    const flick = Math.abs(mx) > 30 && Math.abs(v) > FLICK && Math.sign(v) === Math.sign(mx);
-    if (mx < 0 && (mx < -threshold || flick)) commit('left');
-    else if (mx > 0 && (mx > threshold || flick)) commit('right');
-    else {
-      setDx(0);
-      hideTimer.current = setTimeout(() => setPrevShown(false), SETTLE_MS);
-    }
+  const onPointerUp = (e: ReactPointerEvent<HTMLDivElement>) => {
+    const g = gesture.current;
+    if (!g || e.pointerId !== g.id) return;
+    gesture.current = null;
+    if (!g.locked) return;
+    // judged by where the finger really went, never by the release event's own position
+    const mx = g.x - g.x0;
+    const last = g.samples[g.samples.length - 1];
+    const old = g.samples.find((p) => last.t - p.t <= 100) ?? g.samples[0];
+    const v = last.t > old.t ? (last.x - old.x) / (last.t - old.t) : 0;
+    const width = deckRef.current?.offsetWidth ?? 320;
+    const far = Math.abs(mx) > width * 0.3;
+    const flick = Math.abs(mx) > 20 && Math.abs(v) > FLICK && Math.sign(v) === Math.sign(mx);
+    if (far || flick) {
+      setDragging(false);
+      commit(mx < 0 ? 'left' : 'right');
+    } else springBack();
   };
 
   if (words.length === 0) {
@@ -233,10 +231,11 @@ export default function VocabLearn() {
         ref={deckRef}
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
-        onPointerUp={onPointerEnd}
+        onPointerUp={onPointerUp}
         onPointerCancel={onPointerCancel}
         className={`relative flex-1 min-h-[24rem] max-h-[36rem] select-none ${dragging ? 'cursor-grabbing' : 'cursor-grab'}`}
-        style={{ touchAction: 'pan-y', WebkitTouchCallout: 'none' }}
+        // the deck owns every touch that starts on it, so the browser never scrolls, zooms or cancels mid-swipe
+        style={{ touchAction: 'none', WebkitTouchCallout: 'none', WebkitUserSelect: 'none' }}
       >
         {/* the next card peeks out from behind and rises into place as the front one is thrown away */}
         {!atEnd && (
